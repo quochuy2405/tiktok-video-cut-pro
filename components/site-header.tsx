@@ -21,6 +21,7 @@ import { cn } from "@/lib/utils";
 const NAV_PATHS = [
   { href: "/#features", labelKey: "features" as const },
   { href: "/#download", labelKey: "downloadApp" as const },
+  { href: "/#install-guide", labelKey: "installGuide" as const },
   { href: "/terms-of-service", labelKey: "terms" as const },
   { href: "/privacy-policy", labelKey: "privacy" as const },
 ];
@@ -38,7 +39,7 @@ function NavLinks({
   return (
     <ul
       className={cn(
-        "flex flex-col gap-1 md:flex-row md:items-center md:gap-0.5",
+        "flex flex-col gap-1",
         className,
       )}
     >
@@ -54,10 +55,10 @@ function NavLinks({
               href={item.href}
               onClick={onNavigate}
               className={cn(
-                "block rounded-full px-3.5 py-2 text-[14px] font-medium transition-colors md:py-2",
+                "block whitespace-nowrap rounded-full px-3 py-2 text-[14px] font-medium transition-colors lg:px-3.5 lg:py-2",
                 active
                   ? "text-brand"
-                  : "text-zinc-400 hover:text-white",
+                  : "text-white/90 hover:text-white",
               )}
             >
               {t(item.labelKey)}
@@ -75,49 +76,51 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/[0.08] bg-[#050507]/75 backdrop-blur-2xl supports-[backdrop-filter]:bg-[#050507]/55">
-      <div className="mx-auto flex h-[62px] max-w-[1200px] items-center justify-between gap-3 px-6 lg:gap-4 lg:px-8">
+      <div className="mx-auto flex min-h-[62px] min-w-0 max-w-[1200px] items-center justify-between gap-2 px-4 py-2 sm:gap-3 sm:px-6 lg:gap-4 lg:px-8">
         <Link
           href="/"
-          className="flex min-w-0 items-center gap-3 rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-[#050507]"
+          className="flex min-w-0 items-center gap-2.5 rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-[#050507] sm:gap-3"
         >
           <Image
             src="/logo.png"
-            alt=""
+            alt={t("logoAlt")}
             width={36}
             height={36}
             className="size-9 shrink-0 rounded-xl shadow-lg shadow-brand/15 ring-1 ring-white/10"
             priority
           />
-          <span className="font-heading hidden text-[15px] font-semibold tracking-[-0.02em] text-white sm:inline">
-            TikTok Video{" "}
-            <span className="bg-gradient-to-r from-brand to-[#5ee9b8] bg-clip-text text-transparent">
+          <span className="font-heading flex min-w-0 flex-col items-start gap-0.5 leading-none">
+            <span className="text-[12px] font-semibold tracking-[-0.03em] text-white sm:text-[13px] md:text-[15px]">
+              TikTok Video
+            </span>
+            <span className="bg-gradient-to-r from-brand via-[#4df5b8] to-[#5ee9b8] bg-clip-text text-[12px] font-semibold tracking-[-0.03em] text-transparent sm:text-[13px] md:text-[15px]">
               Cut Pro
             </span>
           </span>
         </Link>
 
-        <div className="hidden items-center gap-2 md:flex">
-          <nav className="flex items-center gap-1" aria-label={t("mainNav")}>
-            <NavLinks />
+        <div className="hidden min-w-0 items-center gap-3 lg:flex xl:gap-4">
+          <nav className="flex min-w-0 items-center" aria-label={t("mainNav")}>
+            <NavLinks className="flex-row items-center gap-1 lg:gap-2 xl:gap-3" />
           </nav>
           <LanguageSwitcher />
           <Link
             href="/#download"
             className={cn(
               buttonVariants({ variant: "default", size: "lg" }),
-              "rounded-full border-0 bg-brand px-6 font-medium text-[#050507] shadow-lg shadow-brand/25 hover:bg-brand hover:shadow-brand/40",
+              "glow-brand-sm rounded-full border-0 bg-brand px-6 font-medium text-[#050507] transition-[transform,box-shadow] hover:-translate-y-px hover:bg-brand hover:glow-brand-lg",
             )}
           >
             {t("ctaDesktop")}
           </Link>
         </div>
 
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <Link
             href="/#download"
             className={cn(
               buttonVariants({ variant: "default", size: "sm" }),
-              "rounded-full border-0 bg-brand px-4 font-medium text-[#050507] shadow-md shadow-brand/25",
+              "glow-brand-sm rounded-full border-0 bg-brand px-4 font-medium text-[#050507] transition-[transform,box-shadow] hover:glow-brand-lg active:translate-y-px",
             )}
           >
             {t("ctaMobile")}

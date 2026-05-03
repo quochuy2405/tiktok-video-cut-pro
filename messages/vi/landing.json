@@ -45,9 +45,9 @@
   "downloadSection": {
     "label": "Download app",
     "title": "Chọn bản phù hợp máy của bạn",
-    "subtitle": "Phiên bản {version} — file cài đặt được phục vụ qua GitHub Releases (nhấn thẻ để tải).",
+    "subtitle": "Phiên bản {version} — nhấn vào thẻ để tải bản cài đặt phù hợp máy của bạn.",
     "ctaDownloads": "Tải xuống",
-    "githubAll": "Xem tất cả bản phát hành trên GitHub"
+    "githubAll": "Xem tất cả bản phát hành"
   },
   "downloadCards": {
     "mac-apple-silicon": {
@@ -62,5 +62,24 @@
       "title": "Windows",
       "subtitle": "Windows 10 / 11"
     }
+  },
+  "installSection": {
+    "label": "Hướng dẫn",
+    "title": "Hướng dẫn cài đặt",
+    "macTitle": "macOS",
+    "macSteps": [
+      "Kéo app vào thư mục /Applications.",
+      "Mở Terminal (⌘ Space → gõ Terminal)."
+    ],
+    "macCommandLabel": "Chạy lệnh:",
+    "macCommand": "xattr -cr /Applications/Tiktok\\ Video\\ Cut\\ Pro.app",
+    "copyCommandLabel": "Sao chép lệnh",
+    "copiedCommandLabel": "Đã chép",
+    "winTitle": "Windows",
+    "winSteps": [
+      "Tải file .exe từ các thẻ tải phía trên.",
+      "Mở trực tiếp để sử dụng.",
+      "Nếu bị cảnh báo Windows Defender → chọn More info → Run anyway."
+    ]
   }
 }

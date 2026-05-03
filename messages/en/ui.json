@@ -6,6 +6,7 @@
   "Nav": {
     "features": "Features",
     "downloadApp": "Download",
+    "installGuide": "Install guide",
     "terms": "Terms",
     "privacy": "Privacy",
     "ctaDesktop": "Download",
@@ -16,7 +17,8 @@
     "mainNav": "Primary navigation",
     "language": "Language",
     "languageVi": "Tiếng Việt",
-    "languageEn": "English"
+    "languageEn": "English",
+    "logoAlt": "TikTok Video Cut Pro app icon"
   },
   "Footer": {
     "tagline": "Desktop editing for TikTok creators — faster post-production, steady quality, and smart localization.",
@@ -24,9 +26,15 @@
     "legal": "Legal",
     "featuresLink": "Features",
     "downloadLink": "Download app",
+    "installLink": "Installation guide",
     "termsLink": "Terms of Service",
     "privacyLink": "Privacy Policy",
     "footerNav": "Footer links",
-    "copyrightBody": "TikTok Video Cut Pro. All rights reserved."
+    "contactHeading": "Contact & licensing",
+    "contactCopyright": "Copyright © Shay Shay.",
+    "contactBlurb": "Contact us to purchase license keys or for technical support:",
+    "contactEmail": "shay.hcmc.work@gmail.com",
+    "contactEmailAria": "Email shay.hcmc.work@gmail.com",
+    "copyrightBody": "Shay Shay · TikTok Video Cut Pro"
   }
 }

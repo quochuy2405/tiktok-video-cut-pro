@@ -9,20 +9,27 @@ export function FadeIn({
   className,
   delay = 0,
   y = 18,
+  id,
 }: {
   children: React.ReactNode;
   className?: string;
   delay?: number;
   y?: number;
+  id?: string;
 }) {
   const reduceMotion = useReducedMotion();
 
   if (reduceMotion) {
-    return <div className={className}>{children}</div>;
+    return (
+      <div id={id} className={className}>
+        {children}
+      </div>
+    );
   }
 
   return (
     <motion.div
+      id={id}
       className={className}
       initial={{ opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}

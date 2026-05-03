@@ -45,9 +45,9 @@
   "downloadSection": {
     "label": "Download app",
     "title": "Pick the build for your machine",
-    "subtitle": "Version {version} — installers are served from GitHub Releases (tap a card to download).",
+    "subtitle": "Version {version} — tap a card to download the installer for your platform.",
     "ctaDownloads": "Download",
-    "githubAll": "See all releases on GitHub"
+    "githubAll": "See all releases"
   },
   "downloadCards": {
     "mac-apple-silicon": {
@@ -62,5 +62,24 @@
       "title": "Windows",
       "subtitle": "Windows 10 / 11"
     }
+  },
+  "installSection": {
+    "label": "Setup guide",
+    "title": "Installation instructions",
+    "macTitle": "macOS",
+    "macSteps": [
+      "Drag the app into your /Applications folder.",
+      "Open Terminal (⌘ Space → type Terminal)."
+    ],
+    "macCommandLabel": "Run:",
+    "macCommand": "xattr -cr /Applications/Tiktok\\ Video\\ Cut\\ Pro.app",
+    "copyCommandLabel": "Copy command",
+    "copiedCommandLabel": "Copied",
+    "winTitle": "Windows",
+    "winSteps": [
+      "Download the .exe using the cards above.",
+      "Open the installer to run the app.",
+      "If Windows Defender shows a warning → More info → Run anyway."
+    ]
   }
 }

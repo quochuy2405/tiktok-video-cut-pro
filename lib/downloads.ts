@@ -37,7 +37,7 @@ export function githubReleasesTagPageUrl(): string {
  * Resolve installer URLs:
  * - Per-file override: NEXT_PUBLIC_DOWNLOAD_* (absolute URL)
  * - Shared base: NEXT_PUBLIC_DOWNLOAD_BASE_URL + filename
- * - Default: GitHub Releases direct asset URL
+ * - Default: direct asset URL on the configured release host
  */
 export function resolveDownloadHref(id: DownloadAssetId): string {
   const override = ENV_BY_ID[id];

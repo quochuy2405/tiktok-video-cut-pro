@@ -14,7 +14,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "flex items-center gap-0.5 rounded-full border border-white/12 bg-white/[0.04] p-0.5 backdrop-blur-sm",
+        "flex shrink-0 items-center gap-0 rounded-full border border-white/12 bg-white/[0.06] p-0.5 backdrop-blur-sm",
         className,
       )}
       role="group"
@@ -26,9 +26,9 @@ export function LanguageSwitcher({ className }: { className?: string }) {
           href={pathname}
           locale={loc}
           className={cn(
-            "rounded-full px-2.5 py-1 text-[12px] font-semibold transition-colors",
+            "rounded-full px-3 py-1.5 text-[12px] font-semibold transition-colors md:px-3.5",
             locale === loc
-              ? "bg-brand text-[#050507] shadow-sm shadow-brand/30"
+              ? "bg-brand text-[#050507] shadow-md shadow-brand/35"
               : "text-zinc-400 hover:text-white",
           )}
           prefetch={false}

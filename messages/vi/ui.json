@@ -6,6 +6,7 @@
   "Nav": {
     "features": "Tính năng",
     "downloadApp": "Tải app",
+    "installGuide": "Cài đặt",
     "terms": "Điều khoản",
     "privacy": "Quyền riêng tư",
     "ctaDesktop": "Download",
@@ -16,7 +17,8 @@
     "mainNav": "Điều hướng chính",
     "language": "Ngôn ngữ",
     "languageVi": "Tiếng Việt",
-    "languageEn": "English"
+    "languageEn": "English",
+    "logoAlt": "Biểu tượng TikTok Video Cut Pro"
   },
   "Footer": {
     "tagline": "Công cụ chỉnh sửa video cho nhà sáng tạo TikTok — hậu kỳ nhanh, chất lượng ổn định và bản địa hóa thông minh.",
@@ -24,9 +26,15 @@
     "legal": "Pháp lý",
     "featuresLink": "Tính năng",
     "downloadLink": "Tải ứng dụng",
+    "installLink": "Hướng dẫn cài đặt",
     "termsLink": "Điều khoản dịch vụ",
     "privacyLink": "Chính sách quyền riêng tư",
     "footerNav": "Liên kết chân trang",
-    "copyrightBody": "TikTok Video Cut Pro. Đã đăng ký bản quyền."
+    "contactHeading": "Liên hệ & Bản quyền",
+    "contactCopyright": "Bản quyền thuộc về Shay Shay.",
+    "contactBlurb": "Liên hệ để mua mã bản quyền hoặc hỗ trợ kỹ thuật:",
+    "contactEmail": "shay.hcmc.work@gmail.com",
+    "contactEmailAria": "Gửi email tới shay.hcmc.work@gmail.com",
+    "copyrightBody": "Shay Shay · TikTok Video Cut Pro"
   }
 }

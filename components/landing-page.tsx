@@ -5,14 +5,16 @@ import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import {
   Apple,
+  Check,
   Clapperboard,
+  Copy,
   Download,
   Languages,
   Mic,
-  MonitorSmartphone,
   Palette,
   Sparkles,
 } from "lucide-react";
+import { useCallback, useRef, useState } from "react";
 
 import { FadeIn } from "@/components/fade-in";
 import { buttonVariants } from "@/components/ui/button";
@@ -36,6 +38,19 @@ type DownloadCardCopy = {
   subtitle: string;
 };
 
+type InstallSectionCopy = {
+  label: string;
+  title: string;
+  macTitle: string;
+  macSteps: string[];
+  macCommandLabel: string;
+  macCommand: string;
+  copyCommandLabel: string;
+  copiedCommandLabel: string;
+  winTitle: string;
+  winSteps: string[];
+};
+
 const FEATURE_ICONS = {
   "smart-edit": Clapperboard,
   "source-quality": Mic,
@@ -50,19 +65,47 @@ function featureSpanClass(index: number) {
   return "md:col-span-1";
 }
 
+/** Four-pane mark commonly associated with Windows desktop OS (geometric, not a trademarked artwork copy). */
+function WindowsInstallMark({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+      aria-hidden
+    >
+      <path d="M3 3h9v9H3V3zm10 0h9v9h-9V3zM3 13h9v9H3v-9zm10 0h9v9h-9v-9z" />
+    </svg>
+  );
+}
+
 export function LandingPage() {
   const reduceMotion = useReducedMotion();
   const t = useTranslations("Landing");
+  const [macCommandCopied, setMacCommandCopied] = useState(false);
+  const copyResetRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const features = t.raw("features") as LandingFeature[];
   const downloadCards = t.raw("downloadCards") as Record<
     string,
     DownloadCardCopy
   >;
+  const install = t.raw("installSection") as InstallSectionCopy;
+
+  const copyMacCommand = useCallback(async () => {
+    try {
+      await navigator.clipboard.writeText(install.macCommand);
+      setMacCommandCopied(true);
+      if (copyResetRef.current) clearTimeout(copyResetRef.current);
+      copyResetRef.current = setTimeout(() => setMacCommandCopied(false), 2000);
+    } catch {
+      setMacCommandCopied(false);
+    }
+  }, [install.macCommand]);
 
   return (
     <>
-      <section className="hero-atmosphere relative isolate flex min-h-[min(92vh,920px)] flex-col justify-center overflow-hidden px-6 pb-24 pt-16 md:pb-32 md:pt-20 lg:px-8">
+      <section className="hero-atmosphere relative isolate flex min-h-[min(92vh,920px)] flex-col justify-center overflow-x-clip px-4 pb-24 pt-16 sm:px-6 md:pb-32 md:pt-20 lg:px-8">
         <div className="hero-grid pointer-events-none absolute inset-0 opacity-90" aria-hidden />
         {!reduceMotion ? (
           <>
@@ -100,7 +143,7 @@ export function LandingPage() {
           </>
         )}
 
-        <div className="relative mx-auto flex w-full max-w-[780px] flex-col items-center text-center">
+        <div className="relative mx-auto flex w-full min-w-0 max-w-[780px] flex-col items-center text-center">
           <motion.div
             className="relative mb-10"
             initial={reduceMotion ? false : { opacity: 0, scale: 0.92 }}
@@ -119,7 +162,7 @@ export function LandingPage() {
           </motion.div>
 
           <motion.div
-            className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-2 font-mono text-[11px] font-semibold uppercase tracking-[0.7px] text-brand backdrop-blur-md"
+            className="mb-5 inline-flex max-w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full border border-white/15 bg-white/[0.06] px-3 py-2 text-center font-mono text-[10px] font-semibold uppercase leading-snug tracking-[0.65px] text-brand backdrop-blur-md sm:px-4 sm:text-[11px] sm:tracking-[0.7px]"
             initial={reduceMotion ? false : { opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, ease: easeOut, delay: 0.06 }}
@@ -129,7 +172,7 @@ export function LandingPage() {
           </motion.div>
 
           <motion.h1
-            className="font-heading max-w-[18ch] text-[2.65rem] font-semibold leading-[1.08] tracking-[-1.2px] text-white md:max-w-none md:text-[clamp(2.75rem,6vw,4.25rem)] md:tracking-[-1.35px]"
+            className="font-heading max-w-[min(100%,22rem)] text-[clamp(1.85rem,6vw+0.25rem,4.25rem)] font-semibold leading-[1.08] tracking-[-0.06em] text-white text-balance md:max-w-none md:tracking-[-1.35px]"
             initial={reduceMotion ? false : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.52, ease: easeOut, delay: 0.1 }}
@@ -141,7 +184,7 @@ export function LandingPage() {
           </motion.h1>
 
           <motion.p
-            className="mt-7 max-w-[40ch] text-base leading-relaxed text-zinc-400 md:text-lg md:leading-relaxed"
+            className="mt-7 max-w-xl px-1 text-base leading-relaxed text-zinc-400 md:max-w-[40ch] md:px-0 md:text-lg md:leading-relaxed"
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.48, ease: easeOut, delay: 0.16 }}
@@ -150,7 +193,7 @@ export function LandingPage() {
           </motion.p>
 
           <motion.div
-            className="mt-11 flex flex-wrap items-center justify-center gap-3"
+            className="mt-11 flex w-full min-w-0 flex-wrap items-center justify-center gap-3 px-1 sm:px-0"
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.48, ease: easeOut, delay: 0.22 }}
@@ -179,9 +222,9 @@ export function LandingPage() {
 
       <section
         id="features"
-        className="scroll-mt-[72px] border-t border-white/[0.07] px-6 py-20 md:py-28 lg:px-8"
+        className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8"
       >
-        <div className="mx-auto max-w-[1200px]">
+        <div className="mx-auto min-w-0 max-w-[1200px]">
           <FadeIn className="mx-auto max-w-2xl text-center">
             <p className="font-mono text-[12px] font-semibold uppercase tracking-[0.65px] text-brand">
               {t("featuresSection.label")}
@@ -200,15 +243,15 @@ export function LandingPage() {
                 FEATURE_ICONS[feature.id as keyof typeof FEATURE_ICONS];
 
               return (
-                <FadeIn key={feature.id} delay={index * 0.06}>
+                <FadeIn key={feature.id} className="min-w-0" delay={index * 0.06}>
                   <div
                     className={cn(
-                      "glass-panel group hover:border-brand/35 relative h-full overflow-hidden rounded-[22px] p-8 transition-all duration-300 hover:glow-brand-sm md:p-9",
+                      "glass-panel group hover:border-brand/35 relative h-full min-w-0 overflow-hidden rounded-[22px] p-6 transition-all duration-300 hover:glow-brand-sm sm:p-8 md:p-9",
                       featureSpanClass(index),
                     )}
                   >
                     <div className="pointer-events-none absolute -right-16 -top-16 size-48 rounded-full bg-brand/10 blur-3xl transition-opacity duration-500 group-hover:opacity-100 md:opacity-70" />
-                    <div className="relative flex flex-col gap-5">
+                    <div className="relative flex min-w-0 flex-col gap-5">
                       <div className="flex size-12 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/25">
                         {Icon ? (
                           <Icon className="size-6" aria-hidden />
@@ -244,9 +287,9 @@ export function LandingPage() {
 
       <section
         id="download"
-        className="scroll-mt-[72px] border-t border-white/[0.07] px-6 py-20 md:py-28 lg:px-8"
+        className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8"
       >
-        <div className="mx-auto max-w-[1200px]">
+        <div className="mx-auto min-w-0 max-w-[1200px]">
           <FadeIn className="mx-auto max-w-2xl text-center">
             <p className="font-mono text-[12px] font-semibold uppercase tracking-[0.65px] text-brand">
               {t("downloadSection.label")}
@@ -259,14 +302,14 @@ export function LandingPage() {
             </p>
           </FadeIn>
 
-          <div className="mt-14 grid items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-14 grid grid-cols-1 items-stretch gap-5 md:grid-cols-2 lg:grid-cols-3">
             {DOWNLOAD_ASSETS.map((asset, index) => {
               const card = downloadCards[asset.id];
 
               return (
                 <FadeIn
                   key={asset.id}
-                  className="h-full min-h-0"
+                  className="h-full min-h-0 min-w-0"
                   delay={index * 0.05}
                 >
                   <a
@@ -274,30 +317,33 @@ export function LandingPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={cn(
-                      "glass-panel group hover:border-brand/40 relative flex h-full min-h-[260px] flex-col overflow-hidden rounded-[24px] p-8 transition-all duration-300 hover:-translate-y-1 hover:glow-brand-sm md:min-h-[280px] md:p-9",
+                      "glass-panel group hover:border-brand/40 relative flex h-full min-h-[260px] min-w-0 w-full flex-col overflow-hidden rounded-[24px] p-6 transition-all duration-300 hover:-translate-y-1 hover:glow-brand-sm sm:p-8 md:min-h-[280px] md:p-9",
                     )}
                   >
                     <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                    <div className="flex shrink-0 items-start justify-between gap-4">
-                      <div className="min-w-0 pr-2">
-                        <h3 className="font-heading text-xl font-semibold tracking-[-0.2px] text-white">
+                    <div className="flex shrink-0 items-start justify-between gap-3 sm:gap-4">
+                      <div className="min-w-0 flex-1 pr-2">
+                        <h3 className="font-heading text-lg font-semibold leading-snug tracking-[-0.2px] text-white sm:text-xl">
                           {card?.title ?? asset.title}
                         </h3>
                         <p className="mt-1.5 text-sm text-zinc-400">
                           {card?.subtitle ?? asset.subtitle}
                         </p>
                       </div>
-                      <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-brand text-[#050507] shadow-lg shadow-brand/30 transition-transform duration-300 group-hover:scale-105">
+                      <span
+                        className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-brand/15 text-brand shadow-lg shadow-brand/25 ring-1 ring-brand/30 transition-transform duration-300 group-hover:scale-105 group-hover:shadow-brand/35"
+                        aria-hidden
+                      >
                         {asset.id === "windows" ? (
-                          <MonitorSmartphone className="size-6" aria-hidden />
+                          <WindowsInstallMark className="size-[1.25rem]" />
                         ) : (
-                          <Apple className="size-6" aria-hidden />
+                          <Apple className="size-[1.35rem]" strokeWidth={2} />
                         )}
                       </span>
                     </div>
 
                     <div className="mt-6 flex min-h-0 flex-1 flex-col justify-between gap-4">
-                      <p className="font-mono text-[10px] font-medium uppercase leading-snug tracking-[0.55px] text-zinc-500 break-words hyphens-auto">
+                      <p className="break-all font-mono text-[10px] font-medium uppercase leading-snug tracking-[0.55px] text-zinc-500 sm:break-words">
                         {asset.fileLabel}
                       </p>
                       <span className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-brand">
@@ -311,14 +357,101 @@ export function LandingPage() {
             })}
           </div>
 
-          <FadeIn className="mt-14 text-center">
+          <FadeIn
+            id="install-guide"
+            className="mt-16 scroll-mt-[72px] md:mt-24"
+          >
+            <div className="mx-auto max-w-2xl text-center">
+              <p className="font-mono text-[12px] font-semibold uppercase tracking-[0.65px] text-brand">
+                {install.label}
+              </p>
+              <h2 className="font-heading mt-4 text-[1.65rem] font-semibold tracking-[-0.85px] text-white md:text-[2rem]">
+                {install.title}
+              </h2>
+            </div>
+
+            <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
+              <div className="glass-panel min-w-0 rounded-[24px] border-white/[0.08] p-5 sm:p-7 md:p-8">
+                <h3 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
+                  <span
+                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/25"
+                    aria-hidden
+                  >
+                    <Apple className="size-[1.35rem]" strokeWidth={2} />
+                  </span>
+                  <span className="min-w-0 flex-1 leading-snug pt-0.5">
+                    {install.macTitle}
+                  </span>
+                </h3>
+                <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-brand">
+                  {install.macSteps.map((step, i) => (
+                    <li key={`mac-${i}`}>{step}</li>
+                  ))}
+                </ol>
+                <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between sm:gap-2">
+                  <p className="min-w-0 text-sm font-medium leading-snug text-zinc-300">
+                    {install.macCommandLabel}
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => void copyMacCommand()}
+                    className={cn(
+                      "inline-flex w-fit shrink-0 items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] font-semibold transition-colors",
+                      macCommandCopied
+                        ? "border-brand/50 bg-brand/15 text-brand"
+                        : "border-white/[0.12] bg-white/[0.04] text-zinc-300 hover:border-brand/35 hover:bg-white/[0.07] hover:text-white",
+                    )}
+                    aria-label={install.copyCommandLabel}
+                  >
+                    {macCommandCopied ? (
+                      <Check className="size-3.5 shrink-0" aria-hidden />
+                    ) : (
+                      <Copy className="size-3.5 shrink-0" aria-hidden />
+                    )}
+                    {macCommandCopied
+                      ? install.copiedCommandLabel
+                      : install.copyCommandLabel}
+                  </button>
+                </div>
+                <pre
+                  className="mt-2 max-w-full overflow-x-auto rounded-xl border border-white/[0.08] bg-[#0a0a0c] p-3 font-mono text-[11px] leading-snug text-brand sm:p-4 sm:text-[12px] md:text-[13px]"
+                  tabIndex={0}
+                >
+                  <code className="break-all whitespace-pre-wrap sm:break-normal sm:whitespace-pre">
+                    {install.macCommand}
+                  </code>
+                </pre>
+              </div>
+
+              <div className="glass-panel min-w-0 rounded-[24px] border-white/[0.08] p-5 sm:p-7 md:p-8">
+                <h3 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
+                  <span
+                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-sky-500/15 text-sky-300 ring-1 ring-sky-400/35"
+                    aria-hidden
+                  >
+                    <WindowsInstallMark className="size-[1.15rem]" />
+                  </span>
+                  <span className="min-w-0 flex-1 leading-snug pt-0.5">
+                    {install.winTitle}
+                  </span>
+                </h3>
+                <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-brand">
+                  {install.winSteps.map((step, i) => (
+                    <li key={`win-${i}`}>{step}</li>
+                  ))}
+                </ol>
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn className="mt-14 px-1 text-center sm:px-0">
             <a
               href={githubReleasesTagPageUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
-                "rounded-full border-white/20 bg-white/[0.04] px-10 py-3 text-[15px] font-medium text-white backdrop-blur-sm hover:bg-white/[0.09] hover:text-white",
+                "inline-flex w-full max-w-md justify-center rounded-full border-white/20 bg-white/[0.04] px-6 py-3 text-[15px] font-medium text-white backdrop-blur-sm hover:bg-white/[0.09] hover:text-white sm:w-auto sm:max-w-none sm:px-10",
               )}
             >
               {t("downloadSection.githubAll")}

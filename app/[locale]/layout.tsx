@@ -32,16 +32,32 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined);
+
   return {
+    ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
     title: {
       default: t("titleDefault"),
       template: "%s · TikTok Video Cut Pro",
     },
     description: t("description"),
+    icons: {
+      icon: [{ url: "/logo.png", type: "image/png" }],
+      apple: [{ url: "/logo.png", type: "image/png", sizes: "180x180" }],
+    },
     openGraph: {
       title: "TikTok Video Cut Pro",
       description: t("description"),
       type: "website",
+      images: [{ url: "/logo.png", width: 512, height: 512, alt: "TikTok Video Cut Pro" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "TikTok Video Cut Pro",
+      description: t("description"),
+      images: ["/logo.png"],
     },
   };
 }
@@ -74,7 +90,9 @@ export default async function LocaleLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <SiteHeader />
-          <main className="flex flex-1 flex-col">{children}</main>
+          <main className="flex min-w-0 flex-1 flex-col overflow-x-clip">
+            {children}
+          </main>
           <SiteFooter />
         </NextIntlClientProvider>
       </body>

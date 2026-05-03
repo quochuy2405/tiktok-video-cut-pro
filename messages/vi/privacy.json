@@ -1,0 +1,117 @@
+{
+  "categoryLabel": "Pháp lý",
+  "metaTitle": "Chính sách quyền riêng tư — TikTok Video Cut Pro",
+  "metaDescription": "Mô tả chi tiết về dữ liệu thu thập, mục đích xử lý, bảo mật, quyền của chủ thể dữ liệu và các căn cứ pháp lý áp dụng.",
+  "title": "Chính sách quyền riêng tư",
+  "updatedLabel": "Cập nhật lần cuối",
+  "updatedDate": "3 tháng 5 năm 2026",
+  "lawyerNotice": "Chính sách này mô tả thực tiễn xử lý dữ liệu và giới hạn trách nhiệm của Chúng tôi trong phạm vi pháp luật cho phép; không phải tư vấn pháp lý. An ninh và quyền riêng tư không có đảm bảo tuyệt đối — hãy đánh giá rủi ro riêng đối với dữ liệu nhạy cảm, trẻ em và ngành được quản chặt.",
+  "sections": [
+    {
+      "title": "1. Phạm vi và chủ thể xử lý",
+      "paragraphs": [
+        "Chính sách áp dụng đối với TikTok Video Cut Pro phiên bản desktop và các trang thông tin/marketing chính thức do Chúng tôi vận hành để giới thiệu sản phẩm.",
+        "Danh tính chủ thể xử lý và kênh liên hệ chính được công bố trên trang web hoặc tài liệu sản phẩm chính thức. Khi có pháp nhân khác xử lý dữ liệu thay Chúng tôi theo hợp đồng, họ đóng vai trò bên xử lý dữ liệu hoặc đồng kiểm soát theo luật định và được liệt kê hoặc thông báo trước khi xử lý."
+      ]
+    },
+    {
+      "title": "2. Dữ liệu Chúng tôi có thể xử lý",
+      "paragraphs": [
+        "Dữ liệu kỹ thuật và nhật ký: phiên bản hệ điều hành, loại phần cứng, ID phiên bản ứng dụng, báo cáo lỗi (crash logs), checksum bản cài đặt và các thông tin tương tự phục vụ bảo mật và chẩn đoán.",
+        "Dữ liệu do bạn nhập: file media, phụ đề, nhật ký chỉnh sửa cục bộ và metadata đi kèm trong dự án.",
+        "Dữ liệu thông tin liên hệ: họ tên, địa chỉ email hoặc tài khoản hỗ trợ nếu bạn chủ động gửi qua biểu mẫu hỗ trợ hoặc kênh yêu cầu được công bố.",
+        "Dữ liệu phân tích trang web (nếu bật): lượt truy cập, referrer, loại thiết bị và sự kiện cơ bản nhằm cải thiện trải nghiệm đích/marketing."
+      ]
+    },
+    {
+      "title": "3. Cơ sở pháp lý và mục đích xử lý",
+      "paragraphs": [
+        "Chúng tôi xử lý dữ liệu khi cần để thực hiện hợp đồng cấp phép phần mềm với bạn, duy trì an ninh/bảo mật, tuân thủ nghĩa vụ pháp luật hoặc — sau khi có thông báo thích hợp — dựa trên chính đáng do Chúng tôi và người dùng (ví dụ cải tiến sản phẩm trong phạm vi thống kê tổng hợp).",
+        "Đối với người dùng tại Liên minh Châu Âu/Vương quốc Anh: các căn cứ có thể gồm thực hiện hợp đồng (Điều 6(1)(b) GDPR), lợi ích chính đáng (6(1)(f)), đồng ý (6(1)(a)) hoặc nghĩa vụ pháp lý (6(1)(c)) tùy tình huống.",
+        "Đối với Việt Nam: hoạt động xử lý dữ liệu cá nhân có liên quan tới Nghị định 13/2023/NĐ-CP và các văn bản hướng dẫn hiện hành khi áp dụng cho chủ thể xử lý và loại dữ liệu được xử lý."
+      ]
+    },
+    {
+      "title": "4. Xử lý cục bộ so với đám mây / AI",
+      "paragraphs": [
+        "Nhiều thao tác chỉnh sửa diễn ra hoàn toàn trên máy bạn khi bạn không kích hoạt tính năng gửi dữ liệu ra ngoài.",
+        "Khi bạn bật chức năng AI hoặc xử lý trên máy chủ (nhận diện tiếng nói nâng cao, dịch đám mây, render qua GPU từ xa), các đoạn âm thanh/hình ảnh hoặc metadata cần thiết có thể được mã hóa và truyền tới nhà cung cấp được Chúng tôi lựa chọn theo điều khoản của họ.",
+        "Chúng tôi khuyến nghị không gửi thông tin nhạy cảm đặc biệt (dữ liệu sức khỏe, sinh trắc học phục vụ định danh duy nhất nếu không cần thiết) qua các đường truyền chưa được mô tả rõ trong giao diện."
+      ]
+    },
+    {
+      "title": "5. Cookie và công nghệ tương tự (trang web)",
+      "paragraphs": [
+        "Trang landing có thể dùng cookie hoặc local storage cho ngôn ngữ, phiên hoặc phân tích cơ bản. Bạn có thể điều chỉnh trình duyệt để chặn cookie; một số chức năng có thể suy giảm."
+      ]
+    },
+    {
+      "title": "6. Chia sẻ dữ liệu và bên xử lý",
+      "paragraphs": [
+        "Chúng tôi không bán dữ liệu cá nhân của bạn. Chúng tôi có thể chia sẻ dữ liệu giới hạn với nhà cung cấp lưu trữ/phân phối cho trang web hoặc máy chủ tải xuống, nhà cung cấp email chống lạm dụng, nhà cung cấp AI (nếu bạn bật), và cơ quan nhà nước khi có yêu cầu hợp pháp."
+      ]
+    },
+    {
+      "title": "7. Chuyển giao dữ liệu quốc tế",
+      "paragraphs": [
+        "Nếu máy chủ hoặc nhà cung cấp đặt tại nước thứ ba, Chúng tôi sẽ áp dụng biện pháp bảo vệ phù hợp (Điều khoản hợp đồng chuẩn của EU, đánh giá tác động hoặc quyết định đầy đủ tính pháp lý tương đương) theo yêu cầu của luật áp dụng."
+      ]
+    },
+    {
+      "title": "8. Bảo mật",
+      "paragraphs": [
+        "Chúng tôi áp dụng các biện pháp kỹ thuật và tổ chức hợp lý (kiểm soát truy cập, mã hóa khi phù hợp, phân vùng môi trường). Không có hệ thống nào an toàn tuyệt đối — bạn nên cập nhật hệ điều hành và dùng mật khẩu / khóa thiết bị."
+      ]
+    },
+    {
+      "title": "9. Thời gian lưu giữ",
+      "paragraphs": [
+        "Nhật ký kỹ thuật được giữ trong thời gian cần thiết để chẩn đoán và tuân thủ pháp luật.",
+        "Nội dung đám mây (nếu có) được giữ theo chính sách của nhà cung cấp và cờ xóa trong Ứng dụng.",
+        "Thông tin gửi qua kênh hỗ trợ được giữ trong thời gian giải quyết yêu cầu và theo nghĩa vụ lưu trữ chứng từ."
+      ]
+    },
+    {
+      "title": "10. Quyền của chủ thể dữ liệu",
+      "paragraphs": [
+        "Tùy luật địa phương, bạn có thể có các quyền sau: truy cập, chỉnh sửa, xóa, hạn chế xử lý, phản đối xử lý dựa trên lợi ích chính đáng, rút đồng ý (nếu xử lý dựa trên đồng ý), và nhận bản sao có cấu trúc (di động).",
+        "Người dùng EEA/UK có quyền khiếu nại cơ quan giám sát bảo vệ dữ liệu nơi mình cư trú.",
+        "Người dùng Việt Nam có thể thực hiện quyền theo Nghị định 13 và các quy định sau sửa đổi; Chúng tôi sẽ phản hồi trong thời hạn hợp lý sau khi xác minh danh tính."
+      ]
+    },
+    {
+      "title": "11. Quyết định tự động và vết AI",
+      "paragraphs": [
+        "Một số gợi ý cắt ghép hoặc phụ đề được sinh tự động; quyết định phát hành cuối cùng vẫn thuộc về bạn. Chúng tôi không sử dụng các hệ thống ra quyết định thuần tự động có hiệu lực pháp lý hoặc tác động tương tự đáng kể đối với bạn nếu không có mô tả rõ trong giao diện và căn cứ pháp lý thích hợp."
+      ]
+    },
+    {
+      "title": "12. Trẻ em",
+      "paragraphs": [
+        "Ứng dụng không nhắm tới trẻ em dưới 13 tuổi (hoặc độ tuổi tối thiểu khác theo luật địa phương). Nếu bạn tin rằng chúng tôi đã xử lý dữ liệu trẻ em không có sự đồng ý hợp lệ của phụ huynh, vui lòng liên hệ để xóa."
+      ]
+    },
+    {
+      "title": "13. Thay đổi chính sách",
+      "paragraphs": [
+        "Chúng tôi có thể cập nhật chính sách khi có thay đổi chức năng hoặc yêu cầu pháp lý. Khi thay đổi trọng yếu, Chúng tôi sẽ thông báo qua Ứng dụng hoặc trang phân phối; phiên mới có hiệu lực kể từ ngày ghi trong đầu tài liệu."
+      ]
+    },
+    {
+      "title": "14. Miễn trừ đảm bảo và giới hạn trách nhiệm",
+      "paragraphs": [
+        "Chúng tôi không cam kết rằng xử lý dữ liệu, lưu trữ cục bộ hoặc tích hợp với nhà cung cấp bên thứ ba sẽ không bao giờ bị xâm nhập, rò rỉ, mất mát hoặc truy cập trái phép. Không có biện pháp kỹ thuật hay mô tả trong Chính sách này (kể cả mục Bảo mật) tạo ra bảo đảm pháp lý về mức độ an toàn cố định.",
+        "Trong phạm vi pháp luật cho phép tối đa, Chúng tôi không chịu trách nhiệm đối với thiệt hại gián tiếp, đặc biệt, mang tính hệ quả hoặc trừng phạt phát sinh từ hoặc liên quan tới việc xử lý dữ liệu theo Chính sách này — bao gồm nhưng không giới hạn ở rò rỉ do hành vi bên thứ ba, lỗi cấu hình của bạn, hoặc sự cố ngoài kiểm soát hợp lý của Chúng tôi.",
+        "Tổng trách nhiệm tích lũy của Chúng tôi đối với mọi khiếu nại phát sinh từ hoặc liên quan tới Chính sách quyền riêng tư hoặc hoạt động xử lý dữ liệu được mô tả tại đây — trong phạm vi pháp luật cho phép — không vượt quá mức thấp hơn trong hai giá trị: (i) tổng phí thực tế bạn đã trả cho Chúng tôi trong mười hai (12) tháng trước sự kiện gây khiếu nại; và (ii) năm mươi đô la Mỹ (50 USD). Các giới hạn tương tự trong Điều khoản dịch vụ (nếu có) được áp dụng nhất quán để tránh chồng chất trách nhiệm vượt các trần này.",
+        "Bạn chịu trách nhiệm đánh giá xem việc xử lý dữ liệu của riêng bạn (ví dụ đưa giọng nói của người khác vào tính năng AI) có đòi hỏi thông báo, đồng ý hoặc cơ sở pháp lý bổ sung hay không."
+      ]
+    },
+    {
+      "title": "15. Liên hệ và khiếu nại",
+      "paragraphs": [
+        "Để thực hiện quyền hoặc đặt câu hỏi về quyền riêng tư, hãy liên hệ qua kênh được công bố trên trang web chính thức hoặc thông báo trong ứng dụng.",
+        "Nếu bạn không hài lòng với cách xử lý, bạn có thể khiếu nại lên cơ quan có thẩm quyền nơi bạn cư trú."
+      ]
+    }
+  ]
+}

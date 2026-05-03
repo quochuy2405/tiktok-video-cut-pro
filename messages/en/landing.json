@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "badge": "TikTok Video Cut Pro · v{version}",
+    "titleLead": "Edit lean.",
+    "titleAccent": "Ship faster.",
+    "subtitle": "A desktop workflow for TikTok creators — intelligent post-production, cleaner dialogue, localization, and effects in one place.",
+    "ctaPrimary": "Download app",
+    "ctaSecondary": "Explore features",
+    "logoAlt": "TikTok Video Cut Pro app icon"
+  },
+  "featuresSection": {
+    "label": "Features",
+    "title": "Everything you need after you hit record",
+    "subtitle": "Four pillars to publish quicker, polish dialogue, and reach Vietnamese and global audiences with confidence."
+  },
+  "features": [
+    {
+      "id": "smart-edit",
+      "title": "Smart-Edit pipeline",
+      "description": "Automate baseline edits like trims and shot duplication from a single master cut so you can spin distribution-ready variants while keeping each upload feeling fresh and authentic.",
+      "bullets": []
+    },
+    {
+      "id": "source-quality",
+      "title": "Speech-aware cleanup",
+      "description": "Detect fillers and awkward takes so you can remove dead air and mistakes — tighter pacing, more professional delivery, and stronger retention.",
+      "bullets": []
+    },
+    {
+      "id": "localization",
+      "title": "Translation & global-ready localization",
+      "description": "Grow abroad or repurpose international footage (for example foreign-language product reviews).",
+      "bullets": [
+        "Smart subtitles: translate captions into Vietnamese or your target language.",
+        "AI dubbing: natural Vietnamese reads tuned for local listening habits."
+      ]
+    },
+    {
+      "id": "filters",
+      "title": "Filters & creative effects library",
+      "description": "Hundreds of filters and motion treatments to differentiate your visuals and stand out in crowded vertical feeds.",
+      "bullets": []
+    }
+  ],
+  "downloadSection": {
+    "label": "Download app",
+    "title": "Pick the build for your machine",
+    "subtitle": "Version {version} — installers are served from GitHub Releases (tap a card to download).",
+    "ctaDownloads": "Download",
+    "githubAll": "See all releases on GitHub"
+  },
+  "downloadCards": {
+    "mac-apple-silicon": {
+      "title": "macOS (Apple Silicon)",
+      "subtitle": "M1 / M2 / M3 and newer"
+    },
+    "mac-intel": {
+      "title": "macOS (Intel)",
+      "subtitle": "Intel-based Mac hardware"
+    },
+    "windows": {
+      "title": "Windows",
+      "subtitle": "Windows 10 / 11"
+    }
+  }
+}

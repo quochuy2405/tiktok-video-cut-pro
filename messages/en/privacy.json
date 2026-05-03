@@ -1,0 +1,116 @@
+{
+  "categoryLabel": "Legal",
+  "metaTitle": "Privacy Policy — TikTok Video Cut Pro",
+  "metaDescription": "How we collect, use, secure, and share information when you use TikTok Video Cut Pro and our marketing sites.",
+  "title": "Privacy Policy",
+  "updatedLabel": "Last updated",
+  "updatedDate": "May 3, 2026",
+  "lawyerNotice": "This Policy describes how we handle information and limits our liability to the extent permitted by law. It is not legal advice. Privacy and security are not guaranteed absolutely—assess your own risk for sensitive data, minors, and regulated sectors.",
+  "sections": [
+    {
+      "title": "1. Scope and data controller",
+      "paragraphs": [
+        "This Policy covers the TikTok Video Cut Pro desktop application and official marketing pages we operate.",
+        "The controller identity and primary contact methods are published on our official product website or documentation. Sub-processors acting on our instructions are bound by contracts requiring confidentiality and security safeguards."
+      ]
+    },
+    {
+      "title": "2. Categories of information",
+      "paragraphs": [
+        "Technical diagnostics: OS version, hardware class, app build IDs, crash telemetry, and integrity signals needed for reliability.",
+        "User-provided media and edits stored locally within your project unless you enable cloud or AI processing.",
+        "Support communications: whatever you voluntarily submit via forms, Issues, or email.",
+        "Website analytics (if enabled): coarse usage metrics to improve documentation funnels."
+      ]
+    },
+    {
+      "title": "3. Purposes and legal bases",
+      "paragraphs": [
+        "We process information to perform our contract with you, secure the software, comply with law, and—after transparent notice—pursue legitimate interests such as aggregated quality analytics.",
+        "For users in the EEA/UK we may rely on Article 6(1)(b), (c), or (f) GDPR, or Article 6(1)(a) when consent is required.",
+        "Vietnamese users: relevant provisions of Decree 13/2023/NĐ-CP may apply when personal data processing falls within its scope."
+      ]
+    },
+    {
+      "title": "4. Local vs cloud / AI processing",
+      "paragraphs": [
+        "Many edits remain offline until you opt into features that require servers.",
+        "Cloud AI or speech workflows may transmit encrypted fragments of audio/video/metadata to vendors described in-product.",
+        "Avoid uploading unnecessary sensitive categories (health data, biometric identifiers for unique identification) unless the UI explicitly supports compliant handling."
+      ]
+    },
+    {
+      "title": "5. Cookies and similar tech",
+      "paragraphs": [
+        "Our landing pages may store locale preferences or analytics identifiers. Browser controls let you block cookies; blocking may degrade optional features."
+      ]
+    },
+    {
+      "title": "6. Sharing and subprocessors",
+      "paragraphs": [
+        "We do not sell personal information. We share limited data with hosting/CDN providers that operate our site or downloads, abuse-prevention vendors, and AI backends when you enable those flows. Government requests are handled where legally compelled."
+      ]
+    },
+    {
+      "title": "7. International transfers",
+      "paragraphs": [
+        "Where data crosses borders we implement safeguards such as Standard Contractual Clauses or equivalent mechanisms required by law."
+      ]
+    },
+    {
+      "title": "8. Security",
+      "paragraphs": [
+        "We apply organizational and technical measures appropriate to the risk. No method is 100% secure—keep devices patched and encrypted."
+      ]
+    },
+    {
+      "title": "9. Retention",
+      "paragraphs": [
+        "Diagnostics are retained only as long as needed for troubleshooting or compliance.",
+        "Cloud artefacts follow vendor deletion timelines and any purge controls exposed in the App.",
+        "Support tickets follow operational retention schedules."
+      ]
+    },
+    {
+      "title": "10. Your rights",
+      "paragraphs": [
+        "Depending on jurisdiction you may request access, rectification, erasure, restriction, objection to certain processing, withdrawal of consent, or portability.",
+        "EEA/UK residents may lodge complaints with their supervisory authority.",
+        "Vietnamese residents may exercise statutory rights under Decree 13 and successors; we verify identity before fulfilling sensitive requests."
+      ]
+    },
+    {
+      "title": "11. Automated decisions",
+      "paragraphs": [
+        "Assistive AI suggests edits but does not autonomously publish on your behalf. We do not perform solely automated decisions with legal or similarly significant effects without explicit disclosure and a lawful basis."
+      ]
+    },
+    {
+      "title": "12. Children",
+      "paragraphs": [
+        "The App is not directed at children under 13 (or the minimum age in your region). Contact us to delete information inadvertently collected from minors without proper parental authority."
+      ]
+    },
+    {
+      "title": "13. Changes",
+      "paragraphs": [
+        "We may update this Policy for new features or regulatory obligations. Material updates will be highlighted via release notes or in-app notices."
+      ]
+    },
+    {
+      "title": "14. Disclaimers and limitation of liability",
+      "paragraphs": [
+        "We do not warrant that processing, local storage, or integrations with third-party vendors will never be breached, leaked, lost, or accessed without authorisation. Nothing in this Policy (including the Security section) creates a legally binding guarantee of a fixed security level.",
+        "To the maximum extent permitted by law, we are not liable for indirect, special, consequential, or punitive damages arising from or relating to processing described here—including leaks caused by third-party actors, misconfiguration on your side, or events outside our reasonable control.",
+        "Our total aggregate liability for all claims arising from or relating to this Privacy Policy or the data practices described herein—where permitted by law—shall not exceed the lesser of (i) the total fees you actually paid us in the twelve (12) months before the event giving rise to the claim and (ii) fifty US dollars (USD $50). Parallel caps in our Terms of Service apply so that cumulative liability does not exceed these ceilings.",
+        "You are responsible for determining whether your own processing (for example uploading third-party voices into AI features) requires additional notices, consents, or legal bases."
+      ]
+    },
+    {
+      "title": "15. Contact",
+      "paragraphs": [
+        "Privacy requests can be filed using the contact channels listed on our official website or in-product notices. Escalate unresolved concerns to your local data-protection authority where applicable."
+      ]
+    }
+  ]
+}

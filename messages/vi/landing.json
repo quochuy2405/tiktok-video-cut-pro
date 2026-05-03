@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "badge": "TikTok Video Cut Pro · v{version}",
+    "titleLead": "Cắt gọn video.",
+    "titleAccent": "Tăng tốc sáng tạo.",
+    "subtitle": "Ứng dụng desktop cho nhà sáng tạo TikTok: hậu kỳ thông minh, làm sạch lời thoại, bản địa hóa và hiệu ứng — gọn trong một luồng làm việc.",
+    "ctaPrimary": "Tải ứng dụng",
+    "ctaSecondary": "Xem tính năng",
+    "logoAlt": "Biểu tượng TikTok Video Cut Pro"
+  },
+  "featuresSection": {
+    "label": "Tính năng",
+    "title": "Mọi thứ bạn cần sau khi nhấn nút quay",
+    "subtitle": "Bốn trụ cột giúp bạn ra clip nhanh hơn, sạch hơn và sẵn sàng cho khán giả Việt và quốc tế."
+  },
+  "features": [
+    {
+      "id": "smart-edit",
+      "title": "Hệ thống chỉnh sửa Smart-Edit",
+      "description": "Tự động hóa các khâu chỉnh sửa hậu kỳ cơ bản (cắt ghép, nhân bản cảnh quay từ một nguồn gốc). Bạn nhanh chóng có nhiều phiên bản video khác nhau để thử nghiệm phân phối thuật toán, vẫn giữ cảm giác nguyên bản và mới cho từng bản đăng.",
+      "bullets": []
+    },
+    {
+      "id": "source-quality",
+      "title": "Nhận diện & cải thiện chất lượng nguồn quay",
+      "description": "Nếu khi quay bạn nói vấp hay nhầm lỗi, ứng dụng có thể nhận diện thông minh và cắt bỏ đoạn thừa để video cuối mượt mà, chuyên nghiệp và giữ chân người xem tốt hơn.",
+      "bullets": []
+    },
+    {
+      "id": "localization",
+      "title": "Dịch thuật & bản địa hóa nội dung toàn cầu",
+      "description": "Hỗ trợ mở rộng thị trường hoặc khai thác nội dung quốc tế (ví dụ review sản phẩm nước ngoài).",
+      "bullets": [
+        "Bản địa hóa thông minh: chuyển phụ đề sang tiếng Việt hoặc ngôn ngữ đích.",
+        "Lồng tiếng AI: giọng đọc tiếng Việt tự nhiên, phù hợp thuần phong và thói quen nghe."
+      ]
+    },
+    {
+      "id": "filters",
+      "title": "Thư viện bộ lọc & hiệu ứng sáng tạo",
+      "description": "Hàng trăm bộ lọc và hiệu ứng hình ảnh giúp làm mới nội dung, tạo điểm nhấn nghệ thuật và tăng độ hấp dẫn so với video cùng loại trên nền tảng.",
+      "bullets": []
+    }
+  ],
+  "downloadSection": {
+    "label": "Download app",
+    "title": "Chọn bản phù hợp máy của bạn",
+    "subtitle": "Phiên bản {version} — file cài đặt được phục vụ qua GitHub Releases (nhấn thẻ để tải).",
+    "ctaDownloads": "Tải xuống",
+    "githubAll": "Xem tất cả bản phát hành trên GitHub"
+  },
+  "downloadCards": {
+    "mac-apple-silicon": {
+      "title": "macOS (Apple Silicon)",
+      "subtitle": "Chip M1 / M2 / M3 trở lên"
+    },
+    "mac-intel": {
+      "title": "macOS (Intel)",
+      "subtitle": "Mac dùng chip Intel"
+    },
+    "windows": {
+      "title": "Windows",
+      "subtitle": "Windows 10 / 11"
+    }
+  }
+}

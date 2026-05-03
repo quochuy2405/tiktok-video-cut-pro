@@ -1,0 +1,161 @@
+{
+  "categoryLabel": "Legal",
+  "metaTitle": "Terms of Service — TikTok Video Cut Pro",
+  "metaDescription": "License, acceptable use, warranties, liability limits, and third-party compliance information for TikTok Video Cut Pro.",
+  "title": "Terms of Service",
+  "updatedLabel": "Last updated",
+  "updatedDate": "May 3, 2026",
+  "lawyerNotice": "These Terms allocate risk and limit our liability to the fullest extent permitted by law. They are not legal advice. Many disclaimers apply only to the extent local mandatory law allows; non-waivable consumer rights where you live remain in effect where required.",
+  "sections": [
+    {
+      "title": "1. Agreement and acceptance",
+      "paragraphs": [
+        "These Terms form a binding agreement between you and the operator of TikTok Video Cut Pro (\"we\", \"us\") regarding your download, installation, and use of the TikTok Video Cut Pro desktop application (the \"App\").",
+        "By installing, opening, or continuing to use the App after we publish updates to these Terms or to our Privacy Policy, you agree to be bound by the then-current documents."
+      ]
+    },
+    {
+      "title": "2. Definitions",
+      "paragraphs": [
+        "\"User Content\" means videos, audio, subtitles, labels, presets, and related materials that you import, edit, or export on your device.",
+        "\"Third-Party Services\" means platforms or infrastructure not fully controlled by us (for example download hosts or CDNs that distribute installers, TikTok, and other social networks where you publish outputs).",
+        "\"AI Features\" means capabilities that analyse User Content (speech, language, imagery) to propose edits, captions, dubbing, or quality improvements as described in-product."
+      ]
+    },
+    {
+      "title": "3. Eligibility and local compliance",
+      "paragraphs": [
+        "You represent that you have legal capacity to enter into these Terms where you live and that your publishing activity complies with advertising, copyright, trademark, publicity, voice-cloning, and platform rules applicable to your uploads.",
+        "If you use the App on behalf of a business, you confirm that you have authority to bind that organisation and that your agreements with customers do not conflict with these Terms."
+      ]
+    },
+    {
+      "title": "4. Licence grant and restrictions",
+      "paragraphs": [
+        "Subject to law, we grant you a limited, non-exclusive, non-transferable, revocable licence to install and run a legitimate copy of the App on hardware you own or control for creating and editing your own video workflows."
+      ],
+      "bullets": [
+        "You must not resell, rent, sublicense, or redistribute the App as a standalone commercial offering.",
+        "You must not reverse engineer or attempt to extract source code except where mandatory law permits.",
+        "You must not remove proprietary notices or misuse our trademarks.",
+        "You must not systematically replicate our core workflows to build a competing desktop editor."
+      ]
+    },
+    {
+      "title": "5. Updates, beta features, and discontinuance",
+      "paragraphs": [
+        "We may ship patches or upgrades to maintain security and reliability. Updates may require accepting revised Terms or Privacy disclosures.",
+        "We do not guarantee indefinite availability of any specific feature or project format—maintain backups and test upgrades before production workloads."
+      ]
+    },
+    {
+      "title": "6. User Content and platform policies",
+      "paragraphs": [
+        "You retain ownership of your User Content except for components licensed separately inside the App (for example stock packs governed by their own notices).",
+        "You are solely responsible for clearing rights in music, likeness, branding, and translated voice outputs before publishing to TikTok or elsewhere.",
+        "We do not pre-screen local User Content on your machine and are not liable for distribution choices or algorithmic outcomes on third-party platforms."
+      ]
+    },
+    {
+      "title": "7. Intellectual property in the App",
+      "paragraphs": [
+        "The App, documentation, and branding are protected by copyright, trademark, and other laws. No ownership rights transfer to you beyond the limited licence stated above."
+      ]
+    },
+    {
+      "title": "8. Feedback",
+      "paragraphs": [
+        "If you submit feedback or bug reports, you grant us a perpetual licence to use them to improve the product without owing royalties unless we sign a separate agreement stating otherwise."
+      ]
+    },
+    {
+      "title": "9. Third-party distribution and integrations",
+      "paragraphs": [
+        "Installers may be delivered via our website, third-party mirrors, or other hosts—those services impose their own legal terms.",
+        "Future integrations (single sign-on, cloud renders, billing) will add vendor-specific terms and privacy disclosures."
+      ]
+    },
+    {
+      "title": "10. AI Features",
+      "paragraphs": [
+        "Outputs may be inaccurate or inappropriate for regulated industries; you remain responsible for final editorial and compliance review.",
+        "Speech, translation, and dubbing features may process personal data—see the Privacy Policy for purposes, legal bases, and choices."
+      ]
+    },
+    {
+      "title": "11. Disclaimer of warranties",
+      "paragraphs": [
+        "THE APP IS PROVIDED \"AS IS\" AND \"AS AVAILABLE\". TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE—INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, QUIET ENJOYMENT, NON-INFRINGEMENT, ACCURACY, RELIABILITY, UNINTERRUPTED OR ERROR-FREE OPERATION, ABSENCE OF VIRUSES OR HARMFUL COMPONENTS, AND ANY WARRANTY ARISING FROM COURSE OF DEALING OR TRADE USAGE.",
+        "Nothing in the App, documentation, or marketing is legal, accounting, tax, medical, regulated-communications, or performance advice, or a promise of algorithmic reach, views, revenue, or compliance with TikTok or any platform's policies.",
+        "We do not warrant compatibility with every OS build, driver, codec, peripheral, or third-party program; we do not warrant recoverability of projects after crashes, disk failure, or upgrades."
+      ],
+      "bullets": [
+        "Screenshots, demos, and feature descriptions are illustrative only—not commitments to specific benchmarks.",
+        "We are not responsible for conduct, outages, or enforcement actions by download hosts, TikTok, AI vendors, CDNs, or any third party.",
+        "If your jurisdiction does not allow exclusion of certain implied warranties, their duration is limited to the maximum period permitted by law."
+      ]
+    },
+    {
+      "title": "12. Limitation of liability",
+      "paragraphs": [
+        "TO THE MAXIMUM EXTENT PERMITTED BY LAW (AND EXCEPT WHERE MANDATORY LAW FORBIDS EXCLUSION—SUCH AS FRAUD, INTENT, OR DEATH/PERSONAL INJURY CAUSED BY NEGLIGENCE WHERE NON-WAIVABLE), WE AND OUR AFFILIATES, DIRECTORS, EMPLOYEES, CONTRACTORS, AND AGENTS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES; LOSS OF PROFITS, DATA, REVENUE, GOODWILL, OR BUSINESS OPPORTUNITIES; BUSINESS INTERRUPTION; COST OF SUBSTITUTE SOFTWARE; OR DAMAGE FROM LOST OR IRRECOVERABLE CONTENT—WHETHER BASED ON CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, OR ANY OTHER THEORY, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+        "YOUR SOLE AND EXCLUSIVE REMEDY (WHERE PERMITTED BY LAW) IS TO STOP USING THE APP AND UNINSTALL IT; NOTHING HERE GUARANTEES YOU WILL RECEIVE MONEY DAMAGES.",
+        "OUR TOTAL AGGREGATE LIABILITY FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THESE TERMS OR THE APP—WHERE PERMITTED BY LAW—SHALL NOT EXCEED THE LESSER OF (I) THE TOTAL FEES YOU ACTUALLY PAID TO US FOR THE APP IN THE TWELVE (12) MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM AND (II) FIFTY US DOLLARS (USD $50). IF YOU PAID NO FEES, THE CAP SHALL NOT EXCEED USD $50 (OR THE LOWEST AMOUNT LOCAL CONSUMER LAW PERMITS, IF LOWER)."
+      ],
+      "bullets": [
+        "You understand that publishing to TikTok or elsewhere may trigger account strikes, takedowns, shadow restrictions, or copyright disputes—we are not liable for those outcomes.",
+        "We are not liable for failures of cloud/AI vendors, network outages, installer download availability, or third-party policy changes.",
+        "Where permitted where you live, you agree these limits reflect a reasonable allocation of risk and are an essential basis for our granting access."
+      ]
+    },
+    {
+      "title": "13. Indemnity",
+      "paragraphs": [
+        "To the extent permitted by law, you will defend, indemnify, and hold harmless us and our affiliates, shareholders, directors, employees, contractors, licensors, and agents from any claims, investigations, regulatory inquiries, proceedings, administrative fines (where assignment to you is lawful), damages, settlements, and reasonable expenses including attorneys' and experts' fees—to the extent arising from or related to: (i) your User Content or anything you publish using the App; (ii) your breach of these Terms or applicable law; (iii) disputes between you and TikTok, rights-holders, likeness/voice subjects, or any third party; or (iv) your reliance on or misuse of AI Features.",
+        "These indemnity obligations survive termination of your licence for claims arising during the period you were permitted to use the App."
+      ]
+    },
+    {
+      "title": "14. Governing law and disputes",
+      "paragraphs": [
+        "If you reside in Vietnam, disputes shall first be addressed through good-faith negotiation; unresolved matters fall under the jurisdiction of competent Vietnamese courts unless mandatory consumer law dictates otherwise.",
+        "If you reside elsewhere, nothing in these Terms limits non-waivable rights granted by your local consumer protection statutes.",
+        "Where permitted by your local law and consistent with non-waivable consumer protections, you agree that claims may only be brought in your individual capacity—not as a plaintiff or class member in any representative proceeding; if such a restriction is void, the remainder of this section remains enforceable to the fullest extent."
+      ]
+    },
+    {
+      "title": "15. Suspension and termination",
+      "paragraphs": [
+        "We may suspend or terminate access if you materially breach these Terms or if required by law. Upon termination you must cease using unauthorised copies of the App.",
+        "Sections intended to survive (IP, disclaimers, liability limits, indemnity, governing law) remain effective where permissible."
+      ]
+    },
+    {
+      "title": "16. Changes",
+      "paragraphs": [
+        "We may modify these Terms to reflect product or legal changes. Material updates will be communicated via the App, release notes, or email where available. Continued use after the effective date constitutes acceptance unless consent must be obtained separately under applicable law."
+      ]
+    },
+    {
+      "title": "17. Assumption of risk and release",
+      "paragraphs": [
+        "You voluntarily use the App with knowledge of technology risks (data loss, corrupted timelines, export defects, etc.) and agree that you—not us—are responsible for backups, clearance of rights, and compliance vetting before publication.",
+        "Where permitted by your local law, you waive and release any claims, known or unknown, arising out of or relating to the App against us and the parties listed in the Indemnity section—including claims you do not currently suspect to exist—in each case except where law prohibits waiver of particular rights or claims."
+      ]
+    },
+    {
+      "title": "18. General",
+      "paragraphs": [
+        "If any provision is invalid, the remainder stays enforceable to the fullest extent.",
+        "You may not assign these Terms without our consent; we may assign them in connection with a reorganisation or acquisition.",
+        "Translations are for convenience; where conflicts arise, mandatory local protections prevail."
+      ]
+    },
+    {
+      "title": "19. Contact",
+      "paragraphs": [
+        "Legal notices should be submitted using the contact channels published on our official product website or documentation (for example a designated legal or support inbox)."
+      ]
+    }
+  ]
+}

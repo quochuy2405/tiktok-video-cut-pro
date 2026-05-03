@@ -44,8 +44,8 @@ export async function generateMetadata({
     },
     description: t("description"),
     icons: {
-      icon: [{ url: "/logo.png", type: "image/png" }],
-      apple: [{ url: "/logo.png", type: "image/png", sizes: "180x180" }],
+      icon: [{ url: "/icon.png", type: "image/png" }],
+      apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
     },
     openGraph: {
       title: "TikTok Video Cut Pro",

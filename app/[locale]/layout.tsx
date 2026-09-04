@@ -1,11 +1,22 @@
 import { IBM_Plex_Mono, Inter } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { routing } from "@/i18n/routing";
+import { APP_NAME } from "@/lib/brand";
+import {
+  absoluteLocaleUrl,
+  getSiteUrl,
+  hreflangAlternates,
+  OG_IMAGE,
+  openGraphAlternateLocales,
+  openGraphLocale,
+  SITE,
+} from "@/lib/site";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -28,36 +39,89 @@ export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
-}) {
+}): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
-
-  const siteUrl =
-    process.env.NEXT_PUBLIC_SITE_URL ??
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined);
+  const siteUrl = getSiteUrl();
+  const keywords = t.raw("keywords") as string[];
 
   return {
-    ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
+    metadataBase: new URL(siteUrl),
     title: {
       default: t("titleDefault"),
-      template: "%s · TikTok Video Cut Pro",
+      template: `%s · ${APP_NAME}`,
     },
     description: t("description"),
+    applicationName: t("applicationName"),
+    authors: [{ name: SITE.copyrightHolder, url: absoluteLocaleUrl(locale) }],
+    creator: t("creator"),
+    publisher: SITE.copyrightHolder,
+    category: t("category"),
+    keywords,
+    referrer: "origin-when-cross-origin",
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
     icons: {
-      icon: [{ url: "/icon.png", type: "image/png" }],
+      icon: [{ url: "/icon.png", type: "image/png", sizes: "512x512" }],
       apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
     },
+    manifest: "/manifest.webmanifest",
+    alternates: {
+      canonical: absoluteLocaleUrl(locale),
+      languages: hreflangAlternates(),
+    },
     openGraph: {
-      title: "TikTok Video Cut Pro",
-      description: t("description"),
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      url: absoluteLocaleUrl(locale),
+      siteName: APP_NAME,
+      locale: openGraphLocale(locale),
+      alternateLocale: openGraphAlternateLocales(locale),
       type: "website",
-      images: [{ url: "/logo.png", width: 512, height: 512, alt: "TikTok Video Cut Pro" }],
+      images: [
+        {
+          url: OG_IMAGE.path,
+          width: OG_IMAGE.width,
+          height: OG_IMAGE.height,
+          alt: t("ogImageAlt"),
+          type: OG_IMAGE.type,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "TikTok Video Cut Pro",
-      description: t("description"),
-      images: ["/logo.png"],
+      title: t("twitterTitle"),
+      description: t("twitterDescription"),
+      images: [
+        {
+          url: OG_IMAGE.path,
+          width: OG_IMAGE.width,
+          height: OG_IMAGE.height,
+          alt: t("ogImageAlt"),
+        },
+      ],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
+    appleWebApp: {
+      capable: true,
+      title: APP_NAME,
+      statusBarStyle: "black-translucent",
+    },
+    other: {
+      "theme-color": "#050507",
     },
   };
 }

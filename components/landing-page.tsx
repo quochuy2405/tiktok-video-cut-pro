@@ -9,10 +9,10 @@ import {
   Clapperboard,
   Copy,
   Download,
-  Languages,
-  Mic,
-  Palette,
-  Sparkles,
+  Captions,
+  LayoutTemplate,
+  Shuffle,
+  Smartphone,
 } from "lucide-react";
 import { useCallback, useRef, useState } from "react";
 
@@ -20,9 +20,11 @@ import { FadeIn } from "@/components/fade-in";
 import { buttonVariants } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import {
+  DESKTOP_DOWNLOAD_ASSETS,
   DISPLAY_APP_VERSION,
-  DOWNLOAD_ASSETS,
+  MOBILE_DOWNLOAD_ASSETS,
   githubReleasesTagPageUrl,
+  type DownloadAsset,
 } from "@/lib/downloads";
 import { cn } from "@/lib/utils";
 
@@ -49,13 +51,17 @@ type InstallSectionCopy = {
   copiedCommandLabel: string;
   winTitle: string;
   winSteps: string[];
+  iosTitle: string;
+  iosSteps: string[];
+  androidTitle: string;
+  androidSteps: string[];
 };
 
 const FEATURE_ICONS = {
   "smart-edit": Clapperboard,
-  "source-quality": Mic,
-  localization: Languages,
-  filters: Palette,
+  "source-quality": LayoutTemplate,
+  localization: Captions,
+  filters: Shuffle,
 } as const;
 
 const easeOut = [0.22, 1, 0.36, 1] as const;
@@ -76,6 +82,99 @@ function WindowsInstallMark({ className }: { className?: string }) {
     >
       <path d="M3 3h9v9H3V3zm10 0h9v9h-9V3zM3 13h9v9H3v-9zm10 0h9v9h-9v-9z" />
     </svg>
+  );
+}
+
+function PlatformMark({
+  id,
+  className,
+}: {
+  id: DownloadAsset["id"];
+  className?: string;
+}) {
+  if (id === "windows") {
+    return <WindowsInstallMark className={className} />;
+  }
+  if (id === "android") {
+    return <Smartphone className={className} strokeWidth={2} />;
+  }
+  if (id === "ios") {
+    return <Apple className={className} strokeWidth={2} />;
+  }
+  return <Apple className={className} strokeWidth={2} />;
+}
+
+function DownloadCard({
+  asset,
+  card,
+  ctaLabel,
+  comingSoonLabel,
+  delay,
+}: {
+  asset: DownloadAsset;
+  card?: DownloadCardCopy;
+  ctaLabel: string;
+  comingSoonLabel: string;
+  delay: number;
+}) {
+  const available = Boolean(asset.href);
+  const content = (
+    <>
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="flex shrink-0 items-start justify-between gap-3 sm:gap-4">
+        <div className="min-w-0 flex-1 pr-2">
+          <h3 className="font-heading text-lg font-semibold leading-snug tracking-[-0.2px] text-white sm:text-xl">
+            {card?.title ?? asset.title}
+          </h3>
+          <p className="mt-1.5 text-sm text-zinc-400">
+            {card?.subtitle ?? asset.subtitle}
+          </p>
+        </div>
+        <span
+          className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10"
+          aria-hidden
+        >
+          <PlatformMark id={asset.id} className="size-[1.25rem]" />
+        </span>
+      </div>
+
+      <div className="mt-6 flex min-h-0 flex-1 flex-col justify-between gap-4">
+        <p className="break-all text-[12px] leading-snug text-zinc-500 sm:break-words">
+          {asset.fileLabel}
+        </p>
+        <span
+          className={cn(
+            "inline-flex shrink-0 items-center gap-2 text-sm font-medium",
+            available ? "text-brand" : "text-zinc-500",
+          )}
+        >
+          <Download className="size-4 shrink-0" aria-hidden />
+          {available ? ctaLabel : comingSoonLabel}
+        </span>
+      </div>
+    </>
+  );
+
+  return (
+    <FadeIn className="h-full min-h-0 min-w-0" delay={delay}>
+      {available ? (
+        <a
+          href={asset.href!}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative flex h-full min-h-[240px] min-w-0 w-full flex-col overflow-hidden rounded-[20px] border border-white/[0.1] bg-white/[0.03] p-6 transition-colors hover:border-white/20 hover:bg-white/[0.05] sm:p-8 md:min-h-[260px] md:p-9"
+        >
+          {content}
+        </a>
+      ) : (
+        <div
+          className="relative flex h-full min-h-[240px] min-w-0 w-full flex-col overflow-hidden rounded-[20px] border border-dashed border-white/[0.12] bg-white/[0.02] p-6 opacity-80 sm:p-8 md:min-h-[260px] md:p-9"
+          aria-disabled
+        >
+          {content}
+        </div>
+      )}
+    </FadeIn>
   );
 }
 
@@ -150,26 +249,25 @@ export function LandingPage() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: easeOut }}
           >
-            <div className="absolute inset-0 scale-110 rounded-[28px] bg-brand/25 blur-2xl" aria-hidden />
+            <div className="absolute inset-0 scale-110 rounded-[28px] bg-brand/15 blur-2xl" aria-hidden />
             <Image
               src="/logo.png"
               alt={t("hero.logoAlt")}
               width={132}
               height={132}
               priority
-              className="relative size-[7.25rem] rounded-[26px] shadow-2xl ring-2 ring-brand/40 md:size-36 md:rounded-[28px]"
+              className="relative size-[7.25rem] rounded-[26px] shadow-2xl ring-1 ring-white/10 md:size-36 md:rounded-[28px]"
             />
           </motion.div>
 
-          <motion.div
-            className="mb-5 inline-flex max-w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full border border-white/15 bg-white/[0.06] px-3 py-2 text-center font-mono text-[10px] font-semibold uppercase leading-snug tracking-[0.65px] text-brand backdrop-blur-md sm:px-4 sm:text-[11px] sm:tracking-[0.7px]"
-            initial={reduceMotion ? false : { opacity: 0, y: 14 }}
+          <motion.p
+            className="mb-6 font-heading text-[15px] font-medium tracking-[-0.02em] text-zinc-300"
+            initial={reduceMotion ? false : { opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, ease: easeOut, delay: 0.06 }}
+            transition={{ duration: 0.4, ease: easeOut, delay: 0.06 }}
           >
-            <Sparkles className="size-3.5 text-brand" aria-hidden />
-            {t("hero.badge", { version: DISPLAY_APP_VERSION })}
-          </motion.div>
+            {t("hero.productName")}
+          </motion.p>
 
           <motion.h1
             className="font-heading max-w-[min(100%,22rem)] text-[clamp(1.85rem,6vw+0.25rem,4.25rem)] font-semibold leading-[1.08] tracking-[-0.06em] text-white text-balance md:max-w-none md:tracking-[-1.35px]"
@@ -226,10 +324,10 @@ export function LandingPage() {
       >
         <div className="mx-auto min-w-0 max-w-[1200px]">
           <FadeIn className="mx-auto max-w-2xl text-center">
-            <p className="font-mono text-[12px] font-semibold uppercase tracking-[0.65px] text-brand">
+            <p className="text-sm font-medium text-zinc-400">
               {t("featuresSection.label")}
             </p>
-            <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
+            <h2 className="font-heading mt-3 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
               {t("featuresSection.title")}
             </h2>
             <p className="mt-5 text-base leading-relaxed text-zinc-400 md:text-lg">
@@ -291,10 +389,10 @@ export function LandingPage() {
       >
         <div className="mx-auto min-w-0 max-w-[1200px]">
           <FadeIn className="mx-auto max-w-2xl text-center">
-            <p className="font-mono text-[12px] font-semibold uppercase tracking-[0.65px] text-brand">
+            <p className="text-sm font-medium text-zinc-400">
               {t("downloadSection.label")}
             </p>
-            <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem]">
+            <h2 className="font-heading mt-3 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem]">
               {t("downloadSection.title")}
             </h2>
             <p className="mt-5 text-base leading-relaxed text-zinc-400 md:text-lg">
@@ -302,59 +400,42 @@ export function LandingPage() {
             </p>
           </FadeIn>
 
-          <div className="mt-14 grid grid-cols-1 items-stretch gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {DOWNLOAD_ASSETS.map((asset, index) => {
-              const card = downloadCards[asset.id];
+          <div className="mt-14 space-y-12">
+            <div>
+              <h3 className="mb-5 text-center text-sm font-medium text-zinc-300 md:text-left">
+                {t("downloadSection.desktopLabel")}
+              </h3>
+              <div className="grid grid-cols-1 items-stretch gap-5 md:grid-cols-2 lg:grid-cols-3">
+                {DESKTOP_DOWNLOAD_ASSETS.map((asset, index) => (
+                  <DownloadCard
+                    key={asset.id}
+                    asset={asset}
+                    card={downloadCards[asset.id]}
+                    ctaLabel={t("downloadSection.ctaDownloads")}
+                    comingSoonLabel={t("downloadSection.comingSoon")}
+                    delay={index * 0.05}
+                  />
+                ))}
+              </div>
+            </div>
 
-              return (
-                <FadeIn
-                  key={asset.id}
-                  className="h-full min-h-0 min-w-0"
-                  delay={index * 0.05}
-                >
-                  <a
-                    href={asset.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={cn(
-                      "glass-panel group hover:border-brand/40 relative flex h-full min-h-[260px] min-w-0 w-full flex-col overflow-hidden rounded-[24px] p-6 transition-all duration-300 hover:-translate-y-1 hover:glow-brand-sm sm:p-8 md:min-h-[280px] md:p-9",
-                    )}
-                  >
-                    <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                    <div className="flex shrink-0 items-start justify-between gap-3 sm:gap-4">
-                      <div className="min-w-0 flex-1 pr-2">
-                        <h3 className="font-heading text-lg font-semibold leading-snug tracking-[-0.2px] text-white sm:text-xl">
-                          {card?.title ?? asset.title}
-                        </h3>
-                        <p className="mt-1.5 text-sm text-zinc-400">
-                          {card?.subtitle ?? asset.subtitle}
-                        </p>
-                      </div>
-                      <span
-                        className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-brand/15 text-brand shadow-lg shadow-brand/25 ring-1 ring-brand/30 transition-transform duration-300 group-hover:scale-105 group-hover:shadow-brand/35"
-                        aria-hidden
-                      >
-                        {asset.id === "windows" ? (
-                          <WindowsInstallMark className="size-[1.25rem]" />
-                        ) : (
-                          <Apple className="size-[1.35rem]" strokeWidth={2} />
-                        )}
-                      </span>
-                    </div>
-
-                    <div className="mt-6 flex min-h-0 flex-1 flex-col justify-between gap-4">
-                      <p className="break-all font-mono text-[10px] font-medium uppercase leading-snug tracking-[0.55px] text-zinc-500 sm:break-words">
-                        {asset.fileLabel}
-                      </p>
-                      <span className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-brand">
-                        <Download className="size-4 shrink-0" aria-hidden />
-                        {t("downloadSection.ctaDownloads")}
-                      </span>
-                    </div>
-                  </a>
-                </FadeIn>
-              );
-            })}
+            <div>
+              <h3 className="mb-5 text-center text-sm font-medium text-zinc-300 md:text-left">
+                {t("downloadSection.mobileLabel")}
+              </h3>
+              <div className="grid grid-cols-1 items-stretch gap-5 md:grid-cols-2">
+                {MOBILE_DOWNLOAD_ASSETS.map((asset, index) => (
+                  <DownloadCard
+                    key={asset.id}
+                    asset={asset}
+                    card={downloadCards[asset.id]}
+                    ctaLabel={t("downloadSection.ctaStore")}
+                    comingSoonLabel={t("downloadSection.comingSoon")}
+                    delay={index * 0.05}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
 
           <FadeIn
@@ -362,19 +443,17 @@ export function LandingPage() {
             className="mt-16 scroll-mt-[72px] md:mt-24"
           >
             <div className="mx-auto max-w-2xl text-center">
-              <p className="font-mono text-[12px] font-semibold uppercase tracking-[0.65px] text-brand">
-                {install.label}
-              </p>
-              <h2 className="font-heading mt-4 text-[1.65rem] font-semibold tracking-[-0.85px] text-white md:text-[2rem]">
+              <p className="text-sm font-medium text-zinc-400">{install.label}</p>
+              <h2 className="font-heading mt-3 text-[1.65rem] font-semibold tracking-[-0.85px] text-white md:text-[2rem]">
                 {install.title}
               </h2>
             </div>
 
             <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
-              <div className="glass-panel min-w-0 rounded-[24px] border-white/[0.08] p-5 sm:p-7 md:p-8">
+              <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
                 <h3 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
                   <span
-                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/25"
+                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10"
                     aria-hidden
                   >
                     <Apple className="size-[1.35rem]" strokeWidth={2} />
@@ -383,7 +462,7 @@ export function LandingPage() {
                     {install.macTitle}
                   </span>
                 </h3>
-                <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-brand">
+                <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-zinc-500">
                   {install.macSteps.map((step, i) => (
                     <li key={`mac-${i}`}>{step}</li>
                   ))}
@@ -399,7 +478,7 @@ export function LandingPage() {
                       "inline-flex w-fit shrink-0 items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] font-semibold transition-colors",
                       macCommandCopied
                         ? "border-brand/50 bg-brand/15 text-brand"
-                        : "border-white/[0.12] bg-white/[0.04] text-zinc-300 hover:border-brand/35 hover:bg-white/[0.07] hover:text-white",
+                        : "border-white/[0.12] bg-white/[0.04] text-zinc-300 hover:border-white/25 hover:bg-white/[0.07] hover:text-white",
                     )}
                     aria-label={install.copyCommandLabel}
                   >
@@ -414,7 +493,7 @@ export function LandingPage() {
                   </button>
                 </div>
                 <pre
-                  className="mt-2 max-w-full overflow-x-auto rounded-xl border border-white/[0.08] bg-[#0a0a0c] p-3 font-mono text-[11px] leading-snug text-brand sm:p-4 sm:text-[12px] md:text-[13px]"
+                  className="mt-2 max-w-full overflow-x-auto rounded-xl border border-white/[0.08] bg-[#0a0a0c] p-3 font-mono text-[11px] leading-snug text-zinc-300 sm:p-4 sm:text-[12px] md:text-[13px]"
                   tabIndex={0}
                 >
                   <code className="break-all whitespace-pre-wrap sm:break-normal sm:whitespace-pre">
@@ -423,10 +502,10 @@ export function LandingPage() {
                 </pre>
               </div>
 
-              <div className="glass-panel min-w-0 rounded-[24px] border-white/[0.08] p-5 sm:p-7 md:p-8">
+              <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
                 <h3 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
                   <span
-                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-sky-500/15 text-sky-300 ring-1 ring-sky-400/35"
+                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10"
                     aria-hidden
                   >
                     <WindowsInstallMark className="size-[1.15rem]" />
@@ -435,9 +514,47 @@ export function LandingPage() {
                     {install.winTitle}
                   </span>
                 </h3>
-                <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-brand">
+                <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-zinc-500">
                   {install.winSteps.map((step, i) => (
                     <li key={`win-${i}`}>{step}</li>
+                  ))}
+                </ol>
+              </div>
+
+              <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
+                <h3 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
+                  <span
+                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10"
+                    aria-hidden
+                  >
+                    <Apple className="size-[1.35rem]" strokeWidth={2} />
+                  </span>
+                  <span className="min-w-0 flex-1 leading-snug pt-0.5">
+                    {install.iosTitle}
+                  </span>
+                </h3>
+                <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-zinc-500">
+                  {install.iosSteps.map((step, i) => (
+                    <li key={`ios-${i}`}>{step}</li>
+                  ))}
+                </ol>
+              </div>
+
+              <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
+                <h3 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
+                  <span
+                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10"
+                    aria-hidden
+                  >
+                    <Smartphone className="size-[1.25rem]" strokeWidth={2} />
+                  </span>
+                  <span className="min-w-0 flex-1 leading-snug pt-0.5">
+                    {install.androidTitle}
+                  </span>
+                </h3>
+                <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-zinc-500">
+                  {install.androidSteps.map((step, i) => (
+                    <li key={`android-${i}`}>{step}</li>
                   ))}
                 </ol>
               </div>

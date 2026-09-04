@@ -1,52 +1,56 @@
 {
   "hero": {
-    "badge": "TikTok Video Cut Pro · v{version}",
-    "titleLead": "Edit lean.",
-    "titleAccent": "Ship faster.",
-    "subtitle": "A desktop workflow for TikTok creators — intelligent post-production, cleaner dialogue, localization, and effects in one place.",
+    "productName": "Tizan Cut Pro",
+    "titleLead": "Shoot once.",
+    "titleAccent": "Post many sales clips.",
+    "subtitle": "For shops, KOCs, and KOLs: turn one product video into many sales-ready clips for TikTok, Reels, or Shorts — without rebuilding every post from scratch.",
     "ctaPrimary": "Download app",
-    "ctaSecondary": "Explore features",
-    "logoAlt": "TikTok Video Cut Pro app icon"
+    "ctaSecondary": "See features",
+    "logoAlt": "Tizan Cut Pro app icon"
   },
   "featuresSection": {
     "label": "Features",
-    "title": "Everything you need after you hit record",
-    "subtitle": "Four pillars to publish quicker, polish dialogue, and reach Vietnamese and global audiences with confidence."
+    "title": "Sales videos, without the editing headache",
+    "subtitle": "Not a complicated film editor. Built to help you turn footage you already have into more product clips you can post."
   },
   "features": [
     {
       "id": "smart-edit",
-      "title": "Smart-Edit pipeline",
-      "description": "Automate baseline edits like trims and shot duplication from a single master cut so you can spin distribution-ready variants while keeping each upload feeling fresh and authentic.",
+      "title": "One product video → many posts",
+      "description": "Add your product footage, then cut it into different versions: different openings, highlights, and lengths. Enough clips to post regularly without filming again.",
       "bullets": []
     },
     {
       "id": "source-quality",
-      "title": "Speech-aware cleanup",
-      "description": "Detect fillers and awkward takes so you can remove dead air and mistakes — tighter pacing, more professional delivery, and stronger retention.",
+      "title": "Ready-made templates for shops & creators",
+      "description": "Common sales formats are ready to use: unboxing, quick review, before/after, product demo, and buy-now close. Pick a template, drop in your video, export for selling platforms.",
       "bullets": []
     },
     {
       "id": "localization",
-      "title": "Translation & global-ready localization",
-      "description": "Grow abroad or repurpose international footage (for example foreign-language product reviews).",
+      "title": "Captions and talk that help sell",
+      "description": "Trim stumbles and add captions that call out price, offers, and product benefits — so people scrolling on their phone get it fast and are more likely to buy.",
       "bullets": [
-        "Smart subtitles: translate captions into Vietnamese or your target language.",
-        "AI dubbing: natural Vietnamese reads tuned for local listening habits."
+        "Captions that highlight price, offers, and key benefits.",
+        "Clearer voice for reviews and clips cut from livestreams."
       ]
     },
     {
       "id": "filters",
-      "title": "Filters & creative effects library",
-      "description": "Hundreds of filters and motion treatments to differentiate your visuals and stand out in crowded vertical feeds.",
+      "title": "Make each clip feel different",
+      "description": "Change pacing, framing, and light effects so clips from the same footage don’t look identical — useful when you sell many products or post on several channels.",
       "bullets": []
     }
   ],
   "downloadSection": {
-    "label": "Download app",
-    "title": "Pick the build for your machine",
-    "subtitle": "Version {version} — tap a card to download the installer for your platform.",
+    "label": "Download",
+    "title": "Phone or computer",
+    "subtitle": "Version {version} — choose the build for your device.",
+    "desktopLabel": "Computer",
+    "mobileLabel": "Phone",
     "ctaDownloads": "Download",
+    "ctaStore": "Open store",
+    "comingSoon": "Coming soon",
     "githubAll": "See all releases"
   },
   "downloadCards": {
@@ -56,30 +60,50 @@
     },
     "mac-intel": {
       "title": "macOS (Intel)",
-      "subtitle": "Intel-based Mac hardware"
+      "subtitle": "Intel-based Mac"
     },
     "windows": {
       "title": "Windows",
       "subtitle": "Windows 10 / 11"
+    },
+    "ios": {
+      "title": "iOS",
+      "subtitle": "iPhone & iPad"
+    },
+    "android": {
+      "title": "Android",
+      "subtitle": "Phone & tablet"
     }
   },
   "installSection": {
-    "label": "Setup guide",
-    "title": "Installation instructions",
+    "label": "Setup",
+    "title": "Quick install",
     "macTitle": "macOS",
     "macSteps": [
-      "Drag the app into your /Applications folder.",
+      "Drag the app into /Applications.",
       "Open Terminal (⌘ Space → type Terminal)."
     ],
     "macCommandLabel": "Run:",
-    "macCommand": "xattr -cr /Applications/Tiktok\\ Video\\ Cut\\ Pro.app",
+    "macCommand": "xattr -cr /Applications/Tizan\\ Cut\\ Pro.app",
     "copyCommandLabel": "Copy command",
     "copiedCommandLabel": "Copied",
     "winTitle": "Windows",
     "winSteps": [
-      "Download the .exe using the cards above.",
-      "Open the installer to run the app.",
-      "If Windows Defender shows a warning → More info → Run anyway."
+      "Download the .exe from the cards above.",
+      "Open it to install and start using the app.",
+      "If Windows shows a warning → More info → Run anyway."
+    ],
+    "iosTitle": "iOS",
+    "iosSteps": [
+      "Open the App Store link in the Phone section (when available).",
+      "Tap Install and sign in with your Apple ID if asked.",
+      "Open Tizan Cut Pro from your Home Screen."
+    ],
+    "androidTitle": "Android",
+    "androidSteps": [
+      "Open the Google Play link in the Phone section (when available).",
+      "Tap Install and allow permissions if asked.",
+      "Open Tizan Cut Pro from your apps list."
     ]
   }
 }

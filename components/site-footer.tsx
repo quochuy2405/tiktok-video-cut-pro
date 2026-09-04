@@ -26,7 +26,7 @@ export function SiteFooter() {
               className="size-11 shrink-0 rounded-2xl shadow-lg shadow-brand/20 ring-1 ring-white/10"
             />
             <span className="font-heading text-base font-semibold tracking-[-0.02em] text-white">
-              TikTok Video Cut Pro
+              Tizan Cut Pro
             </span>
           </Link>
           <p className="text-sm leading-relaxed text-zinc-400">{t("tagline")}</p>

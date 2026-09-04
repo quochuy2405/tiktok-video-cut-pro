@@ -91,7 +91,7 @@ export function SiteHeader() {
           />
           <span className="font-heading flex min-w-0 flex-col items-start gap-0.5 leading-none">
             <span className="text-[12px] font-semibold tracking-[-0.03em] text-white sm:text-[13px] md:text-[15px]">
-              TikTok Video
+              Tizan
             </span>
             <span className="bg-gradient-to-r from-brand via-[#4df5b8] to-[#5ee9b8] bg-clip-text text-[12px] font-semibold tracking-[-0.03em] text-transparent sm:text-[13px] md:text-[15px]">
               Cut Pro

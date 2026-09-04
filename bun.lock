@@ -3,7 +3,7 @@
   "configVersion": 0,
   "workspaces": {
     "": {
-      "name": "video-cut-pro",
+      "name": "tizan-cut-pro",
       "dependencies": {
         "@base-ui/react": "^1.4.1",
         "class-variance-authority": "^0.7.1",

@@ -1,40 +1,62 @@
 {
   "Metadata": {
-    "titleDefault": "TikTok Video Cut Pro — Edit faster. Publish smarter.",
-    "description": "Desktop video workflow for TikTok creators: Smart-Edit, dialogue cleanup, localization, and creative effects."
+    "titleDefault": "Tizan Cut Pro — Shoot once, post many sales videos",
+    "description": "Tizan Cut Pro helps shops, KOCs, and KOLs turn one product video into many sales clips for TikTok, Reels, and Shorts — on phone and computer.",
+    "keywords": [
+      "Tizan Cut Pro",
+      "sales video",
+      "product video editor",
+      "seller video templates",
+      "KOC",
+      "KOL",
+      "TikTok shop video",
+      "product review",
+      "unboxing",
+      "sales clips",
+      "mobile video editing",
+      "desktop video editing"
+    ],
+    "ogTitle": "Tizan Cut Pro — Create sales videos easily",
+    "ogDescription": "Template library for shops, KOCs, and KOLs. Cut, add text and trending music — ship sales videos in minutes.",
+    "ogImageAlt": "Tizan Cut Pro — sales video templates for shops, KOCs, and KOLs",
+    "twitterTitle": "Tizan Cut Pro — Create sales videos easily",
+    "twitterDescription": "Templates for sellers, KOCs, and KOLs. Cut and publish sales videos faster.",
+    "applicationName": "Tizan Cut Pro",
+    "category": "technology",
+    "creator": "Shay Shay"
   },
   "Nav": {
     "features": "Features",
     "downloadApp": "Download",
-    "installGuide": "Install guide",
+    "installGuide": "Install",
     "terms": "Terms",
     "privacy": "Privacy",
     "ctaDesktop": "Download",
     "ctaMobile": "Get",
     "menuOpen": "Open menu",
-    "sheetTitle": "Navigation",
+    "sheetTitle": "Menu",
     "sheetClose": "Close",
-    "mainNav": "Primary navigation",
+    "mainNav": "Main navigation",
     "language": "Language",
     "languageVi": "Tiếng Việt",
     "languageEn": "English",
-    "logoAlt": "TikTok Video Cut Pro app icon"
+    "logoAlt": "Tizan Cut Pro app icon"
   },
   "Footer": {
-    "tagline": "Desktop editing for TikTok creators — faster post-production, steady quality, and smart localization.",
+    "tagline": "Helps shops, KOCs, and KOLs turn one product video into many sales clips — on phone or computer.",
     "product": "Product",
     "legal": "Legal",
     "featuresLink": "Features",
     "downloadLink": "Download app",
-    "installLink": "Installation guide",
+    "installLink": "Install guide",
     "termsLink": "Terms of Service",
     "privacyLink": "Privacy Policy",
     "footerNav": "Footer links",
     "contactHeading": "Contact & licensing",
     "contactCopyright": "Copyright © Shay Shay.",
-    "contactBlurb": "Contact us to purchase license keys or for technical support:",
+    "contactBlurb": "For license keys or technical support:",
     "contactEmail": "shay.hcmc.work@gmail.com",
     "contactEmailAria": "Email shay.hcmc.work@gmail.com",
-    "copyrightBody": "Shay Shay · TikTok Video Cut Pro"
+    "copyrightBody": "Shay Shay · Tizan Cut Pro"
   }
 }

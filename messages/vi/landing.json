@@ -1,52 +1,56 @@
 {
   "hero": {
-    "badge": "TikTok Video Cut Pro · v{version}",
-    "titleLead": "Cắt gọn video.",
-    "titleAccent": "Tăng tốc sáng tạo.",
-    "subtitle": "Ứng dụng desktop cho nhà sáng tạo TikTok: hậu kỳ thông minh, làm sạch lời thoại, bản địa hóa và hiệu ứng — gọn trong một luồng làm việc.",
+    "productName": "Tizan Cut Pro",
+    "titleLead": "Quay một lần.",
+    "titleAccent": "Đăng nhiều video bán.",
+    "subtitle": "Dành cho shop, KOC và KOL: lấy một video sản phẩm, cắt thành nhiều clip bán hàng sẵn đăng TikTok, Reels hay Shorts — không cần ngồi dựng lại từ đầu mỗi ngày.",
     "ctaPrimary": "Tải ứng dụng",
     "ctaSecondary": "Xem tính năng",
-    "logoAlt": "Biểu tượng TikTok Video Cut Pro"
+    "logoAlt": "Biểu tượng Tizan Cut Pro"
   },
   "featuresSection": {
     "label": "Tính năng",
-    "title": "Mọi thứ bạn cần sau khi nhấn nút quay",
-    "subtitle": "Bốn trụ cột giúp bạn ra clip nhanh hơn, sạch hơn và sẵn sàng cho khán giả Việt và quốc tế."
+    "title": "Làm video bán hàng nhanh, đúng việc cần làm",
+    "subtitle": "Không phải app dựng phim phức tạp. Tập trung giúp bạn ra nhiều clip bán từ video đã quay sẵn."
   },
   "features": [
     {
       "id": "smart-edit",
-      "title": "Hệ thống chỉnh sửa Smart-Edit",
-      "description": "Tự động hóa các khâu chỉnh sửa hậu kỳ cơ bản (cắt ghép, nhân bản cảnh quay từ một nguồn gốc). Bạn nhanh chóng có nhiều phiên bản video khác nhau để thử nghiệm phân phối thuật toán, vẫn giữ cảm giác nguyên bản và mới cho từng bản đăng.",
+      "title": "Một video gốc → nhiều clip đăng bán",
+      "description": "Đưa video quay sản phẩm vào app, cắt thành nhiều bản khác nhau: mở đầu khác, đoạn nổi bật khác, độ dài khác. Đủ video để đăng liên tục mà không phải quay lại.",
       "bullets": []
     },
     {
       "id": "source-quality",
-      "title": "Nhận diện & cải thiện chất lượng nguồn quay",
-      "description": "Nếu khi quay bạn nói vấp hay nhầm lỗi, ứng dụng có thể nhận diện thông minh và cắt bỏ đoạn thừa để video cuối mượt mà, chuyên nghiệp và giữ chân người xem tốt hơn.",
+      "title": "Mẫu sẵn cho shop, KOC, KOL",
+      "description": "Có sẵn mẫu video bán hàng thường dùng: mở hộp, review nhanh, trước–sau, demo công dụng, kêu gọi mua. Chọn mẫu, gắn video của bạn, xuất clip đúng tỉ lệ đăng bán.",
       "bullets": []
     },
     {
       "id": "localization",
-      "title": "Dịch thuật & bản địa hóa nội dung toàn cầu",
-      "description": "Hỗ trợ mở rộng thị trường hoặc khai thác nội dung quốc tế (ví dụ review sản phẩm nước ngoài).",
+      "title": "Phụ đề và lời nói dễ chốt đơn",
+      "description": "Cắt chỗ nói vấp, thêm phụ đề nhấn giá, ưu đãi và công dụng sản phẩm — người xem trên điện thoại hiểu nhanh và dễ mua hơn.",
       "bullets": [
-        "Bản địa hóa thông minh: chuyển phụ đề sang tiếng Việt hoặc ngôn ngữ đích.",
-        "Lồng tiếng AI: giọng đọc tiếng Việt tự nhiên, phù hợp thuần phong và thói quen nghe."
+        "Phụ đề nổi bật giá, ưu đãi, điểm bán.",
+        "Giọng nói rõ hơn cho review và cắt từ livestream."
       ]
     },
     {
       "id": "filters",
-      "title": "Thư viện bộ lọc & hiệu ứng sáng tạo",
-      "description": "Hàng trăm bộ lọc và hiệu ứng hình ảnh giúp làm mới nội dung, tạo điểm nhấn nghệ thuật và tăng độ hấp dẫn so với video cùng loại trên nền tảng.",
+      "title": "Đổi kiểu để mỗi clip vẫn mới",
+      "description": "Đổi nhịp cắt, khung hình và hiệu ứng nhẹ để các clip từ cùng một video gốc không bị giống hệt nhau — hợp khi bạn bán nhiều sản phẩm hoặc đăng nhiều kênh.",
       "bullets": []
     }
   ],
   "downloadSection": {
-    "label": "Download app",
-    "title": "Chọn bản phù hợp máy của bạn",
-    "subtitle": "Phiên bản {version} — nhấn vào thẻ để tải bản cài đặt phù hợp máy của bạn.",
+    "label": "Tải ứng dụng",
+    "title": "Dùng trên điện thoại hoặc máy tính",
+    "subtitle": "Phiên bản {version} — chọn đúng thiết bị bạn đang dùng.",
+    "desktopLabel": "Máy tính",
+    "mobileLabel": "Điện thoại",
     "ctaDownloads": "Tải xuống",
+    "ctaStore": "Mở cửa hàng",
+    "comingSoon": "Sắp ra mắt",
     "githubAll": "Xem tất cả bản phát hành"
   },
   "downloadCards": {
@@ -61,25 +65,45 @@
     "windows": {
       "title": "Windows",
       "subtitle": "Windows 10 / 11"
+    },
+    "ios": {
+      "title": "iOS",
+      "subtitle": "iPhone & iPad"
+    },
+    "android": {
+      "title": "Android",
+      "subtitle": "Điện thoại & máy tính bảng"
     }
   },
   "installSection": {
     "label": "Hướng dẫn",
-    "title": "Hướng dẫn cài đặt",
+    "title": "Cài đặt nhanh",
     "macTitle": "macOS",
     "macSteps": [
       "Kéo app vào thư mục /Applications.",
       "Mở Terminal (⌘ Space → gõ Terminal)."
     ],
     "macCommandLabel": "Chạy lệnh:",
-    "macCommand": "xattr -cr /Applications/Tiktok\\ Video\\ Cut\\ Pro.app",
+    "macCommand": "xattr -cr /Applications/Tizan\\ Cut\\ Pro.app",
     "copyCommandLabel": "Sao chép lệnh",
     "copiedCommandLabel": "Đã chép",
     "winTitle": "Windows",
     "winSteps": [
-      "Tải file .exe từ các thẻ tải phía trên.",
-      "Mở trực tiếp để sử dụng.",
-      "Nếu bị cảnh báo Windows Defender → chọn More info → Run anyway."
+      "Tải file .exe từ các thẻ phía trên.",
+      "Mở file để cài và dùng.",
+      "Nếu Windows cảnh báo → chọn More info → Run anyway."
+    ],
+    "iosTitle": "iOS",
+    "iosSteps": [
+      "Mở liên kết App Store ở mục Điện thoại (khi đã có).",
+      "Nhấn Cài đặt và đăng nhập Apple ID nếu cần.",
+      "Mở Tizan Cut Pro trên màn hình chính."
+    ],
+    "androidTitle": "Android",
+    "androidSteps": [
+      "Mở liên kết Google Play ở mục Điện thoại (khi đã có).",
+      "Nhấn Cài đặt và chấp nhận quyền nếu cần.",
+      "Mở Tizan Cut Pro trong danh sách ứng dụng."
     ]
   }
 }

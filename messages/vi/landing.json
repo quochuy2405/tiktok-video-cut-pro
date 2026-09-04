@@ -1,55 +1,55 @@
 {
   "hero": {
     "productName": "Tizan Cut Pro",
-    "titleLead": "Quay một lần.",
-    "titleAccent": "Đăng nhiều video bán.",
-    "subtitle": "Dành cho shop, KOC và KOL: lấy một video sản phẩm, cắt thành nhiều clip bán hàng sẵn đăng TikTok, Reels hay Shorts — không cần ngồi dựng lại từ đầu mỗi ngày.",
+    "titleLead": "Tạo video bán hàng",
+    "titleAccent": "dễ dàng, chuyên nghiệp.",
+    "subtitle": "Kho mẫu dành riêng cho nhà bán hàng, KOC và KOL — biến một video sản phẩm thành nhiều nội dung ấn tượng, sẵn sàng đăng trong vài phút.",
     "ctaPrimary": "Tải ứng dụng",
-    "ctaSecondary": "Xem tính năng",
+    "ctaSecondary": "Khám phá tính năng",
     "logoAlt": "Biểu tượng Tizan Cut Pro"
   },
   "featuresSection": {
-    "label": "Tính năng",
-    "title": "Làm video bán hàng nhanh, đúng việc cần làm",
-    "subtitle": "Không phải app dựng phim phức tạp. Tập trung giúp bạn ra nhiều clip bán từ video đã quay sẵn."
+    "label": "Tính năng nổi bật",
+    "title": "Mọi thứ cần có để ra video bán hàng nhanh",
+    "subtitle": "Từ mẫu dựng sẵn đến cắt ghép, phụ đề và xuất bản — tối ưu cho người làm nội dung bán hàng trên nền tảng ngắn."
   },
   "features": [
     {
       "id": "smart-edit",
-      "title": "Một video gốc → nhiều clip đăng bán",
-      "description": "Đưa video quay sản phẩm vào app, cắt thành nhiều bản khác nhau: mở đầu khác, đoạn nổi bật khác, độ dài khác. Đủ video để đăng liên tục mà không phải quay lại.",
+      "title": "Một nguồn quay — nhiều phiên bản đăng bán",
+      "description": "Tái sử dụng video sản phẩm đã có để tạo nhiều phiên bản khác nhau về nhịp mở đầu, điểm nhấn và độ dài. Duy trì tần suất đăng mà không cần quay lại từ đầu.",
       "bullets": []
     },
     {
       "id": "source-quality",
-      "title": "Mẫu sẵn cho shop, KOC, KOL",
-      "description": "Có sẵn mẫu video bán hàng thường dùng: mở hộp, đánh giá nhanh, trước–sau, demo công dụng, kêu gọi mua. Chọn mẫu, gắn video của bạn, xuất clip đúng tỉ lệ đăng bán.",
+      "title": "Kho mẫu chuyên biệt cho bán hàng",
+      "description": "Bộ mẫu được thiết kế cho nhà bán hàng, KOC và KOL: mở hộp, đánh giá sản phẩm, trước–sau, demo công dụng và chốt đơn. Chọn mẫu, gắn footage, xuất đúng tỉ lệ nền tảng.",
       "bullets": []
     },
     {
       "id": "localization",
-      "title": "Phụ đề và lời nói dễ chốt đơn",
-      "description": "Cắt chỗ nói vấp, thêm phụ đề nhấn giá, ưu đãi và công dụng sản phẩm — người xem trên điện thoại hiểu nhanh và dễ mua hơn.",
+      "title": "Phụ đề & lời thoại tối ưu chuyển đổi",
+      "description": "Loại bỏ đoạn thừa, làm rõ thông điệp bán hàng. Thêm phụ đề nhấn mạnh giá, ưu đãi và lợi ích sản phẩm để người xem nắm nhanh trên feed dọc.",
       "bullets": [
-        "Phụ đề nổi bật giá, ưu đãi, điểm bán.",
-        "Giọng nói rõ hơn cho đánh giá sản phẩm và cắt từ livestream."
+        "Phụ đề làm nổi bật giá, ưu đãi và điểm bán chính.",
+        "Lời thoại rõ ràng hơn cho đánh giá sản phẩm và nội dung cắt từ livestream."
       ]
     },
     {
       "id": "filters",
-      "title": "Đổi kiểu để mỗi clip vẫn mới",
-      "description": "Đổi nhịp cắt, khung hình và hiệu ứng nhẹ để các clip từ cùng một video gốc không bị giống hệt nhau — hợp khi bạn bán nhiều sản phẩm hoặc đăng nhiều kênh.",
+      "title": "Biến thể nội dung để tránh trùng lặp",
+      "description": "Điều chỉnh nhịp cắt, khung hình và hiệu ứng để mỗi phiên bản từ cùng một nguồn vẫn khác biệt — phù hợp khi quản lý nhiều sản phẩm hoặc nhiều kênh phân phối.",
       "bullets": []
     }
   ],
   "downloadSection": {
-    "label": "Tải ứng dụng",
-    "title": "Dùng trên điện thoại hoặc máy tính",
-    "subtitle": "Phiên bản {version} — chọn đúng thiết bị bạn đang dùng.",
+    "label": "Tải xuống",
+    "title": "Cài đặt trên điện thoại hoặc máy tính",
+    "subtitle": "Phiên bản {version}. Chọn bản phù hợp với thiết bị của bạn để bắt đầu.",
     "desktopLabel": "Máy tính",
     "mobileLabel": "Điện thoại",
     "ctaDownloads": "Tải xuống",
-    "ctaStore": "Mở cửa hàng",
+    "ctaStore": "Mở cửa hàng ứng dụng",
     "comingSoon": "Sắp ra mắt",
     "githubAll": "Xem tất cả bản phát hành"
   },
@@ -60,7 +60,7 @@
     },
     "mac-intel": {
       "title": "macOS (Intel)",
-      "subtitle": "Mac dùng chip Intel"
+      "subtitle": "Máy Mac dùng chip Intel"
     },
     "windows": {
       "title": "Windows",
@@ -68,42 +68,42 @@
     },
     "ios": {
       "title": "iOS",
-      "subtitle": "iPhone & iPad"
+      "subtitle": "iPhone và iPad"
     },
     "android": {
       "title": "Android",
-      "subtitle": "Điện thoại & máy tính bảng"
+      "subtitle": "Điện thoại và máy tính bảng"
     }
   },
   "installSection": {
     "label": "Hướng dẫn",
-    "title": "Cài đặt nhanh",
+    "title": "Hướng dẫn cài đặt",
     "macTitle": "macOS",
     "macSteps": [
-      "Kéo app vào thư mục /Applications.",
-      "Mở Terminal (⌘ Space → gõ Terminal)."
+      "Kéo ứng dụng vào thư mục Applications.",
+      "Mở Terminal (nhấn ⌘ Space, gõ Terminal)."
     ],
-    "macCommandLabel": "Chạy lệnh:",
+    "macCommandLabel": "Chạy lệnh sau:",
     "macCommand": "xattr -cr /Applications/Tizan\\ Cut\\ Pro.app",
     "copyCommandLabel": "Sao chép lệnh",
-    "copiedCommandLabel": "Đã chép",
+    "copiedCommandLabel": "Đã sao chép",
     "winTitle": "Windows",
     "winSteps": [
-      "Tải file cài đặt từ các thẻ phía trên.",
-      "Mở file để cài và dùng.",
-      "Nếu Windows cảnh báo → chọn Thêm thông tin → Vẫn chạy."
+      "Tải tệp cài đặt từ các lựa chọn phía trên.",
+      "Mở tệp để hoàn tất cài đặt và khởi chạy ứng dụng.",
+      "Nếu Windows Defender cảnh báo, chọn Thêm thông tin rồi Vẫn chạy."
     ],
     "iosTitle": "iOS",
     "iosSteps": [
-      "Mở liên kết App Store ở mục Điện thoại (khi đã có).",
-      "Nhấn Cài đặt và đăng nhập tài khoản Apple nếu cần.",
-      "Mở Tizan Cut Pro trên màn hình chính."
+      "Mở liên kết App Store trong mục Điện thoại (khi đã khả dụng).",
+      "Nhấn Cài đặt và đăng nhập tài khoản Apple nếu được yêu cầu.",
+      "Mở Tizan Cut Pro từ màn hình chính."
     ],
     "androidTitle": "Android",
     "androidSteps": [
-      "Mở liên kết CH Play ở mục Điện thoại (khi đã có).",
-      "Nhấn Cài đặt và chấp nhận quyền nếu cần.",
-      "Mở Tizan Cut Pro trong danh sách ứng dụng."
+      "Mở liên kết Google Play trong mục Điện thoại (khi đã khả dụng).",
+      "Nhấn Cài đặt và chấp nhận quyền truy cập nếu được yêu cầu.",
+      "Mở Tizan Cut Pro từ danh sách ứng dụng."
     ]
   }
 }

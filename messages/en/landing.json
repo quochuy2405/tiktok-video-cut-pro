@@ -1,57 +1,57 @@
 {
   "hero": {
     "productName": "Tizan Cut Pro",
-    "titleLead": "Shoot once.",
-    "titleAccent": "Post many sales clips.",
-    "subtitle": "For shops, KOCs, and KOLs: turn one product video into many sales-ready clips for TikTok, Reels, or Shorts — without rebuilding every post from scratch.",
-    "ctaPrimary": "Download app",
-    "ctaSecondary": "See features",
+    "titleLead": "Create sales videos",
+    "titleAccent": "with ease and polish.",
+    "subtitle": "A template library built for sellers, KOCs, and KOLs — turn one product video into multiple high-impact clips, ready to publish in minutes.",
+    "ctaPrimary": "Download the app",
+    "ctaSecondary": "Explore features",
     "logoAlt": "Tizan Cut Pro app icon"
   },
   "featuresSection": {
-    "label": "Features",
-    "title": "Sales videos, without the editing headache",
-    "subtitle": "Not a complicated film editor. Built to help you turn footage you already have into more product clips you can post."
+    "label": "Key capabilities",
+    "title": "Everything you need to ship sales video faster",
+    "subtitle": "From ready-made templates to cutting, captions, and export — designed for short-form commerce content."
   },
   "features": [
     {
       "id": "smart-edit",
-      "title": "One product video → many posts",
-      "description": "Add your product footage, then cut it into different versions: different openings, highlights, and lengths. Enough clips to post regularly without filming again.",
+      "title": "One source video — many publish-ready versions",
+      "description": "Reuse existing product footage to create multiple versions with different openings, highlights, and lengths. Keep posting consistently without reshooting.",
       "bullets": []
     },
     {
       "id": "source-quality",
-      "title": "Ready-made templates for shops & creators",
-      "description": "Common sales formats are ready to use: unboxing, quick review, before/after, product demo, and buy-now close. Pick a template, drop in your video, export for selling platforms.",
+      "title": "Sales-focused template library",
+      "description": "Templates purpose-built for sellers, KOCs, and KOLs: unboxing, product review, before/after, feature demo, and purchase CTA. Select a template, add your footage, export in platform-ready ratios.",
       "bullets": []
     },
     {
       "id": "localization",
-      "title": "Captions and talk that help sell",
-      "description": "Trim stumbles and add captions that call out price, offers, and product benefits — so people scrolling on their phone get it fast and are more likely to buy.",
+      "title": "Captions and dialogue built for conversion",
+      "description": "Remove filler, sharpen the sales message, and add captions that emphasize price, offers, and product benefits — so viewers understand quickly in the vertical feed.",
       "bullets": [
-        "Captions that highlight price, offers, and key benefits.",
-        "Clearer voice for reviews and clips cut from livestreams."
+        "Captions that highlight pricing, promotions, and key selling points.",
+        "Clearer dialogue for product reviews and livestream cutdowns."
       ]
     },
     {
       "id": "filters",
-      "title": "Make each clip feel different",
-      "description": "Change pacing, framing, and light effects so clips from the same footage don’t look identical — useful when you sell many products or post on several channels.",
+      "title": "Content variants that stay distinct",
+      "description": "Adjust pacing, framing, and effects so each version from the same source still feels unique — ideal when managing multiple SKUs or distribution channels.",
       "bullets": []
     }
   ],
   "downloadSection": {
     "label": "Download",
-    "title": "Phone or computer",
-    "subtitle": "Version {version} — choose the build for your device.",
-    "desktopLabel": "Computer",
-    "mobileLabel": "Phone",
+    "title": "Install on mobile or desktop",
+    "subtitle": "Version {version}. Choose the build that matches your device to get started.",
+    "desktopLabel": "Desktop",
+    "mobileLabel": "Mobile",
     "ctaDownloads": "Download",
-    "ctaStore": "Open store",
+    "ctaStore": "Open app store",
     "comingSoon": "Coming soon",
-    "githubAll": "See all releases"
+    "githubAll": "View all releases"
   },
   "downloadCards": {
     "mac-apple-silicon": {
@@ -60,7 +60,7 @@
     },
     "mac-intel": {
       "title": "macOS (Intel)",
-      "subtitle": "Intel-based Mac"
+      "subtitle": "Intel-based Mac computers"
     },
     "windows": {
       "title": "Windows",
@@ -68,42 +68,42 @@
     },
     "ios": {
       "title": "iOS",
-      "subtitle": "iPhone & iPad"
+      "subtitle": "iPhone and iPad"
     },
     "android": {
       "title": "Android",
-      "subtitle": "Phone & tablet"
+      "subtitle": "Phones and tablets"
     }
   },
   "installSection": {
-    "label": "Setup",
-    "title": "Quick install",
+    "label": "Installation",
+    "title": "Installation guide",
     "macTitle": "macOS",
     "macSteps": [
-      "Drag the app into /Applications.",
-      "Open Terminal (⌘ Space → type Terminal)."
+      "Drag the application into the Applications folder.",
+      "Open Terminal (press ⌘ Space, then type Terminal)."
     ],
-    "macCommandLabel": "Run:",
+    "macCommandLabel": "Run the following command:",
     "macCommand": "xattr -cr /Applications/Tizan\\ Cut\\ Pro.app",
     "copyCommandLabel": "Copy command",
     "copiedCommandLabel": "Copied",
     "winTitle": "Windows",
     "winSteps": [
-      "Download the .exe from the cards above.",
-      "Open it to install and start using the app.",
-      "If Windows shows a warning → More info → Run anyway."
+      "Download the installer from the options above.",
+      "Open the file to complete installation and launch the app.",
+      "If Windows Defender shows a warning, select More info, then Run anyway."
     ],
     "iosTitle": "iOS",
     "iosSteps": [
-      "Open the App Store link in the Phone section (when available).",
-      "Tap Install and sign in with your Apple ID if asked.",
+      "Open the App Store link in the Mobile section (when available).",
+      "Tap Install and sign in with your Apple ID if prompted.",
       "Open Tizan Cut Pro from your Home Screen."
     ],
     "androidTitle": "Android",
     "androidSteps": [
-      "Open the Google Play link in the Phone section (when available).",
-      "Tap Install and allow permissions if asked.",
-      "Open Tizan Cut Pro from your apps list."
+      "Open the Google Play link in the Mobile section (when available).",
+      "Tap Install and accept permissions if prompted.",
+      "Open Tizan Cut Pro from your app list."
     ]
   }
 }

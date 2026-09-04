@@ -9,7 +9,7 @@ import {
   absoluteLocaleUrl,
   hreflangAlternates,
   OG_IMAGE,
-  openGraphLocale,
+  OG_VI,
 } from "@/lib/site";
 
 const PATH = "privacy-policy";
@@ -34,14 +34,14 @@ export async function generateMetadata({
       description: doc.metaDescription,
       url: absoluteLocaleUrl(locale, PATH),
       siteName: APP_NAME,
-      locale: openGraphLocale(locale),
+      locale: "vi_VN",
       type: "article",
       images: [
         {
           url: OG_IMAGE.path,
           width: OG_IMAGE.width,
           height: OG_IMAGE.height,
-          alt: OG_IMAGE.alt,
+          alt: OG_VI.imageAlt,
           type: OG_IMAGE.type,
         },
       ],
@@ -50,7 +50,14 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: doc.metaTitle,
       description: doc.metaDescription,
-      images: [OG_IMAGE.path],
+      images: [
+        {
+          url: OG_IMAGE.path,
+          width: OG_IMAGE.width,
+          height: OG_IMAGE.height,
+          alt: OG_VI.imageAlt,
+        },
+      ],
     },
     robots: {
       index: true,

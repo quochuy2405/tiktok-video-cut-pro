@@ -23,7 +23,7 @@
     {
       "id": "source-quality",
       "title": "Mẫu sẵn cho shop, KOC, KOL",
-      "description": "Có sẵn mẫu video bán hàng thường dùng: mở hộp, review nhanh, trước–sau, demo công dụng, kêu gọi mua. Chọn mẫu, gắn video của bạn, xuất clip đúng tỉ lệ đăng bán.",
+      "description": "Có sẵn mẫu video bán hàng thường dùng: mở hộp, đánh giá nhanh, trước–sau, demo công dụng, kêu gọi mua. Chọn mẫu, gắn video của bạn, xuất clip đúng tỉ lệ đăng bán.",
       "bullets": []
     },
     {
@@ -32,7 +32,7 @@
       "description": "Cắt chỗ nói vấp, thêm phụ đề nhấn giá, ưu đãi và công dụng sản phẩm — người xem trên điện thoại hiểu nhanh và dễ mua hơn.",
       "bullets": [
         "Phụ đề nổi bật giá, ưu đãi, điểm bán.",
-        "Giọng nói rõ hơn cho review và cắt từ livestream."
+        "Giọng nói rõ hơn cho đánh giá sản phẩm và cắt từ livestream."
       ]
     },
     {
@@ -89,19 +89,19 @@
     "copiedCommandLabel": "Đã chép",
     "winTitle": "Windows",
     "winSteps": [
-      "Tải file .exe từ các thẻ phía trên.",
+      "Tải file cài đặt từ các thẻ phía trên.",
       "Mở file để cài và dùng.",
-      "Nếu Windows cảnh báo → chọn More info → Run anyway."
+      "Nếu Windows cảnh báo → chọn Thêm thông tin → Vẫn chạy."
     ],
     "iosTitle": "iOS",
     "iosSteps": [
       "Mở liên kết App Store ở mục Điện thoại (khi đã có).",
-      "Nhấn Cài đặt và đăng nhập Apple ID nếu cần.",
+      "Nhấn Cài đặt và đăng nhập tài khoản Apple nếu cần.",
       "Mở Tizan Cut Pro trên màn hình chính."
     ],
     "androidTitle": "Android",
     "androidSteps": [
-      "Mở liên kết Google Play ở mục Điện thoại (khi đã có).",
+      "Mở liên kết CH Play ở mục Điện thoại (khi đã có).",
       "Nhấn Cài đặt và chấp nhận quyền nếu cần.",
       "Mở Tizan Cut Pro trong danh sách ứng dụng."
     ]

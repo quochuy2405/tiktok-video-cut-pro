@@ -8,8 +8,8 @@ import {
   absoluteLocaleUrl,
   hreflangAlternates,
   OG_IMAGE,
+  OG_VI,
   openGraphAlternateLocales,
-  openGraphLocale,
 } from "@/lib/site";
 
 export async function generateMetadata({
@@ -30,33 +30,33 @@ export async function generateMetadata({
       languages: hreflangAlternates(),
     },
     openGraph: {
-      title: t("ogTitle"),
-      description: t("ogDescription"),
+      title: OG_VI.title,
+      description: OG_VI.description,
       url: absoluteLocaleUrl(locale),
       siteName: APP_NAME,
-      locale: openGraphLocale(locale),
-      alternateLocale: openGraphAlternateLocales(locale),
+      locale: "vi_VN",
+      alternateLocale: openGraphAlternateLocales("vi"),
       type: "website",
       images: [
         {
           url: OG_IMAGE.path,
           width: OG_IMAGE.width,
           height: OG_IMAGE.height,
-          alt: t("ogImageAlt"),
+          alt: OG_VI.imageAlt,
           type: OG_IMAGE.type,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: t("twitterTitle"),
-      description: t("twitterDescription"),
+      title: OG_VI.title,
+      description: OG_VI.twitterDescription,
       images: [
         {
           url: OG_IMAGE.path,
           width: OG_IMAGE.width,
           height: OG_IMAGE.height,
-          alt: t("ogImageAlt"),
+          alt: OG_VI.imageAlt,
         },
       ],
     },

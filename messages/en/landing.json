@@ -1,55 +1,61 @@
 {
   "hero": {
     "productName": "Tizan Cut Pro",
+    "tagline": "VIDEO · TEMPLATE · SELL MORE",
     "titleLead": "Create sales videos",
-    "titleAccent": "with ease and polish.",
-    "subtitle": "A template library built for sellers, KOCs, and KOLs — turn one product video into multiple high-impact clips, ready to publish in minutes.",
-    "ctaPrimary": "Download the app",
-    "ctaSecondary": "Explore features",
+    "titleAccent": "easily and professionally",
+    "subtitle": "A template library built for sellers, KOCs, and KOLs — create standout videos in just a few minutes.",
+    "ctaPrimary": "Create a video now",
+    "ctaSecondary": "See features",
+    "audienceKoc": "For KOC / KOL",
+    "audienceSeller": "Online sellers",
     "logoAlt": "Tizan Cut Pro app icon"
   },
   "featuresSection": {
-    "label": "Key capabilities",
-    "title": "Everything you need to ship sales video faster",
-    "subtitle": "From ready-made templates to cutting, captions, and export — designed for short-form commerce content."
+    "label": "Features",
+    "title": "Faster — sell better",
+    "subtitle": "Turn ideas into sales videos. Grow revenue with high-quality content."
   },
   "features": [
     {
-      "id": "smart-edit",
-      "title": "One source video — many publish-ready versions",
-      "description": "Reuse existing product footage to create multiple versions with different openings, highlights, and lengths. Keep posting consistently without reshooting.",
+      "id": "templates",
+      "title": "Diverse template library",
+      "description": "Sales, review, unbox, and trending formats — pick a template, add your footage, and finish fast.",
       "bullets": []
     },
     {
-      "id": "source-quality",
-      "title": "Sales-focused template library",
-      "description": "Templates purpose-built for sellers, KOCs, and KOLs: unboxing, product review, before/after, feature demo, and purchase CTA. Select a template, add your footage, export in platform-ready ratios.",
+      "id": "cut-merge",
+      "title": "Fast cut & assemble",
+      "description": "Cut, merge, and arrange scenes smoothly. Produce multiple sales versions from one product video.",
       "bullets": []
     },
     {
-      "id": "localization",
-      "title": "Captions and dialogue built for conversion",
-      "description": "Remove filler, sharpen the sales message, and add captions that emphasize price, offers, and product benefits — so viewers understand quickly in the vertical feed.",
-      "bullets": [
-        "Captions that highlight pricing, promotions, and key selling points.",
-        "Clearer dialogue for product reviews and livestream cutdowns."
-      ]
+      "id": "text-effects",
+      "title": "Text & polished effects",
+      "description": "Add captions, text, and effects that highlight offers, pricing, and selling points in the vertical feed.",
+      "bullets": []
     },
     {
-      "id": "filters",
-      "title": "Content variants that stay distinct",
-      "description": "Adjust pacing, framing, and effects so each version from the same source still feels unique — ideal when managing multiple SKUs or distribution channels.",
+      "id": "music-trend",
+      "title": "Music & hot trends",
+      "description": "Apply trending music and styles so your videos feel current and keep viewers watching longer.",
+      "bullets": []
+    },
+    {
+      "id": "export",
+      "title": "High-quality export",
+      "description": "Export sharp videos in the right ratios for TikTok, Reels, and Shorts — ready to post on phone or desktop.",
       "bullets": []
     }
   ],
   "downloadSection": {
     "label": "Download",
-    "title": "Install on mobile or desktop",
-    "subtitle": "Version {version}. Choose the build that matches your device to get started.",
+    "title": "Available on App Store, Google Play, Windows & macOS",
+    "subtitle": "Version {version}. Choose your device to download and start creating sales videos.",
     "desktopLabel": "Desktop",
     "mobileLabel": "Mobile",
     "ctaDownloads": "Download",
-    "ctaStore": "Open app store",
+    "ctaStore": "Open store",
     "comingSoon": "Coming soon",
     "githubAll": "View all releases"
   },

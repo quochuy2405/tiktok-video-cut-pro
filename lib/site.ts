@@ -68,15 +68,16 @@ export const OG_IMAGE = {
   width: 1200,
   height: 630,
   type: "image/png",
-  alt: "Tizan Cut Pro — Tạo video bán hàng cho shop, KOC, KOL",
+  alt: "Tizan Cut Pro — Tạo video bán hàng dễ dàng, chuyên nghiệp",
 } as const;
 
 /** Open Graph / Twitter share copy — luôn tiếng Việt (thị trường chính). */
 export const OG_VI = {
-  title: "Tizan Cut Pro — Tạo video bán hàng chuyên nghiệp",
+  title: "Tizan Cut Pro — Tạo video bán hàng dễ dàng, chuyên nghiệp",
   description:
-    "Kho template dành riêng cho shop, KOC, KOL. Cắt ghép, thêm chữ, nhạc trend — ra video bán hàng chỉ trong vài phút.",
+    "Kho template dành riêng cho nhà bán hàng, KOC, KOL – giúp bạn tạo video ấn tượng chỉ trong vài phút.",
   twitterDescription:
-    "Kho template cho nhà bán hàng, KOC, KOL. Cắt ghép nhanh để tăng doanh số.",
-  imageAlt: "Tizan Cut Pro — Tạo video bán hàng cho shop, KOC, KOL",
+    "Kho template cho nhà bán hàng, KOC, KOL. Cắt ghép nhanh — tăng doanh số với video chất lượng.",
+  imageAlt:
+    "Tizan Cut Pro — Tạo video bán hàng dễ dàng, chuyên nghiệp cho nhà bán hàng, KOC, KOL",
 } as const;

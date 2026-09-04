@@ -1,55 +1,61 @@
 {
   "hero": {
     "productName": "Tizan Cut Pro",
+    "tagline": "VIDEO · TEMPLATE · SELL MORE",
     "titleLead": "Tạo video bán hàng",
-    "titleAccent": "dễ dàng, chuyên nghiệp.",
-    "subtitle": "Kho mẫu dành riêng cho nhà bán hàng, KOC và KOL — biến một video sản phẩm thành nhiều nội dung ấn tượng, sẵn sàng đăng trong vài phút.",
-    "ctaPrimary": "Tải ứng dụng",
-    "ctaSecondary": "Khám phá tính năng",
+    "titleAccent": "dễ dàng, chuyên nghiệp",
+    "subtitle": "Kho template dành riêng cho nhà bán hàng, KOC, KOL – giúp bạn tạo video ấn tượng chỉ trong vài phút.",
+    "ctaPrimary": "Tạo video ngay",
+    "ctaSecondary": "Xem tính năng",
+    "audienceKoc": "Dành cho KOC / KOL",
+    "audienceSeller": "Nhà bán hàng Online",
     "logoAlt": "Biểu tượng Tizan Cut Pro"
   },
   "featuresSection": {
-    "label": "Tính năng nổi bật",
-    "title": "Mọi thứ cần có để ra video bán hàng nhanh",
-    "subtitle": "Từ mẫu dựng sẵn đến cắt ghép, phụ đề và xuất bản — tối ưu cho người làm nội dung bán hàng trên nền tảng ngắn."
+    "label": "Tính năng",
+    "title": "Nhanh hơn — bán chạy hơn",
+    "subtitle": "Biến ý tưởng thành video bán hàng. Tăng doanh số với video chất lượng."
   },
   "features": [
     {
-      "id": "smart-edit",
-      "title": "Một nguồn quay — nhiều phiên bản đăng bán",
-      "description": "Tái sử dụng video sản phẩm đã có để tạo nhiều phiên bản khác nhau về nhịp mở đầu, điểm nhấn và độ dài. Duy trì tần suất đăng mà không cần quay lại từ đầu.",
+      "id": "templates",
+      "title": "Kho template đa dạng",
+      "description": "Hàng loạt mẫu bán hàng, review, unbox và hot trend — chọn template phù hợp, gắn video của bạn và hoàn thiện nhanh.",
       "bullets": []
     },
     {
-      "id": "source-quality",
-      "title": "Kho mẫu chuyên biệt cho bán hàng",
-      "description": "Bộ mẫu được thiết kế cho nhà bán hàng, KOC và KOL: mở hộp, đánh giá sản phẩm, trước–sau, demo công dụng và chốt đơn. Chọn mẫu, gắn footage, xuất đúng tỉ lệ nền tảng.",
+      "id": "cut-merge",
+      "title": "Cắt & ghép video nhanh",
+      "description": "Cắt, ghép và sắp xếp cảnh quay mượt mà. Ra nhiều phiên bản đăng bán từ một nguồn video sản phẩm.",
       "bullets": []
     },
     {
-      "id": "localization",
-      "title": "Phụ đề & lời thoại tối ưu chuyển đổi",
-      "description": "Loại bỏ đoạn thừa, làm rõ thông điệp bán hàng. Thêm phụ đề nhấn mạnh giá, ưu đãi và lợi ích sản phẩm để người xem nắm nhanh trên feed dọc.",
-      "bullets": [
-        "Phụ đề làm nổi bật giá, ưu đãi và điểm bán chính.",
-        "Lời thoại rõ ràng hơn cho đánh giá sản phẩm và nội dung cắt từ livestream."
-      ]
+      "id": "text-effects",
+      "title": "Thêm text, hiệu ứng đẹp",
+      "description": "Chèn chữ, phụ đề và hiệu ứng bắt mắt để làm nổi bật ưu đãi, giá và điểm bán trên feed dọc.",
+      "bullets": []
     },
     {
-      "id": "filters",
-      "title": "Biến thể nội dung để tránh trùng lặp",
-      "description": "Điều chỉnh nhịp cắt, khung hình và hiệu ứng để mỗi phiên bản từ cùng một nguồn vẫn khác biệt — phù hợp khi quản lý nhiều sản phẩm hoặc nhiều kênh phân phối.",
+      "id": "music-trend",
+      "title": "Nhạc & trend hot",
+      "description": "Gắn nhạc nền và phong cách đang thịnh hành để video dễ bắt trend, giữ chân người xem lâu hơn.",
+      "bullets": []
+    },
+    {
+      "id": "export",
+      "title": "Xuất video chất lượng cao",
+      "description": "Xuất video sắc nét, đúng tỉ lệ đăng TikTok, Reels, Shorts — sẵn sàng đăng ngay trên điện thoại hoặc máy tính.",
       "bullets": []
     }
   ],
   "downloadSection": {
-    "label": "Tải xuống",
-    "title": "Cài đặt trên điện thoại hoặc máy tính",
-    "subtitle": "Phiên bản {version}. Chọn bản phù hợp với thiết bị của bạn để bắt đầu.",
+    "label": "Tải ứng dụng",
+    "title": "Có trên App Store, Google Play, Windows & macOS",
+    "subtitle": "Phiên bản {version}. Chọn đúng thiết bị để tải và bắt đầu tạo video bán hàng.",
     "desktopLabel": "Máy tính",
     "mobileLabel": "Điện thoại",
     "ctaDownloads": "Tải xuống",
-    "ctaStore": "Mở cửa hàng ứng dụng",
+    "ctaStore": "Mở cửa hàng",
     "comingSoon": "Sắp ra mắt",
     "githubAll": "Xem tất cả bản phát hành"
   },

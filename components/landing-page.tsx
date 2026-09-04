@@ -6,13 +6,14 @@ import { motion, useReducedMotion } from "framer-motion";
 import {
   Apple,
   Check,
-  Clapperboard,
   Copy,
   Download,
-  Captions,
   LayoutTemplate,
-  Shuffle,
+  Music2,
+  Scissors,
   Smartphone,
+  Type,
+  Upload,
 } from "lucide-react";
 import { useCallback, useRef, useState } from "react";
 
@@ -58,15 +59,18 @@ type InstallSectionCopy = {
 };
 
 const FEATURE_ICONS = {
-  "smart-edit": Clapperboard,
-  "source-quality": LayoutTemplate,
-  localization: Captions,
-  filters: Shuffle,
+  templates: LayoutTemplate,
+  "cut-merge": Scissors,
+  "text-effects": Type,
+  "music-trend": Music2,
+  export: Upload,
 } as const;
 
 const easeOut = [0.22, 1, 0.36, 1] as const;
 
-function featureSpanClass(index: number) {
+function featureSpanClass(index: number, total: number) {
+  if (total === 5 && index === 0) return "md:col-span-2";
+  if (total === 5 && index >= 1) return "md:col-span-1";
   if (index === 0 || index === 3) return "md:col-span-2";
   return "md:col-span-1";
 }
@@ -260,14 +264,19 @@ export function LandingPage() {
             />
           </motion.div>
 
-          <motion.p
-            className="mb-6 font-heading text-[15px] font-medium tracking-[-0.02em] text-zinc-300"
+          <motion.div
+            className="mb-6 flex flex-col items-center gap-2"
             initial={reduceMotion ? false : { opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease: easeOut, delay: 0.06 }}
           >
-            {t("hero.productName")}
-          </motion.p>
+            <p className="font-heading text-[15px] font-medium tracking-[-0.02em] text-zinc-300">
+              {t("hero.productName")}
+            </p>
+            <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-zinc-500">
+              {t("hero.tagline")}
+            </p>
+          </motion.div>
 
           <motion.h1
             className="font-heading max-w-[min(100%,22rem)] text-[clamp(1.85rem,6vw+0.25rem,4.25rem)] font-semibold leading-[1.08] tracking-[-0.06em] text-white text-balance md:max-w-none md:tracking-[-1.35px]"
@@ -282,13 +291,26 @@ export function LandingPage() {
           </motion.h1>
 
           <motion.p
-            className="mt-7 max-w-xl px-1 text-base leading-relaxed text-zinc-400 md:max-w-[40ch] md:px-0 md:text-lg md:leading-relaxed"
+            className="mt-7 max-w-xl px-1 text-base leading-relaxed text-zinc-400 md:max-w-[42ch] md:px-0 md:text-lg md:leading-relaxed"
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.48, ease: easeOut, delay: 0.16 }}
           >
             {t("hero.subtitle")}
           </motion.p>
+
+          <motion.div
+            className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-zinc-400"
+            initial={reduceMotion ? false : { opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, ease: easeOut, delay: 0.18 }}
+          >
+            <span>{t("hero.audienceKoc")}</span>
+            <span className="hidden text-zinc-600 sm:inline" aria-hidden>
+              ·
+            </span>
+            <span>{t("hero.audienceSeller")}</span>
+          </motion.div>
 
           <motion.div
             className="mt-11 flex w-full min-w-0 flex-wrap items-center justify-center gap-3 px-1 sm:px-0"
@@ -345,7 +367,7 @@ export function LandingPage() {
                   <div
                     className={cn(
                       "glass-panel group hover:border-brand/35 relative h-full min-w-0 overflow-hidden rounded-[22px] p-6 transition-all duration-300 hover:glow-brand-sm sm:p-8 md:p-9",
-                      featureSpanClass(index),
+                      featureSpanClass(index, features.length),
                     )}
                   >
                     <div className="pointer-events-none absolute -right-16 -top-16 size-48 rounded-full bg-brand/10 blur-3xl transition-opacity duration-500 group-hover:opacity-100 md:opacity-70" />

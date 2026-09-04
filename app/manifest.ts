@@ -8,7 +8,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: APP_NAME,
     short_name: "Tizan",
     description:
-      "Tizan Cut Pro — quay một lần, cắt thành nhiều video bán hàng cho shop, KOC và KOL.",
+      "Tizan Cut Pro — tạo video bán hàng dễ dàng, chuyên nghiệp cho nhà bán hàng, KOC và KOL.",
     start_url: "/vi",
     display: "standalone",
     background_color: "#050507",

@@ -6,6 +6,7 @@ import { LandingPage } from "@/components/landing-page";
 import { APP_NAME } from "@/lib/brand";
 import {
   absoluteLocaleUrl,
+  absoluteUrl,
   hreflangAlternates,
   OG_IMAGE,
   OG_VI,
@@ -39,7 +40,8 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: OG_IMAGE.path,
+          url: absoluteUrl(OG_IMAGE.path),
+          secureUrl: absoluteUrl(OG_IMAGE.path),
           width: OG_IMAGE.width,
           height: OG_IMAGE.height,
           alt: OG_VI.imageAlt,
@@ -53,7 +55,7 @@ export async function generateMetadata({
       description: OG_VI.twitterDescription,
       images: [
         {
-          url: OG_IMAGE.path,
+          url: absoluteUrl(OG_IMAGE.path),
           width: OG_IMAGE.width,
           height: OG_IMAGE.height,
           alt: OG_VI.imageAlt,
@@ -72,10 +74,15 @@ export default async function HomePage({
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "Metadata" });
+  const tLanding = await getTranslations({ locale, namespace: "Landing" });
+  const faqItems = (tLanding.raw("faqSection.items") as Array<{
+    question: string;
+    answer: string;
+  }>) || [];
 
   return (
     <>
-      <JsonLd data={buildHomeJsonLd(locale, t("description"))} />
+      <JsonLd data={buildHomeJsonLd(locale, t("description"), faqItems)} />
       <LandingPage />
     </>
   );

@@ -7,8 +7,9 @@ const FALLBACK_SITE_URL = "https://fivecutpro.com";
 export function getSiteUrl(): string {
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.trim();
   if (fromEnv) return fromEnv.replace(/\/$/, "");
-  if (process.env.VERCEL_URL)
-    return `https://${process.env.VERCEL_URL.replace(/\/$/, "")}`;
+  // Do NOT fall back to VERCEL_URL because Vercel auto-injects an internal deployment URL
+  // (e.g. *.vercel.app) which has Vercel SSO / deployment protection enabled,
+  // blocking Facebook/Zalo/Twitter crawlers from accessing og:image with HTTP 302.
   return FALLBACK_SITE_URL;
 }
 
@@ -18,9 +19,16 @@ export function absoluteUrl(pathname = "/"): string {
   return `${base}${pathname.startsWith("/") ? pathname : `/${pathname}`}`;
 }
 
-/** Locale-prefixed path, e.g. `/vi/privacy-policy`. */
+/**
+ * Localized path:
+ * - Default locale (vi): `/` or `/privacy-policy` (no prefix)
+ * - Alternate locales (en): `/en` or `/en/privacy-policy`
+ */
 export function localePath(locale: string, path = ""): string {
   const normalized = path.replace(/^\//, "");
+  if (locale === routing.defaultLocale) {
+    return normalized ? `/${normalized}` : "/";
+  }
   return normalized ? `/${locale}/${normalized}` : `/${locale}`;
 }
 
@@ -68,7 +76,7 @@ export const OG_IMAGE = {
   width: 1200,
   height: 630,
   type: "image/png",
-  alt: "Five Cut Pro — Tạo video bán hàng dễ dàng, chuyên nghiệp",
+  alt: "Five Cut Pro — Tự động hóa video bán hàng cho KOC và nhà bán hàng",
 } as const;
 
 /** Open Graph / Twitter share copy — luôn tiếng Việt (thị trường chính). */

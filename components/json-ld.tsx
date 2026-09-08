@@ -17,7 +17,11 @@ export function JsonLd({ data }: { data: JsonLd | JsonLd[] }) {
   );
 }
 
-export function buildHomeJsonLd(locale: string, description: string): JsonLd[] {
+export function buildHomeJsonLd(
+  locale: string,
+  description: string,
+  faqItems?: Array<{ question: string; answer: string }>,
+): JsonLd[] {
   const pageUrl = absoluteUrl(`/${locale}`);
   const logoUrl = absoluteUrl("/logo.png");
 
@@ -87,5 +91,23 @@ export function buildHomeJsonLd(locale: string, description: string): JsonLd[] {
     inLanguage: locale === "vi" ? "vi-VN" : "en-US",
   };
 
-  return [organization, software, website, webpage];
+  const results: JsonLd[] = [organization, software, website, webpage];
+
+  if (faqItems && faqItems.length > 0) {
+    const faqPage: JsonLd = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqItems.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+    };
+    results.push(faqPage);
+  }
+
+  return results;
 }

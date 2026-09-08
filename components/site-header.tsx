@@ -88,7 +88,7 @@ export function SiteHeader() {
   const t = useTranslations("Nav");
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/[0.08] bg-[#050507]/80 backdrop-blur-2xl supports-[backdrop-filter]:bg-[#050507]/60">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/[0.08] bg-[#050507]/80 backdrop-blur-2xl supports-[backdrop-filter]:bg-[#050507]/60">
       <div className="mx-auto flex min-h-[64px] min-w-0 max-w-[1240px] items-center justify-between gap-3 px-4 py-2 sm:px-6 lg:px-8">
         <Link
           href="/"

@@ -10,6 +10,7 @@ import { routing } from "@/i18n/routing";
 import { APP_NAME } from "@/lib/brand";
 import {
   absoluteLocaleUrl,
+  absoluteUrl,
   getSiteUrl,
   hreflangAlternates,
   OG_IMAGE,
@@ -83,7 +84,8 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: OG_IMAGE.path,
+          url: absoluteUrl(OG_IMAGE.path),
+          secureUrl: absoluteUrl(OG_IMAGE.path),
           width: OG_IMAGE.width,
           height: OG_IMAGE.height,
           alt: OG_VI.imageAlt,
@@ -97,7 +99,7 @@ export async function generateMetadata({
       description: OG_VI.twitterDescription,
       images: [
         {
-          url: OG_IMAGE.path,
+          url: absoluteUrl(OG_IMAGE.path),
           width: OG_IMAGE.width,
           height: OG_IMAGE.height,
           alt: OG_VI.imageAlt,
@@ -154,7 +156,7 @@ export default async function LocaleLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <SiteHeader />
-          <main className="flex min-w-0 flex-1 flex-col overflow-x-clip">
+          <main className="flex min-w-0 flex-1 flex-col overflow-x-clip pt-[64px]">
             {children}
           </main>
           <SiteFooter />

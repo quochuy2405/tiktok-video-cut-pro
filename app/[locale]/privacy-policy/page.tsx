@@ -7,6 +7,7 @@ import { APP_NAME } from "@/lib/brand";
 import { loadPrivacy } from "@/lib/load-legal";
 import {
   absoluteLocaleUrl,
+  absoluteUrl,
   hreflangAlternates,
   OG_IMAGE,
   OG_VI,
@@ -38,7 +39,8 @@ export async function generateMetadata({
       type: "article",
       images: [
         {
-          url: OG_IMAGE.path,
+          url: absoluteUrl(OG_IMAGE.path),
+          secureUrl: absoluteUrl(OG_IMAGE.path),
           width: OG_IMAGE.width,
           height: OG_IMAGE.height,
           alt: OG_VI.imageAlt,
@@ -52,7 +54,7 @@ export async function generateMetadata({
       description: doc.metaDescription,
       images: [
         {
-          url: OG_IMAGE.path,
+          url: absoluteUrl(OG_IMAGE.path),
           width: OG_IMAGE.width,
           height: OG_IMAGE.height,
           alt: OG_VI.imageAlt,

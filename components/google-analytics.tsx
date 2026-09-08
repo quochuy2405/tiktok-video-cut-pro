@@ -1,7 +1,32 @@
+"use client";
+
 import Script from "next/script";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 import { GA_TRACKING_ID } from "@/lib/analytics";
 
 export function GoogleAnalytics() {
+  const pathname = usePathname();
+  const isFirstRender = useRef(true);
+
+  // Theo dõi chuyển trang nội bộ (Client-side routing trong Next.js)
+  useEffect(() => {
+    // gtag('config') đã tự động gửi page_view ở lần tải trang đầu tiên.
+    // Bỏ qua lần render đầu để tránh bị đếm trùng (duplicate page_view).
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("event", "page_view", {
+        page_path: pathname,
+        page_location: window.location.href,
+        page_title: typeof document !== "undefined" ? document.title : "",
+      });
+    }
+  }, [pathname]);
+
   if (!GA_TRACKING_ID) return null;
 
   return (

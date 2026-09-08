@@ -50,7 +50,13 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { FadeIn } from "@/components/fade-in";
 import { buttonVariants } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
-import { trackCtaClick, trackDownload } from "@/lib/analytics";
+import {
+  trackCopyTerminalCommand,
+  trackCtaClick,
+  trackDirectContact,
+  trackDownload,
+  trackLeadGeneration,
+} from "@/lib/analytics";
 import {
   DESKTOP_DOWNLOAD_ASSETS,
   DISPLAY_APP_VERSION,
@@ -379,19 +385,30 @@ function DownloadCard({
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => {
+            const fileExt = asset.fileLabel.endsWith(".dmg")
+              ? "dmg"
+              : asset.fileLabel.endsWith(".exe")
+              ? "exe"
+              : asset.fileLabel.endsWith(".apk")
+              ? "apk"
+              : "installer";
+
             trackCtaClick({
-              cta_name: "download_asset",
+              cta_id: `download_asset_${asset.id}`,
               cta_location: "download_cards",
               cta_text: ctaLabel,
-              asset_id: asset.id,
-              asset_title: asset.title,
-              platform: asset.platform,
-              file_name: asset.fileLabel,
+              cta_category: "conversion_download",
               destination_url: asset.href!,
+              platform: asset.id,
+              asset_title: asset.title,
+              file_name: asset.fileLabel,
             });
+
             trackDownload({
               file_name: asset.fileLabel,
-              platform: asset.platform,
+              file_extension: fileExt,
+              platform: asset.id,
+              app_version: DISPLAY_APP_VERSION,
               link_url: asset.href!,
               asset_id: asset.id,
             });
@@ -472,10 +489,12 @@ export function LandingPage() {
 
   const copyMacCommand = useCallback(async () => {
     try {
+      trackCopyTerminalCommand();
       trackCtaClick({
-        cta_name: "copy_mac_terminal_command",
-        cta_location: "download_install_guide",
+        cta_id: "copy_mac_terminal_command",
+        cta_location: "download_terminal",
         cta_text: install.copyCommandLabel,
+        cta_category: "conversion_download",
       });
       await navigator.clipboard.writeText(install.macCommand);
       setMacCommandCopied(true);
@@ -486,20 +505,37 @@ export function LandingPage() {
     }
   }, [install.macCommand, install.copyCommandLabel]);
 
-  const handleSponsorSubmit = (e: React.FormEvent) => {
+  const handleSponsorSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    trackLeadGeneration({
+      lead_type: "brand_sponsor",
+      brand_name: formData.brandName,
+      budget_tier: formData.budget,
+    });
     trackCtaClick({
-      cta_name: "sponsor_form_submit",
+      cta_id: "sponsor_form_submit",
       cta_location: "sponsor_section",
       cta_text: sponsors.form.submitButton,
+      cta_category: "lead_sponsor",
       brand_name: formData.brandName,
       budget: formData.budget,
     });
     setSponsorLoading(true);
-    setTimeout(() => {
+
+    try {
+      await fetch("/api/sponsor", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+    } catch (err) {
+      console.error("[Sponsor Form Error]:", err);
+    } finally {
       setSponsorLoading(false);
       setSponsorSubmitted(true);
-    }, 600);
+    }
   };
 
   const filteredFormulas =
@@ -655,9 +691,10 @@ export function LandingPage() {
               href="/#download"
               onClick={() => {
                 trackCtaClick({
-                  cta_name: "hero_download_primary",
+                  cta_id: "hero_download_primary",
                   cta_location: "hero",
                   cta_text: t("hero.ctaPrimary"),
+                  cta_category: "conversion_download",
                   destination_url: "/#download",
                 });
               }}
@@ -672,9 +709,10 @@ export function LandingPage() {
               href="/#batch-engine"
               onClick={() => {
                 trackCtaClick({
-                  cta_name: "hero_explore_batch",
+                  cta_id: "hero_explore_batch",
                   cta_location: "hero",
                   cta_text: t("hero.pillBatch"),
+                  cta_category: "navigation_section",
                   destination_url: "/#batch-engine",
                 });
               }}
@@ -690,9 +728,10 @@ export function LandingPage() {
               href="/#formula"
               onClick={() => {
                 trackCtaClick({
-                  cta_name: "hero_explore_formula",
+                  cta_id: "hero_explore_formula",
                   cta_location: "hero",
                   cta_text: t("hero.ctaSecondary"),
+                  cta_category: "navigation_section",
                   destination_url: "/#formula",
                 });
               }}
@@ -707,9 +746,10 @@ export function LandingPage() {
               href="/#sponsors"
               onClick={() => {
                 trackCtaClick({
-                  cta_name: "hero_explore_sponsors",
+                  cta_id: "hero_explore_sponsors",
                   cta_location: "hero",
                   cta_text: t("hero.ctaBrand"),
+                  cta_category: "lead_sponsor",
                   destination_url: "/#sponsors",
                 });
               }}
@@ -824,9 +864,10 @@ export function LandingPage() {
                       href="/#formula"
                       onClick={() => {
                         trackCtaClick({
-                          cta_name: "batch_guide_formula",
-                          cta_location: "batch_engine_guide_card",
+                          cta_id: "batch_guide_formula",
+                          cta_location: "batch_engine",
                           cta_text: t("hero.ctaSecondary"),
+                          cta_category: "navigation_section",
                           destination_url: "/#formula",
                         });
                       }}
@@ -1292,9 +1333,10 @@ export function LandingPage() {
                       href="/#download"
                       onClick={() => {
                         trackCtaClick({
-                          cta_name: "formula_apply_download",
+                          cta_id: "formula_apply_download",
                           cta_location: "formula_section",
                           cta_text: formulaSection.applyFormulaBtn,
+                          cta_category: "conversion_download",
                           destination_url: "/#download",
                         });
                       }}
@@ -1384,10 +1426,15 @@ export function LandingPage() {
                   <a
                     href={`mailto:${sponsors.form.emailText}`}
                     onClick={() => {
+                      trackDirectContact({
+                        method: "email",
+                        target: sponsors.form.emailText,
+                      });
                       trackCtaClick({
-                        cta_name: "sponsor_direct_email",
+                        cta_id: "sponsor_direct_email",
                         cta_location: "sponsor_section",
                         cta_text: sponsors.form.emailText,
+                        cta_category: "external_resource",
                         destination_url: `mailto:${sponsors.form.emailText}`,
                       });
                     }}
@@ -1778,9 +1825,10 @@ export function LandingPage() {
               rel="noopener noreferrer"
               onClick={() => {
                 trackCtaClick({
-                  cta_name: "github_all_releases",
-                  cta_location: "download_section_github",
+                  cta_id: "github_all_releases",
+                  cta_location: "download_github",
                   cta_text: t("downloadSection.githubAll"),
+                  cta_category: "external_resource",
                   destination_url: githubReleasesTagPageUrl(),
                 });
               }}

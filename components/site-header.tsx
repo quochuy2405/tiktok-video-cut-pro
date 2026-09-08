@@ -71,9 +71,10 @@ function NavLinks({
               onClick={() => {
                 if (isDownload) {
                   trackCtaClick({
-                    cta_name: "header_menu_download",
+                    cta_id: "header_menu_download",
                     cta_location: "header_menu",
                     cta_text: t(item.labelKey),
+                    cta_category: "conversion_download",
                     destination_url: item.href,
                   });
                 }
@@ -135,9 +136,10 @@ export function SiteHeader() {
               href="/#download"
               onClick={() => {
                 trackCtaClick({
-                  cta_name: "header_download_desktop",
+                  cta_id: "header_download_desktop",
                   cta_location: "header_desktop",
                   cta_text: t("ctaDesktop"),
+                  cta_category: "conversion_download",
                   destination_url: "/#download",
                 });
               }}
@@ -157,9 +159,10 @@ export function SiteHeader() {
             href="/#download"
             onClick={() => {
               trackCtaClick({
-                cta_name: "header_download_mobile",
+                cta_id: "header_download_mobile",
                 cta_location: "header_mobile",
                 cta_text: t("ctaMobile"),
+                cta_category: "conversion_download",
                 destination_url: "/#download",
               });
             }}

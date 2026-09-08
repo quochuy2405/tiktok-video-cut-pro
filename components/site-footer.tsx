@@ -52,9 +52,10 @@ export function SiteFooter() {
               href="/#download"
               onClick={() => {
                 trackCtaClick({
-                  cta_name: "footer_download",
+                  cta_id: "footer_download",
                   cta_location: "footer",
                   cta_text: t("downloadLink"),
+                  cta_category: "conversion_download",
                   destination_url: "/#download",
                 });
               }}

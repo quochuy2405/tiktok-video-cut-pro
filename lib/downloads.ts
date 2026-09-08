@@ -40,9 +40,9 @@ const DISPLAY_FILE_LABELS: Record<
   Exclude<DownloadAssetId, "ios" | "android">,
   string
 > = {
-  "mac-apple-silicon": `Tizan-Cut-Pro-${ARTIFACT_VERSION}-macOS-AppleSilicon.dmg`,
-  "mac-intel": `Tizan-Cut-Pro-${ARTIFACT_VERSION}-macOS-Intel.dmg`,
-  windows: `Tizan-Cut-Pro-${ARTIFACT_VERSION}-Windows-Setup.exe`,
+  "mac-apple-silicon": `Five-Cut-Pro-${ARTIFACT_VERSION}-macOS-AppleSilicon.dmg`,
+  "mac-intel": `Five-Cut-Pro-${ARTIFACT_VERSION}-macOS-Intel.dmg`,
+  windows: `Five-Cut-Pro-${ARTIFACT_VERSION}-Windows-Setup.exe`,
 };
 
 const ENV_BY_ID: Record<DownloadAssetId, string | undefined> = {

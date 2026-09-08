@@ -2,7 +2,7 @@ import { APP_NAME } from "@/lib/brand";
 import { routing, type AppLocale } from "@/i18n/routing";
 
 /** Prefer production domain; override with NEXT_PUBLIC_SITE_URL when deploying. */
-const FALLBACK_SITE_URL = "https://tizancutpro.com";
+const FALLBACK_SITE_URL = "https://fivecutpro.com";
 
 export function getSiteUrl(): string {
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.trim();
@@ -49,7 +49,7 @@ export function openGraphAlternateLocales(locale: string): string[] {
 
 export const SITE = {
   name: APP_NAME,
-  shortName: "Tizan",
+  shortName: "Five",
   email: "shay.hcmc.work@gmail.com",
   copyrightHolder: "Shay Shay",
   defaultLocale: routing.defaultLocale as AppLocale,
@@ -68,16 +68,16 @@ export const OG_IMAGE = {
   width: 1200,
   height: 630,
   type: "image/png",
-  alt: "Tizan Cut Pro — Tạo video bán hàng dễ dàng, chuyên nghiệp",
+  alt: "Five Cut Pro — Tạo video bán hàng dễ dàng, chuyên nghiệp",
 } as const;
 
 /** Open Graph / Twitter share copy — luôn tiếng Việt (thị trường chính). */
 export const OG_VI = {
-  title: "Tizan Cut Pro — Tạo video bán hàng dễ dàng, chuyên nghiệp",
+  title: "Five Cut Pro — Tạo video bán hàng dễ dàng, chuyên nghiệp",
   description:
     "Kho template dành riêng cho nhà bán hàng, KOC, KOL – giúp bạn tạo video ấn tượng chỉ trong vài phút.",
   twitterDescription:
     "Kho template cho nhà bán hàng, KOC, KOL. Cắt ghép nhanh — tăng doanh số với video chất lượng.",
   imageAlt:
-    "Tizan Cut Pro — Tạo video bán hàng dễ dàng, chuyên nghiệp cho nhà bán hàng, KOC, KOL",
+    "Five Cut Pro — Tạo video bán hàng dễ dàng, chuyên nghiệp cho nhà bán hàng, KOC, KOL",
 } as const;

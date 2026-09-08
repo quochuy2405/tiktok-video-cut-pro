@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
+import { APP_NAME } from "@/lib/brand";
 
 export function SiteFooter() {
   const t = useTranslations("Footer");
@@ -26,7 +27,7 @@ export function SiteFooter() {
               className="size-11 shrink-0 rounded-2xl shadow-lg shadow-brand/20 ring-1 ring-white/10"
             />
             <span className="font-heading text-base font-semibold tracking-[-0.02em] text-white">
-              Tizan Cut Pro
+              {APP_NAME}
             </span>
           </Link>
           <p className="text-sm leading-relaxed text-zinc-400">{t("tagline")}</p>

@@ -6,9 +6,9 @@ import { absoluteUrl } from "@/lib/site";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: APP_NAME,
-    short_name: "Tizan",
+    short_name: "Five",
     description:
-      "Tizan Cut Pro — tạo video bán hàng dễ dàng, chuyên nghiệp cho nhà bán hàng, KOC và KOL.",
+      "Five Cut Pro — tạo video bán hàng dễ dàng, chuyên nghiệp cho nhà bán hàng, KOC và KOL.",
     start_url: "/vi",
     display: "standalone",
     background_color: "#050507",

@@ -1,68 +1,581 @@
 {
   "hero": {
-    "productName": "Tizan Cut Pro",
-    "tagline": "VIDEO · TEMPLATE · SELL MORE",
-    "titleLead": "Create sales videos",
-    "titleAccent": "easily and professionally",
-    "subtitle": "A template library built for sellers, KOCs, and KOLs — create standout videos in just a few minutes.",
-    "ctaPrimary": "Create a video now",
-    "ctaSecondary": "See features",
-    "audienceKoc": "For KOC / KOL",
-    "audienceSeller": "Online sellers",
-    "logoAlt": "Tizan Cut Pro app icon"
+    "productName": "Five Cut Pro",
+    "tagline": "NEXT-GEN VIDEO COMMERCE AUTOMATION PLATFORM FOR KOCS & AFFILIATE CREATORS",
+    "titleLead": "Scale 100 Winning Sales Videos",
+    "titleAccent": "From Just 1 Single Phone Recording",
+    "subtitle": "Five Cut Pro pairs the Smart Director™ in-camera guide with the proprietary Five Engine™ automation suite. Effortlessly generate dozens of high-converting sales video variants built upon Top Seller Blueprints — saving 90% editing time, sustaining daily posting KPIs, and scaling multi-channel affiliate matrices safely.",
+    "ctaPrimary": "Get Five Cut Pro Free",
+    "ctaSecondary": "Explore TopSeller Blueprints™",
+    "ctaBatch": "Discover Five Engine™",
+    "ctaBrand": "Brand Partnerships",
+    "audienceKoc": "Built for Professional KOCs & KOLs",
+    "audienceSeller": "E-Commerce Sellers & Affiliate Matrix Teams",
+    "logoAlt": "Five Cut Pro app icon",
+    "pillRetention": "Smart Director™ — Real-time camera guide",
+    "pillCta": "TopSeller Blueprints™ — Conversion optimized",
+    "pillSpeed": "Eliminate 90% of editing work",
+    "pillBatch": "Five Engine™ — 1 Take ➔ 100 Unique Videos",
+    "pillAntiReup": "SafeGuard AI™ — Protect multi-account reach"
   },
-  "featuresSection": {
-    "label": "Features",
-    "title": "Faster — sell better",
-    "subtitle": "Turn ideas into sales videos. Grow revenue with high-quality content."
+  "howItWorksSection": {
+    "label": "STREAMLINED WORKFLOW",
+    "title": "Producing High-Converting Sales Videos Has Never Been Easier",
+    "subtitle": "No complex videography or editing skills needed. Five Cut Pro guides you from your first camera click to publishing hundreds of conversion-ready videos:",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Smart Director™ In-Camera Guidance",
+        "desc": "Intelligent camera HUD directs your framing angles, countdown rhythm, and teleprompter cues per beat. Confidently capture crisp, natural product takes on your phone in one go.",
+        "badge": "Beginner friendly"
+      },
+      {
+        "num": "02",
+        "title": "TopSeller Blueprints™ Architecture",
+        "desc": "Harness battle-tested scripting structures distilled from the highest-grossing social commerce campaigns. Engineered to capture attention, build trust, and trigger cart purchases.",
+        "badge": "Proven GMV results"
+      },
+      {
+        "num": "03",
+        "title": "Automated Multi-Variant Publishing",
+        "desc": "The proprietary Five Engine™ transforms your raw footage into an array of distinct sales videos with synchronized trending audio, dynamic transitions, and polished aesthetics.",
+        "badge": "100% Automated"
+      }
+    ]
   },
-  "features": [
-    {
-      "id": "templates",
-      "title": "Diverse template library",
-      "description": "Sales, review, unbox, and trending formats — pick a template, add your footage, and finish fast.",
-      "bullets": []
+  "batchEngineSection": {
+    "label": "PROPRIETARY TECHNOLOGY",
+    "title": "Five Engine™ — The Next-Gen Video Commerce Multiplexer",
+    "subtitle": "Equip solo creators with the production scale of an entire digital media studio. Multiply raw footage into 100 distinct sales videos in minutes.",
+    "tagline": "The unfair advantage of top merchants and affiliate creator networks",
+    "guideCard": {
+      "badge": "Intelligent Guidance",
+      "title": "Focus on GMV — Let Five Cut Pro handle the editing",
+      "description": "You don't need editing expertise or hours behind desktop software. The Smart Director™ visually prompts each recording beat (Attention Hook, Product Immersion, Real Experience, Cart CTA). You simply record along, and the Five Engine™ automatically edits, syncs audio, and delivers polished assets."
     },
-    {
-      "id": "cut-merge",
-      "title": "Fast cut & assemble",
-      "description": "Cut, merge, and arrange scenes smoothly. Produce multiple sales versions from one product video.",
-      "bullets": []
+    "pipeline": {
+      "inputBadge": "Input Source",
+      "inputTitle": "01. Authentic 1-Take Recording",
+      "inputDesc": "Record hands-on product experiences with your phone using visual framing markers and real-time pacing cues.",
+      "engineBadge": "Batch Synthesis",
+      "engineTitle": "02. Five Engine™ Synthesis",
+      "engineDesc": "Automatically orchestrates Top Seller narrative structures, visual rhythm shifts, and licensed trending sounds.",
+      "outputBadge": "Output Library",
+      "outputTitle": "03. Proprietary Variant Library",
+      "outputDesc": "Deploys dozens of conversion-ready sales videos, primed for simultaneous multi-channel social distribution."
     },
-    {
-      "id": "text-effects",
-      "title": "Text & polished effects",
-      "description": "Add captions, text, and effects that highlight offers, pricing, and selling points in the vertical feed.",
-      "bullets": []
-    },
-    {
-      "id": "music-trend",
-      "title": "Music & hot trends",
-      "description": "Apply trending music and styles so your videos feel current and keep viewers watching longer.",
-      "bullets": []
-    },
-    {
-      "id": "export",
-      "title": "High-quality export",
-      "description": "Export sharp videos in the right ratios for TikTok, Reels, and Shorts — ready to post on phone or desktop.",
-      "bullets": []
+    "antiReup": {
+      "label": "SAFEGUARD AI™ ARCHITECTURE",
+      "title": "Scale Multi-Channel Networks Safely with SafeGuard AI™",
+      "subtitle": "Proprietary multi-layer content differentiation ensures every video variant is recognized as an authentic standalone creation, maximizing organic algorithmic reach:",
+      "points": [
+        {
+          "num": "01",
+          "title": "Multi-Layer Origin Architecture",
+          "desc": "Generates independent digital metadata and distinctive structural foundations for every single variant."
+        },
+        {
+          "num": "02",
+          "title": "Dynamic Flow Pacing",
+          "desc": "Intelligently modulates scene durations and transition cadences, delivering a fresh viewing experience across clips."
+        },
+        {
+          "num": "03",
+          "title": "Adaptive Visual Dimension",
+          "desc": "Dynamically coordinates framing depth, scale ratios, and focal tracking to optimize visual engagement."
+        },
+        {
+          "num": "04",
+          "title": "Smart Audio Blend",
+          "desc": "Harmonizes licensed trending audio tracks tailored to specific e-commerce niches without copyright conflicts."
+        },
+        {
+          "num": "05",
+          "title": "Adaptive Hook Sequencing",
+          "desc": "Diversifies the crucial first 3-second hook moments to capture diverse viewer demographics and buyer mindsets."
+        }
+      ]
     }
-  ],
+  },
+  "benefitsSection": {
+    "label": "GROWTH LEVERAGE",
+    "title": "The Ultimate Advantage to Accelerate Your Video Commerce GMV",
+    "subtitle": "Engineered to transform individual KOCs into scalable, resilient multi-channel affiliate networks.",
+    "items": [
+      {
+        "id": "time-saving",
+        "num": "01",
+        "title": "Time Freedom — Reclaim 90% of Editing Time",
+        "desc": "Stop burning late-night hours on tedious manual video editing. Record once and unlock an entire library of diverse content, freeing your schedule for strategic affiliate deals.",
+        "highlight": "Save 90% editing time"
+      },
+      {
+        "id": "kpi-daily",
+        "num": "02",
+        "title": "Master Daily Posting KPIs Effortlessly",
+        "desc": "Never face creative fatigue or disrupted algorithm momentum again. Keep a steady pipeline of high-converting videos ready for peak shopping hours and Mega Sale events.",
+        "highlight": "Sustain 3–5 videos/day"
+      },
+      {
+        "id": "affiliate-farming",
+        "num": "03",
+        "title": "Scale Multi-Channel Affiliate Networks",
+        "desc": "Empower a single operator to manage dozens of TikTok Shop and Reels affiliate satellite accounts, expanding audience reach and compounding passive commissions.",
+        "highlight": "Multiply affiliate revenue"
+      },
+      {
+        "id": "anti-reup",
+        "num": "04",
+        "title": "Sustainable Growth with SafeGuard AI™",
+        "desc": "Backed by SafeGuard AI™, every published video maintains standalone creative authenticity. Protect your accounts and unlock organic algorithmic distribution with confidence.",
+        "highlight": "100% Account protection"
+      }
+    ]
+  },
+  "formulaSection": {
+    "label": "TOPSLLER BLUEPRINTS™ REPOSITORY",
+    "title": "Explore Proven 7-Figure Sales Video Frameworks",
+    "subtitle": "Distilled from top-performing social commerce campaigns. Experience the Smart Director™ camera simulator and unlock complete blueprints in the app.",
+    "categories": [
+      { "id": "all", "label": "All Frameworks" },
+      { "id": "skincare", "label": "Beauty & Skincare" },
+      { "id": "fashion", "label": "Fashion & OOTD" },
+      { "id": "home", "label": "Smart Home" },
+      { "id": "food", "label": "Food & Beverage" },
+      { "id": "tech", "label": "Tech & Gadgets" }
+    ],
+    "simulatorTitle": "Smart Director™ Camera Simulator",
+    "simulatorSubtitle": "Experience how Five Cut Pro guides KOCs through framing angles and countdown beats with pinpoint precision",
+    "playSimulator": "Run Camera Simulator",
+    "pauseSimulator": "Pause",
+    "applyFormulaBtn": "Download Five Cut Pro & Unlock 500+ Blueprints",
+    "sceneHeader": "Scene Breakdown",
+    "durationLabel": "Duration",
+    "angleLabel": "Suggested Camera Angle",
+    "actionLabel": "Conversion Objective",
+    "scriptLabel": "Exclusive Sales Script",
+    "cartNotice": "🛒 TikTok Shop Cart Activated",
+    "goldenDurationPrefix": "Optimal Duration:",
+    "scenesCountSuffix": "scenes",
+    "createdByLabel": "Created by",
+    "viewsCountSuffix": "views",
+    "appliedCountSuffix": "creators applied",
+    "sceneLabel": "Scene",
+    "vipCallout": "✨ The complete library of 500+ Top Seller blueprints and smart teleprompter cues is built directly into Five Cut Pro.",
+    "formulas": [
+      {
+        "id": "f-skincare",
+        "category": "skincare",
+        "categoryLabel": "Beauty",
+        "title": "Pain Point Annihilation — Rapid 7-Day Conversion",
+        "creator": "@linh.beauty",
+        "creatorBadge": "Top Creator",
+        "brandDeal": "DermaLab Official",
+        "totalTime": "12.8s",
+        "views": "2.4M+",
+        "kocCount": "14.8K KOCs",
+        "conversion": "+340% Cart Clicks",
+        "summary": "A 6-shot framework addressing customer anxiety in the first 2 seconds and cementing purchase confidence through visual Before/After proof.",
+        "shots": [
+          {
+            "num": 1,
+            "stage": "3s Retention Hook",
+            "time": "2.0s",
+            "angle": "Eye-level Selfie (Smart Director™ Face Framing)",
+            "action": "Trigger immediate curiosity and highlight the viewer's primary pain point to prevent swipe-away behavior.",
+            "script": "🔒 Exclusive opening hook — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 2,
+            "stage": "Product Immersion",
+            "time": "2.4s",
+            "angle": "Macro Close-up 15cm (Auto Product Focus)",
+            "action": "Highlight tactile texture and rapid absorption to stimulate immediate sensory desire.",
+            "script": "🔒 Sensory demo script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 3,
+            "stage": "Before/After Proof",
+            "time": "2.0s",
+            "angle": "Split-Screen Comparative Visual",
+            "action": "Provide tangible visual proof to dissolve customer skepticism and validate product efficacy.",
+            "script": "🔒 Trust-building script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 4,
+            "stage": "Key Feature Highlight",
+            "time": "2.0s",
+            "angle": "45-Degree Angle Studio Lighting",
+            "action": "Emphasize genuine authenticity seals, premium packaging, and anti-counterfeit QR certification.",
+            "script": "🔒 Authenticity script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 5,
+            "stage": "Emotional Validation",
+            "time": "2.0s",
+            "angle": "Medium Shot Front-Facing",
+            "action": "Radiate genuine confidence, reassuring the viewer that this product is the perfect solution for their lifestyle.",
+            "script": "🔒 Endorsement script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 6,
+            "stage": "Cart CTA Activation",
+            "time": "2.4s",
+            "angle": "Firm gesture pointing to bottom-left screen",
+            "action": "Instill immediate buying urgency (limited-time flash voucher) with clear navigation to the product cart.",
+            "script": "🔒 High-conversion closing CTA — Download Five Cut Pro to unlock"
+          }
+        ]
+      },
+      {
+        "id": "f-fashion",
+        "category": "fashion",
+        "categoryLabel": "Fashion",
+        "title": "OOTD Transformation Matrix — 1 Item Multi-Style",
+        "creator": "@huy.stylist",
+        "creatorBadge": "Top Stylist",
+        "brandDeal": "Coolmate Men",
+        "totalTime": "14.2s",
+        "views": "3.1M+",
+        "kocCount": "22.5K KOCs",
+        "conversion": "+420% Cart Clicks",
+        "summary": "Rapid transition framework showcasing everyday versatility to stimulate impulsive buying desire.",
+        "shots": [
+          {
+            "num": 1,
+            "stage": "3s Transformation Hook",
+            "time": "2.0s",
+            "angle": "Full-body Wide Shot (Centered Guide Grid)",
+            "action": "Create sharp visual contrast between casual loungewear and an elevated, sharp ensemble.",
+            "script": "🔒 Transformation hook script — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 2,
+            "stage": "Style 1: Office Fit",
+            "time": "2.5s",
+            "angle": "Medium Front-Facing",
+            "action": "Demonstrate workplace readiness, projecting a polished, professional aesthetic.",
+            "script": "🔒 Professional style cues — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 3,
+            "stage": "Style 2: Weekend Casual",
+            "time": "2.5s",
+            "angle": "Outdoor Natural Motion",
+            "action": "Highlight relaxed, effortlessly stylish appeal for coffee dates and weekend leisure.",
+            "script": "🔒 Weekend lifestyle cues — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 4,
+            "stage": "Fabric & Material Macro",
+            "time": "2.2s",
+            "angle": "Macro Close-up Texture",
+            "action": "Demonstrate elasticity, wrinkle-resistance, and breathable premium weave quality.",
+            "script": "🔒 Fabric breakdown script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 5,
+            "stage": "Fit & Silhouette Flattery",
+            "time": "2.0s",
+            "angle": "3/4 Angle Flattering Framing",
+            "action": "Reassure tailored silhouette fitting and flattering cuts for diverse body shapes.",
+            "script": "🔒 Fit consultation script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 6,
+            "stage": "Cart CTA Activation",
+            "time": "3.0s",
+            "angle": "Direct gesture pointing to cart badge",
+            "action": "Highlight active promotional vouchers currently available in the shopping cart.",
+            "script": "🔒 Fashion conversion closer — Download Five Cut Pro to unlock"
+          }
+        ]
+      },
+      {
+        "id": "f-home",
+        "category": "home",
+        "categoryLabel": "Home",
+        "title": "Sensory Immersion — Smart Home Living Solutions",
+        "creator": "@bep.nha.an",
+        "creatorBadge": "Top Creator",
+        "brandDeal": "Sunhouse Mall",
+        "totalTime": "13.9s",
+        "views": "1.8M+",
+        "kocCount": "12.1K KOCs",
+        "conversion": "+290% Cart Clicks",
+        "summary": "Combines auditory and visual ASMR triggers with practical wellness proof for modern households.",
+        "shots": [
+          {
+            "num": 1,
+            "stage": "Auditory ASMR Hook",
+            "time": "2.0s",
+            "angle": "Close-up Sensory Audio & Visual",
+            "action": "Harness vivid crunch sound cues to stimulate appetite and capture retention immediately.",
+            "script": "🔒 Auditory hook script — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 2,
+            "stage": "Unboxing & Reveal",
+            "time": "2.6s",
+            "angle": "Top-Down Overhead View",
+            "action": "Showcase sleek appliance design and golden, juicy culinary outcomes.",
+            "script": "🔒 Sensory reveal script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 3,
+            "stage": "Oil Separation Proof",
+            "time": "2.4s",
+            "angle": "Close-up Separation Tray",
+            "action": "Directly demonstrate excess oil extraction, addressing family wellness priorities.",
+            "script": "🔒 Health proof script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 4,
+            "stage": "One-Touch Control Panel",
+            "time": "2.0s",
+            "angle": "LED Interface Close-up",
+            "action": "Prove effortless simplicity, showing intuitive accessibility for all age groups.",
+            "script": "🔒 Interface usability script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 5,
+            "stage": "Rapid Rinse & Clean",
+            "time": "2.0s",
+            "angle": "Non-stick Wash Basin View",
+            "action": "Eliminate cleanup objections with effortless water rinsing demonstrations.",
+            "script": "🔒 Easy-clean script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 6,
+            "stage": "Cart CTA Activation",
+            "time": "2.9s",
+            "angle": "Gesture towards cart corner",
+            "action": "Announce manufacturer 1-to-1 replacement warranty and limited-time bonus gifts.",
+            "script": "🔒 Home appliance closer — Download Five Cut Pro to unlock"
+          }
+        ]
+      },
+      {
+        "id": "f-food",
+        "category": "food",
+        "categoryLabel": "Food",
+        "title": "Taste Explosion — Irresistible Cravings Review",
+        "creator": "@foody.saigon",
+        "creatorBadge": "Food Reviewer",
+        "brandDeal": "Bún Bò Huế Xưa",
+        "totalTime": "13.5s",
+        "views": "2.9M+",
+        "kocCount": "18.4K KOCs",
+        "conversion": "+380% Cart Clicks",
+        "summary": "Maximizes craving stimulation and pricing curiosity to drive immediate coupon saves and orders.",
+        "shots": [
+          {
+            "num": 1,
+            "stage": "Pricing Curiosity Hook",
+            "time": "2.0s",
+            "angle": "Macro Overhead Food Bowl",
+            "action": "Establish an irresistible contrast between a massive serving and an unexpectedly affordable price.",
+            "script": "🔒 Curiosity hook script — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 2,
+            "stage": "Mouthwatering Dip",
+            "time": "2.5s",
+            "angle": "Close-up Chopstick Action",
+            "action": "Showcase tender cuts dipped in sizzling sauce to trigger sensory appetite.",
+            "script": "🔒 Appetite appeal script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 3,
+            "stage": "Delighted Expression",
+            "time": "2.4s",
+            "angle": "Front-Facing Tasting Reaction",
+            "action": "Communicate authentic sensory delight with genuine satisfaction cues.",
+            "script": "🔒 Flavor immersion script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 4,
+            "stage": "Signature Toppings",
+            "time": "2.1s",
+            "angle": "Close-up Unique Ingredients",
+            "action": "Spotlight distinctive signature toppings absent in competing establishments.",
+            "script": "🔒 Unique specialty script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 5,
+            "stage": "Dining Ambiance",
+            "time": "2.0s",
+            "angle": "Wide Clean Atmosphere View",
+            "action": "Provide reassurance regarding spotless hygiene and comfortable guest amenities.",
+            "script": "🔒 Atmosphere proof script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 6,
+            "stage": "Cart CTA Activation",
+            "time": "2.5s",
+            "angle": "Direct gesture to discount voucher",
+            "action": "Urge viewers to claim exclusive 30% discount coupons before allocation runs out.",
+            "script": "🔒 F&B discount closer — Download Five Cut Pro to unlock"
+          }
+        ]
+      },
+      {
+        "id": "f-tech",
+        "category": "tech",
+        "categoryLabel": "Tech",
+        "title": "Feature Immersion — Shatter Buyer Hesitation",
+        "creator": "@tech.review.pro",
+        "creatorBadge": "Tech Pro",
+        "brandDeal": "Baseus Official",
+        "totalTime": "13.2s",
+        "views": "4.2M+",
+        "kocCount": "31.2K KOCs",
+        "conversion": "+460% Cart Clicks",
+        "summary": "Presents strong contrast between daily friction and instant tech solutions, accelerating buying decisions.",
+        "shots": [
+          {
+            "num": 1,
+            "stage": "1-Second Contrast Hook",
+            "time": "2.0s",
+            "angle": "Everyday Environment Medium Shot",
+            "action": "Create striking contrast between ambient noise and total serenity upon product activation.",
+            "script": "🔒 Sensory contrast script — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 2,
+            "stage": "Durability & Fit Test",
+            "time": "2.5s",
+            "angle": "Dynamic Side Profile Action",
+            "action": "Subject product to vigorous motion testing to prove ergonomic grip and secure comfort.",
+            "script": "🔒 Durability test script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 3,
+            "stage": "Industrial Design Close-up",
+            "time": "2.2s",
+            "angle": "Handheld Hardware Details",
+            "action": "Highlight crystal-clear LED display indicators, magnetic snap, and premium build finish.",
+            "script": "🔒 Build quality script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 4,
+            "stage": "Acoustic Performance",
+            "time": "2.1s",
+            "angle": "Acoustic Driver Close-up",
+            "action": "Highlight rich bass frequencies and noise-canceling microphone clarity.",
+            "script": "🔒 Acoustic benchmark script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 5,
+            "stage": "Battery Life Assurance",
+            "time": "2.0s",
+            "angle": "Authoritative Front Medium Shot",
+            "action": "Reassure 30-hour battery endurance and full 12-month manufacturer replacement warranty.",
+            "script": "🔒 Warranty assurance script line — Download Five Cut Pro to unlock"
+          },
+          {
+            "num": 6,
+            "stage": "Cart CTA Activation",
+            "time": "2.4s",
+            "angle": "Direct gesture to TikTok Shop cart",
+            "action": "Highlight flash sale pricing valid today only with immediate checkout prompts.",
+            "script": "🔒 Tech flash deal closer — Download Five Cut Pro to unlock"
+          }
+        ]
+      }
+    ]
+  },
+  "sponsorsSection": {
+    "label": "FOR BRANDS & ENTERPRISES",
+    "title": "Brand Sponsorships & High-ROI Campaigns",
+    "subtitle": "Access our network of thousands of vetted KOCs, sponsor proprietary conversion blueprints, and scale TikTok Shop & Reels sales efficiently.",
+    "stats": [
+      { "value": "1,000+", "label": "Active KOC creators" },
+      { "value": "100%", "label": "Optimized retention rhythm" },
+      { "value": "-70%", "label": "Lower booking overhead" },
+      { "value": "3 Mins", "label": "Video production time" }
+    ],
+    "benefitsTitle": "Why top e-commerce brands sponsor on Five Cut Pro",
+    "benefits": [
+      "Sponsor exclusive review formulas aligned with your brand positioning.",
+      "Synchronously blanket social feeds with hundreds of creator videos.",
+      "Control product angles, packaging visibility, and message consistency.",
+      "Direct audience action with embedded cart tags and gesture prompts."
+    ],
+    "form": {
+      "title": "Request a Brand Sponsorship Consultation",
+      "desc": "Share your campaign goals, and our brand strategy team will reach out with a tailored proposal within 2 business hours.",
+      "brandNameLabel": "Brand / Company Name",
+      "brandNamePlaceholder": "e.g., Anker, L'Oréal, Gymshark...",
+      "contactNameLabel": "Representative Name",
+      "contactNamePlaceholder": "Alex Nguyen (Marketing Lead)",
+      "emailLabel": "Work Email",
+      "emailPlaceholder": "alex@brand.com",
+      "phoneLabel": "Phone Number / WhatsApp / Zalo",
+      "phonePlaceholder": "+84 912 345 678",
+      "budgetLabel": "Estimated Campaign Budget",
+      "budgetOptions": [
+        "Under $1,000 (Pilot Campaign)",
+        "$1,000 - $3,000 (Mid-tier Campaign)",
+        "$3,000 - $10,000 (Major Push)",
+        "Over $10,000 (Strategic Enterprise Partner)"
+      ],
+      "noteLabel": "Campaign Goals & Notes",
+      "notePlaceholder": "Describe products, target creator quantity, preferred launch timeline...",
+      "submitButton": "Submit Sponsorship Request",
+      "successMessage": "Thank you! Your partnership request was received. Our team will contact you within 2 business hours.",
+      "directContact": "Or contact our Head of Brand Partnerships directly:",
+      "emailAria": "Send email to brand partnerships",
+      "emailText": "shay.hcmc.work@gmail.com"
+    }
+  },
+  "faqSection": {
+    "label": "FREQUENTLY ASKED QUESTIONS",
+    "title": "Frequently Asked Questions About Five Cut Pro",
+    "subtitle": "Everything you need to know to master video commerce automation.",
+    "items": [
+      {
+        "id": "faq-1",
+        "question": "I have zero video recording or editing experience. Can I use Five Cut Pro?",
+        "answer": "Absolutely! Five Cut Pro was specifically engineered to remove technical hurdles. The in-camera Smart Director™ guides your framing, countdown timers, and teleprompter lines directly on-screen. Once you record, the Five Engine™ automatically completes 100% of the editing, rhythm tuning, and trending audio blending."
+      },
+      {
+        "id": "faq-2",
+        "question": "Are the generated videos safe for multi-channel accounts and algorithm distribution?",
+        "answer": "Yes, 100%. Five Cut Pro features proprietary SafeGuard AI™ technology that automatically creates multi-dimensional variations across visual rhythm, framing angles, and licensed trending audio. Every output is recognized as an authentic, standalone creation by social platforms, ensuring complete safety when managing multi-account affiliate matrices."
+      },
+      {
+        "id": "faq-3",
+        "question": "What footage do I need to prepare before starting?",
+        "answer": "All you need is your smartphone and the product you wish to showcase. Open the Five Cut Pro camera and follow the visual guidance of the Smart Director™ for 2–3 minutes. The system automatically transforms your single session into a full suite of high-converting sales videos."
+      },
+      {
+        "id": "faq-4",
+        "question": "How does Five Cut Pro help creators scale affiliate revenue?",
+        "answer": "Instead of losing an entire day producing one video for a single profile, Five Cut Pro allows you to blanket 5–20 affiliate channels simultaneously from one recording session. Diverse variants reach multiple customer segments, multiplying cart conversions and passive commission earnings without duplicate content flags."
+      },
+      {
+        "id": "faq-5",
+        "question": "How were the TopSeller Blueprints™ created?",
+        "answer": "Every blueprint in our library was distilled from real-world top-grossing campaigns across TikTok Shop and Reels. Each framework is calibrated to psychological conversion triggers, ensuring maximum retention in the opening 3 seconds and a decisive push toward cart checkout."
+      }
+    ]
+  },
   "downloadSection": {
     "label": "Download",
     "title": "Available on App Store, Google Play, Windows & macOS",
-    "subtitle": "Version {version}. Choose your device to download and start creating sales videos.",
-    "desktopLabel": "Desktop",
-    "mobileLabel": "Mobile",
+    "subtitle": "Version {version}. Choose your platform to start producing viral sales videos.",
+    "desktopLabel": "Desktop (macOS & Windows)",
+    "mobileLabel": "Mobile (iOS & Android)",
     "ctaDownloads": "Download",
-    "ctaStore": "Open store",
-    "comingSoon": "Coming soon",
+    "ctaStore": "Open Store",
+    "comingSoon": "Coming Soon",
     "githubAll": "View all releases"
   },
   "downloadCards": {
     "mac-apple-silicon": {
       "title": "macOS (Apple Silicon)",
-      "subtitle": "M1 / M2 / M3 and newer"
+      "subtitle": "M1 / M2 / M3 / M4 and newer"
     },
     "mac-intel": {
       "title": "macOS (Intel)",
@@ -70,7 +583,7 @@
     },
     "windows": {
       "title": "Windows",
-      "subtitle": "Windows 10 / 11"
+      "subtitle": "Windows 10 / 11 64-bit"
     },
     "ios": {
       "title": "iOS",
@@ -82,34 +595,34 @@
     }
   },
   "installSection": {
-    "label": "Installation",
-    "title": "Installation guide",
+    "label": "Guide",
+    "title": "Quick installation steps",
     "macTitle": "macOS",
     "macSteps": [
-      "Drag the application into the Applications folder.",
-      "Open Terminal (press ⌘ Space, then type Terminal)."
+      "Drag the application to your Applications folder.",
+      "Open Terminal (press ⌘ Space, type Terminal)."
     ],
     "macCommandLabel": "Run the following command:",
-    "macCommand": "xattr -cr /Applications/Tizan\\ Cut\\ Pro.app",
+    "macCommand": "xattr -cr /Applications/Five\\ Cut\\ Pro.app",
     "copyCommandLabel": "Copy command",
     "copiedCommandLabel": "Copied",
     "winTitle": "Windows",
     "winSteps": [
-      "Download the installer from the options above.",
-      "Open the file to complete installation and launch the app.",
-      "If Windows Defender shows a warning, select More info, then Run anyway."
+      "Download the installer file from the options above.",
+      "Open the file to complete installation and launch.",
+      "If Windows Defender shows a prompt, click More info then Run anyway."
     ],
     "iosTitle": "iOS",
     "iosSteps": [
       "Open the App Store link in the Mobile section (when available).",
-      "Tap Install and sign in with your Apple ID if prompted.",
-      "Open Tizan Cut Pro from your Home Screen."
+      "Tap Install and authenticate with your Apple ID if prompted.",
+      "Launch Five Cut Pro from your home screen."
     ],
     "androidTitle": "Android",
     "androidSteps": [
       "Open the Google Play link in the Mobile section (when available).",
       "Tap Install and accept permissions if prompted.",
-      "Open Tizan Cut Pro from your app list."
+      "Launch Five Cut Pro from your app drawer."
     ]
   }
 }

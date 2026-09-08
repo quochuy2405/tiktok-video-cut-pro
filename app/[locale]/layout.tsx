@@ -4,6 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { GoogleAnalytics } from "@/components/google-analytics";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { routing } from "@/i18n/routing";
@@ -154,6 +155,7 @@ export default async function LocaleLayout({
         className="flex min-h-full flex-col bg-background font-sans text-foreground"
         suppressHydrationWarning
       >
+        <GoogleAnalytics />
         <NextIntlClientProvider messages={messages}>
           <SiteHeader />
           <main className="flex min-w-0 flex-1 flex-col overflow-x-clip pt-[64px]">

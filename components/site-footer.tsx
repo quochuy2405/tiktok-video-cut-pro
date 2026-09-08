@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
+import { trackCtaClick } from "@/lib/analytics";
 import { APP_NAME } from "@/lib/brand";
 
 export function SiteFooter() {
@@ -49,6 +50,14 @@ export function SiteFooter() {
               </Link>
             <Link
               href="/#download"
+              onClick={() => {
+                trackCtaClick({
+                  cta_name: "footer_download",
+                  cta_location: "footer",
+                  cta_text: t("downloadLink"),
+                  destination_url: "/#download",
+                });
+              }}
               className="text-zinc-300 transition-colors hover:text-brand"
             >
               {t("downloadLink")}

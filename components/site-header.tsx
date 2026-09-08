@@ -16,6 +16,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Link, usePathname } from "@/i18n/navigation";
+import { trackCtaClick } from "@/lib/analytics";
 import { APP_NAME_ACCENT, APP_NAME_LEAD } from "@/lib/brand";
 import { cn } from "@/lib/utils";
 
@@ -60,13 +61,24 @@ function NavLinks({
         const isLegal =
           item.href === "/terms-of-service" ||
           item.href === "/privacy-policy";
+        const isDownload = item.href === "/#download";
         const active = isLegal && pathname === item.href;
 
         return (
           <li key={item.href} className="shrink-0">
             <Link
               href={item.href}
-              onClick={onNavigate}
+              onClick={() => {
+                if (isDownload) {
+                  trackCtaClick({
+                    cta_name: "header_menu_download",
+                    cta_location: "header_menu",
+                    cta_text: t(item.labelKey),
+                    destination_url: item.href,
+                  });
+                }
+                onNavigate?.();
+              }}
               className={cn(
                 "block whitespace-nowrap rounded-full px-2.5 py-1.5 text-[13px] font-medium transition-colors xl:px-3.5 xl:py-2 xl:text-[14px]",
                 active
@@ -121,6 +133,14 @@ export function SiteHeader() {
             <LanguageSwitcher />
             <Link
               href="/#download"
+              onClick={() => {
+                trackCtaClick({
+                  cta_name: "header_download_desktop",
+                  cta_location: "header_desktop",
+                  cta_text: t("ctaDesktop"),
+                  destination_url: "/#download",
+                });
+              }}
               className={cn(
                 buttonVariants({ variant: "default", size: "default" }),
                 "glow-brand-sm shrink-0 rounded-full border-0 bg-brand px-5 py-2 text-xs font-semibold text-[#050507] transition-[transform,box-shadow] hover:-translate-y-px hover:bg-brand hover:glow-brand-lg xl:text-sm",
@@ -135,6 +155,14 @@ export function SiteHeader() {
         <div className="flex items-center gap-2 lg:hidden">
           <Link
             href="/#download"
+            onClick={() => {
+              trackCtaClick({
+                cta_name: "header_download_mobile",
+                cta_location: "header_mobile",
+                cta_text: t("ctaMobile"),
+                destination_url: "/#download",
+              });
+            }}
             className={cn(
               buttonVariants({ variant: "default", size: "sm" }),
               "glow-brand-sm rounded-full border-0 bg-brand px-4 font-medium text-[#050507] transition-[transform,box-shadow] hover:glow-brand-lg active:translate-y-px",

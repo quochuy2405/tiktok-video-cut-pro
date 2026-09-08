@@ -50,6 +50,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { FadeIn } from "@/components/fade-in";
 import { buttonVariants } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
+import { trackCtaClick, trackDownload } from "@/lib/analytics";
 import {
   DESKTOP_DOWNLOAD_ASSETS,
   DISPLAY_APP_VERSION,
@@ -377,6 +378,24 @@ function DownloadCard({
           href={asset.href!}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => {
+            trackCtaClick({
+              cta_name: "download_asset",
+              cta_location: "download_cards",
+              cta_text: ctaLabel,
+              asset_id: asset.id,
+              asset_title: asset.title,
+              platform: asset.platform,
+              file_name: asset.fileLabel,
+              destination_url: asset.href!,
+            });
+            trackDownload({
+              file_name: asset.fileLabel,
+              platform: asset.platform,
+              link_url: asset.href!,
+              asset_id: asset.id,
+            });
+          }}
           className="group relative flex h-full min-h-[240px] min-w-0 w-full flex-col overflow-hidden rounded-[20px] border border-white/[0.1] bg-white/[0.03] p-6 transition-colors hover:border-white/20 hover:bg-white/[0.05] sm:p-8 md:min-h-[260px] md:p-9"
         >
           {content}
@@ -453,6 +472,11 @@ export function LandingPage() {
 
   const copyMacCommand = useCallback(async () => {
     try {
+      trackCtaClick({
+        cta_name: "copy_mac_terminal_command",
+        cta_location: "download_install_guide",
+        cta_text: install.copyCommandLabel,
+      });
       await navigator.clipboard.writeText(install.macCommand);
       setMacCommandCopied(true);
       if (copyResetRef.current) clearTimeout(copyResetRef.current);
@@ -460,10 +484,17 @@ export function LandingPage() {
     } catch {
       setMacCommandCopied(false);
     }
-  }, [install.macCommand]);
+  }, [install.macCommand, install.copyCommandLabel]);
 
   const handleSponsorSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    trackCtaClick({
+      cta_name: "sponsor_form_submit",
+      cta_location: "sponsor_section",
+      cta_text: sponsors.form.submitButton,
+      brand_name: formData.brandName,
+      budget: formData.budget,
+    });
     setSponsorLoading(true);
     setTimeout(() => {
       setSponsorLoading(false);
@@ -622,6 +653,14 @@ export function LandingPage() {
           >
             <Link
               href="/#download"
+              onClick={() => {
+                trackCtaClick({
+                  cta_name: "hero_download_primary",
+                  cta_location: "hero",
+                  cta_text: t("hero.ctaPrimary"),
+                  destination_url: "/#download",
+                });
+              }}
               className={cn(
                 buttonVariants({ variant: "default", size: "lg" }),
                 "rounded-full border-0 bg-brand px-8 py-3 text-[15px] font-medium text-[#050507] shadow-none glow-brand-sm transition-[transform,box-shadow] hover:-translate-y-0.5 hover:bg-brand hover:glow-brand-lg",
@@ -631,6 +670,14 @@ export function LandingPage() {
             </Link>
             <Link
               href="/#batch-engine"
+              onClick={() => {
+                trackCtaClick({
+                  cta_name: "hero_explore_batch",
+                  cta_location: "hero",
+                  cta_text: t("hero.pillBatch"),
+                  destination_url: "/#batch-engine",
+                });
+              }}
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
                 "rounded-full border-white/20 bg-white/[0.04] px-8 py-3 text-[15px] font-medium text-white backdrop-blur-sm hover:bg-white/[0.09] hover:text-white",
@@ -641,6 +688,14 @@ export function LandingPage() {
             </Link>
             <Link
               href="/#formula"
+              onClick={() => {
+                trackCtaClick({
+                  cta_name: "hero_explore_formula",
+                  cta_location: "hero",
+                  cta_text: t("hero.ctaSecondary"),
+                  destination_url: "/#formula",
+                });
+              }}
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
                 "rounded-full border-white/20 bg-white/[0.04] px-8 py-3 text-[15px] font-medium text-white backdrop-blur-sm hover:bg-white/[0.09] hover:text-white",
@@ -650,6 +705,14 @@ export function LandingPage() {
             </Link>
             <Link
               href="/#sponsors"
+              onClick={() => {
+                trackCtaClick({
+                  cta_name: "hero_explore_sponsors",
+                  cta_location: "hero",
+                  cta_text: t("hero.ctaBrand"),
+                  destination_url: "/#sponsors",
+                });
+              }}
               className={cn(
                 buttonVariants({ variant: "ghost", size: "lg" }),
                 "rounded-full border border-emerald-500/30 bg-emerald-500/10 px-6 py-3 text-[15px] font-medium text-emerald-400 hover:bg-emerald-500/20 hover:text-white transition-colors",
@@ -759,6 +822,14 @@ export function LandingPage() {
                   <div className="flex shrink-0 flex-wrap gap-3">
                     <Link
                       href="/#formula"
+                      onClick={() => {
+                        trackCtaClick({
+                          cta_name: "batch_guide_formula",
+                          cta_location: "batch_engine_guide_card",
+                          cta_text: t("hero.ctaSecondary"),
+                          destination_url: "/#formula",
+                        });
+                      }}
                       className={cn(
                         buttonVariants({ variant: "default", size: "default" }),
                         "rounded-full bg-brand text-[#050507] hover:bg-brand font-medium glow-brand-sm",
@@ -1219,6 +1290,14 @@ export function LandingPage() {
                   <div className="pt-2">
                     <Link
                       href="/#download"
+                      onClick={() => {
+                        trackCtaClick({
+                          cta_name: "formula_apply_download",
+                          cta_location: "formula_section",
+                          cta_text: formulaSection.applyFormulaBtn,
+                          destination_url: "/#download",
+                        });
+                      }}
                       className={cn(
                         buttonVariants({ variant: "default", size: "lg" }),
                         "w-full rounded-xl bg-brand py-3 text-sm font-semibold text-[#050507] glow-brand-sm hover:bg-brand",
@@ -1304,6 +1383,14 @@ export function LandingPage() {
                   </p>
                   <a
                     href={`mailto:${sponsors.form.emailText}`}
+                    onClick={() => {
+                      trackCtaClick({
+                        cta_name: "sponsor_direct_email",
+                        cta_location: "sponsor_section",
+                        cta_text: sponsors.form.emailText,
+                        destination_url: `mailto:${sponsors.form.emailText}`,
+                      });
+                    }}
                     aria-label={sponsors.form.emailAria}
                     className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:underline"
                   >
@@ -1689,6 +1776,14 @@ export function LandingPage() {
               href={githubReleasesTagPageUrl()}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                trackCtaClick({
+                  cta_name: "github_all_releases",
+                  cta_location: "download_section_github",
+                  cta_text: t("downloadSection.githubAll"),
+                  destination_url: githubReleasesTagPageUrl(),
+                });
+              }}
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
                 "inline-flex w-full max-w-md justify-center rounded-full border-white/20 bg-white/[0.04] px-6 py-3 text-[15px] font-medium text-white backdrop-blur-sm hover:bg-white/[0.09] hover:text-white sm:w-auto sm:max-w-none sm:px-10",

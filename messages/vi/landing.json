@@ -1,14 +1,16 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "NỀN TẢNG TỰ ĐỘNG HÓA VIDEO BÁN HÀNG CHO NHÀ SÁNG TẠO & TIẾP THỊ LIÊN KẾT",
-    "titleLead": "Nhân bản 100 video bán hàng",
-    "titleAccent": "Chỉ với 1 lần bấm máy duy nhất",
-    "subtitle": "Five Cut Pro trang bị trợ lý camera thông minh và công nghệ tự động hóa độc quyền. Tạo hàng trăm video bán hàng độc nhất chuẩn chuyển đổi triệu đơn — tiết kiệm 90% thời gian dựng video, hoàn thành chỉ tiêu đăng bài đều đặn mỗi ngày và tự tin nhân bản dàn kênh tiếp thị liên kết an toàn tuyệt đối.",
-    "ctaPrimary": "Trải nghiệm ứng dụng ngay",
-    "ctaSecondary": "Khám phá kho kịch bản triệu đơn",
-    "ctaBatch": "Khám phá cỗ máy 1 ➔ 100",
+    "tagline": "VŨ KHÍ ĐỘT PHÁ DOANH SỐ CHO KOC & HỆ THỐNG TIẾP THỊ LIÊN KẾT TIKTOK SHOP",
+    "titleLead": "Biến 1 Lần Quay 3 Phút",
+    "titleAccent": "Thành 100 Video Bán Hàng Triệu View",
+    "subtitle": "Quên đi những đêm còng lưng cắt ghép 3 tiếng một video rồi lẹt đẹt 200 view hay sợ bị quét trùng lặp. Five Cut Pro trang bị trợ lý camera chỉ từng góc quay và công nghệ Five Engine độc quyền — tự động nhân bản hàng trăm video chuẩn thuật toán, phủ sóng dàn kênh affiliate và bùng nổ hoa hồng an toàn 100%.",
+    "ctaPrimary": "Tải ứng dụng miễn phí ngay",
+    "ctaSecondary": "Khám phá 500+ kịch bản triệu đơn",
+    "ctaBatch": "Cỗ máy nhân bản 1 ➔ 100",
     "ctaBrand": "Hợp tác nhãn hàng & tài trợ",
+    "ctaTrust": "Hoàn toàn miễn phí • Không cần thẻ tín dụng • Sẵn sàng cho macOS & Windows",
+    "ctaSocialProof": "Được tin dùng bởi hơn 1,000+ KOC & Đội ngũ tiếp thị liên kết TikTok Shop",
     "audienceKoc": "Dành cho KOC & Nhà sáng tạo nội dung",
     "audienceSeller": "Nhà bán hàng & Đội ngũ tiếp thị liên kết",
     "logoAlt": "Biểu tượng Five Cut Pro",
@@ -18,6 +20,12 @@
     "pillBatch": "Cỗ máy 1 ➔ 100 — 1 Lần quay ra 100 video",
     "pillAntiReup": "Bảo vệ tài khoản — Không lo trùng lặp nội dung"
   },
+  "metricsBar": [
+    { "value": "100+", "label": "Video Biến Thể Độc Nhất", "desc": "Chỉ từ 1 lần bấm máy 3 phút" },
+    { "value": "90%", "label": "Thời Gian Dựng Được Giải Phóng", "desc": "Không còn còng lưng cắt ghép thủ công" },
+    { "value": "100%", "label": "An Toàn Thuật Toán SafeGuard", "desc": "Chống quét trùng lặp reup đa kênh" },
+    { "value": "3–5x", "label": "Tăng Trưởng Doanh Số & Hoa Hồng", "desc": "Phủ sóng dàn kênh vệ tinh đều đặn" }
+  ],
   "howItWorksSection": {
     "label": "QUY TRÌNH TINH GỌN",
     "title": "Sản Xuất 100 Video Bán Hàng — Chưa Bao Giờ Dễ Dàng Đến Thế",
@@ -42,6 +50,35 @@
         "badge": "Tự động hóa hoàn toàn"
       }
     ]
+  },
+  "comparisonSection": {
+    "badge": "ĐỐI CHIẾU THỰC TẾ",
+    "title": "Tại Sao KOC & Seller Triệu Đơn Bỏ Cách Làm Thủ Công?",
+    "subtitle": "Đừng lãng phí hàng giờ mò mẫm cắt ghép khi đối thủ của bạn đã phủ sóng hàng chục kênh mỗi ngày bằng Five Cut Pro.",
+    "oldWay": {
+      "badge": "Cách cũ tốn sức",
+      "title": "Cách Làm Thủ Công Kiểu Cũ",
+      "subtitle": "Mệt mỏi, tốn thời gian và dễ nản lòng",
+      "points": [
+        "Mất 2–3 tiếng chỉ để cắt ghép, lồng nhạc, chèn chữ cho 1 video đơn lẻ",
+        "Cạn kiệt ý tưởng kịch bản, ấp úng không biết nói gì trước ống kính",
+        "Đăng 1 video lên nhiều kênh bị TikTok bóp tương tác, dính gậy reup",
+        "Chỉ tiêu đăng bài bấp bênh, lượt xem lẹt đẹt 200 view rồi nản lòng bỏ cuộc",
+        "Một mình không thể quản lý và mở rộng hệ thống kênh vệ tinh"
+      ]
+    },
+    "newWay": {
+      "badge": "Vũ khí đột phá 2026",
+      "title": "Đột Phá Cùng Five Cut Pro",
+      "subtitle": "Tự động hóa toàn diện, nhân bản doanh số",
+      "points": [
+        "Bấm máy 1 lần 3 phút theo trợ lý ➔ Nhận ngay 100 video độc nhất",
+        "500+ kịch bản triệu đơn tích hợp sẵn đếm ngược từng nhịp câu thoại",
+        "Công nghệ SafeGuard biến thiên đa tầng: nhịp cắt, zoom, âm trend ➔ 0% lo quét",
+        "Lên sóng đều đặn 3–5 video/ngày vào mọi khung giờ vàng, kéo bão đơn",
+        "1 người nhàn tênh quản lý và vận hành dàn 10–20 kênh TikTok Shop vệ tinh"
+      ]
+    }
   },
   "batchEngineSection": {
     "label": "CÔNG NGHỆ ĐỘC QUYỀN",

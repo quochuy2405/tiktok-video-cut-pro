@@ -4,11 +4,13 @@
     "tagline": "NEXT-GEN VIDEO COMMERCE AUTOMATION PLATFORM FOR KOCS & AFFILIATE CREATORS",
     "titleLead": "Scale 100 Winning Sales Videos",
     "titleAccent": "From Just 1 Single Phone Recording",
-    "subtitle": "Five Cut Pro pairs the Smart Director™ in-camera guide with the proprietary Five Engine™ automation suite. Effortlessly generate dozens of high-converting sales video variants built upon Top Seller Blueprints — saving 90% editing time, sustaining daily posting KPIs, and scaling multi-channel affiliate matrices safely.",
+    "subtitle": "Stop wasting 3 hours editing a single video just to get stuck at 200 views or hit with duplicate content flags. Five Cut Pro equips you with real-time camera coaching and the proprietary Five Engine™ — effortlessly multiplexing 1 raw take into 100 distinct, algorithm-optimized sales videos to scale affiliate GMV safely.",
     "ctaPrimary": "Get Five Cut Pro Free",
-    "ctaSecondary": "Explore TopSeller Blueprints™",
-    "ctaBatch": "Discover Five Engine™",
+    "ctaSecondary": "Explore 500+ TopSeller Blueprints™",
+    "ctaBatch": "Discover Five Engine™ 1 ➔ 100",
     "ctaBrand": "Brand Partnerships",
+    "ctaTrust": "100% Free to start • No credit card required • macOS & Windows ready",
+    "ctaSocialProof": "Trusted by 1,000+ TikTok Shop KOCs & Affiliate Matrix Teams",
     "audienceKoc": "Built for Professional KOCs & KOLs",
     "audienceSeller": "E-Commerce Sellers & Affiliate Matrix Teams",
     "logoAlt": "Five Cut Pro app icon",
@@ -18,6 +20,12 @@
     "pillBatch": "Five Engine™ — 1 Take ➔ 100 Unique Videos",
     "pillAntiReup": "SafeGuard AI™ — Protect multi-account reach"
   },
+  "metricsBar": [
+    { "value": "100+", "label": "Unique Video Variants", "desc": "From 1 single 3-minute recording" },
+    { "value": "90%", "label": "Editing Time Saved", "desc": "No more manual desktop timeline cuts" },
+    { "value": "100%", "label": "SafeGuard AI™ Protection", "desc": "Zero duplicate content penalties" },
+    { "value": "3–5x", "label": "Affiliate GMV Growth", "desc": "Scale posting across matrix channels" }
+  ],
   "howItWorksSection": {
     "label": "STREAMLINED WORKFLOW",
     "title": "Producing High-Converting Sales Videos Has Never Been Easier",
@@ -42,6 +50,35 @@
         "badge": "100% Automated"
       }
     ]
+  },
+  "comparisonSection": {
+    "badge": "REALITY CHECK",
+    "title": "Why Top Sellers & KOCs Abandoned Manual Editing",
+    "subtitle": "Stop burning hours on manual cuts while your competitors flood dozens of channels daily with Five Cut Pro.",
+    "oldWay": {
+      "badge": "The Slow Way",
+      "title": "The Old Manual Process",
+      "subtitle": "Exhausting, slow, and unsustainable",
+      "points": [
+        "Spending 2–3 hours cutting, subtitling, and grading a single video",
+        "Creative burnout, stumbling on camera without visual pacing cues",
+        "Cross-posting gets flagged for unoriginal content and shadowbanned",
+        "Inconsistent posting cadence, stuck at 200 views with low GMV",
+        "Impossible for solo creators to scale an affiliate channel network"
+      ]
+    },
+    "newWay": {
+      "badge": "The 2026 Advantage",
+      "title": "The Five Cut Pro Way",
+      "subtitle": "Fully automated, scalable video commerce",
+      "points": [
+        "1 three-minute guided take ➔ Instant 100 unique sales videos",
+        "500+ TopSeller Blueprints™ with real-time teleprompter pacing",
+        "SafeGuard AI™ multi-layer variation: pacing, zoom, audio ➔ 100% safe",
+        "Post 3–5 videos daily across peak hours to trigger algorithmic virality",
+        "Solo creators effortlessly manage 10–20 TikTok Shop affiliate channels"
+      ]
+    }
   },
   "batchEngineSection": {
     "label": "PROPRIETARY TECHNOLOGY",

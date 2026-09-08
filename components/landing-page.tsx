@@ -151,6 +151,30 @@ type BenefitItem = {
   highlight: string;
 };
 
+type MetricItem = {
+  value: string;
+  label: string;
+  desc: string;
+};
+
+type ComparisonSectionCopy = {
+  badge: string;
+  title: string;
+  subtitle: string;
+  oldWay: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    points: string[];
+  };
+  newWay: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    points: string[];
+  };
+};
+
 type BenefitsSectionCopy = {
   label: string;
   title: string;
@@ -455,7 +479,9 @@ export function LandingPage() {
 
   const [openFaq, setOpenFaq] = useState<string | null>("faq-1");
 
+  const metricsBar = (t.raw("metricsBar") as MetricItem[]) || [];
   const howItWorks = t.raw("howItWorksSection") as HowItWorksSectionCopy;
+  const comparison = t.raw("comparisonSection") as ComparisonSectionCopy;
   const batchEngine = t.raw("batchEngineSection") as BatchEngineSectionCopy;
   const benefits = t.raw("benefitsSection") as BenefitsSectionCopy;
   const formulaSection = t.raw("formulaSection") as FormulaSectionCopy;
@@ -762,7 +788,54 @@ export function LandingPage() {
               {t("hero.ctaBrand")}
             </Link>
           </motion.div>
+
+          {/* Hero Trust Micro-copy */}
+          <motion.div
+            className="mt-6 flex flex-col items-center gap-1.5 text-center text-xs"
+            initial={reduceMotion ? false : { opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <p className="flex items-center gap-1.5 font-medium text-zinc-300">
+              <CheckCircle2 className="size-3.5 text-brand shrink-0" />
+              <span>{t("hero.ctaTrust")}</span>
+            </p>
+            <p className="text-[11px] text-zinc-500">
+              {t("hero.ctaSocialProof")}
+            </p>
+          </motion.div>
         </div>
+
+        {/* Impact Metrics Bar */}
+        {metricsBar?.length ? (
+          <motion.div
+            className="relative z-10 mx-auto mt-14 w-full max-w-[1040px] rounded-2xl border border-white/[0.08] bg-white/[0.02] p-4 backdrop-blur-md sm:p-6"
+            initial={reduceMotion ? false : { opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.35 }}
+          >
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+              {metricsBar.map((metric, idx) => (
+                <div
+                  key={idx}
+                  className="flex flex-col items-center justify-center p-2 text-center"
+                >
+                  <span className="font-heading text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">
+                    <span className="bg-gradient-to-r from-brand via-[#5ee9b8] to-emerald-400 bg-clip-text text-transparent">
+                      {metric.value}
+                    </span>
+                  </span>
+                  <span className="mt-1 text-xs font-semibold text-zinc-200 sm:text-sm">
+                    {metric.label}
+                  </span>
+                  <span className="mt-0.5 text-[11px] text-zinc-500">
+                    {metric.desc}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        ) : null}
       </section>
 
       {/* 1. How It Works: Chưa biết quay hay edit? Chỉ 3 bước đơn giản */}
@@ -819,6 +892,113 @@ export function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* Comparison: Old Manual Way vs Five Cut Pro */}
+      {comparison && (
+        <section
+          id="comparison"
+          className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8 bg-black relative overflow-hidden"
+        >
+          <div className="mx-auto min-w-0 max-w-[1120px] relative z-10">
+            <FadeIn className="mx-auto max-w-3xl text-center">
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-amber-400">
+                <Flame className="size-3.5" />
+                <span>{comparison.badge}</span>
+              </div>
+              <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
+                {comparison.title}
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-zinc-400 md:text-lg">
+                {comparison.subtitle}
+              </p>
+            </FadeIn>
+
+            <div className="mt-14 grid gap-8 lg:grid-cols-2">
+              {/* Old Way Card */}
+              <FadeIn delay={0.1} className="flex">
+                <div className="relative flex w-full flex-col justify-between rounded-[26px] border border-red-500/20 bg-gradient-to-b from-red-950/[0.12] to-transparent p-7 sm:p-9 backdrop-blur-sm">
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <span className="inline-flex items-center gap-1.5 rounded-md border border-red-500/30 bg-red-500/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-red-400">
+                        <XCircle className="size-3.5" />
+                        {comparison.oldWay.badge}
+                      </span>
+                    </div>
+                    <h3 className="font-heading mt-5 text-xl font-semibold text-white sm:text-2xl">
+                      {comparison.oldWay.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-zinc-400">
+                      {comparison.oldWay.subtitle}
+                    </p>
+                    <ul className="mt-8 space-y-4">
+                      {comparison.oldWay.points?.map((pt, i) => (
+                        <li key={i} className="flex items-start gap-3.5 text-sm text-zinc-400">
+                          <div className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-red-500/15 text-red-400">
+                            <XCircle className="size-3.5" />
+                          </div>
+                          <span className="leading-relaxed">{pt}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </FadeIn>
+
+              {/* New Way Card (Five Cut Pro) */}
+              <FadeIn delay={0.2} className="flex">
+                <div className="relative flex w-full flex-col justify-between rounded-[26px] border border-brand/40 bg-gradient-to-b from-brand/[0.12] via-brand/[0.04] to-transparent p-7 sm:p-9 backdrop-blur-sm glow-brand-sm">
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <span className="inline-flex items-center gap-1.5 rounded-md border border-brand/40 bg-brand/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand">
+                        <Sparkles className="size-3.5" />
+                        {comparison.newWay.badge}
+                      </span>
+                    </div>
+                    <h3 className="font-heading mt-5 text-xl font-semibold text-white sm:text-2xl">
+                      {comparison.newWay.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-zinc-300">
+                      {comparison.newWay.subtitle}
+                    </p>
+                    <ul className="mt-8 space-y-4">
+                      {comparison.newWay.points?.map((pt, i) => (
+                        <li key={i} className="flex items-start gap-3.5 text-sm text-zinc-200">
+                          <div className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/20 text-brand">
+                            <Check className="size-3.5" strokeWidth={3} />
+                          </div>
+                          <span className="leading-relaxed font-medium">{pt}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="mt-10 pt-6 border-t border-white/[0.08]">
+                    <Link
+                      href="/#download"
+                      onClick={() => {
+                        trackCtaClick({
+                          cta_id: "comparison_download",
+                          cta_location: "comparison_section",
+                          cta_text: t("hero.ctaPrimary"),
+                          cta_category: "conversion_download",
+                          destination_url: "/#download",
+                        });
+                      }}
+                      className={cn(
+                        buttonVariants({ variant: "default", size: "lg" }),
+                        "w-full rounded-full bg-brand py-3.5 text-sm font-semibold text-[#050507] glow-brand-sm hover:bg-brand transition-transform hover:-translate-y-0.5",
+                      )}
+                    >
+                      <Download className="mr-2 size-4" />
+                      {t("hero.ctaPrimary")}
+                    </Link>
+                  </div>
+                </div>
+              </FadeIn>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* 2. Batch Engine: 1 Video Raw -> 100 Video Bán Hàng & Chống Reup */}
       <section

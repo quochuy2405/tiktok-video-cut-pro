@@ -4,7 +4,7 @@
     "tagline": "TỰ ĐỘNG HÓA VIDEO BÁN HÀNG TIKTOK SHOP & REELS",
     "titleLead": "Biến 1 Video Gốc Thành",
     "titleAccent": "100 Clip Bán Hàng Triệu View",
-    "subtitle": "Tự động cắt bỏ đoạn vấp thoại, đổi hook mở đầu và nhân bản 1 video thành hàng chục biến thể chuẩn thuật toán — an toàn 100% cho dàn kênh affiliate.",
+    "subtitle": "Hướng dẫn quay, tự động cắt ghép và tạo loạt video bán hàng chuẩn thuật toán — an toàn 100% cho dàn kênh affiliate.",
     "ctaPrimary": "Tải miễn phí ngay",
     "ctaSecondary": "Khám phá tính năng",
     "ctaBatch": "Nhân bản 1 ➔ 100 video",
@@ -153,7 +153,7 @@
     "guideCard": {
       "badge": "Dành Cho Người Mới Bắt Đầu",
       "title": "Tập trung ra đơn — Mọi khâu kỹ thuật đã có Five Cut Pro lo",
-      "description": "Bạn không cần phải là một chuyên gia dựng phim hay mất nhiều giờ bên máy tính. Five Cut Pro tự động hóa toàn bộ chuỗi xử lý: từ cắt bỏ đoạn thừa, tạo nhiều góc mở đầu thu hút, tự động chèn phụ đề giá sốc đến chỉ dẫn bấm giỏ hàng góc trái."
+      "description": "Bạn không cần phải là một chuyên gia dựng phim hay mất nhiều giờ bên máy tính. Five Cut Pro mang đến quy trình trọn gói: từ hướng dẫn quay đến tự động cắt ghép, tạo nhiều biến thể mở đầu thu hút đến sẵn sàng xuất bản."
     },
     "pipeline": {
       "inputBadge": "Nguồn vào",
@@ -161,7 +161,7 @@
       "inputDesc": "Video quay review sản phẩm, đập hộp unboxing hoặc một buổi livestream bán hàng trên điện thoại.",
       "engineBadge": "Động cơ xử lý",
       "engineTitle": "02. Xử Lý Tự Động Đa Tầng",
-      "engineDesc": "Tự động loại bỏ đoạn thừa, tráo đổi thứ tự phân cảnh, zoom động và làm mới dấu ấn kỹ thuật số.",
+      "engineDesc": "Tự động cắt ghép, tráo đổi thứ tự phân cảnh, zoom động và làm mới dấu ấn kỹ thuật số.",
       "outputBadge": "Kết quả đầu ra",
       "outputTitle": "03. Hàng Loạt Video Biến Thể Độc Nhất",
       "outputDesc": "Xuất bản hàng loạt video bán hàng chuẩn mực, sẵn sàng phủ sóng đồng loạt trên các kênh vệ tinh."

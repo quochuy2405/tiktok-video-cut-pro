@@ -11,6 +11,16 @@ const nextConfig: NextConfig = {
         destination: "/:locale/privacy-policy",
         permanent: true,
       },
+      {
+        source: "/:locale/end-user-license-agreement",
+        destination: "/:locale/eula",
+        permanent: true,
+      },
+      {
+        source: "/end-user-license-agreement",
+        destination: "/eula",
+        permanent: true,
+      },
     ];
   },
 };

@@ -79,6 +79,7 @@ export const MARKETING_PATHS = [
   "",
   "privacy-policy",
   "terms-of-service",
+  "eula",
 ] as const;
 
 export const SOCIAL_LINKS = {

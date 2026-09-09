@@ -1,0 +1,146 @@
+{
+  "categoryLabel": "กฎหมาย",
+  "metaTitle": "ข้อตกลงสิทธิ์การใช้งานสำหรับผู้ใช้ปลายทาง (EULA) — Five Cut Pro",
+  "metaDescription": "ข้อตกลงสิทธิ์การใช้งานสำหรับแอป Five Cut Pro บนเดสก์ท็อปและมือถือ: การอนุญาต ข้อจำกัด เนื้อหาผู้ใช้ การปฏิเสธการรับประกัน และขอบเขตความรับผิด",
+  "title": "ข้อตกลงสิทธิ์การใช้งานสำหรับผู้ใช้ปลายทาง (EULA)",
+  "updatedLabel": "อัปเดตล่าสุด",
+  "updatedDate": "9 กันยายน 2026",
+  "lawyerNotice": "EULA นี้เป็นสัญญาอนุญาตใช้งานซอฟต์แวร์ Five Cut Pro ชี้แจงสิ่งที่คุณทำได้และทำไม่ได้กับแอป เอกสารนี้มีไว้เพื่อความโปร่งใส ไม่ใช่คำแนะนำทางกฎหมาย สิทธิคุ้มครองผู้บริโภคตามกฎหมายที่ใช้บังคับยังคงได้รับการเคารพ The detailed sections below are provided in English.",
+  "sections": [
+    {
+      "title": "1. Parties and acceptance",
+      "paragraphs": [
+        "This End User License Agreement (\"EULA\") is a binding contract between you and the operator of Five Cut Pro (\"we\", \"us\", \"Licensor\") regarding your download, installation, activation, and use of the Five Cut Pro software on desktop and mobile (the \"App\").",
+        "By downloading, installing, opening, activating a licence key, or continuing to use the App, you accept this EULA and our Privacy Policy. If you do not agree, do not install or use the App and uninstall any copy you have."
+      ]
+    },
+    {
+      "title": "2. What the App is",
+      "paragraphs": [
+        "Five Cut Pro is a sales-video productivity tool for sellers, KOCs/KOLs, affiliates, and related teams. Depending on the build and features enabled for your licence, the App may help you cut and assemble footage, apply templates, generate captions, create multiple publish-ready variants from one source video, add sales-oriented overlays or CTAs, and export vertical videos for platforms such as TikTok, Reels, or Shorts.",
+        "Feature availability may differ by platform (macOS, Windows, iOS, Android), version, region, or licence tier. Descriptions on our marketing site are illustrative and do not guarantee every capability on every device."
+      ]
+    },
+    {
+      "title": "3. Licence grant",
+      "paragraphs": [
+        "Subject to this EULA and applicable law, we grant you a limited, personal, non-exclusive, non-transferable, revocable licence to install and run legitimate copies of the App on devices you own or control, solely to create and edit your own video workflows for lawful purposes."
+      ],
+      "bullets": [
+        "One licence (or seat) may only be used as stated in your purchase, activation, or in-app licence terms.",
+        "You may make a reasonable number of backup copies for personal archival use only.",
+        "No ownership of the App is transferred to you—only the licence rights stated here."
+      ]
+    },
+    {
+      "title": "4. Licence restrictions",
+      "paragraphs": [
+        "Except where mandatory law expressly allows otherwise, you must not:"
+      ],
+      "bullets": [
+        "Sell, rent, lease, sublicense, lend, or redistribute the App or licence keys as a standalone product.",
+        "Copy, modify, adapt, translate, or create derivative works of the App’s software, except as needed for normal use of documented features.",
+        "Reverse engineer, decompile, disassemble, or attempt to extract source code, models, or proprietary algorithms, except to the limited extent mandatory law permits.",
+        "Remove, obscure, or alter copyright, trademark, or proprietary notices.",
+        "Circumvent licence checks, DRM, activation, usage limits, or security controls.",
+        "Use the App to build a competing video editor or to systematically clone our core workflows, templates, or anti-duplication methods for a competing commercial offering.",
+        "Use automated bots to abuse download hosts, activation servers, or support channels."
+      ]
+    },
+    {
+      "title": "5. Accounts, licence keys, and updates",
+      "paragraphs": [
+        "If the App uses licence keys, accounts, or online activation, you are responsible for keeping credentials confidential and for activity under your licence.",
+        "We may provide updates, patches, or new versions to improve security, compatibility, or features. Some updates may be required to keep using the App. We may change, suspend, or discontinue features with reasonable notice where practicable.",
+        "We do not guarantee that older project files, presets, or exports will remain compatible forever after major upgrades—keep your own backups."
+      ]
+    },
+    {
+      "title": "6. User Content and your responsibilities",
+      "paragraphs": [
+        "\"User Content\" means videos, audio, images, captions, scripts, templates you customise, product information, music, likenesses, trademarks, and any other materials you import, generate with the App’s assistance, edit, or export.",
+        "You retain rights in your User Content to the extent you already own them. You grant us only the limited technical rights needed to operate optional cloud or support features you enable (if any), as described in the Privacy Policy.",
+        "You alone are responsible for ensuring User Content and your publishing practices comply with copyright, trademark, publicity, advertising, consumer, platform, and affiliate rules."
+      ],
+      "bullets": [
+        "Clear rights for music, talent, product branding, and third-party footage before you publish.",
+        "Do not use the App to create or distribute unlawful, infringing, deceptive, or harmful content.",
+        "Platform outcomes (reach, shop conversion, account health, duplicate-content enforcement) are controlled by third parties—not by us."
+      ]
+    },
+    {
+      "title": "7. Templates, automation, and \"anti-reup\" / uniqueness features",
+      "paragraphs": [
+        "Templates, batch remix, captioning, hook/CTA helpers, and any uniqueness or anti-duplication tooling (including features marketed under names such as SafeGuard) are provided as creative productivity aids.",
+        "They do not guarantee algorithmic approval, immunity from platform penalties, identical performance across accounts, or legal clearance of your content. You must still review outputs before publishing and follow each platform’s policies."
+      ]
+    },
+    {
+      "title": "8. No performance or revenue promises",
+      "paragraphs": [
+        "Marketing claims about speed, volume of variants, retention, commission growth, or safety are illustrative goals or typical use cases—not warranties. Actual results depend on your footage, niche, creative choices, device, network, and third-party platforms.",
+        "Nothing in the App or this EULA promises views, sales, affiliate commissions, brand deals, or compliance with any platform’s recommendation systems."
+      ]
+    },
+    {
+      "title": "9. Third-party services",
+      "paragraphs": [
+        "The App may interact with or be distributed via third parties (app stores, download hosts, CDNs, analytics, AI processors you opt into, TikTok Shop, social networks). Those services have their own terms and privacy policies. We are not responsible for their availability, decisions, or enforcement actions."
+      ]
+    },
+    {
+      "title": "10. Intellectual property",
+      "paragraphs": [
+        "The App, UI, documentation, logos, templates we supply, and related intellectual property remain ours or our licensors’. This EULA does not assign those rights to you beyond the licence to use the App as permitted.",
+        "Feedback you send may be used by us to improve the product without royalty obligations, unless a separate written agreement says otherwise."
+      ]
+    },
+    {
+      "title": "11. Disclaimer of warranties",
+      "paragraphs": [
+        "TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE APP IS PROVIDED \"AS IS\" AND \"AS AVAILABLE\", WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY—INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, QUIET ENJOYMENT, ACCURACY, UNINTERRUPTED OPERATION, OR ERROR-FREE OUTPUTS.",
+        "We do not warrant compatibility with every OS version, codec, GPU, or peripheral, or recoverability of projects after crashes, disk failure, or upgrades."
+      ]
+    },
+    {
+      "title": "12. Limitation of liability",
+      "paragraphs": [
+        "TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE AND OUR AFFILIATES, DIRECTORS, EMPLOYEES, AND CONTRACTORS WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES; LOST PROFITS, DATA, GOODWILL, OR BUSINESS OPPORTUNITIES; OR PLATFORM ACCOUNT ACTIONS—EVEN IF ADVISED OF THE POSSIBILITY.",
+        "WHERE LIABILITY CANNOT BE EXCLUDED, OUR TOTAL AGGREGATE LIABILITY FOR ALL CLAIMS ARISING FROM THIS EULA OR THE APP SHALL NOT EXCEED THE GREATER OF (A) THE FEES YOU ACTUALLY PAID US FOR THE APP IN THE TWELVE (12) MONTHS BEFORE THE CLAIM AND (B) FIFTY US DOLLARS (USD $50), OR THE MINIMUM AMOUNT REQUIRED BY MANDATORY LOCAL LAW IF HIGHER PROTECTION APPLIES.",
+        "Your primary remedy is to stop using and uninstall the App."
+      ]
+    },
+    {
+      "title": "13. Indemnity",
+      "paragraphs": [
+        "To the extent permitted by law, you will defend and indemnify us and our affiliates against claims, damages, fines, and reasonable legal costs arising from your User Content, your publications, your breach of this EULA or law, or disputes with platforms, rights-holders, customers, or affiliates—except to the extent caused by our wilful misconduct where non-waivable."
+      ]
+    },
+    {
+      "title": "14. Termination",
+      "paragraphs": [
+        "This EULA remains in effect until terminated. You may terminate by uninstalling the App and ceasing all use. We may suspend or terminate the licence if you materially breach this EULA, misuse licence keys, or if required by law.",
+        "On termination you must stop using the App and destroy unauthorised copies. Sections that by nature should survive (IP, disclaimers, liability limits, indemnity, governing law) continue to apply."
+      ]
+    },
+    {
+      "title": "15. Governing law and disputes",
+      "paragraphs": [
+        "If you reside in Vietnam, this EULA is governed by the laws of Vietnam, and disputes should first be addressed in good faith; unresolved matters may be brought before competent Vietnamese courts, subject to mandatory consumer protections.",
+        "If you reside elsewhere, non-waivable local consumer rights still apply. Where permitted, claims must be brought in your individual capacity only."
+      ]
+    },
+    {
+      "title": "16. Changes to this EULA",
+      "paragraphs": [
+        "We may update this EULA to reflect product or legal changes. Material updates will be communicated via the App, release notes, or our website. Continued use after the effective date constitutes acceptance, unless local law requires a separate consent."
+      ]
+    },
+    {
+      "title": "17. Contact",
+      "paragraphs": [
+        "Questions about this EULA or licensing: shay.hcmc.work@gmail.com (or the contact channels published on fivecutpro.com)."
+      ]
+    }
+  ]
+}

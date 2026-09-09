@@ -352,7 +352,7 @@
       "Mở Terminal (nhấn ⌘ Space, gõ Terminal)."
     ],
     "macCommandLabel": "Chạy lệnh sau:",
-    "macCommand": "xattr -cr /Applications/Five\\ Cut\\ Pro.app",
+    "macCommand": "xattr -cr /Applications/Tiktok\\ Video\\ Cut\\ Pro.app",
     "copyCommandLabel": "Sao chép lệnh",
     "copiedCommandLabel": "Đã sao chép",
     "winTitle": "Windows",

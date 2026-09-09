@@ -352,7 +352,7 @@
       "เปิด Terminal (กดปุ่ม ⌘ Space แล้วพิมพ์ Terminal)"
     ],
     "macCommandLabel": "คัดลอกและกดสั่งคำสั่งนี้ใน Terminal:",
-    "macCommand": "xattr -cr /Applications/Five\\ Cut\\ Pro.app",
+    "macCommand": "xattr -cr /Applications/Tiktok\\ Video\\ Cut\\ Pro.app",
     "copyCommandLabel": "คัดลอกคำสั่ง",
     "copiedCommandLabel": "คัดลอกแล้ว",
     "winTitle": "การติดตั้งบน Windows",

@@ -352,7 +352,7 @@
       "Open Terminal (press ⌘ Space, type Terminal)."
     ],
     "macCommandLabel": "Run the following command:",
-    "macCommand": "xattr -cr /Applications/Five\\ Cut\\ Pro.app",
+    "macCommand": "xattr -cr /Applications/Tiktok\\ Video\\ Cut\\ Pro.app",
     "copyCommandLabel": "Copy Command",
     "copiedCommandLabel": "Copied",
     "winTitle": "Windows",

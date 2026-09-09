@@ -352,7 +352,7 @@
       "ターミナルを開きます（⌘ スペースキーを押し、「ターミナル」と入力）。"
     ],
     "macCommandLabel": "ターミナルで以下のコマンドを実行してください：",
-    "macCommand": "xattr -cr /Applications/Five\\ Cut\\ Pro.app",
+    "macCommand": "xattr -cr /Applications/Tiktok\\ Video\\ Cut\\ Pro.app",
     "copyCommandLabel": "コマンドをコピー",
     "copiedCommandLabel": "コピーしました",
     "winTitle": "Windows のインストール手順",

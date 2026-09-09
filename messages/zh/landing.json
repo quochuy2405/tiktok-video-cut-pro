@@ -352,7 +352,7 @@
       "按下快捷键 ⌘ 空格，输入 Terminal 打开终端工具。"
     ],
     "macCommandLabel": "在终端中复制并回车运行以下命令解除隔离属性：",
-    "macCommand": "xattr -cr /Applications/Five\\ Cut\\ Pro.app",
+    "macCommand": "xattr -cr /Applications/Tiktok\\ Video\\ Cut\\ Pro.app",
     "copyCommandLabel": "复制命令",
     "copiedCommandLabel": "已复制到剪贴板",
     "winTitle": "Windows 客户端安装",

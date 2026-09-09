@@ -46,7 +46,18 @@ export function hreflangAlternates(path = ""): Record<string, string> {
 }
 
 export function openGraphLocale(locale: string): string {
-  return locale === "vi" ? "vi_VN" : "en_US";
+  switch (locale) {
+    case "vi":
+      return "vi_VN";
+    case "zh":
+      return "zh_CN";
+    case "th":
+      return "th_TH";
+    case "ja":
+      return "ja_JP";
+    default:
+      return "en_US";
+  }
 }
 
 export function openGraphAlternateLocales(locale: string): string[] {
@@ -70,22 +81,28 @@ export const MARKETING_PATHS = [
   "terms-of-service",
 ] as const;
 
+export const SOCIAL_LINKS = {
+  threads: "https://www.threads.net/@fivecutpro",
+  instagram: "https://www.instagram.com/fivecutpro",
+  youtube: "https://www.youtube.com/@fivecutpro",
+} as const;
+
 /** Shared social preview image (1200×630). */
 export const OG_IMAGE = {
   path: "/og.png",
   width: 1200,
   height: 630,
   type: "image/png",
-  alt: "Five Cut Pro — Tự động hóa video bán hàng cho KOC và nhà bán hàng",
+  alt: "Five Cut Pro — Cắt ghép & tự động hóa video bán hàng cho KOC và nhà bán hàng",
 } as const;
 
 /** Open Graph / Twitter share copy — luôn tiếng Việt (thị trường chính). */
 export const OG_VI = {
-  title: "Five Cut Pro — Tạo video bán hàng dễ dàng, chuyên nghiệp",
+  title: "Five Cut Pro — Cắt Ghép & Tự Động Hóa 100 Video Bán Hàng Cho KOC & Affiliate",
   description:
-    "Kho template dành riêng cho nhà bán hàng, KOC, KOL – giúp bạn tạo video ấn tượng chỉ trong vài phút.",
+    "Công cụ cắt ghép video thông minh: Biến 1 video gốc thành hàng loạt video bán hàng chuẩn thuật toán TikTok Shop, Reels. Chống quét trùng lặp an toàn 100%.",
   twitterDescription:
-    "Kho template cho nhà bán hàng, KOC, KOL. Cắt ghép nhanh — tăng doanh số với video chất lượng.",
+    "Biến 1 video gốc thành 100 clip bán hàng chuẩn thuật toán. Công nghệ chống quét reup SafeGuard, tối ưu 3s đầu và chuyển đổi giỏ hàng.",
   imageAlt:
-    "Five Cut Pro — Tạo video bán hàng dễ dàng, chuyên nghiệp cho nhà bán hàng, KOC, KOL",
+    "Five Cut Pro — Cắt ghép & tự động hóa video bán hàng cho KOC và nhà bán hàng",
 } as const;

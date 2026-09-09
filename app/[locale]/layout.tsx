@@ -17,6 +17,7 @@ import {
   OG_IMAGE,
   OG_VI,
   openGraphAlternateLocales,
+  openGraphLocale,
   SITE,
 } from "@/lib/site";
 
@@ -76,12 +77,12 @@ export async function generateMetadata({
       languages: hreflangAlternates(),
     },
     openGraph: {
-      title: OG_VI.title,
-      description: OG_VI.description,
+      title: t("ogTitle") || OG_VI.title,
+      description: t("ogDescription") || OG_VI.description,
       url: absoluteLocaleUrl(locale),
       siteName: APP_NAME,
-      locale: "vi_VN",
-      alternateLocale: openGraphAlternateLocales("vi"),
+      locale: openGraphLocale(locale),
+      alternateLocale: openGraphAlternateLocales(locale),
       type: "website",
       images: [
         {
@@ -89,21 +90,21 @@ export async function generateMetadata({
           secureUrl: absoluteUrl(OG_IMAGE.path),
           width: OG_IMAGE.width,
           height: OG_IMAGE.height,
-          alt: OG_VI.imageAlt,
+          alt: t("ogImageAlt") || OG_VI.imageAlt,
           type: OG_IMAGE.type,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: OG_VI.title,
-      description: OG_VI.twitterDescription,
+      title: t("twitterTitle") || OG_VI.title,
+      description: t("twitterDescription") || OG_VI.twitterDescription,
       images: [
         {
           url: absoluteUrl(OG_IMAGE.path),
           width: OG_IMAGE.width,
           height: OG_IMAGE.height,
-          alt: OG_VI.imageAlt,
+          alt: t("ogImageAlt") || OG_VI.imageAlt,
         },
       ],
     },

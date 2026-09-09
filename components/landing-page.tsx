@@ -2,54 +2,46 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import {
-  Apple,
-  ArrowRight,
   Building2,
   Camera,
   Check,
   CheckCircle2,
   ChevronDown,
-  Coins,
   Copy,
   Download,
-  Eye,
   Flame,
   HelpCircle,
-  LayoutTemplate,
   Layers,
-  Lock,
   Mail,
-  Music2,
-  Pause,
-  Play,
-  PlayCircle,
-  RotateCcw,
   Scissors,
   Send,
   ShieldCheck,
-  ShoppingBag,
-  Smartphone,
   Sparkles,
   Target,
   Timer,
   TrendingUp,
   Type,
   Upload,
-  UserCheck,
   Users,
   Video,
-  Wallet,
   Wand2,
   XCircle,
   Zap,
 } from "lucide-react";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 
 import { FadeIn } from "@/components/fade-in";
 import { buttonVariants } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
+import {
+  AppleIcon,
+  WindowsIcon,
+  AndroidIcon,
+  GooglePlayIcon,
+  GoogleIcon,
+} from "@/components/platform-icons";
 import {
   trackCopyTerminalCommand,
   trackCtaClick,
@@ -133,10 +125,13 @@ type BatchEngineSectionCopy = {
     description: string;
   };
   pipeline: {
+    inputBadge?: string;
     inputTitle: string;
     inputDesc: string;
+    engineBadge?: string;
     engineTitle: string;
     engineDesc: string;
+    outputBadge?: string;
     outputTitle: string;
     outputDesc: string;
   };
@@ -195,68 +190,10 @@ type FaqSectionCopy = {
   items: FaqItem[];
 };
 
-type FormulaShot = {
-  num: number;
-  stage: string;
-  time: string;
-  angle: string;
-  action: string;
-  script: string;
-};
-
-type FormulaItem = {
-  id: string;
-  category: string;
-  categoryLabel: string;
-  title: string;
-  creator: string;
-  creatorBadge: string;
-  brandDeal: string;
-  totalTime: string;
-  views: string;
-  kocCount: string;
-  conversion: string;
-  summary: string;
-  shots: FormulaShot[];
-};
-
-type FormulaCategory = {
-  id: string;
-  label: string;
-};
-
-type FormulaSectionCopy = {
+type FeaturesSectionCopy = {
   label: string;
   title: string;
   subtitle: string;
-  categories: FormulaCategory[];
-  simulatorTitle: string;
-  simulatorSubtitle: string;
-  playSimulator: string;
-  pauseSimulator: string;
-  applyFormulaBtn: string;
-  sceneHeader: string;
-  durationLabel: string;
-  angleLabel: string;
-  actionLabel: string;
-  scriptLabel: string;
-  cartNotice: string;
-  formulas: FormulaItem[];
-};
-
-type EcosystemRole = {
-  id: string;
-  badge: string;
-  title: string;
-  description: string;
-  highlights: string[];
-};
-
-type EcosystemSectionCopy = {
-  label: string;
-  title: string;
-  subtitle: string;
-  roles: EcosystemRole[];
 };
 
 type SponsorStat = {
@@ -296,40 +233,16 @@ type SponsorsSectionCopy = {
   form: SponsorFormCopy;
 };
 
-const FEATURE_ICONS = {
-  "formula-marketplace": Sparkles,
-  "camera-pacing": Video,
-  "retention-hook": TrendingUp,
-  "creator-wallet": Wallet,
-  "brand-deals": Building2,
-  "speed-export": Upload,
-  templates: LayoutTemplate,
-  "cut-merge": Scissors,
-  "text-effects": Type,
-  "music-trend": Music2,
-  export: Upload,
-} as const;
-
-const ROLE_ICONS = {
-  kocLearner: PlayCircle,
-  creatorPro: Coins,
-  brandSponsor: Building2,
-} as const;
+const FEATURE_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+  "smart-cut": Scissors,
+  "batch-remix": Layers,
+  "safeguard-anti-reup": ShieldCheck,
+  "hook-cta": Target,
+  "auto-captions": Type,
+  "batch-export": Zap,
+};
 
 const easeOut = [0.22, 1, 0.36, 1] as const;
-
-function WindowsInstallMark({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className={className}
-      aria-hidden
-    >
-      <path d="M3 3h9v9H3V3zm10 0h9v9h-9V3zM3 13h9v9H3v-9zm10 0h9v9h-9v-9z" />
-    </svg>
-  );
-}
 
 function PlatformMark({
   id,
@@ -339,15 +252,78 @@ function PlatformMark({
   className?: string;
 }) {
   if (id === "windows") {
-    return <WindowsInstallMark className={className} />;
+    return (
+      <span
+        title="Microsoft Windows"
+        aria-label="Microsoft Windows"
+        className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
+      >
+        <WindowsIcon className={className} title="Microsoft Windows" />
+      </span>
+    );
   }
   if (id === "android") {
-    return <Smartphone className={className} strokeWidth={2} />;
+    return (
+      <span className="inline-flex items-center justify-center gap-1.5">
+        <span
+          title="Android"
+          aria-label="Android"
+          className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
+        >
+          <AndroidIcon className={className} title="Android" />
+        </span>
+        <span
+          title="Google Play"
+          aria-label="Google Play"
+          className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
+        >
+          <GooglePlayIcon className={cn(className, "size-[1.1rem]")} title="Google Play" />
+        </span>
+      </span>
+    );
   }
   if (id === "ios") {
-    return <Apple className={className} strokeWidth={2} />;
+    return (
+      <span
+        title="Apple (iOS / App Store)"
+        aria-label="Apple iOS"
+        className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
+      >
+        <AppleIcon className={className} title="Apple" />
+      </span>
+    );
   }
-  return <Apple className={className} strokeWidth={2} />;
+  if (id === "mac-apple-silicon") {
+    return (
+      <span
+        title="Apple macOS (Apple Silicon M1/M2/M3/M4)"
+        aria-label="Apple macOS (Apple Silicon)"
+        className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
+      >
+        <AppleIcon className={className} title="Apple macOS" />
+      </span>
+    );
+  }
+  if (id === "mac-intel") {
+    return (
+      <span
+        title="Apple macOS (Intel)"
+        aria-label="Apple macOS (Intel)"
+        className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
+      >
+        <AppleIcon className={className} title="Apple macOS" />
+      </span>
+    );
+  }
+  return (
+    <span
+      title="Apple"
+      aria-label="Apple"
+      className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
+    >
+      <AppleIcon className={className} title="Apple" />
+    </span>
+  );
 }
 
 function DownloadCard({
@@ -378,7 +354,6 @@ function DownloadCard({
         </div>
         <span
           className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10"
-          aria-hidden
         >
           <PlatformMark id={asset.id} className="size-[1.25rem]" />
         </span>
@@ -471,20 +446,15 @@ export function LandingPage() {
     note: "",
   });
 
-  // Formula Showcase State (For end users to test and explore)
-  const [activeCategory, setActiveCategory] = useState("all");
-  const [selectedFormulaId, setSelectedFormulaId] = useState("f-skincare");
-  const [currentShotIndex, setCurrentShotIndex] = useState(0);
-  const [isSimulatorPlaying, setIsSimulatorPlaying] = useState(false);
-
   const [openFaq, setOpenFaq] = useState<string | null>("faq-1");
 
   const metricsBar = (t.raw("metricsBar") as MetricItem[]) || [];
+  const featuresSection = t.raw("featuresSection") as FeaturesSectionCopy;
+  const features = (t.raw("features") as LandingFeature[]) || [];
   const howItWorks = t.raw("howItWorksSection") as HowItWorksSectionCopy;
   const comparison = t.raw("comparisonSection") as ComparisonSectionCopy;
   const batchEngine = t.raw("batchEngineSection") as BatchEngineSectionCopy;
   const benefits = t.raw("benefitsSection") as BenefitsSectionCopy;
-  const formulaSection = t.raw("formulaSection") as FormulaSectionCopy;
   const sponsors = t.raw("sponsorsSection") as SponsorsSectionCopy;
   const faq = t.raw("faqSection") as FaqSectionCopy;
   const downloadCards = t.raw("downloadCards") as Record<
@@ -492,26 +462,6 @@ export function LandingPage() {
     DownloadCardCopy
   >;
   const install = t.raw("installSection") as InstallSectionCopy;
-
-  // Selected Formula item
-  const selectedFormula =
-    formulaSection.formulas?.find((f) => f.id === selectedFormulaId) ||
-    formulaSection.formulas?.[0];
-
-  const currentShot =
-    selectedFormula?.shots?.[currentShotIndex] || selectedFormula?.shots?.[0];
-
-  // Auto-play simulator timer
-  useEffect(() => {
-    let timer: ReturnType<typeof setTimeout>;
-    if (isSimulatorPlaying && selectedFormula?.shots?.length) {
-      const shotDuration = parseFloat(currentShot?.time || "2.5") * 1000;
-      timer = setTimeout(() => {
-        setCurrentShotIndex((prev) => (prev + 1) % selectedFormula.shots.length);
-      }, shotDuration);
-    }
-    return () => clearTimeout(timer);
-  }, [isSimulatorPlaying, currentShotIndex, selectedFormula]);
 
   const copyMacCommand = useCallback(async () => {
     try {
@@ -563,11 +513,6 @@ export function LandingPage() {
       setSponsorSubmitted(true);
     }
   };
-
-  const filteredFormulas =
-    activeCategory === "all"
-      ? formulaSection.formulas
-      : formulaSection.formulas?.filter((f) => f.category === activeCategory);
 
   return (
     <>
@@ -751,14 +696,14 @@ export function LandingPage() {
               {t("hero.pillBatch")}
             </Link>
             <Link
-              href="/#formula"
+              href="/#features"
               onClick={() => {
                 trackCtaClick({
-                  cta_id: "hero_explore_formula",
+                  cta_id: "hero_explore_features",
                   cta_location: "hero",
                   cta_text: t("hero.ctaSecondary"),
                   cta_category: "navigation_section",
-                  destination_url: "/#formula",
+                  destination_url: "/#features",
                 });
               }}
               className={cn(
@@ -838,7 +783,75 @@ export function LandingPage() {
         ) : null}
       </section>
 
-      {/* 1. How It Works: Chưa biết quay hay edit? Chỉ 3 bước đơn giản */}
+      {/* 2. Core Features Section */}
+      <section
+        id="features"
+        className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8 bg-zinc-950/80 relative overflow-hidden"
+      >
+        <div className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 size-[600px] rounded-full bg-brand/[0.06] blur-[120px]" />
+
+        <div className="mx-auto min-w-0 max-w-[1200px] relative z-10">
+          <FadeIn className="mx-auto max-w-3xl text-center">
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand">
+              <Sparkles className="size-3.5" />
+              <span>{featuresSection.label}</span>
+            </div>
+            <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
+              {featuresSection.title}
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-zinc-400 md:text-lg">
+              {featuresSection.subtitle}
+            </p>
+          </FadeIn>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {features.map((feature, idx) => {
+              const FeatureIcon = FEATURE_ICONS[feature.id] || Sparkles;
+              return (
+                <FadeIn key={feature.id} delay={idx * 0.07} className="flex">
+                  <div className="glass-panel group relative flex w-full flex-col justify-between overflow-hidden rounded-[24px] border border-white/[0.08] p-7 transition-all duration-300 hover:border-brand/40 hover:glow-brand-sm sm:p-8">
+                    <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between">
+                        <div className="flex size-12 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30">
+                          <FeatureIcon className="size-6" />
+                        </div>
+                        <span className="font-mono text-xs font-bold text-zinc-500">
+                          0{idx + 1}
+                        </span>
+                      </div>
+                      <div className="pt-2">
+                        <h3 className="font-heading text-lg sm:text-xl font-semibold text-white">
+                          {feature.title}
+                        </h3>
+                      </div>
+                      <p className="text-sm leading-relaxed text-zinc-400">
+                        {feature.description}
+                      </p>
+
+                      {feature.bullets && feature.bullets.length > 0 && (
+                        <ul className="mt-4 space-y-2 pt-3 border-t border-white/[0.06]">
+                          {feature.bullets.map((b, bIdx) => (
+                            <li
+                              key={bIdx}
+                              className="flex items-start gap-2 text-xs sm:text-sm text-zinc-300"
+                            >
+                              <CheckCircle2 className="size-4 shrink-0 text-brand mt-0.5" />
+                              <span>{b}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </div>
+                </FadeIn>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* 3. How It Works: Chưa biết quay hay edit? Chỉ 3 bước đơn giản */}
       <section
         id="how-it-works"
         className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8 bg-zinc-950/70 relative overflow-hidden"
@@ -859,7 +872,7 @@ export function LandingPage() {
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {howItWorks.steps?.map((step, idx) => {
-              const stepIcons = [Camera, LayoutTemplate, Wand2];
+              const stepIcons = [Video, Wand2, Upload];
               const StepIcon = stepIcons[idx % stepIcons.length];
               return (
                 <FadeIn key={step.num} delay={idx * 0.08} className="flex">
@@ -1041,14 +1054,14 @@ export function LandingPage() {
                   </div>
                   <div className="flex shrink-0 flex-wrap gap-3">
                     <Link
-                      href="/#formula"
+                      href="/#features"
                       onClick={() => {
                         trackCtaClick({
-                          cta_id: "batch_guide_formula",
+                          cta_id: "batch_guide_features",
                           cta_location: "batch_engine",
                           cta_text: t("hero.ctaSecondary"),
                           cta_category: "navigation_section",
-                          destination_url: "/#formula",
+                          destination_url: "/#features",
                         });
                       }}
                       className={cn(
@@ -1074,7 +1087,7 @@ export function LandingPage() {
                     <Camera className="size-5" />
                   </div>
                   <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">
-                    {(batchEngine.pipeline as any).inputBadge || "Nguồn vào"}
+                    {batchEngine.pipeline.inputBadge || "Nguồn vào"}
                   </span>
                 </div>
                 <h4 className="mt-4 text-base font-semibold text-white">
@@ -1091,7 +1104,7 @@ export function LandingPage() {
                     <Wand2 className="size-5" />
                   </div>
                   <span className="text-xs font-bold uppercase tracking-wider text-brand">
-                    {(batchEngine.pipeline as any).engineBadge || "Động cơ tự động"}
+                    {batchEngine.pipeline.engineBadge || "Động cơ tự động"}
                   </span>
                 </div>
                 <h4 className="mt-4 text-base font-semibold text-white">
@@ -1108,7 +1121,7 @@ export function LandingPage() {
                     <Layers className="size-5" />
                   </div>
                   <span className="text-xs font-bold uppercase tracking-wider text-cyan-400">
-                    {(batchEngine.pipeline as any).outputBadge || "Kết quả đầu ra"}
+                    {batchEngine.pipeline.outputBadge || "Kết quả đầu ra"}
                   </span>
                 </div>
                 <h4 className="mt-4 text-base font-semibold text-white">
@@ -1209,338 +1222,6 @@ export function LandingPage() {
               );
             })}
           </div>
-        </div>
-      </section>
-
-      {/* 3. Live Formula Marketplace Showcase (End-User Content & Interactive Simulator) */}
-      <section
-        id="formula"
-        className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8"
-      >
-        <div className="mx-auto min-w-0 max-w-[1240px]">
-          <FadeIn className="mx-auto max-w-2xl text-center">
-            <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand">
-              <Sparkles className="size-3.5" />
-              <span>{formulaSection.label}</span>
-            </div>
-            <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
-              {formulaSection.title}
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-zinc-400 md:text-lg">
-              {formulaSection.subtitle}
-            </p>
-
-            {/* Category Filter Tabs */}
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-2">
-              {formulaSection.categories?.map((cat) => (
-                <button
-                  key={cat.id}
-                  onClick={() => setActiveCategory(cat.id)}
-                  className={cn(
-                    "rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium transition-all",
-                    activeCategory === cat.id
-                      ? "bg-brand text-[#050507] font-semibold glow-brand-sm"
-                      : "border border-white/10 bg-white/[0.03] text-zinc-400 hover:border-white/25 hover:text-white",
-                  )}
-                >
-                  {cat.label}
-                </button>
-              ))}
-            </div>
-          </FadeIn>
-
-          {/* Formula Cards Grid */}
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {filteredFormulas?.map((f) => {
-              const isSelected = f.id === selectedFormula?.id;
-              return (
-                <div
-                  key={f.id}
-                  onClick={() => {
-                    setSelectedFormulaId(f.id);
-                    setCurrentShotIndex(0);
-                    setIsSimulatorPlaying(false);
-                  }}
-                  className={cn(
-                    "group relative cursor-pointer rounded-[22px] border p-5 sm:p-6 transition-all duration-300",
-                    isSelected
-                      ? "border-brand bg-brand/[0.06] shadow-xl shadow-brand/10 ring-1 ring-brand/40"
-                      : "border-white/[0.08] bg-white/[0.02] hover:border-white/20 hover:bg-white/[0.04]",
-                  )}
-                >
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="rounded-md border border-brand/30 bg-brand/15 px-2.5 py-0.5 text-[11px] font-semibold text-brand">
-                      {f.categoryLabel}
-                    </span>
-                    <span className="font-mono text-xs font-bold text-zinc-400">
-                      {f.totalTime}
-                    </span>
-                  </div>
-
-                  <h3 className="font-heading mt-3 text-base sm:text-lg font-semibold text-white group-hover:text-brand transition-colors line-clamp-2">
-                    {f.title}
-                  </h3>
-
-                  <p className="mt-2 text-xs text-zinc-400 line-clamp-2">
-                    {f.summary}
-                  </p>
-
-                  <div className="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-xs text-zinc-400">
-                    <span className="flex items-center gap-1 text-zinc-300">
-                      <UserCheck className="size-3.5 text-brand" />
-                      {f.creator}
-                    </span>
-                    <span className="font-mono text-brand font-semibold">
-                      {f.conversion}
-                    </span>
-                  </div>
-
-                  {f.brandDeal ? (
-                    <div className="mt-2 inline-flex items-center gap-1 rounded bg-amber-500/10 px-2 py-0.5 text-[10px] font-medium text-amber-300">
-                      <Building2 className="size-3" />
-                      <span>{f.brandDeal}</span>
-                    </div>
-                  ) : null}
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Live Phone Camera Simulator & Full Script Breakdown */}
-          {selectedFormula ? (
-            <div className="mt-16 rounded-[28px] border border-brand/30 bg-gradient-to-b from-black/80 via-[#070b09] to-black/90 p-6 sm:p-8 md:p-10 shadow-2xl">
-              <div className="flex flex-col lg:flex-row items-center justify-between gap-4 pb-8 border-b border-white/[0.08]">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="rounded-full bg-brand/20 px-3 py-0.5 text-xs font-semibold text-brand">
-                      {selectedFormula.categoryLabel}
-                    </span>
-                    <span className="font-mono text-xs text-zinc-400">
-                      {(formulaSection as any).goldenDurationPrefix || "Thời lượng:"} {selectedFormula.totalTime} · {selectedFormula.shots?.length || 6} {(formulaSection as any).scenesCountSuffix || "phân cảnh"}
-                    </span>
-                  </div>
-                  <h3 className="font-heading mt-2 text-xl sm:text-2xl font-bold text-white">
-                    {selectedFormula.title}
-                  </h3>
-                  <p className="mt-1 text-xs sm:text-sm text-zinc-400">
-                    {(formulaSection as any).createdByLabel || "Sáng tạo bởi"} <span className="text-white font-medium">{selectedFormula.creator}</span> · {selectedFormula.views} {(formulaSection as any).viewsCountSuffix || "lượt xem"} · {selectedFormula.kocCount} {(formulaSection as any).appliedCountSuffix || "đã áp dụng"}
-                  </p>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <button
-                    type="button"
-                    onClick={() => setIsSimulatorPlaying(!isSimulatorPlaying)}
-                    className={cn(
-                      "inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs sm:text-sm font-semibold transition-all",
-                      isSimulatorPlaying
-                        ? "bg-rose-500 text-white shadow-lg shadow-rose-500/20"
-                        : "bg-brand text-[#050507] glow-brand-sm hover:bg-brand",
-                    )}
-                  >
-                    {isSimulatorPlaying ? (
-                      <>
-                        <Pause className="size-4" />
-                        {formulaSection.pauseSimulator}
-                      </>
-                    ) : (
-                      <>
-                        <Play className="size-4 fill-current" />
-                        {formulaSection.playSimulator}
-                      </>
-                    )}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setCurrentShotIndex(0);
-                      setIsSimulatorPlaying(false);
-                    }}
-                    className="size-10 flex items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-zinc-400 hover:text-white hover:border-white/20 transition-colors"
-                    title="Quay lại cảnh 1"
-                  >
-                    <RotateCcw className="size-4" />
-                  </button>
-                </div>
-              </div>
-
-              {/* Main Interactive Split: Phone Camera (Left) & Shot Scripts (Right) */}
-              <div className="mt-8 grid gap-8 lg:grid-cols-12 items-start">
-                {/* Left: Phone Camera HUD Simulator */}
-                <div className="lg:col-span-5 flex flex-col items-center">
-                  <div className="relative w-full max-w-[320px] aspect-[9/18] rounded-[36px] border-[3px] border-zinc-700 bg-[#090b0e] p-3 shadow-2xl ring-1 ring-white/10 overflow-hidden flex flex-col justify-between">
-                    {/* Camera Island & Status Bar */}
-                    <div className="flex items-center justify-between px-2 pt-1 text-[11px] font-mono text-zinc-400 z-10">
-                      <span className="flex items-center gap-1.5 font-bold text-rose-500 animate-pulse">
-                        <span className="size-2 rounded-full bg-rose-500" />
-                        REC 00:{currentShot?.time}
-                      </span>
-                      <span className="size-2.5 rounded-full bg-black border border-zinc-700" />
-                      <span className="text-zinc-500 font-semibold">9:16 HD</span>
-                    </div>
-
-                    {/* Camera Framing HUD */}
-                    <div className="relative my-auto flex flex-col items-center justify-center text-center p-4">
-                      {/* Focus Box */}
-                      <div className="size-44 rounded-2xl border border-dashed border-brand/50 p-2 flex flex-col items-center justify-center relative">
-                        <div className="absolute top-1 left-1 size-2 border-t-2 border-l-2 border-brand" />
-                        <div className="absolute top-1 right-1 size-2 border-t-2 border-r-2 border-brand" />
-                        <div className="absolute bottom-1 left-1 size-2 border-b-2 border-l-2 border-brand" />
-                        <div className="absolute bottom-1 right-1 size-2 border-b-2 border-r-2 border-brand" />
-
-                        <div className="rounded-full bg-brand/20 px-2.5 py-1 text-[11px] font-bold text-brand uppercase tracking-wider">
-                          {currentShot?.stage}
-                        </div>
-
-                        <div className="mt-2 text-2xl font-extrabold text-white font-mono">
-                          {currentShot?.time}
-                        </div>
-
-                        <div className="mt-1 text-[10px] text-zinc-400 font-medium">
-                          {(formulaSection as any).sceneLabel || "Cảnh"} {currentShot?.num}/{selectedFormula?.shots?.length || 6}
-                        </div>
-                      </div>
-
-                      {/* Dynamic Prompter Banner */}
-                      <div className="mt-5 w-full rounded-xl bg-black/80 border border-brand/30 p-3 backdrop-blur-md">
-                        <p className="text-[10px] text-amber-400 font-semibold uppercase tracking-wider mb-1 flex items-center gap-1.5">
-                          <Camera className="size-3 shrink-0" />
-                          <span className="truncate">{currentShot?.angle}</span>
-                        </p>
-                        <p className="text-xs text-zinc-100 font-medium line-clamp-3 flex items-start gap-1.5">
-                          <Lock className="size-3 text-brand shrink-0 mt-0.5" />
-                          <span>{currentShot?.script}</span>
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Bottom HUD: TikTok Shop Yellow Cart Simulator */}
-                    <div className="z-10 space-y-2">
-                      <div className="flex items-center gap-2 rounded-xl bg-amber-400/15 border border-amber-400/30 p-2 text-[11px] text-amber-300 animate-bounce">
-                        <ShoppingBag className="size-4 shrink-0 text-amber-400" />
-                        <span className="font-semibold truncate">
-                          {formulaSection.cartNotice}
-                        </span>
-                      </div>
-
-                      {/* Scene Step indicator dots */}
-                      <div className="flex items-center justify-center gap-1.5 py-1">
-                        {selectedFormula?.shots?.map((s, idx) => (
-                          <button
-                            key={s.num}
-                            type="button"
-                            onClick={() => setCurrentShotIndex(idx)}
-                            className={cn(
-                              "h-1.5 rounded-full transition-all",
-                              idx === currentShotIndex
-                                ? "w-6 bg-brand"
-                                : "w-1.5 bg-zinc-700 hover:bg-zinc-500",
-                            )}
-                            title={`Nhảy tới cảnh ${s.num}`}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                  <p className="mt-3 text-xs text-zinc-500 font-medium">
-                    {formulaSection.simulatorSubtitle}
-                  </p>
-                </div>
-
-                {/* Right: Full Script & Angle Breakdown (Clickable) */}
-                <div className="lg:col-span-7 space-y-3">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-2">
-                    {formulaSection.sceneHeader}
-                  </p>
-
-                  {selectedFormula.shots?.map((shot, idx) => {
-                    const isActive = idx === currentShotIndex;
-                    return (
-                      <div
-                        key={shot.num}
-                        onClick={() => setCurrentShotIndex(idx)}
-                        className={cn(
-                          "cursor-pointer rounded-2xl border p-4 transition-all duration-200",
-                          isActive
-                            ? "border-brand bg-brand/[0.08] ring-1 ring-brand/30 shadow-md"
-                            : "border-white/[0.07] bg-white/[0.02] hover:border-white/15 hover:bg-white/[0.04]",
-                        )}
-                      >
-                        <div className="flex items-center justify-between gap-3">
-                          <div className="flex items-center gap-2">
-                            <span
-                              className={cn(
-                                "flex size-6 items-center justify-center rounded-full font-mono text-xs font-bold",
-                                isActive
-                                   ? "bg-brand text-[#050507]"
-                                   : "bg-white/10 text-zinc-400",
-                              )}
-                            >
-                              {shot.num}
-                            </span>
-                            <span className="font-heading text-sm font-semibold text-white">
-                              {shot.stage}
-                            </span>
-                          </div>
-
-                          <div className="flex items-center gap-2">
-                            <span className="rounded bg-white/[0.06] px-2 py-0.5 font-mono text-[11px] font-semibold text-zinc-300">
-                              {shot.time}
-                            </span>
-                          </div>
-                        </div>
-
-                        <div className="mt-2 text-xs text-amber-300 font-medium flex items-center gap-1.5">
-                          <Video className="size-3.5 shrink-0" />
-                          <span>{shot.angle}</span>
-                        </div>
-
-                        <p className="mt-1.5 text-xs sm:text-sm text-zinc-300 leading-relaxed">
-                          <span className="text-zinc-400 font-medium">{formulaSection.actionLabel}: </span>
-                          {shot.action}
-                        </p>
-
-                        <div className="mt-2.5 flex items-center gap-2 rounded-xl border border-brand/30 bg-brand/[0.08] px-3 py-2 text-xs font-medium text-brand">
-                          <Lock className="size-3.5 shrink-0 text-brand" />
-                          <span className="truncate font-medium">{shot.script}</span>
-                        </div>
-                      </div>
-                    );
-                  })}
-
-                  <div className="pt-2">
-                    <Link
-                      href="/#download"
-                      onClick={() => {
-                        trackCtaClick({
-                          cta_id: "formula_apply_download",
-                          cta_location: "formula_section",
-                          cta_text: formulaSection.applyFormulaBtn,
-                          cta_category: "conversion_download",
-                          destination_url: "/#download",
-                        });
-                      }}
-                      className={cn(
-                        buttonVariants({ variant: "default", size: "lg" }),
-                        "w-full rounded-xl bg-brand py-3 text-sm font-semibold text-[#050507] glow-brand-sm hover:bg-brand",
-                      )}
-                    >
-                      <Download className="mr-2 size-4" />
-                      {formulaSection.applyFormulaBtn}
-                    </Link>
-                  </div>
-
-                  {(formulaSection as any).vipCallout ? (
-                    <div className="mt-3 rounded-2xl border border-white/10 bg-white/[0.02] p-3 text-center">
-                      <p className="text-xs text-zinc-400">
-                        {(formulaSection as any).vipCallout}
-                      </p>
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-            </div>
-          ) : null}
         </div>
       </section>
 
@@ -1890,10 +1571,11 @@ export function LandingPage() {
               <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
                 <h3 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
                   <span
-                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10"
-                    aria-hidden
+                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10 transition-transform hover:scale-105 cursor-help"
+                    title="Apple macOS"
+                    aria-label="Apple macOS"
                   >
-                    <Apple className="size-[1.35rem]" strokeWidth={2} />
+                    <AppleIcon className="size-[1.35rem]" title="Apple macOS" />
                   </span>
                   <span className="min-w-0 flex-1 leading-snug pt-0.5">
                     {install.macTitle}
@@ -1942,10 +1624,11 @@ export function LandingPage() {
               <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
                 <h3 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
                   <span
-                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10"
-                    aria-hidden
+                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10 transition-transform hover:scale-105 cursor-help"
+                    title="Microsoft Windows"
+                    aria-label="Microsoft Windows"
                   >
-                    <WindowsInstallMark className="size-[1.15rem]" />
+                    <WindowsIcon className="size-[1.2rem]" title="Microsoft Windows" />
                   </span>
                   <span className="min-w-0 flex-1 leading-snug pt-0.5">
                     {install.winTitle}
@@ -1961,10 +1644,11 @@ export function LandingPage() {
               <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
                 <h3 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
                   <span
-                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10"
-                    aria-hidden
+                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10 transition-transform hover:scale-105 cursor-help"
+                    title="Apple (iOS / App Store)"
+                    aria-label="Apple iOS"
                   >
-                    <Apple className="size-[1.35rem]" strokeWidth={2} />
+                    <AppleIcon className="size-[1.35rem]" title="Apple (iOS)" />
                   </span>
                   <span className="min-w-0 flex-1 leading-snug pt-0.5">
                     {install.iosTitle}
@@ -1980,10 +1664,22 @@ export function LandingPage() {
               <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
                 <h3 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
                   <span
-                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10"
-                    aria-hidden
+                    className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10 gap-1"
                   >
-                    <Smartphone className="size-[1.25rem]" strokeWidth={2} />
+                    <span
+                      title="Android"
+                      aria-label="Android"
+                      className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
+                    >
+                      <AndroidIcon className="size-[1.15rem]" title="Android" />
+                    </span>
+                    <span
+                      title="Google Play"
+                      aria-label="Google Play"
+                      className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
+                    >
+                      <GooglePlayIcon className="size-[1.05rem]" title="Google Play" />
+                    </span>
                   </span>
                   <span className="min-w-0 flex-1 leading-snug pt-0.5">
                     {install.androidTitle}

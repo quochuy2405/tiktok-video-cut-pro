@@ -1,0 +1,379 @@
+{
+  "hero": {
+    "productName": "Five Cut Pro",
+    "tagline": "赋能TikTok Shop、Reels及Shorts短视频带货裂变",
+    "titleLead": "1条原始素材 一键裂变为",
+    "titleAccent": "100条高转化带货短视频",
+    "subtitle": "告别每天耗费数小时逐帧手动剪辑却遭遇200播放或平台判定搬运的困境。Five Cut Pro智能识别精彩高光、一键剔除停顿气口、智能重排开头吸睛钩子，并搭载SafeGuard™多重防重技术，全面助您安全规模化运营带货矩阵号。",
+    "ctaPrimary": "立即免费下载",
+    "ctaSecondary": "探索核心功能",
+    "ctaBatch": "裂变 1 ➔ 100 视频",
+    "ctaBrand": "品牌合作咨询",
+    "ctaTrust": "完全免费 • 无需绑定信用卡 • 原生支持 macOS 与 Windows",
+    "ctaSocialProof": "深受 10,000+ 带货达人与电商矩阵团队信赖",
+    "audienceKoc": "专为带货KOC与创作者打造",
+    "audienceSeller": "电商卖家与矩阵分销团队",
+    "logoAlt": "Five Cut Pro 标识",
+    "pillRetention": "智能自动剪辑 — 黄金前3秒留存钩子",
+    "pillCta": "批量裂变 1 ➔ 100 — 一次拍摄产出数十条成片",
+    "pillSpeed": "节省 90% 剪辑时间",
+    "pillBatch": "超快 4K 批量导出 — 完美适配多平台",
+    "pillAntiReup": "SafeGuard防重算法 — 100% 独立原创判定"
+  },
+  "metricsBar": [
+    { "value": "1 ➔ 100", "label": "独立成片变体", "desc": "仅需1条原始测评或直播切片即可生成" },
+    { "value": "90%", "label": "节省剪辑时间", "desc": "摆脱繁琐枯燥的逐帧手动打轴修剪" },
+    { "value": "100%", "label": "算法SafeGuard保护", "desc": "消除重复内容降权与限流风险" },
+    { "value": "3–5倍", "label": "GMV与佣金增长", "desc": "轻松稳定投喂多个矩阵带货账号" }
+  ],
+  "featuresSection": {
+    "label": "核心优势",
+    "title": "短视频电商爆发式增长所需的一切功能",
+    "subtitle": "绝非臃肿的时间轴剪辑软件。Five Cut Pro专为电商带货场景量身定制，高效将现有素材转化为符合推荐算法的高转化成交短视频。"
+  },
+  "features": [
+    {
+      "id": "smart-cut",
+      "title": "智能跳剪与无声静音剔除",
+      "description": "自动检测并精准剔除语病停顿、气口卡顿及晃动冗余画面，仅保留高能量与高信息密度的核心片段，确保视频节奏紧凑抓人。",
+      "bullets": [
+        "智能场景边界感知与分割",
+        "毫秒级剔除无效停顿与口误",
+        "针对 9:16 竖屏短视频算法深度调优"
+      ]
+    },
+    {
+      "id": "batch-remix",
+      "title": "批量裂变：1条素材生成数十条成片",
+      "description": "仅需提供一段开箱测评或直播素材，Five Cut Pro即可智能重构镜头叙事顺序、交叉混剪多个吸睛黄金前3秒，批量生成风格各异的独立变体。",
+      "bullets": [
+        "生成多种不同心理角度的前3秒钩子",
+        "智能画面组合排列算法",
+        "一次录制满足整周矩阵分发排期"
+      ]
+    },
+    {
+      "id": "safeguard-anti-reup",
+      "title": "SafeGuard™ 深度算法级防重技术",
+      "description": "应用微米级像素微调、动态运镜微缩放、局部水平翻转，彻底重置MD5文件哈希并刷新底层元数据，杜绝平台算法检测。",
+      "bullets": [
+        "彻底规避重复内容限流与搬运降权",
+        "TikTok与Reels算法100%判定为独立原创",
+        "矩阵号规模化分发安全无忧"
+      ]
+    },
+    {
+      "id": "hook-cta",
+      "title": "3秒吸睛节奏与小黄车视觉引导",
+      "description": "打造高节奏开门见山的开头避免用户划走，并自动嵌入引导点击左下角小黄车与评论区置顶链接的动态手势与视觉标记。",
+      "bullets": [
+        "算法偏好的快节奏黄金留存曲线",
+        "高转化的购物车指向引导动效",
+        "显著提升小黄车站内点击率与下单转化"
+      ]
+    },
+    {
+      "id": "auto-captions",
+      "title": "动态字幕与爆款价格促销标牌",
+      "description": "高精度语音同步生成逐字动效花字字幕，智能高亮破价特惠、限时折扣标签及核心卖点，满足静音浏览场景的转化需求。",
+      "bullets": [
+        "逐词同步音视频动态字幕渲染",
+        "醒目吸睛的价格标签与促销爆贴",
+        "丰富多样的专业电商花字排版预设"
+      ]
+    },
+    {
+      "id": "batch-export",
+      "title": "极速 4K 硬件加速批量导出",
+      "description": "全面榨干 Apple Silicon M 系列芯片与 Windows 独立显卡的硬件算力，短短数分钟即可批量渲染数十条 1080P/4K 高清成片。",
+      "bullets": [
+        "多线程硬件级编解码加速",
+        "原生支持 macOS、Windows、iOS 及 Android",
+        "画质高清锐利，无任何画质压缩损耗"
+      ]
+    }
+  ],
+  "howItWorksSection": {
+    "label": "极简高效流程",
+    "title": "只需3步，轻松批量产出100条带货视频",
+    "subtitle": "无需任何专业视频后期经验，Five Cut Pro 替您全自动搞定繁复工序：",
+    "steps": [
+      {
+        "num": "01",
+        "title": "导入原始素材或直播回放",
+        "desc": "将手机拍摄的产品开箱、实测视频或整场带货直播回放拖入软件中，系统将全自动分析音频节拍、视觉转场与高光时刻。",
+        "badge": "零门槛拖拽"
+      },
+      {
+        "num": "02",
+        "title": "配置生成参数并开启防重保护",
+        "desc": "自由设定目标时长、生成视频份数，一键开启动态字幕与 SafeGuard 多维防重算法，定制成片风格。",
+        "badge": "智能算法处理"
+      },
+      {
+        "num": "03",
+        "title": "一键批量导出并分发全渠道",
+        "desc": "短短数分钟内，即可获得数十条渲染完毕的竖屏 9:16 带货短视频，直接发布至 TikTok Shop、Instagram Reels 及 YouTube Shorts。",
+        "badge": "随时投放出单"
+      }
+    ]
+  },
+  "comparisonSection": {
+    "badge": "效率全面对比",
+    "title": "为何头部带货达人纷纷摒弃传统手动剪辑？",
+    "subtitle": "停止将宝贵时间耗费在机械枯燥的手动剪辑上，借助 Five Cut Pro 跑赢同行抢占流量红利。",
+    "oldWay": {
+      "badge": "传统手工制作",
+      "title": "传统纯手动剪辑",
+      "subtitle": "耗时费力、产能受限且难以规模化",
+      "points": [
+        "每条视频需花费 2–3 小时修剪、对音轨打轴和添加贴纸字幕",
+        "一条视频重复发布立刻触发平台搬运机制，惨遭200播放限流",
+        "创意枯竭，高强度创作极易导致达人灵感枯竭与精力透支",
+        "难以维持每日多频次发布，错失流量高峰黄金转化窗口",
+        "个人创作者几乎不可能兼顾多个矩阵账号的日常更新"
+      ]
+    },
+    "newWay": {
+      "badge": "2026全新生产力",
+      "title": "Five Cut Pro 自动化优势",
+      "subtitle": "流程全托管、产能爆破与业绩指数级增长",
+      "points": [
+        "仅需 1 条素材 ➔ 3 分钟自动产出数十条独立成片",
+        "SafeGuard 多维防御：运镜微调、水平翻转、MD5哈希重置 ➔ 0% 查重违规风险",
+        "自带黄金 3 秒强留存开头与小黄车高转化引导手势",
+        "全天黄金流量期轻松维持每日 3–5 条高质稳定更新",
+        "单个创作者即可轻松运营管理 10–20 个带货矩阵账号"
+      ]
+    }
+  },
+  "batchEngineSection": {
+    "label": "核心技术引擎",
+    "title": "Five Engine™ — 新一代短视频裂变引擎",
+    "subtitle": "让个人创作者拥有比肩专业团队的庞大视频工业化产能。数分钟内批量生成数百条高转化的带货短视频。",
+    "tagline": "众多百万GMV大卖家与顶流矩阵团队的幕后增长利器",
+    "guideCard": {
+      "badge": "零门槛上手",
+      "title": "专注选品成交 — 繁杂剪辑工序交给 Five Cut Pro",
+      "description": "无需掌握复杂的专业剪辑技巧，亦无需昂贵高端的后期设备。Five Cut Pro 自动处理全部底层流水线：精准气口跳剪、开头多样钩子裂变、价格标签突出及小黄车跳转引导动效。"
+    },
+    "pipeline": {
+      "inputBadge": "素材输入",
+      "inputTitle": "01. 仅需一段原始素材",
+      "inputDesc": "单次产品开箱、日常真实测评片段或直播间录屏回放。",
+      "engineBadge": "智能处理核心",
+      "engineTitle": "02. 多层智能交叉重组引擎",
+      "engineDesc": "毫秒级跳剪停顿、智能打乱叙事组合、动态画幅缩放并重写底层数字指纹。",
+      "outputBadge": "批量输出成片",
+      "outputTitle": "03. 数十条高转化独立成片",
+      "outputDesc": "自带动态花字字幕、快节奏强留存卡点以及清晰的小黄车引导转化指令。"
+    },
+    "antiReup": {
+      "label": "SAFEGUARD 矩阵级安全防护体系",
+      "title": "规模化多账号分发，无需顾虑平台查重限流",
+      "subtitle": "独家研发的深层多维防重算法，确保每条导出的成片均被推荐算法识别为独立初创内容：",
+      "points": [
+        {
+          "num": "01",
+          "title": "底层数字指纹重置 (MD5 & Hash 重算)",
+          "desc": "每条视频均经过底层字节重排，赋予专属独立数字哈希，抹除一切原始二进制特征码。"
+        },
+        {
+          "num": "02",
+          "title": "动态节奏与微米级切片错位",
+          "desc": "智能随机偏移剪辑切点毫秒差，形成独一无二的视觉停留时间与听觉节拍特征。"
+        },
+        {
+          "num": "03",
+          "title": "动态平移、缩放与空间视差重构",
+          "desc": "算法微操画幅边缘深度、视角对焦及微运镜，从底层结构上完美通过原创校验。"
+        },
+        {
+          "num": "04",
+          "title": "智能适配热门商用版权爆款BGM",
+          "desc": "根据带货类目精准混音高转化热门免版权商用音乐，拉满短视频带货情绪氛围。"
+        },
+        {
+          "num": "05",
+          "title": "多维心理学吸睛前3秒测试",
+          "desc": "针对不同用户画像智能组合多种吸睛切入角度，实现同一款商品的多人群全面打透。"
+        }
+      ]
+    }
+  },
+  "benefitsSection": {
+    "label": "核心增长红利",
+    "title": "现代短视频带货创作者的降维打击利器",
+    "subtitle": "专为帮助个人创作者升级为高效、稳健且高利润的矩阵带货系统而设计。",
+    "items": [
+      {
+        "id": "time-saving",
+        "num": "01",
+        "title": "解放 90% 的繁重后期剪辑时间",
+        "desc": "彻底告别对着电脑逐帧剪辑的枯燥苦工。一次拍摄即可储备整周所需的成片库，让您有充裕精力深耕选品与供应链对接。",
+        "highlight": "节省 90% 时间"
+      },
+      {
+        "id": "kpi-daily",
+        "num": "02",
+        "title": "轻松达成每日高频发布KPI",
+        "desc": "不再为缺乏素材或达人断更而焦虑。充沛的高质成片库存助您每天在各大流量高峰时段准时更新 3–5 条优质视频。",
+        "highlight": "每日 3–5 条成片"
+      },
+      {
+        "id": "affiliate-farming",
+        "num": "03",
+        "title": "一个人即可操盘庞大带货矩阵",
+        "desc": "单人轻松管理 10–20 个 TikTok Shop 或 Reels 带货账号，多点触达不同圈层用户，赚取呈指数级复利的带货佣金收益。",
+        "highlight": "复合式佣金增长"
+      },
+      {
+        "id": "anti-reup",
+        "num": "04",
+        "title": "全方位保护账号健康与长期资产",
+        "desc": "在 SafeGuard 安全引擎保护下，发布的每条视频都具有独特的原生属性。账号矩阵健康生长，无惧算法降权与违规风险。",
+        "highlight": "账号 100% 安全"
+      }
+    ]
+  },
+  "sponsorsSection": {
+    "label": "企业与品牌专区",
+    "title": "品牌联名赞助与海量创作者分销合作",
+    "subtitle": "连接上万名高活跃带货达人网络，定制专属爆款测评脚本模板，引爆品牌在 TikTok Shop 与全网短视频渠道的销量增长。",
+    "stats": [
+      { "value": "10,000+", "label": "活跃合作达人资源" },
+      { "value": "100%", "label": "高完播率节奏成片" },
+      { "value": "-70%", "label": "节约外部剪辑采购成本" },
+      { "value": "3 分钟", "label": "平均单条视频制作耗时" }
+    ],
+    "benefitsTitle": "品牌企业选择与 Five Cut Pro 携手合作的核心价值",
+    "benefits": [
+      "独家定制符合品牌定位与核心卖点的爆款测评逻辑脚本。",
+      "通过数百至数千位达人账号实现品牌曝光与转化矩阵式同频共振。",
+      "统一把控产品展示视角、包装细节及高水准视觉质量。",
+      "无缝嵌合小黄车跳转与专属分销链接，最大化下单转化率。"
+    ],
+    "form": {
+      "title": "预约品牌合作定制方案咨询",
+      "desc": "留下您的联系信息，Five Cut Pro 品牌方案专家将在 2 个工作小时内与您联系，提供量身定制的推广合作方案。",
+      "brandNameLabel": "品牌或企业名称",
+      "brandNamePlaceholder": "例如：安克创新、绿联科技、花西子...",
+      "contactNameLabel": "联系人姓名及职务",
+      "contactNamePlaceholder": "张经理 (市场总监)",
+      "emailLabel": "企业工作邮箱",
+      "emailPlaceholder": "contact@brand.com",
+      "phoneLabel": "联系电话 / 微信",
+      "phonePlaceholder": "+86 138 0000 0000",
+      "budgetLabel": "预计营销投放预算",
+      "budgetOptions": [
+        "1,000 美元以内 (初期测试项目)",
+        "1,000 - 3,000 美元 (标准推广项目)",
+        "3,000 - 10,000 美元 (规模化拓量项目)",
+        "10,000 美元以上 (战略级品牌伙伴)"
+      ],
+      "noteLabel": "合作需求及推广目标",
+      "notePlaceholder": "拟推广商品、预计合作达人数量、预期上线周期等...",
+      "submitButton": "提交品牌合作咨询",
+      "successMessage": "感谢您的垂询！我们已收到您的合作申请，品牌团队专家将在 2 个工作小时内与您取得联系。",
+      "directContact": "亦可通过专属通道直接联系我们的品牌商务团队：",
+      "emailAria": "发送邮件给品牌合作团队",
+      "emailText": "shay.hcmc.work@gmail.com"
+    }
+  },
+  "faqSection": {
+    "label": "常见解答",
+    "title": "关于 Five Cut Pro 的常见问题",
+    "subtitle": "为您解答短视频带货全自动制作的一切核心疑问。",
+    "items": [
+      {
+        "id": "faq-1",
+        "question": "我没有任何视频剪辑经验，能顺利使用 Five Cut Pro 吗？",
+        "answer": "完全没有任何问题！Five Cut Pro 的核心设计理念就是彻底扫除技术门槛。只需将拍摄的产品视频拖入软件，设定所需时长与数量，软件将全自动完成剔除废话停顿、生成动态字幕及高清渲染。"
+      },
+      {
+        "id": "faq-2",
+        "question": "导出的成片是否真的能有效规避平台查重与限流？",
+        "answer": "是的，百分之百有效。Five Cut Pro 搭载专属 SafeGuard™ 算法引擎，深度微调像素底层结构、动态调整切片毫秒时间戳、微量位移运镜并彻底重算 MD5 哈希，使每条视频在各大平台算法眼中均为新鲜原创内容。"
+      },
+      {
+        "id": "faq-3",
+        "question": "我需要准备什么样的原始素材才能进行剪辑？",
+        "answer": "您只需要用手机拍摄一段 2-3 分钟的产品开箱、功能介绍或真实使用测评视频，或是过往带货直播的原始回放录屏。Five Cut Pro 即可以此为基底，裂变出数十条结构各异的高转化短视频。"
+      },
+      {
+        "id": "faq-4",
+        "question": "Five Cut Pro 如何帮助我打造带货分销矩阵？",
+        "answer": "传统模式下一整天仅能产出一条视频，而使用 Five Cut Pro 可以一次性产出足量的差异化成片，供 5–20 个矩阵账号每天更新。多账号分发展现出强劲的复利效应，让您的带货佣金成倍飙升。"
+      },
+      {
+        "id": "faq-5",
+        "question": "软件支持哪些操作系统和设备？",
+        "answer": "Five Cut Pro 原生适配 macOS 系统（针对 Apple Silicon M1/M2/M3/M4 及 Intel 架构深度优化）、Windows 10/11 64位系统，并提供 iOS 与 Android 移动端配套应用。"
+      }
+    ]
+  },
+  "downloadSection": {
+    "label": "软件下载",
+    "title": "全面支持 Windows、macOS 及移动端设备",
+    "subtitle": "当前版本 {version}。选择您适用的平台，即刻开启高转化短视频批量创作之路。",
+    "desktopLabel": "桌面端客户端 (macOS 与 Windows)",
+    "mobileLabel": "移动端应用 (iOS 与 Android)",
+    "ctaDownloads": "立即下载",
+    "ctaStore": "前往应用商店",
+    "comingSoon": "即将上线",
+    "githubAll": "查看 GitHub 所有发布历史"
+  },
+  "downloadCards": {
+    "mac-apple-silicon": {
+      "title": "macOS (Apple Silicon)",
+      "subtitle": "适用于 M1 / M2 / M3 / M4 芯片"
+    },
+    "mac-intel": {
+      "title": "macOS (Intel)",
+      "subtitle": "适用于采用 Intel 处理器的 Mac"
+    },
+    "windows": {
+      "title": "Windows",
+      "subtitle": "适用于 Windows 10 / 11 64位系统"
+    },
+    "ios": {
+      "title": "iOS",
+      "subtitle": "适用于 iPhone 与 iPad 设备"
+    },
+    "android": {
+      "title": "Android",
+      "subtitle": "适用于安卓智能手机与平板"
+    }
+  },
+  "installSection": {
+    "label": "安装步骤",
+    "title": "快速安装与配置指南",
+    "macTitle": "macOS 客户端安装",
+    "macSteps": [
+      "将下载好的 Five Cut Pro 拖入您的「应用程序 (Applications)」文件夹中。",
+      "按下快捷键 ⌘ 空格，输入 Terminal 打开终端工具。"
+    ],
+    "macCommandLabel": "在终端中复制并回车运行以下命令解除隔离属性：",
+    "macCommand": "xattr -cr /Applications/Five\\ Cut\\ Pro.app",
+    "copyCommandLabel": "复制命令",
+    "copiedCommandLabel": "已复制到剪贴板",
+    "winTitle": "Windows 客户端安装",
+    "winSteps": [
+      "从上方下载专区获取最新版的安装程序 (.exe)。",
+      "双击运行安装包，根据向导提示完成安装并启动软件。",
+      "若弹出 Windows Defender 拦截提示，点击「更多信息」并选择「仍要运行」即可。"
+    ],
+    "iosTitle": "iOS 应用安装",
+    "iosSteps": [
+      "移动端上线后，点击上方 iOS 下载卡片跳转至 App Store 官方页面。",
+      "点击「获取」并通过面容/指纹验证完成安装。",
+      "安装完成后直接从手机桌面点击图标开启创作。"
+    ],
+    "androidTitle": "Android 应用安装",
+    "androidSteps": [
+      "移动端上线后，点击上方卡片跳转至 Google Play 官方下载页面。",
+      "点击「安装」并允许所需的音视频读写权限。",
+      "安装完成后从应用抽屉中点击开启 Five Cut Pro。"
+    ]
+  }
+}

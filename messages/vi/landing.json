@@ -1,53 +1,120 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "VŨ KHÍ ĐỘT PHÁ DOANH SỐ CHO KOC & HỆ THỐNG TIẾP THỊ LIÊN KẾT TIKTOK SHOP",
-    "titleLead": "Biến 1 Lần Quay 3 Phút",
-    "titleAccent": "Thành 100 Video Bán Hàng Triệu View",
-    "subtitle": "Quên đi những đêm còng lưng cắt ghép 3 tiếng một video rồi lẹt đẹt 200 view hay sợ bị quét trùng lặp. Five Cut Pro trang bị trợ lý camera chỉ từng góc quay và công nghệ Five Engine độc quyền — tự động nhân bản hàng trăm video chuẩn thuật toán, phủ sóng dàn kênh affiliate và bùng nổ hoa hồng an toàn 100%.",
+    "tagline": "CÔNG CỤ CẮT GHÉP & TỰ ĐỘNG HÓA 100 VIDEO BÁN HÀNG TIKTOK SHOP, REELS & SHORTS",
+    "titleLead": "Biến 1 Video Gốc Thành",
+    "titleAccent": "100 Clip Bán Hàng Triệu View",
+    "subtitle": "Quên đi những ngày còng lưng cắt ghép hàng giờ một clip rồi bị bóp tương tác vì dính trùng lặp. Five Cut Pro tự động nhận diện phân cảnh, cắt bỏ đoạn vấp thoại, đổi hook mở đầu và nhân bản hàng loạt biến thể độc nhất với công nghệ chống quét reup SafeGuard 100% an toàn để bạn phủ sóng dàn kênh affiliate.",
     "ctaPrimary": "Tải ứng dụng miễn phí ngay",
-    "ctaSecondary": "Khám phá 500+ kịch bản triệu đơn",
-    "ctaBatch": "Cỗ máy nhân bản 1 ➔ 100",
-    "ctaBrand": "Hợp tác nhãn hàng & tài trợ",
+    "ctaSecondary": "Khám phá tính năng",
+    "ctaBatch": "Nhân bản 1 ➔ 100 video",
+    "ctaBrand": "Dành cho nhãn hàng & doanh nghiệp",
     "ctaTrust": "Hoàn toàn miễn phí • Không cần thẻ tín dụng • Sẵn sàng cho macOS & Windows",
-    "ctaSocialProof": "Được tin dùng bởi hơn 1,000+ KOC & Đội ngũ tiếp thị liên kết TikTok Shop",
-    "audienceKoc": "Dành cho KOC & Nhà sáng tạo nội dung",
-    "audienceSeller": "Nhà bán hàng & Đội ngũ tiếp thị liên kết",
+    "ctaSocialProof": "Được tin dùng bởi hơn 10,000+ KOC & Đội ngũ tiếp thị liên kết TikTok Shop",
+    "audienceKoc": "Dành cho KOC & Nhà sáng tạo bán hàng",
+    "audienceSeller": "Nhà bán hàng & Đội ngũ nuôi dàn kênh Affiliate",
     "logoAlt": "Biểu tượng Five Cut Pro",
-    "pillRetention": "Trợ lý bấm máy — Hướng dẫn góc quay từng nhịp",
-    "pillCta": "Kịch bản triệu đơn — Chuẩn chuyển đổi giỏ hàng",
+    "pillRetention": "Cắt video tự động — Tối ưu 3 giây đầu giữ chân",
+    "pillCta": "Nhân bản 1 ➔ 100 — 1 Lần quay ra hàng chục clip",
     "pillSpeed": "Tiết kiệm 90% thời gian dựng video",
-    "pillBatch": "Cỗ máy 1 ➔ 100 — 1 Lần quay ra 100 video",
-    "pillAntiReup": "Bảo vệ tài khoản — Không lo trùng lặp nội dung"
+    "pillBatch": "Xuất hàng loạt 4K — Sẵn sàng phủ sóng đa kênh",
+    "pillAntiReup": "Chống Reup SafeGuard — 100% video độc nhất"
   },
   "metricsBar": [
-    { "value": "100+", "label": "Video Biến Thể Độc Nhất", "desc": "Chỉ từ 1 lần bấm máy 3 phút" },
+    { "value": "1 ➔ 100", "label": "Clip Bán Hàng Biến Thể", "desc": "Tự động từ 1 video gốc hoặc livestream thô" },
     { "value": "90%", "label": "Thời Gian Dựng Được Giải Phóng", "desc": "Không còn còng lưng cắt ghép thủ công" },
     { "value": "100%", "label": "An Toàn Thuật Toán SafeGuard", "desc": "Chống quét trùng lặp reup đa kênh" },
     { "value": "3–5x", "label": "Tăng Trưởng Doanh Số & Hoa Hồng", "desc": "Phủ sóng dàn kênh vệ tinh đều đặn" }
   ],
+  "featuresSection": {
+    "label": "TÍNH NĂNG CỐT LÕI",
+    "title": "Trang Bị Toàn Diện Để Thống Trị Video Bán Hàng",
+    "subtitle": "Không phải phần mềm dựng phim phức tạp. Five Cut Pro tập trung 100% vào việc giúp bạn sản xuất nhanh và nhiều video bán hàng chuẩn thuật toán từ video có sẵn."
+  },
+  "features": [
+    {
+      "id": "smart-cut",
+      "title": "Cắt Ghép & Lọc Đoạn Thừa Tự Động",
+      "description": "Tự động phát hiện và loại bỏ các đoạn im lặng, nói vấp, động tác thừa hoặc rung lắc. Giữ lại những phân cảnh đắt giá nhất để tạo thành video bán hàng mạch lạc, dứt khoát.",
+      "bullets": [
+        "Tự động nhận diện điểm ngắt phân cảnh",
+        "Loại bỏ khoảng lặng và đoạn ngập ngừng",
+        "Tối ưu tỉ lệ dọc 9:16 chuẩn TikTok & Reels"
+      ]
+    },
+    {
+      "id": "batch-remix",
+      "title": "Nhân Bản 1 Video Thành Hàng Chục Biến Thể",
+      "description": "Từ 1 video quay sản phẩm hoặc livestream, Five Cut Pro tự động hoán đổi thứ tự cảnh, ghép các đoạn mở đầu (Hook) khác nhau để tạo ra hàng loạt phiên bản hoàn toàn mới.",
+      "bullets": [
+        "Đa dạng hóa đoạn mở đầu giữ chân 3s",
+        "Xáo trộn thứ tự cảnh thông minh",
+        "Đủ video đăng đều đặn cả tuần mà không phải quay lại"
+      ]
+    },
+    {
+      "id": "safeguard-anti-reup",
+      "title": "Công Nghệ Chống Reup Độc Quyền SafeGuard",
+      "description": "Tự động can thiệp vi mô vào pixel, zoom động thông minh, lật khung hình nhẹ, đổi mã băm (MD5) và làm mới toàn bộ metadata kỹ thuật số của video xuất ra.",
+      "bullets": [
+        "0% lo bị bóp tương tác hay dính gậy trùng lặp",
+        "Được thuật toán TikTok & Reels nhận diện là video gốc mới 100%",
+        "An toàn tuyệt đối khi nuôi dàn kênh tiếp thị liên kết"
+      ]
+    },
+    {
+      "id": "hook-cta",
+      "title": "Tối Ưu 3 Giây Đầu & Chèn Nút Chỉ Giỏ Hàng",
+      "description": "Cắt nhịp dồn dập vào 3 giây vàng để ngăn chặn hành vi lướt qua. Tự động chèn biểu tượng chỉ tay trỏ giỏ hàng TikTok Shop góc trái màn hình để kích thích hành vi mua sắm.",
+      "bullets": [
+        "Chuẩn nhịp giữ chân thuật toán đề xuất",
+        "Kêu gọi hành động (CTA) trúng đích",
+        "Gia tăng tỷ lệ nhấp giỏ hàng và chốt đơn"
+      ]
+    },
+    {
+      "id": "auto-captions",
+      "title": "Tự Tạo Phụ Đề & Nhấn Mạnh Điểm Bán Hàng",
+      "description": "Nhận diện giọng nói tự động tạo phụ đề sinh động. Nổi bật từ khóa giá sốc, mã giảm giá, tính năng ưu việt giúp khách hàng xem video không bật tiếng vẫn hiểu và mua ngay.",
+      "bullets": [
+        "Phụ đề tự động khớp từng nhịp nói",
+        "Hiệu ứng chữ nổi bật giá và ưu đãi hot",
+        "Tùy biến phong cách chữ bắt mắt"
+      ]
+    },
+    {
+      "id": "batch-export",
+      "title": "Xuất Hàng Loạt Siêu Tốc 4K & Đa Nền Tảng",
+      "description": "Tận dụng tối đa phần cứng máy tính (Apple Silicon M-series, Windows GPU) và thiết bị di động. Xuất hàng chục video chuẩn Full HD / 4K siêu nét chỉ trong vài phút.",
+      "bullets": [
+        "Xử lý đa luồng tăng tốc phần cứng",
+        "Hỗ trợ macOS, Windows, iOS & Android",
+        "Chất lượng hình ảnh sắc nét không vỡ hạt"
+      ]
+    }
+  ],
   "howItWorksSection": {
     "label": "QUY TRÌNH TINH GỌN",
-    "title": "Sản Xuất 100 Video Bán Hàng — Chưa Bao Giờ Dễ Dàng Đến Thế",
-    "subtitle": "Không cần kỹ năng quay phim hay dựng video phức tạp. Five Cut Pro đồng hành cùng bạn từ lúc bấm máy đến khi xuất bản hàng trăm video sẵn sàng ra đơn:",
+    "title": "Tạo Hàng Loạt Video Bán Hàng Chỉ Với 3 Bước",
+    "subtitle": "Không cần biết kỹ năng dựng phim phức tạp. Five Cut Pro tự động hóa từ đầu đến cuối giúp bạn ra video liên tục:",
     "steps": [
       {
         "num": "01",
-        "title": "Trợ Lý Bấm Máy Hướng Dẫn Từng Nhịp",
-        "desc": "Màn hình camera thông minh trực tiếp hướng dẫn bạn căn bố cục góc quay, đếm ngược thời gian và hiện sẵn câu thoại chốt đơn theo từng giây. Bạn luôn tự tin có những thước phim đẹp mắt chỉ trong một lần quay.",
-        "badge": "Dễ dàng cho người mới"
+        "title": "Nhập Video Gốc Hoặc Livestream Thô",
+        "desc": "Thả file video sản phẩm quay bằng điện thoại hoặc video livestream dài vào ứng dụng. Phần mềm tự động phân tích âm thanh, hình ảnh và phân đoạn kịch bản.",
+        "badge": "Đơn giản & Nhanh chóng"
       },
       {
         "num": "02",
-        "title": "Kho Kịch Bản Bán Hàng Triệu Đơn",
-        "desc": "Thừa hưởng kho công thức kịch bản độc quyền đúc kết từ những chiến dịch bán hàng thành công nhất. Tối ưu hóa điểm chạm tâm lý, giữ chân người xem 3 giây đầu và thúc đẩy bấm mua hàng.",
-        "badge": "Đã kiểm chứng doanh số"
+        "title": "Tùy Chọn Cắt & Kích Hoạt SafeGuard",
+        "desc": "Chọn thời lượng video mong muốn, số lượng biến thể cần tạo, tùy chọn thêm phụ đề tự động và bật công nghệ chống quét reup SafeGuard.",
+        "badge": "Tự động hóa thông minh"
       },
       {
         "num": "03",
-        "title": "Tự Động Xuất Bản 100 Video Hoàn Chỉnh",
-        "desc": "Công nghệ độc quyền Five Engine tự động chuyển hóa đoạn quay của bạn thành hàng loạt video bán hàng hoàn chỉnh với âm nhạc bắt trend, hiệu ứng chuyển cảnh và nhịp điệu cuốn hút — sẵn sàng phủ sóng đa kênh.",
-        "badge": "Tự động hóa hoàn toàn"
+        "title": "Xuất Hàng Loạt & Phủ Sóng Đa Kênh",
+        "desc": "Chỉ sau vài phút, Five Cut Pro xuất bản hàng chục video bán hàng độc nhất chuẩn tỉ lệ dọc 9:16, sẵn sàng lên lịch đăng tải trên TikTok, Reels và Shorts.",
+        "badge": "Sẵn sàng ra đơn"
       }
     ]
   },
@@ -61,8 +128,8 @@
       "subtitle": "Mệt mỏi, tốn thời gian và dễ nản lòng",
       "points": [
         "Mất 2–3 tiếng chỉ để cắt ghép, lồng nhạc, chèn chữ cho 1 video đơn lẻ",
-        "Cạn kiệt ý tưởng kịch bản, ấp úng không biết nói gì trước ống kính",
         "Đăng 1 video lên nhiều kênh bị TikTok bóp tương tác, dính gậy reup",
+        "Cạn kiệt ý tưởng kịch bản, ấp úng không biết nói gì trước ống kính",
         "Chỉ tiêu đăng bài bấp bênh, lượt xem lẹt đẹt 200 view rồi nản lòng bỏ cuộc",
         "Một mình không thể quản lý và mở rộng hệ thống kênh vệ tinh"
       ]
@@ -72,11 +139,11 @@
       "title": "Đột Phá Cùng Five Cut Pro",
       "subtitle": "Tự động hóa toàn diện, nhân bản doanh số",
       "points": [
-        "Bấm máy 1 lần 3 phút theo trợ lý ➔ Nhận ngay 100 video độc nhất",
-        "500+ kịch bản triệu đơn tích hợp sẵn đếm ngược từng nhịp câu thoại",
-        "Công nghệ SafeGuard biến thiên đa tầng: nhịp cắt, zoom, âm trend ➔ 0% lo quét",
+        "Nhập 1 video gốc ➔ Nhận ngay hàng chục clip bán hàng độc nhất trong 3 phút",
+        "Công nghệ SafeGuard biến thiên đa tầng: zoom, lật, đổi hash ➔ 0% lo quét reup",
+        "Tự động nhận diện 3s đầu giữ chân và kêu gọi bấm giỏ hàng TikTok Shop",
         "Lên sóng đều đặn 3–5 video/ngày vào mọi khung giờ vàng, kéo bão đơn",
-        "1 người nhàn tênh quản lý và vận hành dàn 10–20 kênh TikTok Shop vệ tinh"
+        "1 người nhàn tênh quản lý và vận hành dàn 10–20 kênh vệ tinh affiliate"
       ]
     }
   },
@@ -88,17 +155,17 @@
     "guideCard": {
       "badge": "Dành Cho Người Mới Bắt Đầu",
       "title": "Tập trung ra đơn — Mọi khâu kỹ thuật đã có Five Cut Pro lo",
-      "description": "Bạn không cần phải là một chuyên gia dựng phim hay mất nhiều giờ bên máy tính. Trợ lý camera của Five Cut Pro trực quan hóa từng nhịp bấm máy: 3 giây mở đầu thu hút, cận cảnh sản phẩm, trải nghiệm thực tế và kêu gọi mua hàng. Bạn chỉ việc quay theo nhịp, phần còn lại được tự động hóa hoàn toàn."
+      "description": "Bạn không cần phải là một chuyên gia dựng phim hay mất nhiều giờ bên máy tính. Five Cut Pro tự động hóa toàn bộ chuỗi xử lý: từ cắt bỏ đoạn thừa, tạo nhiều góc mở đầu thu hút, tự động chèn phụ đề giá sốc đến chỉ dẫn bấm giỏ hàng góc trái."
     },
     "pipeline": {
       "inputBadge": "Nguồn vào",
-      "inputTitle": "01. Một Lần Quay Thực Tế",
-      "inputDesc": "Ghi lại trải nghiệm sản phẩm bằng điện thoại theo hướng dẫn góc quay và câu thoại mẫu trực quan.",
+      "inputTitle": "01. Một Video Gốc Có Sẵn",
+      "inputDesc": "Video quay review sản phẩm, đập hộp unboxing hoặc một buổi livestream bán hàng trên điện thoại.",
       "engineBadge": "Động cơ xử lý",
       "engineTitle": "02. Xử Lý Tự Động Đa Tầng",
-      "engineDesc": "Tự động kết hợp cấu trúc bán chạy, tinh chỉnh nhịp điệu thị giác và hòa âm xu hướng bắt tai.",
+      "engineDesc": "Tự động loại bỏ đoạn thừa, tráo đổi thứ tự phân cảnh, zoom động và làm mới dấu ấn kỹ thuật số.",
       "outputBadge": "Kết quả đầu ra",
-      "outputTitle": "03. 100 Video Hoàn Toàn Khác Biệt",
+      "outputTitle": "03. Hàng Loạt Video Biến Thể Độc Nhất",
       "outputDesc": "Xuất bản hàng loạt video bán hàng chuẩn mực, sẵn sàng phủ sóng đồng loạt trên các kênh vệ tinh."
     },
     "antiReup": {
@@ -108,8 +175,8 @@
       "points": [
         {
           "num": "01",
-          "title": "Định Danh Nguyên Bản Đa Tầng",
-          "desc": "Mỗi biến thể video được khởi tạo với cấu trúc dữ liệu và dấu ấn kỹ thuật số độc lập hoàn toàn."
+          "title": "Định Danh Nguyên Bản Đa Tầng (MD5 Reset)",
+          "desc": "Mỗi biến thể video được khởi tạo với cấu trúc dữ liệu và dấu ấn kỹ thuật số (hash) độc lập hoàn toàn."
         },
         {
           "num": "02",
@@ -169,364 +236,12 @@
       }
     ]
   },
-  "formulaSection": {
-    "label": "KHO KỊCH BẢN BÁN HÀNG TRIỆU ĐƠN",
-    "title": "Khám Phá Các Cấu Trúc Video Bán Hàng Triệu View",
-    "subtitle": "Được đúc kết từ những chiến dịch bán hàng thực chiến thành công nhất. Trải nghiệm thử camera đếm ngược và mở khóa trọn bộ kịch bản độc quyền trong ứng dụng.",
-    "categories": [
-      { "id": "all", "label": "Tất cả kịch bản" },
-      { "id": "skincare", "label": "Mỹ phẩm & Chăm sóc da" },
-      { "id": "fashion", "label": "Thời trang & Mặc đẹp" },
-      { "id": "home", "label": "Gia dụng thông minh" },
-      { "id": "food", "label": "Ẩm thực & Quán ngon" },
-      { "id": "tech", "label": "Công nghệ & Tiện ích số" }
-    ],
-    "simulatorTitle": "Trợ Lý Bấm Máy Ảo Trực Quan",
-    "simulatorSubtitle": "Mô phỏng cách camera Five Cut Pro hướng dẫn bạn căn góc quay và đếm ngược từng nhịp chuẩn xác",
-    "playSimulator": "Chạy thử nhịp quay",
-    "pauseSimulator": "Tạm dừng",
-    "applyFormulaBtn": "Tải Five Cut Pro & Mở Khóa 500+ Kịch Bản Bán Chạy",
-    "sceneHeader": "Kịch bản phân cảnh chi tiết (Bấm vào phân cảnh để trải nghiệm góc quay):",
-    "durationLabel": "Thời lượng",
-    "angleLabel": "Góc quay gợi ý",
-    "actionLabel": "Mục tiêu phân cảnh",
-    "scriptLabel": "Lời thoại chốt đơn (Bản quyền)",
-    "cartNotice": "🛒 Giỏ hàng TikTok Shop nhấp nháy góc trái",
-    "goldenDurationPrefix": "Thời lượng vàng:",
-    "scenesCountSuffix": "phân cảnh",
-    "createdByLabel": "Sáng tạo bởi",
-    "viewsCountSuffix": "lượt xem",
-    "appliedCountSuffix": "nhà sáng tạo đã áp dụng",
-    "vipCallout": "✨ Toàn bộ 500+ kịch bản bán chạy & gợi ý câu thoại chốt đơn đã được tích hợp sẵn trên ứng dụng di động Five Cut Pro.",
-    "formulas": [
-      {
-        "id": "f-skincare",
-        "category": "skincare",
-        "categoryLabel": "Mỹ phẩm",
-        "title": "Cấu Trúc Đập Tan Nỗi Lo — Chuyển Đổi Nhanh 7 Ngày",
-        "creator": "@linh.beauty",
-        "creatorBadge": "Chuyên gia làm đẹp",
-        "brandDeal": "DermaLab Chính Hãng",
-        "totalTime": "12.8s",
-        "views": "2.4M+",
-        "kocCount": "14.8K Nhà sáng tạo",
-        "conversion": "+340% Nhấp giỏ hàng",
-        "summary": "Mô hình 6 phân cảnh tập trung giải quyết nỗi lo lắng của khách hàng trong 2 giây đầu và bùng nổ niềm tin bằng minh chứng thị giác trước & sau khi dùng.",
-        "shots": [
-          {
-            "num": 1,
-            "stage": "3 Giây Đầu Giữ Chân",
-            "time": "2.0s",
-            "angle": "Góc quay tự chụp ngang mắt (Nhận diện khuôn mặt)",
-            "action": "Kích hoạt cảm xúc tò mò và đánh trúng nỗi lo lớn nhất của người xem để ngăn chặn hành vi lướt qua.",
-            "script": "🔒 Kịch bản mở đầu độc quyền — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 2,
-            "stage": "Trải Nghiệm Thực Tế",
-            "time": "2.4s",
-            "angle": "Cận cảnh chi tiết 15cm (Tự động lấy nét sản phẩm)",
-            "action": "Phô diễn chất kem/serum thẩm thấu chân thực, kích thích cảm giác muốn chạm và thử ngay lập tức.",
-            "script": "🔒 Lời thoại mô tả cảm giác trải nghiệm — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 3,
-            "stage": "Minh Chứng Trước & Sau",
-            "time": "2.0s",
-            "angle": "Màn hình kép so sánh trực quan",
-            "action": "Cung cấp bằng chứng thực tế rõ ràng để phá vỡ mọi nghi ngờ của người xem về hiệu quả sản phẩm.",
-            "script": "🔒 Lời thoại củng cố niềm tin — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 4,
-            "stage": "Cận Cảnh Chi Tiết",
-            "time": "2.0s",
-            "angle": "Xoay góc 45 độ chuẩn ánh sáng studio",
-            "action": "Khẳng định nguồn gốc xuất xứ chính hãng, tem chống hàng giả và thiết kế bao bì cao cấp.",
-            "script": "🔒 Lời thoại chứng thực uy tín — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 5,
-            "stage": "Bảo Chứng Cảm Xúc",
-            "time": "2.0s",
-            "angle": "Góc quay bán thân chính diện rạng rỡ",
-            "action": "Lan tỏa năng lượng tự tin, tạo sự đồng điệu tâm lý rằng sản phẩm phù hợp hoàn hảo với người xem.",
-            "script": "🔒 Lời thoại chia sẻ cảm nhận — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 6,
-            "stage": "Kêu Gọi Bấm Giỏ Hàng",
-            "time": "2.4s",
-            "angle": "Chỉ tay dứt khoát vào góc trái màn hình",
-            "action": "Tạo động lực hành động khẩn cấp (Ưu đãi có hạn) và điều hướng trực tiếp vào giỏ hàng.",
-            "script": "🔒 Câu chốt hạ đơn hàng chuyển đổi cao — Tải ứng dụng Five Cut Pro để mở khóa"
-          }
-        ]
-      },
-      {
-        "id": "f-fashion",
-        "category": "fashion",
-        "categoryLabel": "Thời trang",
-        "title": "Ma Trận Biến Hình Thời Trang — 1 Chiếc Áo Phối 3 Phong Cách",
-        "creator": "@huy.stylist",
-        "creatorBadge": "Chuyên gia phong cách",
-        "brandDeal": "Coolmate Nam Chính Hãng",
-        "totalTime": "14.2s",
-        "views": "3.1M+",
-        "kocCount": "22.5K Nhà sáng tạo",
-        "conversion": "+420% Nhấp giỏ hàng",
-        "summary": "Cấu trúc chuyển cảnh thần tốc phô diễn tính ứng dụng đa dạng của sản phẩm thời trang, kích thích mong muốn sở hữu ngay.",
-        "shots": [
-          {
-            "num": 1,
-            "stage": "3 Giây Đầu Biến Hình",
-            "time": "2.0s",
-            "angle": "Góc rộng toàn thân (Căn khung ở giữa)",
-            "action": "Tạo độ tương phản thị giác mạnh mẽ giữa tình trạng đời thường và diện mạo lịch lãm.",
-            "script": "🔒 Kịch bản biến hình độc quyền — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 2,
-            "stage": "Phong Cách 1: Đi Làm",
-            "time": "2.5s",
-            "angle": "Bán thân chính diện lịch sự",
-            "action": "Chứng minh sản phẩm hoàn hảo cho môi trường công sở, tạo ấn tượng chuyên nghiệp.",
-            "script": "🔒 Lời thoại gợi ý phối đồ công sở — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 3,
-            "stage": "Phong Cách 2: Dạo Phố",
-            "time": "2.5s",
-            "angle": "Góc chuyển động tự nhiên ngoài trời",
-            "action": "Thể hiện nét năng động, phóng khoáng khi đi chơi hoặc cafe cuối tuần cùng bạn bè.",
-            "script": "🔒 Lời thoại gợi ý phối đồ dạo phố — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 4,
-            "stage": "Cận Cảnh Chất Liệu",
-            "time": "2.2s",
-            "angle": "Cận cảnh từng thớ vải",
-            "action": "Trực quan hóa độ co giãn, khả năng chống nhăn và chất vải thoáng mát cao cấp.",
-            "script": "🔒 Lời thoại phân tích chất liệu vải — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 5,
-            "stage": "Tôn Dáng Che Khuyết Điểm",
-            "time": "2.0s",
-            "angle": "Góc nghiêng 3/4 tôn dáng",
-            "action": "Nhấn mạnh form dáng vừa vặn, dễ mặc và tôn vóc dáng người Việt.",
-            "script": "🔒 Lời thoại tư vấn form dáng — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 6,
-            "stage": "Kêu Gọi Bấm Giỏ Hàng",
-            "time": "3.0s",
-            "angle": "Chỉ tay dứt khoát vào giỏ hàng",
-            "action": "Nhắc nhở mã giảm giá có hạn đang hiển thị ở giỏ hàng góc trái màn hình.",
-            "script": "🔒 Câu chốt hạ đơn hàng thời trang — Tải ứng dụng Five Cut Pro để mở khóa"
-          }
-        ]
-      },
-      {
-        "id": "f-home",
-        "category": "home",
-        "categoryLabel": "Gia dụng",
-        "title": "Kích Thích Giác Quan — Giải Pháp Gia Dụng Thông Minh",
-        "creator": "@bep.nha.an",
-        "creatorBadge": "Chuyên gia nội trợ",
-        "brandDeal": "Sunhouse Mall Chính Hãng",
-        "totalTime": "13.9s",
-        "views": "1.8M+",
-        "kocCount": "12.1K Nhà sáng tạo",
-        "conversion": "+290% Nhấp giỏ hàng",
-        "summary": "Kích thích mạnh mẽ giác quan nghe và nhìn, kết hợp chứng minh lợi ích sức khỏe thiết thực cho mọi gia đình.",
-        "shots": [
-          {
-            "num": 1,
-            "stage": "Âm Thanh Giòn Rụm Hút Mắt",
-            "time": "2.0s",
-            "angle": "Cận cảnh chi tiết âm thanh & hình ảnh",
-            "action": "Sử dụng âm thanh sống động kích thích vị giác và giữ chân người xem ngay lập tức.",
-            "script": "🔒 Kịch bản kích hoạt giác quan — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 2,
-            "stage": "Mở Nồi Trải Nghiệm",
-            "time": "2.6s",
-            "angle": "Góc nhìn từ trên xuống bao quát",
-            "action": "Mở rộng góc nhìn phô diễn vẻ ngoài hiện đại và thành phẩm hoàn hảo sau khi nấu.",
-            "script": "🔒 Lời thoại miêu tả độ hấp dẫn — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 3,
-            "stage": "Minh Chứng Tách Mỡ",
-            "time": "2.4s",
-            "angle": "Cận cảnh khay lọc dầu thông minh",
-            "action": "Trực quan hóa lượng dầu mỡ thừa được tách bỏ, đánh trúng tâm lý bảo vệ sức khỏe gia đình.",
-            "script": "🔒 Lời thoại giá trị sức khỏe — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 4,
-            "stage": "Bảng Điều Khiển 1 Chạm",
-            "time": "2.0s",
-            "angle": "Cận cảnh màn hình cảm ứng sáng nét",
-            "action": "Minh chứng thao tác cực kỳ đơn giản, người lớn tuổi hay trẻ nhỏ cũng dùng được dễ dàng.",
-            "script": "🔒 Lời thoại hướng dẫn tính năng — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 5,
-            "stage": "Vệ Sinh Siêu Nhanh",
-            "time": "2.0s",
-            "angle": "Góc quay vòi xả nước chống dính",
-            "action": "Xóa tan nỗi lo ngại rửa dọn cồng kềnh sau khi nấu nướng.",
-            "script": "🔒 Lời thoại tiện ích vệ sinh — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 6,
-            "stage": "Kêu Gọi Bấm Giỏ Hàng",
-            "time": "2.9s",
-            "angle": "Chỉ tay vào giỏ hàng góc trái",
-            "action": "Công bố chính sách bảo hành chính hãng đổi mới và giục giã nhận quà tặng có hạn.",
-            "script": "🔒 Câu chốt hạ đơn hàng gia dụng — Tải ứng dụng Five Cut Pro để mở khóa"
-          }
-        ]
-      },
-      {
-        "id": "f-food",
-        "category": "food",
-        "categoryLabel": "Ẩm thực",
-        "title": "Bùng Nổ Vị Giác — Kích Thích Cơn Thèm Ăn Tức Thì",
-        "creator": "@foody.saigon",
-        "creatorBadge": "Chuyên gia ẩm thực",
-        "brandDeal": "Bún Bò Huế Xưa",
-        "totalTime": "13.5s",
-        "views": "2.9M+",
-        "kocCount": "18.4K Nhà sáng tạo",
-        "conversion": "+380% Nhấp giỏ hàng",
-        "summary": "Khai thác tối đa yếu tố kích thích vị giác và sự tò mò về mức giá hời để thúc đẩy người xem lưu mã giảm giá ngay.",
-        "shots": [
-          {
-            "num": 1,
-            "stage": "Tò Mò Mức Giá Cực Hời",
-            "time": "2.0s",
-            "angle": "Cận cảnh tô món ăn đầy ắp topping",
-            "action": "Tạo câu hỏi gây tò mò cực lớn về giá cả so với phần ăn khổng lồ trước ống kính.",
-            "script": "🔒 Kịch bản kích hoạt sự tò mò — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 2,
-            "stage": "Cận Cảnh Miếng Ngon Đậm Vị",
-            "time": "2.5s",
-            "angle": "Cận cảnh gắp đồ ăn chấm sốt",
-            "action": "Chuyển động chấm sốt sóng sánh cận cảnh khiến người xem không thể rời mắt.",
-            "script": "🔒 Lời thoại kích thích vị giác — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 3,
-            "stage": "Biểu Cảm Thỏa Mãn",
-            "time": "2.4s",
-            "angle": "Góc chính diện gương mặt thưởng thức",
-            "action": "Lan tỏa cảm xúc thỏa mãn chân thực khi thưởng thức món ăn ngon.",
-            "script": "🔒 Lời thoại mô tả hương vị — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 4,
-            "stage": "Điểm Nhấn Món Ăn Độc Bản",
-            "time": "2.1s",
-            "angle": "Cận cảnh món ăn đặc sắc",
-            "action": "Làm nổi bật những điểm độc đáo, khác biệt mà các quán ăn thông thường không có.",
-            "script": "🔒 Lời thoại điểm nhấn món ăn — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 5,
-            "stage": "Không Gian Quán Sạch Sẽ",
-            "time": "2.0s",
-            "angle": "Góc rộng không gian sạch đẹp",
-            "action": "Tạo sự an tâm tuyệt đối về chất lượng vệ sinh và trải nghiệm phục vụ chuyên nghiệp.",
-            "script": "🔒 Lời thoại bảo chứng không gian — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 6,
-            "stage": "Kêu Gọi Bấm Giỏ Hàng",
-            "time": "2.5s",
-            "angle": "Chỉ tay vào voucher giỏ hàng",
-            "action": "Kêu gọi lưu mã ưu đãi độc quyền chỉ có trong video để nhận giảm giá tới 30%.",
-            "script": "🔒 Câu chốt hạ săn mã ẩm thực — Tải ứng dụng Five Cut Pro để mở khóa"
-          }
-        ]
-      },
-      {
-        "id": "f-tech",
-        "category": "tech",
-        "categoryLabel": "Công nghệ",
-        "title": "Trực Quan Tính Năng — Phá Vỡ Mọi Rào Cản Quyết Định",
-        "creator": "@tech.review.pro",
-        "creatorBadge": "Chuyên gia công nghệ",
-        "brandDeal": "Baseus Chính Hãng",
-        "totalTime": "13.2s",
-        "views": "4.2M+",
-        "kocCount": "31.2K Nhà sáng tạo",
-        "conversion": "+460% Nhấp giỏ hàng",
-        "summary": "Tạo sự tương phản mạnh mẽ giữa vấn đề phiền toái và giải pháp công nghệ tức thì, thúc đẩy quyết định xuống tiền.",
-        "shots": [
-          {
-            "num": 1,
-            "stage": "1 Giây Tương Phản Độc Đáo",
-            "time": "2.0s",
-            "angle": "Bán thân bối cảnh thực tế đời sống",
-            "action": "Tạo sự đối lập ngoạn mục giữa không gian ồn ào và sự tĩnh lặng khi kích hoạt sản phẩm.",
-            "script": "🔒 Kịch bản tương phản âm thanh — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 2,
-            "stage": "Thử Thách Độ Bền & Độ Bám",
-            "time": "2.5s",
-            "angle": "Góc nghiêng vận động mạnh",
-            "action": "Thử thách trực diện bằng hành động mạnh mẽ để chứng minh độ bền bỉ và thoải mái.",
-            "script": "🔒 Lời thoại chứng minh độ bền — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 3,
-            "stage": "Cận Cảnh Thiết Kế Cao Cấp",
-            "time": "2.2s",
-            "angle": "Cận cảnh bàn tay tương tác",
-            "action": "Phô diễn chi tiết màn hình hiển thị, cơ chế nam châm hút thông minh và độ hoàn thiện.",
-            "script": "🔒 Lời thoại chi tiết tính năng — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 4,
-            "stage": "Chất Lượng Âm Thanh Đỉnh Cao",
-            "time": "2.1s",
-            "angle": "Cận cảnh màng loa linh kiện",
-            "action": "Nhấn mạnh chất lượng âm thanh hoặc hiệu năng vượt trội so với phân khúc giá.",
-            "script": "🔒 Lời thoại đánh giá hiệu năng — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 5,
-            "stage": "Bảo Chứng Thời Lượng Pin",
-            "time": "2.0s",
-            "angle": "Bán thân chính diện uy tín",
-            "action": "Cam kết bảo hành chính hãng 1 đổi 1 và thời lượng pin bền bỉ vượt trội.",
-            "script": "🔒 Lời thoại cam kết bảo hành — Tải ứng dụng Five Cut Pro để mở khóa"
-          },
-          {
-            "num": 6,
-            "stage": "Kêu Gọi Bấm Giỏ Hàng",
-            "time": "2.4s",
-            "angle": "Chỉ tay vào giỏ hàng TikTok Shop",
-            "action": "Nhấn mạnh cơ hội giá sốc hôm nay và giục giã mua ngay trước khi hết suất ưu đãi.",
-            "script": "🔒 Câu chốt hạ đơn hàng công nghệ — Tải ứng dụng Five Cut Pro để mở khóa"
-          }
-        ]
-      }
-    ]
-  },
   "sponsorsSection": {
     "label": "DÀNH CHO DOANH NGHIỆP & NHÃN HÀNG",
     "title": "Hợp Tác Tài Trợ & Chiến Dịch Lan Tỏa Thương Hiệu",
     "subtitle": "Tiếp cận mạng lưới hàng ngàn nhà sáng tạo nội dung chất lượng cao, tài trợ kịch bản đánh giá độc quyền và bùng nổ doanh số bán hàng trên TikTok Shop & Facebook Reels.",
     "stats": [
-      { "value": "1,000+", "label": "Nhà sáng tạo sẵn sàng hợp tác" },
+      { "value": "10,000+", "label": "Nhà sáng tạo sẵn sàng hợp tác" },
       { "value": "100%", "label": "Video chuẩn nhịp giữ chân" },
       { "value": "-70%", "label": "Tiết kiệm chi phí thuê ngoài" },
       { "value": "3 Phút", "label": "Thời gian sản xuất một video" }
@@ -573,33 +288,33 @@
       {
         "id": "faq-1",
         "question": "Tôi chưa từng có kinh nghiệm quay hay dựng video, có dùng được Five Cut Pro không?",
-        "answer": "Hoàn toàn dễ dàng! Five Cut Pro sinh ra để giải phóng bạn khỏi kỹ thuật phức tạp. Trợ lý camera thông minh sẽ hướng dẫn chi tiết từng góc máy, vạch căn khung và nhịp đếm ngược trực tiếp trên màn hình. Sau khi quay xong, hệ thống sẽ tự động đảm nhiệm 100% việc biên tập, hòa âm xu hướng và xuất bản hàng loạt video hoàn chỉnh."
+        "answer": "Hoàn toàn dễ dàng! Five Cut Pro sinh ra để giải phóng bạn khỏi kỹ thuật phức tạp. Bạn chỉ cần thả video quay sản phẩm vào, chọn độ dài và phong cách mong muốn. Phần mềm sẽ tự động loại bỏ đoạn thừa, chèn phụ đề và xuất ra hàng chục video hoàn chỉnh sẵn sàng đăng."
       },
       {
         "id": "faq-2",
-        "question": "Các video tạo ra có đảm bảo an toàn cho tài khoản và được thuật toán phân phối tự nhiên không?",
-        "answer": "Chắc chắn 100%. Five Cut Pro sở hữu công nghệ độc quyền SafeGuard — tự động phân tích và biến thiên đa chiều từ cấu trúc thị giác, nhịp độ phân cảnh cho đến âm thanh xu hướng tương thích. Nhờ đó, mỗi video xuất bản đều sở hữu bản sắc nguyên bản độc lập, được thuật toán của TikTok, Reels nhận diện như tác phẩm mới và an toàn tuyệt đối khi bạn vận hành hệ thống nhiều kênh tiếp thị liên kết."
+        "question": "Các video tạo ra có đảm bảo an toàn cho tài khoản và không bị dính gậy trùng lặp reup?",
+        "answer": "Chắc chắn 100%. Five Cut Pro sở hữu công nghệ độc quyền SafeGuard — tự động can thiệp vi mô vào pixel, nhịp độ phân cảnh, zoom động và làm mới mã băm (MD5). Nhờ đó, mỗi video xuất bản đều sở hữu bản sắc nguyên bản độc lập, được thuật toán của TikTok Shop, Reels nhận diện như tác phẩm mới và an toàn tuyệt đối khi bạn vận hành hệ thống nhiều kênh tiếp thị liên kết."
       },
       {
         "id": "faq-3",
-        "question": "Tôi cần chuẩn bị tư liệu quay như thế nào trước khi bắt đầu?",
-        "answer": "Bạn chỉ cần một chiếc điện thoại và sản phẩm muốn bán. Mở camera Five Cut Pro, bấm máy một lần theo sự chỉ dẫn trực quan của trợ lý trong khoảng 2–3 phút. Hệ thống sẽ tự động biến những thước phim đó thành cả một kho video bán hàng đa dạng sẵn sàng xuất bản."
+        "question": "Tôi cần chuẩn bị tư liệu video đầu vào như thế nào?",
+        "answer": "Bạn chỉ cần một video quay sản phẩm bằng điện thoại (unboxing, giới thiệu công dụng, cảm nhận khi dùng) hoặc một đoạn livestream bán hàng có sẵn. Five Cut Pro sẽ tự động cắt ghép, hoán đổi phân cảnh và tạo ra hàng loạt biến thể video khác nhau."
       },
       {
         "id": "faq-4",
-        "question": "Làm thế nào để Five Cut Pro giúp mở rộng dàn kênh tiếp thị liên kết?",
+        "question": "Làm thế nào để Five Cut Pro giúp mở rộng dàn kênh tiếp thị liên kết (Affiliate)?",
         "answer": "Thay vì mất cả ngày chỉ để làm 1 video cho 1 tài khoản, Five Cut Pro giúp bạn từ 1 lần quay có thể phủ sóng đồng loạt trên 5–20 kênh TikTok Shop & Reels vệ tinh mỗi ngày. Nhờ nội dung không bị trùng lặp, các kênh đều đón nhận luồng tiếp cận tự nhiên, giúp bạn nhân bội cơ hội tiếp cận khách hàng và tối đa hóa hoa hồng."
       },
       {
         "id": "faq-5",
-        "question": "Kho kịch bản bán hàng triệu đơn được đúc kết từ đâu?",
-        "answer": "Tất cả kịch bản và cấu trúc chuyển đổi đều được đúc kết từ những chiến dịch bán hàng thực chiến thành công nhất của các nhà bán hàng và nhà sáng tạo triệu view trên TikTok Shop. Cấu trúc kịch bản đã được kiểm chứng qua thực tế, tối ưu từng điểm chạm tâm lý để giữ chân người xem và tối đa hóa tỷ lệ bấm vào giỏ hàng."
+        "question": "Phần mềm chạy trên hệ điều hành nào?",
+        "answer": "Five Cut Pro hỗ trợ đầy đủ các hệ điều hành phổ biến: máy tính macOS (tương thích chip Apple Silicon M1/M2/M3/M4 và Intel), Windows 10/11, cùng phiên bản di động trên iOS và Android."
       }
     ]
   },
   "downloadSection": {
     "label": "Tải ứng dụng",
-    "title": "Có sẵn trên App Store, Google Play, máy tính Windows & macOS",
+    "title": "Có sẵn trên máy tính Windows, macOS & phiên bản di động",
     "subtitle": "Phiên bản {version}. Chọn đúng thiết bị của bạn để tải về và bắt đầu tạo video bán hàng chuẩn triệu view.",
     "desktopLabel": "Máy tính (macOS & Windows)",
     "mobileLabel": "Điện thoại (iOS & Android)",

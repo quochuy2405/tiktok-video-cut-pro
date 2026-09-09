@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { trackCtaClick } from "@/lib/analytics";
 import { APP_NAME } from "@/lib/brand";
+import { SocialLinks } from "@/components/social-links";
 
 export function SiteFooter() {
   const t = useTranslations("Footer");
@@ -15,7 +16,7 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-white/[0.08] bg-[#030305]">
       <div className="mx-auto flex min-w-0 max-w-[1200px] flex-col gap-10 px-4 py-14 sm:px-6 md:flex-row md:items-start md:justify-between md:py-16 lg:px-8">
-        <div className="min-w-0 max-w-sm space-y-4">
+        <div className="min-w-0 max-w-sm space-y-5">
           <Link
             href="/"
             className="flex items-center gap-3 rounded-xl outline-none transition-opacity hover:opacity-95 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-[#030305]"
@@ -32,6 +33,12 @@ export function SiteFooter() {
             </span>
           </Link>
           <p className="text-sm leading-relaxed text-zinc-400">{t("tagline")}</p>
+          <div className="pt-2 space-y-2.5">
+            <span className="block font-mono text-[10px] font-semibold uppercase tracking-[0.65px] text-zinc-500">
+              {t("socialHeading")}
+            </span>
+            <SocialLinks showLabel />
+          </div>
         </div>
         <div className="flex min-w-0 flex-col gap-10 sm:flex-row sm:gap-14 lg:gap-16">
           <nav

@@ -11,6 +11,7 @@ import {
   hreflangAlternates,
   OG_IMAGE,
   OG_VI,
+  openGraphLocale,
 } from "@/lib/site";
 
 const PATH = "privacy-policy";
@@ -35,7 +36,7 @@ export async function generateMetadata({
       description: doc.metaDescription,
       url: absoluteLocaleUrl(locale, PATH),
       siteName: APP_NAME,
-      locale: "vi_VN",
+      locale: openGraphLocale(locale),
       type: "article",
       images: [
         {

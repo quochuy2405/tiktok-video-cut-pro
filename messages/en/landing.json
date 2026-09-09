@@ -1,11 +1,11 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "AUTOMATE 100 SALES VIDEOS FOR TIKTOK SHOP, REELS & SHORTS",
+    "tagline": "AUTOMATE VIDEO COMMERCE FOR TIKTOK SHOP & REELS",
     "titleLead": "Transform 1 Raw Video Into",
     "titleAccent": "100 High-Converting Sales Clips",
-    "subtitle": "Stop spending hours manually trimming clips only to get hit with 200 views or algorithm duplicate flags. Five Cut Pro automatically detects key scenes, removes filler pauses, remixes opening hooks, and generates dozens of unique variants with SafeGuard Anti-Duplicate technology — 100% safe for scaling your affiliate channels.",
-    "ctaPrimary": "Download Free Now",
+    "subtitle": "Automatically trim pauses, remix retention hooks, and generate dozens of algorithm-optimized sales clips from 1 video — 100% SafeGuard duplicate-safe.",
+    "ctaPrimary": "Download Free",
     "ctaSecondary": "Explore Features",
     "ctaBatch": "Remix 1 ➔ 100 Videos",
     "ctaBrand": "Brand Partnerships",
@@ -129,7 +129,6 @@
       "points": [
         "Spending 2–3 hours trimming, syncing audio, and adding text for 1 single clip",
         "Cross-posting the same clip gets flagged as duplicate or suppressed to 200 views",
-        "Running out of fresh creative angles and suffering creator burnout",
         "Inconsistent posting cadence, missing crucial daily peak traffic windows",
         "Impossible for a solo creator to manage a network of satellite channels"
       ]
@@ -141,7 +140,6 @@
       "points": [
         "Input 1 video ➔ Receive dozens of unique sales clips in under 3 minutes",
         "SafeGuard multi-layer protection: pan/zoom, flips, MD5 reset ➔ 0% duplicate flag risk",
-        "Automatic 3s retention hooks and shopping cart pointer prompts",
         "Easily maintain 3–5 posts/day across prime viewing hours",
         "One solo creator effortlessly runs 10–20 satellite affiliate channels"
       ]

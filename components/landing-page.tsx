@@ -583,9 +583,6 @@ export function LandingPage() {
               <Sparkles className="size-3.5 shrink-0" />
               <span>{t("hero.tagline")}</span>
             </div>
-            <p className="font-heading text-[14px] font-medium tracking-[-0.02em] text-zinc-400">
-              {t("hero.productName")}
-            </p>
           </motion.div>
 
           <motion.h1
@@ -609,54 +606,12 @@ export function LandingPage() {
             {t("hero.subtitle")}
           </motion.p>
 
-          {/* Quick value tags */}
-          <motion.div
-            className="mt-6 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3"
-            initial={reduceMotion ? false : { opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, ease: easeOut, delay: 0.2 }}
-          >
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3.5 py-1 text-xs font-medium text-emerald-300">
-              <Camera className="size-3.5 text-emerald-400" />
-              {t("hero.pillRetention")}
-            </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-medium text-brand">
-              <Layers className="size-3.5 text-brand" />
-              {t("hero.pillBatch")}
-            </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3.5 py-1 text-xs font-medium text-cyan-300">
-              <Timer className="size-3.5 text-cyan-400" />
-              {t("hero.pillSpeed")}
-            </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 px-3.5 py-1 text-xs font-medium text-amber-300">
-              <TrendingUp className="size-3.5 text-amber-400" />
-              {t("hero.pillCta")}
-            </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 px-3.5 py-1 text-xs font-medium text-purple-300">
-              <ShieldCheck className="size-3.5 text-purple-400" />
-              {t("hero.pillAntiReup")}
-            </span>
-          </motion.div>
-
-          <motion.div
-            className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-zinc-500"
-            initial={reduceMotion ? false : { opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, ease: easeOut, delay: 0.22 }}
-          >
-            <span>{t("hero.audienceKoc")}</span>
-            <span className="hidden text-zinc-700 sm:inline" aria-hidden>
-              ·
-            </span>
-            <span>{t("hero.audienceSeller")}</span>
-          </motion.div>
-
           {/* Action CTAs */}
           <motion.div
-            className="mt-10 flex w-full min-w-0 flex-wrap items-center justify-center gap-3 px-1 sm:px-0"
+            className="mt-8 flex w-full min-w-0 flex-wrap items-center justify-center gap-3.5 px-1 sm:px-0"
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.48, ease: easeOut, delay: 0.25 }}
+            transition={{ duration: 0.48, ease: easeOut, delay: 0.22 }}
           >
             <Link
               href="/#download"
@@ -671,29 +626,10 @@ export function LandingPage() {
               }}
               className={cn(
                 buttonVariants({ variant: "default", size: "lg" }),
-                "rounded-full border-0 bg-brand px-8 py-3 text-[15px] font-medium text-[#050507] shadow-none glow-brand-sm transition-[transform,box-shadow] hover:-translate-y-0.5 hover:bg-brand hover:glow-brand-lg",
+                "rounded-full border-0 bg-brand px-8 py-3.5 text-[15px] font-semibold text-[#050507] shadow-none glow-brand-sm transition-[transform,box-shadow] hover:-translate-y-0.5 hover:bg-brand hover:glow-brand-lg",
               )}
             >
               {t("hero.ctaPrimary")}
-            </Link>
-            <Link
-              href="/#batch-engine"
-              onClick={() => {
-                trackCtaClick({
-                  cta_id: "hero_explore_batch",
-                  cta_location: "hero",
-                  cta_text: t("hero.pillBatch"),
-                  cta_category: "navigation_section",
-                  destination_url: "/#batch-engine",
-                });
-              }}
-              className={cn(
-                buttonVariants({ variant: "outline", size: "lg" }),
-                "rounded-full border-white/20 bg-white/[0.04] px-8 py-3 text-[15px] font-medium text-white backdrop-blur-sm hover:bg-white/[0.09] hover:text-white",
-              )}
-            >
-              <Layers className="mr-1.5 size-4 text-brand" />
-              {t("hero.pillBatch")}
             </Link>
             <Link
               href="/#features"
@@ -708,29 +644,10 @@ export function LandingPage() {
               }}
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
-                "rounded-full border-white/20 bg-white/[0.04] px-8 py-3 text-[15px] font-medium text-white backdrop-blur-sm hover:bg-white/[0.09] hover:text-white",
+                "rounded-full border-white/20 bg-white/[0.04] px-8 py-3.5 text-[15px] font-medium text-white backdrop-blur-sm hover:bg-white/[0.09] hover:text-white",
               )}
             >
               {t("hero.ctaSecondary")}
-            </Link>
-            <Link
-              href="/#sponsors"
-              onClick={() => {
-                trackCtaClick({
-                  cta_id: "hero_explore_sponsors",
-                  cta_location: "hero",
-                  cta_text: t("hero.ctaBrand"),
-                  cta_category: "lead_sponsor",
-                  destination_url: "/#sponsors",
-                });
-              }}
-              className={cn(
-                buttonVariants({ variant: "ghost", size: "lg" }),
-                "rounded-full border border-emerald-500/30 bg-emerald-500/10 px-6 py-3 text-[15px] font-medium text-emerald-400 hover:bg-emerald-500/20 hover:text-white transition-colors",
-              )}
-            >
-              <Building2 className="mr-1.5 size-4" />
-              {t("hero.ctaBrand")}
             </Link>
           </motion.div>
 
@@ -1555,17 +1472,20 @@ export function LandingPage() {
             </div>
           </div>
 
-          {/* 8. Install Guide */}
-          <FadeIn
+          {/* 8. Install Guide - Directly connected to downloads */}
+          <div
             id="install-guide"
-            className="mt-16 scroll-mt-[72px] md:mt-24"
+            className="mt-10 scroll-mt-[72px] border-t border-white/[0.08] pt-10 md:mt-12 md:pt-12"
           >
-            <div className="mx-auto max-w-2xl text-center">
-              <p className="text-sm font-medium text-zinc-400">{install.label}</p>
-              <h2 className="font-heading mt-3 text-[1.65rem] font-semibold tracking-[-0.85px] text-white md:text-[2rem]">
+            <FadeIn className="mx-auto max-w-2xl text-center">
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold text-brand">
+                <Sparkles className="size-3.5" />
+                <span>{install.label}</span>
+              </div>
+              <h2 className="font-heading mt-3 text-[1.65rem] font-semibold tracking-[-0.85px] text-white md:text-[2.2rem]">
                 {install.title}
               </h2>
-            </div>
+            </FadeIn>
 
             <div className="mt-10 grid gap-6 md:grid-cols-2 md:gap-8">
               <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
@@ -1692,7 +1612,7 @@ export function LandingPage() {
                 </ol>
               </div>
             </div>
-          </FadeIn>
+          </div>
 
           <FadeIn className="mt-14 px-1 text-center sm:px-0">
             <a

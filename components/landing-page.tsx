@@ -56,6 +56,7 @@ import {
   githubReleasesTagPageUrl,
   type DownloadAsset,
 } from "@/lib/downloads";
+import { gmailComposeUrl } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 type LandingFeature = {
@@ -1202,7 +1203,9 @@ export function LandingPage() {
                     {sponsors.form.directContact}
                   </p>
                   <a
-                    href={`mailto:${sponsors.form.emailText}`}
+                    href={gmailComposeUrl(sponsors.form.emailText)}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => {
                       trackDirectContact({
                         method: "email",
@@ -1213,7 +1216,9 @@ export function LandingPage() {
                         cta_location: "sponsor_section",
                         cta_text: sponsors.form.emailText,
                         cta_category: "external_resource",
-                        destination_url: `mailto:${sponsors.form.emailText}`,
+                        destination_url: gmailComposeUrl(
+                          sponsors.form.emailText,
+                        ),
                       });
                     }}
                     aria-label={sponsors.form.emailAria}

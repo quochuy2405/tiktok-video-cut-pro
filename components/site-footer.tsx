@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { trackCtaClick } from "@/lib/analytics";
 import { APP_NAME } from "@/lib/brand";
+import { gmailComposeUrl } from "@/lib/site";
 import { SocialLinks } from "@/components/social-links";
 
 export function SiteFooter() {
@@ -122,7 +123,9 @@ export function SiteFooter() {
               {t("contactBlurb")}
             </p>
             <a
-              href={`mailto:${t("contactEmail")}`}
+              href={gmailComposeUrl(t("contactEmail"))}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-3 inline-flex max-w-full items-center gap-2 break-all text-sm font-medium text-brand transition-colors hover:text-[#5ee9b8]"
               aria-label={t("contactEmailAria")}
             >

@@ -68,8 +68,31 @@ export async function generateMetadata({
       telephone: false,
     },
     icons: {
-      icon: [{ url: "/icon.png", type: "image/png", sizes: "512x512" }],
-      apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
+      // Google Search requires favicon ≥ 48×48 (multiples of 48).
+      icon: [
+        {
+          url: absoluteUrl("/icon-48.png"),
+          type: "image/png",
+          sizes: "48x48",
+        },
+        {
+          url: absoluteUrl("/icon.png"),
+          type: "image/png",
+          sizes: "512x512",
+        },
+        {
+          url: absoluteUrl("/favicon.ico"),
+          type: "image/x-icon",
+          sizes: "48x48",
+        },
+      ],
+      apple: [
+        {
+          url: absoluteUrl("/apple-icon.png"),
+          type: "image/png",
+          sizes: "180x180",
+        },
+      ],
     },
     manifest: "/manifest.webmanifest",
     alternates: {

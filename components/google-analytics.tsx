@@ -9,7 +9,7 @@ export function GoogleAnalytics() {
   const pathname = usePathname();
   const isFirstRender = useRef(true);
 
-  // Theo dõi chuyển trang nội bộ (Client-side routing trong Next.js)
+  // Theo dõi chuyển trang nội bộ (Clent-side routing trong Next.js)
   useEffect(() => {
     // gtag('config') đã tự động gửi page_view ở lần tải trang đầu tiên.
     // Bỏ qua lần render đầu để tránh bị đếm trùng (duplicate page_view).

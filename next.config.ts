@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 const nextConfig: NextConfig = {
   turbopack: {
-    root: path.resolve("."),
+    root: __dirname,
   },
   async redirects() {
     return [

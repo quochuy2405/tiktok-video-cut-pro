@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Mail } from "lucide-react";
 
 import { Link } from "@/i18n/navigation";
 import { trackCtaClick } from "@/lib/analytics";
@@ -111,9 +112,7 @@ export function SiteFooter() {
               id="footer-contact-heading"
               className="flex items-center gap-2 text-sm font-semibold tracking-[-0.02em] text-white"
             >
-              <span aria-hidden className="select-none">
-                📬
-              </span>
+              <Mail className="size-4 text-brand shrink-0" aria-hidden="true" />
               {t("contactHeading")}
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-zinc-400">
@@ -129,9 +128,7 @@ export function SiteFooter() {
               className="mt-3 inline-flex max-w-full items-center gap-2 break-all text-sm font-medium text-brand transition-colors hover:text-[#5ee9b8]"
               aria-label={t("contactEmailAria")}
             >
-              <span aria-hidden className="select-none">
-                📧
-              </span>
+              <Mail className="size-3.5 shrink-0 text-brand" aria-hidden="true" />
               {t("contactEmail")}
             </a>
           </section>

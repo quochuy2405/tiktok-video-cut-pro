@@ -10,15 +10,17 @@ import {
   CheckCircle2,
   ChevronDown,
   Copy,
+  Cpu,
   Download,
   Flame,
   HelpCircle,
   Layers,
   Mail,
+  Play,
   Scissors,
   Send,
   ShieldCheck,
-  Sparkles,
+  Smartphone,
   Target,
   Timer,
   TrendingUp,
@@ -26,7 +28,6 @@ import {
   Upload,
   Users,
   Video,
-  Wand2,
   XCircle,
   Zap,
 } from "lucide-react";
@@ -40,7 +41,6 @@ import {
   WindowsIcon,
   AndroidIcon,
   GooglePlayIcon,
-  GoogleIcon,
 } from "@/components/platform-icons";
 import {
   trackCopyTerminalCommand,
@@ -581,7 +581,7 @@ export function LandingPage() {
             transition={{ duration: 0.4, ease: easeOut, delay: 0.06 }}
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-brand backdrop-blur-md">
-              <Sparkles className="size-3.5 shrink-0" />
+              <Scissors className="size-3.5 shrink-0" />
               <span>{t("hero.tagline")}</span>
             </div>
           </motion.div>
@@ -711,7 +711,7 @@ export function LandingPage() {
         <div className="mx-auto min-w-0 max-w-[1200px] relative z-10">
           <FadeIn className="mx-auto max-w-3xl text-center">
             <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand">
-              <Sparkles className="size-3.5" />
+              <Layers className="size-3.5" />
               <span>{featuresSection.label}</span>
             </div>
             <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
@@ -724,7 +724,7 @@ export function LandingPage() {
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, idx) => {
-              const FeatureIcon = FEATURE_ICONS[feature.id] || Sparkles;
+              const FeatureIcon = FEATURE_ICONS[feature.id] || Layers;
               return (
                 <FadeIn key={feature.id} delay={idx * 0.07} className="flex">
                   <div className="glass-panel group relative flex w-full flex-col justify-between overflow-hidden rounded-[24px] border border-white/[0.08] p-7 transition-all duration-300 hover:border-brand/40 hover:glow-brand-sm sm:p-8">
@@ -777,7 +777,7 @@ export function LandingPage() {
         <div className="mx-auto min-w-0 max-w-[1200px]">
           <FadeIn className="mx-auto max-w-3xl text-center">
             <div className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-400">
-              <Sparkles className="size-3.5" />
+              <Play className="size-3.5 fill-current" />
               <span>{howItWorks.label}</span>
             </div>
             <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
@@ -790,7 +790,7 @@ export function LandingPage() {
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {howItWorks.steps?.map((step, idx) => {
-              const stepIcons = [Video, Wand2, Upload];
+              const stepIcons = [Video, Scissors, Upload];
               const StepIcon = stepIcons[idx % stepIcons.length];
               return (
                 <FadeIn key={step.num} delay={idx * 0.08} className="flex">
@@ -881,7 +881,7 @@ export function LandingPage() {
                   <div>
                     <div className="flex items-center justify-between">
                       <span className="inline-flex items-center gap-1.5 rounded-md border border-brand/40 bg-brand/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand">
-                        <Sparkles className="size-3.5" />
+                        <CheckCircle2 className="size-3.5" />
                         {comparison.newWay.badge}
                       </span>
                     </div>
@@ -987,7 +987,7 @@ export function LandingPage() {
                         "rounded-full bg-brand text-[#050507] hover:bg-brand font-medium glow-brand-sm",
                       )}
                     >
-                      <Sparkles className="mr-1.5 size-4" />
+                      <Layers className="mr-1.5 size-4" />
                       {t("hero.ctaSecondary")}
                     </Link>
                   </div>
@@ -1019,7 +1019,7 @@ export function LandingPage() {
               <div className="relative rounded-2xl border border-brand/30 bg-brand/[0.04] p-6 backdrop-blur-sm transition-all hover:border-brand/50 hover:bg-brand/[0.07]">
                 <div className="flex items-center gap-3">
                   <div className="flex size-11 items-center justify-center rounded-xl border border-brand/40 bg-brand/20 text-brand">
-                    <Wand2 className="size-5" />
+                    <Cpu className="size-5" />
                   </div>
                   <span className="text-xs font-bold uppercase tracking-wider text-brand">
                     {batchEngine.pipeline.engineBadge || "Động cơ tự động"}
@@ -1452,7 +1452,7 @@ export function LandingPage() {
                   </p>
                 </div>
                 <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold text-brand">
-                  <Sparkles className="size-3.5" />
+                  <Download className="size-3.5" />
                   <span>{install.title}</span>
                 </div>
               </div>
@@ -1563,7 +1563,7 @@ export function LandingPage() {
                   </p>
                 </div>
                 <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold text-brand">
-                  <Sparkles className="size-3.5" />
+                  <Smartphone className="size-3.5" />
                   <span>{install.title}</span>
                 </div>
               </div>

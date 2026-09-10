@@ -69,7 +69,7 @@ export function openGraphAlternateLocales(locale: string): string[] {
 export const SITE = {
   name: APP_NAME,
   shortName: "Five",
-  email: "fivecutpro.asia@gmail.com",
+  email: "support.fivecutpro.asia@gmail.com",
   copyrightHolder: "Shay Shay",
   defaultLocale: routing.defaultLocale as AppLocale,
   locales: routing.locales as readonly AppLocale[],

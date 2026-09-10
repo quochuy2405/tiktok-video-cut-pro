@@ -37,7 +37,7 @@
  */
 
 export const GA_TRACKING_ID =
-  process.env.NEXT_PUBLIC_GA_ID || "G-B6H1PXJMNV";
+  process.env.NEXT_PUBLIC_GA_ID || "G-5B7KK6L3ZJ";
 
 declare global {
   interface Window {

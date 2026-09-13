@@ -733,15 +733,15 @@ export function LandingPage() {
                       <div className="flex items-center justify-between">
                         <div className="flex size-12 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30">
                           <FeatureIcon className="size-6" />
-                        </div>
+                      </div>
                         <span className="font-mono text-xs font-bold text-zinc-500">
                           0{idx + 1}
                         </span>
                       </div>
                       <div className="pt-2">
                         <h3 className="font-heading text-lg sm:text-xl font-semibold text-white">
-                          {feature.title}
-                        </h3>
+                        {feature.title}
+                      </h3>
                       </div>
                       <p className="text-sm leading-relaxed text-zinc-400">
                         {feature.description}
@@ -838,11 +838,11 @@ export function LandingPage() {
               </div>
               <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
                 {comparison.title}
-              </h2>
+            </h2>
               <p className="mt-4 text-base leading-relaxed text-zinc-400 md:text-lg">
                 {comparison.subtitle}
-              </p>
-            </FadeIn>
+            </p>
+          </FadeIn>
 
             <div className="mt-14 grid gap-8 lg:grid-cols-2">
               {/* Old Way Card */}
@@ -1236,7 +1236,7 @@ export function LandingPage() {
               <div className="glass-panel rounded-[24px] border border-brand/30 bg-brand/[0.02] p-7 sm:p-9 shadow-xl">
                 <h3 className="font-heading text-xl font-semibold text-white">
                   {sponsors.form.title}
-                </h3>
+                        </h3>
                 <p className="mt-1.5 text-xs sm:text-sm text-zinc-400">
                   {sponsors.form.desc}
                 </p>
@@ -1362,7 +1362,7 @@ export function LandingPage() {
                     </button>
                   </form>
                 )}
-              </div>
+                    </div>
             </FadeIn>
           </div>
         </div>
@@ -1411,7 +1411,7 @@ export function LandingPage() {
                     {isOpen && (
                       <div className="border-t border-white/[0.06] px-5 pb-5 sm:px-6 sm:pb-6 pt-3 text-sm leading-relaxed text-zinc-300">
                         {item.answer}
-                      </div>
+                    </div>
                     )}
                   </div>
                 </FadeIn>
@@ -1433,7 +1433,7 @@ export function LandingPage() {
             </p>
             <h2 className="font-heading mt-3 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem]">
               {t("downloadSection.title")}
-            </h2>
+              </h2>
             <p className="mt-5 text-base leading-relaxed text-zinc-400 md:text-lg">
               {t("downloadSection.subtitle", { version: DISPLAY_APP_VERSION })}
             </p>
@@ -1455,7 +1455,7 @@ export function LandingPage() {
                   <Download className="size-3.5" />
                   <span>{install.title}</span>
                 </div>
-              </div>
+            </div>
 
               {/* 3 Desktop Download Cards */}
               <div className="grid grid-cols-1 items-stretch gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -1478,77 +1478,77 @@ export function LandingPage() {
               >
                 <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
                   <h4 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
-                    <span
+                  <span
                       className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10 transition-transform hover:scale-105 cursor-help"
                       title="Apple macOS"
                       aria-label="Apple macOS"
-                    >
+                  >
                       <AppleIcon className="size-[1.35rem]" title="Apple macOS" />
-                    </span>
-                    <span className="min-w-0 flex-1 leading-snug pt-0.5">
-                      {install.macTitle}
-                    </span>
+                  </span>
+                  <span className="min-w-0 flex-1 leading-snug pt-0.5">
+                    {install.macTitle}
+                  </span>
                   </h4>
                   <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-zinc-500">
-                    {install.macSteps.map((step, i) => (
-                      <li key={`mac-${i}`}>{step}</li>
-                    ))}
-                  </ol>
-                  <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between sm:gap-2">
-                    <p className="min-w-0 text-sm font-medium leading-snug text-zinc-300">
-                      {install.macCommandLabel}
-                    </p>
-                    <button
-                      type="button"
-                      onClick={() => void copyMacCommand()}
-                      className={cn(
-                        "inline-flex w-fit shrink-0 items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] font-semibold transition-colors",
-                        macCommandCopied
-                          ? "border-brand/50 bg-brand/15 text-brand"
+                  {install.macSteps.map((step, i) => (
+                    <li key={`mac-${i}`}>{step}</li>
+                  ))}
+                </ol>
+                <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between sm:gap-2">
+                  <p className="min-w-0 text-sm font-medium leading-snug text-zinc-300">
+                    {install.macCommandLabel}
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => void copyMacCommand()}
+                    className={cn(
+                      "inline-flex w-fit shrink-0 items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] font-semibold transition-colors",
+                      macCommandCopied
+                        ? "border-brand/50 bg-brand/15 text-brand"
                           : "border-white/[0.12] bg-white/[0.04] text-zinc-300 hover:border-white/25 hover:bg-white/[0.07] hover:text-white",
-                      )}
-                      aria-label={install.copyCommandLabel}
-                    >
-                      {macCommandCopied ? (
-                        <Check className="size-3.5 shrink-0" aria-hidden />
-                      ) : (
-                        <Copy className="size-3.5 shrink-0" aria-hidden />
-                      )}
-                      {macCommandCopied
-                        ? install.copiedCommandLabel
-                        : install.copyCommandLabel}
-                    </button>
-                  </div>
-                  <pre
-                    className="mt-2 max-w-full overflow-x-auto rounded-xl border border-white/[0.08] bg-[#0a0a0c] p-3 font-mono text-[11px] leading-snug text-zinc-300 sm:p-4 sm:text-[12px] md:text-[13px]"
-                    tabIndex={0}
+                    )}
+                    aria-label={install.copyCommandLabel}
                   >
-                    <code className="break-all whitespace-pre-wrap sm:break-normal sm:whitespace-pre">
-                      {install.macCommand}
-                    </code>
-                  </pre>
+                    {macCommandCopied ? (
+                      <Check className="size-3.5 shrink-0" aria-hidden />
+                    ) : (
+                      <Copy className="size-3.5 shrink-0" aria-hidden />
+                    )}
+                    {macCommandCopied
+                      ? install.copiedCommandLabel
+                      : install.copyCommandLabel}
+                  </button>
                 </div>
+                <pre
+                    className="mt-2 max-w-full overflow-x-auto rounded-xl border border-white/[0.08] bg-[#0a0a0c] p-3 font-mono text-[11px] leading-snug text-zinc-300 sm:p-4 sm:text-[12px] md:text-[13px]"
+                  tabIndex={0}
+                >
+                  <code className="break-all whitespace-pre-wrap sm:break-normal sm:whitespace-pre">
+                    {install.macCommand}
+                  </code>
+                </pre>
+              </div>
 
                 <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
                   <h4 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
-                    <span
+                  <span
                       className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10 transition-transform hover:scale-105 cursor-help"
                       title="Microsoft Windows"
                       aria-label="Microsoft Windows"
-                    >
+                  >
                       <WindowsIcon className="size-[1.2rem]" title="Microsoft Windows" />
-                    </span>
-                    <span className="min-w-0 flex-1 leading-snug pt-0.5">
-                      {install.winTitle}
-                    </span>
+                  </span>
+                  <span className="min-w-0 flex-1 leading-snug pt-0.5">
+                    {install.winTitle}
+                  </span>
                   </h4>
                   <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-zinc-500">
-                    {install.winSteps.map((step, i) => (
-                      <li key={`win-${i}`}>{step}</li>
-                    ))}
-                  </ol>
-                </div>
+                  {install.winSteps.map((step, i) => (
+                    <li key={`win-${i}`}>{step}</li>
+                  ))}
+                </ol>
               </div>
+            </div>
             </div>
 
             {/* Mobile Section: Downloads + Quick Installation Guide */}

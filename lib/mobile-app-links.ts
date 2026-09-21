@@ -4,7 +4,7 @@ export const MOBILE_APP_ID = "com.fivecutpro.asia";
 /** HTTPS redirect URI registered in TikTok Developer Portal (Login Kit). */
 export const TIKTOK_OAUTH_REDIRECT_URI =
   process.env.TIKTOK_REDIRECT_URI?.trim() ||
-  "https://fivecutpro.asia/tiktok/callback";
+  "https://fivecutpro.com/tiktok/callback";
 
 /** Optional custom-scheme fallback when Universal / App Links do not open. */
 export const TIKTOK_APP_SCHEME =
@@ -14,7 +14,7 @@ export function getAndroidSha256Fingerprints(): string[] {
   const raw =
     process.env.ANDROID_SHA256_CERT_FINGERPRINTS?.trim() ||
     process.env.ANDROID_SHA256_FINGERPRINT?.trim() ||
-    "";
+    "56:8A:91:35:CF:E4:4B:10:70:34:3D:F9:47:6B:15:1C:FD:C4:CD:37:CF:A2:E9:10:7B:E4:C6:E7:40:B2:AD:2D";
   if (!raw) return [];
   return raw
     .split(/[\n,]+/)
@@ -24,7 +24,7 @@ export function getAndroidSha256Fingerprints(): string[] {
 
 export function getIosTeamId(): string | null {
   const team =
-    process.env.IOS_TEAM_ID?.trim() || process.env.APPLE_TEAM_ID?.trim() || "";
+    process.env.IOS_TEAM_ID?.trim() || process.env.APPLE_TEAM_ID?.trim() || "9AYG5LR4BV";
   if (!team || team.includes("example")) return null;
   return team;
 }

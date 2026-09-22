@@ -22,6 +22,12 @@ const ARTIFACT_VERSION = "0.1.5";
 /** Marketing version shown on the site (hero, copy); can differ from ARTIFACT_VERSION / DOWNLOAD_RELEASE_TAG. */
 export const DISPLAY_APP_VERSION = "1.1.3";
 
+/** Default store links — same as Five Cut Pro mobile (`AppConstants`). */
+export const DEFAULT_IOS_STORE_URL =
+  "https://apps.apple.com/app/id6811012922";
+export const DEFAULT_ANDROID_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.fivecutpro.asia";
+
 /**
  * Exact filenames uploaded to the release host.
  * Kept for URL resolution so existing installers keep working.
@@ -67,13 +73,14 @@ export function githubReleasesTagPageUrl(): string {
  * - Per-file override: NEXT_PUBLIC_DOWNLOAD_* (absolute URL)
  * - Shared base: NEXT_PUBLIC_DOWNLOAD_BASE_URL + filename (desktop only)
  * - Default: direct asset URL on the configured release host (desktop only)
- * - Mobile without env: null (coming soon)
+ * - Mobile: App Store / Play Store defaults when env is unset
  */
 export function resolveDownloadHref(id: DownloadAssetId): string | null {
   const override = ENV_BY_ID[id];
   if (override?.trim()) return override.trim();
 
-  if (id === "ios" || id === "android") return null;
+  if (id === "ios") return DEFAULT_IOS_STORE_URL;
+  if (id === "android") return DEFAULT_ANDROID_STORE_URL;
 
   const file = RELEASE_ASSET_FILES[id];
   const base = process.env.NEXT_PUBLIC_DOWNLOAD_BASE_URL?.replace(/\/$/, "");
@@ -140,3 +147,20 @@ export const DESKTOP_DOWNLOAD_ASSETS = DOWNLOAD_ASSETS.filter(
 export const MOBILE_DOWNLOAD_ASSETS = DOWNLOAD_ASSETS.filter(
   (a) => a.platform === "mobile",
 );
+
+export const STORE_QR = {
+  ios: {
+    id: "ios" as const,
+    href: resolveDownloadHref("ios")!,
+    qrSrc: "/qr-ios.png",
+    label: "iOS",
+    storeLabel: "App Store",
+  },
+  android: {
+    id: "android" as const,
+    href: resolveDownloadHref("android")!,
+    qrSrc: "/qr-android.png",
+    label: "Android",
+    storeLabel: "Google Play",
+  },
+} as const;

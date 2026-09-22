@@ -1,377 +1,261 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "TỰ ĐỘNG HÓA VIDEO BÁN HÀNG TIKTOK SHOP & REELS",
-    "titleLead": "Biến 1 Video Gốc Thành",
-    "titleAccent": "100 Clip Bán Hàng Triệu View",
-    "subtitle": "Hướng dẫn quay, tự động cắt ghép và tạo loạt video bán hàng chuẩn thuật toán — an toàn 100% cho dàn kênh affiliate.",
-    "ctaPrimary": "Tải miễn phí ngay",
-    "ctaSecondary": "Khám phá tính năng",
-    "ctaBatch": "Nhân bản 1 ➔ 100 video",
-    "ctaBrand": "Dành cho nhãn hàng & doanh nghiệp",
-    "ctaTrust": "Hoàn toàn miễn phí • Không cần thẻ tín dụng • Sẵn sàng cho macOS & Windows",
-    "ctaSocialProof": "Được tin dùng bởi hơn 10,000+ KOC & Đội ngũ tiếp thị liên kết TikTok Shop",
-    "audienceKoc": "Dành cho KOC & Nhà sáng tạo bán hàng",
-    "audienceSeller": "Nhà bán hàng & Đội ngũ nuôi dàn kênh Affiliate",
+    "tagline": "VIDEO BÁN HÀNG CHO KOC — TRÊN ĐIỆN THOẠI",
+    "titleLead": "Mỗi ngày phải ra video,",
+    "titleAccent": "đừng ngồi edit cả buổi",
+    "subtitle": "Quay thiếu góc · dựng lại từ đầu · đăng không đều. Five Cut Pro cho KOC làm theo mẫu: xem cách quay, gắn đủ shot theo checklist, ghép trên máy rồi đăng TikTok.",
+    "ctaPrimary": "Tải app miễn phí",
+    "ctaSecondary": "Xem nỗi đau vs cách mới",
+    "ctaBatch": "Chọn mẫu → Quay shot → Xuất & đăng",
+    "ctaBrand": "Dành cho đội KOC & seller",
+    "ctaTrust": "iOS & Android · Google / TikTok / Apple / Email OTP",
+    "ctaSocialProof": "Dành cho KOC, seller và đội nội dung TikTok Shop",
+    "audienceKoc": "KOC & creator bán hàng",
+    "audienceSeller": "Seller & đội short-form",
     "logoAlt": "Biểu tượng Five Cut Pro",
-    "pillRetention": "Cắt video tự động — Tối ưu 3 giây đầu giữ chân",
-    "pillCta": "Nhân bản 1 ➔ 100 — 1 Lần quay ra hàng chục clip",
-    "pillSpeed": "Tiết kiệm 90% thời gian dựng video",
-    "pillBatch": "Xuất hàng loạt 4K — Sẵn sàng phủ sóng đa kênh",
-    "pillAntiReup": "Chống Reup SafeGuard — 100% video độc nhất"
+    "pillRetention": "Thiếu shot = mất cả buổi dựng",
+    "pillCta": "Công thức một lần — làm nhiều video",
+    "pillSpeed": "Ghép trên máy, chia sẻ TikTok ngay",
+    "pillBatch": "Chợ mẫu KOC — xem rồi dùng",
+    "pillAntiReup": "Khổ dọc 9:16 sẵn đăng"
   },
   "metricsBar": [
-    { "value": "1 ➔ 100", "label": "Clip Bán Hàng Biến Thể", "desc": "Tự động từ 1 video gốc hoặc livestream thô" },
-    { "value": "90%", "label": "Thời Gian Dựng Được Giải Phóng", "desc": "Không còn còng lưng cắt ghép thủ công" },
-    { "value": "100%", "label": "An Toàn Thuật Toán SafeGuard", "desc": "Chống quét trùng lặp reup đa kênh" },
-    { "value": "3–5x", "label": "Tăng Trưởng Doanh Số & Hoa Hồng", "desc": "Phủ sóng dàn kênh vệ tinh đều đặn" }
+    {
+      "value": "Nỗi đau",
+      "label": "Edit tay mỗi lần",
+      "desc": "Cắt lại từ đầu, dễ bỏ cuộc"
+    },
+    {
+      "value": "Cách mới",
+      "label": "Làm theo mẫu KOC",
+      "desc": "Xem hướng dẫn → app ghép"
+    },
+    {
+      "value": "Đủ góc",
+      "label": "Công thức góc quay",
+      "desc": "Không còn quay thiếu góc"
+    },
+    {
+      "value": "TikTok",
+      "label": "Xuất & đăng nhanh",
+      "desc": "Lưu máy hoặc chia sẻ ngay"
+    }
   ],
   "featuresSection": {
-    "label": "TÍNH NĂNG CỐT LÕI",
-    "title": "Trang Bị Toàn Diện Để Thống Trị Video Bán Hàng",
-    "subtitle": "Không phải phần mềm dựng phim phức tạp. Five Cut Pro tập trung 100% vào việc giúp bạn sản xuất nhanh và nhiều video bán hàng chuẩn thuật toán từ video có sẵn."
+    "label": "TRONG APP",
+    "title": "Đủ để ra video đều — không thừa tính năng ảo",
+    "subtitle": "Chợ mẫu, công thức shot, hướng dẫn quay và ghép xuất trên điện thoại. Không hứa 1→100 video tự sinh."
   },
   "features": [
     {
-      "id": "smart-cut",
-      "title": "Cắt Ghép & Lọc Đoạn Thừa Tự Động",
-      "description": "Tự động phát hiện và loại bỏ các đoạn im lặng, nói vấp, động tác thừa hoặc rung lắc. Giữ lại những phân cảnh đắt giá nhất để tạo thành video bán hàng mạch lạc, dứt khoát.",
+      "id": "koc-market",
+      "title": "Chợ mẫu KOC — xem rồi mới dùng",
+      "description": "Không còn đoán cách quay. Mở Khám phá, xem hướng dẫn + thành phẩm, ưng thì bấm Dùng mẫu.",
       "bullets": [
-        "Tự động nhận diện điểm ngắt phân cảnh",
-        "Loại bỏ khoảng lặng và đoạn ngập ngừng",
-        "Tối ưu tỉ lệ dọc 9:16 chuẩn TikTok & Reels"
+        "Mẫu từ creator KOC",
+        "Badge Bán chạy / Mới / Đang hot",
+        "Xem clip hướng dẫn từng góc trước khi gắn"
       ]
     },
     {
-      "id": "batch-remix",
-      "title": "Nhân Bản 1 Video Thành Hàng Chục Biến Thể",
-      "description": "Từ 1 video quay sản phẩm hoặc livestream, Five Cut Pro tự động hoán đổi thứ tự cảnh, ghép các đoạn mở đầu (Hook) khác nhau để tạo ra hàng loạt phiên bản hoàn toàn mới.",
+      "id": "recipes",
+      "title": "Công thức của bạn — tái dùng mỗi ngày",
+      "description": "Lưu thứ tự nguồn và thời lượng một lần. Hôm sau gắn clip mới, ra video mới — không dựng timeline lại.",
       "bullets": [
-        "Đa dạng hóa đoạn mở đầu giữ chân 3s",
-        "Xáo trộn thứ tự cảnh thông minh",
-        "Đủ video đăng đều đặn cả tuần mà không phải quay lại"
+        "Chuỗi góc theo mẫu (vd. 1-2-3-1)",
+        "Thời lượng từng đoạn theo giây",
+        "Đặt mặc định / yêu thích / làm video"
       ]
     },
     {
-      "id": "safeguard-anti-reup",
-      "title": "Công Nghệ Chống Reup Độc Quyền SafeGuard",
-      "description": "Tự động can thiệp vi mô vào pixel, zoom động thông minh, lật khung hình nhẹ, đổi mã băm (MD5) và làm mới toàn bộ metadata kỹ thuật số của video xuất ra.",
+      "id": "shot-guide",
+      "title": "Hướng dẫn từng shot — hết quay thiếu góc",
+      "description": "Mỗi đoạn có góc quay, mô tả và clip mẫu. Bạn chỉ cần quay đúng shot rồi gắn vào.",
       "bullets": [
-        "0% lo bị bóp tương tác hay dính gậy trùng lặp",
-        "Được thuật toán TikTok & Reels nhận diện là video gốc mới 100%",
-        "An toàn tuyệt đối khi nuôi dàn kênh tiếp thị liên kết"
+        "Clip mẫu trước khi quay",
+        "Theo dõi đã gắn bao nhiêu / tổng số đoạn",
+        "Cảnh báo khi nguồn ngắn hơn công thức"
       ]
     },
     {
-      "id": "hook-cta",
-      "title": "Tối Ưu 3 Giây Đầu & Chèn Nút Chỉ Giỏ Hàng",
-      "description": "Cắt nhịp dồn dập vào 3 giây vàng để ngăn chặn hành vi lướt qua. Tự động chèn biểu tượng chỉ tay trỏ giỏ hàng TikTok Shop góc trái màn hình để kích thích hành vi mua sắm.",
+      "id": "merge-export",
+      "title": "Ghép trên máy → đăng TikTok",
+      "description": "Gắn đủ nguồn, bấm Ghép video ngay. App xử lý trên thiết bị, lưu vào Xuất video — tải về hoặc chia sẻ TikTok.",
       "bullets": [
-        "Chuẩn nhịp giữ chân thuật toán đề xuất",
-        "Kêu gọi hành động (CTA) trúng đích",
-        "Gia tăng tỷ lệ nhấp giỏ hàng và chốt đơn"
-      ]
-    },
-    {
-      "id": "auto-captions",
-      "title": "Tự Tạo Phụ Đề & Nhấn Mạnh Điểm Bán Hàng",
-      "description": "Nhận diện giọng nói tự động tạo phụ đề sinh động. Nổi bật từ khóa giá sốc, mã giảm giá, tính năng ưu việt giúp khách hàng xem video không bật tiếng vẫn hiểu và mua ngay.",
-      "bullets": [
-        "Phụ đề tự động khớp từng nhịp nói",
-        "Hiệu ứng chữ nổi bật giá và ưu đãi hot",
-        "Tùy biến phong cách chữ bắt mắt"
-      ]
-    },
-    {
-      "id": "batch-export",
-      "title": "Xuất Hàng Loạt Siêu Tốc 4K & Đa Nền Tảng",
-      "description": "Tận dụng tối đa phần cứng máy tính (Apple Silicon M-series, Windows GPU) và thiết bị di động. Xuất hàng chục video chuẩn Full HD / 4K siêu nét chỉ trong vài phút.",
-      "bullets": [
-        "Xử lý đa luồng tăng tốc phần cứng",
-        "Hỗ trợ macOS, Windows, iOS & Android",
-        "Chất lượng hình ảnh sắc nét không vỡ hạt"
+        "Tiến trình chuẩn bị / ghép / xong",
+        "Danh sách video đã xuất trên máy",
+        "Chia sẻ từng clip lên TikTok"
       ]
     }
   ],
   "howItWorksSection": {
-    "label": "QUY TRÌNH TINH GỌN",
-    "title": "Tạo Hàng Loạt Video Bán Hàng Chỉ Với 3 Bước",
-    "subtitle": "Không cần biết kỹ năng dựng phim phức tạp. Five Cut Pro tự động hóa từ đầu đến cuối giúp bạn ra video liên tục:",
+    "label": "3 BƯỚC",
+    "title": "Chọn mẫu → Quay shot → Xuất & đăng",
+    "subtitle": "Đúng luồng đang có trên iOS & Android — không cần biết CapCut.",
     "steps": [
       {
         "num": "01",
-        "title": "Nhập Video Gốc Hoặc Livestream Thô",
-        "desc": "Thả file video sản phẩm quay bằng điện thoại hoặc video livestream dài vào ứng dụng. Phần mềm tự động phân tích âm thanh, hình ảnh và phân đoạn kịch bản.",
-        "badge": "Đơn giản & Nhanh chóng"
+        "title": "Chọn mẫu đang chạy",
+        "desc": "Vào Khám phá hoặc Công thức đã lưu. Xem hướng dẫn và thành phẩm trước khi dùng.",
+        "badge": "Khám phá"
       },
       {
         "num": "02",
-        "title": "Tùy Chọn Cắt & Kích Hoạt SafeGuard",
-        "desc": "Chọn thời lượng video mong muốn, số lượng biến thể cần tạo, tùy chọn thêm phụ đề tự động và bật công nghệ chống quét reup SafeGuard.",
-        "badge": "Tự động hóa thông minh"
+        "title": "Quay đủ shot rồi gắn nguồn",
+        "desc": "Làm theo checklist góc trong mẫu. Gắn từng clip vào đúng đoạn đến khi đủ.",
+        "badge": "Gắn nguồn"
       },
       {
         "num": "03",
-        "title": "Xuất Hàng Loạt & Phủ Sóng Đa Kênh",
-        "desc": "Chỉ sau vài phút, Five Cut Pro xuất bản hàng chục video bán hàng độc nhất chuẩn tỉ lệ dọc 9:16, sẵn sàng lên lịch đăng tải trên TikTok, Reels và Shorts.",
-        "badge": "Sẵn sàng ra đơn"
+        "title": "Ghép xong — đăng luôn",
+        "desc": "Bấm Ghép video ngay, mở Xuất video, tải về thư viện hoặc chia sẻ TikTok.",
+        "badge": "Xuất & đăng"
       }
     ]
   },
   "comparisonSection": {
-    "badge": "ĐỐI CHIẾU THỰC TẾ",
-    "title": "Tại Sao KOC & Seller Triệu Đơn Bỏ Cách Làm Thủ Công?",
-    "subtitle": "Đừng lãng phí hàng giờ mò mẫm cắt ghép khi đối thủ của bạn đã phủ sóng hàng chục kênh mỗi ngày bằng Five Cut Pro.",
+    "badge": "NỖI ĐAU THỰC TẾ",
+    "title": "Bạn đang mất thời gian ở đâu?",
+    "subtitle": "Five Cut Pro không thay app dựng phim tự do — app giải bài toán: phải ra video bán hàng đều mà không kẹt edit.",
     "oldWay": {
-      "badge": "Cách cũ tốn sức",
-      "title": "Cách Làm Thủ Công Kiểu Cũ",
-      "subtitle": "Mệt mỏi, tốn thời gian và dễ nản lòng",
+      "badge": "Cách cũ",
+      "title": "Edit tay mỗi lần đăng",
+      "subtitle": "Mệt, lệch nhịp, dễ bỏ",
       "points": [
-        "Mất 2–3 tiếng chỉ để cắt ghép, lồng nhạc, chèn chữ cho 1 video đơn lẻ",
-        "Đăng 1 video lên nhiều kênh bị TikTok bóp tương tác, dính gậy reup",
-        "Chỉ tiêu đăng bài bấp bênh, lượt xem lẹt đẹt 200 view rồi nản lòng bỏ cuộc",
-        "Một mình không thể quản lý và mở rộng hệ thống kênh vệ tinh"
+        "Mỗi video cắt ghép lại từ đầu — tối mất vài tiếng",
+        "Quay thiếu góc trong checklist → dựng lại cả clip",
+        "Không có checklist shot → video lệch công thức bán hàng",
+        "Đăng không đều vì kẹt khâu dựng, deadline TikTok Shop trễ"
       ]
     },
     "newWay": {
-      "badge": "Vũ khí đột phá 2026",
-      "title": "Đột Phá Cùng Five Cut Pro",
-      "subtitle": "Tự động hóa toàn diện, nhân bản doanh số",
+      "badge": "Với Five Cut Pro",
+      "title": "Làm theo mẫu — app ghép",
+      "subtitle": "Quay đúng, xuất nhanh",
       "points": [
-        "Nhập 1 video gốc ➔ Nhận ngay hàng chục clip bán hàng độc nhất trong 3 phút",
-        "Công nghệ SafeGuard biến thiên đa tầng: zoom, lật, đổi hash ➔ 0% lo quét reup",
-        "Lên sóng đều đặn 3–5 video/ngày vào mọi khung giờ vàng, kéo bão đơn",
-        "1 người nhàn tênh quản lý và vận hành dàn 10–20 kênh vệ tinh affiliate"
+        "Chọn mẫu có hướng dẫn quay sẵn",
+        "Checklist shot rõ — hết đoán góc",
+        "Gắn nguồn → ghép trên máy → chia sẻ TikTok",
+        "Tái dùng công thức cho nhiều sản phẩm trong ngày"
       ]
     }
   },
-  "batchEngineSection": {
-    "label": "CÔNG NGHỆ ĐỘC QUYỀN",
-    "title": "Cỗ Máy Five Engine — Nhân Bản 100 Video Bán Hàng Thế Hệ Mới",
-    "subtitle": "Đột phá công nghệ giúp một nhà sáng tạo nội dung có sức mạnh sản xuất tương đương cả một đội ngũ chuyên nghiệp. Tạo hàng trăm video bán hàng độc nhất chuẩn chuyển đổi chỉ trong vài phút.",
-    "tagline": "Vũ khí bí mật của các nhà bán hàng triệu đơn và mạng lưới tiếp thị liên kết hàng đầu",
-    "guideCard": {
-      "badge": "Dành Cho Người Mới Bắt Đầu",
-      "title": "Tập trung ra đơn — Mọi khâu kỹ thuật đã có Five Cut Pro lo",
-      "description": "Bạn không cần phải là một chuyên gia dựng phim hay mất nhiều giờ bên máy tính. Five Cut Pro mang đến quy trình trọn gói: từ hướng dẫn quay đến tự động cắt ghép, tạo nhiều biến thể mở đầu thu hút đến sẵn sàng xuất bản."
-    },
-    "pipeline": {
-      "inputBadge": "Nguồn vào",
-      "inputTitle": "01. Một Video Gốc Có Sẵn",
-      "inputDesc": "Video quay review sản phẩm, đập hộp unboxing hoặc một buổi livestream bán hàng trên điện thoại.",
-      "engineBadge": "Động cơ xử lý",
-      "engineTitle": "02. Xử Lý Tự Động Đa Tầng",
-      "engineDesc": "Tự động cắt ghép, tráo đổi thứ tự phân cảnh, zoom động và làm mới dấu ấn kỹ thuật số.",
-      "outputBadge": "Kết quả đầu ra",
-      "outputTitle": "03. Hàng Loạt Video Biến Thể Độc Nhất",
-      "outputDesc": "Xuất bản hàng loạt video bán hàng chuẩn mực, sẵn sàng phủ sóng đồng loạt trên các kênh vệ tinh."
-    },
-    "antiReup": {
-      "label": "CÔNG NGHỆ BẢO VỆ DÀN KÊNH SAFEGUARD",
-      "title": "Phủ Sóng Đa Kênh An Toàn Tuyệt Đối — Không Lo Quét Trùng Lặp",
-      "subtitle": "Hệ thống bảo vệ bản quyền đa tầng độc quyền đảm bảo mọi video đều được các nền tảng nhận diện như một tác phẩm nguyên bản độc lập, tối đa hóa tiềm năng đề xuất tự nhiên:",
-      "points": [
-        {
-          "num": "01",
-          "title": "Định Danh Nguyên Bản Đa Tầng (MD5 Reset)",
-          "desc": "Mỗi biến thể video được khởi tạo với cấu trúc dữ liệu và dấu ấn kỹ thuật số (hash) độc lập hoàn toàn."
-        },
-        {
-          "num": "02",
-          "title": "Nhịp Điệu Phân Cảnh Linh Hoạt",
-          "desc": "Biến thiên thông minh cấu trúc thời gian và điểm chuyển cảnh, tạo cảm xúc mới lạ cho từng video."
-        },
-        {
-          "num": "03",
-          "title": "Không Gian Khung Hình Đa Chiều",
-          "desc": "Tự động tinh chỉnh góc máy, độ sâu khung hình và tỷ lệ thu phóng để dẫn dắt ánh nhìn người xem."
-        },
-        {
-          "num": "04",
-          "title": "Hòa Âm Bắt Trend Xu Hướng",
-          "desc": "Đồng bộ thư viện âm thanh xu hướng được chọn lọc kỹ càng, tạo nét sinh động cho từng ngành hàng."
-        },
-        {
-          "num": "05",
-          "title": "Đoạn Mở Đầu Biến Thiên Đa Dạng",
-          "desc": "Tối ưu hóa khoảnh khắc 3 giây đầu tiên với nhiều phong cách mở đầu khác nhau, chạm đúng tâm lý từng tệp khách hàng."
-        }
-      ]
-    }
-  },
-  "benefitsSection": {
-    "label": "ĐÒN BẨY TĂNG TRƯỞNG",
-    "title": "Vũ Khí Giúp Bạn Bứt Phá Doanh Số Trong Kỷ Nguyên Bán Hàng Qua Video",
-    "subtitle": "Được xây dựng để biến những nhà sáng tạo đơn lẻ thành những hệ thống bán hàng đa kênh hiệu quả và bền vững.",
+  "faqSection": {
+    "label": "FAQ",
+    "title": "Câu hỏi nhanh",
+    "subtitle": "Ngắn gọn — đúng những gì app đang làm.",
     "items": [
       {
-        "id": "time-saving",
-        "num": "01",
-        "title": "Tự do thời gian — Giải phóng 90% áp lực dựng video",
-        "desc": "Giải phóng hoàn toàn khỏi những đêm dài còng lưng cắt ghép thủ công. Bấm máy một lần là có sẵn kho nội dung phong phú cho cả tuần, giúp bạn thảnh thơi tập trung săn deal tốt và chốt đơn.",
-        "highlight": "Tiết kiệm 90% thời gian"
+        "id": "faq-1",
+        "question": "Five Cut Pro khác CapCut chỗ nào?",
+        "answer": "CapCut dựng phim tự do. Five Cut Pro là quy trình mẫu KOC: xem cách quay, gắn shot theo công thức, ghép trên máy rồi đăng. Phù hợp khi bạn cần ra video bán hàng đều, không muốn ngồi timeline mỗi lần."
       },
       {
-        "id": "kpi-daily",
-        "num": "02",
-        "title": "Đạt chỉ tiêu đăng bài đều đặn mỗi ngày",
-        "desc": "Không còn nỗi lo cạn kiệt ý tưởng hay tụt tương tác. Luôn sẵn sàng kho video chất lượng cao để lên sóng đều đặn vào mọi khung giờ vàng và bùng nổ doanh số trong các mùa siêu bão đơn.",
-        "highlight": "Duy trì 3–5 video/ngày"
+        "id": "faq-2",
+        "question": "Tôi chưa biết quay thì dùng được không?",
+        "answer": "Được. Mỗi mẫu có hướng dẫn và clip mẫu theo góc. Bạn quay theo shot, gắn vào đúng đoạn — app lo phần ghép."
       },
       {
-        "id": "affiliate-farming",
-        "num": "03",
-        "title": "Quy mô hóa dàn kênh tiếp thị liên kết chuyên nghiệp",
-        "desc": "Một mình bạn có thể dễ dàng quản lý và phủ sóng hệ thống hàng chục kênh TikTok Shop & Reels vệ tinh. Tiếp cận tối đa mọi ngách khách hàng và nhân bội nguồn thu nhập hoa hồng thụ động.",
-        "highlight": "Nhân bội thu nhập hoa hồng"
+        "id": "faq-3",
+        "question": "Video xuất xong đăng TikTok thế nào?",
+        "answer": "Sau khi ghép, mở tab Xuất video: tải về thư viện hoặc chia sẻ thẳng lên TikTok (đăng nhập TikTok trong app để chia sẻ nhanh hơn)."
       },
       {
-        "id": "anti-reup",
-        "num": "04",
-        "title": "Phát triển hệ sinh thái kênh an toàn & bền vững",
-        "desc": "Nhờ công nghệ bảo vệ SafeGuard, mỗi video xuất bản đều mang linh hồn và tính nguyên bản riêng biệt. Dàn kênh của bạn được bảo vệ toàn diện, tự tin đón nhận các luồng tiếp cận tự nhiên.",
-        "highlight": "Bảo vệ kênh an toàn 100%"
+        "id": "faq-4",
+        "question": "App chạy trên hệ nào?",
+        "answer": "iOS và Android. Đăng nhập Google, TikTok, Apple hoặc email OTP."
       }
     ]
   },
+  "downloadSection": {
+    "label": "Tải ngay",
+    "title": "Cài Five Cut Pro trên điện thoại",
+    "subtitle": "Phiên bản {version}. Quét QR hoặc mở store — bắt đầu từ chợ mẫu KOC ngay hôm nay.",
+    "mobileLabel": "iOS & Android",
+    "ctaStore": "Mở cửa hàng",
+    "comingSoon": "Sắp ra mắt",
+    "qrLabel": "Quét mã",
+    "qrTitle": "Quét để cài app",
+    "qrSubtitle": "Mở camera điện thoại → App Store hoặc Google Play."
+  },
+  "downloadCards": {
+    "ios": {
+      "title": "iOS",
+      "subtitle": "iPhone & iPad"
+    },
+    "android": {
+      "title": "Android",
+      "subtitle": "Điện thoại & máy tính bảng"
+    }
+  },
+  "installSection": {
+    "title": "Cài trong 1 phút"
+  },
+  "bannerSection": {
+    "label": "TRONG APP",
+    "title": "Mẫu & chiến dịch đang chạy",
+    "subtitle": "Kéo chuột hoặc vuốt để xem — đồng bộ với app mobile.",
+    "steps": [
+      "Chọn mẫu",
+      "Quay shot",
+      "Xuất & đăng"
+    ]
+  },
   "sponsorsSection": {
-    "label": "DÀNH CHO DOANH NGHIỆP & NHÃN HÀNG",
-    "title": "Hợp Tác Tài Trợ & Chiến Dịch Lan Tỏa Thương Hiệu",
-    "subtitle": "Tiếp cận mạng lưới hàng ngàn nhà sáng tạo nội dung chất lượng cao, tài trợ kịch bản đánh giá độc quyền và bùng nổ doanh số bán hàng trên TikTok Shop & Facebook Reels.",
+    "label": "DÀNH CHO BRAND",
+    "title": "Hợp tác mẫu & chiến dịch KOC",
+    "subtitle": "Đưa công thức review theo brief thương hiệu vào chợ mẫu — KOC quay đúng shot, ra video đồng bộ thông điệp.",
     "stats": [
-      { "value": "10,000+", "label": "Nhà sáng tạo sẵn sàng hợp tác" },
-      { "value": "100%", "label": "Video chuẩn nhịp giữ chân" },
-      { "value": "-70%", "label": "Tiết kiệm chi phí thuê ngoài" },
-      { "value": "3 Phút", "label": "Thời gian sản xuất một video" }
+      {
+        "value": "Mẫu KOC",
+        "label": "Công thức có hướng dẫn quay"
+      },
+      {
+        "value": "9:16",
+        "label": "Chuẩn TikTok / Reels"
+      },
+      {
+        "value": "3 bước",
+        "label": "Chọn mẫu → Quay → Xuất"
+      },
+      {
+        "value": "App",
+        "label": "iOS & Android"
+      }
     ],
-    "benefitsTitle": "Lợi thế khi nhãn hàng hợp tác tài trợ cùng Five Cut Pro",
+    "benefitsTitle": "Khi hợp tác cùng Five Cut Pro",
     "benefits": [
-      "Tài trợ công thức review độc quyền theo đúng thông điệp của thương hiệu.",
-      "Phủ sóng đồng loạt qua hàng trăm đến hàng ngàn video KOC cùng lúc.",
-      "Kiểm soát góc quay, tem mác và chất lượng hình ảnh sản phẩm đồng đều.",
-      "Tích hợp link tiếp thị liên kết và nút chỉ tay vào giỏ hàng tối đa hoá đơn hàng."
+      "Tài trợ công thức / mẫu review đúng góc quay và thông điệp thương hiệu.",
+      "KOC xem hướng dẫn quay trong app trước khi sản xuất.",
+      "Đồng bộ cấu trúc shot giữa nhiều creator dùng chung một mẫu.",
+      "Phù hợp chiến dịch short-form TikTok Shop & Reels."
     ],
     "form": {
-      "title": "Đăng ký nhận tư vấn gói hợp tác nhãn hàng",
-      "desc": "Để lại thông tin, chuyên viên giải pháp thương hiệu của Five Cut Pro sẽ liên hệ tư vấn chiến dịch trong vòng 2 giờ làm việc.",
+      "title": "Đăng ký nhận tư vấn hợp tác",
+      "desc": "Để lại thông tin — đội Five Cut Pro sẽ liên hệ trong giờ làm việc.",
       "brandNameLabel": "Tên thương hiệu / Doanh nghiệp",
       "brandNamePlaceholder": "Ví dụ: Vinamilk, Sunhouse, Coolmate...",
       "contactNameLabel": "Họ và tên người đại diện",
-      "contactNamePlaceholder": "Nguyễn Văn A (Trưởng phòng Marketing)",
+      "contactNamePlaceholder": "Nguyễn Văn A",
       "emailLabel": "Email công việc",
       "emailPlaceholder": "contact@brand.com",
       "phoneLabel": "Số điện thoại / Zalo",
       "phonePlaceholder": "0912 345 678",
       "budgetLabel": "Ngân sách chiến dịch dự kiến",
       "budgetOptions": [
-        "Dưới 20 triệu VNĐ (Thử nghiệm ban đầu)",
-        "20 - 50 triệu VNĐ (Chiến dịch vừa)",
-        "50 - 200 triệu VNĐ (Chiến dịch quy mô lớn)",
-        "Trên 200 triệu VNĐ (Đối tác chiến lược)"
+        "Dưới 20 triệu VNĐ (Thử nghiệm)",
+        "20 - 50 triệu VNĐ",
+        "50 - 200 triệu VNĐ",
+        "Trên 200 triệu VNĐ"
       ],
       "noteLabel": "Nhu cầu hoặc mục tiêu chiến dịch",
-      "notePlaceholder": "Mô tả sản phẩm cần review, số lượng video mong muốn, thời gian triển khai...",
-      "submitButton": "Gửi yêu cầu hợp tác tài trợ",
-      "successMessage": "Cảm ơn bạn! Yêu cầu hợp tác đã được gửi thành công. Đội ngũ Five Cut Pro sẽ liên hệ lại qua Zalo/Email trong vòng 2 giờ làm việc.",
-      "directContact": "Hoặc liên hệ trực tiếp bộ phận Hợp Tác Thương Hiệu:",
-      "emailAria": "Gửi email cho bộ phận tài trợ",
-      "emailText": "labzentra@gmail.com"
+      "notePlaceholder": "Sản phẩm cần review, số lượng video, thời gian triển khai...",
+      "submitButton": "Gửi yêu cầu hợp tác",
+      "successMessage": "Đã gửi! Đội Five Cut Pro sẽ liên hệ lại qua Zalo/Email.",
+      "directContact": "Hoặc liên hệ trực tiếp:",
+      "emailAria": "Gửi email hợp tác thương hiệu",
+      "emailText": "fivecutpro.asia@gmail.com"
     }
-  },
-  "faqSection": {
-    "label": "GIẢI ĐÁP THẮC MẮC",
-    "title": "Câu Hỏi Thường Gặp Về Five Cut Pro",
-    "subtitle": "Tất cả những gì bạn cần biết để bắt đầu làm chủ cuộc chơi bán hàng qua video.",
-    "items": [
-      {
-        "id": "faq-1",
-        "question": "Tôi chưa từng có kinh nghiệm quay hay dựng video, có dùng được Five Cut Pro không?",
-        "answer": "Hoàn toàn dễ dàng! Five Cut Pro sinh ra để giải phóng bạn khỏi kỹ thuật phức tạp. Bạn chỉ cần thả video quay sản phẩm vào, chọn độ dài và phong cách mong muốn. Phần mềm sẽ tự động loại bỏ đoạn thừa, chèn phụ đề và xuất ra hàng chục video hoàn chỉnh sẵn sàng đăng."
-      },
-      {
-        "id": "faq-2",
-        "question": "Các video tạo ra có đảm bảo an toàn cho tài khoản và không bị dính gậy trùng lặp reup?",
-        "answer": "Chắc chắn 100%. Five Cut Pro sở hữu công nghệ độc quyền SafeGuard — tự động can thiệp vi mô vào pixel, nhịp độ phân cảnh, zoom động và làm mới mã băm (MD5). Nhờ đó, mỗi video xuất bản đều sở hữu bản sắc nguyên bản độc lập, được thuật toán của TikTok Shop, Reels nhận diện như tác phẩm mới và an toàn tuyệt đối khi bạn vận hành hệ thống nhiều kênh tiếp thị liên kết."
-      },
-      {
-        "id": "faq-3",
-        "question": "Tôi cần chuẩn bị tư liệu video đầu vào như thế nào?",
-        "answer": "Bạn chỉ cần một video quay sản phẩm bằng điện thoại (unboxing, giới thiệu công dụng, cảm nhận khi dùng) hoặc một đoạn livestream bán hàng có sẵn. Five Cut Pro sẽ tự động cắt ghép, hoán đổi phân cảnh và tạo ra hàng loạt biến thể video khác nhau."
-      },
-      {
-        "id": "faq-4",
-        "question": "Làm thế nào để Five Cut Pro giúp mở rộng dàn kênh tiếp thị liên kết (Affiliate)?",
-        "answer": "Thay vì mất cả ngày chỉ để làm 1 video cho 1 tài khoản, Five Cut Pro giúp bạn từ 1 lần quay có thể phủ sóng đồng loạt trên 5–20 kênh TikTok Shop & Reels vệ tinh mỗi ngày. Nhờ nội dung không bị trùng lặp, các kênh đều đón nhận luồng tiếp cận tự nhiên, giúp bạn nhân bội cơ hội tiếp cận khách hàng và tối đa hóa hoa hồng."
-      },
-      {
-        "id": "faq-5",
-        "question": "Phần mềm chạy trên hệ điều hành nào?",
-        "answer": "Five Cut Pro hỗ trợ đầy đủ các hệ điều hành phổ biến: máy tính macOS (tương thích chip Apple Silicon M1/M2/M3/M4 và Intel), Windows 10/11, cùng phiên bản di động trên iOS và Android."
-      }
-    ]
-  },
-  "downloadSection": {
-    "label": "Tải ứng dụng",
-    "title": "Có sẵn trên máy tính Windows, macOS & phiên bản di động",
-    "subtitle": "Phiên bản {version}. Chọn đúng thiết bị của bạn để tải về và bắt đầu tạo video bán hàng chuẩn triệu view.",
-    "desktopLabel": "Máy tính (macOS & Windows)",
-    "mobileLabel": "Điện thoại (iOS & Android)",
-    "ctaDownloads": "Tải xuống",
-    "ctaStore": "Mở cửa hàng",
-    "comingSoon": "Sắp ra mắt",
-    "githubAll": "Xem tất cả bản phát hành"
-  },
-  "downloadCards": {
-    "mac-apple-silicon": {
-      "title": "macOS (Apple Silicon)",
-      "subtitle": "Chip M1 / M2 / M3 / M4 trở lên"
-    },
-    "mac-intel": {
-      "title": "macOS (Intel)",
-      "subtitle": "Máy Mac dùng chip Intel"
-    },
-    "windows": {
-      "title": "Windows",
-      "subtitle": "Windows 10 / 11 64-bit"
-    },
-    "ios": {
-      "title": "iOS",
-      "subtitle": "iPhone và iPad"
-    },
-    "android": {
-      "title": "Android",
-      "subtitle": "Điện thoại và máy tính bảng"
-    }
-  },
-  "installSection": {
-    "label": "Hướng dẫn",
-    "title": "Hướng dẫn cài đặt nhanh",
-    "macTitle": "macOS",
-    "macSteps": [
-      "Kéo ứng dụng vào thư mục Applications.",
-      "Mở Terminal (nhấn ⌘ Space, gõ Terminal)."
-    ],
-    "macCommandLabel": "Chạy lệnh sau:",
-    "macCommand": "xattr -cr /Applications/Tiktok\\ Video\\ Cut\\ Pro.app",
-    "copyCommandLabel": "Sao chép lệnh",
-    "copiedCommandLabel": "Đã sao chép",
-    "winTitle": "Windows",
-    "winSteps": [
-      "Tải tệp cài đặt từ các lựa chọn phía trên.",
-      "Mở tệp để hoàn tất cài đặt và khởi chạy ứng dụng.",
-      "Nếu Windows Defender cảnh báo, chọn Thêm thông tin rồi Vẫn chạy."
-    ],
-    "iosTitle": "iOS",
-    "iosSteps": [
-      "Mở liên kết App Store trong mục Điện thoại (khi đã khả dụng).",
-      "Nhấn Cài đặt và đăng nhập tài khoản Apple nếu được yêu cầu.",
-      "Mở Five Cut Pro từ màn hình chính."
-    ],
-    "androidTitle": "Android",
-    "androidSteps": [
-      "Mở liên kết Google Play trong mục Điện thoại (khi đã khả dụng).",
-      "Nhấn Cài đặt và chấp nhận quyền truy cập nếu được yêu cầu.",
-      "Mở Five Cut Pro từ danh sách ứng dụng."
-    ]
   }
 }

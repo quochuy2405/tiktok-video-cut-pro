@@ -1,377 +1,261 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "AUTOMATE VIDEO COMMERCE FOR TIKTOK SHOP & REELS",
-    "titleLead": "Transform 1 Raw Video Into",
-    "titleAccent": "100 High-Converting Sales Clips",
-    "subtitle": "Filming guidance, automated editing, and batch-creating algorithm-optimized sales clips from 1 video — 100% SafeGuard duplicate-safe for affiliate networks.",
-    "ctaPrimary": "Download Free",
-    "ctaSecondary": "Explore Features",
-    "ctaBatch": "Remix 1 ➔ 100 Videos",
-    "ctaBrand": "Brand Partnerships",
-    "ctaTrust": "Completely Free • No Credit Card Required • Ready for macOS & Windows",
-    "ctaSocialProof": "Trusted by 10,000+ KOCs & TikTok Shop Affiliate Teams",
-    "audienceKoc": "For KOCs & Content Creators",
-    "audienceSeller": "For Merchants & Affiliate Channel Networks",
-    "logoAlt": "Five Cut Pro Logo",
-    "pillRetention": "Smart Auto-Cut — 3s Retention Hook",
-    "pillCta": "Batch Remix 1 ➔ 100 — Dozens of clips from 1 video",
-    "pillSpeed": "Save 90% Editing Time",
-    "pillBatch": "Ultra-Fast 4K Export — Cross-Platform Ready",
-    "pillAntiReup": "SafeGuard Protection — 100% Unique Videos"
+    "tagline": "SALES VIDEO FOR KOCS — ON YOUR PHONE",
+    "titleLead": "You need daily sales videos,",
+    "titleAccent": "stop spending nights editing",
+    "subtitle": "Missing angles · rebuild from scratch · inconsistent posting. Five Cut Pro lets KOCs follow a template: watch how to shoot, attach every required shot, merge on device, post to TikTok.",
+    "ctaPrimary": "Download free",
+    "ctaSecondary": "See the pain vs the fix",
+    "ctaBatch": "Pick template → Shoot → Export & post",
+    "ctaBrand": "For KOC & seller teams",
+    "ctaTrust": "iOS & Android · Google / TikTok / Apple / Email OTP",
+    "ctaSocialProof": "Built for KOCs, sellers, and TikTok Shop teams",
+    "audienceKoc": "KOCs & sales creators",
+    "audienceSeller": "Sellers & short-form teams",
+    "logoAlt": "Five Cut Pro icon",
+    "pillRetention": "Missing a shot = rebuilding the cut",
+    "pillCta": "One recipe — many videos",
+    "pillSpeed": "Merge on device, share to TikTok",
+    "pillBatch": "KOC market — preview then use",
+    "pillAntiReup": "9:16 ready to post"
   },
   "metricsBar": [
-    { "value": "1 ➔ 100", "label": "Unique Video Variants", "desc": "Generated from 1 raw review or stream" },
-    { "value": "90%", "label": "Editing Time Saved", "desc": "No more tedious manual timeline editing" },
-    { "value": "100%", "label": "Algorithm SafeGuard Protection", "desc": "Zero duplicate content penalties" },
-    { "value": "3–5x", "label": "GMV & Commission Growth", "desc": "Consistently feed multiple affiliate channels" }
+    {
+      "value": "Pain",
+      "label": "Manual edit each post",
+      "desc": "Rebuild cuts, lose rhythm"
+    },
+    {
+      "value": "Fix",
+      "label": "Follow a KOC template",
+      "desc": "Guide → shoot → app merges"
+    },
+    {
+      "value": "Full shots",
+      "label": "Angle recipe",
+      "desc": "No missing angles mid-edit"
+    },
+    {
+      "value": "TikTok",
+      "label": "Export & post fast",
+      "desc": "Save or share right away"
+    }
   ],
   "featuresSection": {
-    "label": "CORE FEATURES",
-    "title": "Everything You Need to Dominate Video Commerce",
-    "subtitle": "Not a bloated timeline editor. Five Cut Pro is purpose-built to help you churn out high-converting, algorithm-optimized sales clips from your existing footage."
+    "label": "IN THE APP",
+    "title": "Enough to post daily — no fake feature list",
+    "subtitle": "Template market, shot recipes, shoot guides, on-device merge. We don’t claim magic 1→100 auto videos."
   },
   "features": [
     {
-      "id": "smart-cut",
-      "title": "Smart Auto Cut & Silence Removal",
-      "description": "Automatically identifies and trims awkward pauses, speech stumbles, and shaky footage. Retains only high-energy highlights to keep videos crisp and engaging.",
+      "id": "koc-market",
+      "title": "KOC market — preview before you use",
+      "description": "Stop guessing how to shoot. Open Explore, watch the guide + finished sample, then tap Use template.",
       "bullets": [
-        "Automatic scene boundary detection",
-        "Trims dead air and hesitation",
-        "Optimized for 9:16 vertical video"
+        "Templates from KOC creators",
+        "Hot / New / Best-seller badges",
+        "Per-angle guide clips before attach"
       ]
     },
     {
-      "id": "batch-remix",
-      "title": "Batch Remix 1 Video into Dozens of Clips",
-      "description": "From a single product review or livestream, Five Cut Pro remixes scene order and splices diverse opening hooks to produce dozens of fresh, distinct clips.",
+      "id": "recipes",
+      "title": "Your recipes — reuse every day",
+      "description": "Save source order and durations once. Tomorrow attach new clips and export — no timeline rebuild.",
       "bullets": [
-        "Multiple 3s retention hooks",
-        "Intelligent scene permutation",
-        "A full week of fresh content from 1 recording"
+        "Angle chains by template (e.g. 1-2-3-1)",
+        "Per-segment duration in seconds",
+        "Default / favorite / make video"
       ]
     },
     {
-      "id": "safeguard-anti-reup",
-      "title": "SafeGuard™ Anti-Duplicate Technology",
-      "description": "Applies micro-level pixel modulation, subtle dynamic pan/zoom, minor horizontal flips, resets MD5 file hashes, and refreshes video metadata.",
+      "id": "shot-guide",
+      "title": "Shot guides — no missing angles",
+      "description": "Each segment has angle, notes, and a sample clip. Shoot the shot, attach it, done.",
       "bullets": [
-        "Zero risk of duplicate content suppression",
-        "Recognized by TikTok & Reels algorithms as 100% original",
-        "Safe for multi-channel affiliate networks"
+        "Sample clip before you shoot",
+        "Attached vs required progress",
+        "Warns when a source is too short"
       ]
     },
     {
-      "id": "hook-cta",
-      "title": "3s Hook Pacing & Shopping Cart CTA",
-      "description": "Delivers rapid-paced opening cuts to prevent viewer swipe-away, coupled with automated visual pointer cues directing viewers to the shopping cart.",
+      "id": "merge-export",
+      "title": "Merge on device → post TikTok",
+      "description": "Attach sources, tap Merge now. Processing stays on your phone — download or share to TikTok.",
       "bullets": [
-        "Algorithm-optimized retention pacing",
-        "High-converting visual call-to-actions",
-        "Boosts cart clicks and sales conversion"
-      ]
-    },
-    {
-      "id": "auto-captions",
-      "title": "Auto-Captions & Deal Highlight Callouts",
-      "description": "Generates synchronized dynamic captions with highlighted pricing, flash sale badges, and key selling points for sound-off mobile browsing.",
-      "bullets": [
-        "Word-by-word dynamic subtitle sync",
-        "Eye-catching price and promo highlights",
-        "Customizable typography presets"
-      ]
-    },
-    {
-      "id": "batch-export",
-      "title": "Ultra-Fast 4K Batch Export",
-      "description": "Fully leverages hardware acceleration across Apple Silicon M-series chips and Windows GPUs to render dozens of Full HD/4K videos in minutes.",
-      "bullets": [
-        "Multi-threaded hardware acceleration",
-        "Native macOS, Windows, iOS & Android support",
-        "Crystal-clear output with zero compression artifacts"
+        "Prepare / merge / done progress",
+        "Exported list on device",
+        "Share each clip to TikTok"
       ]
     }
   ],
   "howItWorksSection": {
-    "label": "STREAMLINED WORKFLOW",
-    "title": "Produce 100 Sales Videos in 3 Simple Steps",
-    "subtitle": "No complex video editing knowledge required. Five Cut Pro handles the heavy lifting from start to finish:",
+    "label": "3 STEPS",
+    "title": "Pick template → Shoot → Export & post",
+    "subtitle": "The real iOS & Android flow — no CapCut timeline required.",
     "steps": [
       {
         "num": "01",
-        "title": "Import Raw Video or Livestream",
-        "desc": "Drag and drop your smartphone product recording or raw livestream footage into the app. Five Cut Pro analyzes audio beats, visual transitions, and key moments.",
-        "badge": "Quick & Frictionless"
+        "title": "Pick a working template",
+        "desc": "Open Explore or your saved recipes. Watch the guide and finished sample first.",
+        "badge": "Explore"
       },
       {
         "num": "02",
-        "title": "Configure Cuts & Activate SafeGuard",
-        "desc": "Select your target clip duration, number of desired variants, toggle auto-captions, and enable SafeGuard anti-duplicate protection.",
-        "badge": "Automated Intelligence"
+        "title": "Shoot every shot, then attach",
+        "desc": "Follow the template’s shot checklist. Attach each clip until every segment is filled.",
+        "badge": "Attach"
       },
       {
         "num": "03",
-        "title": "Batch Export & Scale Everywhere",
-        "desc": "Within minutes, Five Cut Pro exports dozens of unique vertical 9:16 sales clips ready to post across TikTok Shop, Instagram Reels, and YouTube Shorts.",
-        "badge": "Ready for Conversion"
+        "title": "Merge — then post",
+        "desc": "Tap Merge now, open Exported videos, save to gallery or share to TikTok.",
+        "badge": "Export"
       }
     ]
   },
   "comparisonSection": {
-    "badge": "HEAD-TO-HEAD COMPARISON",
-    "title": "Why Top Sellers & KOCs Abandoned Manual Editing",
-    "subtitle": "Stop wasting hours on repetitive manual editing while your competitors dominate multiple channels daily with Five Cut Pro.",
+    "badge": "REAL PAIN",
+    "title": "Where are you losing time?",
+    "subtitle": "Five Cut Pro isn’t a freeform editor — it solves one job: ship sales videos daily without getting stuck in edit hell.",
     "oldWay": {
-      "badge": "Tedious manual grind",
-      "title": "The Old Manual Way",
-      "subtitle": "Exhausting, time-consuming, and hard to scale",
+      "badge": "Old way",
+      "title": "Manual edit every post",
+      "subtitle": "Slow, uneven, exhausting",
       "points": [
-        "Spending 2–3 hours trimming, syncing audio, and adding text for 1 single clip",
-        "Cross-posting the same clip gets flagged as duplicate or suppressed to 200 views",
-        "Inconsistent posting cadence, missing crucial daily peak traffic windows",
-        "Impossible for a solo creator to manage a network of satellite channels"
+        "Rebuild every cut from scratch — nights disappear",
+        "Miss a required angle on the checklist → remake the whole clip",
+        "No shot checklist → sales pacing falls apart",
+        "Posting slips because editing blocks TikTok Shop deadlines"
       ]
     },
     "newWay": {
-      "badge": "2026 Breakthrough",
-      "title": "The Five Cut Pro Advantage",
-      "subtitle": "Total workflow automation and revenue scaling",
+      "badge": "With Five Cut Pro",
+      "title": "Follow the template — app merges",
+      "subtitle": "Shoot right, export fast",
       "points": [
-        "Input 1 video ➔ Receive dozens of unique sales clips in under 3 minutes",
-        "SafeGuard multi-layer protection: pan/zoom, flips, MD5 reset ➔ 0% duplicate flag risk",
-        "Easily maintain 3–5 posts/day across prime viewing hours",
-        "One solo creator effortlessly runs 10–20 satellite affiliate channels"
+        "Templates with shoot guides built in",
+        "Clear shot checklist — stop guessing angles",
+        "Attach → merge on device → share to TikTok",
+        "Reuse one recipe across products the same day"
       ]
-    }
-  },
-  "batchEngineSection": {
-    "label": "PROPRIETARY TECHNOLOGY",
-    "title": "Five Engine™ — Next-Gen Batch Video Generation",
-    "subtitle": "Equipping individual creators with the production bandwidth of an entire creative agency. Generate hundreds of unique, conversion-ready sales videos in minutes.",
-    "tagline": "The secret weapon behind 7-figure sellers and premier creator affiliate networks",
-    "guideCard": {
-      "badge": "Beginner Friendly",
-      "title": "Focus on Sales — Five Cut Pro Handles the Technical Grind",
-      "description": "You don't need professional video editing skills or expensive editing rigs. Five Cut Pro automates the entire processing pipeline: trimming dead air, engineering multiple opening hooks, generating price callouts, and inserting shopping cart cues."
-    },
-    "pipeline": {
-      "inputBadge": "Raw Input",
-      "inputTitle": "01. One Raw Video Source",
-      "inputDesc": "A single product unboxing, user review, or recording from a sales livestream.",
-      "engineBadge": "Processing Engine",
-      "engineTitle": "02. Multi-Layer Intelligent Processing",
-      "engineDesc": "Trims dead air, remixes scene order, applies dynamic zooms, and refreshes digital signatures.",
-      "outputBadge": "Batch Output",
-      "outputTitle": "03. Dozens of Unique Clips",
-      "outputDesc": "High-converting clips complete with synced captions, energetic pacing, and purchasing CTAs."
-    },
-    "antiReup": {
-      "label": "SAFEGUARD MULTI-CHANNEL DEFENSE",
-      "title": "Scale Across Multiple Channels Without Duplicate Flags",
-      "subtitle": "Our proprietary multi-layer defense ensures every output video is recognized as an original creation by social commerce algorithms:",
-      "points": [
-        {
-          "num": "01",
-          "title": "Digital Signature Reset (MD5 & Hash Reset)",
-          "desc": "Each video output is compiled with a fresh, distinct digital hash signature, wiping original binary fingerprints."
-        },
-        {
-          "num": "02",
-          "title": "Dynamic Pacing & Micro-Trimming",
-          "desc": "Intelligently shifts cut timestamps by milliseconds, producing distinct visual and auditory cadences."
-        },
-        {
-          "num": "03",
-          "title": "Dynamic Pan, Zoom & Framing Modulation",
-          "desc": "Automatically adjusts framing angles, focal depths, and subtle pans to satisfy algorithmic originality checks."
-        },
-        {
-          "num": "04",
-          "title": "Trending Commercial Soundtracks",
-          "desc": "Synchronizes with curated, royalty-cleared commercial audio libraries tailored to product categories."
-        },
-        {
-          "num": "05",
-          "title": "Diverse Hook Variations",
-          "desc": "Tests multiple psychological angles in the first 3 seconds to convert different customer buyer personas."
-        }
-      ]
-    }
-  },
-  "benefitsSection": {
-    "label": "GROWTH LEVERAGE",
-    "title": "Unfair Advantages for Modern Video Commerce Creators",
-    "subtitle": "Engineered to transform individual creators into sustainable, scalable multi-channel sales operations.",
-    "items": [
-      {
-        "id": "time-saving",
-        "num": "01",
-        "title": "Reclaim 90% of Your Production Time",
-        "desc": "Eliminate endless hours behind video editing software. One raw recording yields enough varied content for the entire week, freeing you to source winning products and close deals.",
-        "highlight": "Save 90% Time"
-      },
-      {
-        "id": "kpi-daily",
-        "num": "02",
-        "title": "Hit Your Daily Upload Targets Effortlessly",
-        "desc": "Never stress about creative burnout or slipping impressions. Keep a backlog of quality videos to publish 3–5 clips every single day across all peak traffic windows.",
-        "highlight": "3–5 Videos / Day"
-      },
-      {
-        "id": "affiliate-farming",
-        "num": "03",
-        "title": "Scale Multi-Channel Satellite Networks",
-        "desc": "A single creator can manage 10–20 TikTok Shop and Reels accounts, capturing multiple customer niches and compounding passive affiliate commissions.",
-        "highlight": "Compound Commissions"
-      },
-      {
-        "id": "anti-reup",
-        "num": "04",
-        "title": "Protect Channels with 100% Algorithmic Safety",
-        "desc": "Thanks to SafeGuard technology, every published video possesses its own unique digital identity. Grow your network with confidence without fear of shadowbans or duplicate penalties.",
-        "highlight": "100% Account Safe"
-      }
-    ]
-  },
-  "sponsorsSection": {
-    "label": "FOR BRANDS & ENTERPRISES",
-    "title": "Brand Sponsorships & Distributed Campaigns",
-    "subtitle": "Connect with thousands of active KOCs, sponsor review workflows, and scale sales across TikTok Shop and Meta Reels.",
-    "stats": [
-      { "value": "10,000+", "label": "Active Creators Ready" },
-      { "value": "100%", "label": "Retention-Optimized Clips" },
-      { "value": "-70%", "label": "Production Cost Savings" },
-      { "value": "3 Min", "label": "Average Time per Clip" }
-    ],
-    "benefitsTitle": "Why Brands Partner with Five Cut Pro",
-    "benefits": [
-      "Sponsor dedicated product review workflows carrying your exact brand message.",
-      "Gain massive concurrent reach across hundreds of creator channels.",
-      "Ensure consistent packaging, product angles, and visual standards.",
-      "Direct integration with affiliate links and shopping cart pointer prompts."
-    ],
-    "form": {
-      "title": "Request Brand Sponsorship Consultation",
-      "desc": "Submit your campaign inquiry and our brand solutions specialist will reach out within 2 business hours.",
-      "brandNameLabel": "Brand / Company Name",
-      "brandNamePlaceholder": "e.g. Acme Corp, Baseus, Anker...",
-      "contactNameLabel": "Contact Person",
-      "contactNamePlaceholder": "John Doe (Marketing Director)",
-      "emailLabel": "Work Email",
-      "emailPlaceholder": "contact@brand.com",
-      "phoneLabel": "Phone / WhatsApp",
-      "phonePlaceholder": "+1 (555) 000-0000",
-      "budgetLabel": "Estimated Campaign Budget",
-      "budgetOptions": [
-        "Under $1,000 (Pilot Campaign)",
-        "$1,000 - $3,000 (Medium Campaign)",
-        "$3,000 - $10,000 (Scale Campaign)",
-        "Over $10,000 (Strategic Partner)"
-      ],
-      "noteLabel": "Campaign Goals & Requirements",
-      "notePlaceholder": "Products to promote, target creator count, campaign timeline...",
-      "submitButton": "Submit Brand Partnership Request",
-      "successMessage": "Thank you! Your request has been received. Our brand partnerships team will contact you within 2 business hours.",
-      "directContact": "Or reach our Brand Partnerships team directly:",
-      "emailAria": "Send email to brand partnerships team",
-      "emailText": "labzentra@gmail.com"
     }
   },
   "faqSection": {
-    "label": "FREQUENTLY ASKED QUESTIONS",
-    "title": "Frequently Asked Questions About Five Cut Pro",
-    "subtitle": "Everything you need to know to automate your video commerce production.",
+    "label": "FAQ",
+    "title": "Quick answers",
+    "subtitle": "Short — only what the app actually does.",
     "items": [
       {
         "id": "faq-1",
-        "question": "I have zero video editing experience. Can I use Five Cut Pro?",
-        "answer": "Absolutely! Five Cut Pro is built specifically to remove editing complexity. Simply drag and drop your product footage, select your desired duration and variations, and the app automatically removes dead air, adds captions, and outputs ready-to-post clips."
+        "question": "How is Five Cut Pro different from CapCut?",
+        "answer": "CapCut is freeform editing. Five Cut Pro is a KOC template workflow: watch how to shoot, attach shots by recipe, merge on device, then post. Built for daily sales output, not timeline tinkering."
       },
       {
         "id": "faq-2",
-        "question": "Are the output videos safe from duplicate content penalties and shadowbans?",
-        "answer": "Yes, 100%. Five Cut Pro features our proprietary SafeGuard™ engine, which modulates micro-pixels, shifts cut cadences, applies dynamic pan/zoom, and recalculates unique MD5 file hashes. Each video is recognized as a fresh original creation by TikTok Shop and Reels algorithms."
+        "question": "I’m new to shooting — can I use it?",
+        "answer": "Yes. Every template includes guides and sample clips per angle. Shoot the shot, attach it — the app handles the merge."
       },
       {
         "id": "faq-3",
-        "question": "What kind of raw video footage do I need to provide?",
-        "answer": "All you need is a 2-3 minute video of your product recorded on your smartphone (unboxing, feature walk-through, or genuine review) or raw footage from a past livestream. Five Cut Pro remixes and slices it into dozens of unique short-form clips."
+        "question": "How do I post to TikTok after export?",
+        "answer": "Open Exported videos after merge: save to gallery or share to TikTok (sign in with TikTok in-app for faster share)."
       },
       {
         "id": "faq-4",
-        "question": "How does Five Cut Pro help scale an affiliate marketing network?",
-        "answer": "Instead of spending an entire day producing one video for a single account, Five Cut Pro allows you to generate enough distinct clips to post across 5–20 satellite channels daily. Because each clip is uniquely processed, channels enjoy organic reach and multiply your commission potential."
-      },
-      {
-        "id": "faq-5",
-        "question": "Which operating systems and devices are supported?",
-        "answer": "Five Cut Pro natively supports macOS (optimized for Apple Silicon M1/M2/M3/M4 and Intel chips), Windows 10/11 64-bit, as well as mobile versions for iOS and Android."
+        "question": "Which platforms?",
+        "answer": "iOS and Android. Sign in with Google, TikTok, Apple, or email OTP."
       }
     ]
   },
   "downloadSection": {
-    "label": "Download App",
-    "title": "Available on Windows, macOS & Mobile Devices",
-    "subtitle": "Version {version}. Choose your platform below and start generating high-converting sales clips.",
-    "desktopLabel": "Desktop (macOS & Windows)",
-    "mobileLabel": "Mobile (iOS & Android)",
-    "ctaDownloads": "Download",
-    "ctaStore": "Open Store",
-    "comingSoon": "Coming Soon",
-    "githubAll": "View all GitHub releases"
+    "label": "Get the app",
+    "title": "Install Five Cut Pro on your phone",
+    "subtitle": "Version {version}. Scan the QR or open the store — start from the KOC market today.",
+    "mobileLabel": "iOS & Android",
+    "ctaStore": "Open store",
+    "comingSoon": "Coming soon",
+    "qrLabel": "Scan",
+    "qrTitle": "Scan to install",
+    "qrSubtitle": "Open your camera → App Store or Google Play."
   },
   "downloadCards": {
-    "mac-apple-silicon": {
-      "title": "macOS (Apple Silicon)",
-      "subtitle": "Apple M1 / M2 / M3 / M4 chips"
-    },
-    "mac-intel": {
-      "title": "macOS (Intel)",
-      "subtitle": "Intel-based Mac computers"
-    },
-    "windows": {
-      "title": "Windows",
-      "subtitle": "Windows 10 / 11 64-bit"
-    },
     "ios": {
       "title": "iOS",
       "subtitle": "iPhone & iPad"
     },
     "android": {
       "title": "Android",
-      "subtitle": "Phones & Tablets"
+      "subtitle": "Phones & tablets"
     }
   },
   "installSection": {
-    "label": "Instructions",
-    "title": "Quick Installation Guide",
-    "macTitle": "macOS",
-    "macSteps": [
-      "Drag Five Cut Pro into your Applications folder.",
-      "Open Terminal (press ⌘ Space, type Terminal)."
-    ],
-    "macCommandLabel": "Run the following command:",
-    "macCommand": "xattr -cr /Applications/Tiktok\\ Video\\ Cut\\ Pro.app",
-    "copyCommandLabel": "Copy Command",
-    "copiedCommandLabel": "Copied",
-    "winTitle": "Windows",
-    "winSteps": [
-      "Download the installer file from the cards above.",
-      "Run the file to install and launch Five Cut Pro.",
-      "If Windows Defender appears, click More info then Run anyway."
-    ],
-    "iosTitle": "iOS",
-    "iosSteps": [
-      "Open the App Store link under Mobile once available.",
-      "Tap Get and authenticate with Apple ID if prompted.",
-      "Open Five Cut Pro from your home screen."
-    ],
-    "androidTitle": "Android",
-    "androidSteps": [
-      "Open the Google Play link under Mobile once available.",
-      "Tap Install and accept required permissions.",
-      "Open Five Cut Pro from your app drawer."
+    "title": "Install in 1 minute"
+  },
+  "bannerSection": {
+    "label": "IN APP",
+    "title": "Live templates & campaigns",
+    "subtitle": "Drag or swipe — synced with the mobile app.",
+    "steps": [
+      "Pick template",
+      "Shoot",
+      "Export & post"
     ]
+  },
+  "sponsorsSection": {
+    "label": "FOR BRANDS",
+    "title": "Partner on KOC templates & campaigns",
+    "subtitle": "Put your brand brief into the template market — KOCs shoot the right shots and ship on-message videos.",
+    "stats": [
+      {
+        "value": "KOC templates",
+        "label": "Recipes with shoot guides"
+      },
+      {
+        "value": "9:16",
+        "label": "TikTok / Reels ready"
+      },
+      {
+        "value": "3 steps",
+        "label": "Pick → Shoot → Export"
+      },
+      {
+        "value": "App",
+        "label": "iOS & Android"
+      }
+    ],
+    "benefitsTitle": "Why partner with Five Cut Pro",
+    "benefits": [
+      "Sponsor review recipes aligned to your brand message and angles.",
+      "KOCs watch in-app shoot guides before producing.",
+      "Keep shot structure consistent across creators on one template.",
+      "Built for TikTok Shop & Reels short-form campaigns."
+    ],
+    "form": {
+      "title": "Request a partnership consult",
+      "desc": "Leave your details — the Five Cut Pro team will reply during business hours.",
+      "brandNameLabel": "Brand / company name",
+      "brandNamePlaceholder": "e.g. Vinamilk, Sunhouse, Coolmate...",
+      "contactNameLabel": "Contact name",
+      "contactNamePlaceholder": "Jane Doe",
+      "emailLabel": "Work email",
+      "emailPlaceholder": "contact@brand.com",
+      "phoneLabel": "Phone / Zalo",
+      "phonePlaceholder": "+84 ...",
+      "budgetLabel": "Estimated campaign budget",
+      "budgetOptions": [
+        "Under 20M VND (pilot)",
+        "20 - 50M VND",
+        "50 - 200M VND",
+        "Over 200M VND"
+      ],
+      "noteLabel": "Campaign needs or goals",
+      "notePlaceholder": "Product to review, video volume, timeline...",
+      "submitButton": "Send partnership request",
+      "successMessage": "Sent! We’ll follow up via Zalo/Email.",
+      "directContact": "Or contact us directly:",
+      "emailAria": "Email brand partnerships",
+      "emailText": "fivecutpro.asia@gmail.com"
+    }
   }
 }

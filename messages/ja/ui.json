@@ -1,33 +1,29 @@
 {
   "Metadata": {
-    "titleDefault": "Five Cut Pro — KOC・アフィリエイト向け次世代コマース動画自動化ツール",
-    "description": "1本の元動画から高成約な物販ショート動画を100本自動生成。スマートディレクター画角ガイド、売れ筋台本テンプレート、SafeGuard AI™重複判定防止アルゴリズムを搭載。",
+    "titleDefault": "Five Cut Pro — テンプレ選択 · ショット撮影 · 販売動画を結合",
+    "description": "KOC・販売者向けモバイルアプリ。KOCテンプレ市場、ショットチェックリスト、撮影ガイド、端末内結合、TikTok共有。",
     "keywords": [
       "Five Cut Pro",
-      "Five Engine",
-      "SafeGuard AI",
-      "動画自動生成",
-      "TikTok売販",
-      "ショート動画自動化",
-      "アフィリエイト動画",
-      "KOCマーケティング",
+      "KOCテンプレート",
+      "動画レシピ",
+      "販売動画",
+      "撮影ガイド",
       "TikTok Shop",
-      "ブランドタイアップ",
-      "動画重複対策"
+      "9:16"
     ],
-    "ogTitle": "Five Cut Pro — KOC・アフィリエイト向け次世代コマース動画自動化ツール",
-    "ogDescription": "1本の素材から売れるショート動画100本を瞬時に自動生成。SafeGuard AI™アカウント保護と高成約フックで売上を最大化。",
-    "ogImageAlt": "Five Cut Pro — クリエイターとEC事業者のための新世代ショート動画自動化ソフトウェア",
-    "twitterTitle": "Five Cut Pro — KOC・アフィリエイト向け次世代コマース動画自動化ツール",
-    "twitterDescription": "1本の素材から売れるショート動画100本を瞬時に自動生成。SafeGuard AI™アカウント保護と高成約フックで売上を最大化。",
+    "ogTitle": "Five Cut Pro — テンプレ選択 · ショット撮影 · 販売動画を結合",
+    "ogDescription": "編集スキル不要。テンプレを選ぶ → ショットを撮る → アプリが結合 → TikTokへ書き出し。iOS / Android対応。",
+    "ogImageAlt": "Five Cut Pro — テンプレ、撮影、結合で販売動画",
+    "twitterTitle": "Five Cut Pro — テンプレ選択 · ショット撮影 · 販売動画を結合",
+    "twitterDescription": "編集スキル不要。テンプレを選ぶ → ショットを撮る → アプリが結合 → TikTokへ書き出し。iOS / Android対応。",
     "applicationName": "Five Cut Pro",
     "category": "technology",
-    "creator": "Shay Shay"
+    "creator": "Five Cut Pro Asia"
   },
   "Nav": {
     "features": "主な機能",
     "howItWorks": "ご利用の流れ",
-    "batchEngine": "重複対策エンジン",
+    "batchEngine": "制作フロー",
     "benefits": "導入メリット",
     "sponsors": "企業・タイアップ",
     "faq": "よくある質問",
@@ -65,8 +61,8 @@
     "contactHeading": "お問い合わせ・著作権",
     "contactCopyright": "Copyright © Five Cut Pro Asia. 無断転載を禁じます。",
     "contactBlurb": "商用ライセンス・タイアップ・技術サポートのお問い合わせ：",
-    "contactEmail": "labzentra@gmail.com",
-    "contactEmailAria": "labzentra@gmail.com へメール送信",
+    "contactEmail": "fivecutpro.asia@gmail.com",
+    "contactEmailAria": "fivecutpro.asia@gmail.com へメール送信",
     "copyrightBody": "Five Cut Pro"
   }
 }

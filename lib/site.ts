@@ -69,7 +69,7 @@ export function openGraphAlternateLocales(locale: string): string[] {
 export const SITE = {
   name: APP_NAME,
   shortName: "Five",
-  email: "labzentra@gmail.com",
+  email: "fivecutpro.asia@gmail.com",
   copyrightHolder: "Five Cut Pro Asia",
   defaultLocale: routing.defaultLocale as AppLocale,
   locales: routing.locales as readonly AppLocale[],
@@ -99,16 +99,16 @@ export const OG_IMAGE = {
   width: 1200,
   height: 630,
   type: "image/png",
-  alt: "Five Cut Pro — Cắt ghép & tự động hóa video bán hàng cho KOC và nhà bán hàng",
+  alt: "Five Cut Pro — Chọn mẫu, quay shot, ghép video bán hàng cho KOC",
 } as const;
 
 /** Open Graph / Twitter share copy — luôn tiếng Việt (thị trường chính). */
 export const OG_VI = {
-  title: "Five Cut Pro — Cắt Ghép & Tự Động Hóa 100 Video Bán Hàng Cho KOC & Affiliate",
+  title: "Five Cut Pro — Chọn Mẫu · Quay Shot · Ghép Video Bán Hàng",
   description:
-    "Công cụ cắt ghép video thông minh: Biến 1 video gốc thành hàng loạt video bán hàng chuẩn thuật toán TikTok Shop, Reels. Chống quét trùng lặp an toàn 100%.",
+    "App trên điện thoại cho KOC & nhà bán hàng: chợ mẫu KOC, công thức Trung–Cận–Xa, hướng dẫn quay từng shot, ghép và xuất sẵn đăng TikTok.",
   twitterDescription:
-    "Biến 1 video gốc thành 100 clip bán hàng chuẩn thuật toán. Công nghệ chống quét reup SafeGuard, tối ưu 3s đầu và chuyển đổi giỏ hàng.",
+    "Không cần biết edit. Chọn mẫu → quay đúng shot → app ghép → xuất & chia sẻ TikTok. Có trên iOS & Android.",
   imageAlt:
-    "Five Cut Pro — Cắt ghép & tự động hóa video bán hàng cho KOC và nhà bán hàng",
+    "Five Cut Pro — Chọn mẫu, quay shot, ghép video bán hàng cho KOC",
 } as const;

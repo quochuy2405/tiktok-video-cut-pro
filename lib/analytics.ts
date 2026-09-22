@@ -71,6 +71,7 @@ export type CtaLocation =
   | "batch_engine"
   | "formula_section"
   | "download_cards"
+  | "download_qr"
   | "download_terminal"
   | "download_github"
   | "sponsor_section"

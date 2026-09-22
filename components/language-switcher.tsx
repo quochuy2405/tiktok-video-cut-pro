@@ -63,7 +63,7 @@ export function LanguageSwitcher({
   if (variant === "grid") {
     return (
       <div className={cn("w-full space-y-1.5", className)}>
-        <span className="block font-mono text-[10px] font-semibold uppercase tracking-[0.65px] text-zinc-500">
+        <span className="block font-mono text-[10px] font-semibold uppercase tracking-[0.65px] text-[#6B7A72]">
           {t("language")}
         </span>
         <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-3">
@@ -81,8 +81,8 @@ export function LanguageSwitcher({
                 className={cn(
                   "flex items-center justify-between gap-1.5 rounded-xl border px-3 py-2 text-[12px] font-medium transition-all",
                   isCurrent
-                    ? "border-brand/50 bg-brand/15 text-brand shadow-sm shadow-brand/20 font-semibold"
-                    : "border-white/[0.08] bg-white/[0.03] text-zinc-300 hover:border-white/20 hover:bg-white/[0.07] hover:text-white",
+                    ? "border-brand/50 bg-brand/15 text-brand shadow-sm shadow-[#00C48C]/20 font-semibold"
+                    : "border-[#D8E5DD] bg-white text-[#334039] hover:border-brand/40 hover:bg-[#EEF5F1] hover:text-[#18231D]",
                 )}
                 prefetch={false}
               >
@@ -116,8 +116,8 @@ export function LanguageSwitcher({
         className={cn(
           "inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1.5 text-[12px] font-semibold transition-all sm:px-3 sm:text-[13px]",
           isOpen
-            ? "border-brand/40 bg-brand/15 text-brand shadow-sm shadow-brand/20"
-            : "border-white/[0.12] bg-white/[0.05] text-zinc-300 hover:border-white/25 hover:bg-white/[0.09] hover:text-white",
+            ? "border-brand/40 bg-brand/15 text-brand shadow-sm shadow-[#00C48C]/20"
+            : "border-[#D8E5DD] bg-white text-[#334039] shadow-card-mint hover:border-brand/35 hover:bg-[#EEF5F1] hover:text-[#18231D]",
         )}
         aria-expanded={isOpen}
         aria-haspopup="listbox"
@@ -127,12 +127,12 @@ export function LanguageSwitcher({
         <span className="font-mono text-[11px] font-bold tracking-wide sm:text-[12px]">
           {activeInfo.short}
         </span>
-        <span className="hidden xl:inline text-zinc-300 text-[12px]">
+        <span className="hidden xl:inline text-[#334039] text-[12px]">
           {activeInfo.nativeName}
         </span>
         <ChevronDown
           className={cn(
-            "size-3 shrink-0 text-zinc-400 transition-transform duration-200",
+            "size-3 shrink-0 text-[#6B7A72] transition-transform duration-200",
             isOpen && "rotate-180 text-brand",
           )}
           aria-hidden
@@ -141,11 +141,11 @@ export function LanguageSwitcher({
 
       {isOpen && (
         <div
-          className="absolute right-0 top-full z-50 mt-1.5 min-w-[175px] overflow-hidden rounded-2xl border border-white/[0.14] bg-[#0c0c10]/95 p-1.5 shadow-2xl shadow-black/80 backdrop-blur-2xl ring-1 ring-white/5 animate-in fade-in-0 zoom-in-95 duration-150"
+          className="absolute right-0 top-full z-50 mt-1.5 min-w-[175px] overflow-hidden rounded-2xl border border-[#D8E5DD] bg-white p-1.5 shadow-[0_20px_50px_-24px_rgba(15,31,24,0.35)] ring-1 ring-brand/10 animate-in fade-in-0 zoom-in-95 duration-150"
           role="listbox"
           aria-label={t("language")}
         >
-          <div className="px-2.5 py-1.5 text-[10px] font-mono font-semibold uppercase tracking-wider text-zinc-500 border-b border-white/[0.06] mb-1">
+          <div className="px-2.5 py-1.5 text-[10px] font-mono font-semibold uppercase tracking-wider text-[#6B7A72] border-b border-[#D8E5DD] mb-1">
             {t("language")}
           </div>
           <div className="flex flex-col gap-0.5">
@@ -165,7 +165,7 @@ export function LanguageSwitcher({
                     "group flex items-center justify-between gap-2.5 rounded-xl px-2.5 py-2 text-[13px] font-medium transition-colors",
                     isCurrent
                       ? "bg-brand/15 text-brand font-semibold"
-                      : "text-zinc-300 hover:bg-white/[0.07] hover:text-white",
+                      : "text-[#334039] hover:bg-[#EEF5F1] hover:text-[#18231D]",
                   )}
                   prefetch={false}
                   role="option"
@@ -178,7 +178,7 @@ export function LanguageSwitcher({
                     <span className="leading-snug">{info.nativeName}</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <span className="font-mono text-[10px] font-bold text-zinc-500 group-hover:text-zinc-400">
+                    <span className="font-mono text-[10px] font-bold text-[#6B7A72]">
                       {info.short}
                     </span>
                     {isCurrent ? (

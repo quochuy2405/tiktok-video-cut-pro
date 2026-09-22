@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { JsonLd, buildHomeJsonLd } from "@/components/json-ld";
 import { LandingPage } from "@/components/landing-page";
 import { APP_NAME } from "@/lib/brand";
+import { fetchWebMarketingPayload } from "@/lib/marketing-api";
 import {
   absoluteLocaleUrl,
   absoluteUrl,
@@ -79,11 +80,12 @@ export default async function HomePage({
     question: string;
     answer: string;
   }>) || [];
+  const { stripSlides, popupSlides } = await fetchWebMarketingPayload();
 
   return (
     <>
       <JsonLd data={buildHomeJsonLd(locale, t("description"), faqItems)} />
-      <LandingPage />
+      <LandingPage stripBanners={stripSlides} popupBanners={popupSlides} />
     </>
   );
 }

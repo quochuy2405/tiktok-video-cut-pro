@@ -1,34 +1,31 @@
 {
   "Metadata": {
-    "titleDefault": "Five Cut Pro — Next-Gen Video Commerce Automation for KOCs & Affiliates",
-    "description": "Automate 100 sales videos from a single take. Smart Director™ camera guide, TopSeller Blueprints™ repository, and Five Engine™ video multiplication backed by SafeGuard AI™.",
+    "titleDefault": "Five Cut Pro — Pick a Template · Shoot · Merge Sales Videos",
+    "description": "Mobile app for KOCs and sellers: KOC template market, shot-angle recipes, shoot guides, on-device merge, and TikTok-ready export.",
     "keywords": [
       "Five Cut Pro",
-      "Five Engine",
-      "SafeGuard AI",
-      "TopSeller Blueprints",
-      "Smart Director",
-      "viral sales videos",
-      "KOC creator economy",
-      "smart camera guide",
+      "KOC templates",
+      "video recipe",
+      "sales video merge",
+      "shot filming guide",
       "TikTok Shop",
-      "affiliate video matrix",
-      "creator commissions",
-      "brand sponsorships"
+      "9:16 short video",
+      "TikTok export",
+      "mobile video editor for sellers"
     ],
-    "ogTitle": "Five Cut Pro — Next-Gen Video Commerce Automation for KOCs & Affiliates",
-    "ogDescription": "Automate 100 sales videos from 1 take. TopSeller Blueprints™, Smart Director™ camera guide, and SafeGuard AI™ account protection.",
-    "ogImageAlt": "Five Cut Pro — Next-gen video commerce automation for KOCs and merchants",
-    "twitterTitle": "Five Cut Pro — Next-Gen Video Commerce Automation for KOCs & Affiliates",
-    "twitterDescription": "Automate 100 sales videos from 1 take. TopSeller Blueprints™, Smart Director™ camera guide, and SafeGuard AI™ account protection.",
+    "ogTitle": "Five Cut Pro — Pick a Template · Shoot · Merge Sales Videos",
+    "ogDescription": "No editing skills needed. Pick a template → shoot the shots → merge → export & share to TikTok. Available on iOS & Android.",
+    "ogImageAlt": "Five Cut Pro — Template, shoot, merge sales videos for KOCs",
+    "twitterTitle": "Five Cut Pro — Pick a Template · Shoot · Merge Sales Videos",
+    "twitterDescription": "No editing skills needed. Pick a template → shoot the shots → merge → export & share to TikTok. Available on iOS & Android.",
     "applicationName": "Five Cut Pro",
     "category": "technology",
-    "creator": "Shay Shay"
+    "creator": "Five Cut Pro Asia"
   },
   "Nav": {
     "features": "Features",
     "howItWorks": "How It Works",
-    "batchEngine": "Anti-Duplicate",
+    "batchEngine": "Production flow",
     "benefits": "Benefits",
     "sponsors": "For Brands",
     "faq": "FAQ",
@@ -66,8 +63,8 @@
     "contactHeading": "Contact & Copyright",
     "contactCopyright": "Copyright © Five Cut Pro Asia.",
     "contactBlurb": "For commercial licenses or technical support:",
-    "contactEmail": "labzentra@gmail.com",
-    "contactEmailAria": "Send email to labzentra@gmail.com",
+    "contactEmail": "fivecutpro.asia@gmail.com",
+    "contactEmailAria": "Send email to fivecutpro.asia@gmail.com",
     "copyrightBody": "Five Cut Pro"
   }
 }

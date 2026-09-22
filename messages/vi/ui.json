@@ -1,33 +1,32 @@
 {
   "Metadata": {
-    "titleDefault": "Five Cut Pro — Tự Động Hóa 100 Video Bán Hàng Cho KOC & Tiếp Thị Liên Kết",
-    "description": "Nền tảng tự động hóa video bán hàng cho KOC và nhà bán hàng: Trợ lý quay phim thông minh, kho kịch bản triệu đơn và công nghệ nhân bản 100 video độc nhất, bảo vệ tài khoản an toàn tuyệt đối.",
+    "titleDefault": "Five Cut Pro — Chọn Mẫu · Quay Shot · Ghép Video Bán Hàng",
+    "description": "App trên điện thoại cho KOC và nhà bán hàng: chợ mẫu KOC, công thức góc quay theo checklist, hướng dẫn từng shot, ghép và xuất sẵn đăng TikTok.",
     "keywords": [
       "Five Cut Pro",
-      "tự động hóa video",
-      "video bán hàng triệu view",
-      "kịch bản bán hàng triệu đơn",
-      "trợ lý bấm máy thông minh",
+      "chợ mẫu KOC",
+      "công thức video",
+      "ghép video bán hàng",
+      "hướng dẫn quay shot",
       "KOC bán hàng",
-      "tiếp thị liên kết",
       "TikTok Shop",
-      "nuôi dàn kênh affiliate",
-      "hoa hồng KOC",
-      "tài trợ nhãn hàng"
+      "video ngắn 9:16",
+      "xuất video TikTok",
+      "app cắt ghép video"
     ],
-    "ogTitle": "Five Cut Pro — Tự Động Hóa 100 Video Bán Hàng Cho KOC & Tiếp Thị Liên Kết",
-    "ogDescription": "Bấm máy 1 lần, nhân bản 100 video bán hàng chuẩn chuyển đổi triệu đơn, an toàn tuyệt đối cho hệ thống kênh tiếp thị liên kết.",
-    "ogImageAlt": "Five Cut Pro — Nền tảng tự động hóa video bán hàng cho KOC và nhà bán hàng",
-    "twitterTitle": "Five Cut Pro — Tự Động Hóa 100 Video Bán Hàng Cho KOC & Tiếp Thị Liên Kết",
-    "twitterDescription": "Bấm máy 1 lần, nhân bản 100 video bán hàng chuẩn chuyển đổi triệu đơn, an toàn tuyệt đối cho hệ thống kênh tiếp thị liên kết.",
+    "ogTitle": "Five Cut Pro — Chọn Mẫu · Quay Shot · Ghép Video Bán Hàng",
+    "ogDescription": "Không cần biết edit. Chọn mẫu → quay đúng shot → app ghép → xuất & chia sẻ TikTok. Có trên iOS & Android.",
+    "ogImageAlt": "Five Cut Pro — Chọn mẫu, quay shot, ghép video bán hàng cho KOC",
+    "twitterTitle": "Five Cut Pro — Chọn Mẫu · Quay Shot · Ghép Video Bán Hàng",
+    "twitterDescription": "Không cần biết edit. Chọn mẫu → quay đúng shot → app ghép → xuất & chia sẻ TikTok. Có trên iOS & Android.",
     "applicationName": "Five Cut Pro",
     "category": "technology",
-    "creator": "Shay Shay"
+    "creator": "Five Cut Pro Asia"
   },
   "Nav": {
     "features": "Tính năng",
     "howItWorks": "Cách dùng",
-    "batchEngine": "Chống Reup",
+    "batchEngine": "Luồng sản xuất",
     "benefits": "Lợi ích",
     "sponsors": "Dành cho Brand",
     "faq": "Hỏi đáp",
@@ -65,8 +64,8 @@
     "contactHeading": "Liên hệ & bản quyền",
     "contactCopyright": "Bản quyền thuộc về Five Cut Pro Asia.",
     "contactBlurb": "Liên hệ để mua giấy phép hoặc nhận hỗ trợ kỹ thuật:",
-    "contactEmail": "labzentra@gmail.com",
-    "contactEmailAria": "Gửi email tới labzentra@gmail.com",
+    "contactEmail": "fivecutpro.asia@gmail.com",
+    "contactEmailAria": "Gửi email tới fivecutpro.asia@gmail.com",
     "copyrightBody": "Five Cut Pro"
   }
 }

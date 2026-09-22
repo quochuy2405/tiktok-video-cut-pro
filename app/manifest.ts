@@ -8,7 +8,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: APP_NAME,
     short_name: "Five",
     description:
-      "Five Cut Pro — tạo video bán hàng dễ dàng, chuyên nghiệp cho nhà bán hàng, KOC và KOL.",
+      "Five Cut Pro — chọn mẫu, quay shot, ghép video bán hàng cho KOC trên iOS & Android.",
     start_url: "/vi",
     display: "standalone",
     background_color: "#050507",

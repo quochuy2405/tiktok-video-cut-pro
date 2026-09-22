@@ -9,8 +9,6 @@ import {
   Check,
   CheckCircle2,
   ChevronDown,
-  Copy,
-  Cpu,
   Download,
   Flame,
   HelpCircle,
@@ -19,43 +17,25 @@ import {
   Play,
   Scissors,
   Send,
-  ShieldCheck,
-  Smartphone,
-  Target,
-  Timer,
-  TrendingUp,
-  Type,
   Upload,
-  Users,
   Video,
   XCircle,
-  Zap,
 } from "lucide-react";
-import { useCallback, useRef, useState } from "react";
+import { useState } from "react";
 
 import { FadeIn } from "@/components/fade-in";
+import { CommonBannerPopup } from "@/components/common-banner-popup";
+import { MarketingBannerCarousel } from "@/components/marketing-banner-carousel";
+import { StoreQrCodes } from "@/components/store-qr-codes";
 import { buttonVariants } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import {
-  AppleIcon,
-  WindowsIcon,
-  AndroidIcon,
-  GooglePlayIcon,
-} from "@/components/platform-icons";
-import {
-  trackCopyTerminalCommand,
   trackCtaClick,
   trackDirectContact,
-  trackDownload,
   trackLeadGeneration,
 } from "@/lib/analytics";
-import {
-  DESKTOP_DOWNLOAD_ASSETS,
-  DISPLAY_APP_VERSION,
-  MOBILE_DOWNLOAD_ASSETS,
-  githubReleasesTagPageUrl,
-  type DownloadAsset,
-} from "@/lib/downloads";
+import { DISPLAY_APP_VERSION } from "@/lib/downloads";
+import type { MarketingBannerSlide } from "@/lib/marketing-api";
 import { gmailComposeUrl } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -64,28 +44,6 @@ type LandingFeature = {
   title: string;
   description: string;
   bullets?: string[];
-};
-
-type DownloadCardCopy = {
-  title: string;
-  subtitle: string;
-};
-
-type InstallSectionCopy = {
-  label: string;
-  title: string;
-  macTitle: string;
-  macSteps: string[];
-  macCommandLabel: string;
-  macCommand: string;
-  copyCommandLabel: string;
-  copiedCommandLabel: string;
-  winTitle: string;
-  winSteps: string[];
-  iosTitle: string;
-  iosSteps: string[];
-  androidTitle: string;
-  androidSteps: string[];
 };
 
 type HowStep = {
@@ -100,51 +58,6 @@ type HowItWorksSectionCopy = {
   title: string;
   subtitle: string;
   steps: HowStep[];
-};
-
-type AntiReupPoint = {
-  num: string;
-  title: string;
-  desc: string;
-};
-
-type AntiReupCopy = {
-  label: string;
-  title: string;
-  subtitle: string;
-  points: AntiReupPoint[];
-};
-
-type BatchEngineSectionCopy = {
-  label: string;
-  title: string;
-  subtitle: string;
-  tagline: string;
-  guideCard?: {
-    badge: string;
-    title: string;
-    description: string;
-  };
-  pipeline: {
-    inputBadge?: string;
-    inputTitle: string;
-    inputDesc: string;
-    engineBadge?: string;
-    engineTitle: string;
-    engineDesc: string;
-    outputBadge?: string;
-    outputTitle: string;
-    outputDesc: string;
-  };
-  antiReup?: AntiReupCopy;
-};
-
-type BenefitItem = {
-  id: string;
-  num: string;
-  title: string;
-  desc: string;
-  highlight: string;
 };
 
 type MetricItem = {
@@ -169,13 +82,6 @@ type ComparisonSectionCopy = {
     subtitle: string;
     points: string[];
   };
-};
-
-type BenefitsSectionCopy = {
-  label: string;
-  title: string;
-  subtitle: string;
-  items: BenefitItem[];
 };
 
 type FaqItem = {
@@ -235,207 +141,25 @@ type SponsorsSectionCopy = {
 };
 
 const FEATURE_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
-  "smart-cut": Scissors,
-  "batch-remix": Layers,
-  "safeguard-anti-reup": ShieldCheck,
-  "hook-cta": Target,
-  "auto-captions": Type,
-  "batch-export": Zap,
+  "koc-market": Flame,
+  recipes: Layers,
+  "shot-guide": Camera,
+  "merge-export": Scissors,
 };
 
 const easeOut = [0.22, 1, 0.36, 1] as const;
 
-function PlatformMark({
-  id,
-  className,
+
+export function LandingPage({
+  stripBanners = [],
+  popupBanners = [],
 }: {
-  id: DownloadAsset["id"];
-  className?: string;
+  stripBanners?: MarketingBannerSlide[];
+  popupBanners?: MarketingBannerSlide[];
 }) {
-  if (id === "windows") {
-    return (
-      <span
-        title="Microsoft Windows"
-        aria-label="Microsoft Windows"
-        className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
-      >
-        <WindowsIcon className={className} title="Microsoft Windows" />
-      </span>
-    );
-  }
-  if (id === "android") {
-    return (
-      <span className="inline-flex items-center justify-center gap-1.5">
-        <span
-          title="Android"
-          aria-label="Android"
-          className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
-        >
-          <AndroidIcon className={className} title="Android" />
-        </span>
-        <span
-          title="Google Play"
-          aria-label="Google Play"
-          className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
-        >
-          <GooglePlayIcon className={cn(className, "size-[1.1rem]")} title="Google Play" />
-        </span>
-      </span>
-    );
-  }
-  if (id === "ios") {
-    return (
-      <span
-        title="Apple (iOS / App Store)"
-        aria-label="Apple iOS"
-        className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
-      >
-        <AppleIcon className={className} title="Apple" />
-      </span>
-    );
-  }
-  if (id === "mac-apple-silicon") {
-    return (
-      <span
-        title="Apple macOS (Apple Silicon M1/M2/M3/M4)"
-        aria-label="Apple macOS (Apple Silicon)"
-        className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
-      >
-        <AppleIcon className={className} title="Apple macOS" />
-      </span>
-    );
-  }
-  if (id === "mac-intel") {
-    return (
-      <span
-        title="Apple macOS (Intel)"
-        aria-label="Apple macOS (Intel)"
-        className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
-      >
-        <AppleIcon className={className} title="Apple macOS" />
-      </span>
-    );
-  }
-  return (
-    <span
-      title="Apple"
-      aria-label="Apple"
-      className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
-    >
-      <AppleIcon className={className} title="Apple" />
-    </span>
-  );
-}
-
-function DownloadCard({
-  asset,
-  card,
-  ctaLabel,
-  comingSoonLabel,
-  delay,
-}: {
-  asset: DownloadAsset;
-  card?: DownloadCardCopy;
-  ctaLabel: string;
-  comingSoonLabel: string;
-  delay: number;
-}) {
-  const available = Boolean(asset.href);
-  const content = (
-    <>
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-      <div className="flex shrink-0 items-start justify-between gap-3 sm:gap-4">
-        <div className="min-w-0 flex-1 pr-2">
-          <h3 className="font-heading text-lg font-semibold leading-snug tracking-[-0.2px] text-white sm:text-xl">
-            {card?.title ?? asset.title}
-          </h3>
-          <p className="mt-1.5 text-sm text-zinc-400">
-            {card?.subtitle ?? asset.subtitle}
-          </p>
-        </div>
-        <span
-          className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10"
-        >
-          <PlatformMark id={asset.id} className="size-[1.25rem]" />
-        </span>
-      </div>
-
-      <div className="mt-6 flex min-h-0 flex-1 flex-col justify-between gap-4">
-        <p className="break-all text-[12px] leading-snug text-zinc-500 sm:break-words">
-          {asset.fileLabel}
-        </p>
-        <span
-          className={cn(
-            "inline-flex shrink-0 items-center gap-2 text-sm font-medium",
-            available ? "text-brand" : "text-zinc-500",
-          )}
-        >
-          <Download className="size-4 shrink-0" aria-hidden />
-          {available ? ctaLabel : comingSoonLabel}
-        </span>
-      </div>
-    </>
-  );
-
-  return (
-    <FadeIn className="h-full min-h-0 min-w-0" delay={delay}>
-      {available ? (
-        <a
-          href={asset.href!}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => {
-            const fileExt = asset.fileLabel.endsWith(".dmg")
-              ? "dmg"
-              : asset.fileLabel.endsWith(".exe")
-              ? "exe"
-              : asset.fileLabel.endsWith(".apk")
-              ? "apk"
-              : "installer";
-
-            trackCtaClick({
-              cta_id: `download_asset_${asset.id}`,
-              cta_location: "download_cards",
-              cta_text: ctaLabel,
-              cta_category: "conversion_download",
-              destination_url: asset.href!,
-              platform: asset.id,
-              asset_title: asset.title,
-              file_name: asset.fileLabel,
-            });
-
-            trackDownload({
-              file_name: asset.fileLabel,
-              file_extension: fileExt,
-              platform: asset.id,
-              app_version: DISPLAY_APP_VERSION,
-              link_url: asset.href!,
-              asset_id: asset.id,
-            });
-          }}
-          className="group relative flex h-full min-h-[240px] min-w-0 w-full flex-col overflow-hidden rounded-[20px] border border-white/[0.1] bg-white/[0.03] p-6 transition-colors hover:border-white/20 hover:bg-white/[0.05] sm:p-8 md:min-h-[260px] md:p-9"
-        >
-          {content}
-        </a>
-      ) : (
-        <div
-          className="relative flex h-full min-h-[240px] min-w-0 w-full flex-col overflow-hidden rounded-[20px] border border-dashed border-white/[0.12] bg-white/[0.02] p-6 opacity-80 sm:p-8 md:min-h-[260px] md:p-9"
-          aria-disabled
-        >
-          {content}
-        </div>
-      )}
-    </FadeIn>
-  );
-}
-
-export function LandingPage() {
   const reduceMotion = useReducedMotion();
   const t = useTranslations("Landing");
-  const [macCommandCopied, setMacCommandCopied] = useState(false);
-  const copyResetRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  // Brand Sponsor Form State
+  const [openFaq, setOpenFaq] = useState<string | null>("faq-1");
   const [sponsorSubmitted, setSponsorSubmitted] = useState(false);
   const [sponsorLoading, setSponsorLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -447,40 +171,15 @@ export function LandingPage() {
     note: "",
   });
 
-  const [openFaq, setOpenFaq] = useState<string | null>("faq-1");
-
   const metricsBar = (t.raw("metricsBar") as MetricItem[]) || [];
   const featuresSection = t.raw("featuresSection") as FeaturesSectionCopy;
-  const features = (t.raw("features") as LandingFeature[]) || [];
+  const features = ((t.raw("features") as LandingFeature[]) || []).filter(
+    (f) => f.id === "koc-market" || f.id === "recipes" || f.id === "shot-guide" || f.id === "merge-export",
+  );
   const howItWorks = t.raw("howItWorksSection") as HowItWorksSectionCopy;
   const comparison = t.raw("comparisonSection") as ComparisonSectionCopy;
-  const batchEngine = t.raw("batchEngineSection") as BatchEngineSectionCopy;
-  const benefits = t.raw("benefitsSection") as BenefitsSectionCopy;
   const sponsors = t.raw("sponsorsSection") as SponsorsSectionCopy;
   const faq = t.raw("faqSection") as FaqSectionCopy;
-  const downloadCards = t.raw("downloadCards") as Record<
-    string,
-    DownloadCardCopy
-  >;
-  const install = t.raw("installSection") as InstallSectionCopy;
-
-  const copyMacCommand = useCallback(async () => {
-    try {
-      trackCopyTerminalCommand();
-      trackCtaClick({
-        cta_id: "copy_mac_terminal_command",
-        cta_location: "download_terminal",
-        cta_text: install.copyCommandLabel,
-        cta_category: "conversion_download",
-      });
-      await navigator.clipboard.writeText(install.macCommand);
-      setMacCommandCopied(true);
-      if (copyResetRef.current) clearTimeout(copyResetRef.current);
-      copyResetRef.current = setTimeout(() => setMacCommandCopied(false), 2000);
-    } catch {
-      setMacCommandCopied(false);
-    }
-  }, [install.macCommand, install.copyCommandLabel]);
 
   const handleSponsorSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -498,13 +197,10 @@ export function LandingPage() {
       budget: formData.budget,
     });
     setSponsorLoading(true);
-
     try {
       await fetch("/api/sponsor", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
     } catch (err) {
@@ -570,7 +266,7 @@ export function LandingPage() {
               width={128}
               height={128}
               priority
-              className="relative size-28 rounded-[24px] shadow-2xl ring-1 ring-white/10 sm:size-32 sm:rounded-[26px] md:size-36 md:rounded-[28px]"
+              className="relative size-28 rounded-[24px] shadow-2xl ring-1 ring-black/5 sm:size-32 sm:rounded-[26px] md:size-36 md:rounded-[28px]"
             />
           </motion.div>
 
@@ -587,19 +283,19 @@ export function LandingPage() {
           </motion.div>
 
           <motion.h1
-            className="font-heading max-w-[min(100%,32rem)] text-[clamp(2.1rem,6.5vw+0.2rem,4.4rem)] font-semibold leading-[1.08] tracking-[-0.06em] text-white text-balance sm:max-w-none md:tracking-[-1.35px]"
+            className="font-heading max-w-[min(100%,32rem)] text-[clamp(2.1rem,6.5vw+0.2rem,4.4rem)] font-semibold leading-[1.08] tracking-[-0.06em] text-[#0F1A15] text-balance sm:max-w-none md:tracking-[-1.35px]"
             initial={reduceMotion ? false : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.52, ease: easeOut, delay: 0.1 }}
           >
             {t("hero.titleLead")}{" "}
-            <span className="bg-gradient-to-r from-brand via-[#5ee9b8] to-brand-deep bg-clip-text text-transparent">
+            <span className="text-gradient-brand">
               {t("hero.titleAccent")}
             </span>
           </motion.h1>
 
           <motion.p
-            className="mt-6 max-w-2xl px-1 text-base leading-relaxed text-zinc-400 md:px-0 md:text-lg md:leading-relaxed"
+            className="mt-6 max-w-2xl px-1 text-base leading-relaxed text-[#4A5C53] md:px-0 md:text-lg md:leading-relaxed"
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.48, ease: easeOut, delay: 0.16 }}
@@ -627,25 +323,25 @@ export function LandingPage() {
               }}
               className={cn(
                 buttonVariants({ variant: "default", size: "lg" }),
-                "rounded-full border-0 bg-brand px-8 py-3.5 text-[15px] font-semibold text-[#050507] shadow-none glow-brand-sm transition-[transform,box-shadow] hover:-translate-y-0.5 hover:bg-brand hover:glow-brand-lg",
+                "rounded-full border-0 bg-brand px-8 py-3.5 text-[15px] font-semibold text-[#052E1C] shadow-none glow-brand-sm transition-[transform,box-shadow] hover:-translate-y-0.5 hover:bg-brand hover:glow-brand-lg",
               )}
             >
               {t("hero.ctaPrimary")}
             </Link>
             <Link
-              href="/#features"
+              href="/#comparison"
               onClick={() => {
                 trackCtaClick({
                   cta_id: "hero_explore_features",
                   cta_location: "hero",
                   cta_text: t("hero.ctaSecondary"),
                   cta_category: "navigation_section",
-                  destination_url: "/#features",
+                  destination_url: "/#comparison",
                 });
               }}
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
-                "rounded-full border-white/20 bg-white/[0.04] px-8 py-3.5 text-[15px] font-medium text-white backdrop-blur-sm hover:bg-white/[0.09] hover:text-white",
+                "rounded-full border border-[#B9CFC3] bg-white px-8 py-3.5 text-[15px] font-medium text-[#0F1A15] shadow-card-mint hover:border-brand/35 hover:bg-[#EEF5F1] hover:text-[#0F1A15]",
               )}
             >
               {t("hero.ctaSecondary")}
@@ -659,11 +355,11 @@ export function LandingPage() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <p className="flex items-center gap-1.5 font-medium text-zinc-300">
+            <p className="flex items-center gap-1.5 font-medium text-[#1F2E27]">
               <CheckCircle2 className="size-3.5 text-brand shrink-0" />
               <span>{t("hero.ctaTrust")}</span>
             </p>
-            <p className="text-[11px] text-zinc-500">
+            <p className="text-[11px] text-[#4A5C53]">
               {t("hero.ctaSocialProof")}
             </p>
           </motion.div>
@@ -672,27 +368,25 @@ export function LandingPage() {
         {/* Impact Metrics Bar */}
         {metricsBar?.length ? (
           <motion.div
-            className="relative z-10 mx-auto mt-14 w-full max-w-[1040px] rounded-2xl border border-white/[0.08] bg-white/[0.02] p-4 backdrop-blur-md sm:p-6"
+            className="relative z-10 mx-auto mt-14 w-full max-w-[1040px] rounded-2xl surface-card p-4 sm:p-6"
             initial={reduceMotion ? false : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.35 }}
           >
-            <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+            <div className="grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-x-4 lg:grid-cols-4 lg:gap-x-2 lg:divide-x lg:divide-[#D8E5DD]">
               {metricsBar.map((metric, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-col items-center justify-center p-2 text-center"
+                  className="flex min-w-0 flex-col items-center justify-start px-2 text-center lg:px-4"
                 >
-                  <span className="font-heading text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">
-                    <span className="bg-gradient-to-r from-brand via-[#5ee9b8] to-emerald-400 bg-clip-text text-transparent">
-                      {metric.value}
-                    </span>
+                  <span className="font-heading flex h-9 items-center whitespace-nowrap text-xl font-bold tracking-tight text-[#0F1A15] sm:h-10 sm:text-2xl lg:text-[1.65rem]">
+                    <span className="text-gradient-brand">{metric.value}</span>
                   </span>
-                  <span className="mt-1 text-xs font-semibold text-zinc-200 sm:text-sm">
-                    {metric.label}
+                  <span className="mt-1.5 flex h-10 items-start justify-center text-xs font-semibold leading-snug text-[#1F2E27] sm:text-sm">
+                    <span className="line-clamp-2">{metric.label}</span>
                   </span>
-                  <span className="mt-0.5 text-[11px] text-zinc-500">
-                    {metric.desc}
+                  <span className="mt-1 flex h-8 items-start justify-center text-[11px] leading-snug text-[#4A5C53]">
+                    <span className="line-clamp-2">{metric.desc}</span>
                   </span>
                 </div>
               ))}
@@ -701,145 +395,59 @@ export function LandingPage() {
         ) : null}
       </section>
 
-      {/* 2. Core Features Section */}
+      {/* Download — mobile first */}
       <section
-        id="features"
-        className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8 bg-zinc-950/80 relative overflow-hidden"
-      >
-        <div className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 size-[600px] rounded-full bg-brand/[0.06] blur-[120px]" />
-
-        <div className="mx-auto min-w-0 max-w-[1200px] relative z-10">
-          <FadeIn className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand">
-              <Layers className="size-3.5" />
-              <span>{featuresSection.label}</span>
-            </div>
-            <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
-              {featuresSection.title}
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-zinc-400 md:text-lg">
-              {featuresSection.subtitle}
-            </p>
-          </FadeIn>
-
-          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature, idx) => {
-              const FeatureIcon = FEATURE_ICONS[feature.id] || Layers;
-              return (
-                <FadeIn key={feature.id} delay={idx * 0.07} className="flex">
-                  <div className="glass-panel group relative flex w-full flex-col justify-between overflow-hidden rounded-[24px] border border-white/[0.08] p-7 transition-all duration-300 hover:border-brand/40 hover:glow-brand-sm sm:p-8">
-                    <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                    <div className="space-y-4">
-                      <div className="flex items-center justify-between">
-                        <div className="flex size-12 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30">
-                          <FeatureIcon className="size-6" />
-                      </div>
-                        <span className="font-mono text-xs font-bold text-zinc-500">
-                          0{idx + 1}
-                        </span>
-                      </div>
-                      <div className="pt-2">
-                        <h3 className="font-heading text-lg sm:text-xl font-semibold text-white">
-                        {feature.title}
-                      </h3>
-                      </div>
-                      <p className="text-sm leading-relaxed text-zinc-400">
-                        {feature.description}
-                      </p>
-
-                      {feature.bullets && feature.bullets.length > 0 && (
-                        <ul className="mt-4 space-y-2 pt-3 border-t border-white/[0.06]">
-                          {feature.bullets.map((b, bIdx) => (
-                            <li
-                              key={bIdx}
-                              className="flex items-start gap-2 text-xs sm:text-sm text-zinc-300"
-                            >
-                              <CheckCircle2 className="size-4 shrink-0 text-brand mt-0.5" />
-                              <span>{b}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  </div>
-                </FadeIn>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* 3. How It Works: Chưa biết quay hay edit? Chỉ 3 bước đơn giản */}
-      <section
-        id="how-it-works"
-        className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8 bg-zinc-950/70 relative overflow-hidden"
+        id="download"
+        className="scroll-mt-[72px] border-t border-[#B9CFC3] section-band-mint px-4 py-16 sm:px-6 md:py-20 lg:px-8"
       >
         <div className="mx-auto min-w-0 max-w-[1200px]">
-          <FadeIn className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-400">
-              <Play className="size-3.5 fill-current" />
-              <span>{howItWorks.label}</span>
-            </div>
-            <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
-              {howItWorks.title}
+          <FadeIn className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-medium text-[#4A5C53]">
+              {t("downloadSection.label")}
+            </p>
+            <h2 className="font-heading mt-3 text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem]">
+              {t("downloadSection.title")}
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-zinc-400 md:text-lg">
-              {howItWorks.subtitle}
+            <p className="mt-5 text-base leading-relaxed text-[#4A5C53] md:text-lg">
+              {t("downloadSection.subtitle", { version: DISPLAY_APP_VERSION })}
             </p>
           </FadeIn>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
-            {howItWorks.steps?.map((step, idx) => {
-              const stepIcons = [Video, Scissors, Upload];
-              const StepIcon = stepIcons[idx % stepIcons.length];
-              return (
-                <FadeIn key={step.num} delay={idx * 0.08} className="flex">
-                  <div className="glass-panel group relative flex w-full flex-col justify-between overflow-hidden rounded-[24px] border border-white/[0.08] p-7 transition-all duration-300 hover:border-brand/40 hover:glow-brand-sm sm:p-8">
-                    <div className="space-y-4">
-                      <div className="flex items-center justify-between">
-                        <div className="flex size-12 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/25">
-                          <StepIcon className="size-6" />
-                        </div>
-                        <span className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">
-                          {step.badge}
-                        </span>
-                      </div>
-                      <div className="pt-2">
-                        <span className="font-mono text-xs font-bold uppercase tracking-wider text-brand">
-                          Bước {step.num}
-                        </span>
-                        <h3 className="font-heading mt-1 text-lg sm:text-xl font-semibold text-white">
-                          {step.title}
-                        </h3>
-                      </div>
-                      <p className="text-sm leading-relaxed text-zinc-400">
-                        {step.desc}
-                      </p>
-                    </div>
-                  </div>
-                </FadeIn>
-              );
-            })}
+          <div className="mt-10">
+            <StoreQrCodes
+              title={t("downloadSection.qrTitle")}
+              subtitle={t("downloadSection.qrSubtitle")}
+              scanLabel={t("downloadSection.qrLabel")}
+              openLabel={t("downloadSection.ctaStore")}
+            />
           </div>
         </div>
       </section>
+
+      <MarketingBannerCarousel
+        slides={stripBanners}
+        title={t("bannerSection.title")}
+        subtitle={t("bannerSection.subtitle")}
+        steps={t.raw("bannerSection.steps") as string[]}
+      />
+      <CommonBannerPopup slides={popupBanners} />
 
       {/* Comparison: Old Manual Way vs Five Cut Pro */}
       {comparison && (
         <section
           id="comparison"
-          className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8 bg-black relative overflow-hidden"
+          className="scroll-mt-[72px] border-t border-[#B9CFC3] section-band-mint px-4 py-20 sm:px-6 md:py-28 lg:px-8 relative overflow-hidden"
         >
           <div className="mx-auto min-w-0 max-w-[1120px] relative z-10">
             <FadeIn className="mx-auto max-w-3xl text-center">
-              <div className="inline-flex items-center gap-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-amber-400">
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-amber-600/25 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-amber-700">
                 <Flame className="size-3.5" />
                 <span>{comparison.badge}</span>
               </div>
-              <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
+              <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem] md:tracking-[-1px]">
                 {comparison.title}
             </h2>
-              <p className="mt-4 text-base leading-relaxed text-zinc-400 md:text-lg">
+              <p className="mt-4 text-base leading-relaxed text-[#4A5C53] md:text-lg">
                 {comparison.subtitle}
             </p>
           </FadeIn>
@@ -847,24 +455,24 @@ export function LandingPage() {
             <div className="mt-14 grid gap-8 lg:grid-cols-2">
               {/* Old Way Card */}
               <FadeIn delay={0.1} className="flex">
-                <div className="relative flex w-full flex-col justify-between rounded-[26px] border border-red-500/20 bg-gradient-to-b from-red-950/[0.12] to-transparent p-7 sm:p-9 backdrop-blur-sm">
+                <div className="relative flex w-full flex-col justify-between rounded-[26px] border border-red-200 bg-gradient-to-b from-red-50 via-white to-[#FBFCFB] shadow-card-mint p-7 sm:p-9 backdrop-blur-sm">
                   <div>
                     <div className="flex items-center justify-between">
-                      <span className="inline-flex items-center gap-1.5 rounded-md border border-red-500/30 bg-red-500/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-red-400">
+                      <span className="inline-flex items-center gap-1.5 rounded-md border border-red-200 bg-red-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-red-600">
                         <XCircle className="size-3.5" />
                         {comparison.oldWay.badge}
                       </span>
                     </div>
-                    <h3 className="font-heading mt-5 text-xl font-semibold text-white sm:text-2xl">
+                    <h3 className="font-heading mt-5 text-xl font-semibold text-[#0F1A15] sm:text-2xl">
                       {comparison.oldWay.title}
                     </h3>
-                    <p className="mt-2 text-sm text-zinc-400">
+                    <p className="mt-2 text-sm text-[#4A5C53]">
                       {comparison.oldWay.subtitle}
                     </p>
                     <ul className="mt-8 space-y-4">
                       {comparison.oldWay.points?.map((pt, i) => (
-                        <li key={i} className="flex items-start gap-3.5 text-sm text-zinc-400">
-                          <div className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-red-500/15 text-red-400">
+                        <li key={i} className="flex items-start gap-3.5 text-sm text-[#4A5C53]">
+                          <div className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-red-500/15 text-red-600">
                             <XCircle className="size-3.5" />
                           </div>
                           <span className="leading-relaxed">{pt}</span>
@@ -885,15 +493,15 @@ export function LandingPage() {
                         {comparison.newWay.badge}
                       </span>
                     </div>
-                    <h3 className="font-heading mt-5 text-xl font-semibold text-white sm:text-2xl">
+                    <h3 className="font-heading mt-5 text-xl font-semibold text-[#0F1A15] sm:text-2xl">
                       {comparison.newWay.title}
                     </h3>
-                    <p className="mt-2 text-sm text-zinc-300">
+                    <p className="mt-2 text-sm text-[#1F2E27]">
                       {comparison.newWay.subtitle}
                     </p>
                     <ul className="mt-8 space-y-4">
                       {comparison.newWay.points?.map((pt, i) => (
-                        <li key={i} className="flex items-start gap-3.5 text-sm text-zinc-200">
+                        <li key={i} className="flex items-start gap-3.5 text-sm text-[#1F2E27]">
                           <div className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/20 text-brand">
                             <Check className="size-3.5" strokeWidth={3} />
                           </div>
@@ -903,7 +511,7 @@ export function LandingPage() {
                     </ul>
                   </div>
 
-                  <div className="mt-10 pt-6 border-t border-white/[0.08]">
+                  <div className="mt-10 pt-6 border-t border-[#B9CFC3]">
                     <Link
                       href="/#download"
                       onClick={() => {
@@ -917,7 +525,7 @@ export function LandingPage() {
                       }}
                       className={cn(
                         buttonVariants({ variant: "default", size: "lg" }),
-                        "w-full rounded-full bg-brand py-3.5 text-sm font-semibold text-[#050507] glow-brand-sm hover:bg-brand transition-transform hover:-translate-y-0.5",
+                        "w-full rounded-full bg-brand py-3.5 text-sm font-semibold text-[#052E1C] glow-brand-sm hover:bg-brand transition-transform hover:-translate-y-0.5",
                       )}
                     >
                       <Download className="mr-2 size-4" />
@@ -931,208 +539,119 @@ export function LandingPage() {
         </section>
       )}
 
-      {/* 2. Batch Engine: 1 Video Raw -> 100 Video Bán Hàng & Chống Reup */}
+      {/* 2. Core Features Section */}
       <section
-        id="batch-engine"
-        className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8 bg-gradient-to-b from-black via-zinc-950/60 to-black relative overflow-hidden"
+        id="features"
+        className="scroll-mt-[72px] border-t border-[#B9CFC3] section-band-raised px-4 py-20 sm:px-6 md:py-28 lg:px-8 relative overflow-hidden"
       >
-        <div className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 size-[600px] rounded-full bg-brand/[0.07] blur-[120px]" />
+        <div className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 size-[600px] rounded-full bg-brand/[0.06] blur-[120px]" />
 
         <div className="mx-auto min-w-0 max-w-[1200px] relative z-10">
           <FadeIn className="mx-auto max-w-3xl text-center">
             <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand">
               <Layers className="size-3.5" />
-              <span>{batchEngine.label}</span>
+              <span>{featuresSection.label}</span>
             </div>
-            <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
-              {batchEngine.title}
+            <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem] md:tracking-[-1px]">
+              {featuresSection.title}
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-zinc-400 md:text-lg">
-              {batchEngine.subtitle}
+            <p className="mt-4 text-base leading-relaxed text-[#4A5C53] md:text-lg">
+              {featuresSection.subtitle}
             </p>
           </FadeIn>
 
-          {/* Beginner Guidance Spotlight Card */}
-          {batchEngine.guideCard && (
-            <FadeIn className="mt-10">
-              <div className="relative overflow-hidden rounded-[24px] border border-emerald-500/30 bg-gradient-to-r from-emerald-500/[0.12] via-brand/[0.06] to-transparent p-7 sm:p-9 md:p-10">
-                <div className="pointer-events-none absolute -right-12 -top-12 size-48 rounded-full bg-brand/15 blur-3xl" />
-                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-                  <div className="space-y-3 max-w-2xl">
-                    <span className="inline-flex items-center gap-1.5 rounded-md border border-emerald-400/30 bg-emerald-400/15 px-2.5 py-0.5 text-xs font-semibold text-emerald-300">
-                      <Camera className="size-3.5" />
-                      {batchEngine.guideCard.badge}
-                    </span>
-                    <h3 className="font-heading text-xl md:text-2xl font-semibold text-white">
-                      {batchEngine.guideCard.title}
-                    </h3>
-                    <p className="text-sm md:text-base leading-relaxed text-zinc-300">
-                      {batchEngine.guideCard.description}
-                    </p>
-                  </div>
-                  <div className="flex shrink-0 flex-wrap gap-3">
-                    <Link
-                      href="/#features"
-                      onClick={() => {
-                        trackCtaClick({
-                          cta_id: "batch_guide_features",
-                          cta_location: "batch_engine",
-                          cta_text: t("hero.ctaSecondary"),
-                          cta_category: "navigation_section",
-                          destination_url: "/#features",
-                        });
-                      }}
-                      className={cn(
-                        buttonVariants({ variant: "default", size: "default" }),
-                        "rounded-full bg-brand text-[#050507] hover:bg-brand font-medium glow-brand-sm",
-                      )}
-                    >
-                      <Layers className="mr-1.5 size-4" />
-                      {t("hero.ctaSecondary")}
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </FadeIn>
-          )}
-
-          {/* 3-Step Visual Pipeline */}
-          <FadeIn className="mt-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 relative">
-              <div className="relative rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm transition-all hover:border-brand/40 hover:bg-white/[0.05]">
-                <div className="flex items-center gap-3">
-                  <div className="flex size-11 items-center justify-center rounded-xl border border-emerald-500/30 bg-emerald-500/15 text-emerald-400">
-                    <Camera className="size-5" />
-                  </div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">
-                    {batchEngine.pipeline.inputBadge || "Nguồn vào"}
-                  </span>
-                </div>
-                <h4 className="mt-4 text-base font-semibold text-white">
-                  {batchEngine.pipeline.inputTitle}
-                </h4>
-                <p className="mt-2 text-sm leading-relaxed text-zinc-400">
-                  {batchEngine.pipeline.inputDesc}
-                </p>
-              </div>
-
-              <div className="relative rounded-2xl border border-brand/30 bg-brand/[0.04] p-6 backdrop-blur-sm transition-all hover:border-brand/50 hover:bg-brand/[0.07]">
-                <div className="flex items-center gap-3">
-                  <div className="flex size-11 items-center justify-center rounded-xl border border-brand/40 bg-brand/20 text-brand">
-                    <Cpu className="size-5" />
-                  </div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-brand">
-                    {batchEngine.pipeline.engineBadge || "Động cơ tự động"}
-                  </span>
-                </div>
-                <h4 className="mt-4 text-base font-semibold text-white">
-                  {batchEngine.pipeline.engineTitle}
-                </h4>
-                <p className="mt-2 text-sm leading-relaxed text-zinc-400">
-                  {batchEngine.pipeline.engineDesc}
-                </p>
-              </div>
-
-              <div className="relative rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm transition-all hover:border-cyan-400/40 hover:bg-white/[0.05]">
-                <div className="flex items-center gap-3">
-                  <div className="flex size-11 items-center justify-center rounded-xl border border-cyan-400/30 bg-cyan-400/15 text-cyan-400">
-                    <Layers className="size-5" />
-                  </div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-cyan-400">
-                    {batchEngine.pipeline.outputBadge || "Kết quả đầu ra"}
-                  </span>
-                </div>
-                <h4 className="mt-4 text-base font-semibold text-white">
-                  {batchEngine.pipeline.outputTitle}
-                </h4>
-                <p className="mt-2 text-sm leading-relaxed text-zinc-400">
-                  {batchEngine.pipeline.outputDesc}
-                </p>
-              </div>
-            </div>
-          </FadeIn>
-
-          {/* Anti-Reup Breakdown */}
-          {batchEngine.antiReup && (
-            <div className="mt-16 rounded-[24px] border border-purple-500/20 bg-gradient-to-b from-purple-500/[0.05] via-transparent to-transparent p-7 sm:p-9 md:p-10">
-              <FadeIn className="text-center max-w-2xl mx-auto">
-                <div className="inline-flex items-center gap-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-purple-300">
-                  <ShieldCheck className="size-3.5" />
-                  <span>{batchEngine.antiReup.label}</span>
-                </div>
-                <h3 className="font-heading mt-3 text-xl md:text-2xl font-semibold text-white">
-                  {batchEngine.antiReup.title}
-                </h3>
-                <p className="mt-2 text-sm text-zinc-400">
-                  {batchEngine.antiReup.subtitle}
-                </p>
-              </FadeIn>
-
-              <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {batchEngine.antiReup.points?.map((pt) => (
-                  <FadeIn key={pt.num} className="rounded-xl border border-white/10 bg-white/[0.02] p-5 backdrop-blur-sm">
-                    <span className="font-mono text-xs font-bold text-purple-400">#{pt.num}</span>
-                    <h4 className="mt-1.5 text-sm font-semibold text-white">{pt.title}</h4>
-                    <p className="mt-1.5 text-xs leading-relaxed text-zinc-400">{pt.desc}</p>
-                  </FadeIn>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* 3. Core Benefits: 4 Lợi ích sống còn cho KOC & Affiliate */}
-      <section
-        id="benefits"
-        className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8 bg-black/60"
-      >
-        <div className="mx-auto min-w-0 max-w-[1200px]">
-          <FadeIn className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand">
-              <TrendingUp className="size-3.5" />
-              <span>{benefits.label}</span>
-            </div>
-            <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
-              {benefits.title}
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-zinc-400 md:text-lg">
-              {benefits.subtitle}
-            </p>
-          </FadeIn>
-
-          <div className="mt-14 grid gap-6 md:grid-cols-2">
-            {benefits.items?.map((item, idx) => {
-              const benefitIcons = [Timer, TrendingUp, Users, ShieldCheck];
-              const BenefitIcon = benefitIcons[idx % benefitIcons.length];
-              const badgeColors = [
-                "border-brand/30 bg-brand/10 text-brand",
-                "border-cyan-400/30 bg-cyan-400/10 text-cyan-300",
-                "border-amber-400/30 bg-amber-400/10 text-amber-300",
-                "border-purple-400/30 bg-purple-400/10 text-purple-300",
-              ];
+          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {features.map((feature, idx) => {
+              const FeatureIcon = FEATURE_ICONS[feature.id] || Layers;
               return (
-                <FadeIn key={item.id} delay={idx * 0.08} className="flex">
-                  <div className="glass-panel group relative flex w-full flex-col justify-between overflow-hidden rounded-[24px] border border-white/[0.08] p-7 transition-all duration-300 hover:border-brand/35 hover:glow-brand-sm sm:p-8">
+                <FadeIn key={feature.id} delay={idx * 0.07} className="flex">
+                  <div className="glass-panel group relative flex w-full flex-col justify-between overflow-hidden rounded-[24px] border border-[#B9CFC3] p-7 transition-all duration-300 hover:border-brand/40 hover:glow-brand-sm sm:p-8">
+                    <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                     <div className="space-y-4">
                       <div className="flex items-center justify-between">
-                        <div className={cn("flex size-12 items-center justify-center rounded-2xl border", badgeColors[idx % badgeColors.length])}>
-                          <BenefitIcon className="size-6" />
-                        </div>
-                        <span className="rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-xs font-semibold text-brand">
-                          {item.highlight}
+                        <div className="flex size-12 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30">
+                          <FeatureIcon className="size-6" />
+                      </div>
+                        <span className="font-mono text-xs font-bold text-[#4A5C53]">
+                          0{idx + 1}
                         </span>
                       </div>
                       <div className="pt-2">
-                        <span className="font-mono text-xs font-bold text-zinc-500">
-                          0{idx + 1}
+                        <h3 className="font-heading text-lg sm:text-xl font-semibold text-[#0F1A15]">
+                        {feature.title}
+                      </h3>
+                      </div>
+                      <p className="text-sm leading-relaxed text-[#4A5C53]">
+                        {feature.description}
+                      </p>
+
+                      {feature.bullets && feature.bullets.length > 0 && (
+                        <ul className="mt-4 space-y-2 pt-3 border-t border-[#B9CFC3]">
+                          {feature.bullets.map((b, bIdx) => (
+                            <li
+                              key={bIdx}
+                              className="flex items-start gap-2 text-xs sm:text-sm text-[#1F2E27]"
+                            >
+                              <CheckCircle2 className="size-4 shrink-0 text-brand mt-0.5" />
+                              <span>{b}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </div>
+                </FadeIn>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* 3. How It Works: Chưa biết quay hay edit? Chỉ 3 bước đơn giản */}
+      <section
+        id="how-it-works"
+        className="scroll-mt-[72px] border-t border-[#B9CFC3] section-band-wash px-4 py-20 sm:px-6 md:py-28 lg:px-8 relative overflow-hidden"
+      >
+        <div className="mx-auto min-w-0 max-w-[1200px]">
+          <FadeIn className="mx-auto max-w-3xl text-center">
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-brand-mist bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand-deep">
+              <Play className="size-3.5 fill-current" />
+              <span>{howItWorks.label}</span>
+            </div>
+            <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem] md:tracking-[-1px]">
+              {howItWorks.title}
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-[#4A5C53] md:text-lg">
+              {howItWorks.subtitle}
+            </p>
+          </FadeIn>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {howItWorks.steps?.map((step, idx) => {
+              const stepIcons = [Video, Scissors, Upload];
+              const StepIcon = stepIcons[idx % stepIcons.length];
+              return (
+                <FadeIn key={step.num} delay={idx * 0.08} className="flex">
+                  <div className="glass-panel group relative flex w-full flex-col justify-between overflow-hidden rounded-[24px] border border-[#B9CFC3] p-7 transition-all duration-300 hover:border-brand/40 hover:glow-brand-sm sm:p-8">
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between">
+                        <div className="flex size-12 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/25">
+                          <StepIcon className="size-6" />
+                        </div>
+                        <span className="rounded-full border border-brand-mist bg-brand/10 px-3 py-1 text-xs font-medium text-brand-deep">
+                          {step.badge}
                         </span>
-                        <h3 className="font-heading mt-1 text-xl font-semibold text-white">
-                          {item.title}
+                      </div>
+                      <div className="pt-2">
+                        <span className="font-mono text-xs font-bold uppercase tracking-wider text-brand">
+                          Bước {step.num}
+                        </span>
+                        <h3 className="font-heading mt-1 text-lg sm:text-xl font-semibold text-[#0F1A15]">
+                          {step.title}
                         </h3>
                       </div>
-                      <p className="text-sm leading-relaxed text-zinc-400">
-                        {item.desc}
+                      <p className="text-sm leading-relaxed text-[#4A5C53]">
+                        {step.desc}
                       </p>
                     </div>
                   </div>
@@ -1143,235 +662,219 @@ export function LandingPage() {
         </div>
       </section>
 
+      {/* Brand Sponsors */}
+      {sponsors && (
+        <section
+          id="sponsors"
+          className="scroll-mt-[72px] border-t border-[#B9CFC3] section-band-mint px-4 py-20 sm:px-6 md:py-28 lg:px-8"
+        >
+          <div className="mx-auto min-w-0 max-w-[1200px]">
+            <FadeIn className="mx-auto max-w-2xl text-center">
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand">
+                <Building2 className="size-3.5" />
+                <span>{sponsors.label}</span>
+              </div>
+              <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem] md:tracking-[-1px]">
+                {sponsors.title}
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-[#4A5C53] md:text-lg">
+                {sponsors.subtitle}
+              </p>
+            </FadeIn>
 
-      {/* 5. Brand Sponsors Section (Tab & Contact Form For Brands) */}
-      <section
-        id="sponsors"
-        className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8 bg-gradient-to-b from-black/60 to-black/80"
-      >
-        <div className="mx-auto min-w-0 max-w-[1200px]">
-          <FadeIn className="mx-auto max-w-2xl text-center">
-            <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand">
-              <Building2 className="size-3.5" />
-              <span>{sponsors.label}</span>
+            <div className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+              {sponsors.stats?.map((stat, idx) => (
+                <FadeIn key={stat.label} delay={idx * 0.05}>
+                  <div className="rounded-[20px] surface-card p-5 text-center">
+                    <span className="block font-heading font-mono text-xl font-bold text-gradient-brand sm:text-2xl">
+                      {stat.value}
+                    </span>
+                    <span className="mt-1 block text-xs text-[#4A5C53] sm:text-sm">
+                      {stat.label}
+                    </span>
+                  </div>
+                </FadeIn>
+              ))}
             </div>
-            <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
-              {sponsors.title}
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-zinc-400 md:text-lg">
-              {sponsors.subtitle}
-            </p>
-          </FadeIn>
 
-          {/* Quick Metrics */}
-          <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
-            {sponsors.stats?.map((stat, idx) => (
-              <FadeIn key={stat.label} delay={idx * 0.05}>
-                <div className="rounded-[20px] border border-white/[0.08] bg-white/[0.02] p-5 text-center">
-                  <span className="block font-heading text-2xl sm:text-3xl font-bold text-brand font-mono">
-                    {stat.value}
-                  </span>
-                  <span className="mt-1 block text-xs sm:text-sm text-zinc-400">
-                    {stat.label}
-                  </span>
+            <div className="mt-14 grid items-start gap-8 lg:grid-cols-12">
+              <FadeIn className="space-y-6 lg:col-span-5">
+                <div className="glass-panel rounded-[24px] border border-[#B9CFC3] p-7 sm:p-8">
+                  <h3 className="font-heading mb-5 text-xl font-semibold text-[#0F1A15]">
+                    {sponsors.benefitsTitle}
+                  </h3>
+                  <ul className="space-y-4">
+                    {sponsors.benefits?.map((benefit, i) => (
+                      <li key={i} className="flex items-start gap-3 text-sm text-[#1F2E27]">
+                        <div className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/15 text-brand">
+                          <Check className="size-3.5" strokeWidth={3} />
+                        </div>
+                        <span>{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-8 space-y-3 border-t border-[#B9CFC3] pt-6">
+                    <p className="text-xs font-medium text-[#4A5C53]">
+                      {sponsors.form.directContact}
+                    </p>
+                    <a
+                      href={gmailComposeUrl(sponsors.form.emailText)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => {
+                        trackDirectContact({
+                          method: "email",
+                          target: sponsors.form.emailText,
+                        });
+                        trackCtaClick({
+                          cta_id: "sponsor_email_direct",
+                          cta_location: "sponsor_section",
+                          cta_text: sponsors.form.emailText,
+                          cta_category: "lead_sponsor",
+                          destination_url: gmailComposeUrl(sponsors.form.emailText),
+                        });
+                      }}
+                      aria-label={sponsors.form.emailAria}
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:underline"
+                    >
+                      <Mail className="size-4" />
+                      <span>{sponsors.form.emailText}</span>
+                    </a>
+                  </div>
                 </div>
               </FadeIn>
-            ))}
-          </div>
 
-          {/* Benefits + Interactive Form */}
-          <div className="mt-14 grid gap-8 lg:grid-cols-12 items-start">
-            {/* Left: Benefits */}
-            <FadeIn className="lg:col-span-5 space-y-6">
-              <div className="glass-panel rounded-[24px] border border-white/[0.08] p-7 sm:p-8">
-                <h3 className="font-heading text-xl font-semibold text-white mb-5">
-                  {sponsors.benefitsTitle}
-                </h3>
-                <ul className="space-y-4">
-                  {sponsors.benefits?.map((benefit, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm text-zinc-300">
-                      <div className="size-5 shrink-0 rounded-full bg-brand/15 text-brand flex items-center justify-center mt-0.5">
-                        <Check className="size-3.5" strokeWidth={3} />
-                      </div>
-                      <span>{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
+              <FadeIn delay={0.08} className="lg:col-span-7">
+                <div className="rounded-[24px] surface-card p-6 sm:p-8">
+                  <h3 className="font-heading text-xl font-semibold text-[#0F1A15]">
+                    {sponsors.form.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-[#4A5C53]">{sponsors.form.desc}</p>
 
-                <div className="mt-8 pt-6 border-t border-white/[0.08] space-y-3">
-                  <p className="text-xs text-zinc-400 font-medium">
-                    {sponsors.form.directContact}
-                  </p>
-                  <a
-                    href={gmailComposeUrl(sponsors.form.emailText)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => {
-                      trackDirectContact({
-                        method: "email",
-                        target: sponsors.form.emailText,
-                      });
-                      trackCtaClick({
-                        cta_id: "sponsor_direct_email",
-                        cta_location: "sponsor_section",
-                        cta_text: sponsors.form.emailText,
-                        cta_category: "external_resource",
-                        destination_url: gmailComposeUrl(
-                          sponsors.form.emailText,
-                        ),
-                      });
-                    }}
-                    aria-label={sponsors.form.emailAria}
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:underline"
-                  >
-                    <Mail className="size-4" />
-                    <span>{sponsors.form.emailText}</span>
-                  </a>
-                </div>
-              </div>
-            </FadeIn>
-
-            {/* Right: Contact Form */}
-            <FadeIn className="lg:col-span-7">
-              <div className="glass-panel rounded-[24px] border border-brand/30 bg-brand/[0.02] p-7 sm:p-9 shadow-xl">
-                <h3 className="font-heading text-xl font-semibold text-white">
-                  {sponsors.form.title}
-                        </h3>
-                <p className="mt-1.5 text-xs sm:text-sm text-zinc-400">
-                  {sponsors.form.desc}
-                </p>
-
-                {sponsorSubmitted ? (
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    className="mt-8 rounded-2xl border border-brand/50 bg-brand/10 p-6 text-center space-y-3"
-                  >
-                    <div className="size-12 rounded-full bg-brand text-[#050507] flex items-center justify-center mx-auto">
-                      <Check className="size-6" strokeWidth={3} />
-                    </div>
-                    <h4 className="font-heading text-lg font-bold text-white">
-                      Đã gửi thành công!
-                    </h4>
-                    <p className="text-sm text-zinc-300">
+                  {sponsorSubmitted ? (
+                    <div className="mt-8 rounded-2xl border border-brand/30 bg-brand/10 p-6 text-sm font-medium text-brand-forest">
                       {sponsors.form.successMessage}
-                    </p>
-                  </motion.div>
-                ) : (
-                  <form onSubmit={handleSponsorSubmit} className="mt-7 space-y-4">
-                    <div className="grid gap-4 sm:grid-cols-2">
-                      <div>
-                        <label className="block text-xs font-medium text-zinc-300 mb-1.5">
-                          {sponsors.form.brandNameLabel} *
-                        </label>
-                        <input
-                          type="text"
-                          required
-                          value={formData.brandName}
-                          onChange={(e) => setFormData({ ...formData, brandName: e.target.value })}
-                          placeholder={sponsors.form.brandNamePlaceholder}
-                          className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
-                        />
-                      </div>
-                      <div>
-                        <label className="block text-xs font-medium text-zinc-300 mb-1.5">
-                          {sponsors.form.contactNameLabel} *
-                        </label>
-                        <input
-                          type="text"
-                          required
-                          value={formData.contactName}
-                          onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
-                          placeholder={sponsors.form.contactNamePlaceholder}
-                          className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
-                        />
-                      </div>
                     </div>
-
-                    <div className="grid gap-4 sm:grid-cols-2">
-                      <div>
-                        <label className="block text-xs font-medium text-zinc-300 mb-1.5">
-                          {sponsors.form.emailLabel} *
+                  ) : (
+                    <form onSubmit={handleSponsorSubmit} className="mt-6 space-y-4">
+                      <div className="grid gap-4 sm:grid-cols-2">
+                        <label className="block space-y-1.5 text-sm">
+                          <span className="font-medium text-[#1F2E27]">
+                            {sponsors.form.brandNameLabel} *
+                          </span>
+                          <input
+                            required
+                            value={formData.brandName}
+                            onChange={(e) =>
+                              setFormData((s) => ({ ...s, brandName: e.target.value }))
+                            }
+                            placeholder={sponsors.form.brandNamePlaceholder}
+                            className="w-full rounded-xl border border-[#B9CFC3] bg-white px-4 py-2.5 text-sm text-[#0F1A15] placeholder:text-[#4A5C53] focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                          />
                         </label>
-                        <input
-                          type="email"
-                          required
-                          value={formData.email}
-                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          placeholder={sponsors.form.emailPlaceholder}
-                          className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
-                        />
-                      </div>
-                      <div>
-                        <label className="block text-xs font-medium text-zinc-300 mb-1.5">
-                          {sponsors.form.phoneLabel} *
+                        <label className="block space-y-1.5 text-sm">
+                          <span className="font-medium text-[#1F2E27]">
+                            {sponsors.form.contactNameLabel} *
+                          </span>
+                          <input
+                            required
+                            value={formData.contactName}
+                            onChange={(e) =>
+                              setFormData((s) => ({ ...s, contactName: e.target.value }))
+                            }
+                            placeholder={sponsors.form.contactNamePlaceholder}
+                            className="w-full rounded-xl border border-[#B9CFC3] bg-white px-4 py-2.5 text-sm text-[#0F1A15] placeholder:text-[#4A5C53] focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                          />
                         </label>
-                        <input
-                          type="tel"
-                          required
-                          value={formData.phone}
-                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          placeholder={sponsors.form.phonePlaceholder}
-                          className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
-                        />
+                        <label className="block space-y-1.5 text-sm">
+                          <span className="font-medium text-[#1F2E27]">
+                            {sponsors.form.emailLabel} *
+                          </span>
+                          <input
+                            required
+                            type="email"
+                            value={formData.email}
+                            onChange={(e) =>
+                              setFormData((s) => ({ ...s, email: e.target.value }))
+                            }
+                            placeholder={sponsors.form.emailPlaceholder}
+                            className="w-full rounded-xl border border-[#B9CFC3] bg-white px-4 py-2.5 text-sm text-[#0F1A15] placeholder:text-[#4A5C53] focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                          />
+                        </label>
+                        <label className="block space-y-1.5 text-sm">
+                          <span className="font-medium text-[#1F2E27]">
+                            {sponsors.form.phoneLabel} *
+                          </span>
+                          <input
+                            required
+                            value={formData.phone}
+                            onChange={(e) =>
+                              setFormData((s) => ({ ...s, phone: e.target.value }))
+                            }
+                            placeholder={sponsors.form.phonePlaceholder}
+                            className="w-full rounded-xl border border-[#B9CFC3] bg-white px-4 py-2.5 text-sm text-[#0F1A15] placeholder:text-[#4A5C53] focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                          />
+                        </label>
                       </div>
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-medium text-zinc-300 mb-1.5">
-                        {sponsors.form.budgetLabel}
+                      <label className="block space-y-1.5 text-sm">
+                        <span className="font-medium text-[#1F2E27]">
+                          {sponsors.form.budgetLabel}
+                        </span>
+                        <select
+                          value={formData.budget}
+                          onChange={(e) =>
+                            setFormData((s) => ({ ...s, budget: e.target.value }))
+                          }
+                          className="w-full rounded-xl border border-[#B9CFC3] bg-white px-4 py-2.5 text-sm text-[#0F1A15] focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                        >
+                          <option value="">—</option>
+                          {sponsors.form.budgetOptions?.map((opt) => (
+                            <option key={opt} value={opt}>
+                              {opt}
+                            </option>
+                          ))}
+                        </select>
                       </label>
-                      <select
-                        value={formData.budget}
-                        onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                        className="w-full rounded-xl border border-white/10 bg-[#0c0c10] px-4 py-2.5 text-sm text-white focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                      <label className="block space-y-1.5 text-sm">
+                        <span className="font-medium text-[#1F2E27]">
+                          {sponsors.form.noteLabel}
+                        </span>
+                        <textarea
+                          rows={3}
+                          value={formData.note}
+                          onChange={(e) =>
+                            setFormData((s) => ({ ...s, note: e.target.value }))
+                          }
+                          placeholder={sponsors.form.notePlaceholder}
+                          className="w-full resize-none rounded-xl border border-[#B9CFC3] bg-white px-4 py-2.5 text-sm text-[#0F1A15] placeholder:text-[#4A5C53] focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+                        />
+                      </label>
+                      <button
+                        type="submit"
+                        disabled={sponsorLoading}
+                        className={cn(
+                          buttonVariants({ variant: "default", size: "lg" }),
+                          "w-full rounded-xl border-0 bg-brand py-3 text-sm font-semibold text-[#052E1C] glow-brand-sm transition-all hover:bg-brand hover:glow-brand-lg",
+                          sponsorLoading && "cursor-not-allowed opacity-75",
+                        )}
                       >
-                        <option value="">-- Chọn ngân sách --</option>
-                        {sponsors.form.budgetOptions?.map((opt) => (
-                          <option key={opt} value={opt}>
-                            {opt}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-medium text-zinc-300 mb-1.5">
-                        {sponsors.form.noteLabel}
-                      </label>
-                      <textarea
-                        rows={3}
-                        value={formData.note}
-                        onChange={(e) => setFormData({ ...formData, note: e.target.value })}
-                        placeholder={sponsors.form.notePlaceholder}
-                        className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand resize-none"
-                      />
-                    </div>
-
-                    <button
-                      type="submit"
-                      disabled={sponsorLoading}
-                      className={cn(
-                        buttonVariants({ variant: "default", size: "lg" }),
-                        "w-full rounded-xl border-0 bg-brand py-3 text-sm font-semibold text-[#050507] glow-brand-sm hover:bg-brand hover:glow-brand-lg transition-all",
-                        sponsorLoading && "opacity-75 cursor-not-allowed",
-                      )}
-                    >
-                      <Send className="mr-2 size-4" />
-                      {sponsorLoading ? "Đang gửi..." : sponsors.form.submitButton}
-                    </button>
-                  </form>
-                )}
-                    </div>
-            </FadeIn>
+                        <Send className="mr-2 size-4" />
+                        {sponsorLoading ? "…" : sponsors.form.submitButton}
+                      </button>
+                    </form>
+                  )}
+                </div>
+              </FadeIn>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
+
 
       {/* 5. FAQ Section */}
       <section
         id="faq"
-        className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8 bg-zinc-950/60"
+        className="scroll-mt-[72px] border-t border-[#B9CFC3] section-band-raised px-4 py-20 sm:px-6 md:py-28 lg:px-8"
       >
         <div className="mx-auto min-w-0 max-w-[860px]">
           <FadeIn className="text-center">
@@ -1379,10 +882,10 @@ export function LandingPage() {
               <HelpCircle className="size-3.5" />
               <span>{faq.label}</span>
             </div>
-            <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
+            <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem] md:tracking-[-1px]">
               {faq.title}
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-zinc-400 md:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-[#4A5C53] md:text-lg">
               {faq.subtitle}
             </p>
           </FadeIn>
@@ -1392,24 +895,24 @@ export function LandingPage() {
               const isOpen = openFaq === item.id;
               return (
                 <FadeIn key={item.id} delay={idx * 0.05}>
-                  <div className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm transition-all hover:border-white/20">
+                  <div className="rounded-2xl surface-card transition-all hover:border-brand-mist hover:glow-brand-sm">
                     <button
                       type="button"
                       onClick={() => setOpenFaq(isOpen ? null : item.id)}
                       className="flex w-full items-center justify-between gap-4 p-5 sm:p-6 text-left"
                     >
-                      <span className="font-heading text-base sm:text-lg font-semibold text-white">
+                      <span className="font-heading text-base sm:text-lg font-semibold text-[#0F1A15]">
                         {item.question}
                       </span>
                       <ChevronDown
                         className={cn(
-                          "size-5 shrink-0 text-zinc-400 transition-transform duration-300",
+                          "size-5 shrink-0 text-[#4A5C53] transition-transform duration-300",
                           isOpen && "rotate-180 text-brand",
                         )}
                       />
                     </button>
                     {isOpen && (
-                      <div className="border-t border-white/[0.06] px-5 pb-5 sm:px-6 sm:pb-6 pt-3 text-sm leading-relaxed text-zinc-300">
+                      <div className="border-t border-[#B9CFC3] px-5 pb-5 sm:px-6 sm:pb-6 pt-3 text-sm leading-relaxed text-[#1F2E27]">
                         {item.answer}
                     </div>
                     )}
@@ -1421,247 +924,6 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* 7. Download Section */}
-      <section
-        id="download"
-        className="scroll-mt-[72px] border-t border-white/[0.07] px-4 py-20 sm:px-6 md:py-28 lg:px-8"
-      >
-        <div className="mx-auto min-w-0 max-w-[1200px]">
-          <FadeIn className="mx-auto max-w-2xl text-center">
-            <p className="text-sm font-medium text-zinc-400">
-              {t("downloadSection.label")}
-            </p>
-            <h2 className="font-heading mt-3 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem]">
-              {t("downloadSection.title")}
-              </h2>
-            <p className="mt-5 text-base leading-relaxed text-zinc-400 md:text-lg">
-              {t("downloadSection.subtitle", { version: DISPLAY_APP_VERSION })}
-            </p>
-          </FadeIn>
-
-          <div className="mt-14 space-y-16">
-            {/* Desktop Section: Downloads + Quick Installation Guide */}
-            <div>
-              <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-                <div>
-                  <h3 className="text-base font-semibold text-white sm:text-lg">
-                    {t("downloadSection.desktopLabel")}
-                  </h3>
-                  <p className="mt-1 text-xs text-zinc-400">
-                    macOS (Apple Silicon & Intel) · Windows (10 / 11)
-                  </p>
-                </div>
-                <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold text-brand">
-                  <Download className="size-3.5" />
-                  <span>{install.title}</span>
-                </div>
-            </div>
-
-              {/* 3 Desktop Download Cards */}
-              <div className="grid grid-cols-1 items-stretch gap-5 md:grid-cols-2 lg:grid-cols-3">
-                {DESKTOP_DOWNLOAD_ASSETS.map((asset, index) => (
-                  <DownloadCard
-                    key={asset.id}
-                    asset={asset}
-                    card={downloadCards[asset.id]}
-                    ctaLabel={t("downloadSection.ctaDownloads")}
-                    comingSoonLabel={t("downloadSection.comingSoon")}
-                    delay={index * 0.05}
-                  />
-                ))}
-              </div>
-
-              {/* Desktop Install Guide - Directly connected to desktop downloads */}
-              <div
-                id="install-guide"
-                className="mt-6 scroll-mt-[72px] grid gap-6 md:grid-cols-2 md:gap-8"
-              >
-                <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
-                  <h4 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
-                  <span
-                      className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10 transition-transform hover:scale-105 cursor-help"
-                      title="Apple macOS"
-                      aria-label="Apple macOS"
-                  >
-                      <AppleIcon className="size-[1.35rem]" title="Apple macOS" />
-                  </span>
-                  <span className="min-w-0 flex-1 leading-snug pt-0.5">
-                    {install.macTitle}
-                  </span>
-                  </h4>
-                  <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-zinc-500">
-                  {install.macSteps.map((step, i) => (
-                    <li key={`mac-${i}`}>{step}</li>
-                  ))}
-                </ol>
-                <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between sm:gap-2">
-                  <p className="min-w-0 text-sm font-medium leading-snug text-zinc-300">
-                    {install.macCommandLabel}
-                  </p>
-                  <button
-                    type="button"
-                    onClick={() => void copyMacCommand()}
-                    className={cn(
-                      "inline-flex w-fit shrink-0 items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] font-semibold transition-colors",
-                      macCommandCopied
-                        ? "border-brand/50 bg-brand/15 text-brand"
-                          : "border-white/[0.12] bg-white/[0.04] text-zinc-300 hover:border-white/25 hover:bg-white/[0.07] hover:text-white",
-                    )}
-                    aria-label={install.copyCommandLabel}
-                  >
-                    {macCommandCopied ? (
-                      <Check className="size-3.5 shrink-0" aria-hidden />
-                    ) : (
-                      <Copy className="size-3.5 shrink-0" aria-hidden />
-                    )}
-                    {macCommandCopied
-                      ? install.copiedCommandLabel
-                      : install.copyCommandLabel}
-                  </button>
-                </div>
-                <pre
-                    className="mt-2 max-w-full overflow-x-auto rounded-xl border border-white/[0.08] bg-[#0a0a0c] p-3 font-mono text-[11px] leading-snug text-zinc-300 sm:p-4 sm:text-[12px] md:text-[13px]"
-                  tabIndex={0}
-                >
-                  <code className="break-all whitespace-pre-wrap sm:break-normal sm:whitespace-pre">
-                    {install.macCommand}
-                  </code>
-                </pre>
-              </div>
-
-                <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
-                  <h4 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
-                  <span
-                      className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10 transition-transform hover:scale-105 cursor-help"
-                      title="Microsoft Windows"
-                      aria-label="Microsoft Windows"
-                  >
-                      <WindowsIcon className="size-[1.2rem]" title="Microsoft Windows" />
-                  </span>
-                  <span className="min-w-0 flex-1 leading-snug pt-0.5">
-                    {install.winTitle}
-                  </span>
-                  </h4>
-                  <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-zinc-500">
-                  {install.winSteps.map((step, i) => (
-                    <li key={`win-${i}`}>{step}</li>
-                  ))}
-                </ol>
-              </div>
-            </div>
-            </div>
-
-            {/* Mobile Section: Downloads + Quick Installation Guide */}
-            <div className="border-t border-white/[0.08] pt-12">
-              <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-                <div>
-                  <h3 className="text-base font-semibold text-white sm:text-lg">
-                    {t("downloadSection.mobileLabel")}
-                  </h3>
-                  <p className="mt-1 text-xs text-zinc-400">
-                    iOS (iPhone & iPad) · Android
-                  </p>
-                </div>
-                <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold text-brand">
-                  <Smartphone className="size-3.5" />
-                  <span>{install.title}</span>
-                </div>
-              </div>
-
-              {/* 2 Mobile Download Cards */}
-              <div className="grid grid-cols-1 items-stretch gap-5 md:grid-cols-2">
-                {MOBILE_DOWNLOAD_ASSETS.map((asset, index) => (
-                  <DownloadCard
-                    key={asset.id}
-                    asset={asset}
-                    card={downloadCards[asset.id]}
-                    ctaLabel={t("downloadSection.ctaStore")}
-                    comingSoonLabel={t("downloadSection.comingSoon")}
-                    delay={index * 0.05}
-                  />
-                ))}
-              </div>
-
-              {/* Mobile Install Guide - Directly connected to mobile downloads */}
-              <div className="mt-6 grid gap-6 md:grid-cols-2 md:gap-8">
-                <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
-                  <h4 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
-                    <span
-                      className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10 transition-transform hover:scale-105 cursor-help"
-                      title="Apple (iOS / App Store)"
-                      aria-label="Apple iOS"
-                    >
-                      <AppleIcon className="size-[1.35rem]" title="Apple (iOS)" />
-                    </span>
-                    <span className="min-w-0 flex-1 leading-snug pt-0.5">
-                      {install.iosTitle}
-                    </span>
-                  </h4>
-                  <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-zinc-500">
-                    {install.iosSteps.map((step, i) => (
-                      <li key={`ios-${i}`}>{step}</li>
-                    ))}
-                  </ol>
-                </div>
-
-                <div className="min-w-0 rounded-[24px] border border-white/[0.08] bg-white/[0.02] p-5 sm:p-7 md:p-8">
-                  <h4 className="flex items-start gap-3 font-heading text-lg font-semibold tracking-[-0.2px] text-white md:text-xl">
-                    <span
-                      className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-white/[0.06] text-zinc-200 ring-1 ring-white/10 gap-1"
-                    >
-                      <span
-                        title="Android"
-                        aria-label="Android"
-                        className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
-                      >
-                        <AndroidIcon className="size-[1.15rem]" title="Android" />
-                      </span>
-                      <span
-                        title="Google Play"
-                        aria-label="Google Play"
-                        className="inline-flex items-center justify-center transition-transform hover:scale-110 cursor-help"
-                      >
-                        <GooglePlayIcon className="size-[1.05rem]" title="Google Play" />
-                      </span>
-                    </span>
-                    <span className="min-w-0 flex-1 leading-snug pt-0.5">
-                      {install.androidTitle}
-                    </span>
-                  </h4>
-                  <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-zinc-400 marker:text-zinc-500">
-                    {install.androidSteps.map((step, i) => (
-                      <li key={`android-${i}`}>{step}</li>
-                    ))}
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <FadeIn className="mt-14 px-1 text-center sm:px-0">
-            <a
-              href={githubReleasesTagPageUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => {
-                trackCtaClick({
-                  cta_id: "github_all_releases",
-                  cta_location: "download_github",
-                  cta_text: t("downloadSection.githubAll"),
-                  cta_category: "external_resource",
-                  destination_url: githubReleasesTagPageUrl(),
-                });
-              }}
-              className={cn(
-                buttonVariants({ variant: "outline", size: "lg" }),
-                "inline-flex w-full max-w-md justify-center rounded-full border-white/20 bg-white/[0.04] px-6 py-3 text-[15px] font-medium text-white backdrop-blur-sm hover:bg-white/[0.09] hover:text-white sm:w-auto sm:max-w-none sm:px-10",
-              )}
-            >
-              {t("downloadSection.githubAll")}
-            </a>
-          </FadeIn>
-        </div>
-      </section>
     </>
   );
 }

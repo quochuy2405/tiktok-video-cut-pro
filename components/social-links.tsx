@@ -53,7 +53,7 @@ export const SOCIAL_ITEMS = [
     href: SOCIAL_LINKS.threads,
     handle: "@fivecutpro",
     Icon: ThreadsIcon,
-    hoverColor: "hover:text-white hover:border-white/40 hover:bg-white/[0.08]",
+    hoverColor: "hover:text-[#18231D] hover:border-[#8DDBAE] hover:bg-[#F5F7F6]",
   },
   {
     name: "Instagram",
@@ -94,7 +94,7 @@ export function SocialLinks({
             title={`${name} (@fivecutpro)`}
             aria-label={`Theo dõi Five Cut Pro trên ${name}`}
             className={cn(
-              "flex size-8 items-center justify-center rounded-lg border border-white/10 bg-white/[0.03] text-zinc-400 transition-all duration-200",
+              "flex size-8 items-center justify-center rounded-lg border border-[#D8E5DD] bg-white text-[#6B7A72] shadow-card-mint transition-all duration-200",
               hoverColor,
             )}
           >
@@ -116,13 +116,13 @@ export function SocialLinks({
           title={`${name} ${handle}`}
           aria-label={`Theo dõi Five Cut Pro trên ${name}`}
           className={cn(
-            "group inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-3 py-2 text-xs font-medium text-zinc-300 transition-all duration-200",
+            "group inline-flex items-center gap-2 rounded-xl border border-[#D8E5DD] bg-white px-3 py-2 text-xs font-medium text-[#334039] shadow-card-mint transition-all duration-200",
             hoverColor,
           )}
         >
-          <Icon className="size-4 text-zinc-400 transition-colors group-hover:text-inherit" />
+          <Icon className="size-4 text-[#6B7A72] transition-colors group-hover:text-inherit" />
           {showLabel ? (
-            <span className="font-medium text-zinc-300 transition-colors group-hover:text-inherit">
+            <span className="font-medium text-[#334039] transition-colors group-hover:text-inherit">
               {name}
             </span>
           ) : null}

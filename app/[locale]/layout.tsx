@@ -173,7 +173,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       suppressHydrationWarning
-      className={`dark ${inter.variable} ${ibmPlexMono.variable} h-full scroll-smooth antialiased`}
+      className={`${inter.variable} ${ibmPlexMono.variable} h-full scroll-smooth antialiased`}
     >
       <body
         className="flex min-h-full flex-col bg-background font-sans text-foreground"

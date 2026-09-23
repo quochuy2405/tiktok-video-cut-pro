@@ -184,19 +184,20 @@ export async function fetchWebMarketingPayload(): Promise<{
   stripSlides: MarketingBannerSlide[];
   popupSlides: MarketingBannerSlide[];
 }> {
-  // Web landing "Mẫu & chiến dịch" = common_banner (Trang Chủ & Chợ / campaigns).
-  // Do NOT use banner_login here — that slot is sign-in + in-app Explore only.
-  // Launch popup also uses common_banner (same as mobile dashboard popup).
-  const common = await fetchMarketingBanners(MARKETING_BANNER_TYPES.common);
-  const slides = flattenBannerSlides(common, MARKETING_BANNER_TYPES.common);
+  const [login, common] = await Promise.all([
+    fetchMarketingBanners(MARKETING_BANNER_TYPES.login),
+    fetchMarketingBanners(MARKETING_BANNER_TYPES.common),
+  ]);
   return {
-    stripSlides: slides,
-    popupSlides: slides,
+    // Strip "Mẫu & chiến dịch" — chỉ `banner_login` (giống Explore trên app)
+    stripSlides: flattenBannerSlides(login, MARKETING_BANNER_TYPES.login),
+    // Popup giữa màn — chỉ `common_banner`
+    popupSlides: flattenBannerSlides(common, MARKETING_BANNER_TYPES.common),
   };
 }
 
 /** @deprecated Prefer fetchWebMarketingPayload for mobile-parity layouts. */
 export async function fetchWebMarketingSlides(): Promise<MarketingBannerSlide[]> {
-  const { stripSlides } = await fetchWebMarketingPayload();
-  return stripSlides;
+  const { stripSlides, popupSlides } = await fetchWebMarketingPayload();
+  return [...stripSlides, ...popupSlides];
 }

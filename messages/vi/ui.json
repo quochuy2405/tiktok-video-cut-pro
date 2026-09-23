@@ -66,6 +66,33 @@
     "contactBlurb": "Liên hệ để mua giấy phép hoặc nhận hỗ trợ kỹ thuật:",
     "contactEmail": "support@fivecutpro.com",
     "contactEmailAria": "Gửi email tới support@fivecutpro.com",
-    "copyrightBody": "Five Cut Pro"
+    "copyrightBody": "Five Cut Pro",
+    "deleteAccountLink": "Xóa tài khoản"
+  },
+  "DeleteAccount": {
+    "metaTitle": "Xóa tài khoản — Five Cut Pro",
+    "metaDescription": "Gửi yêu cầu xóa/deactivate tài khoản Five Cut Pro. Yêu cầu được chấp nhận ngay; tài khoản sẽ được deactivate trong vòng 7 ngày.",
+    "categoryLabel": "Tài khoản",
+    "title": "Xóa tài khoản",
+    "intro": "Dùng form này để yêu cầu xóa tài khoản Five Cut Pro theo chính sách App Store / Google Play. Yêu cầu được chấp nhận ngay (auto success).",
+    "point1": "Yêu cầu được ghi nhận và chấp nhận ngay khi gửi thành công.",
+    "point2": "Trong vòng 7 ngày, tài khoản sẽ được deactivate (vô hiệu hóa đăng nhập) — mặc định không hard-delete dữ liệu.",
+    "point3": "Bạn có thể liên hệ support@fivecutpro.com nếu gửi nhầm hoặc muốn hủy trước khi deactivate.",
+    "formTitle": "Gửi yêu cầu",
+    "formDesc": "Nhập email đã dùng để đăng ký / đăng nhập Five Cut Pro.",
+    "emailLabel": "Email tài khoản",
+    "emailPlaceholder": "ban@email.com",
+    "nameLabel": "Tên hiển thị (tuỳ chọn)",
+    "namePlaceholder": "Tên trên app",
+    "reasonLabel": "Lý do (tuỳ chọn)",
+    "reasonPlaceholder": "Vì sao bạn muốn xóa tài khoản?",
+    "confirmLabel": "Tôi xác nhận muốn yêu cầu xóa/deactivate tài khoản Five Cut Pro gắn với email trên. Tôi hiểu yêu cầu được chấp nhận ngay và tài khoản sẽ bị vô hiệu hóa trong vòng 7 ngày.",
+    "submit": "Gửi yêu cầu xóa tài khoản",
+    "submitting": "Đang gửi…",
+    "successTitle": "Đã nhận yêu cầu",
+    "successBody": "Yêu cầu của bạn đã được chấp nhận. Tài khoản sẽ được deactivate trong vòng 7 ngày. Mặc định chúng tôi không hard-delete dữ liệu.",
+    "errorGeneric": "Không gửi được yêu cầu. Vui lòng thử lại hoặc email support@fivecutpro.com.",
+    "supportPrefix": "Cần hỗ trợ?",
+    "privacyLink": "Chính sách quyền riêng tư"
   }
 }

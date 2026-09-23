@@ -65,6 +65,33 @@
     "contactBlurb": "For commercial licenses or technical support:",
     "contactEmail": "support@fivecutpro.com",
     "contactEmailAria": "Send email to support@fivecutpro.com",
-    "copyrightBody": "Five Cut Pro"
+    "copyrightBody": "Five Cut Pro",
+    "deleteAccountLink": "Delete account"
+  },
+  "DeleteAccount": {
+    "metaTitle": "Delete account — Five Cut Pro",
+    "metaDescription": "Request deletion/deactivation of your Five Cut Pro account. Requests are accepted immediately; the account is deactivated within 7 days.",
+    "categoryLabel": "Account",
+    "title": "Delete account",
+    "intro": "Use this form to request deletion of your Five Cut Pro account (App Store / Google Play compliance). Requests are accepted immediately (auto success).",
+    "point1": "Your request is recorded and accepted as soon as it is submitted.",
+    "point2": "Within 7 days the account will be deactivated (sign-in disabled). By default we do not hard-delete data.",
+    "point3": "Email support@fivecutpro.com if this was a mistake or you want to cancel before deactivation.",
+    "formTitle": "Submit request",
+    "formDesc": "Enter the email you used to register / sign in to Five Cut Pro.",
+    "emailLabel": "Account email",
+    "emailPlaceholder": "you@email.com",
+    "nameLabel": "Display name (optional)",
+    "namePlaceholder": "Name in the app",
+    "reasonLabel": "Reason (optional)",
+    "reasonPlaceholder": "Why do you want to delete your account?",
+    "confirmLabel": "I confirm I want to request deletion/deactivation of the Five Cut Pro account for the email above. I understand the request is accepted immediately and the account will be deactivated within 7 days.",
+    "submit": "Submit deletion request",
+    "submitting": "Submitting…",
+    "successTitle": "Request accepted",
+    "successBody": "Your request has been accepted. The account will be deactivated within 7 days. By default we do not hard-delete data.",
+    "errorGeneric": "Could not submit. Please try again or email support@fivecutpro.com.",
+    "supportPrefix": "Need help?",
+    "privacyLink": "Privacy Policy"
   }
 }

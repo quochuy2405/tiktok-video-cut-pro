@@ -95,6 +95,12 @@ export function SiteFooter() {
               >
                 {t("privacyLink")}
               </Link>
+              <Link
+                href="/delete-account"
+                className="text-[#1F2E27] transition-colors hover:text-brand"
+              >
+                {t("deleteAccountLink")}
+              </Link>
             </div>
           </nav>
 

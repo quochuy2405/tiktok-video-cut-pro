@@ -19,8 +19,8 @@ type Props = {
 const SWIPE_THRESHOLD = 48;
 
 /**
- * Wide explore strip — mirrors mobile `KocExploreBanner` (banner_login, 20:9).
- * Supports mouse drag + touch swipe between slides.
+ * Wide explore strip — campaign creatives from `common_banner` (20:9).
+ * Login-slot banners (`banner_login`) are intentionally excluded on web.
  */
 export function MarketingBannerCarousel({
   slides,

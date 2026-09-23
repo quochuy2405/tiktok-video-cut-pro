@@ -10,6 +10,7 @@ export type MarketingBanner = {
   title?: string | null;
   subtitle?: string | null;
   type?: string | null;
+  placement?: string | null;
   imageUrl?: string | null;
   targetUrl?: string | null;
   displayOrder?: number | null;
@@ -97,7 +98,8 @@ function normalizeBanner(raw: unknown): MarketingBanner | null {
     id,
     title: asString(item.title),
     subtitle: asString(item.subtitle),
-    type: asString(item.type) || asString(item.placement),
+    type: asString(item.type),
+    placement: asString(item.placement),
     imageUrl,
     targetUrl,
     displayOrder:
@@ -118,11 +120,13 @@ function normalizeBanner(raw: unknown): MarketingBanner | null {
 
 export function flattenBannerSlides(
   banners: MarketingBanner[],
+  expectedType?: MarketingBannerType,
 ): MarketingBannerSlide[] {
   const slides: MarketingBannerSlide[] = [];
   const seen = new Set<string>();
   for (const banner of banners) {
     if (banner.isActive === false) continue;
+    if (expectedType && !matchesBannerType(banner, expectedType)) continue;
     for (const slide of banner.slides) {
       if (!slide.imageUrl || seen.has(slide.imageUrl)) continue;
       seen.add(slide.imageUrl);
@@ -136,6 +140,18 @@ export function flattenBannerSlides(
   return slides;
 }
 
+/** Match mobile `MarketingBannerModel.matchesSlotType`. */
+function matchesBannerType(
+  banner: MarketingBanner,
+  expectedType: MarketingBannerType,
+): boolean {
+  const t = (banner.type ?? "").trim();
+  const p = (banner.placement ?? "").trim();
+  // Typed API responses may omit type/placement — trust the endpoint.
+  if (!t && !p) return true;
+  return t === expectedType || p === expectedType;
+}
+
 /** Fetch marketing banners — same endpoint as Five Cut Pro mobile. */
 export async function fetchMarketingBanners(
   type: MarketingBannerType = MARKETING_BANNER_TYPES.common,
@@ -145,7 +161,10 @@ export async function fetchMarketingBanners(
 
   try {
     const res = await fetch(url, {
-      headers: { Accept: "application/json" },
+      headers: {
+        Accept: "application/json",
+        "User-Agent": "FiveCutProWeb/1.0",
+      },
       next: { revalidate: 300 },
     });
     if (!res.ok) return [];
@@ -154,6 +173,7 @@ export async function fetchMarketingBanners(
     return list
       .map(normalizeBanner)
       .filter((banner): banner is MarketingBanner => Boolean(banner))
+      .filter((banner) => matchesBannerType(banner, type))
       .sort((a, b) => (a.displayOrder ?? 999) - (b.displayOrder ?? 999));
   } catch {
     return [];
@@ -164,20 +184,19 @@ export async function fetchWebMarketingPayload(): Promise<{
   stripSlides: MarketingBannerSlide[];
   popupSlides: MarketingBannerSlide[];
 }> {
-  const [login, common] = await Promise.all([
-    fetchMarketingBanners(MARKETING_BANNER_TYPES.login),
-    fetchMarketingBanners(MARKETING_BANNER_TYPES.common),
-  ]);
+  // Web landing "Mẫu & chiến dịch" = common_banner (Trang Chủ & Chợ / campaigns).
+  // Do NOT use banner_login here — that slot is sign-in + in-app Explore only.
+  // Launch popup also uses common_banner (same as mobile dashboard popup).
+  const common = await fetchMarketingBanners(MARKETING_BANNER_TYPES.common);
+  const slides = flattenBannerSlides(common, MARKETING_BANNER_TYPES.common);
   return {
-    // Mobile Explore uses banner_login as wide strip (≈20:9)
-    stripSlides: flattenBannerSlides(login),
-    // Mobile launch popup uses common_banner as portrait card
-    popupSlides: flattenBannerSlides(common),
+    stripSlides: slides,
+    popupSlides: slides,
   };
 }
 
 /** @deprecated Prefer fetchWebMarketingPayload for mobile-parity layouts. */
 export async function fetchWebMarketingSlides(): Promise<MarketingBannerSlide[]> {
-  const { stripSlides, popupSlides } = await fetchWebMarketingPayload();
-  return [...stripSlides, ...popupSlides];
+  const { stripSlides } = await fetchWebMarketingPayload();
+  return stripSlides;
 }

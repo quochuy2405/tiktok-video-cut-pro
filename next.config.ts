@@ -25,12 +25,22 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/:locale/end-user-license-agreement",
-        destination: "/:locale/eula",
+        destination: "/:locale/privacy-policy",
         permanent: true,
       },
       {
         source: "/end-user-license-agreement",
-        destination: "/eula",
+        destination: "/privacy-policy",
+        permanent: true,
+      },
+      {
+        source: "/:locale/eula",
+        destination: "/:locale/privacy-policy",
+        permanent: true,
+      },
+      {
+        source: "/eula",
+        destination: "/privacy-policy",
         permanent: true,
       },
     ];

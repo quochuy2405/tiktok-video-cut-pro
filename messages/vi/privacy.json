@@ -1,116 +1,220 @@
 {
   "categoryLabel": "Pháp lý",
-  "metaTitle": "Chính sách quyền riêng tư — Five Cut Pro",
-  "metaDescription": "Mô tả chi tiết về dữ liệu thu thập, mục đích xử lý, bảo mật, quyền của chủ thể dữ liệu và các căn cứ pháp lý áp dụng.",
-  "title": "Chính sách quyền riêng tư",
+  "metaTitle": "Chính sách quyền riêng tư & EULA — Five Cut Pro",
+  "metaDescription": "Chính sách quyền riêng tư và thỏa thuận cấp phép người dùng cuối (EULA) của Five Cut Pro: dữ liệu tài khoản, TikTok, quảng cáo trong app, chia sẻ thông tin kênh với nhãn hàng, quyền và giới hạn trách nhiệm.",
+  "title": "Chính sách quyền riêng tư & EULA",
   "updatedLabel": "Cập nhật lần cuối",
-  "updatedDate": "3 tháng 5 năm 2026",
-  "lawyerNotice": "Chính sách này mô tả thực tiễn xử lý dữ liệu và các điểm cần lưu ý (kể cả các mục về miễn trừ và giới hạn trách nhiệm ở phần sau, nếu có); không phải tư vấn pháp lý. An ninh và quyền riêng tư không có đảm bảo tuyệt đối — bạn nên cân nhắc thêm khi xử lý dữ liệu nhạy cảm, dữ liệu trẻ em hoặc lĩnh vực được quản chặt.",
+  "updatedDate": "23 tháng 9 năm 2026",
+  "lawyerNotice": "Tài liệu này gồm (A) Chính sách quyền riêng tư và (B) Thỏa thuận cấp phép người dùng cuối (EULA). Khi bạn tải, cài đặt, đăng nhập hoặc tiếp tục sử dụng Five Cut Pro (ứng dụng mobile, website fivecutpro.com và các dịch vụ liên quan), bạn xác nhận đã đọc, hiểu và đồng ý với toàn bộ nội dung. Đây không phải tư vấn pháp lý. Quyền bảo vệ người tiêu dùng bắt buộc theo pháp luật Việt Nam hoặc luật địa phương áp dụng cho bạn (nếu có) vẫn được tôn trọng.",
   "sections": [
+    {
+      "title": "A. CHÍNH SÁCH QUYỀN RIÊNG TƯ",
+      "paragraphs": [
+        "Phần A mô tả cách Five Cut Pro (\"Chúng tôi\") thu thập, sử dụng, lưu trữ, chia sẻ và bảo vệ thông tin liên quan đến bạn khi bạn dùng Ứng dụng, website và các tính năng kết nối nhãn hàng / KOC."
+      ]
+    },
     {
       "title": "1. Phạm vi và chủ thể xử lý",
       "paragraphs": [
-        "Chính sách áp dụng đối với Five Cut Pro phiên bản mobile và desktop cùng các trang thông tin/marketing chính thức do Chúng tôi vận hành để giới thiệu sản phẩm.",
-        "Danh tính chủ thể xử lý và kênh liên hệ chính được công bố trên trang web hoặc tài liệu sản phẩm chính thức. Khi có pháp nhân khác xử lý dữ liệu thay Chúng tôi theo hợp đồng, họ đóng vai trò bên xử lý dữ liệu hoặc đồng kiểm soát theo luật định và được liệt kê hoặc thông báo trước khi xử lý."
+        "Chính sách áp dụng cho: (i) ứng dụng Five Cut Pro trên iOS và Android (bundle có thể gồm com.fivecutpro.asia hoặc định danh tương đương); (ii) website và trang marketing tại fivecutpro.com; (iii) hệ thống backend, thông báo, banner quảng cáo và chương trình hợp tác nhãn hàng do Chúng tôi vận hành.",
+        "Danh tính chủ thể xử lý và kênh liên hệ chính được công bố trên fivecutpro.com. Nhà cung cấp xử lý dữ liệu thay Chúng tôi theo hợp đồng đóng vai trò bên xử lý hoặc đồng kiểm soát theo luật định."
       ]
     },
     {
-      "title": "2. Dữ liệu Chúng tôi có thể xử lý",
+      "title": "2. Five Cut Pro xử lý dữ liệu để làm gì",
       "paragraphs": [
-        "Dữ liệu kỹ thuật và nhật ký: phiên bản hệ điều hành, loại phần cứng, ID phiên bản ứng dụng, báo cáo lỗi (crash logs), checksum bản cài đặt và các thông tin tương tự phục vụ bảo mật và chẩn đoán.",
-        "Dữ liệu do bạn nhập: file media, phụ đề, nhật ký chỉnh sửa cục bộ và metadata đi kèm trong dự án.",
-        "Dữ liệu thông tin liên hệ: họ tên, địa chỉ email hoặc tài khoản hỗ trợ nếu bạn chủ động gửi qua biểu mẫu hỗ trợ hoặc kênh yêu cầu được công bố.",
-        "Dữ liệu phân tích trang web (nếu bật): lượt truy cập, referrer, loại thiết bị và sự kiện cơ bản nhằm cải thiện trải nghiệm đích/marketing."
+        "Five Cut Pro là nền tảng giúp người bán hàng, KOC/KOL và nhà sáng tạo tạo video bán hàng ngắn theo mẫu/công thức (chọn mẫu → quay theo hướng dẫn → tự động ghép → xuất → đăng TikTok hoặc nền tảng tương tự), đồng thời kết nối nhãn hàng với người sáng tạo phù hợp.",
+        "Việc xử lý dữ liệu phục vụ vận hành sản phẩm, cá nhân hóa trải nghiệm, hiển thị quảng cáo/banner thương hiệu, đo lường hiệu quả chiến dịch, và đề xuất / chia sẻ thông tin kênh sáng tạo với nhãn hàng đối tác trong khuôn khổ hợp tác thương mại."
       ]
     },
     {
-      "title": "3. Cơ sở pháp lý và mục đích xử lý",
+      "title": "3. Loại dữ liệu Chúng tôi có thể thu thập",
       "paragraphs": [
-        "Chúng tôi xử lý dữ liệu khi cần để thực hiện hợp đồng cấp phép phần mềm với bạn, duy trì an ninh/bảo mật, tuân thủ nghĩa vụ pháp luật hoặc — sau khi có thông báo thích hợp — dựa trên chính đáng do Chúng tôi và người dùng (ví dụ cải tiến sản phẩm trong phạm vi thống kê tổng hợp).",
-        "Đối với người dùng tại Liên minh Châu Âu/Vương quốc Anh: các căn cứ có thể gồm thực hiện hợp đồng (Điều 6(1)(b) GDPR), lợi ích chính đáng (6(1)(f)), đồng ý (6(1)(a)) hoặc nghĩa vụ pháp lý (6(1)(c)) tùy tình huống.",
-        "Đối với Việt Nam: hoạt động xử lý dữ liệu cá nhân có liên quan tới Nghị định 13/2023/NĐ-CP và các văn bản hướng dẫn hiện hành khi áp dụng cho chủ thể xử lý và loại dữ liệu được xử lý."
+        "Tùy cách bạn dùng Ứng dụng, Chúng tôi có thể xử lý các nhóm dữ liệu sau:"
+      ],
+      "bullets": [
+        "Tài khoản: email, mã OTP, thông tin đăng nhập Google/TikTok, tên hiển thị, avatar, ngôn ngữ, cài đặt thông báo, trạng thái khách (guest) hoặc đã đăng nhập.",
+        "Hồ sơ TikTok / kênh sáng tạo (khi bạn liên kết hoặc đăng nhập TikTok): open_id/union_id, username, display name, avatar, bio, liên kết hồ sơ (profile deep link), trạng thái verified, số liệu công khai hoặc được API cấp (follower, following, likes, video count) và các trường tương tự cần để nhận diện creator.",
+        "Hoạt động trong app: mẫu/công thức đã xem, lưu, dùng; video đã xuất; tương tác banner/quảng cáo; tham gia chiến dịch nhãn hàng; nhật ký sự kiện sản phẩm phục vụ vận hành và báo cáo.",
+        "Nội dung người dùng: media, shot quay, phụ đề, metadata dự án — chủ yếu lưu trên thiết bị trừ khi bạn bật tính năng đám mây/AI hoặc tải lên máy chủ để xử lý/xuất/chia sẻ.",
+        "Thiết bị & kỹ thuật: loại thiết bị, hệ điều hành, phiên bản app, mã push notification, crash/diagnostic logs, địa chỉ IP thô hoặc khu vực gần đúng, mã định danh quảng cáo (nếu hệ điều hành/SDK cho phép và bạn chưa tắt).",
+        "Liên hệ hỗ trợ: nội dung bạn gửi qua email, form hoặc kênh hỗ trợ được công bố.",
+        "Dữ liệu website: cookie/local storage, ngôn ngữ, referrer, sự kiện phân tích cơ bản trên fivecutpro.com."
       ]
     },
     {
-      "title": "4. Xử lý cục bộ so với đám mây / AI",
+      "title": "4. Mục đích và cơ sở xử lý",
       "paragraphs": [
-        "Nhiều thao tác chỉnh sửa diễn ra hoàn toàn trên máy bạn khi bạn không kích hoạt tính năng gửi dữ liệu ra ngoài.",
-        "Khi bạn bật chức năng AI hoặc xử lý trên máy chủ (nhận diện tiếng nói nâng cao, dịch đám mây, render qua GPU từ xa), các đoạn âm thanh/hình ảnh hoặc metadata cần thiết có thể được mã hóa và truyền tới nhà cung cấp được Chúng tôi lựa chọn theo điều khoản của họ.",
-        "Chúng tôi khuyến nghị không gửi thông tin nhạy cảm đặc biệt (dữ liệu sức khỏe, sinh trắc học phục vụ định danh duy nhất nếu không cần thiết) qua các đường truyền chưa được mô tả rõ trong giao diện."
+        "Chúng tôi xử lý dữ liệu để: cung cấp và bảo mật Ứng dụng; tạo/quản lý tài khoản; ghép video theo công thức; gửi thông báo; cải thiện sản phẩm; tuân thủ pháp luật; ngăn gian lận/lạm dụng; hiển thị quảng cáo và banner nhãn hàng; đo lường hiển thị/tương tác quảng cáo; kết nối nhãn hàng với KOC phù hợp; và chia sẻ thông tin kênh/sáng tạo với nhãn hàng đối tác như mô tả tại Mục 6–7.",
+        "Cơ sở pháp lý có thể gồm: thực hiện hợp đồng cấp phép/sử dụng dịch vụ với bạn; lợi ích chính đáng của Chúng tôi và đối tác thương mại (vận hành marketplace mẫu, quảng cáo, matching KOC–nhãn hàng) với biện pháp cân bằng quyền của bạn; đồng ý khi luật yêu cầu (ví dụ một số cookie, ID quảng cáo, hoặc chia sẻ mở rộng); và nghĩa vụ pháp lý.",
+        "Người dùng tại Việt Nam: hoạt động xử lý có thể liên quan Nghị định 13/2023/NĐ-CP và văn bản hướng dẫn hiện hành. Người dùng EEA/UK: có thể áp dụng Điều 6(1)(a)/(b)/(c)/(f) GDPR tùy tình huống."
       ]
     },
     {
-      "title": "5. Cookie và công nghệ tương tự (trang web)",
+      "title": "5. Quảng cáo, banner thương hiệu và đo lường trong app / website",
       "paragraphs": [
-        "Trang landing có thể dùng cookie hoặc local storage cho ngôn ngữ, phiên hoặc phân tích cơ bản. Bạn có thể điều chỉnh trình duyệt để chặn cookie; một số chức năng có thể suy giảm."
+        "Five Cut Pro có thể hiển thị quảng cáo, banner thương hiệu, nội dung tài trợ hoặc khuyến mãi của nhãn hàng / đối tác trên Ứng dụng và website (ví dụ trang khám phá mẫu, màn hình chính, luồng tạo video, trang kết quả xuất).",
+        "Để vận hành và tính phí hợp tác theo lượt hiển thị hoặc hiệu quả chiến dịch, Chúng tôi có thể thu thập và xử lý: số lần hiển thị, click/tương tác, vị trí đặt banner, thời điểm, loại thiết bị/phiên bản app, mã chiến dịch, và số liệu tổng hợp hoặc gắn với tài khoản/kênh khi cần báo cáo cho nhãn hàng.",
+        "Quảng cáo có thể được cá nhân hóa ở mức hợp lý dựa trên hành vi dùng app, ngành hàng quan tâm, ngôn ngữ, khu vực gần đúng hoặc hồ sơ creator đã liên kết — trong phạm vi pháp luật và kiểm soát hệ điều hành cho phép. Bạn có thể hạn chế ID quảng cáo qua cài đặt thiết bị; một số quảng cáo vẫn có thể hiển thị dạng ít cá nhân hóa hơn.",
+        "Việc tiếp tục sử dụng Ứng dụng đồng nghĩa bạn chấp nhận việc hiển thị quảng cáo/banner và việc Chúng tôi dùng dữ liệu đo lường nêu trên để vận hành, tối ưu và thanh toán với đối tác quảng cáo/nhãn hàng."
       ]
     },
     {
-      "title": "6. Chia sẻ dữ liệu và bên xử lý",
+      "title": "6. Kết nối nhãn hàng – KOC và chia sẻ thông tin kênh",
       "paragraphs": [
-        "Chúng tôi không bán dữ liệu cá nhân của bạn. Chúng tôi có thể chia sẻ dữ liệu giới hạn với nhà cung cấp lưu trữ/phân phối cho trang web hoặc máy chủ tải xuống, nhà cung cấp email chống lạm dụng, nhà cung cấp AI (nếu bạn bật), và cơ quan nhà nước khi có yêu cầu hợp pháp."
+        "Một phần giá trị cốt lõi của Five Cut Pro là cầu nối giữa nhãn hàng và người sáng tạo: nhãn hàng đưa sản phẩm/mẫu/hướng dẫn quay vào hệ sinh thái; KOC chọn mẫu, học cách quay và tạo nội dung; nhãn hàng tiếp cận KOC phù hợp cho chiến dịch.",
+        "Khi bạn đăng nhập/liên kết TikTok hoặc tạo hồ sơ creator trên Five Cut Pro, bạn ủy quyền cho Chúng tôi thu thập thông tin kênh và dùng thông tin đó để: (i) nhận diện bạn là creator; (ii) đề xuất mẫu, chiến dịch hoặc cơ hội hợp tác; (iii) gửi thông báo chiến dịch trong app; và (iv) chia sẻ với nhãn hàng / đại lý / đối tác chiến dịch được ủy quyền.",
+        "Thông tin kênh có thể được chia sẻ với nhãn hàng gồm (tùy chiến dịch và phạm vi tích hợp): tên hiển thị, username/handle, liên kết hồ sơ công khai, avatar, bio tóm tắt, số liệu kênh (follower, video, likes…), ngành hàng/mẫu đã tương tác, mức độ hoạt động trên Five Cut Pro (ví dụ số video xuất, mẫu đã dùng), và trạng thái tham gia/ừ chối chiến dịch. Chúng tôi không cố ý chia sẻ mật khẩu, mã OTP, access token TikTok thô, hoặc nội dung media riêng tư trên thiết bị của bạn cho nhãn hàng — trừ khi bạn chủ động gửi trong quy trình hợp tác.",
+        "Bằng việc liên kết kênh hoặc tham gia/xem chiến dịch nhãn hàng trên Ứng dụng, bạn đồng ý rằng việc chia sẻ thông tin kênh nêu trên là cần thiết để cung cấp tính năng kết nối hợp tác, và cấu thành một phần điều kiện sử dụng dịch vụ. Nếu bạn không muốn chia sẻ, hãy ngắt liên kết TikTok / không tham gia chiến dịch / yêu cầu Chúng tôi hạn chế chia sẻ theo Mục 11 (trong phạm vi pháp luật cho phép; một số tính năng matching có thể không khả dụng)."
       ]
     },
     {
-      "title": "7. Chuyển giao dữ liệu quốc tế",
+      "title": "7. Chia sẻ dữ liệu với bên thứ ba",
       "paragraphs": [
-        "Nếu máy chủ hoặc nhà cung cấp đặt tại nước thứ ba, Chúng tôi sẽ áp dụng biện pháp bảo vệ phù hợp (Điều khoản hợp đồng chuẩn của EU, đánh giá tác động hoặc quyết định đầy đủ tính pháp lý tương đương) theo yêu cầu của luật áp dụng."
+        "Chúng tôi có thể chia sẻ dữ liệu với:"
+      ],
+      "bullets": [
+        "Nhãn hàng, agency và đối tác chiến dịch — để matching KOC, triển khai banner/mẫu sản phẩm, báo cáo hiển thị và hiệu quả hợp tác như Mục 5–6.",
+        "Nhà cung cấp hạ tầng (hosting, CDN, email/OTP, đẩy thông báo, phân tích, crash reporting, cổng thanh toán nếu có).",
+        "Nền tảng đăng nhập/chia sẻ (Google, TikTok và SDK liên quan) theo điều khoản của họ khi bạn chọn kết nối.",
+        "Cơ quan nhà nước khi có yêu cầu hợp pháp hoặc để bảo vệ quyền, an toàn và tài sản của Chúng tôi hoặc người dùng.",
+        "Bên nhận chuyển giao trong giao dịch tái cấu trúc, sáp nhập, đầu tư (kèm nghĩa vụ bảo mật tương đương)."
+      ],
+      "paragraphsAfterBullets": [
+        "Chúng tôi không bán danh sách người dùng cho bên môi giới dữ liệu không liên quan đến dịch vụ Five Cut Pro. Việc chia sẻ thương mại với nhãn hàng/đối tác quảng cáo trong khuôn khổ sản phẩm (banner, matching KOC, báo cáo chiến dịch) được thực hiện theo Chính sách này và không bị hiểu là \"bán dữ liệu\" theo nghĩa môi giới danh sách lạnh độc lập — trừ khi luật địa phương định nghĩa khác và khi đó Chúng tôi sẽ bổ sung cơ chế lựa chọn theo yêu cầu bắt buộc."
       ]
     },
     {
-      "title": "8. Bảo mật",
+      "title": "8. Xử lý cục bộ, đám mây và AI",
       "paragraphs": [
-        "Chúng tôi áp dụng các biện pháp kỹ thuật và tổ chức hợp lý (kiểm soát truy cập, mã hóa khi phù hợp, phân vùng môi trường). Không có hệ thống nào an toàn tuyệt đối — bạn nên cập nhật hệ điều hành và dùng mật khẩu / khóa thiết bị."
+        "Nhiều thao tác quay/ghép có thể diễn ra trên thiết bị. Khi bạn dùng tính năng cần máy chủ (đồng bộ tài khoản, marketplace mẫu, thông báo, quảng cáo, matching, AI/cloud nếu có), dữ liệu cần thiết sẽ được truyền và xử lý trên hệ thống của Chúng tôi hoặc nhà cung cấp.",
+        "Không gửi dữ liệu đặc biệt nhạy cảm không cần thiết (sức khỏe, sinh trắc học định danh duy nhất, dữ liệu trẻ em) qua các tính năng không được thiết kế cho mục đích đó."
       ]
     },
     {
-      "title": "9. Thời gian lưu giữ",
+      "title": "9. Cookie và công nghệ tương tự",
       "paragraphs": [
-        "Nhật ký kỹ thuật được giữ trong thời gian cần thiết để chẩn đoán và tuân thủ pháp luật.",
-        "Nội dung đám mây (nếu có) được giữ theo chính sách của nhà cung cấp và cờ xóa trong Ứng dụng.",
-        "Thông tin gửi qua kênh hỗ trợ được giữ trong thời gian giải quyết yêu cầu và theo nghĩa vụ lưu trữ chứng từ."
+        "Website có thể dùng cookie hoặc lưu trữ cục bộ cho ngôn ngữ, phiên, bảo mật và phân tích. Ứng dụng có thể dùng SDK định danh thiết bị/quảng cáo tương đương. Bạn có thể kiểm soát một phần qua trình duyệt hoặc cài đặt hệ điều hành."
       ]
     },
     {
-      "title": "10. Quyền của chủ thể dữ liệu",
+      "title": "10. Chuyển giao quốc tế, bảo mật và lưu giữ",
       "paragraphs": [
-        "Tùy luật địa phương, bạn có thể có các quyền sau: truy cập, chỉnh sửa, xóa, hạn chế xử lý, phản đối xử lý dựa trên lợi ích chính đáng, rút đồng ý (nếu xử lý dựa trên đồng ý), và nhận bản sao có cấu trúc (di động).",
-        "Người dùng EEA/UK có quyền khiếu nại cơ quan giám sát bảo vệ dữ liệu nơi mình cư trú.",
-        "Người dùng Việt Nam có thể thực hiện quyền theo Nghị định 13 và các quy định sau sửa đổi; Chúng tôi sẽ phản hồi trong thời hạn hợp lý sau khi xác minh danh tính."
+        "Máy chủ hoặc nhà cung cấp có thể đặt ngoài quốc gia cư trú của bạn. Chúng tôi áp dụng biện pháp bảo vệ phù hợp theo luật áp dụng (hợp đồng, biện pháp kỹ thuật/tổ chức).",
+        "Chúng tôi dùng biện pháp bảo mật hợp lý; không hệ thống nào an toàn tuyệt đối. Bạn nên bảo vệ thiết bị và không chia sẻ OTP/mật khẩu.",
+        "Dữ liệu được giữ trong thời gian cần để cung cấp dịch vụ, báo cáo cho nhãn hàng, giải quyết tranh chấp, và tuân thủ pháp luật; sau đó xóa hoặc ẩn danh hóa theo quy trình nội bộ. Tài khoản có thể có thời gian ân hạn trước khi xóa vĩnh viễn theo thông báo trong app."
       ]
     },
     {
-      "title": "11. Quyết định tự động và vết AI",
+      "title": "11. Quyền của bạn",
       "paragraphs": [
-        "Một số gợi ý cắt ghép hoặc phụ đề được sinh tự động; quyết định phát hành cuối cùng vẫn thuộc về bạn. Chúng tôi không sử dụng các hệ thống ra quyết định thuần tự động có hiệu lực pháp lý hoặc tác động tương tự đáng kể đối với bạn nếu không có mô tả rõ trong giao diện và căn cứ pháp lý thích hợp."
+        "Tùy luật địa phương, bạn có thể yêu cầu: truy cập, chỉnh sửa, xóa, hạn chế hoặc phản đối một số xử lý, rút đồng ý (khi xử lý dựa trên đồng ý), và nhận bản sao có cấu trúc khi áp dụng.",
+        "Bạn có thể ngắt liên kết TikTok, tắt thông báo, điều chỉnh ID quảng cáo trên thiết bị, hoặc yêu cầu không nhận đề xuất chiến dịch — việc này có thể làm giảm tính năng matching/quảng cáo cá nhân hóa.",
+        "Liên hệ privacy/support qua support@fivecutpro.com hoặc kênh trên fivecutpro.com. Người dùng EEA/UK có thể khiếu nại cơ quan giám sát; người dùng Việt Nam thực hiện quyền theo Nghị định 13 và quy định liên quan sau khi Chúng tôi xác minh danh tính."
       ]
     },
     {
       "title": "12. Trẻ em",
       "paragraphs": [
-        "Ứng dụng không nhắm tới trẻ em dưới 13 tuổi (hoặc độ tuổi tối thiểu khác theo luật địa phương). Nếu bạn tin rằng chúng tôi đã xử lý dữ liệu trẻ em không có sự đồng ý hợp lệ của phụ huynh, vui lòng liên hệ để xóa."
+        "Dịch vụ không dành cho trẻ em dưới 13 tuổi (hoặc độ tuổi tối thiểu cao hơn theo luật địa phương). Không cung cấp dữ liệu trẻ em. Liên hệ để xóa nếu phát hiện thu thập nhầm."
       ]
     },
     {
-      "title": "13. Thay đổi chính sách",
+      "title": "13. Thay đổi Chính sách quyền riêng tư",
       "paragraphs": [
-        "Chúng tôi có thể cập nhật chính sách khi có thay đổi chức năng hoặc yêu cầu pháp lý. Khi thay đổi trọng yếu, Chúng tôi sẽ thông báo qua Ứng dụng hoặc trang phân phối; phiên mới có hiệu lực kể từ ngày ghi trong đầu tài liệu."
+        "Chúng tôi có thể cập nhật Phần A khi sản phẩm, mô hình hợp tác nhãn hàng hoặc pháp luật thay đổi. Thay đổi trọng yếu sẽ được thông báo qua app, website hoặc email khi phù hợp. Việc tiếp tục sử dụng sau ngày hiệu lực đồng nghĩa chấp nhận bản cập nhật, trừ khi luật yêu cầu hình thức đồng ý riêng."
       ]
     },
     {
-      "title": "14. Miễn trừ đảm bảo và giới hạn trách nhiệm",
+      "title": "B. THỎA THUẬN CẤP PHÉP NGƯỜI DÙNG CUỐI (EULA)",
       "paragraphs": [
-        "Chúng tôi không cam kết rằng xử lý dữ liệu, lưu trữ cục bộ hoặc tích hợp với nhà cung cấp bên thứ ba sẽ không bao giờ bị xâm nhập, rò rỉ, mất mát hoặc truy cập trái phép. Không có biện pháp kỹ thuật hay mô tả trong Chính sách này (kể cả mục Bảo mật) tạo ra bảo đảm pháp lý về mức độ an toàn cố định.",
-        "Trong phạm vi pháp luật cho phép tối đa, Chúng tôi không chịu trách nhiệm đối với thiệt hại gián tiếp, đặc biệt, mang tính hệ quả hoặc trừng phạt phát sinh từ hoặc liên quan tới việc xử lý dữ liệu theo Chính sách này — bao gồm nhưng không giới hạn ở rò rỉ do hành vi bên thứ ba, lỗi cấu hình của bạn, hoặc sự cố ngoài kiểm soát hợp lý của Chúng tôi.",
-        "Tổng trách nhiệm tích lũy của Chúng tôi đối với mọi khiếu nại phát sinh từ hoặc liên quan tới Chính sách quyền riêng tư hoặc hoạt động xử lý dữ liệu được mô tả tại đây — trong phạm vi pháp luật cho phép — không vượt quá mức thấp hơn trong hai giá trị: (i) tổng phí thực tế bạn đã trả cho Chúng tôi trong mười hai (12) tháng trước sự kiện gây khiếu nại; và (ii) năm mươi đô la Mỹ (50 USD). Các giới hạn tương tự trong Điều khoản dịch vụ (nếu có) được áp dụng nhất quán để tránh chồng chất trách nhiệm vượt các trần này.",
-        "Bạn chịu trách nhiệm đánh giá xem việc xử lý dữ liệu của riêng bạn (ví dụ đưa giọng nói của người khác vào tính năng AI) có đòi hỏi thông báo, đồng ý hoặc cơ sở pháp lý bổ sung hay không."
+        "Phần B là hợp đồng cấp phép phần mềm ràng buộc giữa bạn và chủ thể vận hành Five Cut Pro (\"Bên cấp phép\"). EULA này là một phần không tách rời của tài liệu pháp lý Five Cut Pro; chấp nhận Chính sách này đồng nghĩa chấp nhận EULA."
       ]
     },
     {
-      "title": "15. Liên hệ và khiếu nại",
+      "title": "14. Chấp nhận EULA",
       "paragraphs": [
-        "Để thực hiện quyền hoặc đặt câu hỏi về quyền riêng tư, hãy liên hệ qua kênh được công bố trên trang web chính thức hoặc thông báo trong ứng dụng.",
-        "Nếu bạn không hài lòng với cách xử lý, bạn có thể khiếu nại lên cơ quan có thẩm quyền nơi bạn cư trú."
+        "Khi tải, cài đặt, mở, đăng nhập, kích hoạt hoặc tiếp tục dùng Ứng dụng, bạn chấp nhận Phần B (EULA) và Phần A (Quyền riêng tư). Nếu không đồng ý, hãy gỡ Ứng dụng và ngừng sử dụng."
+      ]
+    },
+    {
+      "title": "15. Giấy phép sử dụng",
+      "paragraphs": [
+        "Với điều kiện tuân thủ tài liệu này và pháp luật, Chúng tôi cấp giấy phép hạn chế, cá nhân (hoặc cho tổ chức bạn đại diện hợp pháp), không độc quyền, không chuyển nhượng, có thể thu hồi để cài và chạy bản sao hợp lệ của Ứng dụng trên thiết bị bạn sở hữu hoặc được phép kiểm soát, nhằm tạo nội dung video hợp pháp và sử dụng các tính năng marketplace / hợp tác nhãn hàng được cung cấp."
+      ],
+      "bullets": [
+        "Không chuyển giao quyền sở hữu Ứng dụng — chỉ quyền sử dụng.",
+        "Mỗi tài khoản/giấy phép dùng đúng phạm vi được cấp.",
+        "Được tạo bản sao lưu hợp lý cho mục đích cá nhân/lưu trữ."
+      ]
+    },
+    {
+      "title": "16. Hạn chế",
+      "paragraphs": [
+        "Trừ khi luật bắt buộc cho phép, bạn không được: bán/cho thuê/cấp lại Ứng dụng; sao chép hoặc tạo sản phẩm phái sinh trái phép; đảo ngược kỹ thuật ngoài phạm vi luật cho phép; gỡ bỏ thông báo sở hữu; phá bỏ biện pháp bảo mật/giấy phép; dùng Ứng dụng để xây sản phẩm cạnh tranh bằng cách sao chép có hệ thống quy trình/template độc quyền; hoặc lạm dụng hệ thống bằng bot."
+      ]
+    },
+    {
+      "title": "17. Nội dung người dùng, mẫu và trách nhiệm đăng tải",
+      "paragraphs": [
+        "Bạn giữ quyền đối với nội dung bạn sở hữu hợp pháp. Bạn cấp cho Chúng tôi quyền kỹ thuật cần thiết để lưu trữ, xử lý, truyền tải, hiển thị và (khi bạn dùng tính năng công khai/marketplace) phân phối nội dung/mẫu nhằm vận hành dịch vụ.",
+        "Bạn chịu trách nhiệm về bản quyền, nhãn hiệu, quyền hình ảnh, quảng cáo, bảo vệ người tiêu dùng và chính sách nền tảng khi quay, xuất và đăng nội dung — kể cả khi dùng mẫu hoặc hướng dẫn có gắn sản phẩm nhãn hàng.",
+        "Template, công thức, hướng dẫn quay và công cụ tự động hóa chỉ là hỗ trợ sản xuất; không bảo đảm duyệt thuật toán, doanh số, deal nhãn hàng hay miễn xử lý của nền tảng."
+      ]
+    },
+    {
+      "title": "18. Quảng cáo và chương trình nhãn hàng (điều khoản sử dụng)",
+      "paragraphs": [
+        "Bạn đồng ý rằng Ứng dụng và website có thể chứa quảng cáo, banner và nội dung tài trợ. Chúng tôi có thể thay đổi vị trí, tần suất và đối tác quảng cáo.",
+        "Khi tham gia chiến dịch nhãn hàng (xem thông tin, nhận mẫu/sản phẩm, tạo nội dung theo brief, hoặc được đề xuất cho nhãn hàng), bạn xác nhận thông tin kênh có thể được chia sẻ theo Mục 6 và bạn tự chịu trách nhiệm hoàn thành nghĩa vụ với nhãn hàng theo thỏa thuận riêng (nếu có). Five Cut Pro là nền tảng kết nối/hỗ trợ quy trình; trừ khi có hợp đồng văn bản khác, Chúng tôi không bảo đảm thu nhập, số lượng deal, hay kết quả đàm phán giữa bạn và nhãn hàng.",
+        "Nhãn hàng có thể đưa hình ảnh sản phẩm, logo và nhận diện vào mẫu/hướng dẫn quay. Việc bạn dùng các mẫu đó không chuyển giao quyền sở hữu thương hiệu của nhãn hàng cho bạn ngoài phạm vi được phép cho chiến dịch."
+      ]
+    },
+    {
+      "title": "19. Dịch vụ bên thứ ba",
+      "paragraphs": [
+        "Google, TikTok, cửa hàng ứng dụng, CDN, SDK quảng cáo/phân tích và nhãn hàng đối tác có điều khoản riêng. Chúng tôi không kiểm soát quyết định của họ (kể cả khóa tài khoản mạng xã hội hoặc từ chối nội dung)."
+      ]
+    },
+    {
+      "title": "20. Sở hữu trí tuệ",
+      "paragraphs": [
+        "Ứng dụng, UI, tài liệu, logo Five Cut Pro, hệ thống công thức/template do Chúng tôi cung cấp thuộc về Chúng tôi hoặc bên cấp phép. Phản hồi bạn gửi có thể được dùng để cải tiến sản phẩm mà không nghĩa vụ trả thù lao, trừ thỏa thuận khác."
+      ]
+    },
+    {
+      "title": "21. Miễn trừ bảo hành",
+      "paragraphs": [
+        "TRONG PHẠM VI PHÁP LUẬT CHO PHÉP TỐI ĐA, ỨNG DỤNG VÀ DỊCH VỤ ĐƯỢC CUNG CẤP \"NGUYÊN TRẠNG\" VÀ \"THEO KHẢ NĂNG SẴN CÓ\", KHÔNG KÈM BẢO ĐẢM VỀ TÍNH THƯƠNG MẠI, PHÙ HỢP MỤC ĐÍCH CỤ THỂ, KHÔNG GIÁN ĐOẠN, KHÔNG LỖI, HAY HIỆU QUẢ KINH DOANH/DOANH THU/LƯỢT XEM."
+      ]
+    },
+    {
+      "title": "22. Giới hạn trách nhiệm",
+      "paragraphs": [
+        "TRONG PHẠM VI PHÁP LUẬT CHO PHÉP TỐI ĐA, CHÚNG TÔI KHÔNG CHỊU TRÁCH NHIỆM VỀ THIỆT HẠI GIÁN TIẾP, HỆ QUẢ, MẤT LỢI NHUẬN, MẤT DỮ LIỆU, MẤT CƠ HỘI HỢP TÁC NHÃN HÀNG, HOẶC BIỆN PHÁP XỬ LÝ CỦA NỀN TẢNG BÊN THỨ BA.",
+        "KHI TRÁCH NHIỆM KHÔNG THỂ LOẠI TRỪ, TỔNG TRÁCH NHIỆM TÍCH LŨY ĐỐI VỚI MỌI KHIẾU NẠI LIÊN QUAN TÀI LIỆU NÀY HOẶC ỨNG DỤNG KHÔNG VƯỢT QUÁ MỨC CAO HƠN TRONG HAI GIÁ TRỊ: (A) PHÍ BẠN THỰC TẾ ĐÃ TRẢ CHO CHÚNG TÔI TRONG MƯỜI HAI (12) THÁNG TRƯỚC KHIẾU NẠI; VÀ (B) NĂM MƯƠI ĐÔ LA MỸ (50 USD) — HOẶC MỨC TỐI THIỂU BẮT BUỘC THEO LUẬT NẾU CAO HƠN.",
+        "Biện pháp khắc phục chính: ngừng sử dụng và gỡ Ứng dụng."
+      ]
+    },
+    {
+      "title": "23. Bồi thường",
+      "paragraphs": [
+        "Trong phạm vi pháp luật cho phép, bạn bồi hoàn cho Chúng tôi trước khiếu nại phát sinh từ nội dung của bạn, việc đăng tải, vi phạm tài liệu này hoặc pháp luật, hoặc tranh chấp với nhãn hàng/nền tảng/chủ quyền — trừ phần do hành vi cố ý trái pháp luật của Chúng tôi khi không thể loại trừ."
+      ]
+    },
+    {
+      "title": "24. Chấm dứt",
+      "paragraphs": [
+        "Bạn có thể chấm dứt bằng cách gỡ app và/hoặc xóa tài khoản. Chúng tôi có thể đình chỉ hoặc chấm dứt quyền sử dụng nếu bạn vi phạm trọng yếu, lạm dụng dịch vụ, hoặc theo yêu cầu pháp luật. Các điều khoản về sở hữu trí tuệ, miễn trừ, giới hạn trách nhiệm, bồi thường và luật áp dụng vẫn có hiệu lực sau chấm dứt."
+      ]
+    },
+    {
+      "title": "25. Luật áp dụng, thay đổi EULA và liên hệ",
+      "paragraphs": [
+        "Nếu bạn cư trú tại Việt Nam, tài liệu này điều chỉnh theo pháp luật Việt Nam; tranh chấp ưu tiên thương lượng thiện chí, sau đó có thể đưa ra tòa án có thẩm quyền tại Việt Nam, tôn trọng quyền người tiêu dùng bắt buộc. Nếu cư trú nơi khác, quyền không thể loại trừ tại địa phương vẫn áp dụng.",
+        "Chúng tôi có thể cập nhật Phần B cùng hoặc tách với Phần A; thông báo theo cách tương tự Mục 13.",
+        "Liên hệ: support@fivecutpro.com — hoặc kênh công bố trên fivecutpro.com.",
+        "Five Cut Pro — Biến sản phẩm thành nội dung. Biến nội dung thành cơ hội bán hàng."
       ]
     }
   ]

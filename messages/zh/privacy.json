@@ -1,64 +1,220 @@
 {
   "categoryLabel": "法律条款",
-  "metaTitle": "隐私政策 — Five Cut Pro",
-  "metaDescription": "了解当您使用 Five Cut Pro 桌面客户端、移动端应用及官方网站时，我们如何收集、使用、保护及共享信息。",
-  "title": "隐私政策",
+  "metaTitle": "隐私政策与 EULA — Five Cut Pro",
+  "metaDescription": "Five Cut Pro 隐私政策与最终用户许可协议（EULA）：账户与 TikTok 数据、应用内广告、与品牌共享创作者频道信息、权利与责任限制。",
+  "title": "隐私政策与 EULA",
   "updatedLabel": "最后修订日期",
-  "updatedDate": "2026年5月3日",
-  "lawyerNotice": "本政策阐述了我们对用户数据的处理规范与安全保障措施。本内容不构成任何法律咨询建议。请妥善保管您的敏感商业数据与隐私信息。",
+  "updatedDate": "2026年9月23日",
+  "lawyerNotice": "本文件包含 (A) 隐私政策与 (B) 最终用户许可协议（EULA）。下载、安装、登录或继续使用 Five Cut Pro，即表示您同意全文。下文正文以英文提供以便准确表述广告与品牌合作条款；不构成法律意见。",
   "sections": [
     {
-      "title": "1. 适用范围与数据控制者",
+      "title": "A. PRIVACY POLICY",
       "paragraphs": [
-        "本隐私政策适用于由我们运营的 Five Cut Pro 桌面客户端、移动应用程序及官方网站相关服务。",
-        "数据控制者的身份与官方联系方式已在产品官网与文档中公开说明。我们委托的所有技术合作方均受严格的保密与数据安全协议约束。"
+        "Part A explains how Five Cut Pro (\"we\", \"us\") collects, uses, stores, shares, and protects information about you when you use the App, website, and brand / KOC connection features."
       ]
     },
     {
-      "title": "2. 信息收集的类别",
+      "title": "1. Scope and controller",
       "paragraphs": [
-        "技术诊断信息：操作系统版本、硬件架构、应用构建版本号、崩溃诊断日志及保障程序完整运行所需的技术信标。",
-        "用户自主导入素材：除非您主动开启云端辅助或AI扩展功能，所有音视频素材及项目工程文件均严格存储在您的本地设备中。",
-        "客户支持沟通记录：您通过联系表单、问题反馈或电子邮件主动向我们提交的信息。",
-        "网站统计分析：官方网站的汇总访问度量数据，用于改善产品文档与用户指引。"
+        "This Policy applies to: (i) the Five Cut Pro apps on iOS and Android (including bundle identifiers such as com.fivecutpro.asia or equivalents); (ii) the marketing site at fivecutpro.com; and (iii) our backends, notifications, advertising banners, and brand-partnership programs.",
+        "Controller identity and contact channels are published on fivecutpro.com. Vendors processing data on our instructions act as processors or joint controllers as required by law."
       ]
     },
     {
-      "title": "3. 数据处理目的与合法性基础",
+      "title": "2. Why we process data",
       "paragraphs": [
-        "我们仅在履行用户服务协议、维护软件运行安全、遵守适用法律法规以及改善产品体验的合理必要范围内处理数据。"
+        "Five Cut Pro helps sellers, KOCs/KOLs, and creators produce short sales videos from templates/formulas (pick a template → shoot guided shots → auto-assemble → export → post to TikTok or similar), and connects brands with suitable creators.",
+        "We process data to operate the product, personalize experience, show ads and brand banners, measure campaign performance, and recommend or share creator-channel information with brand partners under commercial collaboration programs."
       ]
     },
     {
-      "title": "4. 本地处理与云端AI服务说明",
+      "title": "3. Categories of information",
       "paragraphs": [
-        "Five Cut Pro 的绝大多数视频剪辑、去重与渲染工序均在您的本地设备离线完成，无需依赖外部服务器。",
-        "当使用特定的在线AI语音识别或字幕生成能力时，可能通过端到端加密传输最小必要音频片段至经合规审计的云端接口。",
-        "建议用户不要导入与商业带货无关的高度敏感个人生物识别信息。"
+        "Depending on how you use the App, we may process:"
+      ],
+      "bullets": [
+        "Account data: email, OTP codes, Google/TikTok sign-in details, display name, avatar, language, notification settings, guest or signed-in status.",
+        "TikTok / creator-channel profile (when you link or sign in with TikTok): open_id/union_id, username, display name, avatar, bio, profile deep link, verification status, public or API-granted stats (followers, following, likes, video count), and similar fields needed to identify you as a creator.",
+        "In-app activity: templates/formulas viewed, saved, or used; exported videos; ad/banner interactions; brand-campaign participation; product event logs for operations and reporting.",
+        "User content: media, recorded shots, captions, project metadata — primarily on-device unless you enable cloud/AI features or upload for processing, export, or sharing.",
+        "Device and technical data: device type, OS, app version, push tokens, crash/diagnostic logs, coarse IP/region, and advertising identifiers where the OS/SDK allow and you have not limited them.",
+        "Support communications you send via email, forms, or published support channels.",
+        "Website data: cookies/local storage, locale, referrer, and basic analytics events on fivecutpro.com."
       ]
     },
     {
-      "title": "5. Cookie 及相关技术",
+      "title": "4. Purposes and legal bases",
       "paragraphs": [
-        "我们的官网可能使用本地存储保存您的语言偏好设置或基础分析标识符。您随时可通过浏览器安全设置禁用Cookie。"
+        "We process data to: provide and secure the App; create/manage accounts; assemble videos by formula; send notices; improve the product; comply with law; prevent fraud/abuse; display ads and brand banners; measure ad impressions/engagement; match brands with suitable KOCs; and share creator-channel information with brand partners as described in Sections 6–7.",
+        "Legal bases may include: performance of our licence/service contract with you; our and our commercial partners’ legitimate interests (template marketplace, advertising, KOC–brand matching) balanced against your rights; consent where required (certain cookies, ad IDs, or expanded sharing); and legal obligations.",
+        "Users in Vietnam: processing may engage Decree 13/2023/NĐ-CP and related guidance. EEA/UK users: GDPR Article 6(1)(a)/(b)/(c)/(f) may apply as appropriate."
       ]
     },
     {
-      "title": "6. 数据共享与第三方",
+      "title": "5. In-app / website advertising, brand banners, and measurement",
       "paragraphs": [
-        "我们承诺绝不出售任何用户的个人数据。我们仅向提供网站托管、安装包CDN分发及基础设施安全防御的合规服务商开放有限技术交互。"
+        "Five Cut Pro may show advertisements, brand banners, sponsored content, or promotions from brands/partners in the App and on the website (for example discovery, home, creation flows, and export screens).",
+        "To run and bill partnerships by impressions or campaign performance, we may collect and process: impression counts, clicks/engagement, placement, timing, device/app version, campaign IDs, and metrics that are aggregated or account/channel-linked when needed for brand reporting.",
+        "Ads may be reasonably personalized based on in-app behaviour, category interest, language, approximate region, or linked creator profile — within law and OS controls. You may limit advertising IDs in device settings; less personalized ads may still appear.",
+        "Continued use of the App means you accept in-app/website advertising and our use of the measurement data above to operate, optimize, and settle with advertising/brand partners."
       ]
     },
     {
-      "title": "7. 跨国数据传输与安全保障",
+      "title": "6. Brand–KOC connection and sharing channel information",
       "paragraphs": [
-        "若涉及跨法域数据传输，我们均采取行业最高标准的安全加密与合规机制保障数据安全。"
+        "A core part of Five Cut Pro is connecting brands and creators: brands place products/templates/shooting guides into the ecosystem; KOCs pick templates, learn shooting flows, and create content; brands reach relevant KOCs for campaigns.",
+        "When you sign in/link TikTok or create a creator profile on Five Cut Pro, you authorize us to collect channel information and use it to: (i) identify you as a creator; (ii) recommend templates, campaigns, or collaboration opportunities; (iii) send in-app campaign notices; and (iv) share with brands, agencies, or authorized campaign partners.",
+        "Channel information that may be shared with brands includes (depending on campaign and integration scope): display name, username/handle, public profile link, avatar, short bio, channel stats (followers, videos, likes, etc.), categories/templates you engage with, Five Cut Pro activity metrics (e.g. exports, templates used), and campaign opt-in/opt-out status. We do not intentionally share passwords, OTPs, raw TikTok access tokens, or private on-device media with brands — unless you voluntarily submit them in a collaboration workflow.",
+        "By linking a channel or viewing/joining brand campaigns in the App, you agree that sharing the channel information above is necessary to provide partnership-matching features and forms part of the service terms. If you do not want sharing, unlink TikTok / decline campaigns / ask us to restrict sharing under Section 11 (to the extent law allows; some matching features may become unavailable)."
       ]
     },
     {
-      "title": "8. 政策更新与联系方式",
+      "title": "7. Sharing with third parties",
       "paragraphs": [
-        "我们可能会适时更新本隐私政策。若您对个人信息保护有任何疑问，请随时通过 support@fivecutpro.com 与我们联系。"
+        "We may share data with:"
+      ],
+      "bullets": [
+        "Brands, agencies, and campaign partners — for KOC matching, product banners/templates, impression reporting, and partnership performance as in Sections 5–6.",
+        "Infrastructure vendors (hosting, CDN, email/OTP, push, analytics, crash reporting, payment gateways if any).",
+        "Sign-in/share platforms (Google, TikTok and related SDKs) under their terms when you choose to connect.",
+        "Public authorities when legally required, or to protect rights, safety, and property of us or users.",
+        "Successors in a restructuring, merger, or investment (subject to equivalent confidentiality)."
+      ],
+      "paragraphsAfterBullets": [
+        "We do not sell user lists to unrelated data brokers. Commercial sharing with brands/advertising partners inside the Five Cut Pro product (banners, KOC matching, campaign reporting) is done under this Policy and is not intended as “selling data” in the cold-list brokerage sense — unless local law defines otherwise, in which case we will add any required choice mechanisms."
+      ]
+    },
+    {
+      "title": "8. On-device, cloud, and AI processing",
+      "paragraphs": [
+        "Many shoot/assemble steps may run on-device. When you use features that need servers (account sync, template marketplace, notifications, ads, matching, optional AI/cloud), necessary data is transmitted to our systems or vendors.",
+        "Do not submit unnecessary special-category data (health, biometrics for unique identification, children’s data) through features not designed for those purposes."
+      ]
+    },
+    {
+      "title": "9. Cookies and similar technologies",
+      "paragraphs": [
+        "The website may use cookies or local storage for locale, session, security, and analytics. The App may use equivalent device/ad SDKs. You can control some of this via browser or OS settings."
+      ]
+    },
+    {
+      "title": "10. International transfers, security, and retention",
+      "paragraphs": [
+        "Servers or vendors may be located outside your country of residence. We apply appropriate safeguards required by applicable law (contracts, technical and organizational measures).",
+        "We use reasonable security measures; no system is perfectly secure. Protect your devices and do not share OTPs/passwords.",
+        "Data is kept as long as needed to provide the service, report to brands, resolve disputes, and comply with law; then deleted or anonymized under internal procedures. Account deletion may include a grace period as shown in the App."
+      ]
+    },
+    {
+      "title": "11. Your rights",
+      "paragraphs": [
+        "Depending on local law, you may request access, correction, deletion, restriction or objection to certain processing, withdrawal of consent (where processing is consent-based), and a structured copy where portability applies.",
+        "You may unlink TikTok, turn off notifications, limit advertising IDs on-device, or ask not to receive campaign suggestions — which may reduce matching/personalized ad features.",
+        "Contact privacy/support at support@fivecutpro.com or channels on fivecutpro.com. EEA/UK users may lodge a complaint with a supervisory authority; Vietnamese users may exercise rights under Decree 13 and related rules after we verify identity."
+      ]
+    },
+    {
+      "title": "12. Children",
+      "paragraphs": [
+        "The service is not directed at children under 13 (or a higher minimum age required locally). Do not provide children’s data. Contact us to delete information collected in error."
+      ]
+    },
+    {
+      "title": "13. Changes to the Privacy Policy",
+      "paragraphs": [
+        "We may update Part A when the product, brand-partnership model, or law changes. Material changes will be notice via app, website, or email where appropriate. Continued use after the effective date means acceptance, unless local law requires a separate consent."
+      ]
+    },
+    {
+      "title": "B. END USER LICENSE AGREEMENT (EULA)",
+      "paragraphs": [
+        "Part B is a binding software licence between you and the operator of Five Cut Pro (\"Licensor\"). This EULA is an inseparable part of Five Cut Pro’s legal terms; accepting this document means accepting the EULA."
+      ]
+    },
+    {
+      "title": "14. Acceptance of the EULA",
+      "paragraphs": [
+        "By downloading, installing, opening, signing in, activating, or continuing to use the App, you accept Part B (EULA) and Part A (Privacy). If you do not agree, uninstall the App and stop using it."
+      ]
+    },
+    {
+      "title": "15. Licence grant",
+      "paragraphs": [
+        "Subject to this document and applicable law, we grant you a limited, personal (or for the organization you lawfully represent), non-exclusive, non-transferable, revocable licence to install and run legitimate copies of the App on devices you own or control, to create lawful video content and use marketplace / brand-collaboration features we provide."
+      ],
+      "bullets": [
+        "No ownership of the App is transferred — only use rights.",
+        "Each account/licence may only be used within its granted scope.",
+        "Reasonable backup copies for personal/archival use are allowed."
+      ]
+    },
+    {
+      "title": "16. Restrictions",
+      "paragraphs": [
+        "Except where mandatory law allows otherwise, you must not: sell/rent/sublicense the App; copy or create unauthorized derivatives; reverse engineer beyond lawful limits; remove proprietary notices; bypass security/licence controls; use the App to build a competing product by systematically cloning our proprietary workflows/templates; or abuse systems with bots."
+      ]
+    },
+    {
+      "title": "17. User Content, templates, and publishing responsibility",
+      "paragraphs": [
+        "You retain rights in content you lawfully own. You grant us the technical rights needed to store, process, transmit, display, and (when you use public/marketplace features) distribute content/templates to operate the service.",
+        "You are responsible for copyright, trademark, publicity, advertising, consumer-protection, and platform rules when you shoot, export, and publish — including when using templates or guides that feature brand products.",
+        "Templates, formulas, shooting guides, and automation tools are productivity aids only; they do not guarantee algorithmic approval, sales, brand deals, or immunity from platform enforcement."
+      ]
+    },
+    {
+      "title": "18. Advertising and brand programs (service terms)",
+      "paragraphs": [
+        "You agree that the App and website may contain ads, banners, and sponsored content. We may change placements, frequency, and advertising partners.",
+        "When you join brand campaigns (viewing info, receiving samples/products, creating content to brief, or being proposed to brands), you acknowledge that channel information may be shared under Section 6 and that you alone are responsible for obligations to the brand under any separate agreement. Five Cut Pro is a connection/workflow platform; unless a separate written contract says otherwise, we do not guarantee income, deal volume, or negotiation outcomes between you and a brand.",
+        "Brands may place product imagery, logos, and identity into templates/shooting guides. Using those templates does not assign brand IP to you beyond what the campaign permits."
+      ]
+    },
+    {
+      "title": "19. Third-party services",
+      "paragraphs": [
+        "Google, TikTok, app stores, CDNs, advertising/analytics SDKs, and brand partners have their own terms. We do not control their decisions (including social-account actions or content refusals)."
+      ]
+    },
+    {
+      "title": "20. Intellectual property",
+      "paragraphs": [
+        "The App, UI, documentation, Five Cut Pro logos, and formula/template systems we supply remain ours or our licensors’. Feedback you send may be used to improve the product without royalty obligations, unless a separate agreement says otherwise."
+      ]
+    },
+    {
+      "title": "21. Disclaimer of warranties",
+      "paragraphs": [
+        "TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE APP AND SERVICES ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\", WITHOUT WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, UNINTERRUPTED OR ERROR-FREE OPERATION, OR ANY BUSINESS RESULT, REVENUE, OR VIEW OUTCOME."
+      ]
+    },
+    {
+      "title": "22. Limitation of liability",
+      "paragraphs": [
+        "TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE ARE NOT LIABLE FOR INDIRECT OR CONSEQUENTIAL DAMAGES, LOST PROFITS, LOST DATA, LOST BRAND-DEAL OPPORTUNITIES, OR THIRD-PARTY PLATFORM ENFORCEMENT ACTIONS.",
+        "WHERE LIABILITY CANNOT BE EXCLUDED, OUR TOTAL AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO THIS DOCUMENT OR THE APP SHALL NOT EXCEED THE GREATER OF (A) THE FEES YOU ACTUALLY PAID US IN THE TWELVE (12) MONTHS BEFORE THE CLAIM AND (B) FIFTY US DOLLARS (USD $50), OR THE MINIMUM AMOUNT REQUIRED BY MANDATORY LAW IF HIGHER.",
+        "Your primary remedy is to stop using and uninstall the App."
+      ]
+    },
+    {
+      "title": "23. Indemnity",
+      "paragraphs": [
+        "To the extent permitted by law, you will indemnify us against claims arising from your content, publications, breach of this document or law, or disputes with brands/platforms/rights-holders — except to the extent caused by our wilful unlawful conduct where non-waivable."
+      ]
+    },
+    {
+      "title": "24. Termination",
+      "paragraphs": [
+        "You may terminate by uninstalling and/or deleting your account. We may suspend or terminate use rights for material breach, abuse, or legal requirements. IP, disclaimer, liability, indemnity, and governing-law provisions survive termination."
+      ]
+    },
+    {
+      "title": "25. Governing law, EULA changes, and contact",
+      "paragraphs": [
+        "If you reside in Vietnam, this document is governed by Vietnamese law; disputes should first be negotiated in good faith, then may be brought before competent Vietnamese courts, subject to mandatory consumer protections. If you reside elsewhere, non-waivable local rights still apply.",
+        "We may update Part B together with or separately from Part A; notice follows Section 13.",
+        "Contact: support@fivecutpro.com — or channels published on fivecutpro.com.",
+        "Five Cut Pro — Turn products into content. Turn content into selling opportunities."
       ]
     }
   ]

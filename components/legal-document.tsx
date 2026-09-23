@@ -33,6 +33,9 @@ export function LegalDocumentView({ doc }: { doc: LegalDocument }) {
                 ))}
               </ul>
             ) : null}
+            {section.paragraphsAfterBullets?.map((p, i) => (
+              <p key={`after-${i}`}>{p}</p>
+            ))}
           </section>
         ))}
       </div>

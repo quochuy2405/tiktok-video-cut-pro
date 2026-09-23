@@ -2,6 +2,8 @@ export type LegalSection = {
   title: string;
   paragraphs?: string[];
   bullets?: string[];
+  /** Optional paragraphs rendered after the bullet list. */
+  paragraphsAfterBullets?: string[];
 };
 
 export type LegalDocument = {

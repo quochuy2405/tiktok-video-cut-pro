@@ -90,12 +90,6 @@ export function SiteFooter() {
                 {t("termsLink")}
               </Link>
               <Link
-                href="/eula"
-                className="text-[#1F2E27] transition-colors hover:text-brand"
-              >
-                {t("eulaLink")}
-              </Link>
-              <Link
                 href="/privacy-policy"
                 className="text-[#1F2E27] transition-colors hover:text-brand"
               >

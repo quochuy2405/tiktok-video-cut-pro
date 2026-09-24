@@ -13,6 +13,9 @@ import thEula from "@/messages/th/eula.json";
 import jaPrivacy from "@/messages/ja/privacy.json";
 import jaTerms from "@/messages/ja/terms.json";
 import jaEula from "@/messages/ja/eula.json";
+import koPrivacy from "@/messages/ko/privacy.json";
+import koTerms from "@/messages/ko/terms.json";
+import koEula from "@/messages/ko/eula.json";
 import type { AppLocale } from "@/i18n/routing";
 import type { LegalDocument } from "@/types/legal";
 
@@ -22,6 +25,7 @@ const TERMS_BY_LOCALE: Record<AppLocale, LegalDocument> = {
   zh: zhTerms as LegalDocument,
   th: thTerms as LegalDocument,
   ja: jaTerms as LegalDocument,
+  ko: koTerms as LegalDocument,
 };
 
 const PRIVACY_BY_LOCALE: Record<AppLocale, LegalDocument> = {
@@ -30,6 +34,7 @@ const PRIVACY_BY_LOCALE: Record<AppLocale, LegalDocument> = {
   zh: zhPrivacy as LegalDocument,
   th: thPrivacy as LegalDocument,
   ja: jaPrivacy as LegalDocument,
+  ko: koPrivacy as LegalDocument,
 };
 
 const EULA_BY_LOCALE: Record<AppLocale, LegalDocument> = {
@@ -38,6 +43,7 @@ const EULA_BY_LOCALE: Record<AppLocale, LegalDocument> = {
   zh: zhEula as LegalDocument,
   th: thEula as LegalDocument,
   ja: jaEula as LegalDocument,
+  ko: koEula as LegalDocument,
 };
 
 export function loadTerms(locale: AppLocale): LegalDocument {

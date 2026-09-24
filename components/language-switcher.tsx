@@ -17,6 +17,7 @@ const LOCALE_INFO: Record<
   zh: { label: "中文 (简体)", short: "ZH", nativeName: "中文", flag: "🇨🇳" },
   th: { label: "ไทย", short: "TH", nativeName: "ไทย", flag: "🇹🇭" },
   ja: { label: "日本語", short: "JA", nativeName: "日本語", flag: "🇯🇵" },
+  ko: { label: "한국어", short: "KO", nativeName: "한국어", flag: "🇰🇷" },
 };
 
 export function LanguageSwitcher({

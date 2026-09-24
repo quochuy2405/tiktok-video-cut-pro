@@ -1,183 +1,183 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "SALES VIDEO FOR KOCS — ON YOUR PHONE",
-    "titleLead": "You need daily sales videos,",
-    "titleAccent": "stop spending nights editing",
-    "subtitle": "Missing angles · rebuild from scratch · inconsistent posting. Five Cut Pro lets KOCs follow a template: watch how to shoot, attach every required shot, merge on device, post to TikTok.",
-    "ctaPrimary": "Download free",
-    "ctaSecondary": "See the pain vs the fix",
-    "ctaBatch": "Pick template → Shoot → Export & post",
-    "ctaBrand": "For KOC & seller teams",
-    "ctaTrust": "iOS & Android · Google / TikTok / Apple / Email OTP",
-    "ctaSocialProof": "Built for KOCs, sellers, and TikTok Shop teams",
-    "audienceKoc": "KOCs & sales creators",
-    "audienceSeller": "Sellers & short-form teams",
-    "logoAlt": "Five Cut Pro icon",
-    "pillRetention": "Missing a shot = rebuilding the cut",
-    "pillCta": "One recipe — many videos",
-    "pillSpeed": "Merge on device, share to TikTok",
-    "pillBatch": "KOC market — preview then use",
-    "pillAntiReup": "9:16 ready to post"
+    "tagline": "วิดีโอขายสำหรับ KOC — บนมือถือ",
+    "titleLead": "ต้องทำวิดีโอขายทุกวัน",
+    "titleAccent": "อย่านั่งตัดทั้งคืน",
+    "subtitle": "มุมไม่ครบ · ตัดใหม่ตั้งแต่ต้น · ลงไม่สม่ำเสมอ Five Cut Pro ให้ KOC ทำตามเทมเพลต: ดูวิธีถ่าย → แนบช็อตตามเช็คลิสต์ → รวมบนเครื่อง → โพสต์ TikTok",
+    "ctaPrimary": "ดาวน์โหลดฟรี",
+    "ctaSecondary": "ดูปัญหา vs ทางแก้",
+    "ctaBatch": "เลือกเทมเพลต → ถ่าย → ส่งออก & โพสต์",
+    "ctaBrand": "สำหรับทีม KOC และผู้ขาย",
+    "ctaTrust": "iOS & Android · Google / TikTok / Apple / อีเมล OTP",
+    "ctaSocialProof": "ออกแบบเพื่อ KOC ผู้ขาย และทีม TikTok Shop",
+    "audienceKoc": "KOC และครีเอเตอร์ขาย",
+    "audienceSeller": "ผู้ขายและทีมชอร์ตฟอร์ม",
+    "logoAlt": "ไอคอน Five Cut Pro",
+    "pillRetention": "ขาดช็อต = ตัดใหม่ทั้งคลิป",
+    "pillCta": "สูตรเดียว — หลายวิดีโอ",
+    "pillSpeed": "รวมบนเครื่อง แชร์ TikTok",
+    "pillBatch": "ตลาด KOC — ดูก่อนใช้",
+    "pillAntiReup": "9:16 พร้อมโพสต์"
   },
   "metricsBar": [
     {
-      "value": "Pain",
-      "label": "Manual edit each post",
-      "desc": "Rebuild cuts, lose rhythm"
+      "value": "ปัญหา",
+      "label": "ตัดมือทุกโพสต์",
+      "desc": "ตัดใหม่ จังหวะหาย"
     },
     {
-      "value": "Fix",
-      "label": "Follow a KOC template",
-      "desc": "Guide → shoot → app merges"
+      "value": "ทางแก้",
+      "label": "ทำตามเทมเพลต KOC",
+      "desc": "ไกด์ → ถ่าย → แอปรวม"
     },
     {
-      "value": "Full shots",
-      "label": "Angle recipe",
-      "desc": "No missing angles mid-edit"
+      "value": "ครบช็อต",
+      "label": "สูตรมุมกล้อง",
+      "desc": "ไม่พลาดมุมตอนตัด"
     },
     {
       "value": "TikTok",
-      "label": "Export & post fast",
-      "desc": "Save or share right away"
+      "label": "ส่งออกและโพสต์เร็ว",
+      "desc": "บันทึกหรือแชร์ทันที"
     }
   ],
   "featuresSection": {
-    "label": "IN THE APP",
-    "title": "Enough to post daily — no fake feature list",
-    "subtitle": "Template market, shot recipes, shoot guides, on-device merge. We don’t claim magic 1→100 auto videos."
+    "label": "ในแอป",
+    "title": "พอสำหรับโพสต์ทุกวัน — ไม่มีฟีเจอร์หลอก",
+    "subtitle": "ตลาดเทมเพลต สูตรช็อต ไกด์ถ่าย รวมบนเครื่อง เราไม่สัญญาวิดีโออัตโนมัติ 1→100"
   },
   "features": [
     {
       "id": "koc-market",
-      "title": "KOC market — preview before you use",
-      "description": "Stop guessing how to shoot. Open Explore, watch the guide + finished sample, then tap Use template.",
+      "title": "ตลาด KOC — ดูก่อนใช้",
+      "description": "อย่าเดาวิธีถ่าย เปิด Explore ดูไกด์+ตัวอย่างจบ แล้วแตะใช้เทมเพลต",
       "bullets": [
-        "Templates from KOC creators",
-        "Hot / New / Best-seller badges",
-        "Per-angle guide clips before attach"
+        "เทมเพลตจากครีเอเตอร์ KOC",
+        "แบดจ์ฮอต / ใหม่ / ขายดี",
+        "คลิปไกด์ตามมุมก่อนแนบ"
       ]
     },
     {
       "id": "recipes",
-      "title": "Your recipes — reuse every day",
-      "description": "Save source order and durations once. Tomorrow attach new clips and export — no timeline rebuild.",
+      "title": "สูตรของคุณ — ใช้ซ้ำทุกวัน",
+      "description": "บันทึกลำดับและระยะเวลาครั้งเดียว พรุ่งนี้แนบคลิปใหม่แล้วส่งออก — ไม่ต้องสร้างไทม์ไลน์ใหม่",
       "bullets": [
-        "Angle chains by template (e.g. 1-2-3-1)",
-        "Per-segment duration in seconds",
-        "Default / favorite / make video"
+        "โซ่มุมตามเทมเพลต (เช่น 1-2-3-1)",
+        "ความยาวต่อช่วงเป็นวินาที",
+        "ค่าเริ่มต้น / รายการโปรด / สร้างวิดีโอ"
       ]
     },
     {
       "id": "shot-guide",
-      "title": "Shot guides — no missing angles",
-      "description": "Each segment has angle, notes, and a sample clip. Shoot the shot, attach it, done.",
+      "title": "ไกด์ช็อต — ไม่พลาดมุม",
+      "description": "แต่ละช่วงมีมุม โน้ต และตัวอย่าง ถ่ายแล้วแนบ จบ",
       "bullets": [
-        "Sample clip before you shoot",
-        "Attached vs required progress",
-        "Warns when a source is too short"
+        "คลิปตัวอย่างก่อนถ่าย",
+        "ความคืบหน้าแนบ vs ที่ต้องมี",
+        "เตือนเมื่อซอร์สสั้นเกินไป"
       ]
     },
     {
       "id": "merge-export",
-      "title": "Merge on device → post TikTok",
-      "description": "Attach sources, tap Merge now. Processing stays on your phone — download or share to TikTok.",
+      "title": "รวมบนเครื่อง → โพสต์ TikTok",
+      "description": "แนบซอร์ส แตะรวมเลย ประมวลผลบนมือถือ — ดาวน์โหลดหรือแชร์ TikTok",
       "bullets": [
-        "Prepare / merge / done progress",
-        "Exported list on device",
-        "Share each clip to TikTok"
+        "ความคืบหน้าเตรียม / รวม / เสร็จ",
+        "รายการที่ส่งออกบนเครื่อง",
+        "แชร์แต่ละคลิปไป TikTok"
       ]
     }
   ],
   "howItWorksSection": {
-    "label": "3 STEPS",
-    "title": "Pick template → Shoot → Export & post",
-    "subtitle": "The real iOS & Android flow — no CapCut timeline required.",
+    "label": "3 ขั้นตอน",
+    "title": "เลือกเทมเพลต → ถ่าย → ส่งออก & โพสต์",
+    "subtitle": "โฟลว์จริงบน iOS & Android — ไม่ต้องใช้ไทม์ไลน์ CapCut",
     "steps": [
       {
         "num": "01",
-        "title": "Pick a working template",
-        "desc": "Open Explore or your saved recipes. Watch the guide and finished sample first.",
+        "title": "เลือกเทมเพลตที่ใช้ได้",
+        "desc": "เปิด Explore หรือสูตรที่บันทึก ดูกไกด์และตัวอย่างจบก่อน",
         "badge": "Explore"
       },
       {
         "num": "02",
-        "title": "Shoot every shot, then attach",
-        "desc": "Follow the template’s shot checklist. Attach each clip until every segment is filled.",
-        "badge": "Attach"
+        "title": "ถ่ายทุกช็อตแล้วแนบ",
+        "desc": "ทำตามเช็คลิสต์ของเทมเพลต แนบจนครบทุกช่วง",
+        "badge": "แนบ"
       },
       {
         "num": "03",
-        "title": "Merge — then post",
-        "desc": "Tap Merge now, open Exported videos, save to gallery or share to TikTok.",
-        "badge": "Export"
+        "title": "รวมแล้วโพสต์",
+        "desc": "แตะรวมเลย เปิดวิดีโอที่ส่งออก บันทึกแกลเลอรีหรือแชร์ TikTok",
+        "badge": "ส่งออก"
       }
     ]
   },
   "comparisonSection": {
-    "badge": "REAL PAIN",
-    "title": "Where are you losing time?",
-    "subtitle": "Five Cut Pro isn’t a freeform editor — it solves one job: ship sales videos daily without getting stuck in edit hell.",
+    "badge": "ปัญหาจริง",
+    "title": "คุณเสียเวลาตรงไหน?",
+    "subtitle": "Five Cut Pro ไม่ใช่เอดิเตอร์อิสระ — แก้เรื่องเดียว: ส่งวิดีโอขายทุกวันโดยไม่ติดนรกตัดต่อ",
     "oldWay": {
-      "badge": "Old way",
-      "title": "Manual edit every post",
-      "subtitle": "Slow, uneven, exhausting",
+      "badge": "แบบเดิม",
+      "title": "ตัดมือทุกโพสต์",
+      "subtitle": "ช้า ไม่สม่ำเสมอ เหนื่อย",
       "points": [
-        "Rebuild every cut from scratch — nights disappear",
-        "Miss a required angle on the checklist → remake the whole clip",
-        "No shot checklist → sales pacing falls apart",
-        "Posting slips because editing blocks TikTok Shop deadlines"
+        "ตัดใหม่ทุกครั้งตั้งแต่ต้น — คืนหายไป",
+        "ขาดมุมในเช็คลิสต์ → ทำคลิปใหม่ทั้งก้อน",
+        "ไม่มีเช็คลิสต์ช็อต → จังหวะขายพัง",
+        "การตัดบล็อกเดดไลน์ TikTok Shop"
       ]
     },
     "newWay": {
-      "badge": "With Five Cut Pro",
-      "title": "Follow the template — app merges",
-      "subtitle": "Shoot right, export fast",
+      "badge": "กับ Five Cut Pro",
+      "title": "ทำตามเทมเพลต — แอปรวม",
+      "subtitle": "ถ่ายถูก ส่งออกเร็ว",
       "points": [
-        "Templates with shoot guides built in",
-        "Clear shot checklist — stop guessing angles",
-        "Attach → merge on device → share to TikTok",
-        "Reuse one recipe across products the same day"
+        "เทมเพลตพร้อมไกด์ถ่าย",
+        "เช็คลิสต์ชัด — เลิกเดามุม",
+        "แนบ → รวมบนเครื่อง → แชร์ TikTok",
+        "ใช้สูตรซ้ำหลายสินค้าในวันเดียว"
       ]
     }
   },
   "faqSection": {
     "label": "FAQ",
-    "title": "Quick answers",
-    "subtitle": "Short — only what the app actually does.",
+    "title": "คำตอบสั้นๆ",
+    "subtitle": "สั้น — เฉพาะสิ่งที่แอปทำจริง",
     "items": [
       {
         "id": "faq-1",
-        "question": "How is Five Cut Pro different from CapCut?",
-        "answer": "CapCut is freeform editing. Five Cut Pro is a KOC template workflow: watch how to shoot, attach shots by recipe, merge on device, then post. Built for daily sales output, not timeline tinkering."
+        "question": "Five Cut Pro ต่างจาก CapCut อย่างไร?",
+        "answer": "CapCut เป็นการตัดต่ออิสระ Five Cut Pro เป็นเวิร์กโฟลว์เทมเพลต KOC: ดูวิธีถ่าย แนบช็อตตามสูตร รวมบนเครื่อง แล้วโพสต์ สำหรับผลผลิตขายรายวัน ไม่ใช่เล่นไทม์ไลน์"
       },
       {
         "id": "faq-2",
-        "question": "I’m new to shooting — can I use it?",
-        "answer": "Yes. Every template includes guides and sample clips per angle. Shoot the shot, attach it — the app handles the merge."
+        "question": "มือใหม่ถ่ายได้ไหม?",
+        "answer": "ได้ ทุกเทมเพลตมีไกด์และตัวอย่างต่อมุม ถ่ายแล้วแนบ — แอปจัดการรวมให้"
       },
       {
         "id": "faq-3",
-        "question": "How do I post to TikTok after export?",
-        "answer": "Open Exported videos after merge: save to gallery or share to TikTok (sign in with TikTok in-app for faster share)."
+        "question": "หลังส่งออกโพสต์ TikTok ยังไง?",
+        "answer": "เปิดวิดีโอที่ส่งออกหลังรวม: บันทึกแกลเลอรีหรือแชร์ TikTok (ล็อกอิน TikTok ในแอปจะเร็วขึ้น)"
       },
       {
         "id": "faq-4",
-        "question": "Which platforms?",
-        "answer": "iOS and Android. Sign in with Google, TikTok, Apple, or email OTP."
+        "question": "รองรับแพลตฟอร์มไหน?",
+        "answer": "iOS และ Android เข้าสู่ระบบด้วย Google, TikTok, Apple หรืออีเมล OTP"
       }
     ]
   },
   "downloadSection": {
-    "label": "Get the app",
-    "title": "Install Five Cut Pro on your phone",
-    "subtitle": "Version {version}. Scan the QR or open the store — start from the KOC market today.",
+    "label": "รับแอป",
+    "title": "ติดตั้ง Five Cut Pro บนมือถือ",
+    "subtitle": "เวอร์ชัน {version} สแกน QR หรือเปิดสโตร์ — เริ่มจากตลาด KOC วันนี้",
     "mobileLabel": "iOS & Android",
-    "ctaStore": "Open store",
-    "comingSoon": "Coming soon",
-    "qrLabel": "Scan",
-    "qrTitle": "Scan to install",
-    "qrSubtitle": "Open your camera → App Store or Google Play."
+    "ctaStore": "เปิดสโตร์",
+    "comingSoon": "เร็วๆ นี้",
+    "qrLabel": "สแกน",
+    "qrTitle": "สแกนเพื่อติดตั้ง",
+    "qrSubtitle": "เปิดกล้อง → App Store หรือ Google Play"
   },
   "downloadCards": {
     "ios": {
@@ -186,75 +186,75 @@
     },
     "android": {
       "title": "Android",
-      "subtitle": "Phones & tablets"
+      "subtitle": "มือถือและแท็บเล็ต"
     }
   },
   "installSection": {
-    "title": "Install in 1 minute"
+    "title": "ติดตั้งใน 1 นาที"
   },
   "bannerSection": {
-    "label": "IN APP",
-    "title": "Live templates & campaigns",
-    "subtitle": "Drag or swipe — synced with the mobile app.",
+    "label": "ในแอป",
+    "title": "เทมเพลตและแคมเปญสด",
+    "subtitle": "ลากหรือปัด — ซิงก์กับแอปมือถือ",
     "steps": [
-      "Pick template",
-      "Shoot",
-      "Export & post"
+      "เลือกเทมเพลต",
+      "ถ่าย",
+      "ส่งออก & โพสต์"
     ]
   },
   "sponsorsSection": {
-    "label": "FOR BRANDS",
-    "title": "Partner on KOC templates & campaigns",
-    "subtitle": "Put your brand brief into the template market — KOCs shoot the right shots and ship on-message videos.",
+    "label": "สำหรับแบรนด์",
+    "title": "พาร์ทเนอร์เทมเพลตและแคมเปญ KOC",
+    "subtitle": "ใส่บรีฟแบรนด์ลงตลาดเทมเพลต — KOC ถ่ายช็อตถูกและส่งวิดีโอตรงข้อความ",
     "stats": [
       {
-        "value": "KOC templates",
-        "label": "Recipes with shoot guides"
+        "value": "เทมเพลต KOC",
+        "label": "สูตรพร้อมไกด์ถ่าย"
       },
       {
         "value": "9:16",
-        "label": "TikTok / Reels ready"
+        "label": "พร้อม TikTok / Reels"
       },
       {
-        "value": "3 steps",
-        "label": "Pick → Shoot → Export"
+        "value": "3 ขั้น",
+        "label": "เลือก → ถ่าย → ส่งออก"
       },
       {
-        "value": "App",
+        "value": "แอป",
         "label": "iOS & Android"
       }
     ],
-    "benefitsTitle": "Why partner with Five Cut Pro",
+    "benefitsTitle": "ทำไมพาร์ทเนอร์กับ Five Cut Pro",
     "benefits": [
-      "Sponsor review recipes aligned to your brand message and angles.",
-      "KOCs watch in-app shoot guides before producing.",
-      "Keep shot structure consistent across creators on one template.",
-      "Built for TikTok Shop & Reels short-form campaigns."
+      "สปอนเซอร์สูตรรีวิวให้ตรงข้อความและมุมแบรนด์",
+      "KOC ดูไกด์ถ่ายในแอปก่อนผลิต",
+      "โครงสร้างช็อตสม่ำเสมอข้ามครีเอเตอร์บนเทมเพลตเดียว",
+      "เหมาะแคมเปญ TikTok Shop และ Reels"
     ],
     "form": {
-      "title": "Request a partnership consult",
-      "desc": "Leave your details — the Five Cut Pro team will reply during business hours.",
-      "brandNameLabel": "Brand / company name",
-      "brandNamePlaceholder": "e.g. Vinamilk, Sunhouse, Coolmate...",
-      "contactNameLabel": "Contact name",
-      "contactNamePlaceholder": "Jane Doe",
-      "emailLabel": "Work email",
+      "title": "ขอคำปรึกษาพาร์ทเนอร์ชิป",
+      "desc": "ฝากข้อมูลไว้ — ทีม Five Cut Pro จะตอบในเวลาทำการ",
+      "brandNameLabel": "ชื่อแบรนด์ / บริษัท",
+      "brandNamePlaceholder": "เช่น ชื่อแบรนด์...",
+      "contactNameLabel": "ชื่อผู้ติดต่อ",
+      "contactNamePlaceholder": "สมชาย ใจดี",
+      "emailLabel": "อีเมลงาน",
       "emailPlaceholder": "contact@brand.com",
-      "phoneLabel": "Phone / Zalo",
-      "phonePlaceholder": "+84 ...",
-      "budgetLabel": "Estimated campaign budget",
+      "phoneLabel": "โทร / Line",
+      "phonePlaceholder": "+66 ...",
+      "budgetLabel": "งบแคมเปญโดยประมาณ",
       "budgetOptions": [
-        "Under 20M VND (pilot)",
-        "20 - 50M VND",
-        "50 - 200M VND",
-        "Over 200M VND"
+        "ต่ำกว่า 20 ล้าน VND (ไพล็อต)",
+        "20 - 50 ล้าน VND",
+        "50 - 200 ล้าน VND",
+        "เกิน 200 ล้าน VND"
       ],
-      "noteLabel": "Campaign needs or goals",
-      "notePlaceholder": "Product to review, video volume, timeline...",
-      "submitButton": "Send partnership request",
-      "successMessage": "Sent! We’ll follow up via Zalo/Email.",
-      "directContact": "Or contact us directly:",
-      "emailAria": "Email brand partnerships",
+      "noteLabel": "ความต้องการหรือเป้าหมายแคมเปญ",
+      "notePlaceholder": "สินค้าที่รีวิว จำนวนวิดีโอ ไทม์ไลน์...",
+      "submitButton": "ส่งคำขอพาร์ทเนอร์ชิป",
+      "successMessage": "ส่งแล้ว! เราจะติดต่อกลับทาง Zalo/อีเมล",
+      "directContact": "หรือติดต่อตรง:",
+      "emailAria": "อีเมลพาร์ทเนอร์แบรนด์",
       "emailText": "support@fivecutpro.com"
     }
   }

@@ -55,6 +55,8 @@ export function openGraphLocale(locale: string): string {
       return "th_TH";
     case "ja":
       return "ja_JP";
+    case "ko":
+      return "ko_KR";
     default:
       return "en_US";
   }

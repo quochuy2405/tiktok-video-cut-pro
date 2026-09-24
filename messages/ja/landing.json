@@ -1,183 +1,183 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "SALES VIDEO FOR KOCS — ON YOUR PHONE",
-    "titleLead": "You need daily sales videos,",
-    "titleAccent": "stop spending nights editing",
-    "subtitle": "Missing angles · rebuild from scratch · inconsistent posting. Five Cut Pro lets KOCs follow a template: watch how to shoot, attach every required shot, merge on device, post to TikTok.",
-    "ctaPrimary": "Download free",
-    "ctaSecondary": "See the pain vs the fix",
-    "ctaBatch": "Pick template → Shoot → Export & post",
-    "ctaBrand": "For KOC & seller teams",
-    "ctaTrust": "iOS & Android · Google / TikTok / Apple / Email OTP",
-    "ctaSocialProof": "Built for KOCs, sellers, and TikTok Shop teams",
-    "audienceKoc": "KOCs & sales creators",
-    "audienceSeller": "Sellers & short-form teams",
-    "logoAlt": "Five Cut Pro icon",
-    "pillRetention": "Missing a shot = rebuilding the cut",
-    "pillCta": "One recipe — many videos",
-    "pillSpeed": "Merge on device, share to TikTok",
-    "pillBatch": "KOC market — preview then use",
-    "pillAntiReup": "9:16 ready to post"
+    "tagline": "KOC向け販売動画 — スマホで完結",
+    "titleLead": "毎日セールス動画が必要なのに、",
+    "titleAccent": "夜まで編集しなくていい",
+    "subtitle": "角度不足 · 最初から切り直し · 投稿が不安定。Five Cut Proはテンプレに沿って：撮影法を見る → 必要なショットを添付 → 端末で結合 → TikTok投稿。",
+    "ctaPrimary": "無料ダウンロード",
+    "ctaSecondary": "課題と解決を見る",
+    "ctaBatch": "テンプレ選択 → 撮影 → 書き出し＆投稿",
+    "ctaBrand": "KOC・販売チーム向け",
+    "ctaTrust": "iOS & Android · Google / TikTok / Apple / メールOTP",
+    "ctaSocialProof": "KOC、販売者、TikTok Shopチーム向けに設計",
+    "audienceKoc": "KOC・販売クリエイター",
+    "audienceSeller": "販売者・ショート動画チーム",
+    "logoAlt": "Five Cut Pro アイコン",
+    "pillRetention": "ショット不足＝カットの作り直し",
+    "pillCta": "レシピ1つ — 動画は複数",
+    "pillSpeed": "端末で結合、TikTok共有",
+    "pillBatch": "KOCマーケット — 見てから使う",
+    "pillAntiReup": "9:16投稿準備完了"
   },
   "metricsBar": [
     {
-      "value": "Pain",
-      "label": "Manual edit each post",
-      "desc": "Rebuild cuts, lose rhythm"
+      "value": "課題",
+      "label": "毎回の手作業編集",
+      "desc": "カット再構築、リズム崩壊"
     },
     {
-      "value": "Fix",
-      "label": "Follow a KOC template",
-      "desc": "Guide → shoot → app merges"
+      "value": "解決",
+      "label": "KOCテンプレに従う",
+      "desc": "ガイド→撮影→アプリが結合"
     },
     {
-      "value": "Full shots",
-      "label": "Angle recipe",
-      "desc": "No missing angles mid-edit"
+      "value": "全ショット",
+      "label": "角度レシピ",
+      "desc": "編集中の角度漏れを防止"
     },
     {
       "value": "TikTok",
-      "label": "Export & post fast",
-      "desc": "Save or share right away"
+      "label": "高速書き出し・投稿",
+      "desc": "すぐ保存または共有"
     }
   ],
   "featuresSection": {
-    "label": "IN THE APP",
-    "title": "Enough to post daily — no fake feature list",
-    "subtitle": "Template market, shot recipes, shoot guides, on-device merge. We don’t claim magic 1→100 auto videos."
+    "label": "アプリ内",
+    "title": "毎日投稿に十分な機能 — 虚偽の機能リストなし",
+    "subtitle": "テンプレ市場、ショットレシピ、撮影ガイド、端末内結合。1→100の魔法自動生成は主張しません。"
   },
   "features": [
     {
       "id": "koc-market",
-      "title": "KOC market — preview before you use",
-      "description": "Stop guessing how to shoot. Open Explore, watch the guide + finished sample, then tap Use template.",
+      "title": "KOCマーケット — 使う前にプレビュー",
+      "description": "撮り方を勘で当てない。Exploreでガイド＋完成サンプルを見てからテンプレ使用をタップ。",
       "bullets": [
-        "Templates from KOC creators",
-        "Hot / New / Best-seller badges",
-        "Per-angle guide clips before attach"
+        "KOCクリエイターのテンプレ",
+        "人気／新着／ベストセラーバッジ",
+        "添付前の角度別ガイドクリップ"
       ]
     },
     {
       "id": "recipes",
-      "title": "Your recipes — reuse every day",
-      "description": "Save source order and durations once. Tomorrow attach new clips and export — no timeline rebuild.",
+      "title": "自分のレシピ — 毎日再利用",
+      "description": "ソース順と尺を一度保存。翌日は新クリップを添付して書き出し — タイムライン再構築不要。",
       "bullets": [
-        "Angle chains by template (e.g. 1-2-3-1)",
-        "Per-segment duration in seconds",
-        "Default / favorite / make video"
+        "テンプレ別角度チェーン（例: 1-2-3-1）",
+        "区間ごとの秒数",
+        "デフォルト／お気に入り／動画作成"
       ]
     },
     {
       "id": "shot-guide",
-      "title": "Shot guides — no missing angles",
-      "description": "Each segment has angle, notes, and a sample clip. Shoot the shot, attach it, done.",
+      "title": "ショットガイド — 角度漏れなし",
+      "description": "各区間に角度・メモ・サンプルがあります。撮って添付すれば完了。",
       "bullets": [
-        "Sample clip before you shoot",
-        "Attached vs required progress",
-        "Warns when a source is too short"
+        "撮影前のサンプル",
+        "添付 vs 必要の進捗",
+        "ソースが短すぎると警告"
       ]
     },
     {
       "id": "merge-export",
-      "title": "Merge on device → post TikTok",
-      "description": "Attach sources, tap Merge now. Processing stays on your phone — download or share to TikTok.",
+      "title": "端末で結合 → TikTok投稿",
+      "description": "ソースを添付し、今すぐ結合。処理はスマホ上 — ダウンロードまたはTikTok共有。",
       "bullets": [
-        "Prepare / merge / done progress",
-        "Exported list on device",
-        "Share each clip to TikTok"
+        "準備／結合／完了の進捗",
+        "端末内の書き出し一覧",
+        "各クリップをTikTok共有"
       ]
     }
   ],
   "howItWorksSection": {
-    "label": "3 STEPS",
-    "title": "Pick template → Shoot → Export & post",
-    "subtitle": "The real iOS & Android flow — no CapCut timeline required.",
+    "label": "3ステップ",
+    "title": "テンプレ選択 → 撮影 → 書き出し＆投稿",
+    "subtitle": "実際のiOS & Androidフロー — CapCutタイムライン不要。",
     "steps": [
       {
         "num": "01",
-        "title": "Pick a working template",
-        "desc": "Open Explore or your saved recipes. Watch the guide and finished sample first.",
+        "title": "使えるテンプレを選ぶ",
+        "desc": "Exploreか保存レシピを開く。先にガイドと完成サンプルを確認。",
         "badge": "Explore"
       },
       {
         "num": "02",
-        "title": "Shoot every shot, then attach",
-        "desc": "Follow the template’s shot checklist. Attach each clip until every segment is filled.",
-        "badge": "Attach"
+        "title": "全ショットを撮って添付",
+        "desc": "テンプレのチェックリストに従い、全区間が埋まるまでクリップを添付。",
+        "badge": "添付"
       },
       {
         "num": "03",
-        "title": "Merge — then post",
-        "desc": "Tap Merge now, open Exported videos, save to gallery or share to TikTok.",
-        "badge": "Export"
+        "title": "結合して投稿",
+        "desc": "今すぐ結合をタップし、書き出し一覧からギャラリー保存またはTikTok共有。",
+        "badge": "書き出し"
       }
     ]
   },
   "comparisonSection": {
-    "badge": "REAL PAIN",
-    "title": "Where are you losing time?",
-    "subtitle": "Five Cut Pro isn’t a freeform editor — it solves one job: ship sales videos daily without getting stuck in edit hell.",
+    "badge": "本当の課題",
+    "title": "どこで時間を失っていますか？",
+    "subtitle": "Five Cut Proは自由編集アプリではありません。編集地獄なしで毎日セールス動画を出す、その一点を解きます。",
     "oldWay": {
-      "badge": "Old way",
-      "title": "Manual edit every post",
-      "subtitle": "Slow, uneven, exhausting",
+      "badge": "従来",
+      "title": "毎回手作業で編集",
+      "subtitle": "遅く、ムラがあり、疲れる",
       "points": [
-        "Rebuild every cut from scratch — nights disappear",
-        "Miss a required angle on the checklist → remake the whole clip",
-        "No shot checklist → sales pacing falls apart",
-        "Posting slips because editing blocks TikTok Shop deadlines"
+        "毎回ゼロからカット再構築 — 夜が消える",
+        "チェックリストの角度1つ欠けると全体作り直し",
+        "ショットチェックなし → 販売リズム崩壊",
+        "編集がTikTok Shop締切を阻み投稿遅延"
       ]
     },
     "newWay": {
-      "badge": "With Five Cut Pro",
-      "title": "Follow the template — app merges",
-      "subtitle": "Shoot right, export fast",
+      "badge": "Five Cut Proと",
+      "title": "テンプレに従う — アプリが結合",
+      "subtitle": "正しく撮って、速く書き出す",
       "points": [
-        "Templates with shoot guides built in",
-        "Clear shot checklist — stop guessing angles",
-        "Attach → merge on device → share to TikTok",
-        "Reuse one recipe across products the same day"
+        "撮影ガイド付きテンプレ",
+        "明確なショットチェック — 角度推測をやめる",
+        "添付 → 端末で結合 → TikTok共有",
+        "同日に複数商品へレシピ再利用"
       ]
     }
   },
   "faqSection": {
     "label": "FAQ",
-    "title": "Quick answers",
-    "subtitle": "Short — only what the app actually does.",
+    "title": "すぐわかる回答",
+    "subtitle": "短く — アプリが実際にやることだけ。",
     "items": [
       {
         "id": "faq-1",
-        "question": "How is Five Cut Pro different from CapCut?",
-        "answer": "CapCut is freeform editing. Five Cut Pro is a KOC template workflow: watch how to shoot, attach shots by recipe, merge on device, then post. Built for daily sales output, not timeline tinkering."
+        "question": "Five Cut ProはCapCutと何が違う？",
+        "answer": "CapCutは自由編集。Five Cut ProはKOCテンプレワークフロー：撮影法を見る、レシピどおりにショット添付、端末で結合、投稿。タイムラインいじりではなく毎日の販売出力向け。"
       },
       {
         "id": "faq-2",
-        "question": "I’m new to shooting — can I use it?",
-        "answer": "Yes. Every template includes guides and sample clips per angle. Shoot the shot, attach it — the app handles the merge."
+        "question": "撮影初心者でも使える？",
+        "answer": "はい。全テンプレに角度別ガイドとサンプルがあります。撮って添付すればアプリが結合します。"
       },
       {
         "id": "faq-3",
-        "question": "How do I post to TikTok after export?",
-        "answer": "Open Exported videos after merge: save to gallery or share to TikTok (sign in with TikTok in-app for faster share)."
+        "question": "書き出し後どうやってTikTokに載せる？",
+        "answer": "結合後の書き出し一覧から：ギャラリー保存、またはTikTok共有（アプリ内TikTokログインでより速い）。"
       },
       {
         "id": "faq-4",
-        "question": "Which platforms?",
-        "answer": "iOS and Android. Sign in with Google, TikTok, Apple, or email OTP."
+        "question": "対応プラットフォームは？",
+        "answer": "iOSとAndroid。Google、TikTok、Apple、またはメールOTPでログイン。"
       }
     ]
   },
   "downloadSection": {
-    "label": "Get the app",
-    "title": "Install Five Cut Pro on your phone",
-    "subtitle": "Version {version}. Scan the QR or open the store — start from the KOC market today.",
+    "label": "アプリを入手",
+    "title": "スマホにFive Cut Proを入れる",
+    "subtitle": "バージョン {version}。QRをスキャンするかストアを開いて、今日からKOCマーケットを始めましょう。",
     "mobileLabel": "iOS & Android",
-    "ctaStore": "Open store",
-    "comingSoon": "Coming soon",
-    "qrLabel": "Scan",
-    "qrTitle": "Scan to install",
-    "qrSubtitle": "Open your camera → App Store or Google Play."
+    "ctaStore": "ストアを開く",
+    "comingSoon": "近日公開",
+    "qrLabel": "スキャン",
+    "qrTitle": "スキャンしてインストール",
+    "qrSubtitle": "カメラでスキャン → App Store または Google Play。"
   },
   "downloadCards": {
     "ios": {
@@ -186,75 +186,75 @@
     },
     "android": {
       "title": "Android",
-      "subtitle": "Phones & tablets"
+      "subtitle": "スマホ & タブレット"
     }
   },
   "installSection": {
-    "title": "Install in 1 minute"
+    "title": "1分でインストール"
   },
   "bannerSection": {
-    "label": "IN APP",
-    "title": "Live templates & campaigns",
-    "subtitle": "Drag or swipe — synced with the mobile app.",
+    "label": "アプリ内",
+    "title": "ライブテンプレ＆キャンペーン",
+    "subtitle": "ドラッグまたはスワイプ — モバイルアプリと同期。",
     "steps": [
-      "Pick template",
-      "Shoot",
-      "Export & post"
+      "テンプレ選択",
+      "撮影",
+      "書き出し＆投稿"
     ]
   },
   "sponsorsSection": {
-    "label": "FOR BRANDS",
-    "title": "Partner on KOC templates & campaigns",
-    "subtitle": "Put your brand brief into the template market — KOCs shoot the right shots and ship on-message videos.",
+    "label": "ブランド向け",
+    "title": "KOCテンプレ・キャンペーン提携",
+    "subtitle": "ブランドブリーフをテンプレ市場に載せ、KOCが正しいショットでメッセージ通りの動画を作れるようにします。",
     "stats": [
       {
-        "value": "KOC templates",
-        "label": "Recipes with shoot guides"
+        "value": "KOCテンプレ",
+        "label": "撮影ガイド付きレシピ"
       },
       {
         "value": "9:16",
-        "label": "TikTok / Reels ready"
+        "label": "TikTok / Reels対応"
       },
       {
-        "value": "3 steps",
-        "label": "Pick → Shoot → Export"
+        "value": "3ステップ",
+        "label": "選択 → 撮影 → 書き出し"
       },
       {
-        "value": "App",
+        "value": "アプリ",
         "label": "iOS & Android"
       }
     ],
-    "benefitsTitle": "Why partner with Five Cut Pro",
+    "benefitsTitle": "Five Cut Proと組む理由",
     "benefits": [
-      "Sponsor review recipes aligned to your brand message and angles.",
-      "KOCs watch in-app shoot guides before producing.",
-      "Keep shot structure consistent across creators on one template.",
-      "Built for TikTok Shop & Reels short-form campaigns."
+      "ブランドメッセージ・角度に合わせたレビューレシピをスポンサー。",
+      "KOCは制作前にアプリ内撮影ガイドを確認。",
+      "1つのテンプレでクリエイター間のショット構造を統一。",
+      "TikTok Shop & Reelsショート向けに最適化。"
     ],
     "form": {
-      "title": "Request a partnership consult",
-      "desc": "Leave your details — the Five Cut Pro team will reply during business hours.",
-      "brandNameLabel": "Brand / company name",
-      "brandNamePlaceholder": "e.g. Vinamilk, Sunhouse, Coolmate...",
-      "contactNameLabel": "Contact name",
-      "contactNamePlaceholder": "Jane Doe",
-      "emailLabel": "Work email",
+      "title": "提携相談を依頼",
+      "desc": "情報を残してください — Five Cut Proチームが営業時間内に返信します。",
+      "brandNameLabel": "ブランド／会社名",
+      "brandNamePlaceholder": "例：ブランド名…",
+      "contactNameLabel": "担当者名",
+      "contactNamePlaceholder": "山田 太郎",
+      "emailLabel": "業務用メール",
       "emailPlaceholder": "contact@brand.com",
-      "phoneLabel": "Phone / Zalo",
-      "phonePlaceholder": "+84 ...",
-      "budgetLabel": "Estimated campaign budget",
+      "phoneLabel": "電話／LINE",
+      "phonePlaceholder": "+81 …",
+      "budgetLabel": "想定キャンペーン予算",
       "budgetOptions": [
-        "Under 20M VND (pilot)",
-        "20 - 50M VND",
-        "50 - 200M VND",
-        "Over 200M VND"
+        "2千万VND未満（パイロット）",
+        "2千万〜5千万VND",
+        "5千万〜2億VND",
+        "2億VND超"
       ],
-      "noteLabel": "Campaign needs or goals",
-      "notePlaceholder": "Product to review, video volume, timeline...",
-      "submitButton": "Send partnership request",
-      "successMessage": "Sent! We’ll follow up via Zalo/Email.",
-      "directContact": "Or contact us directly:",
-      "emailAria": "Email brand partnerships",
+      "noteLabel": "キャンペーンのニーズや目標",
+      "notePlaceholder": "レビュー商品、本数、スケジュール…",
+      "submitButton": "提携リクエストを送る",
+      "successMessage": "送信済み！Zalo／メールで返信します。",
+      "directContact": "または直接連絡：",
+      "emailAria": "ブランド提携メール",
       "emailText": "support@fivecutpro.com"
     }
   }

@@ -1,4 +1,4 @@
-import { IBM_Plex_Mono, Inter } from "next/font/google";
+import { IBM_Plex_Mono, Inter, Noto_Sans_KR } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
@@ -25,6 +25,14 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin", "latin-ext", "vietnamese"],
   weight: ["400", "500", "600"],
+});
+
+/** Hangul fallback when locale is Korean (Inter has no Korean glyphs). */
+const notoSansKr = Noto_Sans_KR({
+  variable: "--font-noto-kr",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  display: "swap",
 });
 
 /** Labels/code captions — Geist Mono has no Vietnamese glyphs on Google Fonts. */
@@ -173,7 +181,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       suppressHydrationWarning
-      className={`${inter.variable} ${ibmPlexMono.variable} h-full scroll-smooth antialiased`}
+      className={`${inter.variable} ${notoSansKr.variable} ${ibmPlexMono.variable} h-full scroll-smooth antialiased`}
     >
       <body
         className="flex min-h-full flex-col bg-background font-sans text-foreground"

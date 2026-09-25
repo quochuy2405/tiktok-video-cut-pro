@@ -10,16 +10,31 @@ export const TIKTOK_OAUTH_REDIRECT_URI =
 export const TIKTOK_APP_SCHEME =
   process.env.TIKTOK_APP_SCHEME?.trim() || "fivecutpro://tiktok/callback";
 
-export function getAndroidSha256Fingerprints(): string[] {
-  const raw =
-    process.env.ANDROID_SHA256_CERT_FINGERPRINTS?.trim() ||
-    process.env.ANDROID_SHA256_FINGERPRINT?.trim() ||
-    "56:8A:91:35:CF:E4:4B:10:70:34:3D:F9:47:6B:15:1C:FD:C4:CD:37:CF:A2:E9:10:7B:E4:C6:E7:40:B2:AD:2D";
-  if (!raw) return [];
+/** Play App Signing, upload key, and debug certs for com.fivecutpro.asia. */
+const ANDROID_SHA256_CERT_FINGERPRINTS = [
+  "56:8A:91:35:CF:E4:4B:10:70:34:3D:F9:47:6B:15:1C:FD:C4:CD:37:CF:A2:E9:10:7B:E4:C6:E7:40:B2:AD:2D",
+  "FD:E4:26:68:E6:28:DE:F8:15:C6:40:C6:0F:6E:09:DA:EA:63:A4:9B:95:31:39:39:C4:5A:17:B4:1C:F7:C6:0F",
+  "68:B1:02:D2:54:24:F1:CB:A3:8C:D0:46:7D:DF:FC:67:55:67:6B:12:4F:04:C9:68:70:5D:D0:92:73:11:40:29",
+  "66:78:0A:BC:95:55:78:5B:DA:55:37:2A:4E:1C:91:80:6F:7A:8C:F7:85:A6:F8:7A:2E:24:C1:E4:DC:A1:88:04",
+];
+
+function parseFingerprints(raw: string): string[] {
   return raw
     .split(/[\n,]+/)
     .map((s) => s.trim().replace(/\s+/g, "").toUpperCase())
     .filter(Boolean);
+}
+
+export function getAndroidSha256Fingerprints(): string[] {
+  const extra =
+    process.env.ANDROID_SHA256_CERT_FINGERPRINTS?.trim() ||
+    process.env.ANDROID_SHA256_FINGERPRINT?.trim() ||
+    "";
+  const merged = [
+    ...ANDROID_SHA256_CERT_FINGERPRINTS,
+    ...(extra ? parseFingerprints(extra) : []),
+  ];
+  return [...new Set(merged)];
 }
 
 export function getIosTeamId(): string | null {
@@ -43,7 +58,10 @@ export function buildAndroidAssetLinks() {
 
   return [
     {
-      relation: ["delegate_permission/common.handle_all_urls"],
+      relation: [
+        "delegate_permission/common.handle_all_urls",
+        "delegate_permission/common.get_login_creds",
+      ],
       target: {
         namespace: "android_app",
         package_name: getAndroidPackageName(),

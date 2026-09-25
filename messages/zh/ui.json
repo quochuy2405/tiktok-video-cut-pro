@@ -75,7 +75,7 @@
     "intro": "本表单用于按 App Store / Google Play 要求申请删除 Five Cut Pro 账号。提交后立即受理（自动成功）。",
     "point1": "提交成功后，请求会立即被记录并受理。",
     "point2": "7 天内账号将被停用（无法登录）。默认不会硬删除数据。",
-    "point3": "若误操作或希望在停用前取消，请发邮件至 support@fivecutpro.com。",
+    "point3": "手机或平板上的视频、照片和音频不在 Five Cut Pro 服务器上。删除账号不会删除这些本地文件、相册中的导出视频，或其他应用里的文件。如需删除，请在设备上自行删除。",
     "formTitle": "提交申请",
     "formDesc": "请填写注册 / 登录 Five Cut Pro 时使用的邮箱。",
     "emailLabel": "账号邮箱",
@@ -91,6 +91,7 @@
     "successBody": "您的申请已被接受。账号将在 7 天内停用。默认我们不会硬删除数据。",
     "errorGeneric": "提交失败。请重试或发邮件至 support@fivecutpro.com。",
     "supportPrefix": "需要帮助？",
-    "privacyLink": "隐私政策"
+    "privacyLink": "隐私政策",
+    "point4": "若误操作或希望在停用前取消，请发邮件至 support@fivecutpro.com。"
   }
 }

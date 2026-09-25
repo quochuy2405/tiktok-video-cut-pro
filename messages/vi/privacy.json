@@ -4,7 +4,7 @@
   "metaDescription": "Chính sách quyền riêng tư và thỏa thuận cấp phép người dùng cuối (EULA) của Five Cut Pro: dữ liệu tài khoản, TikTok, quảng cáo trong app, chia sẻ thông tin kênh với nhãn hàng, quyền và giới hạn trách nhiệm.",
   "title": "Chính sách quyền riêng tư & EULA",
   "updatedLabel": "Cập nhật lần cuối",
-  "updatedDate": "23 tháng 9 năm 2026",
+  "updatedDate": "25 tháng 9 năm 2026",
   "lawyerNotice": "Tài liệu này gồm (A) Chính sách quyền riêng tư và (B) Thỏa thuận cấp phép người dùng cuối (EULA). Khi bạn tải, cài đặt, đăng nhập hoặc tiếp tục sử dụng Five Cut Pro (ứng dụng mobile, website fivecutpro.com và các dịch vụ liên quan), bạn xác nhận đã đọc, hiểu và đồng ý với toàn bộ nội dung. Đây không phải tư vấn pháp lý. Quyền bảo vệ người tiêu dùng bắt buộc theo pháp luật Việt Nam hoặc luật địa phương áp dụng cho bạn (nếu có) vẫn được tôn trọng.",
   "sections": [
     {
@@ -35,8 +35,8 @@
       "bullets": [
         "Tài khoản: email, mã OTP, thông tin đăng nhập Google/TikTok, tên hiển thị, avatar, ngôn ngữ, cài đặt thông báo, trạng thái khách (guest) hoặc đã đăng nhập.",
         "Hồ sơ TikTok / kênh sáng tạo (khi bạn liên kết hoặc đăng nhập TikTok): open_id/union_id, username, display name, avatar, bio, liên kết hồ sơ (profile deep link), trạng thái verified, số liệu công khai hoặc được API cấp (follower, following, likes, video count) và các trường tương tự cần để nhận diện creator.",
-        "Hoạt động trong app: mẫu/công thức đã xem, lưu, dùng; video đã xuất; tương tác banner/quảng cáo; tham gia chiến dịch nhãn hàng; nhật ký sự kiện sản phẩm phục vụ vận hành và báo cáo.",
-        "Nội dung người dùng: media, shot quay, phụ đề, metadata dự án — chủ yếu lưu trên thiết bị trừ khi bạn bật tính năng đám mây/AI hoặc tải lên máy chủ để xử lý/xuất/chia sẻ.",
+        "Hoạt động trong app (không phải tệp media): mẫu hoặc công thức đã xem, lưu, dùng; số lần xuất; lượt hiển thị và click banner nhãn hàng.",
+        "Video, ảnh và âm thanh dùng để chỉnh sửa cục bộ nằm trên thiết bị của bạn. Xem Mục 8. Chúng tôi không nhận các tệp đó cho tính năng chỉnh sửa cục bộ.",
         "Thiết bị & kỹ thuật: loại thiết bị, hệ điều hành, phiên bản app, mã push notification, crash/diagnostic logs, địa chỉ IP thô hoặc khu vực gần đúng, mã định danh quảng cáo (nếu hệ điều hành/SDK cho phép và bạn chưa tắt).",
         "Liên hệ hỗ trợ: nội dung bạn gửi qua email, form hoặc kênh hỗ trợ được công bố.",
         "Dữ liệu website: cookie/local storage, ngôn ngữ, referrer, sự kiện phân tích cơ bản trên fivecutpro.com."
@@ -85,10 +85,11 @@
       ]
     },
     {
-      "title": "8. Xử lý cục bộ, đám mây và AI",
+      "title": "8. Nội dung của bạn ở trên thiết bị",
       "paragraphs": [
-        "Nhiều thao tác quay/ghép có thể diễn ra trên thiết bị. Khi bạn dùng tính năng cần máy chủ (đồng bộ tài khoản, marketplace mẫu, thông báo, quảng cáo, matching, AI/cloud nếu có), dữ liệu cần thiết sẽ được truyền và xử lý trên hệ thống của Chúng tôi hoặc nhà cung cấp.",
-        "Không gửi dữ liệu đặc biệt nhạy cảm không cần thiết (sức khỏe, sinh trắc học định danh duy nhất, dữ liệu trẻ em) qua các tính năng không được thiết kế cho mục đích đó."
+        "Tính năng chỉnh sửa video cục bộ của Five Cut Pro xử lý video, ảnh và âm thanh trên thiết bị của bạn. Các tệp đó không được tải lên, lưu trữ hoặc xử lý trên máy chủ Five Cut Pro cho việc chỉnh sửa hoặc xuất video. Chúng tôi không dùng chúng để huấn luyện mô hình AI, và sản phẩm hiện tại không gửi media chỉnh sửa tới nhà cung cấp AI.",
+        "Dữ liệu tài khoản, mã đăng nhập, mẫu và công thức bạn lưu trên tài khoản, mã thông báo push, nhật ký banner và phân tích website không phải media cục bộ. Các nhóm đó do máy chủ của Chúng tôi hoặc bên thứ ba nêu trong Chính sách xử lý.",
+        "Xóa tài khoản Five Cut Pro không xóa tệp vẫn nằm trên thiết bị hoặc thư viện ảnh của bạn."
       ]
     },
     {
@@ -157,8 +158,8 @@
     {
       "title": "17. Nội dung người dùng, mẫu và trách nhiệm đăng tải",
       "paragraphs": [
-        "Bạn giữ quyền đối với nội dung bạn sở hữu hợp pháp. Bạn cấp cho Chúng tôi quyền kỹ thuật cần thiết để lưu trữ, xử lý, truyền tải, hiển thị và (khi bạn dùng tính năng công khai/marketplace) phân phối nội dung/mẫu nhằm vận hành dịch vụ.",
-        "Bạn chịu trách nhiệm về bản quyền, nhãn hiệu, quyền hình ảnh, quảng cáo, bảo vệ người tiêu dùng và chính sách nền tảng khi quay, xuất và đăng nội dung — kể cả khi dùng mẫu hoặc hướng dẫn có gắn sản phẩm nhãn hàng.",
+        "Bạn giữ quyền sở hữu đối với video, ảnh, âm thanh và nội dung khác của mình. Chúng tôi không nhận giấy phép lưu trữ, xử lý hoặc truyền các tệp đó cho việc chỉnh sửa cục bộ, vì chúng không rời thiết bị. Nếu bạn đăng mẫu lên chợ mẫu, bạn chỉ cấp quyền cần thiết để Chúng tôi lưu và hiển thị mẫu đã đăng đó.",
+        "Bạn chịu trách nhiệm có đủ quyền và giấy phép đối với video, ảnh, nhạc, font, logo, hình sản phẩm và tài liệu có bản quyền khác, nhất là khi tạo nội dung thương mại, cũng như nhãn hiệu, quyền hình ảnh, quảng cáo và chính sách nền tảng khi xuất và đăng.",
         "Template, công thức, hướng dẫn quay và công cụ tự động hóa chỉ là hỗ trợ sản xuất; không bảo đảm duyệt thuật toán, doanh số, deal nhãn hàng hay miễn xử lý của nền tảng."
       ]
     },

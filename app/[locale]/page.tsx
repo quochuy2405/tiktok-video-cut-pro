@@ -80,7 +80,7 @@ export default async function HomePage({
     question: string;
     answer: string;
   }>) || [];
-  const { stripSlides, popupSlides } = await fetchWebMarketingPayload();
+  const { stripSlides, popupSlides } = await fetchWebMarketingPayload(locale);
 
   return (
     <>

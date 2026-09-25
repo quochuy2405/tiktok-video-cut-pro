@@ -152,17 +152,38 @@ function matchesBannerType(
   return t === expectedType || p === expectedType;
 }
 
-/** Fetch marketing banners — same endpoint as Five Cut Pro mobile. */
+function apiLang(locale?: string): string {
+  switch ((locale ?? "vi").toLowerCase()) {
+    case "en":
+      return "EN";
+    case "zh":
+      return "ZH";
+    case "th":
+      return "TH";
+    case "ja":
+      return "JA";
+    case "ko":
+      return "KO";
+    default:
+      return "VI";
+  }
+}
+
+/** Fetch marketing banners — same endpoint as Five Cut Pro mobile, localized. */
 export async function fetchMarketingBanners(
   type: MarketingBannerType = MARKETING_BANNER_TYPES.common,
+  locale?: string,
 ): Promise<MarketingBanner[]> {
   const base = getMarketingApiBase();
-  const url = `${base}/api/v1/marketing/banners/type/${encodeURIComponent(type)}`;
+  const lang = apiLang(locale);
+  const url = `${base}/api/v1/marketing/banners/type/${encodeURIComponent(type)}?lang=${lang}`;
 
   try {
     const res = await fetch(url, {
       headers: {
         Accept: "application/json",
+        "Accept-Language": lang,
+        "X-Localization": lang,
         "User-Agent": "FiveCutProWeb/1.0",
       },
       next: { revalidate: 300 },
@@ -180,13 +201,13 @@ export async function fetchMarketingBanners(
   }
 }
 
-export async function fetchWebMarketingPayload(): Promise<{
+export async function fetchWebMarketingPayload(locale?: string): Promise<{
   stripSlides: MarketingBannerSlide[];
   popupSlides: MarketingBannerSlide[];
 }> {
   const [login, common] = await Promise.all([
-    fetchMarketingBanners(MARKETING_BANNER_TYPES.login),
-    fetchMarketingBanners(MARKETING_BANNER_TYPES.common),
+    fetchMarketingBanners(MARKETING_BANNER_TYPES.login, locale),
+    fetchMarketingBanners(MARKETING_BANNER_TYPES.common, locale),
   ]);
   return {
     // Strip "Mẫu & chiến dịch" — chỉ `banner_login` (giống Explore trên app)

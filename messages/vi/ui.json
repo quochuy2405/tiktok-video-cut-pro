@@ -78,7 +78,7 @@
     "intro": "Dùng form này để yêu cầu xóa tài khoản Five Cut Pro theo chính sách App Store / Google Play. Yêu cầu được chấp nhận ngay (auto success).",
     "point1": "Yêu cầu được ghi nhận và chấp nhận ngay khi gửi thành công.",
     "point2": "Trong vòng 7 ngày, tài khoản sẽ được deactivate (vô hiệu hóa đăng nhập) — mặc định không hard-delete dữ liệu.",
-    "point3": "Bạn có thể liên hệ support@fivecutpro.com nếu gửi nhầm hoặc muốn hủy trước khi deactivate.",
+    "point3": "Video, ảnh và âm thanh trên điện thoại hoặc máy tính bảng của bạn không nằm trên máy chủ Five Cut Pro. Xóa tài khoản không xóa các tệp đó, bản xuất trong thư viện ảnh, hoặc tệp trong ứng dụng khác. Hãy tự xóa trên thiết bị nếu bạn muốn loại bỏ chúng.",
     "formTitle": "Gửi yêu cầu",
     "formDesc": "Nhập email đã dùng để đăng ký / đăng nhập Five Cut Pro.",
     "emailLabel": "Email tài khoản",
@@ -94,6 +94,7 @@
     "successBody": "Yêu cầu của bạn đã được chấp nhận. Tài khoản sẽ được deactivate trong vòng 7 ngày. Mặc định chúng tôi không hard-delete dữ liệu.",
     "errorGeneric": "Không gửi được yêu cầu. Vui lòng thử lại hoặc email support@fivecutpro.com.",
     "supportPrefix": "Cần hỗ trợ?",
-    "privacyLink": "Chính sách quyền riêng tư"
+    "privacyLink": "Chính sách quyền riêng tư",
+    "point4": "Bạn có thể liên hệ support@fivecutpro.com nếu gửi nhầm hoặc muốn hủy trước khi deactivate."
   }
 }

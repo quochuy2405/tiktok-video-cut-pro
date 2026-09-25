@@ -76,6 +76,7 @@ export default async function DeleteAccountPage({
         <li>{t("point1")}</li>
         <li>{t("point2")}</li>
         <li>{t("point3")}</li>
+        <li>{t("point4")}</li>
       </ul>
 
       <div className="mt-10 rounded-[24px] border border-[#D8E5DD] bg-white p-6 shadow-sm sm:p-8">

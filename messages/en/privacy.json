@@ -4,8 +4,8 @@
   "metaDescription": "Five Cut Pro Privacy Policy and End User License Agreement (EULA): account and TikTok data, in-app advertising, sharing creator channel information with brand partners, rights, and liability limits.",
   "title": "Privacy Policy & EULA",
   "updatedLabel": "Last updated",
-  "updatedDate": "September 23, 2026",
-  "lawyerNotice": "This document combines (A) our Privacy Policy and (B) our End User License Agreement (EULA). By downloading, installing, signing in to, or continuing to use Five Cut Pro (the mobile apps, fivecutpro.com, and related services), you confirm that you have read, understood, and agree to this entire document. It is not legal advice. Mandatory consumer protections under Vietnamese law or other applicable local laws remain respected where required.",
+  "updatedDate": "September 25, 2026",
+  "lawyerNotice": "This document combines (A) our Privacy Policy and (B) our End User License Agreement (EULA). By downloading, installing, signing in to, or continuing to use Five Cut Pro (the mobile apps, fivecutpro.com, and related services), you confirm that you have read and agree to this document. It is not legal advice and is not a certification of compliance. Mandatory consumer protections that apply to you remain in force. The data controller is [LEGAL ENTITY NAME].",
   "sections": [
     {
       "title": "A. PRIVACY POLICY",
@@ -16,8 +16,8 @@
     {
       "title": "1. Scope and controller",
       "paragraphs": [
-        "This Policy applies to: (i) the Five Cut Pro apps on iOS and Android (including bundle identifiers such as com.fivecutpro.asia or equivalents); (ii) the marketing site at fivecutpro.com; and (iii) our backends, notifications, advertising banners, and brand-partnership programs.",
-        "Controller identity and contact channels are published on fivecutpro.com. Vendors processing data on our instructions act as processors or joint controllers as required by law."
+        "This Policy applies to: (i) the Five Cut Pro apps on iOS and Android; (ii) the marketing site at fivecutpro.com; and (iii) account, notification, template-marketplace, and in-app brand-banner features we operate.",
+        "The data controller is [LEGAL ENTITY NAME]. Privacy requests: support@fivecutpro.com. Vendors that process account or technical data on our instructions are processors, not recipients of your editing media."
       ]
     },
     {
@@ -35,9 +35,9 @@
       "bullets": [
         "Account data: email, OTP codes, Google/TikTok sign-in details, display name, avatar, language, notification settings, guest or signed-in status.",
         "TikTok / creator-channel profile (when you link or sign in with TikTok): open_id/union_id, username, display name, avatar, bio, profile deep link, verification status, public or API-granted stats (followers, following, likes, video count), and similar fields needed to identify you as a creator.",
-        "In-app activity: templates/formulas viewed, saved, or used; exported videos; ad/banner interactions; brand-campaign participation; product event logs for operations and reporting.",
-        "User content: media, recorded shots, captions, project metadata — primarily on-device unless you enable cloud/AI features or upload for processing, export, or sharing.",
-        "Device and technical data: device type, OS, app version, push tokens, crash/diagnostic logs, coarse IP/region, and advertising identifiers where the OS/SDK allow and you have not limited them.",
+        "In-app activity metadata (not your media files): templates or formulas you view, save, or use; counts of exports; brand-banner impressions and clicks; optional campaign participation.",
+        "Your videos, photos, and audio for local editing stay on your device. See Section 8. We do not receive those files for local editing.",
+        "Device and technical data used to run the service: device type, operating system, app version, push-notification token (Firebase Cloud Messaging), coarse IP or region where our servers see a request, and similar operational logs tied to accounts or API calls. We do not describe crash-report or mobile-advertising-ID collection because the current app build does not use a crash-reporting SDK or a mobile ads SDK that reads those identifiers.",
         "Support communications you send via email, forms, or published support channels.",
         "Website data: cookies/local storage, locale, referrer, and basic analytics events on fivecutpro.com."
       ]
@@ -45,7 +45,7 @@
     {
       "title": "4. Purposes and legal bases",
       "paragraphs": [
-        "We process data to: provide and secure the App; create/manage accounts; assemble videos by formula; send notices; improve the product; comply with law; prevent fraud/abuse; display ads and brand banners; measure ad impressions/engagement; match brands with suitable KOCs; and share creator-channel information with brand partners as described in Sections 6–7.",
+        "We process account and technical data to: provide and secure accounts; sync templates, formulas, and marketplace activity that you choose to save online; send notices; display and measure in-app brand banners; and, where you link a channel, support brand–creator matching as described in Sections 6–7. Combining shots into a video happens on your device and is not a server process.",
         "Legal bases may include: performance of our licence/service contract with you; our and our commercial partners’ legitimate interests (template marketplace, advertising, KOC–brand matching) balanced against your rights; consent where required (certain cookies, ad IDs, or expanded sharing); and legal obligations.",
         "Users in Vietnam: processing may engage Decree 13/2023/NĐ-CP and related guidance. EEA/UK users: GDPR Article 6(1)(a)/(b)/(c)/(f) may apply as appropriate."
       ]
@@ -55,7 +55,7 @@
       "paragraphs": [
         "Five Cut Pro may show advertisements, brand banners, sponsored content, or promotions from brands/partners in the App and on the website (for example discovery, home, creation flows, and export screens).",
         "To run and bill partnerships by impressions or campaign performance, we may collect and process: impression counts, clicks/engagement, placement, timing, device/app version, campaign IDs, and metrics that are aggregated or account/channel-linked when needed for brand reporting.",
-        "Ads may be reasonably personalized based on in-app behaviour, category interest, language, approximate region, or linked creator profile — within law and OS controls. You may limit advertising IDs in device settings; less personalized ads may still appear.",
+        "Brand banners may be chosen using language, approximate region, or in-app category interest. They are served by our systems, not by a third-party mobile advertising network in the current app.",
         "Continued use of the App means you accept in-app/website advertising and our use of the measurement data above to operate, optimize, and settle with advertising/brand partners."
       ]
     },
@@ -63,9 +63,9 @@
       "title": "6. Brand–KOC connection and sharing channel information",
       "paragraphs": [
         "A core part of Five Cut Pro is connecting brands and creators: brands place products/templates/shooting guides into the ecosystem; KOCs pick templates, learn shooting flows, and create content; brands reach relevant KOCs for campaigns.",
-        "When you sign in/link TikTok or create a creator profile on Five Cut Pro, you authorize us to collect channel information and use it to: (i) identify you as a creator; (ii) recommend templates, campaigns, or collaboration opportunities; (iii) send in-app campaign notices; and (iv) share with brands, agencies, or authorized campaign partners.",
-        "Channel information that may be shared with brands includes (depending on campaign and integration scope): display name, username/handle, public profile link, avatar, short bio, channel stats (followers, videos, likes, etc.), categories/templates you engage with, Five Cut Pro activity metrics (e.g. exports, templates used), and campaign opt-in/opt-out status. We do not intentionally share passwords, OTPs, raw TikTok access tokens, or private on-device media with brands — unless you voluntarily submit them in a collaboration workflow.",
-        "By linking a channel or viewing/joining brand campaigns in the App, you agree that sharing the channel information above is necessary to provide partnership-matching features and forms part of the service terms. If you do not want sharing, unlink TikTok / decline campaigns / ask us to restrict sharing under Section 11 (to the extent law allows; some matching features may become unavailable)."
+        "When you sign in with TikTok, we receive the profile fields that login returns (such as open_id, display name, avatar, username, bio, public profile link, and public stats such as follower and video counts). We use those fields to identify your account. We do not upload the videos, photos, or audio on your device as part of that sign-in.",
+        "Separate from local editing, the product can show brand banners inside the app. Impression and click counts for those banners are stored so a campaign can be measured. A channel profile is not sent to a brand merely because you edit a video.",
+        "If a campaign later asks you to be introduced to a brand, the app must say which profile fields would be shared before you join. That sharing is not part of local editing, and it never includes your on-device media files."
       ]
     },
     {
@@ -74,9 +74,9 @@
         "We may share data with:"
       ],
       "bullets": [
-        "Brands, agencies, and campaign partners — for KOC matching, product banners/templates, impression reporting, and partnership performance as in Sections 5–6.",
-        "Infrastructure vendors (hosting, CDN, email/OTP, push, analytics, crash reporting, payment gateways if any).",
-        "Sign-in/share platforms (Google, TikTok and related SDKs) under their terms when you choose to connect.",
+        "Brands shown in in-app banners — impression and click counts for campaigns we operate. Not your editing media, and not an automatic copy of your TikTok profile.",
+        "Infrastructure vendors that host our API, send email one-time codes, or deliver push notifications (Google Firebase Cloud Messaging). They receive the technical data needed for that task, not your editing media.",
+        "Sign-in and share platforms you choose: Google (Google Sign-In) and TikTok (login and share). They receive the authentication data their SDKs require. Sharing a finished video to TikTok is an action you start; that share goes to TikTok under TikTok’s terms, not to our servers as an upload of the project.",
         "Public authorities when legally required, or to protect rights, safety, and property of us or users.",
         "Successors in a restructuring, merger, or investment (subject to equivalent confidentiality)."
       ],
@@ -85,16 +85,18 @@
       ]
     },
     {
-      "title": "8. On-device, cloud, and AI processing",
+      "title": "8. Your media stays on your device",
       "paragraphs": [
-        "Many shoot/assemble steps may run on-device. When you use features that need servers (account sync, template marketplace, notifications, ads, matching, optional AI/cloud), necessary data is transmitted to our systems or vendors.",
-        "Do not submit unnecessary special-category data (health, biometrics for unique identification, children’s data) through features not designed for those purposes."
+        "Five Cut Pro’s local video editing features process your videos, photos, and audio on your device. Those media files are not uploaded to, stored on, or processed by Five Cut Pro servers for local editing or export. They are not used to train AI models. The current product does not send your editing media to an AI provider.",
+        "What stays on the device includes source clips, photos, music or other audio you import, project files, and exported videos, unless you separately choose to share an export with a third-party app such as TikTok.",
+        "Account data, sign-in tokens, template and formula records you save to your account, push tokens, banner impression logs, and website analytics are not “local media.” Those categories are handled by our servers or the third parties named in this Policy.",
+        "Deleting your Five Cut Pro account does not delete files that remain in your device storage or camera roll. See the Delete Account page."
       ]
     },
     {
       "title": "9. Cookies and similar technologies",
       "paragraphs": [
-        "The website may use cookies or local storage for locale, session, security, and analytics. The App may use equivalent device/ad SDKs. You can control some of this via browser or OS settings."
+        "fivecutpro.com uses: (i) cookies or similar storage that the site needs for language and basic page operation; and (ii) Google Analytics 4, which sets analytics cookies and receives page and event data (such as pages viewed and button clicks) to understand site use. We do not use a separate marketing-cookie platform on the website. You can block cookies in your browser; analytics and some preferences may then not work. The mobile app does not use those website cookies."
       ]
     },
     {
@@ -102,15 +104,15 @@
       "paragraphs": [
         "Servers or vendors may be located outside your country of residence. We apply appropriate safeguards required by applicable law (contracts, technical and organizational measures).",
         "We use reasonable security measures; no system is perfectly secure. Protect your devices and do not share OTPs/passwords.",
-        "Data is kept as long as needed to provide the service, report to brands, resolve disputes, and comply with law; then deleted or anonymized under internal procedures. Account deletion may include a grace period as shown in the App."
+        "Account and operational records are kept while your account is active and, after a deletion request, through the deactivation window described on the Delete Account page (currently 7 days), then deactivated. We may keep limited records longer where needed for security, dispute handling, or legal and accounting duties. Exact secondary retention periods are [DATA RETENTION PERIODS]. Local media on your device is not in our retention schedule because we do not hold it."
       ]
     },
     {
       "title": "11. Your rights",
       "paragraphs": [
-        "Depending on local law, you may request access, correction, deletion, restriction or objection to certain processing, withdrawal of consent (where processing is consent-based), and a structured copy where portability applies.",
-        "You may unlink TikTok, turn off notifications, limit advertising IDs on-device, or ask not to receive campaign suggestions — which may reduce matching/personalized ad features.",
-        "Contact privacy/support at support@fivecutpro.com or channels on fivecutpro.com. EEA/UK users may lodge a complaint with a supervisory authority; Vietnamese users may exercise rights under Decree 13 and related rules after we verify identity."
+        "Where the law that applies to you provides them, you may request access, correction, deletion, restriction, objection, and a portable copy, and you may withdraw consent where we rely on consent. These rights apply to personal data we hold (account, channel profile, operational logs). They do not delete media that only exists on your device.",
+        "You may unlink TikTok and turn off push notifications in the app or the operating system. EEA and UK users may complain to a supervisory authority. California residents may have rights to know, delete, and correct personal information, and to opt out of “sale” or “sharing” as those terms are defined in the CCPA/CPRA. We do not sell personal information for money. Contact support@fivecutpro.com if you want to opt out of any campaign use of profile information, if such a campaign is offered to you.",
+        "Requests: support@fivecutpro.com. We will verify identity before fulfilling sensitive requests. Vietnamese users may also rely on Decree 13/2023/NĐ-CP where it applies."
       ]
     },
     {
@@ -157,8 +159,8 @@
     {
       "title": "17. User Content, templates, and publishing responsibility",
       "paragraphs": [
-        "You retain rights in content you lawfully own. You grant us the technical rights needed to store, process, transmit, display, and (when you use public/marketplace features) distribute content/templates to operate the service.",
-        "You are responsible for copyright, trademark, publicity, advertising, consumer-protection, and platform rules when you shoot, export, and publish — including when using templates or guides that feature brand products.",
+        "You keep ownership of videos, photos, audio, music, and other content you create or import. We do not receive a licence to store, process, or transmit that media for local editing, because it does not leave your device for that purpose. If you later publish a template or other material to the marketplace, you grant us only the rights needed to host and display that published template.",
+        "You are responsible for having the rights and licences you need for videos, photos, music, fonts, logos, product images, and other copyrighted material, especially where you create commercial content. You are also responsible for trademark, publicity, advertising, consumer-protection, and platform rules when you export and publish.",
         "Templates, formulas, shooting guides, and automation tools are productivity aids only; they do not guarantee algorithmic approval, sales, brand deals, or immunity from platform enforcement."
       ]
     },
@@ -173,7 +175,7 @@
     {
       "title": "19. Third-party services",
       "paragraphs": [
-        "Google, TikTok, app stores, CDNs, advertising/analytics SDKs, and brand partners have their own terms. We do not control their decisions (including social-account actions or content refusals)."
+        "Google (sign-in and, on the website, Analytics), TikTok (sign-in and share), Apple and Google app stores, our hosting providers, Firebase Cloud Messaging, and brand partners have their own terms. They do not receive your on-device editing media from us. We do not control their decisions, including social-account actions or content refusals."
       ]
     },
     {
@@ -213,7 +215,7 @@
       "paragraphs": [
         "If you reside in Vietnam, this document is governed by Vietnamese law; disputes should first be negotiated in good faith, then may be brought before competent Vietnamese courts, subject to mandatory consumer protections. If you reside elsewhere, non-waivable local rights still apply.",
         "We may update Part B together with or separately from Part A; notice follows Section 13.",
-        "Contact: support@fivecutpro.com — or channels published on fivecutpro.com.",
+        "Privacy and legal contact: support@fivecutpro.com. Controller: [LEGAL ENTITY NAME].",
         "Five Cut Pro — Turn products into content. Turn content into selling opportunities."
       ]
     }

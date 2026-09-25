@@ -76,7 +76,7 @@
     "intro": "App Store / Google Play 정책에 따라 Five Cut Pro 계정 삭제를 요청하는 폼입니다. 요청은 즉시 접수됩니다(자동 성공).",
     "point1": "제출하는 즉시 요청이 기록·접수됩니다.",
     "point2": "7일 이내에 계정이 비활성화됩니다(로그인 불가). 기본적으로 데이터를 완전 삭제(hard-delete)하지 않습니다.",
-    "point3": "잘못 요청했거나 비활성화 전에 취소하려면 support@fivecutpro.com으로 연락하세요.",
+    "point3": "휴대폰이나 태블릿에 있는 동영상, 사진, 오디오는 Five Cut Pro 서버에 없습니다. 계정을 삭제해도 이러한 로컬 파일, 갤러리의 내보낸 영상, 다른 앱의 파일은 삭제되지 않습니다. 없애려면 기기에서 직접 삭제하세요.",
     "formTitle": "요청 제출",
     "formDesc": "Five Cut Pro 가입/로그인에 사용한 이메일을 입력하세요.",
     "emailLabel": "계정 이메일",
@@ -92,6 +92,7 @@
     "successBody": "요청이 수락되었습니다. 계정은 7일 이내 비활성화됩니다. 기본적으로 데이터를 완전 삭제하지 않습니다.",
     "errorGeneric": "요청을 보내지 못했습니다. 다시 시도하거나 support@fivecutpro.com으로 이메일을 보내 주세요.",
     "supportPrefix": "도움이 필요하신가요?",
-    "privacyLink": "개인정보 처리방침"
+    "privacyLink": "개인정보 처리방침",
+    "point4": "잘못 요청했거나 비활성화 전에 취소하려면 support@fivecutpro.com으로 연락하세요."
   }
 }

@@ -5,7 +5,7 @@
   "title": "Terms of Service",
   "updatedLabel": "Last updated",
   "updatedDate": "May 3, 2026",
-  "lawyerNotice": "These Terms set out the conditions for using the software and related legal matters—including warranty disclaimers and liability limits detailed in the sections below—for transparency. They are not a substitute for legal advice about your specific situation. Mandatory consumer protections and other non-waivable rules under Vietnamese law or the laws that apply to you remain respected where required.",
+  "lawyerNotice": "These Terms set out the conditions for using the software. They are not legal advice. Mandatory consumer protections that apply to you remain in force. Local editing of your videos, photos, and audio happens on your device and is not a cloud service.",
   "sections": [
     {
       "title": "1. Agreement and acceptance",
@@ -17,9 +17,9 @@
     {
       "title": "2. Definitions",
       "paragraphs": [
-        "\"User Content\" means videos, audio, subtitles, labels, presets, and related materials that you import, edit, or export on your device.",
-        "\"Third-Party Services\" means platforms or infrastructure not fully controlled by us (for example download hosts or CDNs that distribute installers, TikTok, and other social networks where you publish outputs).",
-        "\"AI Features\" means capabilities that analyse User Content (speech, language, imagery) to propose edits, captions, dubbing, or quality improvements as described in-product."
+        "\"User Content\" means videos, photos, audio, music, subtitles, and related files that you import, edit, or export on your device. For local editing, User Content stays on your device and is not uploaded to Five Cut Pro servers.",
+        "\"Third-Party Services\" means platforms or infrastructure not fully controlled by us, such as Google Sign-In, TikTok login and share, Firebase Cloud Messaging, Google Analytics on fivecutpro.com, app stores, and hosting used for accounts and the website.",
+        "The current App does not include AI features that analyse your video, photo, or audio on our servers or on a third-party AI API, and we do not use that media to train models."
       ]
     },
     {
@@ -51,8 +51,8 @@
     {
       "title": "6. User Content and platform policies",
       "paragraphs": [
-        "You retain ownership of your User Content except for components licensed separately inside the App (for example stock packs governed by their own notices).",
-        "You are solely responsible for clearing rights in music, likeness, branding, and translated voice outputs before publishing to TikTok or elsewhere.",
+        "You retain ownership of your User Content. Because local editing media does not leave your device, you do not grant us a licence to store, process, or transmit those files. If you publish a template to the marketplace, you grant us only the rights needed to host and display that published template.",
+        "You are solely responsible for having the necessary rights and licences in videos, photos, music, fonts, logos, product images, likeness, and other materials before you create commercial content or publish to TikTok or elsewhere.",
         "We do not pre-screen local User Content on your machine and are not liable for distribution choices or algorithmic outcomes on third-party platforms."
       ]
     },
@@ -71,15 +71,15 @@
     {
       "title": "9. Third-party distribution and integrations",
       "paragraphs": [
-        "Installers may be delivered via our website, third-party mirrors, or other hosts—those services impose their own legal terms.",
-        "Future integrations (single sign-on, cloud renders, billing) will add vendor-specific terms and privacy disclosures."
+        "The App is distributed through the Apple App Store and Google Play, and the website is hosted by our infrastructure providers. Those services have their own terms.",
+        "Sign-in (Google, TikTok, and email one-time codes) and push notifications use the providers named in the Privacy Policy. They do not receive your on-device editing media from us."
       ]
     },
     {
-      "title": "10. AI Features",
+      "title": "10. No AI processing of your media",
       "paragraphs": [
-        "Outputs may be inaccurate or inappropriate for regulated industries; you remain responsible for final editorial and compliance review.",
-        "Speech, translation, and dubbing features may process personal data—see the Privacy Policy for purposes, legal bases, and choices."
+        "The current product does not send your videos, photos, or audio to Five Cut Pro servers or to an AI provider for editing, captioning, dubbing, or model training.",
+        "If we introduce a feature that would send media off your device, we will describe it in the product and update this Policy before it is active. Do not treat this section as a description of a feature that exists today."
       ]
     },
     {
@@ -104,14 +104,14 @@
       ],
       "bullets": [
         "You understand that publishing to TikTok or elsewhere may trigger account strikes, takedowns, shadow restrictions, or copyright disputes—we are not liable for those outcomes.",
-        "We are not liable for failures of cloud/AI vendors, network outages, installer download availability, or third-party policy changes.",
+        "We are not liable for failures of hosting, email, or push providers, network outages, store availability, or third-party policy changes.",
         "Where permitted where you live, you agree these limits reflect a reasonable allocation of risk and are an essential basis for our granting access."
       ]
     },
     {
       "title": "13. Indemnity",
       "paragraphs": [
-        "To the extent permitted by law, you will defend, indemnify, and hold harmless us and our affiliates, shareholders, directors, employees, contractors, licensors, and agents from any claims, investigations, regulatory inquiries, proceedings, administrative fines (where assignment to you is lawful), damages, settlements, and reasonable expenses including attorneys' and experts' fees—to the extent arising from or related to: (i) your User Content or anything you publish using the App; (ii) your breach of these Terms or applicable law; (iii) disputes between you and TikTok, rights-holders, likeness/voice subjects, or any third party; or (iv) your reliance on or misuse of AI Features.",
+        "To the extent permitted by law, you will defend, indemnify, and hold harmless us and our affiliates, shareholders, directors, employees, contractors, licensors, and agents from claims, damages, settlements, and reasonable legal expenses to the extent arising from: (i) your User Content or anything you publish using the App; (ii) your lack of rights in music, footage, images, fonts, logos, or other materials; (iii) your breach of these Terms or applicable law; or (iv) disputes between you and TikTok, rights-holders, or any third party.",
         "These indemnity obligations survive termination of your licence for claims arising during the period you were permitted to use the App."
       ]
     },

@@ -190,7 +190,9 @@ export function MarketingBannerCarousel({
                   draggable={false}
                   sizes="(max-width: 1100px) 100vw, 1100px"
                   className="pointer-events-none object-cover"
-                  priority={idx === 0}
+                  // The strip sits far below the fold; eager-loading it made a
+                  // banner the LCP element on mobile.
+                  loading="lazy"
                 />
               );
 

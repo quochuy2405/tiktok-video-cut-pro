@@ -47,17 +47,38 @@ function asString(value: unknown): string | null {
   return trimmed.length > 0 ? trimmed : null;
 }
 
+/**
+ * Marketing uploads arrive as full-size PNGs (some over 2 MB), which made the
+ * home-page popup banner the LCP element. Cloudinary can resize and re-encode
+ * at the edge, so ask it for a display-sized, auto-format copy. Other hosts are
+ * returned untouched and still go through the Next image optimizer.
+ */
+const CLOUDINARY_UPLOAD = "/image/upload/";
+const CLOUDINARY_TRANSFORM = "f_auto,q_auto,w_1080,c_limit";
+
+export function optimizeBannerUrl(url: string): string {
+  if (!url.includes("res.cloudinary.com") || !url.includes(CLOUDINARY_UPLOAD)) {
+    return url;
+  }
+  const [prefix, rest] = url.split(CLOUDINARY_UPLOAD);
+  if (!rest) return url;
+  // Already carries a transformation (e.g. "c_fit,..." or "f_auto") — leave it.
+  if (/^[a-z]{1,3}_[^/]+\//.test(rest)) return url;
+  return `${prefix}${CLOUDINARY_UPLOAD}${CLOUDINARY_TRANSFORM}/${rest}`;
+}
+
 function normalizeSlide(raw: unknown, fallbackAction?: string | null): MarketingBannerSlide | null {
   if (typeof raw === "string") {
     const imageUrl = raw.trim();
     if (!imageUrl) return null;
-    return { imageUrl, actionUrl: fallbackAction ?? null };
+    return { imageUrl: optimizeBannerUrl(imageUrl), actionUrl: fallbackAction ?? null };
   }
   const item = asRecord(raw);
   if (!item) return null;
-  const imageUrl =
+  const rawImageUrl =
     asString(item.image_url) || asString(item.imageUrl) || asString(item.url);
-  if (!imageUrl) return null;
+  if (!rawImageUrl) return null;
+  const imageUrl = optimizeBannerUrl(rawImageUrl);
   const action = asRecord(item.action);
   const actionUrl =
     asString(action?.value) ||
@@ -91,7 +112,7 @@ function normalizeBanner(raw: unknown): MarketingBanner | null {
     .filter((slide): slide is MarketingBannerSlide => Boolean(slide));
 
   if (slides.length === 0 && imageUrl) {
-    slides.push({ imageUrl, actionUrl: targetUrl });
+    slides.push({ imageUrl: optimizeBannerUrl(imageUrl), actionUrl: targetUrl });
   }
 
   return {

@@ -92,6 +92,27 @@ export function gmailComposeUrl(email: string = SITE.email): string {
   return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
 }
 
+/** BCP-47 tag per locale, for schema.org inLanguage and feeds. */
+const LOCALE_TAGS: Record<string, string> = {
+  vi: "vi-VN",
+  en: "en-US",
+  zh: "zh-CN",
+  ja: "ja-JP",
+  ko: "ko-KR",
+  th: "th-TH",
+};
+
+export function localeTag(locale: string): string {
+  return LOCALE_TAGS[locale] ?? LOCALE_TAGS.vi;
+}
+
+export function allLocaleTags(): string[] {
+  return routing.locales.map((l) => localeTag(l));
+}
+
+/** Last real content update — sitemap lastModified, not the build clock. */
+export const CONTENT_UPDATED = "2026-09-26";
+
 export const MARKETING_PATHS = [
   "",
   "privacy-policy",

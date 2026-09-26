@@ -1,10 +1,15 @@
 import type { MetadataRoute } from "next";
 
-import { absoluteLocaleUrl, absoluteUrl, MARKETING_PATHS } from "@/lib/site";
+import {
+  absoluteLocaleUrl,
+  absoluteUrl,
+  CONTENT_UPDATED,
+  MARKETING_PATHS,
+} from "@/lib/site";
 import { routing } from "@/i18n/routing";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const now = new Date(CONTENT_UPDATED);
   const entries: MetadataRoute.Sitemap = [];
 
   for (const path of MARKETING_PATHS) {

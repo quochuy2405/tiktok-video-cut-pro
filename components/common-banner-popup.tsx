@@ -188,6 +188,10 @@ export function CommonBannerPopup({ slides }: Props) {
                   sizes="(max-width: 420px) 82vw, 360px"
                   className="pointer-events-none object-cover"
                   priority={idx === 0}
+                  // Cloudinary already resizes and re-encodes these (see
+                  // optimizeBannerUrl), so skip the Next optimizer — that keeps
+                  // the URL identical to the one preloaded above.
+                  unoptimized
                 />
               </div>
             );

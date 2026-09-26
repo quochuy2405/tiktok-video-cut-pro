@@ -199,7 +199,7 @@ export function socialGroupsMarkdown(groups: SocialGroup[]): string {
   if (groups.length === 0) return "";
   const lines = groups.map(
     (group) =>
-      `- ${platformLabel(group.platform)} — [${group.name}](${group.url})`,
+      `- ${platformLabel(group.platform)} — [Nhóm hỗ trợ](${group.url})`,
   );
   return `\n## Nhóm hỗ trợ\n\nDanh sách đang bật từ cấu hình app. Chỉ gồm Zalo, Telegram và WhatsApp có link.\n\n${lines.join("\n")}\n`;
 }

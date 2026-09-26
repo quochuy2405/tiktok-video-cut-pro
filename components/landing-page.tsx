@@ -435,10 +435,7 @@ export function LandingPage({
         >
           <div className="mx-auto grid min-w-0 max-w-[1200px] gap-8 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-start md:gap-12">
             <FadeIn>
-              <p className="text-sm font-medium text-[#4A5C53]">
-                {t("communitySection.label")}
-              </p>
-              <h2 className="font-heading mt-3 text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem]">
+              <h2 className="font-heading text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem]">
                 {t("communitySection.title")}
               </h2>
               <p className="mt-5 max-w-md text-base leading-relaxed text-[#4A5C53] md:text-lg">
@@ -447,6 +444,7 @@ export function LandingPage({
             </FadeIn>
             <CommunityGroupList
               groups={socialGroups}
+              title={t("communitySection.title")}
               joinLabel={t("communitySection.join")}
               location="community_section"
             />

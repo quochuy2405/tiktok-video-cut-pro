@@ -17,11 +17,13 @@ const PLATFORM_CHIP: Record<SocialGroupPlatform, string> = {
 
 export function CommunityGroupList({
   groups,
+  title,
   joinLabel,
   location,
   className,
 }: {
   groups: SocialGroup[];
+  title: string;
   joinLabel: string;
   location: Extract<CtaLocation, "community_section" | "footer">;
   className?: string;
@@ -61,7 +63,7 @@ export function CommunityGroupList({
                   {label}
                 </span>
                 <span className="mt-0.5 block truncate text-sm font-medium text-[#0F1A15]">
-                  {group.name}
+                  {title}
                 </span>
               </span>
               <span className="shrink-0 text-sm font-medium text-brand">

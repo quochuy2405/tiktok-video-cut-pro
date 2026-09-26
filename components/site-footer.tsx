@@ -50,6 +50,7 @@ export function SiteFooter({ groups = [] }: { groups?: SocialGroup[] }) {
               </span>
               <CommunityGroupList
                 groups={groups}
+                title={t("groupsHeading")}
                 joinLabel={t("groupsJoin")}
                 location="footer"
               />

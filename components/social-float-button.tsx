@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 import { PlatformIcon } from "@/components/platform-brand-icons";
 import { trackCtaClick } from "@/lib/analytics";
 import {
@@ -20,18 +22,20 @@ export function SocialFloatButton({
   country?: string | null;
   locale?: string | null;
 }) {
+  const t = useTranslations("Footer");
   const group = resolveFloatGroup(groups, floatByCountry, { country, locale });
   if (!group) return null;
 
   const label = platformLabel(group.platform);
+  const title = `${label} — ${t("groupsHeading")}`;
 
   return (
     <a
       href={group.url}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={`${label} — ${group.name}`}
-      title={`${label} — ${group.name}`}
+      aria-label={title}
+      title={title}
       id="social-float"
       className="fixed right-4 bottom-[max(1.25rem,env(safe-area-inset-bottom))] z-40 size-14 rounded-[22%] shadow-[0_10px_24px_-8px_rgba(15,26,21,0.45)] outline-none transition-transform hover:scale-105 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
       onClick={() => {

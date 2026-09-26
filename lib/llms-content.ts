@@ -49,6 +49,8 @@ Nếu một khẳng định không có trong file đó hoặc trên các trang �
 - [Nỗi đau và cách mới](${home("vi")}#comparison): Edit tay mỗi lần đăng so với làm theo mẫu.
 - [FAQ](${home("vi")}#faq): Khác CapCut, người mới quay, đăng TikTok, nền tảng, phí, dữ liệu, chiến dịch nhãn hàng.
 - [Nhận chiến dịch](${home("vi")}#campaigns): KOC kết nối với nhãn hàng qua kênh TikTok, sự kiện trong app và nhóm cộng đồng.
+- [Hướng dẫn](${home("vi")}guides): Bài viết về góc quay sản phẩm, công thức video bán hàng, checklist shot và quy trình sản xuất đều. Có tiếng Việt và English.
+- [So với CapCut](${home("vi")}vs-capcut): Bảng so sánh và hướng dẫn chọn app theo từng việc.
 - [Tải app](${home("vi")}#download): App Store và Google Play. Phiên bản site đang ghi ${DISPLAY_APP_VERSION}.
 - [Dành cho brand](${home("vi")}#sponsors): 12 điểm hiển thị thương hiệu, mẫu video và hướng dẫn quay sản phẩm, kết nối KOC. Liên hệ ${SITE.partnerEmail}.
 - [App Store](${DEFAULT_IOS_STORE_URL}): iPhone và iPad.
@@ -307,6 +309,9 @@ Tiếng Việt không có prefix. Locale khác đứng ngay sau domain.
 - FAQ: ${home("vi")}#faq
 - Tải: ${home("vi")}#download
 - Nhận chiến dịch: ${home("vi")}#campaigns
+- Hướng dẫn: ${home("vi")}guides · ${home("en")}/guides
+- So với CapCut: ${home("vi")}vs-capcut · ${home("en")}/vs-capcut
+- Trang nhãn hàng: ${home("vi")}brands · ${home("en")}/brands
 - Brand: ${home("vi")}#sponsors
 - Quyền riêng tư: ${page("vi", "privacy-policy")} · ${page("en", "privacy-policy")} · ${page("zh", "privacy-policy")} · ${page("th", "privacy-policy")} · ${page("ja", "privacy-policy")} · ${page("ko", "privacy-policy")}
 - Điều khoản: ${page("vi", "terms-of-service")} · ${page("en", "terms-of-service")} · ${page("zh", "terms-of-service")} · ${page("th", "terms-of-service")} · ${page("ja", "terms-of-service")} · ${page("ko", "terms-of-service")}

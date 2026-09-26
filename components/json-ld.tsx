@@ -4,6 +4,7 @@ import {
   DEFAULT_IOS_STORE_URL,
   DISPLAY_APP_VERSION,
 } from "@/lib/downloads";
+import { SCREEN_SOURCES } from "@/lib/screenshots";
 import {
   absoluteUrl,
   allLocaleTags,
@@ -112,6 +113,10 @@ export function buildHomeJsonLd(
       name: SITE.copyrightHolder,
     },
     inLanguage: allLocaleTags(),
+    screenshot: Object.values(SCREEN_SOURCES).map((path) => ({
+      "@type": "ImageObject",
+      url: absoluteUrl(path),
+    })),
     ...(extras.features?.length ? { featureList: extras.features } : {}),
   };
 
@@ -190,4 +195,91 @@ export function buildHomeJsonLd(
   }
 
   return results;
+}
+
+/** Breadcrumb trail for a second-level page. */
+export function buildBreadcrumbJsonLd(
+  locale: string,
+  path: string,
+  homeLabel: string,
+  currentLabel: string,
+): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: homeLabel,
+        item: absoluteUrl(`/${locale}`),
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: currentLabel,
+        item: absoluteUrl(`/${locale}/${path}`),
+      },
+    ],
+  };
+}
+
+/** WebPage + FAQPage pair for a content page. */
+export function buildContentPageJsonLd({
+  locale,
+  path,
+  name,
+  description,
+  faqItems,
+  type = "WebPage",
+}: {
+  locale: string;
+  path: string;
+  name: string;
+  description: string;
+  faqItems?: Array<{ question: string; answer: string }>;
+  type?: "WebPage" | "AboutPage" | "CollectionPage";
+}): JsonLd[] {
+  const url = absoluteUrl(`/${locale}/${path}`);
+  const nodes: JsonLd[] = [
+    {
+      "@context": "https://schema.org",
+      "@type": type,
+      name,
+      description,
+      url,
+      inLanguage: localeTag(locale),
+      isPartOf: {
+        "@type": "WebSite",
+        name: APP_NAME,
+        url: absoluteUrl(`/${SITE.defaultLocale}`),
+      },
+      about: {
+        "@type": "SoftwareApplication",
+        name: APP_NAME,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: SITE.copyrightHolder,
+      },
+    },
+  ];
+
+  if (faqItems && faqItems.length > 0) {
+    nodes.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      inLanguage: localeTag(locale),
+      mainEntity: faqItems.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+    });
+  }
+
+  return nodes;
 }

@@ -115,6 +115,8 @@ export const CONTENT_UPDATED = "2026-09-26";
 
 export const MARKETING_PATHS = [
   "",
+  "brands",
+  "vs-capcut",
   "privacy-policy",
   "terms-of-service",
   "eula",

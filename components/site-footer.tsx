@@ -1,12 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Mail } from "lucide-react";
 
 import { Link } from "@/i18n/navigation";
 import { trackCtaClick } from "@/lib/analytics";
 import { APP_NAME } from "@/lib/brand";
+import { hasGuides } from "@/lib/guides";
 import { gmailComposeUrl } from "@/lib/site";
 import { CommunityGroupList } from "@/components/community-groups";
 import { SocialLinks } from "@/components/social-links";
@@ -15,6 +16,7 @@ import type { SocialGroup } from "@/lib/social-groups";
 export function SiteFooter({ groups = [] }: { groups?: SocialGroup[] }) {
   const t = useTranslations("Footer");
   const tNav = useTranslations("Nav");
+  const locale = useLocale();
   const year = new Date().getFullYear();
 
   return (
@@ -99,8 +101,22 @@ export function SiteFooter({ groups = [] }: { groups?: SocialGroup[] }) {
             >
               {t("campaignsLink")}
             </Link>
+            {hasGuides(locale) ? (
+              <Link
+                href="/guides"
+                className="text-[#1F2E27] transition-colors hover:text-brand"
+              >
+                {t("guidesLink")}
+              </Link>
+            ) : null}
             <Link
-              href="/#sponsors"
+              href="/vs-capcut"
+              className="text-[#1F2E27] transition-colors hover:text-brand"
+            >
+              {t("compareLink")}
+            </Link>
+            <Link
+              href="/brands"
               className="text-[#1F2E27] transition-colors hover:text-brand"
             >
               {t("sponsorsLink")}

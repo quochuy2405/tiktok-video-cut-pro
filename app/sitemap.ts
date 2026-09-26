@@ -7,6 +7,12 @@ import {
   MARKETING_PATHS,
 } from "@/lib/site";
 import { routing } from "@/i18n/routing";
+import {
+  GUIDES_PATH,
+  GUIDE_LOCALES,
+  getGuideBundle,
+  guideSlugAlternates,
+} from "@/lib/guides";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date(CONTENT_UPDATED);
@@ -39,6 +45,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: {
           languages,
         },
+      });
+    }
+  }
+
+  // Guides exist only in the locales a human wrote them in.
+  const guideLanguages: Record<string, string> = Object.fromEntries(
+    GUIDE_LOCALES.map((locale) => [locale, absoluteLocaleUrl(locale, GUIDES_PATH)]),
+  );
+  guideLanguages["x-default"] = absoluteLocaleUrl("vi", GUIDES_PATH);
+
+  for (const locale of GUIDE_LOCALES) {
+    entries.push({
+      url: absoluteLocaleUrl(locale, GUIDES_PATH),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.7,
+      alternates: { languages: guideLanguages },
+    });
+
+    for (const article of getGuideBundle(locale)?.articles || []) {
+      const languages = Object.fromEntries(
+        Object.entries(guideSlugAlternates(locale, article.slug)).map(
+          ([otherLocale, otherSlug]) => [
+            otherLocale,
+            absoluteLocaleUrl(otherLocale, `${GUIDES_PATH}/${otherSlug}`),
+          ],
+        ),
+      );
+
+      entries.push({
+        url: absoluteLocaleUrl(locale, `${GUIDES_PATH}/${article.slug}`),
+        lastModified: new Date(article.datePublished),
+        changeFrequency: "monthly",
+        priority: 0.6,
+        alternates: { languages },
       });
     }
   }

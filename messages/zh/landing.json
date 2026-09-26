@@ -244,7 +244,7 @@
       },
       {
         "value": "3 层",
-        "label": "KOC 连接：TikTok · 活动 · 社群"
+        "label": "连接 KOC 与品牌"
       },
       {
         "value": "9:16",
@@ -426,5 +426,230 @@
     ],
     "note": "你自己决定接哪个活动 — 模板与拍摄指引 App 里已经准备好。",
     "cta": "下载 App 接活动"
+  },
+  "brandsPage": {
+    "metaTitle": "品牌合作 — 把产品放进 KOC 每天工作的地方",
+    "metaDescription": "Five Cut Pro 品牌合作：12 个品牌曝光位、产品模板与拍摄指引视频、按品类匹配 KOC。",
+    "breadcrumb": "品牌合作",
+    "heroLabel": "品牌合作",
+    "heroTitle": "你的产品，就在 KOC 必须反复观看的内容里",
+    "heroSubtitle": "不是被划过去的横幅。Five Cut Pro 把产品做成模板视频与拍摄指引 — KOC 每次产出带货内容都要打开的东西。",
+    "heroCtaPrimary": "预约咨询",
+    "heroCtaSecondary": "查看 12 个曝光位",
+    "whyTitle": "品牌选择 Five Cut Pro 的三个理由",
+    "why": [
+      {
+        "title": "规模化内容",
+        "desc": "一个产品变成多个模板、多位创作者、多条带货视频。推广成为可复制的系统，而不是一次次单独谈的合作。"
+      },
+      {
+        "title": "对的地点，对的时刻",
+        "desc": "品牌出现在 KOC 最专注的时候：他们学习怎么拍、怎么做这个产品的视频时。"
+      },
+      {
+        "title": "信息不走样",
+        "desc": "多位创作者共用同一套镜头配方，结构与信息保持一致，不会各说各话。"
+      }
+    ],
+    "faqTitle": "品牌常问",
+    "faq": [
+      {
+        "id": "b1",
+        "question": "我们需要提供什么？",
+        "answer": "产品图、包装、Logo、品牌色与产品信息。Five Cut Pro 制作成模板视频，并按全景、中景、产品近景、细节、实际使用五个机位顺序制作拍摄指引视频。"
+      },
+      {
+        "id": "b2",
+        "question": "费用怎么算？",
+        "answer": "按合作方向计算：品牌曝光、KOC 匹配、定制模板或全面合作。在表单留下信息，团队会根据你的战役规模给出合适方案。早期同行的品牌享前三个月免费落地。"
+      },
+      {
+        "id": "b3",
+        "question": "多久能上线模板？",
+        "answer": "确认产品与信息后，Five Cut Pro 拍摄产品、制作模板与拍摄指引，再上架模板市场。具体时间取决于模板数量与产品复杂度，沟通时会给出排期。"
+      },
+      {
+        "id": "b4",
+        "question": "效果怎么衡量？",
+        "answer": "按所选方向出报告：各曝光位的展示量、收到并参与活动的 KOC 数量、用你品牌模板产出的视频数量。"
+      },
+      {
+        "id": "b5",
+        "question": "KOC 怎么筛选？",
+        "answer": "通过 TikTok 登录识别创作者实际在做哪个品类，从而把活动推给相关人群，而不是群发。"
+      }
+    ],
+    "ctaTitle": "从一个产品开始",
+    "ctaSubtitle": "留下信息，团队会与你沟通模板、KOC 匹配与上线节奏。"
+  },
+  "comparePage": {
+    "metaTitle": "Five Cut Pro 和 CapCut 有什么不同？",
+    "metaDescription": "直说差别：CapCut 是自由剪辑，Five Cut Pro 是 KOC 带货的模板流程。什么场景用哪个。",
+    "breadcrumb": "对比 CapCut",
+    "heroLabel": "对比",
+    "heroTitle": "Five Cut Pro 和 CapCut 有什么不同？",
+    "heroSubtitle": "两个 App 解决两个问题。这里说清楚哪种场景用哪个 — 包括答案是 CapCut 的时候。",
+    "tableTitle": "差别在哪",
+    "columnFeature": "维度",
+    "columnOurs": "Five Cut Pro",
+    "columnOther": "CapCut",
+    "rows": [
+      {
+        "feature": "核心问题",
+        "ours": "按模板稳定产出带货视频",
+        "other": "自由剪辑，想怎么做就怎么做"
+      },
+      {
+        "feature": "起点",
+        "ours": "自带拍摄指引的模板",
+        "other": "空时间线或通用模板"
+      },
+      {
+        "feature": "拍摄指引",
+        "ours": "模板里每个机位都有示范片与说明",
+        "other": "没有，镜头自己定"
+      },
+      {
+        "feature": "少拍了一个机位",
+        "ours": "App 统计已挂片段并在素材短于配方时提醒",
+        "other": "剪的时候才发现，往往整条重做"
+      },
+      {
+        "feature": "做第二条视频",
+        "ours": "把新素材挂进已保存的配方",
+        "other": "重新打开项目逐段修改"
+      },
+      {
+        "feature": "创作自由度",
+        "ours": "受模板结构限制",
+        "other": "很高：特效、字幕、关键帧、配音"
+      },
+      {
+        "feature": "新手",
+        "ours": "有清单告诉你该拍什么",
+        "other": "需要自学剪辑与选镜"
+      },
+      {
+        "feature": "品牌活动",
+        "ours": "有，在 App 与社群里",
+        "other": "不属于该 App 的功能"
+      }
+    ],
+    "whenTitle": "该用哪个",
+    "whenOurs": {
+      "title": "选 Five Cut Pro，当你",
+      "points": [
+        "必须稳定出片，而剪辑是瓶颈",
+        "不确定一个产品该拍哪些机位",
+        "想把跑得好的配方复用到别的产品",
+        "希望品牌活动直接送到你手上"
+      ]
+    },
+    "whenOther": {
+      "title": "选 CapCut，当你",
+      "points": [
+        "需要特效、动态字幕、关键帧或精细配音",
+        "每条视频都是独立创意，不按固定结构",
+        "已经熟悉时间线，想逐帧把控"
+      ]
+    },
+    "honestNote": "两者并不互斥。很多人用 Five Cut Pro 按配方稳定出片，需要做特别的一条时再打开 CapCut。",
+    "faqTitle": "常见问题",
+    "faq": [
+      {
+        "id": "c1",
+        "question": "Five Cut Pro 能取代 CapCut 吗？",
+        "answer": "不能，也不打算取代。Five Cut Pro 解决的是按模板出带货视频的产能问题。需要带特效和关键帧的自由剪辑时，CapCut 更合适。"
+      },
+      {
+        "id": "c2",
+        "question": "导出的视频还能在 CapCut 里继续剪吗？",
+        "answer": "可以。合成后的视频在手机的「已导出」里，存到相册后用任意剪辑 App 打开即可。"
+      },
+      {
+        "id": "c3",
+        "question": "合成需要联网吗？",
+        "answer": "合成在设备上完成。下载模板和分享到 TikTok 需要网络。"
+      },
+      {
+        "id": "c4",
+        "question": "完全没剪过视频，从哪开始？",
+        "answer": "先用 Five Cut Pro：每个模板都有示范片和机位说明，开拍前就知道要拍什么。"
+      }
+    ],
+    "ctaTitle": "拿一个在卖的产品试试",
+    "ctaButton": "免费下载"
+  },
+  "screenshots": {
+    "label": "APP 实拍",
+    "title": "App 实际长这样",
+    "subtitle": "Five Cut Pro iOS 版实拍截图：模板市场、镜头配方、拍摄指引与合成界面。",
+    "brandTitle": "品牌出现在哪里",
+    "brandSubtitle": "12 个曝光位中的三个，取自真实 App。",
+    "items": {
+      "explore": {
+        "caption": "发现页把三步放在最上面",
+        "alt": "Five Cut Pro 发现页，顶部是选模板、拍镜头、导出发布三步，下面是正在运行的 KOC 模板"
+      },
+      "market": {
+        "caption": "KOC 模板市场 — 直接用或先看拍摄指引",
+        "alt": "Five Cut Pro 的 KOC 模板市场，包含手袋与洞洞鞋配方，每个模板都有立即使用与拍摄指引按钮"
+      },
+      "recipe": {
+        "caption": "一个配方需要五段素材，每段都有指引",
+        "alt": "Five Cut Pro 配方详情页，列出五个机位，每个机位配有拍摄指引视频"
+      },
+      "guide": {
+        "caption": "每个机位都有拍摄指引视频",
+        "alt": "Five Cut Pro 内的产品拍摄指引视频，展示手袋近景供创作者模仿"
+      },
+      "result": {
+        "caption": "合成后的成片",
+        "alt": "Five Cut Pro 的成片视频，创作者手持洞洞鞋出镜"
+      },
+      "merge": {
+        "caption": "合成在手机上完成",
+        "alt": "Five Cut Pro 合成界面，显示导出进度与品牌横幅"
+      },
+      "brand": {
+        "caption": "打开 App 时的品牌弹窗",
+        "alt": "覆盖在 Five Cut Pro 发现页上的品牌广告弹窗"
+      }
+    },
+    "highlights": [
+      {
+        "screen": "explore",
+        "title": "打开 App 就知道做什么",
+        "desc": "发现页直接给出三步和正在运行的 KOC 模板，不用从空白开始。"
+      },
+      {
+        "screen": "market",
+        "title": "先看再用",
+        "desc": "每个模板都有立即使用与拍摄指引，看完成片再决定。"
+      },
+      {
+        "screen": "recipe",
+        "title": "配方写清要几段素材",
+        "desc": "例如需要 5 段，逐条列出机位并配独立指引视频。"
+      },
+      {
+        "screen": "guide",
+        "title": "看清每个机位怎么拍",
+        "desc": "点开机位就能看示范片，照着拍再挂回对应片段。"
+      },
+      {
+        "screen": "result",
+        "title": "提前看到成片",
+        "desc": "就是这个模板剪完的效果，心里有数再动手。"
+      },
+      {
+        "screen": "merge",
+        "title": "本机合成，直接发布",
+        "desc": "点合成，App 在设备上处理并存入已导出。"
+      }
+    ],
+    "highlightsLabel": "亮点",
+    "highlightsTitle": "每个界面只做一件事",
+    "highlightsSubtitle": "点选一项，查看对应的 App 界面。"
   }
 }

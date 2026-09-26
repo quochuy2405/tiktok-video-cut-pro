@@ -244,7 +244,7 @@
       },
       {
         "value": "3 layers",
-        "label": "Creator reach: TikTok · events · community"
+        "label": "Connect KOC with brands"
       },
       {
         "value": "9:16",
@@ -426,5 +426,230 @@
     ],
     "note": "You choose the campaigns you want — the template and shot guide are already in the app.",
     "cta": "Get the app to receive campaigns"
+  },
+  "brandsPage": {
+    "metaTitle": "Brand partnerships — put your product where creators work every day",
+    "metaDescription": "Five Cut Pro for brands: 12 brand placement slots, product templates and shot-guide videos, and creator matching by category.",
+    "breadcrumb": "For brands",
+    "heroLabel": "BRAND PARTNERSHIPS",
+    "heroTitle": "Your product lives inside the thing creators must watch to make a video",
+    "heroSubtitle": "Not a banner people scroll past. Five Cut Pro turns your product into a video template and a shot guide — the thing creators reopen every time they produce selling content.",
+    "heroCtaPrimary": "Request a consultation",
+    "heroCtaSecondary": "See the 12 placements",
+    "whyTitle": "Three reasons brands pick Five Cut Pro",
+    "why": [
+      {
+        "title": "Content at scale",
+        "desc": "One product becomes several templates, several creators and many selling videos. Promotion turns into a repeatable system instead of one-off deals."
+      },
+      {
+        "title": "Right place, right moment",
+        "desc": "Your brand shows up when creators are most focused: while they learn how to film and build the video for the product."
+      },
+      {
+        "title": "One consistent message",
+        "desc": "Many creators share the same shot recipe, so structure and message stay aligned instead of drifting per creator."
+      }
+    ],
+    "faqTitle": "What brands ask",
+    "faq": [
+      {
+        "id": "b1",
+        "question": "What do we need to provide?",
+        "answer": "Product photos, packaging, logo, brand colours and product information. Five Cut Pro turns that into a video template plus shot-guide videos in a five-angle sequence: wide, medium, product close-up, detail, and in-use."
+      },
+      {
+        "id": "b2",
+        "question": "How is the cost calculated?",
+        "answer": "By the scope you pick: brand visibility, creator matching, custom templates, or the full package. Leave your details in the form and the team will propose a fit for your campaign size. Brands joining during the early phase get the first three months free."
+      },
+      {
+        "id": "b3",
+        "question": "How long until the template is live?",
+        "answer": "Once the product and message are agreed, Five Cut Pro films the product, builds the template and the shot guides, then publishes them to the template market. Timing depends on how many templates and how complex the product is — the team confirms a schedule during the call."
+      },
+      {
+        "id": "b4",
+        "question": "How is performance measured?",
+        "answer": "Reporting follows the scope you chose: impressions on the brand placements, how many creators received and joined the campaign, and how many videos were made from your templates."
+      },
+      {
+        "id": "b5",
+        "question": "How are creators selected?",
+        "answer": "TikTok sign-in lets Five Cut Pro see which product categories a creator actually works in, so campaigns go to a relevant group instead of a mass blast."
+      }
+    ],
+    "ctaTitle": "Start with one product",
+    "ctaSubtitle": "Send your details and the team will walk through templates, creator matching and timing."
+  },
+  "comparePage": {
+    "metaTitle": "Five Cut Pro vs CapCut — what is actually different?",
+    "metaDescription": "A straight comparison: CapCut is a freeform editor, Five Cut Pro is a template workflow for selling videos. Which one fits which job.",
+    "breadcrumb": "vs CapCut",
+    "heroLabel": "COMPARISON",
+    "heroTitle": "Five Cut Pro vs CapCut — what is actually different?",
+    "heroSubtitle": "Two apps solving two different problems. Here is which one fits which job — including when the answer is CapCut.",
+    "tableTitle": "Where they differ",
+    "columnFeature": "Criteria",
+    "columnOurs": "Five Cut Pro",
+    "columnOther": "CapCut",
+    "rows": [
+      {
+        "feature": "Core problem",
+        "ours": "Publishing selling videos consistently from templates",
+        "other": "Editing a video freely, however you want"
+      },
+      {
+        "feature": "Starting point",
+        "ours": "A template that already carries a shot guide",
+        "other": "An empty timeline or a generic template"
+      },
+      {
+        "feature": "Shooting guidance",
+        "ours": "Sample clip and description for every angle in the template",
+        "other": "None; you decide the shots yourself"
+      },
+      {
+        "feature": "When an angle is missing",
+        "ours": "The app counts attached segments and warns when a source is shorter than the recipe",
+        "other": "You find out while editing, often rebuilding the cut"
+      },
+      {
+        "feature": "Making the second video",
+        "ours": "Drop new clips into the saved recipe",
+        "other": "Reopen the project and rework each segment"
+      },
+      {
+        "feature": "Creative freedom",
+        "ours": "Bounded by the template structure",
+        "other": "Very high: effects, text, keyframes, voiceover"
+      },
+      {
+        "feature": "Beginners",
+        "ours": "A checklist tells you what to film",
+        "other": "You learn editing and shot selection on your own"
+      },
+      {
+        "feature": "Brand campaigns",
+        "ours": "Yes — in the app and the community groups",
+        "other": "Not what the app does"
+      }
+    ],
+    "whenTitle": "Which one to use",
+    "whenOurs": {
+      "title": "Pick Five Cut Pro when",
+      "points": [
+        "You must publish selling videos regularly and editing is the bottleneck",
+        "You are unsure which angles a product needs",
+        "You want to reuse a recipe that already performed on another product",
+        "You want brand campaigns to reach you inside the app"
+      ]
+    },
+    "whenOther": {
+      "title": "Pick CapCut when",
+      "points": [
+        "You need effects, animated text, keyframes or detailed voiceover",
+        "Every video is its own idea rather than a repeated structure",
+        "You already edit timelines and want frame-level control"
+      ]
+    },
+    "honestNote": "The two are not mutually exclusive. Plenty of creators use Five Cut Pro for steady output from a recipe, then open CapCut for the occasional special video.",
+    "faqTitle": "Frequently asked",
+    "faq": [
+      {
+        "id": "c1",
+        "question": "Can Five Cut Pro replace CapCut?",
+        "answer": "No, and it does not try to. Five Cut Pro solves output volume for template-based selling videos. When you need freeform editing with effects and keyframes, CapCut is still the better tool."
+      },
+      {
+        "id": "c2",
+        "question": "Can I keep editing a Five Cut Pro export in CapCut?",
+        "answer": "Yes. Merged videos sit under Exported videos on your phone; save to the gallery and open them in any editor."
+      },
+      {
+        "id": "c3",
+        "question": "Does merging need an internet connection?",
+        "answer": "Merging runs on the device. You need a connection to load templates from the market and to share to TikTok."
+      },
+      {
+        "id": "c4",
+        "question": "Never edited a video before — where should I start?",
+        "answer": "Start with Five Cut Pro: each template has a sample clip and a description per angle, so you know what to film before you hit record."
+      }
+    ],
+    "ctaTitle": "Try it on a product you already sell",
+    "ctaButton": "Download free"
+  },
+  "screenshots": {
+    "label": "INSIDE THE APP",
+    "title": "What the app actually looks like",
+    "subtitle": "Real screenshots from Five Cut Pro on iOS: the template market, shot recipes, guide videos and the merge screen.",
+    "brandTitle": "Where the brand shows up",
+    "brandSubtitle": "Three of the twelve placements, captured in the live app.",
+    "items": {
+      "explore": {
+        "caption": "Discover templates with the three steps up front",
+        "alt": "Five Cut Pro discover screen showing the three steps — pick a template, shoot, export and post — above live KOC templates"
+      },
+      "market": {
+        "caption": "KOC template market — use it or watch the shot guide",
+        "alt": "KOC template market in Five Cut Pro with handbag and sandal recipes, each offering use template and shot guide buttons"
+      },
+      "recipe": {
+        "caption": "A recipe asks for five sources, each with a guide",
+        "alt": "Recipe detail screen in Five Cut Pro listing five camera angles, each with its own shot guide video"
+      },
+      "guide": {
+        "caption": "A shot guide video for every angle",
+        "alt": "Product shot guide video inside Five Cut Pro showing a close-up of the handbag for creators to copy"
+      },
+      "result": {
+        "caption": "The finished video after merging",
+        "alt": "Finished result video in Five Cut Pro with a creator holding a pair of sandals on camera"
+      },
+      "merge": {
+        "caption": "Merging runs on the phone",
+        "alt": "Five Cut Pro merge screen showing export progress with a brand banner while the video renders"
+      },
+      "brand": {
+        "caption": "Brand pop-up when the app opens",
+        "alt": "Brand advertisement pop-up displayed over the Five Cut Pro discover screen"
+      }
+    },
+    "highlights": [
+      {
+        "screen": "explore",
+        "title": "Open the app and there is work to do",
+        "desc": "Discover shows the three steps and the live KOC templates, so nothing starts from a blank page."
+      },
+      {
+        "screen": "market",
+        "title": "Preview a template before using it",
+        "desc": "Every template offers use-now and shot-guide buttons — watch the result first, then decide."
+      },
+      {
+        "screen": "recipe",
+        "title": "The recipe states how many clips it needs",
+        "desc": "Five sources, for example, each listed as its own angle with a dedicated guide video."
+      },
+      {
+        "screen": "guide",
+        "title": "Watch how each angle is filmed",
+        "desc": "Tap an angle to see the sample clip, copy it, and attach your take to that segment."
+      },
+      {
+        "screen": "result",
+        "title": "See the finished video up front",
+        "desc": "The merged result for that exact template, so you know what you are going to get."
+      },
+      {
+        "screen": "merge",
+        "title": "Merge on the phone, then post",
+        "desc": "Hit merge, the app renders on device and files it under Exported videos."
+      }
+    ],
+    "highlightsLabel": "HIGHLIGHTS",
+    "highlightsTitle": "Every screen does exactly one job",
+    "highlightsSubtitle": "Tap an item to see the matching screen in the app."
   }
 }

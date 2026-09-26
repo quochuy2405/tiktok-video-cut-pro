@@ -244,7 +244,7 @@
       },
       {
         "value": "3 lớp",
-        "label": "Kết nối KOC: TikTok · sự kiện · cộng đồng"
+        "label": "Kết nối KOC vs Nhãn hàng"
       },
       {
         "value": "9:16",
@@ -426,5 +426,230 @@
     ],
     "note": "Bạn chủ động chọn chiến dịch muốn nhận — mẫu và hướng dẫn quay đã có sẵn trong app.",
     "cta": "Tải app để nhận chiến dịch"
+  },
+  "brandsPage": {
+    "metaTitle": "Hợp tác nhãn hàng — đưa sản phẩm vào nơi KOC làm việc mỗi ngày",
+    "metaDescription": "Five Cut Pro cho nhãn hàng: 12 điểm hiển thị thương hiệu, mẫu video và hướng dẫn quay sản phẩm, kết nối đúng nhóm KOC theo ngành hàng.",
+    "breadcrumb": "Dành cho nhãn hàng",
+    "heroLabel": "HỢP TÁC NHÃN HÀNG",
+    "heroTitle": "Sản phẩm của bạn nằm trong chính thứ KOC phải xem để làm video",
+    "heroSubtitle": "Không phải banner lướt qua. Five Cut Pro dựng sản phẩm thành mẫu video và hướng dẫn quay — thứ KOC mở đi mở lại mỗi lần sản xuất nội dung bán hàng.",
+    "heroCtaPrimary": "Đăng ký nhận tư vấn",
+    "heroCtaSecondary": "Xem 12 điểm hiển thị",
+    "whyTitle": "Ba lý do nhãn hàng chọn Five Cut Pro",
+    "why": [
+      {
+        "title": "Nội dung theo quy mô",
+        "desc": "Một sản phẩm → nhiều mẫu video → nhiều KOC → nhiều video bán hàng. Quảng bá trở thành hệ thống lặp lại được, không phải từng deal lẻ."
+      },
+      {
+        "title": "Đúng nơi, đúng lúc",
+        "desc": "Thương hiệu xuất hiện khi KOC đang tập trung nhất: lúc họ học cách quay và dựng video cho sản phẩm."
+      },
+      {
+        "title": "Thông điệp không lệch",
+        "desc": "Nhiều creator dùng chung một công thức shot nên cấu trúc video và thông điệp đồng bộ, không mỗi người một kiểu."
+      }
+    ],
+    "faqTitle": "Nhãn hàng thường hỏi",
+    "faq": [
+      {
+        "id": "b1",
+        "question": "Chúng tôi cần cung cấp những gì?",
+        "answer": "Hình ảnh sản phẩm, bao bì, logo, màu thương hiệu và thông tin sản phẩm. Five Cut Pro dựng thành mẫu video kèm video hướng dẫn quay theo trình tự 5 góc: toàn cảnh, trung, cận sản phẩm, chi tiết, sử dụng thực tế."
+      },
+      {
+        "id": "b2",
+        "question": "Chi phí hợp tác tính thế nào?",
+        "answer": "Chi phí tính theo hạng mục hợp tác: hiển thị thương hiệu, kết nối KOC, xây mẫu video hoặc trọn gói. Để lại thông tin trong form, đội Five Cut Pro sẽ trao đổi mức phù hợp với quy mô chiến dịch của bạn. Nhãn hàng đồng hành giai đoạn đầu được miễn phí triển khai 3 tháng đầu."
+      },
+      {
+        "id": "b3",
+        "question": "Bao lâu thì mẫu lên app?",
+        "answer": "Sau khi thống nhất sản phẩm và thông điệp, Five Cut Pro quay sản phẩm, dựng mẫu và video hướng dẫn rồi đưa lên chợ mẫu. Thời gian cụ thể phụ thuộc số lượng mẫu và độ phức tạp của sản phẩm — đội sẽ báo lịch khi trao đổi."
+      },
+      {
+        "id": "b4",
+        "question": "Đo hiệu quả bằng gì?",
+        "answer": "Báo cáo theo hạng mục đã chọn: lượt hiển thị các vị trí thương hiệu, số KOC nhận chiến dịch và tham gia, số video tạo từ mẫu của nhãn hàng."
+      },
+      {
+        "id": "b5",
+        "question": "KOC được chọn theo tiêu chí nào?",
+        "answer": "Đăng nhập TikTok giúp Five Cut Pro nhận diện KOC đang sản xuất nội dung ngành hàng nào, từ đó đề xuất đúng nhóm phù hợp với chiến dịch thay vì gửi đại trà."
+      }
+    ],
+    "ctaTitle": "Bắt đầu với một sản phẩm",
+    "ctaSubtitle": "Gửi thông tin, đội Five Cut Pro sẽ trao đổi về mẫu video, cách kết nối KOC và lịch triển khai."
+  },
+  "comparePage": {
+    "metaTitle": "Five Cut Pro và CapCut khác nhau thế nào?",
+    "metaDescription": "So sánh thẳng thắn: CapCut là trình dựng tự do, Five Cut Pro là quy trình mẫu cho KOC bán hàng. Nên dùng cái nào cho việc gì.",
+    "breadcrumb": "So với CapCut",
+    "heroLabel": "SO SÁNH",
+    "heroTitle": "Five Cut Pro và CapCut khác nhau thế nào?",
+    "heroSubtitle": "Hai app giải hai bài toán khác nhau. Bài này nói rõ cái nào hợp việc gì — kể cả khi câu trả lời là CapCut.",
+    "tableTitle": "Khác nhau ở đâu",
+    "columnFeature": "Tiêu chí",
+    "columnOurs": "Five Cut Pro",
+    "columnOther": "CapCut",
+    "rows": [
+      {
+        "feature": "Bài toán chính",
+        "ours": "Ra video bán hàng đều theo mẫu",
+        "other": "Dựng video tự do theo ý muốn"
+      },
+      {
+        "feature": "Điểm bắt đầu",
+        "ours": "Chọn mẫu có sẵn hướng dẫn quay",
+        "other": "Timeline trống hoặc template có sẵn"
+      },
+      {
+        "feature": "Hướng dẫn quay",
+        "ours": "Clip mẫu và mô tả cho từng góc trong mẫu",
+        "other": "Không có; bạn tự quyết cảnh quay"
+      },
+      {
+        "feature": "Khi quay thiếu góc",
+        "ours": "App đếm số đoạn đã gắn và cảnh báo khi nguồn ngắn hơn công thức",
+        "other": "Tự phát hiện khi dựng, thường phải sửa lại cả cut"
+      },
+      {
+        "feature": "Làm video thứ hai",
+        "ours": "Gắn clip mới vào công thức đã lưu",
+        "other": "Mở lại dự án và sửa từng đoạn"
+      },
+      {
+        "feature": "Độ tự do sáng tạo",
+        "ours": "Giới hạn trong cấu trúc mẫu",
+        "other": "Rất cao: hiệu ứng, chữ, keyframe, lồng tiếng"
+      },
+      {
+        "feature": "Người mới",
+        "ours": "Có checklist nên biết phải quay gì",
+        "other": "Cần tự học cách dựng và cách chọn cảnh"
+      },
+      {
+        "feature": "Nhận chiến dịch nhãn hàng",
+        "ours": "Có, ngay trong app và nhóm cộng đồng",
+        "other": "Không phải chức năng của app"
+      }
+    ],
+    "whenTitle": "Nên dùng cái nào",
+    "whenOurs": {
+      "title": "Chọn Five Cut Pro khi",
+      "points": [
+        "Bạn phải ra video bán hàng đều đặn và đang kẹt ở khâu dựng",
+        "Bạn chưa chắc nên quay những góc nào cho một sản phẩm",
+        "Bạn muốn lặp lại một công thức đã chạy tốt cho sản phẩm khác",
+        "Bạn muốn nhận chiến dịch từ nhãn hàng ngay trong app"
+      ]
+    },
+    "whenOther": {
+      "title": "Chọn CapCut khi",
+      "points": [
+        "Bạn cần hiệu ứng, chữ động, keyframe hoặc lồng tiếng chi tiết",
+        "Mỗi video là một ý tưởng riêng, không lặp theo cấu trúc",
+        "Bạn đã quen dựng timeline và muốn kiểm soát từng khung hình"
+      ]
+    },
+    "honestNote": "Hai app không loại trừ nhau. Nhiều người dùng Five Cut Pro để ra video đều theo công thức, rồi mở CapCut khi cần một video đặc biệt.",
+    "faqTitle": "Câu hỏi thường gặp",
+    "faq": [
+      {
+        "id": "c1",
+        "question": "Five Cut Pro có thay được CapCut không?",
+        "answer": "Không, và app không cố thay. Five Cut Pro giải bài toán sản lượng video bán hàng theo mẫu. Khi cần dựng tự do với hiệu ứng và keyframe, CapCut vẫn là công cụ phù hợp hơn."
+      },
+      {
+        "id": "c2",
+        "question": "Video xuất từ Five Cut Pro có chỉnh tiếp trong CapCut được không?",
+        "answer": "Được. Video sau khi ghép nằm trong mục Xuất video trên máy, bạn tải về thư viện rồi mở bằng bất kỳ app dựng nào."
+      },
+      {
+        "id": "c3",
+        "question": "Ghép video có cần mạng không?",
+        "answer": "Phần ghép chạy trên thiết bị. Bạn cần mạng để tải mẫu từ chợ mẫu và để chia sẻ lên TikTok."
+      },
+      {
+        "id": "c4",
+        "question": "Chưa từng dựng video thì nên bắt đầu ở đâu?",
+        "answer": "Bắt đầu với Five Cut Pro: mỗi mẫu có clip mẫu và mô tả cho từng góc, nên bạn biết cần quay gì trước khi bấm máy."
+      }
+    ],
+    "ctaTitle": "Thử với một sản phẩm bạn đang bán",
+    "ctaButton": "Tải app miễn phí"
+  },
+  "screenshots": {
+    "label": "ẢNH TRONG APP",
+    "title": "App trông như thế nào",
+    "subtitle": "Ảnh chụp thật từ Five Cut Pro trên iOS: chợ mẫu, công thức góc quay, video hướng dẫn và màn hình ghép video.",
+    "brandTitle": "Thương hiệu xuất hiện ở đâu",
+    "brandSubtitle": "Ba trong số 12 điểm hiển thị, chụp từ app thật.",
+    "items": {
+      "explore": {
+        "caption": "Khám phá mẫu với 3 bước rõ ràng",
+        "alt": "Màn hình Khám phá mẫu video của Five Cut Pro hiển thị ba bước chọn mẫu, quay shot, xuất và đăng cùng các mẫu KOC đang chạy"
+      },
+      "market": {
+        "caption": "Chợ mẫu KOC — dùng mẫu hoặc xem hướng dẫn quay",
+        "alt": "Chợ mẫu KOC trong Five Cut Pro với công thức túi xách và dép, mỗi mẫu có nút dùng mẫu ngay và hướng dẫn quay"
+      },
+      "recipe": {
+        "caption": "Công thức cần 5 nguồn, từng góc có hướng dẫn",
+        "alt": "Màn hình chi tiết công thức trong Five Cut Pro liệt kê 5 shot quay theo góc, mỗi shot kèm video hướng dẫn"
+      },
+      "guide": {
+        "caption": "Video hướng dẫn quay từng góc",
+        "alt": "Video hướng dẫn quay sản phẩm trong Five Cut Pro, quay cận chiếc túi xách để KOC làm theo"
+      },
+      "result": {
+        "caption": "Video thành phẩm sau khi ghép",
+        "alt": "Video thành quả sau cắt trong Five Cut Pro, KOC cầm đôi dép review trước máy quay"
+      },
+      "merge": {
+        "caption": "Ghép video ngay trên điện thoại",
+        "alt": "Màn hình đang ghép video của Five Cut Pro hiển thị tiến trình xuất video và banner thương hiệu"
+      },
+      "brand": {
+        "caption": "Pop-up thương hiệu khi mở app",
+        "alt": "Pop-up quảng cáo thương hiệu hiển thị trên màn hình Khám phá của Five Cut Pro"
+      }
+    },
+    "highlights": [
+      {
+        "screen": "explore",
+        "title": "Mở app là có việc để làm",
+        "desc": "Khám phá hiện ngay ba bước và các mẫu KOC đang chạy — không phải nghĩ bắt đầu từ đâu."
+      },
+      {
+        "screen": "market",
+        "title": "Chợ mẫu xem trước khi dùng",
+        "desc": "Mỗi mẫu có nút dùng ngay và hướng dẫn quay, xem thành phẩm rồi mới quyết định."
+      },
+      {
+        "screen": "recipe",
+        "title": "Công thức nói rõ cần mấy nguồn",
+        "desc": "Ví dụ cần 5 nguồn, liệt kê từng góc quay kèm video hướng dẫn riêng."
+      },
+      {
+        "screen": "guide",
+        "title": "Xem cách quay từng góc",
+        "desc": "Bấm vào một góc là xem được clip mẫu, quay theo rồi gắn vào đúng đoạn."
+      },
+      {
+        "screen": "result",
+        "title": "Xem thành phẩm trước khi làm",
+        "desc": "Video sau khi cắt của chính mẫu đó, biết trước kết quả mình sẽ nhận được."
+      },
+      {
+        "screen": "merge",
+        "title": "Ghép ngay trên máy rồi đăng",
+        "desc": "Bấm ghép video, app xử lý trên thiết bị và lưu vào mục Xuất video."
+      }
+    ],
+    "highlightsLabel": "ĐIỂM NỔI BẬT",
+    "highlightsTitle": "Từng màn hình làm đúng một việc",
+    "highlightsSubtitle": "Chạm vào từng mục để xem màn hình tương ứng trong app."
   }
 }

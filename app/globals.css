@@ -297,3 +297,73 @@
   background-clip: text;
   color: transparent;
 }
+
+/* ---------- Motion effects ---------- */
+
+@keyframes marquee-x {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@utility marquee-track {
+  animation: marquee-x 46s linear infinite;
+  will-change: transform;
+}
+
+@keyframes shimmer-sweep {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* Gradient headline that slowly sweeps; only the text area repaints. */
+@utility text-gradient-shimmer {
+  background-image: linear-gradient(
+    115deg,
+    #00a87a 0%,
+    #00c48c 28%,
+    #6ff0c4 42%,
+    #00c48c 58%,
+    #14532d 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer-sweep 9s linear infinite;
+}
+
+/* Pointer-tracked glow; --spot-x/--spot-y are set by SpotlightCard. */
+@utility spotlight-surface {
+  position: relative;
+  isolation: isolate;
+}
+
+@utility spotlight-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  opacity: var(--spot-opacity, 0);
+  transition: opacity 260ms ease;
+  background: radial-gradient(
+    240px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+    color-mix(in srgb, var(--color-brand) 26%, transparent),
+    transparent 68%
+  );
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .text-gradient-shimmer {
+    animation: none;
+  }
+}

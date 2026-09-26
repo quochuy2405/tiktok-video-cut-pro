@@ -12,19 +12,12 @@ import {
   ChevronDown,
   Download,
   Flame,
-  Gift,
   Globe,
-  Handshake,
   HelpCircle,
   Layers,
-  Mail,
-  Megaphone,
   Music2,
-  Phone,
   Play,
-  Quote,
   Scissors,
-  Send,
   Sparkles,
   Trophy,
   Upload,
@@ -33,23 +26,33 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
+import { BrandScreens, type ScreenCopy } from "@/components/app-screens";
+import { AppShowcase } from "@/components/app-showcase";
+import { RevealWords, SpotlightCard } from "@/components/motion-effects";
+import { ScreenMarquee } from "@/components/screen-marquee";
 import { CommunityGroupList } from "@/components/community-groups";
+import {
+  SponsorBenefits,
+  SponsorInsight,
+  SponsorPlacements,
+  SponsorProcess,
+  SponsorStats,
+} from "@/components/sponsor-blocks";
+import { SponsorContact } from "@/components/sponsor-contact";
+import { SponsorForm } from "@/components/sponsor-form";
 import { FadeIn } from "@/components/fade-in";
 import { CommonBannerPopup } from "@/components/common-banner-popup";
 import { MarketingBannerCarousel } from "@/components/marketing-banner-carousel";
 import { StoreQrCodes } from "@/components/store-qr-codes";
 import { buttonVariants } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
-import {
-  trackCtaClick,
-  trackDirectContact,
-  trackLeadGeneration,
-} from "@/lib/analytics";
+import { trackCtaClick } from "@/lib/analytics";
 import { DISPLAY_APP_VERSION } from "@/lib/downloads";
 import type { MarketingBannerSlide } from "@/lib/marketing-api";
 import type { SocialGroup } from "@/lib/social-groups";
-import { gmailComposeUrl } from "@/lib/site";
+import { BRAND_SCREENS } from "@/lib/screenshots";
 import { cn } from "@/lib/utils";
+import type { SponsorsSectionCopy } from "@/types/sponsor";
 
 type LandingFeature = {
   id: string;
@@ -134,78 +137,6 @@ type FeaturesSectionCopy = {
   subtitle: string;
 };
 
-type SponsorStat = {
-  value: string;
-  label: string;
-};
-
-type SponsorInsightCopy = {
-  badge: string;
-  quote: string;
-  body: string;
-  providesLabel: string;
-  provides: string[];
-  anglesLabel: string;
-  angles: string[];
-};
-
-type SponsorPlacementGroup = {
-  title: string;
-  items: string[];
-};
-
-type SponsorProcessStep = {
-  num: string;
-  title: string;
-  desc: string;
-};
-
-type SponsorFormCopy = {
-  title: string;
-  desc: string;
-  brandNameLabel: string;
-  brandNamePlaceholder: string;
-  contactNameLabel: string;
-  contactNamePlaceholder: string;
-  emailLabel: string;
-  emailPlaceholder: string;
-  phoneLabel: string;
-  phonePlaceholder: string;
-  budgetLabel: string;
-  budgetOptions: string[];
-  noteLabel: string;
-  notePlaceholder: string;
-  submitButton: string;
-  successMessage: string;
-  directContact: string;
-  emailAria: string;
-  emailText: string;
-  zaloLabel: string;
-  zaloText: string;
-  zaloHref: string;
-  contactPersonLabel: string;
-  contactPersonName: string;
-};
-
-type SponsorsSectionCopy = {
-  label: string;
-  title: string;
-  subtitle: string;
-  stats: SponsorStat[];
-  insight: SponsorInsightCopy;
-  placementsTitle: string;
-  placementsSubtitle: string;
-  placementGroups: SponsorPlacementGroup[];
-  benefitsTitle: string;
-  benefits: string[];
-  processTitle: string;
-  process: SponsorProcessStep[];
-  processNote: string;
-  offerBadge: string;
-  offerText: string;
-  form: SponsorFormCopy;
-};
-
 const FEATURE_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   "koc-market": Flame,
   recipes: Layers,
@@ -234,16 +165,6 @@ export function LandingPage({
   const reduceMotion = useReducedMotion();
   const t = useTranslations("Landing");
   const [openFaq, setOpenFaq] = useState<string | null>("faq-1");
-  const [sponsorSubmitted, setSponsorSubmitted] = useState(false);
-  const [sponsorLoading, setSponsorLoading] = useState(false);
-  const [formData, setFormData] = useState({
-    brandName: "",
-    contactName: "",
-    email: "",
-    phone: "",
-    budget: "",
-    note: "",
-  });
 
   const metricsBar = (t.raw("metricsBar") as MetricItem[]) || [];
   const featuresSection = t.raw("featuresSection") as FeaturesSectionCopy;
@@ -253,79 +174,24 @@ export function LandingPage({
   const howItWorks = t.raw("howItWorksSection") as HowItWorksSectionCopy;
   const comparison = t.raw("comparisonSection") as ComparisonSectionCopy;
   const campaigns = t.raw("campaignsSection") as CampaignsSectionCopy;
+  const screens = t.raw("screenshots") as ScreenCopy;
   const sponsors = t.raw("sponsorsSection") as SponsorsSectionCopy;
   const faq = t.raw("faqSection") as FaqSectionCopy;
-
-  const handleSponsorSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    trackLeadGeneration({
-      lead_type: "brand_sponsor",
-      brand_name: formData.brandName,
-      budget_tier: formData.budget,
-    });
-    trackCtaClick({
-      cta_id: "sponsor_form_submit",
-      cta_location: "sponsor_section",
-      cta_text: sponsors.form.submitButton,
-      cta_category: "lead_sponsor",
-      brand_name: formData.brandName,
-      budget: formData.budget,
-    });
-    setSponsorLoading(true);
-    try {
-      await fetch("/api/sponsor", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-    } catch (err) {
-      console.error("[Sponsor Form Error]:", err);
-    } finally {
-      setSponsorLoading(false);
-      setSponsorSubmitted(true);
-    }
-  };
 
   return (
     <>
       {/* 1. Hero Section */}
       <section className="hero-atmosphere relative isolate flex min-h-[min(94vh,960px)] flex-col justify-center overflow-x-clip px-4 pb-24 pt-16 sm:px-6 md:pb-32 md:pt-20 lg:px-8">
         <div className="hero-grid pointer-events-none absolute inset-0 opacity-90" aria-hidden />
-        {!reduceMotion ? (
-          <>
-            <motion.div
-              className="pointer-events-none absolute -left-24 top-1/4 size-[420px] rounded-full bg-brand/25 blur-[100px]"
-              aria-hidden
-              animate={{ opacity: [0.35, 0.6, 0.35], scale: [1, 1.08, 1] }}
-              transition={{
-                duration: 8,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
-            <motion.div
-              className="pointer-events-none absolute -right-32 bottom-0 size-[480px] rounded-full bg-brand-deep/30 blur-[110px]"
-              aria-hidden
-              animate={{ opacity: [0.25, 0.5, 0.25], scale: [1.05, 1, 1.05] }}
-              transition={{
-                duration: 10,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
-          </>
-        ) : (
-          <>
-            <div
-              className="pointer-events-none absolute -left-24 top-1/4 size-[420px] rounded-full bg-brand/20 blur-[100px]"
-              aria-hidden
-            />
-            <div
-              className="pointer-events-none absolute -right-32 bottom-0 size-[480px] rounded-full bg-brand-deep/25 blur-[110px]"
-              aria-hidden
-            />
-          </>
-        )}
+        {/* Static blobs: animating a 480px blur repaints the whole hero every frame. */}
+        <div
+          className="pointer-events-none absolute -left-24 top-1/4 size-[420px] rounded-full bg-brand/20 blur-[100px]"
+          aria-hidden
+        />
+        <div
+          className="pointer-events-none absolute -right-32 bottom-0 size-[480px] rounded-full bg-brand-deep/25 blur-[110px]"
+          aria-hidden
+        />
 
         <div className="relative mx-auto flex w-full min-w-0 max-w-[840px] flex-col items-center text-center">
           <motion.div
@@ -357,17 +223,14 @@ export function LandingPage({
             </div>
           </motion.div>
 
-          <motion.h1
-            className="font-heading max-w-[min(100%,32rem)] text-[clamp(2.1rem,6.5vw+0.2rem,4.4rem)] font-semibold leading-[1.08] tracking-[-0.06em] text-[#0F1A15] text-balance sm:max-w-none md:tracking-[-1.35px]"
-            initial={reduceMotion ? false : { opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.52, ease: easeOut, delay: 0.1 }}
-          >
-            {t("hero.titleLead")}{" "}
-            <span className="text-gradient-brand">
-              {t("hero.titleAccent")}
-            </span>
-          </motion.h1>
+          <h1 className="font-heading max-w-[min(100%,32rem)] text-[clamp(2.1rem,6.5vw+0.2rem,4.4rem)] font-semibold leading-[1.08] tracking-[-0.06em] text-[#0F1A15] text-balance sm:max-w-none md:tracking-[-1.35px]">
+            <RevealWords text={t("hero.titleLead")} delay={0.08} />{" "}
+            <RevealWords
+              text={t("hero.titleAccent")}
+              className="text-gradient-shimmer"
+              delay={0.24}
+            />
+          </h1>
 
           <motion.p
             className="mt-6 max-w-2xl px-1 text-base leading-relaxed text-[#4A5C53] md:px-0 md:text-lg md:leading-relaxed"
@@ -469,6 +332,10 @@ export function LandingPage({
           </motion.div>
         ) : null}
       </section>
+
+      {/* Real app screens, highlight by highlight */}
+      {screens ? <AppShowcase copy={screens} /> : null}
+      {screens ? <ScreenMarquee copy={screens} /> : null}
 
       {/* Comparison: Old Manual Way vs Five Cut Pro */}
       {comparison && (
@@ -603,7 +470,7 @@ export function LandingPage({
               const FeatureIcon = FEATURE_ICONS[feature.id] || Layers;
               return (
                 <FadeIn key={feature.id} delay={idx * 0.07} className="flex">
-                  <div className="glass-panel group relative flex w-full flex-col justify-between overflow-hidden rounded-[24px] border border-[#B9CFC3] p-7 transition-all duration-300 hover:border-brand/40 hover:glow-brand-sm sm:p-8">
+                  <SpotlightCard className="glass-panel group relative flex w-full flex-col justify-between overflow-hidden rounded-[24px] border border-[#B9CFC3] p-7 transition-all duration-300 hover:border-brand/40 hover:glow-brand-sm sm:p-8">
                     <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                     <div className="space-y-4">
                       <div className="flex items-center justify-between">
@@ -637,7 +504,7 @@ export function LandingPage({
                         </ul>
                       )}
                     </div>
-                  </div>
+                  </SpotlightCard>
                 </FadeIn>
               );
             })}
@@ -670,7 +537,7 @@ export function LandingPage({
               const StepIcon = stepIcons[idx % stepIcons.length];
               return (
                 <FadeIn key={step.num} delay={idx * 0.08} className="flex">
-                  <div className="glass-panel group relative flex w-full flex-col justify-between overflow-hidden rounded-[24px] border border-[#B9CFC3] p-7 transition-all duration-300 hover:border-brand/40 hover:glow-brand-sm sm:p-8">
+                  <SpotlightCard className="glass-panel group relative flex w-full flex-col justify-between overflow-hidden rounded-[24px] border border-[#B9CFC3] p-7 transition-all duration-300 hover:border-brand/40 hover:glow-brand-sm sm:p-8">
                     <div className="space-y-4">
                       <div className="flex items-center justify-between">
                         <div className="flex size-12 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/25">
@@ -692,7 +559,7 @@ export function LandingPage({
                         {step.desc}
                       </p>
                     </div>
-                  </div>
+                  </SpotlightCard>
                 </FadeIn>
               );
             })}
@@ -725,7 +592,7 @@ export function LandingPage({
                 const ChannelIcon = CAMPAIGN_ICONS[channel.id] || Sparkles;
                 return (
                   <FadeIn key={channel.id} delay={idx * 0.07} className="flex">
-                    <div className="glass-panel group relative flex w-full flex-col overflow-hidden rounded-[24px] border border-[#B9CFC3] p-7 transition-all duration-300 hover:border-brand/40 hover:glow-brand-sm sm:p-8">
+                    <SpotlightCard className="glass-panel group relative flex w-full flex-col overflow-hidden rounded-[24px] border border-[#B9CFC3] p-7 transition-all duration-300 hover:border-brand/40 hover:glow-brand-sm sm:p-8">
                       <div className="flex size-12 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30">
                         <ChannelIcon className="size-6" />
                       </div>
@@ -748,7 +615,7 @@ export function LandingPage({
                           ))}
                         </ul>
                       ) : null}
-                    </div>
+                    </SpotlightCard>
                   </FadeIn>
                 );
               })}
@@ -759,11 +626,11 @@ export function LandingPage({
                 <h3 className="font-heading text-lg font-semibold text-[#0F1A15] sm:text-xl">
                   {campaigns.flowTitle}
                 </h3>
-                <ol className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+                <ol className="mt-6 grid gap-3 sm:grid-cols-2 lg:flex lg:items-stretch lg:gap-10">
                   {campaigns.flow?.map((step, i) => (
                     <li
                       key={step}
-                      className="relative flex h-full flex-col gap-2.5 rounded-2xl border border-[#D8E5DD] bg-white/80 p-4"
+                      className="relative flex min-w-0 flex-col gap-2.5 rounded-2xl border border-[#D8E5DD] bg-white/80 p-4 lg:flex-1"
                     >
                       <span className="flex size-7 items-center justify-center rounded-full bg-brand/15 font-mono text-[11px] font-bold text-brand-deep">
                         {String(i + 1).padStart(2, "0")}
@@ -772,10 +639,12 @@ export function LandingPage({
                         {step}
                       </span>
                       {i < campaigns.flow.length - 1 ? (
-                        <ArrowRight
-                          className="pointer-events-none absolute -right-2.5 top-1/2 hidden size-4 -translate-y-1/2 text-brand lg:block"
+                        <span
+                          className="absolute top-1/2 left-[calc(100%+1.25rem)] z-10 hidden -translate-x-1/2 -translate-y-1/2 text-brand lg:block"
                           aria-hidden
-                        />
+                        >
+                          <ArrowRight className="size-4" />
+                        </span>
                       ) : null}
                     </li>
                   ))}
@@ -893,352 +762,50 @@ export function LandingPage({
               </p>
             </FadeIn>
 
-            <div className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
-              {sponsors.stats?.map((stat, idx) => (
-                <FadeIn key={stat.label} delay={idx * 0.05}>
-                  <div className="rounded-[20px] surface-card p-5 text-center">
-                    <span className="block font-heading font-mono text-xl font-bold text-gradient-brand sm:text-2xl">
-                      {stat.value}
-                    </span>
-                    <span className="mt-1 block text-xs text-[#4A5C53] sm:text-sm">
-                      {stat.label}
-                    </span>
-                  </div>
-                </FadeIn>
-              ))}
+            <div className="mt-12">
+              <SponsorStats stats={sponsors.stats} />
             </div>
 
-            {/* Why brand exposure here is different */}
-            <FadeIn className="mt-14">
-              <div className="relative overflow-hidden rounded-[26px] border border-brand/35 bg-gradient-to-b from-brand/[0.12] via-brand/[0.04] to-transparent p-7 sm:p-9">
-                <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:gap-12">
-                  <div>
-                    <span className="inline-flex items-center gap-1.5 rounded-full border border-brand/40 bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-deep">
-                      <Quote className="size-3.5" />
-                      {sponsors.insight.badge}
-                    </span>
-                    <p className="font-heading mt-5 text-xl font-semibold leading-snug text-[#0F1A15] sm:text-2xl">
-                      {sponsors.insight.quote}
-                    </p>
-                    <p className="mt-4 text-sm leading-relaxed text-[#1F2E27] sm:text-base">
-                      {sponsors.insight.body}
-                    </p>
-                  </div>
-                  <div className="space-y-6">
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wider text-[#4A5C53]">
-                        {sponsors.insight.providesLabel}
-                      </p>
-                      <div className="mt-3 flex flex-wrap gap-2">
-                        {sponsors.insight.provides?.map((item) => (
-                          <span
-                            key={item}
-                            className="rounded-full border border-[#B9CFC3] bg-white px-3 py-1.5 text-xs font-medium text-[#1F2E27]"
-                          >
-                            {item}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wider text-[#4A5C53]">
-                        {sponsors.insight.anglesLabel}
-                      </p>
-                      <ol className="mt-3 grid gap-2 sm:grid-cols-2">
-                        {sponsors.insight.angles?.map((angle, i) => (
-                          <li
-                            key={angle}
-                            className="flex items-center gap-2.5 rounded-xl bg-white/80 px-3 py-2 text-xs font-medium text-[#1F2E27] ring-1 ring-[#D8E5DD]"
-                          >
-                            <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/20 font-mono text-[10px] font-bold text-brand-deep">
-                              0{i + 1}
-                            </span>
-                            <span className="leading-snug">{angle}</span>
-                          </li>
-                        ))}
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </FadeIn>
-
-            {/* 12 brand placement slots */}
-            <div className="mt-16">
-              <FadeIn className="mx-auto max-w-2xl text-center">
-                <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand">
-                  <Megaphone className="size-3.5" />
-                  <span>{sponsors.placementsTitle}</span>
-                </div>
-                <p className="mt-4 text-sm leading-relaxed text-[#4A5C53] sm:text-base">
-                  {sponsors.placementsSubtitle}
-                </p>
-              </FadeIn>
-
-              <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-                {sponsors.placementGroups?.map((group, gi) => {
-                  const offset = sponsors.placementGroups
-                    .slice(0, gi)
-                    .reduce((acc, g) => acc + (g.items?.length || 0), 0);
-                  return (
-                    <FadeIn key={group.title} delay={gi * 0.05} className="flex">
-                      <div className="glass-panel flex w-full flex-col rounded-[22px] border border-[#B9CFC3] p-6">
-                        <h4 className="font-heading text-base font-semibold text-[#0F1A15]">
-                          {group.title}
-                        </h4>
-                        <ul className="mt-4 space-y-3">
-                          {group.items?.map((item, ii) => (
-                            <li key={item} className="flex items-start gap-2.5 text-sm text-[#1F2E27]">
-                              <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/15 font-mono text-[10px] font-bold text-brand-deep">
-                                {String(offset + ii + 1).padStart(2, "0")}
-                              </span>
-                              <span className="leading-snug">{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </FadeIn>
-                  );
-                })}
-              </div>
+            <div className="mt-14">
+              <SponsorInsight insight={sponsors.insight} />
             </div>
 
-            {/* Partnership process */}
-            <div className="mt-16">
-              <FadeIn className="mx-auto max-w-2xl text-center">
-                <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand">
-                  <Handshake className="size-3.5" />
-                  <span>{sponsors.processTitle}</span>
-                </div>
-              </FadeIn>
-
-              <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-                {sponsors.process?.map((step, idx) => (
-                  <FadeIn key={step.num} delay={idx * 0.05} className="flex">
-                    <div className="flex w-full flex-col rounded-[20px] surface-card p-5">
-                      <span className="font-mono text-xs font-bold text-brand">{step.num}</span>
-                      <h4 className="font-heading mt-2 text-sm font-semibold text-[#0F1A15]">
-                        {step.title}
-                      </h4>
-                      <p className="mt-1.5 text-xs leading-relaxed text-[#4A5C53]">{step.desc}</p>
-                    </div>
-                  </FadeIn>
-                ))}
+            {screens ? (
+              <div className="mt-16">
+                <BrandScreens copy={screens} screens={BRAND_SCREENS} />
               </div>
+            ) : null}
 
-              <FadeIn>
-                <p className="mx-auto mt-5 flex max-w-2xl items-start justify-center gap-2 text-center text-sm text-[#1F2E27]">
-                  <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-brand" />
-                  <span>{sponsors.processNote}</span>
-                </p>
-              </FadeIn>
+            <div className="mt-16">
+              <SponsorPlacements
+                title={sponsors.placementsTitle}
+                subtitle={sponsors.placementsSubtitle}
+                groups={sponsors.placementGroups}
+              />
+            </div>
+
+            <div className="mt-16">
+              <SponsorProcess
+                title={sponsors.processTitle}
+                steps={sponsors.process}
+                note={sponsors.processNote}
+              />
             </div>
 
             <div className="mt-14 grid items-start gap-8 lg:grid-cols-12">
               <FadeIn className="space-y-6 lg:col-span-5">
-                <div className="glass-panel rounded-[24px] border border-[#B9CFC3] p-7 sm:p-8">
-                  <h3 className="font-heading mb-5 text-xl font-semibold text-[#0F1A15]">
-                    {sponsors.benefitsTitle}
-                  </h3>
-                  <ul className="space-y-4">
-                    {sponsors.benefits?.map((benefit, i) => (
-                      <li key={i} className="flex items-start gap-3 text-sm text-[#1F2E27]">
-                        <div className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/15 text-brand">
-                          <Check className="size-3.5" strokeWidth={3} />
-                        </div>
-                        <span>{benefit}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="mt-7 rounded-2xl border border-brand/35 bg-brand/10 p-5">
-                    <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-brand-deep">
-                      <Gift className="size-3.5" />
-                      {sponsors.offerBadge}
-                    </span>
-                    <p className="mt-2 text-sm font-medium leading-relaxed text-[#0F1A15]">
-                      {sponsors.offerText}
-                    </p>
-                  </div>
-
-                  <div className="mt-8 space-y-3 border-t border-[#B9CFC3] pt-6">
-                    <p className="text-xs font-medium text-[#4A5C53]">
-                      {sponsors.form.directContact}
-                    </p>
-                    <a
-                      href={gmailComposeUrl(sponsors.form.emailText)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => {
-                        trackDirectContact({
-                          method: "email",
-                          target: sponsors.form.emailText,
-                        });
-                        trackCtaClick({
-                          cta_id: "sponsor_email_direct",
-                          cta_location: "sponsor_section",
-                          cta_text: sponsors.form.emailText,
-                          cta_category: "lead_sponsor",
-                          destination_url: gmailComposeUrl(sponsors.form.emailText),
-                        });
-                      }}
-                      aria-label={sponsors.form.emailAria}
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:underline"
-                    >
-                      <Mail className="size-4" />
-                      <span>{sponsors.form.emailText}</span>
-                    </a>
-                    <a
-                      href={sponsors.form.zaloHref}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => {
-                        trackDirectContact({
-                          method: "phone",
-                          target: sponsors.form.zaloText,
-                        });
-                        trackCtaClick({
-                          cta_id: "sponsor_zalo_direct",
-                          cta_location: "sponsor_section",
-                          cta_text: sponsors.form.zaloText,
-                          cta_category: "lead_sponsor",
-                          destination_url: sponsors.form.zaloHref,
-                        });
-                      }}
-                      className="flex items-center gap-2 text-sm font-semibold text-brand hover:underline"
-                    >
-                      <Phone className="size-4" />
-                      <span>
-                        {sponsors.form.zaloLabel}: {sponsors.form.zaloText}
-                      </span>
-                    </a>
-                    <p className="text-xs text-[#4A5C53]">
-                      {sponsors.form.contactPersonLabel}: {sponsors.form.contactPersonName}
-                    </p>
-                  </div>
-                </div>
+                <SponsorBenefits
+                  title={sponsors.benefitsTitle}
+                  benefits={sponsors.benefits}
+                  offerBadge={sponsors.offerBadge}
+                  offerText={sponsors.offerText}
+                >
+                  <SponsorContact copy={sponsors.form} location="sponsor_section" />
+                </SponsorBenefits>
               </FadeIn>
 
               <FadeIn delay={0.08} className="lg:col-span-7">
-                <div className="rounded-[24px] surface-card p-6 sm:p-8">
-                  <h3 className="font-heading text-xl font-semibold text-[#0F1A15]">
-                    {sponsors.form.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-[#4A5C53]">{sponsors.form.desc}</p>
-
-                  {sponsorSubmitted ? (
-                    <div className="mt-8 rounded-2xl border border-brand/30 bg-brand/10 p-6 text-sm font-medium text-brand-forest">
-                      {sponsors.form.successMessage}
-                    </div>
-                  ) : (
-                    <form onSubmit={handleSponsorSubmit} className="mt-6 space-y-4">
-                      <div className="grid gap-4 sm:grid-cols-2">
-                        <label className="block space-y-1.5 text-sm">
-                          <span className="font-medium text-[#1F2E27]">
-                            {sponsors.form.brandNameLabel} *
-                          </span>
-                          <input
-                            required
-                            value={formData.brandName}
-                            onChange={(e) =>
-                              setFormData((s) => ({ ...s, brandName: e.target.value }))
-                            }
-                            placeholder={sponsors.form.brandNamePlaceholder}
-                            className="w-full rounded-xl border border-[#B9CFC3] bg-white px-4 py-2.5 text-sm text-[#0F1A15] placeholder:text-[#4A5C53] focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
-                          />
-                        </label>
-                        <label className="block space-y-1.5 text-sm">
-                          <span className="font-medium text-[#1F2E27]">
-                            {sponsors.form.contactNameLabel} *
-                          </span>
-                          <input
-                            required
-                            value={formData.contactName}
-                            onChange={(e) =>
-                              setFormData((s) => ({ ...s, contactName: e.target.value }))
-                            }
-                            placeholder={sponsors.form.contactNamePlaceholder}
-                            className="w-full rounded-xl border border-[#B9CFC3] bg-white px-4 py-2.5 text-sm text-[#0F1A15] placeholder:text-[#4A5C53] focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
-                          />
-                        </label>
-                        <label className="block space-y-1.5 text-sm">
-                          <span className="font-medium text-[#1F2E27]">
-                            {sponsors.form.emailLabel} *
-                          </span>
-                          <input
-                            required
-                            type="email"
-                            value={formData.email}
-                            onChange={(e) =>
-                              setFormData((s) => ({ ...s, email: e.target.value }))
-                            }
-                            placeholder={sponsors.form.emailPlaceholder}
-                            className="w-full rounded-xl border border-[#B9CFC3] bg-white px-4 py-2.5 text-sm text-[#0F1A15] placeholder:text-[#4A5C53] focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
-                          />
-                        </label>
-                        <label className="block space-y-1.5 text-sm">
-                          <span className="font-medium text-[#1F2E27]">
-                            {sponsors.form.phoneLabel} *
-                          </span>
-                          <input
-                            required
-                            value={formData.phone}
-                            onChange={(e) =>
-                              setFormData((s) => ({ ...s, phone: e.target.value }))
-                            }
-                            placeholder={sponsors.form.phonePlaceholder}
-                            className="w-full rounded-xl border border-[#B9CFC3] bg-white px-4 py-2.5 text-sm text-[#0F1A15] placeholder:text-[#4A5C53] focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
-                          />
-                        </label>
-                      </div>
-                      <label className="block space-y-1.5 text-sm">
-                        <span className="font-medium text-[#1F2E27]">
-                          {sponsors.form.budgetLabel}
-                        </span>
-                        <select
-                          value={formData.budget}
-                          onChange={(e) =>
-                            setFormData((s) => ({ ...s, budget: e.target.value }))
-                          }
-                          className="w-full rounded-xl border border-[#B9CFC3] bg-white px-4 py-2.5 text-sm text-[#0F1A15] focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
-                        >
-                          <option value="">—</option>
-                          {sponsors.form.budgetOptions?.map((opt) => (
-                            <option key={opt} value={opt}>
-                              {opt}
-                            </option>
-                          ))}
-                        </select>
-                      </label>
-                      <label className="block space-y-1.5 text-sm">
-                        <span className="font-medium text-[#1F2E27]">
-                          {sponsors.form.noteLabel}
-                        </span>
-                        <textarea
-                          rows={3}
-                          value={formData.note}
-                          onChange={(e) =>
-                            setFormData((s) => ({ ...s, note: e.target.value }))
-                          }
-                          placeholder={sponsors.form.notePlaceholder}
-                          className="w-full resize-none rounded-xl border border-[#B9CFC3] bg-white px-4 py-2.5 text-sm text-[#0F1A15] placeholder:text-[#4A5C53] focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
-                        />
-                      </label>
-                      <button
-                        type="submit"
-                        disabled={sponsorLoading}
-                        className={cn(
-                          buttonVariants({ variant: "default", size: "lg" }),
-                          "w-full rounded-xl border-0 bg-brand py-3 text-sm font-semibold text-[#052E1C] glow-brand-sm transition-all hover:bg-brand hover:glow-brand-lg",
-                          sponsorLoading && "cursor-not-allowed opacity-75",
-                        )}
-                      >
-                        <Send className="mr-2 size-4" />
-                        {sponsorLoading ? "…" : sponsors.form.submitButton}
-                      </button>
-                    </form>
-                  )}
-                </div>
+                <SponsorForm copy={sponsors.form} location="sponsor_section" />
               </FadeIn>
             </div>
           </div>

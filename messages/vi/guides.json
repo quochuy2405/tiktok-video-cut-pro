@@ -1,0 +1,428 @@
+{
+  "index": {
+    "metaTitle": "Hướng dẫn quay và dựng video bán hàng cho KOC",
+    "metaDescription": "Bài hướng dẫn thực tế cho KOC và người bán hàng: góc quay sản phẩm, công thức video TikTok, checklist shot và quy trình ra video đều.",
+    "breadcrumb": "Hướng dẫn",
+    "title": "Hướng dẫn cho người làm video bán hàng",
+    "subtitle": "Những thứ phải biết trước khi bấm máy: quay góc nào, cấu trúc video ra sao, và làm thế nào để ra video đều mà không kiệt sức.",
+    "readingSuffix": "phút đọc",
+    "readMore": "Đọc bài",
+    "relatedTitle": "Đọc tiếp",
+    "tocTitle": "Nội dung bài",
+    "faqTitle": "Câu hỏi thường gặp",
+    "takeawayTitle": "Tóm lại",
+    "ctaTitle": "Làm theo mẫu có sẵn hướng dẫn quay",
+    "ctaSubtitle": "Five Cut Pro có chợ mẫu KOC: xem clip hướng dẫn từng góc, quay theo checklist, app ghép rồi chia sẻ TikTok.",
+    "ctaButton": "Tải app miễn phí",
+    "updatedLabel": "Cập nhật"
+  },
+  "articles": [
+    {
+      "slug": "cach-quay-video-review-san-pham-bang-dien-thoai",
+      "title": "Cách quay video review sản phẩm bằng điện thoại: 5 góc cơ bản",
+      "metaTitle": "Cách quay video review sản phẩm bằng điện thoại (5 góc cơ bản)",
+      "metaDescription": "Hướng dẫn quay review sản phẩm bằng điện thoại cho người mới: 5 góc bắt buộc, cách đặt máy, ánh sáng và lỗi hay gặp.",
+      "excerpt": "Không cần máy quay, không cần studio. Chỉ cần quay đủ 5 góc theo đúng thứ tự thì video đã đủ dùng để bán hàng.",
+      "datePublished": "2026-09-27",
+      "readingMinutes": 6,
+      "related": [
+        "checklist-shot-truoc-khi-quay",
+        "cong-thuc-video-ban-hang-tiktok"
+      ],
+      "intro": [
+        "Phần lớn video review bị loãng không phải vì quay xấu, mà vì thiếu góc. Người xem không thấy rõ sản phẩm trông thế nào, to nhỏ ra sao, dùng thì như thế nào — nên họ lướt qua.",
+        "Cách chắc ăn nhất cho người mới là quay theo một bộ góc cố định. Dưới đây là 5 góc mà hầu hết mẫu video bán hàng đều dùng, kèm cách đặt máy cho từng góc."
+      ],
+      "sections": [
+        {
+          "heading": "Góc 1 — Toàn cảnh: đặt sản phẩm vào bối cảnh",
+          "paragraphs": [
+            "Góc mở đầu cho người xem biết họ đang nhìn cái gì và nó nằm ở đâu. Đặt máy cách sản phẩm khoảng một sải tay, lấy cả mặt bàn hoặc không gian sử dụng.",
+            "Giữ góc này ngắn, khoảng 2–3 giây. Nhiệm vụ của nó chỉ là mở cảnh, không phải kể hết câu chuyện."
+          ],
+          "bullets": [
+            "Nền gọn, không để đồ lạ chiếm nửa khung",
+            "Ánh sáng từ phía trước hoặc chếch bên, đừng để nguồn sáng sau lưng sản phẩm",
+            "Cầm máy dọc 9:16 ngay từ đầu, đừng quay ngang rồi cắt lại"
+          ]
+        },
+        {
+          "heading": "Góc 2 — Trung cảnh: thấy rõ hình dáng",
+          "paragraphs": [
+            "Tiến gần hơn để sản phẩm chiếm khoảng một nửa khung hình. Đây là góc người xem thực sự đánh giá kiểu dáng, kích thước và chất liệu.",
+            "Nếu sản phẩm có mặt trước rõ ràng như hộp mỹ phẩm hay hộp thực phẩm, để mặt nhãn hướng thẳng vào máy."
+          ]
+        },
+        {
+          "heading": "Góc 3 — Cận sản phẩm: bán bằng chi tiết",
+          "paragraphs": [
+            "Cận cảnh là góc thuyết phục nhất. Đường may, chất vải, độ bóng, kết cấu kem, hạt cà phê — thứ khiến người xem tin là hàng thật và đáng tiền.",
+            "Điện thoại thường mất nét khi quá gần. Lùi ra một chút rồi chạm vào màn hình để khoá nét, thay vì dí sát ống kính."
+          ],
+          "bullets": [
+            "Chạm giữ trên màn hình để khoá nét và khoá sáng trước khi quay",
+            "Di chuyển máy thật chậm, tốc độ chậm hơn bạn nghĩ",
+            "Quay dư 2 giây đầu và cuối để về sau cắt cho gọn"
+          ]
+        },
+        {
+          "heading": "Góc 4 — Chi tiết đặc trưng: chứng minh điều bạn nói",
+          "paragraphs": [
+            "Nếu trong video bạn nói 'chống nước', 'khoá kéo chắc', 'không mùi' thì đây là chỗ chứng minh. Quay đúng cái chi tiết mà lời thoại đang nhắc tới.",
+            "Một video bán hàng tốt không mô tả nhiều hơn những gì nó cho thấy. Mỗi lời khẳng định nên có một cảnh tương ứng."
+          ]
+        },
+        {
+          "heading": "Góc 5 — Sử dụng thực tế: cho người xem thấy chính họ",
+          "paragraphs": [
+            "Góc cuối cho thấy sản phẩm đang được dùng: tay mở nắp, mặc lên người, đổ ra ly, cắm vào ổ. Đây là góc tạo ham muốn mua nhiều nhất vì người xem tự hình dung mình đang dùng.",
+            "Quay ở đúng nơi sản phẩm thực sự được dùng. Bếp thì quay trong bếp, đồ tập thì quay lúc đang tập."
+          ]
+        },
+        {
+          "heading": "Ba lỗi khiến phải quay lại từ đầu",
+          "bullets": [
+            "Quay ngang rồi mới nhớ TikTok là khổ dọc — mất nửa khung hình khi cắt",
+            "Quay thiếu một góc, tới lúc dựng mới phát hiện, phải lấy lại sản phẩm để quay bù",
+            "Mỗi góc chỉ quay một lần: không có bản dự phòng khi rung tay hoặc mất nét"
+          ],
+          "paragraphsAfter": [
+            "Cách tránh cả ba: có checklist góc trước mặt khi quay, và quay mỗi góc hai lần. Tốn thêm ba phút lúc quay, tiết kiệm cả buổi lúc dựng."
+          ]
+        },
+        {
+          "heading": "Sau khi quay xong thì làm gì",
+          "paragraphs": [
+            "Ghép năm đoạn theo đúng thứ tự trên, mỗi đoạn 2–4 giây là đã có một video 15–20 giây đủ dùng. Nếu bạn dùng mẫu có sẵn trong Five Cut Pro, thứ tự và thời lượng từng đoạn đã được đặt trước — bạn chỉ gắn clip vào đúng ô.",
+            "Khi đã quen, giữ nguyên bộ 5 góc này cho mọi sản phẩm. Lặp lại một công thức đã chạy tốt luôn nhanh hơn nghĩ bố cục mới mỗi lần."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Điện thoại cũ quay có đủ đẹp không?",
+          "answer": "Đủ. Ánh sáng và độ ổn định quan trọng hơn cấu hình máy. Quay gần cửa sổ vào ban ngày, tì khuỷu tay vào bàn để giữ máy, chất lượng sẽ khác hẳn."
+        },
+        {
+          "question": "Có cần micro rời không?",
+          "answer": "Không bắt buộc nếu bạn lồng tiếng sau hoặc dùng chữ trên màn hình. Nếu nói trực tiếp khi quay, hãy quay trong phòng kín, tránh quạt và đường phố."
+        },
+        {
+          "question": "Mỗi góc nên quay bao lâu?",
+          "answer": "Quay 5–6 giây cho mỗi góc dù video cuối chỉ dùng 2–3 giây. Phần dư giúp bạn cắt được đoạn ổn định nhất."
+        }
+      ],
+      "takeaway": "Quay đủ 5 góc — toàn cảnh, trung cảnh, cận sản phẩm, chi tiết, sử dụng thực tế — là đã có nguyên liệu cho một video bán hàng hoàn chỉnh."
+    },
+    {
+      "slug": "cong-thuc-video-ban-hang-tiktok",
+      "title": "Công thức video bán hàng TikTok 15–30 giây",
+      "metaTitle": "Công thức video bán hàng TikTok 15–30 giây (cấu trúc shot)",
+      "metaDescription": "Cấu trúc video bán hàng ngắn trên TikTok: hook 3 giây, vấn đề, sản phẩm, bằng chứng, kêu gọi hành động — kèm thời lượng từng đoạn.",
+      "excerpt": "Một video bán hàng ngắn có cấu trúc gần như cố định. Biết cấu trúc đó rồi thì mỗi sản phẩm mới chỉ là thay nguyên liệu.",
+      "datePublished": "2026-09-27",
+      "readingMinutes": 6,
+      "related": [
+        "cach-quay-video-review-san-pham-bang-dien-thoai",
+        "san-xuat-video-deu-cho-tiktok-shop"
+      ],
+      "intro": [
+        "Video bán hàng trên TikTok không cần sáng tạo lại mỗi lần. Phần lớn video chạy tốt đều đi theo cùng một mạch: chặn người xem lại, chỉ ra vấn đề, đưa sản phẩm, chứng minh, rồi bảo họ làm gì tiếp.",
+        "Dưới đây là cấu trúc theo giây cho một video 15–30 giây, và cách biến nó thành một công thức dùng lại được."
+      ],
+      "sections": [
+        {
+          "heading": "0–3 giây: hook phải thấy được, không chỉ nghe được",
+          "paragraphs": [
+            "Ba giây đầu quyết định người xem ở lại hay lướt. Hook mạnh nhất là hình ảnh, không phải lời nói: sản phẩm đang hoạt động, kết quả trước và sau, hoặc một chuyển động lạ mắt.",
+            "Tránh mở bằng lời chào. 'Chào mọi người, hôm nay mình review...' là ba giây bị lãng phí."
+          ],
+          "bullets": [
+            "Mở bằng cảnh cận hoặc cảnh sản phẩm đang được dùng",
+            "Nếu có chữ trên màn hình, đặt câu ngắn nhất ở giây đầu tiên",
+            "Đừng để logo hay intro chiếm hook"
+          ]
+        },
+        {
+          "heading": "3–8 giây: vấn đề người xem đang có",
+          "paragraphs": [
+            "Gọi tên đúng cái khó chịu mà sản phẩm giải quyết. Càng cụ thể càng tốt: 'da khô bong khi trang điểm', 'nấu xong nồi bám cháy', 'chai nước đổ trong balo'.",
+            "Đoạn này thường dùng trung cảnh hoặc cảnh minh hoạ tình huống."
+          ]
+        },
+        {
+          "heading": "8–15 giây: sản phẩm và cách nó giải quyết",
+          "paragraphs": [
+            "Đưa sản phẩm vào và cho thấy cách dùng thật. Đây là chỗ đặt cảnh sử dụng thực tế: tay mở nắp, thoa lên da, gắn vào xe.",
+            "Nói tối đa hai lợi ích. Nhiều hơn thì không ai nhớ nổi trong một video ngắn."
+          ]
+        },
+        {
+          "heading": "15–25 giây: bằng chứng",
+          "paragraphs": [
+            "Bằng chứng là thứ tách video bán được hàng khỏi video chỉ để xem: cảnh cận chi tiết, kết quả sau khi dùng, so sánh với cách cũ, hoặc cảnh đóng gói và giao hàng.",
+            "Mỗi lời khẳng định trong video nên có một cảnh tương ứng. Nói 'chống trượt' thì phải có cảnh thử trượt."
+          ]
+        },
+        {
+          "heading": "25–30 giây: một hành động duy nhất",
+          "paragraphs": [
+            "Kết thúc bằng đúng một yêu cầu: bấm giỏ hàng, xem mô tả, hoặc theo dõi. Hai lời kêu gọi cùng lúc thì người xem không làm cái nào cả.",
+            "Giữ cảnh cuối đứng yên khoảng một giây để người xem kịp bấm."
+          ]
+        },
+        {
+          "heading": "Biến cấu trúc thành công thức dùng lại",
+          "paragraphs": [
+            "Khi một cấu trúc chạy tốt, hãy ghi lại thứ tự góc và số giây từng đoạn, ví dụ: cận 3s → trung 4s → sử dụng 6s → chi tiết 5s → toàn cảnh 3s. Lần sau đổi sản phẩm, bạn chỉ quay lại đúng các góc đó.",
+            "Đây chính là cách công thức trong Five Cut Pro hoạt động: thứ tự nguồn và thời lượng được lưu một lần, hôm sau gắn clip mới là ra video mới, không phải dựng lại timeline."
+          ],
+          "bullets": [
+            "Lưu công thức ngay sau khi có một video chạy tốt",
+            "Mỗi ngành hàng thường chỉ cần 2–3 công thức là đủ dùng",
+            "Đổi nhạc và chữ trên màn hình để video không bị nhàm dù cùng cấu trúc"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Video nên dài bao nhiêu giây?",
+          "answer": "15–30 giây cho video bán hàng trực tiếp. Dài hơn chỉ nên dùng khi sản phẩm cần giải thích nhiều, ví dụ đồ công nghệ hoặc mỹ phẩm theo quy trình."
+        },
+        {
+          "question": "Có cần lồng tiếng không?",
+          "answer": "Không bắt buộc. Chữ trên màn hình cộng với cảnh quay rõ vẫn bán được hàng, và còn xem được khi người dùng tắt tiếng."
+        },
+        {
+          "question": "Dùng đi dùng lại một cấu trúc có bị nhàm không?",
+          "answer": "Người xem hiếm khi nhận ra cấu trúc; họ nhớ sản phẩm và cảnh quay. Điều làm video nhàm là cùng nhạc, cùng lời thoại, cùng bối cảnh — không phải cùng thứ tự shot."
+        }
+      ],
+      "takeaway": "Hook thấy được, vấn đề cụ thể, sản phẩm đang dùng, bằng chứng, một lời kêu gọi. Ghi lại thứ tự và số giây để lần sau chỉ việc thay clip."
+    },
+    {
+      "slug": "koc-la-gi",
+      "title": "KOC là gì, khác KOL thế nào và bắt đầu từ đâu",
+      "metaTitle": "KOC là gì? Khác KOL thế nào và cách bắt đầu làm KOC",
+      "metaDescription": "KOC là gì, khác KOL ở điểm nào, nhãn hàng tìm KOC kiểu nào, và các bước bắt đầu làm KOC trên TikTok Shop từ con số không.",
+      "excerpt": "KOC không cần nổi tiếng. Thứ nhãn hàng trả tiền là khả năng làm người xem tin và bấm mua.",
+      "datePublished": "2026-09-27",
+      "readingMinutes": 5,
+      "related": [
+        "san-xuat-video-deu-cho-tiktok-shop",
+        "cong-thuc-video-ban-hang-tiktok"
+      ],
+      "intro": [
+        "KOC viết tắt của Key Opinion Consumer — người tiêu dùng có sức ảnh hưởng. Họ mua, dùng, rồi kể lại trải nghiệm thật, và người xem tin vì thấy giống mình.",
+        "Đây là nghề đang mở rộng nhanh trên TikTok Shop vì nhãn hàng cần số lượng video lớn với chi phí hợp lý, thay vì vài video đắt tiền từ người nổi tiếng."
+      ],
+      "sections": [
+        {
+          "heading": "KOC khác KOL ở đâu",
+          "bullets": [
+            "KOL được chọn vì độ nổi tiếng và lượng theo dõi. KOC được chọn vì khả năng làm người xem tin và mua.",
+            "KOL thường nhận phí theo chiến dịch. KOC thường nhận hoa hồng theo đơn hoặc phí theo video.",
+            "KOL cần hình ảnh chỉn chu. KOC cần cảm giác thật: quay bằng điện thoại, nói như người dùng bình thường.",
+            "Một nhãn hàng thường làm việc với vài KOL, nhưng có thể làm việc cùng lúc với hàng chục KOC."
+          ]
+        },
+        {
+          "heading": "Nhãn hàng đánh giá một KOC bằng gì",
+          "paragraphs": [
+            "Không phải lượng theo dõi. Thứ họ nhìn là tỉ lệ xem hết video, lượt bấm vào giỏ hàng, số đơn phát sinh, và quan trọng không kém: bạn có ra video đều không.",
+            "Một tài khoản 3.000 người theo dõi ra video đều mỗi ngày và có đơn thật thường được chọn trước một tài khoản 50.000 người theo dõi đăng mỗi tháng một lần."
+          ]
+        },
+        {
+          "heading": "Bốn bước bắt đầu từ con số không",
+          "bullets": [
+            "Chọn một ngành hàng bạn thực sự dùng: mỹ phẩm, đồ bếp, đồ mẹ và bé, phụ kiện điện thoại. Chọn hẹp trước, mở rộng sau.",
+            "Quay 10 video đầu bằng sản phẩm bạn đang có sẵn trong nhà. Mục tiêu là quen tay, không phải kiếm tiền ngay.",
+            "Dùng một cấu trúc video cố định để mỗi ngày ra video không tốn sức nghĩ bố cục.",
+            "Khi kênh đã có nội dung đúng ngành hàng, đăng ký TikTok Shop và bắt đầu nhận sản phẩm mẫu hoặc chiến dịch từ nhãn hàng."
+          ]
+        },
+        {
+          "heading": "Rào cản thật sự không phải là quay",
+          "paragraphs": [
+            "Hầu hết người mới bỏ cuộc không phải vì quay xấu, mà vì khâu dựng. Mỗi video ngồi cắt ghép một tiếng thì không ai duy trì được nhịp đăng hằng ngày.",
+            "Giải pháp là làm theo mẫu: dùng một công thức có sẵn thứ tự shot và thời lượng, quay đúng các góc trong checklist, rồi để app ghép. Five Cut Pro được làm cho đúng khâu này."
+          ]
+        },
+        {
+          "heading": "Nhận chiến dịch từ nhãn hàng",
+          "paragraphs": [
+            "Khi đã có nội dung đều đặn trong một ngành hàng, bạn không cần đi chào từng nhãn hàng. Các nền tảng kết nối sẽ đề xuất bạn dựa trên nội dung bạn đang sản xuất.",
+            "Trong Five Cut Pro, việc đăng nhập bằng TikTok giúp app nhận diện bạn đang làm ngành hàng nào để đề xuất đúng chiến dịch, bên cạnh các sự kiện trong app và nhóm cộng đồng Zalo, Telegram, WhatsApp."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Làm KOC có cần lộ mặt không?",
+          "answer": "Không bắt buộc. Nhiều kênh bán hàng tốt chỉ quay tay và sản phẩm. Lộ mặt giúp tăng độ tin cậy nhưng không phải điều kiện."
+        },
+        {
+          "question": "Cần bao nhiêu người theo dõi mới nhận được hàng?",
+          "answer": "Tuỳ nhãn hàng và ngành hàng. Nhiều chiến dịch quan tâm tới nội dung đúng ngành và tần suất đăng hơn là con số theo dõi."
+        },
+        {
+          "question": "Một ngày nên đăng mấy video?",
+          "answer": "Một video mỗi ngày, đều đặn, tốt hơn năm video trong một ngày rồi nghỉ một tuần."
+        }
+      ],
+      "takeaway": "KOC bán bằng sự tin cậy và tần suất, không bằng độ nổi tiếng. Ai duy trì được nhịp ra video thì được nhãn hàng chọn."
+    },
+    {
+      "slug": "checklist-shot-truoc-khi-quay",
+      "title": "Checklist shot: hết cảnh quay thiếu góc phải dựng lại",
+      "metaTitle": "Checklist shot trước khi quay video bán hàng",
+      "metaDescription": "Cách lập checklist góc quay trước khi bấm máy để không bao giờ phải lấy sản phẩm ra quay bù, kèm mẫu checklist dùng được ngay.",
+      "excerpt": "Quay thiếu một góc là mất cả buổi dựng. Checklist mười dòng giải quyết vấn đề này.",
+      "datePublished": "2026-09-27",
+      "readingMinutes": 4,
+      "related": [
+        "cach-quay-video-review-san-pham-bang-dien-thoai",
+        "san-xuat-video-deu-cho-tiktok-shop"
+      ],
+      "intro": [
+        "Tình huống quen thuộc: quay xong, ngồi dựng, tới đoạn giữa mới nhận ra thiếu cảnh cận nhãn sản phẩm. Sản phẩm đã đóng gói gửi đi, hoặc đồ ăn đã nguội, hoặc trời đã tối.",
+        "Không có cách sửa nào nhanh bằng việc không để nó xảy ra. Checklist shot là công cụ rẻ nhất để làm điều đó."
+      ],
+      "sections": [
+        {
+          "heading": "Checklist shot là gì",
+          "paragraphs": [
+            "Là danh sách các góc cần quay cho một video, viết ra trước khi bấm máy. Mỗi dòng là một góc, kèm thời lượng dự kiến.",
+            "Nó không phải kịch bản. Kịch bản nói bạn sẽ nói gì; checklist nói máy quay phải ghi được những hình nào."
+          ]
+        },
+        {
+          "heading": "Mẫu checklist dùng được ngay",
+          "bullets": [
+            "Toàn cảnh sản phẩm trong bối cảnh — 3 giây",
+            "Trung cảnh, mặt nhãn hướng vào máy — 3 giây",
+            "Cận chất liệu hoặc kết cấu — 4 giây",
+            "Cận chi tiết mà lời thoại có nhắc tới — 4 giây",
+            "Tay mở hoặc sử dụng sản phẩm — 5 giây",
+            "Cảnh kết để trống một giây cho lời kêu gọi — 2 giây"
+          ],
+          "paragraphsAfter": [
+            "Sáu dòng, tổng khoảng 21 giây nguyên liệu cho một video 15–20 giây sau khi cắt."
+          ]
+        },
+        {
+          "heading": "Ba quy tắc khi dùng checklist",
+          "bullets": [
+            "Quay mỗi dòng hai lần trước khi chuyển sang dòng kế tiếp, để có bản dự phòng",
+            "Đánh dấu ngay sau khi quay xong, đừng tin vào trí nhớ",
+            "Không dọn bàn cho tới khi checklist đã đủ dấu"
+          ]
+        },
+        {
+          "heading": "Khi checklist nằm sẵn trong app",
+          "paragraphs": [
+            "Viết tay ra giấy hoặc ghi chú điện thoại đều được. Điểm yếu là bạn phải tự nhớ đã gắn đủ chưa khi dựng.",
+            "Trong Five Cut Pro, checklist nằm ngay trong mẫu: mỗi đoạn có góc quay, mô tả và clip mẫu; app đếm số đoạn đã gắn trên tổng số và cảnh báo khi nguồn ngắn hơn thời lượng công thức yêu cầu. Bạn biết mình thiếu gì trước khi rời khỏi bàn quay."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quay video ngắn cũng cần checklist à?",
+          "answer": "Video càng ngắn thì mỗi cảnh càng quan trọng, vì không có chỗ để giấu một cảnh thiếu. Checklist sáu dòng chỉ tốn một phút để viết."
+        },
+        {
+          "question": "Nếu lỡ thiếu một góc thì cứu thế nào?",
+          "answer": "Thay bằng ảnh chụp sản phẩm giữ trên màn hình 1–2 giây, hoặc đổi thứ tự để cảnh khác gánh vai trò đó. Đây là cách chữa cháy, không nên thành thói quen."
+        },
+        {
+          "question": "Có nên dùng chung một checklist cho mọi sản phẩm?",
+          "answer": "Có, nếu cùng ngành hàng. Đó chính là lợi ích của việc lưu lại công thức: bạn không phải nghĩ lại từ đầu mỗi lần."
+        }
+      ],
+      "takeaway": "Sáu dòng viết trước khi bấm máy tiết kiệm cả buổi tối ngồi dựng lại."
+    },
+    {
+      "slug": "san-xuat-video-deu-cho-tiktok-shop",
+      "title": "Quy trình ra video đều cho TikTok Shop",
+      "metaTitle": "Quy trình sản xuất video đều đặn cho TikTok Shop",
+      "metaDescription": "Cách tổ chức một buổi quay để ra nhiều video bán hàng: gom sản phẩm, quay theo lô, dùng lại công thức và giữ nhịp đăng hằng ngày.",
+      "excerpt": "Bí quyết đăng đều không nằm ở kỷ luật, mà ở cách gom việc: quay một buổi, đăng cả tuần.",
+      "datePublished": "2026-09-27",
+      "readingMinutes": 6,
+      "related": [
+        "cong-thuc-video-ban-hang-tiktok",
+        "checklist-shot-truoc-khi-quay"
+      ],
+      "intro": [
+        "Đăng mỗi ngày một video nghe như phải làm việc mỗi ngày. Thực tế người làm lâu năm không làm vậy — họ gom việc lại theo lô.",
+        "Một buổi quay 2–3 tiếng có thể ra đủ nguyên liệu cho cả tuần, nếu bạn tổ chức đúng thứ tự."
+      ],
+      "sections": [
+        {
+          "heading": "Bước 1 — Gom sản phẩm theo bối cảnh",
+          "paragraphs": [
+            "Đừng xếp lịch theo sản phẩm, hãy xếp theo nơi quay. Tất cả đồ bếp quay cùng một lượt trong bếp, tất cả mỹ phẩm quay cùng một lượt ở bàn trang điểm.",
+            "Dọn bàn và chỉnh ánh sáng một lần rồi quay liên tiếp 5–6 sản phẩm là cách tiết kiệm thời gian lớn nhất trong cả quy trình."
+          ]
+        },
+        {
+          "heading": "Bước 2 — Một công thức cho cả lô",
+          "paragraphs": [
+            "Chọn trước công thức sẽ dùng cho lô này, ví dụ cận 3s → trung 4s → sử dụng 6s → chi tiết 4s → kết 3s. Cả lô dùng chung cấu trúc nên bạn không phải đổi tư duy giữa các sản phẩm.",
+            "Nếu muốn video đa dạng, chuẩn bị hai công thức và xen kẽ, thay vì mỗi sản phẩm một kiểu."
+          ]
+        },
+        {
+          "heading": "Bước 3 — Quay theo góc, không quay theo sản phẩm",
+          "paragraphs": [
+            "Đây là mẹo tiết kiệm thời gian mà ít người mới biết: giữ nguyên một vị trí máy và quay góc đó cho tất cả sản phẩm, rồi mới đổi sang góc tiếp theo.",
+            "Cách này giảm số lần dựng lại máy và chỉnh sáng từ vài chục xuống còn năm lần."
+          ],
+          "bullets": [
+            "Vòng 1: quay toàn cảnh cho cả 6 sản phẩm",
+            "Vòng 2: đổi sang trung cảnh, quay lại 6 sản phẩm",
+            "Vòng 3: cận chi tiết, và cứ thế"
+          ]
+        },
+        {
+          "heading": "Bước 4 — Ghép và xuất ngay trong ngày",
+          "paragraphs": [
+            "Đừng để nguyên liệu nằm trong máy quá lâu, vì càng để lâu càng khó nhớ clip nào của sản phẩm nào. Ghép trong ngày quay, xuất đủ video cho cả tuần.",
+            "Với Five Cut Pro, gắn clip vào đúng đoạn trong công thức rồi bấm ghép; app xử lý trên máy và lưu vào mục Xuất video để bạn tải về hoặc chia sẻ thẳng lên TikTok."
+          ]
+        },
+        {
+          "heading": "Bước 5 — Đăng theo lịch, không đăng theo cảm hứng",
+          "paragraphs": [
+            "Có sẵn 7 video trong máy không có nghĩa là đăng hết trong hai ngày. Giữ nhịp một video mỗi ngày vào khung giờ cố định để dễ so sánh hiệu quả.",
+            "Ghi lại video nào có lượt xem và đơn tốt nhất, rồi lần quay sau tăng số video theo công thức đó."
+          ]
+        },
+        {
+          "heading": "Khi nào nên mở rộng",
+          "paragraphs": [
+            "Khi một công thức đã cho kết quả ổn định trong 2–3 tuần, đó là lúc nhân bản: thêm sản phẩm cùng ngành, hoặc mời thêm người quay cùng dùng chung công thức để video giữ được cấu trúc giống nhau.",
+            "Nhãn hàng cũng thích cách làm này vì nhiều creator dùng chung một mẫu thì thông điệp và cấu trúc shot đồng bộ."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Một buổi quay nên làm mấy sản phẩm?",
+          "answer": "Năm đến sáu sản phẩm cùng bối cảnh là hợp lý cho buổi đầu. Khi quen tay có thể lên tám đến mười."
+        },
+        {
+          "question": "Quay theo lô thì video có bị giống nhau không?",
+          "answer": "Đổi nhạc, đổi chữ trên màn hình và đổi câu mở đầu là đủ khác. Cấu trúc giống nhau không phải vấn đề với người xem."
+        },
+        {
+          "question": "Không có nhiều sản phẩm thì sao?",
+          "answer": "Quay nhiều góc và nhiều tình huống sử dụng cho cùng một sản phẩm, rồi ghép thành các video khác nhau bằng các công thức khác nhau."
+        }
+      ],
+      "takeaway": "Gom theo bối cảnh, dùng chung một công thức, quay theo góc thay vì theo sản phẩm, ghép trong ngày, đăng theo lịch."
+    }
+  ]
+}

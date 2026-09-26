@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { SiteFooter } from "@/components/site-footer";
+import { ScrollProgress } from "@/components/motion-effects";
 import { SiteHeader } from "@/components/site-header";
 import { SocialFloatButton } from "@/components/social-float-button";
 import { fetchAppSocialConfig } from "@/lib/social-groups";
@@ -201,6 +202,7 @@ export default async function LocaleLayout({
       >
         <GoogleAnalytics />
         <NextIntlClientProvider messages={messages}>
+          <ScrollProgress />
           <SiteHeader />
           <main className="flex min-w-0 flex-1 flex-col overflow-x-clip pt-[64px]">
             {children}

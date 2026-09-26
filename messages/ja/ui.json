@@ -49,7 +49,10 @@
     "logoAlt": "Five Cut Pro ロゴ",
     "officialSocial": "公式SNS (@fivecutpro)",
     "languageKo": "한국어",
-    "campaigns": "案件を受ける"
+    "campaigns": "案件を受ける",
+    "home": "ホーム",
+    "compare": "CapCutとの比較",
+    "guides": "ガイド"
   },
   "Footer": {
     "tagline": "KOC、コマース動画クリエイター、アフィリエイトチーム向けスマート動画編集・自動化ソフトウェア。",
@@ -73,7 +76,9 @@
     "groupsHeading": "サポートグループ",
     "groupsJoin": "参加",
     "campaignsLink": "案件を受ける",
-    "sponsorsLink": "ブランド向け"
+    "sponsorsLink": "ブランド向け",
+    "compareLink": "CapCutとの比較",
+    "guidesLink": "ガイド"
   },
   "DeleteAccount": {
     "metaTitle": "アカウント削除 — Five Cut Pro",

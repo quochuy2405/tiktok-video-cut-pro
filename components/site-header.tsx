@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { useState } from "react";
 import { MenuIcon } from "lucide-react";
 
@@ -16,35 +17,46 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Link, usePathname } from "@/i18n/navigation";
+import { hasGuides } from "@/lib/guides";
 import { trackCtaClick } from "@/lib/analytics";
 import { APP_NAME_ACCENT, APP_NAME_LEAD } from "@/lib/brand";
 import { SocialLinks } from "@/components/social-links";
 import { cn } from "@/lib/utils";
 
-const DESKTOP_NAV_PATHS = [
-  { href: "/#features", labelKey: "features" as const },
-  { href: "/#how-it-works", labelKey: "howItWorks" as const },
-  { href: "/#campaigns", labelKey: "campaigns" as const },
-  { href: "/#sponsors", labelKey: "sponsors" as const },
-  { href: "/#faq", labelKey: "faq" as const },
+type NavItem = { href: string; labelKey: "features" | "howItWorks" | "campaigns" | "sponsors" | "guides" | "compare" | "downloadApp" | "faq" };
+
+const GUIDES_ITEM: NavItem = { href: "/guides", labelKey: "guides" };
+
+const DESKTOP_NAV_BASE: NavItem[] = [
+  { href: "/#features", labelKey: "features" },
+  { href: "/#how-it-works", labelKey: "howItWorks" },
+  { href: "/#campaigns", labelKey: "campaigns" },
+  { href: "/brands", labelKey: "sponsors" },
 ];
 
-const MOBILE_NAV_PATHS = [
-  { href: "/#features", labelKey: "features" as const },
-  { href: "/#how-it-works", labelKey: "howItWorks" as const },
-  { href: "/#campaigns", labelKey: "campaigns" as const },
-  { href: "/#sponsors", labelKey: "sponsors" as const },
-  { href: "/#download", labelKey: "downloadApp" as const },
-  { href: "/#faq", labelKey: "faq" as const },
+const MOBILE_NAV_BASE: NavItem[] = [
+  { href: "/#features", labelKey: "features" },
+  { href: "/#how-it-works", labelKey: "howItWorks" },
+  { href: "/#campaigns", labelKey: "campaigns" },
+  { href: "/brands", labelKey: "sponsors" },
+  { href: "/vs-capcut", labelKey: "compare" },
+  { href: "/#download", labelKey: "downloadApp" },
+  { href: "/#faq", labelKey: "faq" },
 ];
+
+/** Guides only exist in the locales they were written in. */
+function navItems(base: NavItem[], locale: string, tail: NavItem[] = []): NavItem[] {
+  const withGuides = hasGuides(locale) ? [...base, GUIDES_ITEM] : base;
+  return [...withGuides, ...tail];
+}
 
 function NavLinks({
   className,
-  items = DESKTOP_NAV_PATHS,
+  items,
   onNavigate,
 }: {
   className?: string;
-  items?: typeof MOBILE_NAV_PATHS;
+  items: NavItem[];
   onNavigate?: () => void;
 }) {
   const pathname = usePathname();
@@ -99,6 +111,11 @@ function NavLinks({
 export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const t = useTranslations("Nav");
+  const locale = useLocale();
+  const desktopNav = navItems(DESKTOP_NAV_BASE, locale, [
+    { href: "/#faq", labelKey: "faq" },
+  ]);
+  const mobileNav = navItems(MOBILE_NAV_BASE, locale);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-[#D8E5DD]/80 bg-[#F4F8F6]/85 backdrop-blur-2xl supports-[backdrop-filter]:bg-[#F4F8F6]/70 shadow-[0_8px_30px_-20px_rgba(15,31,24,0.18)]">
@@ -126,7 +143,7 @@ export function SiteHeader() {
         {/* Desktop Navigation & Actions */}
         <div className="hidden items-center gap-2 lg:flex xl:gap-4">
           <nav className="flex items-center" aria-label={t("mainNav")}>
-            <NavLinks items={DESKTOP_NAV_PATHS} className="flex-row items-center gap-0.5 xl:gap-1" />
+            <NavLinks items={desktopNav} className="flex-row items-center gap-0.5 xl:gap-1" />
           </nav>
           <div className="flex shrink-0 items-center gap-2 xl:gap-2.5">
             <SocialLinks variant="header" className="hidden xl:flex" />
@@ -194,7 +211,7 @@ export function SiteHeader() {
               </SheetHeader>
               <div className="flex flex-col gap-4 p-4">
                 <LanguageSwitcher variant="grid" onSelect={() => setMobileOpen(false)} />
-                <NavLinks items={MOBILE_NAV_PATHS} onNavigate={() => setMobileOpen(false)} />
+                <NavLinks items={mobileNav} onNavigate={() => setMobileOpen(false)} />
                 <div className="my-2 border-t border-[#D8E5DD] pt-3 space-y-2">
                   <span className="block font-mono text-[10px] font-semibold uppercase tracking-[0.65px] text-[#4A5C53]">
                     {t("officialSocial")}

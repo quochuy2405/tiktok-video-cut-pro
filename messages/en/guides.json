@@ -1,0 +1,428 @@
+{
+  "index": {
+    "metaTitle": "Guides for creators filming selling videos",
+    "metaDescription": "Practical guides for KOCs and sellers: product camera angles, TikTok selling video structure, shot checklists and a repeatable production routine.",
+    "breadcrumb": "Guides",
+    "title": "Guides for people who film selling videos",
+    "subtitle": "What to settle before you hit record: which angles to shoot, how the video is structured, and how to keep publishing without burning out.",
+    "readingSuffix": "min read",
+    "readMore": "Read guide",
+    "relatedTitle": "Read next",
+    "tocTitle": "In this guide",
+    "faqTitle": "Frequently asked",
+    "takeawayTitle": "In short",
+    "ctaTitle": "Work from a template that already carries the shot guide",
+    "ctaSubtitle": "Five Cut Pro has a KOC template market: watch the guide clip for every angle, shoot the checklist, let the app merge, then share to TikTok.",
+    "ctaButton": "Download free",
+    "updatedLabel": "Updated"
+  },
+  "articles": [
+    {
+      "slug": "how-to-film-product-review-videos-on-a-phone",
+      "title": "How to film product review videos on a phone: the 5 core angles",
+      "metaTitle": "How to film product review videos on a phone (5 core angles)",
+      "metaDescription": "A beginner guide to filming product reviews on a phone: the five angles you always need, camera placement, lighting and the mistakes that force a reshoot.",
+      "excerpt": "No camera rig, no studio. Shoot five angles in the right order and you already have everything a selling video needs.",
+      "datePublished": "2026-09-27",
+      "readingMinutes": 6,
+      "related": [
+        "shot-checklist-before-you-film",
+        "tiktok-selling-video-formula"
+      ],
+      "intro": [
+        "Most review videos fall flat not because the footage looks bad, but because an angle is missing. Viewers never see what the product actually looks like, how big it is, or how it behaves in use — so they scroll.",
+        "The safest approach for a beginner is a fixed set of angles. Below are the five that nearly every selling template uses, with how to place the camera for each."
+      ],
+      "sections": [
+        {
+          "heading": "Angle 1 — Wide: put the product in a setting",
+          "paragraphs": [
+            "The opening shot tells viewers what they are looking at and where it lives. Place the camera about an arm's length away and include the table or the space where the product is used.",
+            "Keep it short, two to three seconds. Its job is to open the scene, not to tell the whole story."
+          ],
+          "bullets": [
+            "Keep the background tidy — no stray objects taking half the frame",
+            "Light from the front or slightly to the side, never from behind the product",
+            "Hold the phone vertically for 9:16 from the start instead of cropping later"
+          ]
+        },
+        {
+          "heading": "Angle 2 — Medium: show the shape",
+          "paragraphs": [
+            "Move closer so the product fills about half the frame. This is where viewers judge shape, size and material.",
+            "If the product has an obvious front — a cosmetics box, a food package — point the label straight at the lens."
+          ]
+        },
+        {
+          "heading": "Angle 3 — Product close-up: detail does the selling",
+          "paragraphs": [
+            "Close-ups are the most persuasive shots you have. Stitching, fabric, gloss, cream texture, coffee beans — the things that convince a viewer the product is real and worth the price.",
+            "Phones lose focus when pushed too close. Back off slightly and tap to lock focus instead of shoving the lens against the product."
+          ],
+          "bullets": [
+            "Tap and hold to lock focus and exposure before recording",
+            "Move the camera slowly — slower than feels natural",
+            "Record two extra seconds at the start and end so you have room to trim"
+          ]
+        },
+        {
+          "heading": "Angle 4 — Signature detail: prove what you claim",
+          "paragraphs": [
+            "If the video says waterproof, sturdy zip, or unscented, this is where you show it. Film the exact detail the voiceover mentions.",
+            "A good selling video never describes more than it shows. Every claim deserves a matching shot."
+          ]
+        },
+        {
+          "heading": "Angle 5 — In use: let viewers see themselves",
+          "paragraphs": [
+            "The final angle shows the product in action: a hand opening the lid, wearing it, pouring it, plugging it in. This is the shot that creates desire, because viewers picture themselves using it.",
+            "Film where the product is genuinely used. Kitchen gear in the kitchen, gym gear mid-workout."
+          ]
+        },
+        {
+          "heading": "Three mistakes that force a reshoot",
+          "bullets": [
+            "Filming horizontally and remembering later that TikTok is vertical — you lose half the frame in the crop",
+            "Missing one angle and only noticing while editing, so the product has to come back out",
+            "Recording each angle once, leaving no backup when a take is shaky or out of focus"
+          ],
+          "paragraphsAfter": [
+            "The fix for all three: keep a shot checklist in front of you and film every angle twice. Three extra minutes while filming saves an evening of editing."
+          ]
+        },
+        {
+          "heading": "What to do once you have the footage",
+          "paragraphs": [
+            "Put the five clips in that order, two to four seconds each, and you have a usable 15–20 second video. If you work from a template in Five Cut Pro, the order and per-segment duration are already set — you just attach clips to the right slots.",
+            "Once the set works, keep it for every product. Repeating a structure that already performs is always faster than inventing a new one."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is an older phone good enough?",
+          "answer": "Yes. Lighting and steadiness matter far more than the chipset. Film near a window in daylight and rest your elbows on the table — the difference is dramatic."
+        },
+        {
+          "question": "Do I need an external microphone?",
+          "answer": "Not if you add a voiceover later or use on-screen text. If you talk while filming, record in a closed room away from fans and street noise."
+        },
+        {
+          "question": "How long should each angle be?",
+          "answer": "Record five to six seconds per angle even if the final cut uses two or three. The extra footage lets you keep the steadiest part."
+        }
+      ],
+      "takeaway": "Wide, medium, product close-up, signature detail, in use — five angles give you everything a complete selling video needs."
+    },
+    {
+      "slug": "tiktok-selling-video-formula",
+      "title": "The 15–30 second TikTok selling video formula",
+      "metaTitle": "TikTok selling video formula (15–30 second structure)",
+      "metaDescription": "The structure behind short selling videos on TikTok: a visual hook, the problem, the product, proof and one call to action — with timings per segment.",
+      "excerpt": "Short selling videos follow an almost fixed structure. Learn it once and every new product is just a swap of raw footage.",
+      "datePublished": "2026-09-27",
+      "readingMinutes": 6,
+      "related": [
+        "how-to-film-product-review-videos-on-a-phone",
+        "consistent-video-production-for-tiktok-shop"
+      ],
+      "intro": [
+        "Selling videos on TikTok do not need reinventing each time. Most of the ones that perform run the same beats: stop the scroll, name the problem, bring in the product, prove it, then ask for one thing.",
+        "Here is that structure second by second for a 15–30 second video, and how to turn it into a recipe you reuse."
+      ],
+      "sections": [
+        {
+          "heading": "0–3 seconds: a hook you can see, not just hear",
+          "paragraphs": [
+            "The first three seconds decide whether anyone stays. The strongest hook is visual rather than spoken: the product working, a before and after, or an unexpected motion.",
+            "Do not open with a greeting. 'Hi everyone, today I'm reviewing…' is three seconds spent on nothing."
+          ],
+          "bullets": [
+            "Open on a close-up or on the product mid-use",
+            "If you use on-screen text, put the shortest line in the first second",
+            "Never let a logo or intro animation eat the hook"
+          ]
+        },
+        {
+          "heading": "3–8 seconds: the problem the viewer has",
+          "paragraphs": [
+            "Name the specific annoyance the product removes. The more concrete the better: makeup flaking on dry skin, food sticking to the pan, a bottle leaking inside a backpack.",
+            "This beat usually lives in a medium shot or a quick situational scene."
+          ]
+        },
+        {
+          "heading": "8–15 seconds: the product and how it solves it",
+          "paragraphs": [
+            "Bring the product in and show real use — opening it, applying it, mounting it. This is where the in-use angle belongs.",
+            "Name two benefits at most. More than that and nobody remembers any of them in a short video."
+          ]
+        },
+        {
+          "heading": "15–25 seconds: proof",
+          "paragraphs": [
+            "Proof separates a video that sells from a video that merely entertains: detail close-ups, the result after use, a comparison with the old way, or the packaging and delivery.",
+            "Every claim in the video should have a matching shot. Say non-slip, then show something not slipping."
+          ]
+        },
+        {
+          "heading": "25–30 seconds: exactly one action",
+          "paragraphs": [
+            "Close with a single request: tap the cart, check the description, or follow. Two calls to action and viewers do neither.",
+            "Hold the last shot still for about a second so there is time to tap."
+          ]
+        },
+        {
+          "heading": "Turning the structure into a reusable recipe",
+          "paragraphs": [
+            "When a structure performs, write down the angle order and the seconds per segment — for example close-up 3s → medium 4s → in use 6s → detail 5s → wide 3s. Next product, you film exactly those angles again.",
+            "That is how recipes in Five Cut Pro work: source order and durations are saved once, so tomorrow you attach new clips and get a new video without rebuilding a timeline."
+          ],
+          "bullets": [
+            "Save the recipe as soon as a video performs",
+            "Two or three recipes usually cover an entire product category",
+            "Change the music and on-screen text so videos feel fresh even with the same structure"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "How long should the video be?",
+          "answer": "15–30 seconds for direct selling. Go longer only when the product genuinely needs explaining, such as tech or a multi-step skincare routine."
+        },
+        {
+          "question": "Do I need a voiceover?",
+          "answer": "No. On-screen text plus clear footage still sells, and it works for the large share of viewers watching on mute."
+        },
+        {
+          "question": "Will reusing one structure get boring?",
+          "answer": "Viewers rarely notice structure; they remember the product and the footage. What makes videos feel repetitive is the same music, script and setting — not the same shot order."
+        }
+      ],
+      "takeaway": "Visual hook, specific problem, product in use, proof, one call to action. Write down the order and timings so the next video is a swap, not a rebuild."
+    },
+    {
+      "slug": "what-is-a-koc",
+      "title": "What is a KOC, how it differs from a KOL, and how to start",
+      "metaTitle": "What is a KOC? Difference from a KOL and how to start",
+      "metaDescription": "What a KOC is, how the role differs from a KOL, what brands actually evaluate, and the steps to start as a KOC on TikTok Shop from zero.",
+      "excerpt": "A KOC does not need fame. What brands pay for is the ability to make viewers trust and tap buy.",
+      "datePublished": "2026-09-27",
+      "readingMinutes": 5,
+      "related": [
+        "consistent-video-production-for-tiktok-shop",
+        "tiktok-selling-video-formula"
+      ],
+      "intro": [
+        "KOC stands for Key Opinion Consumer. They buy, use, and report the real experience, and viewers believe them because they look like ordinary buyers.",
+        "The role is growing fast around TikTok Shop because brands need volume — many videos at a sane cost, rather than a handful of expensive celebrity posts."
+      ],
+      "sections": [
+        {
+          "heading": "How a KOC differs from a KOL",
+          "bullets": [
+            "A KOL is picked for reach and fame. A KOC is picked for the ability to convert viewers into buyers.",
+            "KOLs usually take a campaign fee. KOCs usually earn commission per order or a fee per video.",
+            "KOLs need polish. KOCs need authenticity: phone footage, the vocabulary of an actual user.",
+            "A brand works with a few KOLs, but can work with dozens of KOCs at once."
+          ]
+        },
+        {
+          "heading": "What brands actually evaluate",
+          "paragraphs": [
+            "Not follower count. They look at watch-through rate, taps on the cart, orders generated, and — just as important — whether you publish consistently.",
+            "An account with 3,000 followers posting daily with real orders usually gets picked over one with 50,000 followers posting once a month."
+          ]
+        },
+        {
+          "heading": "Four steps to start from zero",
+          "bullets": [
+            "Pick a category you actually use: skincare, kitchen, baby, phone accessories. Start narrow, widen later.",
+            "Film your first ten videos with products already in your home. The goal is fluency, not income.",
+            "Use one fixed video structure so daily output costs no creative energy.",
+            "Once the account has content in a clear category, register for TikTok Shop and start receiving samples or brand campaigns."
+          ]
+        },
+        {
+          "heading": "The real bottleneck is not filming",
+          "paragraphs": [
+            "Most beginners quit because of editing, not camerawork. Nobody sustains a daily rhythm while spending an hour cutting each video.",
+            "The fix is working from a template: a recipe with the shot order and durations already set, a checklist of angles to film, and an app that merges the result. Five Cut Pro is built for exactly that step."
+          ]
+        },
+        {
+          "heading": "Getting brand campaigns",
+          "paragraphs": [
+            "Once you publish consistently in one category, you no longer need to pitch brands one by one. Matching platforms surface you based on the content you already produce.",
+            "In Five Cut Pro, signing in with TikTok lets the app see which category you create for and suggest relevant campaigns, alongside in-app events and the Zalo, Telegram and WhatsApp community groups."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do I have to show my face?",
+          "answer": "No. Plenty of successful selling accounts only show hands and the product. Showing your face helps trust but is not a requirement."
+        },
+        {
+          "question": "How many followers before brands send products?",
+          "answer": "It varies by brand and category. Many campaigns care more about relevant content and posting frequency than the follower number."
+        },
+        {
+          "question": "How many videos a day should I post?",
+          "answer": "One a day, consistently, beats five in one day followed by a week of silence."
+        }
+      ],
+      "takeaway": "KOCs sell on trust and frequency, not fame. Whoever sustains the publishing rhythm gets picked by brands."
+    },
+    {
+      "slug": "shot-checklist-before-you-film",
+      "title": "The shot checklist that ends missing-angle reshoots",
+      "metaTitle": "Shot checklist before you film a selling video",
+      "metaDescription": "How to build a shot checklist before recording so you never have to unpack a product for a reshoot, with a template you can use today.",
+      "excerpt": "One missing angle costs an evening of editing. A ten-line checklist removes the problem.",
+      "datePublished": "2026-09-27",
+      "readingMinutes": 4,
+      "related": [
+        "how-to-film-product-review-videos-on-a-phone",
+        "consistent-video-production-for-tiktok-shop"
+      ],
+      "intro": [
+        "The familiar situation: filming is done, you sit down to edit, and halfway through you realise there is no close-up of the label. The product is already packed and shipped, or the food has gone cold, or the daylight is gone.",
+        "No fix is faster than preventing it. A shot checklist is the cheapest tool for the job."
+      ],
+      "sections": [
+        {
+          "heading": "What a shot checklist is",
+          "paragraphs": [
+            "A list of the angles a video needs, written before you hit record. One line per angle, with the intended duration.",
+            "It is not a script. A script says what you will say; the checklist says what the camera must capture."
+          ]
+        },
+        {
+          "heading": "A template you can use today",
+          "bullets": [
+            "Wide shot of the product in its setting — 3 seconds",
+            "Medium shot, label facing the lens — 3 seconds",
+            "Close-up of material or texture — 4 seconds",
+            "Close-up of the detail the script mentions — 4 seconds",
+            "Hands opening or using the product — 5 seconds",
+            "Closing shot held still for the call to action — 2 seconds"
+          ],
+          "paragraphsAfter": [
+            "Six lines, about 21 seconds of raw material for a 15–20 second finished video."
+          ]
+        },
+        {
+          "heading": "Three rules for using it",
+          "bullets": [
+            "Film every line twice before moving on, so there is always a backup take",
+            "Tick each line the moment it is filmed — do not trust memory",
+            "Do not clear the table until every line is ticked"
+          ]
+        },
+        {
+          "heading": "When the checklist lives inside the app",
+          "paragraphs": [
+            "Paper or a notes app both work. The weakness is that you still have to remember what is attached when editing.",
+            "In Five Cut Pro the checklist is part of the template: every segment carries an angle, a description and a sample clip, and the app counts attached segments against the total and warns when a source is shorter than the recipe needs. You know what is missing before you leave the table."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do short videos really need a checklist?",
+          "answer": "The shorter the video, the more each shot matters, because there is nowhere to hide a gap. Six lines take a minute to write."
+        },
+        {
+          "question": "What if an angle is genuinely missing?",
+          "answer": "Substitute a product photo held on screen for a second or two, or reorder so another shot takes that role. It is damage control, not a habit."
+        },
+        {
+          "question": "Can one checklist cover every product?",
+          "answer": "Yes, within a category. That is the point of saving a recipe: you stop rethinking the structure every time."
+        }
+      ],
+      "takeaway": "Six lines written before you hit record save an evening of re-editing."
+    },
+    {
+      "slug": "consistent-video-production-for-tiktok-shop",
+      "title": "A production routine for publishing daily on TikTok Shop",
+      "metaTitle": "Consistent video production for TikTok Shop",
+      "metaDescription": "How to run a filming session that produces a week of selling videos: group by setting, reuse one recipe, film by angle, merge same-day and publish on schedule.",
+      "excerpt": "Publishing daily is not about discipline. It is about batching: film once, publish all week.",
+      "datePublished": "2026-09-27",
+      "readingMinutes": 6,
+      "related": [
+        "tiktok-selling-video-formula",
+        "shot-checklist-before-you-film"
+      ],
+      "intro": [
+        "A video a day sounds like working every day. Experienced sellers do not work that way — they batch.",
+        "A two to three hour session can produce a week of material if you run it in the right order."
+      ],
+      "sections": [
+        {
+          "heading": "Step 1 — Group products by setting",
+          "paragraphs": [
+            "Do not schedule by product, schedule by location. All kitchen items in one kitchen run, all cosmetics in one run at the vanity.",
+            "Clearing the table and setting the light once, then filming five or six products back to back, is the single biggest time saving in the whole routine."
+          ]
+        },
+        {
+          "heading": "Step 2 — One recipe for the whole batch",
+          "paragraphs": [
+            "Choose the recipe before you start — for example close-up 3s → medium 4s → in use 6s → detail 4s → closing 3s. The whole batch shares that structure so you never switch mental gears between products.",
+            "If you want variety, prepare two recipes and alternate, rather than improvising per product."
+          ]
+        },
+        {
+          "heading": "Step 3 — Film by angle, not by product",
+          "paragraphs": [
+            "This is the trick beginners rarely know: keep the camera in one position and film that angle for every product, then move to the next angle.",
+            "It cuts the number of camera and lighting resets from dozens down to five."
+          ],
+          "bullets": [
+            "Round 1: the wide shot for all six products",
+            "Round 2: switch to medium, run the six again",
+            "Round 3: detail close-ups, and so on"
+          ]
+        },
+        {
+          "heading": "Step 4 — Merge and export the same day",
+          "paragraphs": [
+            "Do not let footage sit on the phone. The longer it waits, the harder it is to remember which clip belongs to which product. Merge on filming day and export the whole week.",
+            "With Five Cut Pro, attach clips to the right segments of the recipe and hit merge; processing runs on the device and finished videos land in Exported videos to save or share straight to TikTok."
+          ]
+        },
+        {
+          "heading": "Step 5 — Publish on a schedule, not on impulse",
+          "paragraphs": [
+            "Seven videos on the phone does not mean seven posts in two days. Keep one a day at a fixed time so results stay comparable.",
+            "Note which video earned the best views and orders, then weight the next batch toward that recipe."
+          ]
+        },
+        {
+          "heading": "When to scale up",
+          "paragraphs": [
+            "Once a recipe holds up for two or three weeks, duplicate it: add products in the same category, or bring in another creator using the same recipe so structure stays consistent.",
+            "Brands like this too — many creators sharing one template means the message and the shot structure stay aligned."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "How many products per session?",
+          "answer": "Five or six in the same setting is realistic for a first session. Eight to ten once the routine is familiar."
+        },
+        {
+          "question": "Won't batched videos look identical?",
+          "answer": "Different music, different on-screen text and a different opening line are enough. Shared structure is not a problem for viewers."
+        },
+        {
+          "question": "What if I don't have many products?",
+          "answer": "Film more angles and more use cases for the same product, then build different videos from different recipes."
+        }
+      ],
+      "takeaway": "Group by setting, share one recipe, film by angle instead of by product, merge same-day, publish on a schedule."
+    }
+  ]
+}

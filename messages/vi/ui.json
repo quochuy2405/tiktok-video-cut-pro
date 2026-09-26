@@ -52,7 +52,10 @@
     "logoAlt": "Biểu tượng Five Cut Pro",
     "officialSocial": "Mạng xã hội (@fivecutpro)",
     "languageKo": "한국어",
-    "campaigns": "Nhận chiến dịch"
+    "campaigns": "Nhận chiến dịch",
+    "home": "Trang chủ",
+    "compare": "So với CapCut",
+    "guides": "Hướng dẫn"
   },
   "Footer": {
     "tagline": "Công cụ cắt ghép & tự động hóa video bán hàng dành cho KOC, nhà sáng tạo nội dung và mạng lưới tiếp thị liên kết.",
@@ -76,7 +79,9 @@
     "groupsHeading": "Nhóm hỗ trợ",
     "groupsJoin": "Vào nhóm",
     "campaignsLink": "Nhận chiến dịch",
-    "sponsorsLink": "Dành cho nhãn hàng"
+    "sponsorsLink": "Dành cho nhãn hàng",
+    "compareLink": "So với CapCut",
+    "guidesLink": "Hướng dẫn"
   },
   "DeleteAccount": {
     "metaTitle": "Xóa tài khoản — Five Cut Pro",

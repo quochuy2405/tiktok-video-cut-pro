@@ -49,7 +49,10 @@
     "logoAlt": "โลโก้ Five Cut Pro",
     "officialSocial": "โซเชียลทางการ (@fivecutpro)",
     "languageKo": "한국어",
-    "campaigns": "รับแคมเปญ"
+    "campaigns": "รับแคมเปญ",
+    "home": "หน้าแรก",
+    "compare": "เทียบกับ CapCut",
+    "guides": "คู่มือ"
   },
   "Footer": {
     "tagline": "ซอฟต์แวร์ตัดต่อและผลิตวิดีโอขายของอัตโนมัติ สำหรับ KOC ผู้สร้างคอนเทนต์ และเครือข่ายนายหน้าออนไลน์",
@@ -73,7 +76,9 @@
     "groupsHeading": "กลุ่มช่วยเหลือ",
     "groupsJoin": "เข้ากลุ่ม",
     "campaignsLink": "รับแคมเปญ",
-    "sponsorsLink": "สำหรับแบรนด์"
+    "sponsorsLink": "สำหรับแบรนด์",
+    "compareLink": "เทียบกับ CapCut",
+    "guidesLink": "คู่มือ"
   },
   "DeleteAccount": {
     "metaTitle": "ลบบัญชี — Five Cut Pro",

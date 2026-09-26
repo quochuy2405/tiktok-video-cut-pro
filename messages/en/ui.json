@@ -51,7 +51,10 @@
     "logoAlt": "Five Cut Pro icon",
     "officialSocial": "Official Socials (@fivecutpro)",
     "languageKo": "한국어",
-    "campaigns": "For creators"
+    "campaigns": "For creators",
+    "home": "Home",
+    "compare": "vs CapCut",
+    "guides": "Guides"
   },
   "Footer": {
     "tagline": "Smart video cutting & automation software for KOCs, social commerce creators, and affiliate networks.",
@@ -75,7 +78,9 @@
     "groupsHeading": "Support group",
     "groupsJoin": "Join",
     "campaignsLink": "For creators",
-    "sponsorsLink": "For brands"
+    "sponsorsLink": "For brands",
+    "compareLink": "vs CapCut",
+    "guidesLink": "Guides"
   },
   "DeleteAccount": {
     "metaTitle": "Delete account — Five Cut Pro",

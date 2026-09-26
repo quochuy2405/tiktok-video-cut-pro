@@ -49,7 +49,10 @@
     "logoAlt": "Five Cut Pro 标识",
     "officialSocial": "官方社交媒体 (@fivecutpro)",
     "languageKo": "한국어",
-    "campaigns": "接活动"
+    "campaigns": "接活动",
+    "home": "首页",
+    "compare": "对比 CapCut",
+    "guides": "教程"
   },
   "Footer": {
     "tagline": "专为KOC、内容创作者及电商矩阵团队研发的智能带货视频剪辑与自动化工具。",
@@ -73,7 +76,9 @@
     "groupsHeading": "支持群",
     "groupsJoin": "加入",
     "campaignsLink": "接活动",
-    "sponsorsLink": "品牌合作"
+    "sponsorsLink": "品牌合作",
+    "compareLink": "对比 CapCut",
+    "guidesLink": "教程"
   },
   "DeleteAccount": {
     "metaTitle": "删除账号 — Five Cut Pro",

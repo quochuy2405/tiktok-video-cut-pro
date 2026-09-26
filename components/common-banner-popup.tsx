@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { preload } from "react-dom";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 import type { MarketingBannerSlide } from "@/lib/marketing-api";
@@ -55,6 +56,12 @@ export function CommonBannerPopup({ slides }: Props) {
     if (count <= 0) return;
     setActive(((index % count) + count) % count);
   };
+
+  // The popup paints 600ms in, which made its banner the LCP element. Start the
+  // download while the page is still parsing so the image is ready on open.
+  if (slides[0]?.imageUrl) {
+    preload(slides[0].imageUrl, { as: "image", fetchPriority: "high" });
+  }
 
   useEffect(() => {
     if (!count || wasRecentlyDismissed()) return;

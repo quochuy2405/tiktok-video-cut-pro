@@ -9,6 +9,7 @@ import {
   absoluteLocaleUrl,
   absoluteUrl,
   hreflangAlternates,
+  llmAlternateTypes,
   OG_IMAGE,
   OG_VI,
   openGraphAlternateLocales,
@@ -30,6 +31,7 @@ export async function generateMetadata({
     alternates: {
       canonical: absoluteLocaleUrl(locale),
       languages: hreflangAlternates(),
+      types: llmAlternateTypes(),
     },
     openGraph: {
       title: OG_VI.title,

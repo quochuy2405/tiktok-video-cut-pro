@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-import { absoluteLocaleUrl, MARKETING_PATHS } from "@/lib/site";
+import { absoluteLocaleUrl, absoluteUrl, MARKETING_PATHS } from "@/lib/site";
 import { routing } from "@/i18n/routing";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -37,6 +37,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     }
   }
+
+  entries.push(
+    {
+      url: absoluteUrl("/llms.txt"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.4,
+    },
+    {
+      url: absoluteUrl("/llms-full.txt"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.5,
+    },
+  );
 
   return entries;
 }

@@ -36,6 +36,14 @@ export function absoluteLocaleUrl(locale: string, path = ""): string {
   return absoluteUrl(localePath(locale, path));
 }
 
+/** Plain-text copies for AI crawlers. Child pages must repeat this: they replace `alternates`. */
+export function llmAlternateTypes(): Record<string, string> {
+  return {
+    "text/plain": absoluteUrl("/llms.txt"),
+    "text/markdown": absoluteUrl("/llms-full.txt"),
+  };
+}
+
 export function hreflangAlternates(path = ""): Record<string, string> {
   const languages: Record<string, string> = {};
   for (const locale of routing.locales) {

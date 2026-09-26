@@ -76,6 +76,7 @@ export type CtaLocation =
   | "download_github"
   | "sponsor_section"
   | "community_section"
+  | "social_float"
   | "footer";
 
 export type CtaCategory =

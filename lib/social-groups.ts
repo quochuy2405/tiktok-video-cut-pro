@@ -11,6 +11,22 @@ export type SocialGroup = {
   url: string;
 };
 
+export type SocialFloatMap = Partial<Record<string, SocialGroupPlatform>>;
+
+export type AppSocialConfig = {
+  groups: SocialGroup[];
+  floatByCountry: SocialFloatMap;
+};
+
+const LOCALE_COUNTRY: Record<string, string> = {
+  vi: "VN",
+  en: "US",
+  zh: "CN",
+  th: "TH",
+  ja: "JP",
+  ko: "KR",
+};
+
 const PLATFORM_ORDER: Record<SocialGroupPlatform, number> = {
   zalo: 0,
   telegram: 1,
@@ -83,10 +99,22 @@ export function platformLabel(platform: SocialGroupPlatform): string {
   }
 }
 
-function normalizeConfig(data: unknown): SocialGroup[] {
+function normalizeFloatMap(raw: unknown): SocialFloatMap {
+  const record = asRecord(raw);
+  if (!record) return {};
+  const map: SocialFloatMap = {};
+  for (const [key, value] of Object.entries(record)) {
+    const platform = asPlatform(value);
+    const code = key.trim().toUpperCase();
+    if (platform && code) map[code] = platform;
+  }
+  return map;
+}
+
+function normalizeConfig(data: unknown): AppSocialConfig {
   const root = asRecord(data);
   const payload = asRecord(root?.data) ?? root;
-  if (!payload) return [];
+  if (!payload) return { groups: [], floatByCountry: {} };
 
   const groups: SocialGroup[] = [];
   const seen = new Set<string>();
@@ -114,13 +142,38 @@ function normalizeConfig(data: unknown): SocialGroup[] {
     });
   }
 
-  return groups.sort(
-    (a, b) => PLATFORM_ORDER[a.platform] - PLATFORM_ORDER[b.platform],
-  );
+  return {
+    groups: groups.sort(
+      (a, b) => PLATFORM_ORDER[a.platform] - PLATFORM_ORDER[b.platform],
+    ),
+    floatByCountry: normalizeFloatMap(payload.social_float_by_country),
+  };
 }
 
-/** Active Zalo / Telegram / WhatsApp groups from `/api/v1/app/config`. */
-export const fetchSocialGroups = cache(async (): Promise<SocialGroup[]> => {
+/** One float target: country from the edge, then locale, then DEFAULT, then any live group. */
+export function resolveFloatGroup(
+  groups: SocialGroup[],
+  floatByCountry: SocialFloatMap,
+  options: { country?: string | null; locale?: string | null },
+): SocialGroup | null {
+  if (groups.length === 0) return null;
+
+  const geo = options.country?.trim().toUpperCase() ?? "";
+  const fromLocale = options.locale ? LOCALE_COUNTRY[options.locale] : undefined;
+  const key =
+    (geo && floatByCountry[geo] ? geo : undefined) ??
+    (fromLocale && floatByCountry[fromLocale] ? fromLocale : undefined) ??
+    "DEFAULT";
+  const platform = floatByCountry[key] ?? floatByCountry.DEFAULT;
+  if (platform) {
+    const match = groups.find((group) => group.platform === platform);
+    if (match) return match;
+  }
+  return groups[0] ?? null;
+}
+
+/** Active Zalo / Telegram / WhatsApp groups and the country float map. */
+export const fetchAppSocialConfig = cache(async (): Promise<AppSocialConfig> => {
   try {
     const res = await fetch(`${getApiBase()}/api/v1/app/config`, {
       headers: {
@@ -129,11 +182,17 @@ export const fetchSocialGroups = cache(async (): Promise<SocialGroup[]> => {
       },
       next: { revalidate: 300 },
     });
-    if (!res.ok) return [];
+    if (!res.ok) return { groups: [], floatByCountry: {} };
     return normalizeConfig(await res.json());
   } catch {
-    return [];
+    return { groups: [], floatByCountry: {} };
   }
+});
+
+/** Active Zalo / Telegram / WhatsApp groups from `/api/v1/app/config`. */
+export const fetchSocialGroups = cache(async (): Promise<SocialGroup[]> => {
+  const config = await fetchAppSocialConfig();
+  return config.groups;
 });
 
 export function socialGroupsMarkdown(groups: SocialGroup[]): string {

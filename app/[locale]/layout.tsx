@@ -2,12 +2,14 @@ import { IBM_Plex_Mono, Inter, Noto_Sans_KR } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { fetchSocialGroups } from "@/lib/social-groups";
+import { SocialFloatButton } from "@/components/social-float-button";
+import { fetchAppSocialConfig } from "@/lib/social-groups";
 import { routing } from "@/i18n/routing";
 import { APP_NAME } from "@/lib/brand";
 import {
@@ -178,10 +180,14 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
-  const [messages, socialGroups] = await Promise.all([
+  const [messages, social, requestHeaders] = await Promise.all([
     getMessages(),
-    fetchSocialGroups(),
+    fetchAppSocialConfig(),
+    headers(),
   ]);
+  const country =
+    requestHeaders.get("x-vercel-ip-country") ||
+    requestHeaders.get("cf-ipcountry");
 
   return (
     <html
@@ -199,7 +205,13 @@ export default async function LocaleLayout({
           <main className="flex min-w-0 flex-1 flex-col overflow-x-clip pt-[64px]">
             {children}
           </main>
-          <SiteFooter groups={socialGroups} />
+          <SiteFooter groups={social.groups} />
+          <SocialFloatButton
+            groups={social.groups}
+            floatByCountry={social.floatByCountry}
+            country={country}
+            locale={locale}
+          />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -22,24 +22,24 @@
   },
   "metricsBar": [
     {
-      "value": "課題",
-      "label": "毎回の手作業編集",
-      "desc": "カット再構築、リズム崩壊"
+      "value": "3ステップ",
+      "label": "テンプレから投稿まで",
+      "desc": "テンプレ選択 → 撮影 → 書き出し"
     },
     {
-      "value": "解決",
-      "label": "KOCテンプレに従う",
-      "desc": "ガイド→撮影→アプリが結合"
+      "value": "9:16",
+      "label": "縦型、そのまま投稿",
+      "desc": "TikTok・Reels・Shorts 対応"
     },
     {
-      "value": "全ショット",
-      "label": "角度レシピ",
-      "desc": "編集中の角度漏れを防止"
+      "value": "端末内",
+      "label": "スマホだけで結合",
+      "desc": "PCもCapCutも不要"
     },
     {
-      "value": "TikTok",
-      "label": "高速書き出し・投稿",
-      "desc": "すぐ保存または共有"
+      "value": "無料",
+      "label": "ダウンロードして開始",
+      "desc": "iOS & Android"
     }
   ],
   "featuresSection": {
@@ -112,7 +112,8 @@
         "desc": "今すぐ結合をタップし、書き出し一覧からギャラリー保存またはTikTok共有。",
         "badge": "書き出し"
       }
-    ]
+    ],
+    "stepLabel": "ステップ"
   },
   "comparisonSection": {
     "badge": "本当の課題",
@@ -165,6 +166,26 @@
         "id": "faq-4",
         "question": "対応プラットフォームは？",
         "answer": "iOSとAndroid。Google、TikTok、Apple、またはメールOTPでログイン。"
+      },
+      {
+        "id": "faq-5",
+        "question": "利用に費用はかかりますか？",
+        "answer": "App StoreとGoogle Playでのダウンロードとアカウント作成は無料です。ログイン後、テンプレマーケット・レシピ・結合機能を使えます。"
+      },
+      {
+        "id": "faq-6",
+        "question": "撮った素材はアップロードされますか？",
+        "answer": "結合はお使いの端末上で行われ、完成動画は端末の「書き出し」に保存されます。詳細はプライバシーポリシーをご覧ください。"
+      },
+      {
+        "id": "faq-7",
+        "question": "KOCはどうやってブランド案件を受け取りますか？",
+        "answer": "TikTokでログインしてジャンルに合う案件の提案を受け、アプリ内イベントやチャレンジを確認し、Zalo・Telegram・WhatsAppグループで早めに情報を受け取れます。"
+      },
+      {
+        "id": "faq-8",
+        "question": "ブランドとして始めるには？",
+        "answer": "「ブランド向け」セクションのフォーム、またはpartner@fivecutpro.com へご連絡ください。商品・テンプレ・KOCマッチングについてご相談します。"
       }
     ]
   },
@@ -210,36 +231,37 @@
   },
   "sponsorsSection": {
     "label": "ブランド向け",
-    "title": "KOCテンプレ・キャンペーン提携",
-    "subtitle": "ブランドブリーフをテンプレ市場に載せ、KOCが正しいショットでメッセージ通りの動画を作れるようにします。",
+    "title": "商品をコンテンツに、コンテンツを販売機会に",
+    "subtitle": "新商品の立ち上げには、多くのコンテンツ・多くのアングル・多くのクリエイターが必要です。Five Cut Proは、KOCが毎日作業する場所に商品を置きます。",
     "stats": [
       {
-        "value": "KOCテンプレ",
-        "label": "撮影ガイド付きレシピ"
+        "value": "12",
+        "label": "ブランド露出枠"
+      },
+      {
+        "value": "5アングル",
+        "label": "商品撮影ガイド動画"
+      },
+      {
+        "value": "3レイヤー",
+        "label": "KOC接点：TikTok・イベント・コミュニティ"
       },
       {
         "value": "9:16",
-        "label": "TikTok / Reels対応"
-      },
-      {
-        "value": "3ステップ",
-        "label": "選択 → 撮影 → 書き出し"
-      },
-      {
-        "value": "アプリ",
-        "label": "iOS & Android"
+        "label": "TikTok / Reels 規格"
       }
     ],
-    "benefitsTitle": "Five Cut Proと組む理由",
+    "benefitsTitle": "Five Cut Proと組むと",
     "benefits": [
-      "ブランドメッセージ・角度に合わせたレビューレシピをスポンサー。",
-      "KOCは制作前にアプリ内撮影ガイドを確認。",
-      "1つのテンプレでクリエイター間のショット構造を統一。",
-      "TikTok Shop & Reelsショート向けに最適化。"
+      "商品を丁寧に撮影し、ブランド名を冠したテンプレ動画に仕上げます。",
+      "KOCは撮影のたびに、あなたの商品が入ったガイドを見ます。",
+      "複数のクリエイターが同じテンプレを使用 — メッセージとショット構成が揃います。",
+      "カテゴリに合うKOC群に提案。一人ずつDMする必要はありません。",
+      "TikTok Shop・Reels・Shortsのショート動画施策に最適。"
     ],
     "form": {
-      "title": "提携相談を依頼",
-      "desc": "情報を残してください — Five Cut Proチームが営業時間内に返信します。",
+      "title": "提携のご相談",
+      "desc": "ご連絡先をお預かりします — 営業時間内にFive Cut Proチームからご連絡します。",
       "brandNameLabel": "ブランド／会社名",
       "brandNamePlaceholder": "例：ブランド名…",
       "contactNameLabel": "担当者名",
@@ -248,20 +270,161 @@
       "emailPlaceholder": "contact@brand.com",
       "phoneLabel": "電話／LINE",
       "phonePlaceholder": "+81 …",
-      "budgetLabel": "想定キャンペーン予算",
+      "budgetLabel": "ご関心のある内容",
       "budgetOptions": [
-        "2千万VND未満（パイロット）",
-        "2千万〜5千万VND",
-        "5千万〜2億VND",
-        "2億VND超"
+        "ブランド露出（バナー・ロゴ・商品）",
+        "施策向けKOCマッチング",
+        "専用テンプレと商品撮影ガイド",
+        "フル提携（上記すべて）",
+        "未定 — 相談したい"
       ],
       "noteLabel": "キャンペーンのニーズや目標",
       "notePlaceholder": "レビュー商品、本数、スケジュール…",
       "submitButton": "提携リクエストを送る",
-      "successMessage": "送信済み！Zalo／メールで返信します。",
-      "directContact": "または直接連絡：",
-      "emailAria": "ブランド提携メール",
-      "emailText": "support@fivecutpro.com"
-    }
+      "successMessage": "送信しました。Five Cut ProチームからZaloまたはメールでご連絡します。",
+      "directContact": "直接のご連絡先：",
+      "emailAria": "partner@fivecutpro.com にメールする",
+      "emailText": "partner@fivecutpro.com",
+      "zaloLabel": "Zalo / 電話",
+      "zaloText": "+84 388 387 471",
+      "zaloHref": "https://zalo.me/0388387471",
+      "contactPersonLabel": "担当",
+      "contactPersonName": "Quoc Huy"
+    },
+    "insight": {
+      "badge": "ここが違う",
+      "quote": "KOCはテンプレを覚え、撮り方を覚え、そして商品を覚える。",
+      "body": "流し見されるバナーではありません。商品はKOCが何度も見返す撮影ガイド動画の中にあります。販売コンテンツを作っているまさにその瞬間に、繰り返し接触します。",
+      "providesLabel": "ブランドが提供するもの",
+      "provides": [
+        "商品画像",
+        "パッケージ",
+        "ロゴ",
+        "ブランドカラー",
+        "商品情報"
+      ],
+      "anglesLabel": "Five Cut Proがテンプレ動画＋撮影ガイドを順番に制作",
+      "angles": [
+        "引きの画",
+        "ミディアム",
+        "商品寄り",
+        "商品ディテール",
+        "使用シーン"
+      ]
+    },
+    "placementsTitle": "12のブランド露出枠",
+    "placementsSubtitle": "KOCが動画を作る導線全体に、商品とブランドが現れます。",
+    "placementGroups": [
+      {
+        "title": "アプリ内",
+        "items": [
+          "ログイン画面バナー",
+          "起動時ポップアップ",
+          "発見ページバナー",
+          "結合処理中の表示"
+        ]
+      },
+      {
+        "title": "ウェブサイト",
+        "items": [
+          "fivecutpro.com トップのポップアップ",
+          "実施中のテンプレ＆キャンペーン枠"
+        ]
+      },
+      {
+        "title": "コンテンツ内",
+        "items": [
+          "ブランド名・商品名を冠したテンプレ",
+          "アングル別の撮影ガイド動画",
+          "結合後の完成動画"
+        ]
+      },
+      {
+        "title": "KOCコミュニティ",
+        "items": [
+          "TikTokチャンネル経由の接点",
+          "アプリ内イベント・チャレンジ",
+          "Zalo・Telegram・WhatsApp グループ（グローバル）"
+        ]
+      }
+    ],
+    "processTitle": "提携の進め方",
+    "process": [
+      {
+        "num": "01",
+        "title": "ブランド",
+        "desc": "商品と施策の目的を決定"
+      },
+      {
+        "num": "02",
+        "title": "Five Cut Pro",
+        "desc": "テンプレ制作とKOC提案"
+      },
+      {
+        "num": "03",
+        "title": "KOC",
+        "desc": "アプリやグループで通知を受け取る"
+      },
+      {
+        "num": "04",
+        "title": "KOC",
+        "desc": "条件と撮影テンプレを確認"
+      },
+      {
+        "num": "05",
+        "title": "KOC",
+        "desc": "案件に参加し動画を公開"
+      }
+    ],
+    "processNote": "一人ずつ探し、個別に連絡し、同じ資料を何度も送る手間はありません。",
+    "offerBadge": "ファウンディングパートナー特典",
+    "offerText": "初期から伴走いただくブランドは、最初の3か月の導入費用が無料です。"
+  },
+  "campaignsSection": {
+    "label": "KOCのチャンス",
+    "title": "早く作れるだけじゃない — ブランド案件が届く",
+    "subtitle": "Five Cut Proはブランドの商品とクリエイターをつなぎます。案件が始まると、アプリを使っているKOCに最初に声がかかります。",
+    "channels": [
+      {
+        "id": "tiktok",
+        "title": "TikTokチャンネルで連携",
+        "desc": "TikTokでログインすると、あなたのジャンルに合う案件を提案できます。",
+        "bullets": [
+          "ジャンルに合った案件提案",
+          "ブランドは成果の出るKOCに出会える",
+          "一社ずつ売り込む必要なし"
+        ]
+      },
+      {
+        "id": "events",
+        "title": "アプリ内イベント・チャレンジ",
+        "desc": "ブランド協賛のチャレンジがアプリ内で開催。テンプレで作った動画でそのまま参加できます。",
+        "bullets": [
+          "既存テンプレと連動したチャレンジ",
+          "アプリ内で参加、外部フォーム不要",
+          "ブランドに見つけてもらえる"
+        ]
+      },
+      {
+        "id": "community",
+        "title": "グローバルKOCコミュニティ",
+        "desc": "案件情報はZalo・Telegram・WhatsAppのグループへ直接。仲介なしですぐ応募できます。",
+        "bullets": [
+          "案件情報を直接公開",
+          "応募がはやい",
+          "国内外のKOCネットワーク"
+        ]
+      }
+    ],
+    "flowTitle": "案件が届くまで",
+    "flow": [
+      "ブランドが商品と要件を決める",
+      "Five Cut Proが合うKOCを提案",
+      "アプリまたはグループで通知が届く",
+      "条件と撮影テンプレを確認",
+      "案件に参加して販売動画を投稿"
+    ],
+    "note": "受ける案件は自分で選べます。テンプレと撮影ガイドはアプリに用意済み。",
+    "cta": "アプリを入れて案件を受け取る"
   }
 }

@@ -105,7 +105,7 @@ export function MarketingBannerCarousel({
 
   return (
     <section
-      id="campaigns"
+      id="live-templates"
       className={cn(
         "relative border-y border-[#C5D9CE] section-band-wash px-4 py-12 sm:px-6 md:py-14 lg:px-8",
         className,

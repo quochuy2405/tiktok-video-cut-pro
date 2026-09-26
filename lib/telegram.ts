@@ -59,7 +59,7 @@ export async function sendTelegramSponsorMessage(
     `👤 <b>Người liên hệ:</b> ${escapeHtml(data.contactName)}`,
     `📧 <b>Email:</b> <code>${escapeHtml(data.email)}</code>`,
     `📞 <b>Điện thoại:</b> <code>${escapeHtml(data.phone)}</code>`,
-    `💰 <b>Ngân sách:</b> ${escapeHtml(data.budget || "Chưa chọn")}`,
+    `🎯 <b>Hạng mục quan tâm:</b> ${escapeHtml(data.budget || "Chưa chọn")}`,
     "",
     "📝 <b>Ghi chú / Nhu cầu:</b>",
     `<i>${escapeHtml(data.note || "Không có")}</i>`,

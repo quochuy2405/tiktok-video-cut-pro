@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "titleDefault": "Five Cut Pro — 템플릿 선택 · 샷 촬영 · 판매 영상 합치기",
-    "description": "KOC·판매자용 모바일 앱: KOC 템플릿 마켓, 샷 체크리스트, 촬영 가이드, 기기 내 합치기, TikTok 공유.",
+    "description": "KOC와 셀러를 위한 앱: 템플릿 선택, 체크리스트대로 촬영, 기기에서 합쳐 9:16으로 TikTok 게시 — 브랜드 캠페인까지.",
     "keywords": [
       "Five Cut Pro",
       "KOC 템플릿",
@@ -10,13 +10,16 @@
       "촬영 가이드",
       "TikTok Shop",
       "9:16 숏폼",
-      "TikTok 내보내기"
+      "TikTok 내보내기",
+      "KOC 캠페인",
+      "브랜드 제휴",
+      "크리에이터 매칭"
     ],
     "ogTitle": "Five Cut Pro — 템플릿 선택 · 샷 촬영 · 판매 영상 합치기",
-    "ogDescription": "편집 실력 필요 없음. 템플릿 선택 → 샷 촬영 → 앱이 합치기 → TikTok으로 내보내기. iOS & Android.",
+    "ogDescription": "KOC와 셀러를 위한 앱: 템플릿 선택, 체크리스트대로 촬영, 기기에서 합쳐 9:16으로 TikTok 게시 — 브랜드 캠페인까지.",
     "ogImageAlt": "Five Cut Pro — 템플릿, 촬영, 합치기로 판매 영상 제작",
     "twitterTitle": "Five Cut Pro — 템플릿 선택 · 샷 촬영 · 판매 영상 합치기",
-    "twitterDescription": "편집 실력 필요 없음. 템플릿 선택 → 샷 촬영 → 앱이 합치기 → TikTok으로 내보내기. iOS & Android.",
+    "twitterDescription": "KOC와 셀러를 위한 앱: 템플릿 선택, 체크리스트대로 촬영, 기기에서 합쳐 9:16으로 TikTok 게시 — 브랜드 캠페인까지.",
     "applicationName": "Five Cut Pro",
     "category": "technology",
     "creator": "Five Cut Pro Asia"
@@ -46,7 +49,8 @@
     "languageJa": "日本語",
     "languageKo": "한국어",
     "logoAlt": "Five Cut Pro 아이콘",
-    "officialSocial": "공식 SNS (@fivecutpro)"
+    "officialSocial": "공식 SNS (@fivecutpro)",
+    "campaigns": "캠페인 받기"
   },
   "Footer": {
     "tagline": "KOC, 커머스 크리에이터, 어필리에이트 팀을 위한 스마트 영상 편집·자동화 소프트웨어.",
@@ -68,7 +72,9 @@
     "copyrightBody": "Five Cut Pro",
     "deleteAccountLink": "계정 삭제",
     "groupsHeading": "지원 그룹",
-    "groupsJoin": "참여"
+    "groupsJoin": "참여",
+    "campaignsLink": "캠페인 받기",
+    "sponsorsLink": "브랜드 제휴"
   },
   "DeleteAccount": {
     "metaTitle": "계정 삭제 — Five Cut Pro",

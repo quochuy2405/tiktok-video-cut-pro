@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "titleDefault": "Five Cut Pro — テンプレ選択 · ショット撮影 · 販売動画を結合",
-    "description": "KOC・販売者向けモバイルアプリ。KOCテンプレ市場、ショットチェックリスト、撮影ガイド、端末内結合、TikTok共有。",
+    "description": "KOC・販売者向けアプリ：テンプレを選び、必要なショットを撮り、端末で結合して9:16でTikTokへ。ブランド案件も受け取れます。",
     "keywords": [
       "Five Cut Pro",
       "KOCテンプレート",
@@ -9,13 +9,16 @@
       "販売動画",
       "撮影ガイド",
       "TikTok Shop",
-      "9:16"
+      "9:16",
+      "KOC案件",
+      "ブランド提携",
+      "クリエイターマッチング"
     ],
     "ogTitle": "Five Cut Pro — テンプレ選択 · ショット撮影 · 販売動画を結合",
-    "ogDescription": "編集スキル不要。テンプレを選ぶ → ショットを撮る → アプリが結合 → TikTokへ書き出し。iOS / Android対応。",
+    "ogDescription": "KOC・販売者向けアプリ：テンプレを選び、必要なショットを撮り、端末で結合して9:16でTikTokへ。ブランド案件も受け取れます。",
     "ogImageAlt": "Five Cut Pro — テンプレ、撮影、結合で販売動画",
     "twitterTitle": "Five Cut Pro — テンプレ選択 · ショット撮影 · 販売動画を結合",
-    "twitterDescription": "編集スキル不要。テンプレを選ぶ → ショットを撮る → アプリが結合 → TikTokへ書き出し。iOS / Android対応。",
+    "twitterDescription": "KOC・販売者向けアプリ：テンプレを選び、必要なショットを撮り、端末で結合して9:16でTikTokへ。ブランド案件も受け取れます。",
     "applicationName": "Five Cut Pro",
     "category": "technology",
     "creator": "Five Cut Pro Asia"
@@ -25,7 +28,7 @@
     "howItWorks": "ご利用の流れ",
     "batchEngine": "制作フロー",
     "benefits": "導入メリット",
-    "sponsors": "企業・タイアップ",
+    "sponsors": "ブランド向け",
     "faq": "よくある質問",
     "downloadApp": "無料ダウンロード",
     "installGuide": "インストール手順",
@@ -45,7 +48,8 @@
     "languageJa": "日本語",
     "logoAlt": "Five Cut Pro ロゴ",
     "officialSocial": "公式SNS (@fivecutpro)",
-    "languageKo": "한국어"
+    "languageKo": "한국어",
+    "campaigns": "案件を受ける"
   },
   "Footer": {
     "tagline": "KOC、コマース動画クリエイター、アフィリエイトチーム向けスマート動画編集・自動化ソフトウェア。",
@@ -67,7 +71,9 @@
     "copyrightBody": "Five Cut Pro",
     "deleteAccountLink": "アカウント削除",
     "groupsHeading": "サポートグループ",
-    "groupsJoin": "参加"
+    "groupsJoin": "参加",
+    "campaignsLink": "案件を受ける",
+    "sponsorsLink": "ブランド向け"
   },
   "DeleteAccount": {
     "metaTitle": "アカウント削除 — Five Cut Pro",

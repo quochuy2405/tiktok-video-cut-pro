@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "titleDefault": "Five Cut Pro — เลือกเทมเพลต · ถ่ายช็อต · รวมคลิปขาย",
-    "description": "แอปมือถือสำหรับ KOC และผู้ขาย: ตลาดเทมเพลต KOC สูตร shot-angle คู่มือถ่ายทีละช็อต รวมคลิปบนเครื่อง และแชร์ TikTok",
+    "description": "แอปสำหรับ KOC และผู้ขาย: เลือกเทมเพลต ถ่ายครบช็อต รวมบนเครื่องแล้วส่งออก 9:16 ลง TikTok และรับแคมเปญจากแบรนด์",
     "keywords": [
       "Five Cut Pro",
       "เทมเพลต KOC",
@@ -9,13 +9,16 @@
       "คลิปขาย",
       "คู่มือถ่าย",
       "TikTok Shop",
-      "9:16"
+      "9:16",
+      "แคมเปญ KOC",
+      "ความร่วมมือแบรนด์",
+      "จับคู่ครีเอเตอร์"
     ],
     "ogTitle": "Five Cut Pro — เลือกเทมเพลต · ถ่ายช็อต · รวมคลิปขาย",
-    "ogDescription": "ไม่ต้องเก่งตัดต่อ เลือกเทมเพลต → ถ่ายตามช็อต → แอปช่วยรวม → ส่งออกแชร์ TikTok รองรับ iOS และ Android",
+    "ogDescription": "แอปสำหรับ KOC และผู้ขาย: เลือกเทมเพลต ถ่ายครบช็อต รวมบนเครื่องแล้วส่งออก 9:16 ลง TikTok และรับแคมเปญจากแบรนด์",
     "ogImageAlt": "Five Cut Pro — เทมเพลต ถ่ายช็อต รวมคลิปขาย",
     "twitterTitle": "Five Cut Pro — เลือกเทมเพลต · ถ่ายช็อต · รวมคลิปขาย",
-    "twitterDescription": "ไม่ต้องเก่งตัดต่อ เลือกเทมเพลต → ถ่ายตามช็อต → แอปช่วยรวม → ส่งออกแชร์ TikTok รองรับ iOS และ Android",
+    "twitterDescription": "แอปสำหรับ KOC และผู้ขาย: เลือกเทมเพลต ถ่ายครบช็อต รวมบนเครื่องแล้วส่งออก 9:16 ลง TikTok และรับแคมเปญจากแบรนด์",
     "applicationName": "Five Cut Pro",
     "category": "technology",
     "creator": "Five Cut Pro Asia"
@@ -45,7 +48,8 @@
     "languageJa": "日本語",
     "logoAlt": "โลโก้ Five Cut Pro",
     "officialSocial": "โซเชียลทางการ (@fivecutpro)",
-    "languageKo": "한국어"
+    "languageKo": "한국어",
+    "campaigns": "รับแคมเปญ"
   },
   "Footer": {
     "tagline": "ซอฟต์แวร์ตัดต่อและผลิตวิดีโอขายของอัตโนมัติ สำหรับ KOC ผู้สร้างคอนเทนต์ และเครือข่ายนายหน้าออนไลน์",
@@ -67,7 +71,9 @@
     "copyrightBody": "Five Cut Pro",
     "deleteAccountLink": "ลบบัญชี",
     "groupsHeading": "กลุ่มช่วยเหลือ",
-    "groupsJoin": "เข้ากลุ่ม"
+    "groupsJoin": "เข้ากลุ่ม",
+    "campaignsLink": "รับแคมเปญ",
+    "sponsorsLink": "สำหรับแบรนด์"
   },
   "DeleteAccount": {
     "metaTitle": "ลบบัญชี — Five Cut Pro",

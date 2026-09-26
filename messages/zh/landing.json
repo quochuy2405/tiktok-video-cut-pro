@@ -22,24 +22,24 @@
   },
   "metricsBar": [
     {
-      "value": "痛点",
-      "label": "每次都手剪",
-      "desc": "从头重剪，容易放弃"
+      "value": "3 步",
+      "label": "从模板到可发视频",
+      "desc": "选模板 → 拍镜头 → 导出"
     },
     {
-      "value": "解法",
-      "label": "按 KOC 模板",
-      "desc": "看指引 → App 合成"
+      "value": "9:16",
+      "label": "竖屏即发",
+      "desc": "适配 TikTok、Reels、Shorts"
     },
     {
-      "value": "分镜齐",
-      "label": "镜头配方",
-      "desc": "不再缺角度重剪"
+      "value": "本机合成",
+      "label": "手机上直接合成",
+      "desc": "不用电脑，不用 CapCut"
     },
     {
-      "value": "TikTok",
-      "label": "导出快发",
-      "desc": "存相册或立刻分享"
+      "value": "免费",
+      "label": "下载即可开始",
+      "desc": "iOS 与 Android"
     }
   ],
   "featuresSection": {
@@ -112,7 +112,8 @@
         "desc": "点立即合成，打开已导出，存相册或分享 TikTok。",
         "badge": "导出"
       }
-    ]
+    ],
+    "stepLabel": "步骤"
   },
   "comparisonSection": {
     "badge": "真实痛点",
@@ -165,6 +166,26 @@
         "id": "faq-4",
         "question": "支持哪些系统？",
         "answer": "iOS 与 Android。可用 Google、TikTok、Apple 或邮箱 OTP 登录。"
+      },
+      {
+        "id": "faq-5",
+        "question": "使用 Five Cut Pro 要收费吗？",
+        "answer": "在 App Store 与 Google Play 下载并注册是免费的。登录后即可使用模板市场、配方与合成功能。"
+      },
+      {
+        "id": "faq-6",
+        "question": "我的素材会被上传吗？",
+        "answer": "合成在你的设备上完成，成片保存在手机的「已导出」里。详情见隐私政策。"
+      },
+      {
+        "id": "faq-7",
+        "question": "KOC 怎么接到品牌活动？",
+        "answer": "用 TikTok 登录以匹配你品类的活动，关注 App 内活动与挑战，或加入 Zalo · Telegram · WhatsApp 群提前获取信息。"
+      },
+      {
+        "id": "faq-8",
+        "question": "品牌方想合作，从哪开始？",
+        "answer": "在「品牌合作」板块填写表单，或发邮件至 partner@fivecutpro.com，团队会沟通产品、模板与 KOC 匹配。"
       }
     ]
   },
@@ -210,36 +231,37 @@
   },
   "sponsorsSection": {
     "label": "品牌合作",
-    "title": "合作投放 KOC 模板与活动",
-    "subtitle": "把品牌 brief 做成模板配方 — KOC 按指引拍齐镜头，输出统一话术的成片。",
+    "title": "把产品变成内容，把内容变成成交机会",
+    "subtitle": "新品上市需要大量内容、多种机位、多位创作者。Five Cut Pro 把你的产品放进 KOC 每天工作的地方。",
     "stats": [
       {
-        "value": "KOC 模板",
-        "label": "带拍摄指引的配方"
+        "value": "12",
+        "label": "品牌曝光位"
+      },
+      {
+        "value": "5 个机位",
+        "label": "产品拍摄指引视频"
+      },
+      {
+        "value": "3 层",
+        "label": "KOC 连接：TikTok · 活动 · 社群"
       },
       {
         "value": "9:16",
-        "label": "适配 TikTok / Reels"
-      },
-      {
-        "value": "3 步",
-        "label": "选模板 → 拍 → 导出"
-      },
-      {
-        "value": "App",
-        "label": "iOS & Android"
+        "label": "TikTok / Reels 规格"
       }
     ],
-    "benefitsTitle": "与 Five Cut Pro 合作的优势",
+    "benefitsTitle": "与 Five Cut Pro 合作，你获得",
     "benefits": [
-      "赞助符合品牌话术与镜头角度的测评配方。",
-      "KOC 在 App 内先看拍摄指引再开拍。",
-      "多位创作者共用同一模板，分镜结构一致。",
-      "适合 TikTok Shop 与 Reels 短视频投放。"
+      "产品被认真拍摄，做成署名品牌的模板视频。",
+      "KOC 每次开拍前都会看到含你产品的拍摄指引。",
+      "多位创作者共用一个模板 — 信息与镜头结构统一。",
+      "按品类匹配到合适的 KOC，不必一个个私信。",
+      "适配 TikTok Shop、Reels 与 Shorts 短视频战役。"
     ],
     "form": {
       "title": "预约合作咨询",
-      "desc": "留下信息 — Five Cut Pro 团队将在工作时间联系您。",
+      "desc": "留下联系方式 — Five Cut Pro 团队将在工作时间联系你。",
       "brandNameLabel": "品牌 / 公司名称",
       "brandNamePlaceholder": "例如：Vinamilk、Sunhouse...",
       "contactNameLabel": "联系人姓名",
@@ -248,20 +270,161 @@
       "emailPlaceholder": "contact@brand.com",
       "phoneLabel": "电话 / Zalo",
       "phonePlaceholder": "+86 ...",
-      "budgetLabel": "预估活动预算",
+      "budgetLabel": "关注的合作方向",
       "budgetOptions": [
-        "低于 2000 万越盾（试投）",
-        "2000 万 - 5000 万越盾",
-        "5000 万 - 2 亿越盾",
-        "超过 2 亿越盾"
+        "品牌曝光（横幅、Logo、产品）",
+        "为活动匹配 KOC",
+        "定制模板与产品拍摄指引",
+        "全面合作（以上全部）",
+        "还不确定 — 需要咨询"
       ],
       "noteLabel": "活动需求或目标",
       "notePlaceholder": "需测评的产品、视频数量、时间计划...",
-      "submitButton": "提交合作申请",
-      "successMessage": "已提交！我们将通过 Zalo/邮箱回复。",
+      "submitButton": "发送合作需求",
+      "successMessage": "已发送！Five Cut Pro 团队会通过 Zalo / 邮件联系你。",
       "directContact": "或直接联系：",
-      "emailAria": "发送品牌合作邮件",
-      "emailText": "support@fivecutpro.com"
-    }
+      "emailAria": "发送邮件至 partner@fivecutpro.com",
+      "emailText": "partner@fivecutpro.com",
+      "zaloLabel": "Zalo / 电话",
+      "zaloText": "+84 388 387 471",
+      "zaloHref": "https://zalo.me/0388387471",
+      "contactPersonLabel": "对接人",
+      "contactPersonName": "Quoc Huy"
+    },
+    "insight": {
+      "badge": "差异点",
+      "quote": "KOC 记住模板 — 记住拍法 — 也记住你的产品。",
+      "body": "这不是划过去的横幅。你的产品被放进 KOC 必须反复观看的拍摄指引视频里：在他们生产带货内容的当下，反复触达。",
+      "providesLabel": "品牌提供",
+      "provides": [
+        "产品图",
+        "包装",
+        "Logo",
+        "品牌色",
+        "产品信息"
+      ],
+      "anglesLabel": "Five Cut Pro 制作成模板视频 + 按顺序的拍摄指引",
+      "angles": [
+        "全景",
+        "中景",
+        "产品近景",
+        "产品细节",
+        "实际使用"
+      ]
+    },
+    "placementsTitle": "12 个品牌曝光位",
+    "placementsSubtitle": "你的产品与品牌识别，贯穿 KOC 做视频的全过程。",
+    "placementGroups": [
+      {
+        "title": "App 内",
+        "items": [
+          "登录页横幅",
+          "打开 App 弹窗",
+          "发现页横幅",
+          "合成视频时展示"
+        ]
+      },
+      {
+        "title": "官网",
+        "items": [
+          "fivecutpro.com 首页弹窗",
+          "正在进行的模板与活动"
+        ]
+      },
+      {
+        "title": "内容里",
+        "items": [
+          "以品牌与产品命名的模板",
+          "逐个机位的拍摄指引视频",
+          "剪辑后的成片"
+        ]
+      },
+      {
+        "title": "KOC 社群",
+        "items": [
+          "通过 TikTok 频道连接",
+          "App 内活动与挑战",
+          "Zalo · Telegram · WhatsApp 群（全球）"
+        ]
+      }
+    ],
+    "processTitle": "合作流程",
+    "process": [
+      {
+        "num": "01",
+        "title": "品牌",
+        "desc": "确定产品与活动目标"
+      },
+      {
+        "num": "02",
+        "title": "Five Cut Pro",
+        "desc": "制作模板并匹配 KOC"
+      },
+      {
+        "num": "03",
+        "title": "KOC",
+        "desc": "在 App 或社群收到通知"
+      },
+      {
+        "num": "04",
+        "title": "KOC",
+        "desc": "查看合作信息与拍摄模板"
+      },
+      {
+        "num": "05",
+        "title": "KOC",
+        "desc": "参加活动，产出带货视频"
+      }
+    ],
+    "processNote": "品牌不用一个个找 KOC、一个个私信、反复重发同样的资料。",
+    "offerBadge": "创始合作伙伴优惠",
+    "offerText": "早期同行的品牌，前三个月免费落地。"
+  },
+  "campaignsSection": {
+    "label": "KOC 的机会",
+    "title": "不只出片更快 — 还能接到品牌活动",
+    "subtitle": "Five Cut Pro 连接品牌产品与创作者。品牌开启活动时，正在用 App 的 KOC 会最先收到邀请。",
+    "channels": [
+      {
+        "id": "tiktok",
+        "title": "通过 TikTok 频道连接",
+        "desc": "用 TikTok 登录，Five Cut Pro 才知道你做哪个品类的内容，并推荐合适的活动。",
+        "bullets": [
+          "按你的品类推荐活动",
+          "品牌能找到转化好的 KOC",
+          "不用一个个去找品牌自荐"
+        ]
+      },
+      {
+        "id": "events",
+        "title": "App 内活动与挑战赛",
+        "desc": "品牌赞助的挑战直接在 App 内举办 — 用你按模板做的视频参赛即可。",
+        "bullets": [
+          "挑战与现成模板绑定",
+          "App 内直接参加，无需外部表单",
+          "在品牌面前露出的机会"
+        ]
+      },
+      {
+        "id": "community",
+        "title": "全球 KOC 社群",
+        "desc": "活动信息直接发到 Zalo · Telegram · WhatsApp 群 — 快速报名，无中间人。",
+        "bullets": [
+          "活动信息直接公布",
+          "报名快",
+          "覆盖本地与海外 KOC 网络"
+        ]
+      }
+    ],
+    "flowTitle": "活动如何到你手上",
+    "flow": [
+      "品牌确定产品与需求",
+      "Five Cut Pro 推荐合适的 KOC",
+      "你在 App 或群里收到通知",
+      "查看合作信息与拍摄模板",
+      "参加活动，产出带货视频"
+    ],
+    "note": "你自己决定接哪个活动 — 模板与拍摄指引 App 里已经准备好。",
+    "cta": "下载 App 接活动"
   }
 }

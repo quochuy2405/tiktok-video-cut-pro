@@ -22,18 +22,19 @@ import { SocialLinks } from "@/components/social-links";
 import { cn } from "@/lib/utils";
 
 const DESKTOP_NAV_PATHS = [
-  { href: "/#download", labelKey: "downloadApp" as const },
   { href: "/#features", labelKey: "features" as const },
   { href: "/#how-it-works", labelKey: "howItWorks" as const },
+  { href: "/#campaigns", labelKey: "campaigns" as const },
   { href: "/#sponsors", labelKey: "sponsors" as const },
   { href: "/#faq", labelKey: "faq" as const },
 ];
 
 const MOBILE_NAV_PATHS = [
-  { href: "/#download", labelKey: "downloadApp" as const },
   { href: "/#features", labelKey: "features" as const },
   { href: "/#how-it-works", labelKey: "howItWorks" as const },
+  { href: "/#campaigns", labelKey: "campaigns" as const },
   { href: "/#sponsors", labelKey: "sponsors" as const },
+  { href: "/#download", labelKey: "downloadApp" as const },
   { href: "/#faq", labelKey: "faq" as const },
 ];
 

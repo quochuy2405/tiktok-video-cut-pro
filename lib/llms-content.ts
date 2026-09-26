@@ -47,9 +47,10 @@ Nếu một khẳng định không có trong file đó hoặc trên các trang �
 - [Tính năng](${home("vi")}#features): Chợ mẫu KOC, công thức góc quay, hướng dẫn từng shot, ghép và xuất trên máy.
 - [Cách dùng](${home("vi")}#how-it-works): Chọn mẫu → quay và gắn shot → ghép rồi đăng.
 - [Nỗi đau và cách mới](${home("vi")}#comparison): Edit tay mỗi lần đăng so với làm theo mẫu.
-- [FAQ](${home("vi")}#faq): Khác CapCut, người mới quay, đăng TikTok, nền tảng.
+- [FAQ](${home("vi")}#faq): Khác CapCut, người mới quay, đăng TikTok, nền tảng, phí, dữ liệu, chiến dịch nhãn hàng.
+- [Nhận chiến dịch](${home("vi")}#campaigns): KOC kết nối với nhãn hàng qua kênh TikTok, sự kiện trong app và nhóm cộng đồng.
 - [Tải app](${home("vi")}#download): App Store và Google Play. Phiên bản site đang ghi ${DISPLAY_APP_VERSION}.
-- [Dành cho brand](${home("vi")}#sponsors): Hợp tác mẫu và chiến dịch KOC.
+- [Dành cho brand](${home("vi")}#sponsors): 12 điểm hiển thị thương hiệu, mẫu video và hướng dẫn quay sản phẩm, kết nối KOC. Liên hệ ${SITE.partnerEmail}.
 - [App Store](${DEFAULT_IOS_STORE_URL}): iPhone và iPad.
 - [Google Play](${DEFAULT_ANDROID_STORE_URL}): Android, gói ${MOBILE_APP_ID}.
 - [Chính sách quyền riêng tư và EULA](${page("vi", "privacy-policy")}): Bản tiếng Việt. Các locale khác đổi prefix ngôn ngữ.
@@ -168,6 +169,29 @@ Mỗi đoạn có góc quay, mô tả và clip mẫu. Người dùng quay đúng
 
 Gắn đủ nguồn, bấm ghép. Xử lý trên điện thoại. Danh sách video đã xuất nằm trên máy. Từng clip có thể chia sẻ lên TikTok.
 
+## Kết nối nhãn hàng và KOC
+
+${APP_NAME} không chỉ là công cụ ghép video; site mô tả app như cầu nối giữa sản phẩm của nhãn hàng và người sáng tạo.
+
+Ba lớp kết nối KOC:
+
+1. Kênh TikTok. Đăng nhập TikTok giúp app hiểu KOC đang làm nội dung ngành hàng nào và đề xuất chiến dịch phù hợp.
+2. Sự kiện và challenge trong app. Nhãn hàng tham gia hoặc tài trợ, KOC dự thi bằng video làm từ mẫu.
+3. Cộng đồng KOC. Chiến dịch công bố thẳng tới nhóm Zalo, Telegram và WhatsApp, gồm cả nhóm quốc tế.
+
+Quy trình năm bước trên site: nhãn hàng xác định sản phẩm và nhu cầu; ${APP_NAME} dựng mẫu và đề xuất KOC phù hợp; KOC nhận thông báo trong app hoặc nhóm; KOC xem thông tin hợp tác và mẫu quay; KOC tham gia chiến dịch và ra video.
+
+Mười hai điểm hiển thị thương hiệu site liệt kê, chia bốn nhóm:
+
+- Trong ứng dụng: banner màn hình đăng nhập, pop-up khi mở app, banner trang Khám phá, hiển thị khi đang ghép video.
+- Trên website: pop-up trang chủ, mục mẫu và chiến dịch đang chạy.
+- Trong nội dung: mẫu video mang tên nhãn hàng và sản phẩm, video hướng dẫn quay từng góc, video thành phẩm sau khi ghép.
+- Cộng đồng KOC: kết nối qua kênh TikTok, sự kiện và challenge trong app, nhóm Zalo · Telegram · WhatsApp.
+
+Điểm khác biệt site nhấn mạnh: sản phẩm không chỉ nằm ở banner lướt qua, mà được lồng vào video hướng dẫn quay mà KOC phải xem đi xem lại để nhớ cách làm. Nhãn hàng cung cấp hình ảnh sản phẩm, bao bì, logo, màu thương hiệu và thông tin sản phẩm; ${APP_NAME} dựng thành mẫu video kèm hướng dẫn quay theo năm góc: toàn cảnh, trung, cận sản phẩm, chi tiết, sử dụng thực tế.
+
+Ưu đãi đang ghi trên site: miễn phí triển khai 3 tháng đầu cho nhãn hàng đồng hành giai đoạn đầu. Site không công bố bảng giá gói.
+
 ## So với CapCut
 
 CapCut là dựng phim tự do. ${APP_NAME} là quy trình mẫu: xem cách quay, gắn shot theo công thức, ghép trên máy, rồi đăng. Hợp khi cần ra video bán hàng đều và không muốn ngồi timeline mỗi lần.
@@ -216,7 +240,11 @@ Khung dọc sẵn để đăng TikTok hoặc Reels, đúng khổ short-form tran
 
 ### Brand hợp tác được gì?
 
-Đưa công thức review theo brief vào chợ mẫu. KOC xem hướng dẫn quay trong app trước khi sản xuất. Nhiều creator dùng chung một mẫu thì cấu trúc shot đồng bộ. Phù hợp chiến dịch short-form TikTok Shop và Reels. Form trên site nhận tên brand, người liên hệ, email, điện thoại hoặc Zalo, ngân sách dự kiến và mục tiêu. Đội ${APP_NAME} hẹn phản hồi trong giờ làm việc qua Zalo hoặc email. Liên hệ thẳng: ${SITE.email}.
+Đưa công thức review theo brief vào chợ mẫu, kèm 12 điểm hiển thị thương hiệu trong app, trên website, trong nội dung hướng dẫn quay và trong cộng đồng KOC. KOC xem hướng dẫn quay có sản phẩm trước mỗi lần sản xuất. Nhiều creator dùng chung một mẫu thì cấu trúc shot và thông điệp đồng bộ. ${APP_NAME} đề xuất nhóm KOC theo ngành hàng thay vì brand phải nhắn từng người. Phù hợp chiến dịch short-form TikTok Shop, Reels và Shorts. Form trên site nhận tên brand, người liên hệ, email, điện thoại hoặc Zalo, hạng mục quan tâm và mục tiêu chiến dịch. Đội ${APP_NAME} hẹn phản hồi trong giờ làm việc qua Zalo hoặc email. Liên hệ thẳng: ${SITE.partnerEmail} hoặc Zalo ${SITE.partnerPhone}.
+
+### KOC nhận chiến dịch của nhãn hàng bằng cách nào?
+
+Đăng nhập bằng TikTok để được đề xuất chiến dịch đúng ngành hàng, theo dõi sự kiện và challenge trong app, hoặc vào nhóm Zalo · Telegram · WhatsApp để nhận thông tin sớm. KOC tự chọn chiến dịch muốn tham gia; mẫu và hướng dẫn quay đã có sẵn trong app.
 
 ### Xóa tài khoản ra sao?
 
@@ -247,7 +275,7 @@ Templates: explore a KOC market, preview guide plus sample, then use the templat
 Missing-shot problem the site names: if a required angle is missing, the old workflow is to rebuild the whole cut. The app tracks attached versus required segments and warns when a source is shorter than the recipe.
 Versus CapCut: CapCut is freeform editing. ${APP_NAME} is a template workflow for daily sales output.
 Beginners: each template includes per-angle guides and sample clips.
-Brands: sponsor a review recipe aligned to message and angles so many KOCs shoot the same structure. Contact ${SITE.email}.
+Brands: sponsor a review recipe aligned to message and angles so many KOCs shoot the same structure, across 12 placement slots (in-app, website, inside the shot-guide content, and the creator community). Creators are matched by category through TikTok sign-in, in-app events and challenges, and the Zalo, Telegram and WhatsApp groups. Founding-partner offer on the site: first three months free. Contact ${SITE.partnerEmail} or Zalo ${SITE.partnerPhone}.
 Delete account: ${page("en", "delete-account")}. Request is accepted on submit; sign-in is deactivated within 7 days; not an immediate hard delete. Local camera-roll files are not on ${APP_NAME} servers and are not removed by account deactivation.
 Privacy and EULA: ${page("en", "privacy-policy")}
 Terms: ${page("en", "terms-of-service")}
@@ -278,6 +306,7 @@ Tiếng Việt không có prefix. Locale khác đứng ngay sau domain.
 - So sánh: ${home("vi")}#comparison
 - FAQ: ${home("vi")}#faq
 - Tải: ${home("vi")}#download
+- Nhận chiến dịch: ${home("vi")}#campaigns
 - Brand: ${home("vi")}#sponsors
 - Quyền riêng tư: ${page("vi", "privacy-policy")} · ${page("en", "privacy-policy")} · ${page("zh", "privacy-policy")} · ${page("th", "privacy-policy")} · ${page("ja", "privacy-policy")} · ${page("ko", "privacy-policy")}
 - Điều khoản: ${page("vi", "terms-of-service")} · ${page("en", "terms-of-service")} · ${page("zh", "terms-of-service")} · ${page("th", "terms-of-service")} · ${page("ja", "terms-of-service")} · ${page("ko", "terms-of-service")}
@@ -296,7 +325,8 @@ Hreflang x-default trỏ bản tiếng Việt.
 
 ## Mạng và liên hệ
 
-- Email: ${SITE.email}
+- Email hỗ trợ: ${SITE.email}
+- Email hợp tác nhãn hàng: ${SITE.partnerEmail} · Zalo ${SITE.partnerPhone}
 - Instagram: ${SOCIAL_LINKS.instagram}
 - Threads: ${SOCIAL_LINKS.threads}
 - YouTube: ${SOCIAL_LINKS.youtube}

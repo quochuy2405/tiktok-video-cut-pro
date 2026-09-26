@@ -22,24 +22,24 @@
   },
   "metricsBar": [
     {
-      "value": "Pain",
-      "label": "Manual edit each post",
-      "desc": "Rebuild cuts, lose rhythm"
+      "value": "3 steps",
+      "label": "Template to posted video",
+      "desc": "Pick a template → shoot → export"
     },
     {
-      "value": "Fix",
-      "label": "Follow a KOC template",
-      "desc": "Guide → shoot → app merges"
+      "value": "9:16",
+      "label": "Vertical, ready to post",
+      "desc": "Built for TikTok, Reels, Shorts"
     },
     {
-      "value": "Full shots",
-      "label": "Angle recipe",
-      "desc": "No missing angles mid-edit"
+      "value": "On-device",
+      "label": "Merged right on your phone",
+      "desc": "No desktop, no CapCut needed"
     },
     {
-      "value": "TikTok",
-      "label": "Export & post fast",
-      "desc": "Save or share right away"
+      "value": "Free",
+      "label": "Download and start",
+      "desc": "iOS & Android"
     }
   ],
   "featuresSection": {
@@ -112,7 +112,8 @@
         "desc": "Tap Merge now, open Exported videos, save to gallery or share to TikTok.",
         "badge": "Export"
       }
-    ]
+    ],
+    "stepLabel": "Step"
   },
   "comparisonSection": {
     "badge": "REAL PAIN",
@@ -165,6 +166,26 @@
         "id": "faq-4",
         "question": "Which platforms?",
         "answer": "iOS and Android. Sign in with Google, TikTok, Apple, or email OTP."
+      },
+      {
+        "id": "faq-5",
+        "question": "Does Five Cut Pro cost anything?",
+        "answer": "Downloading the app and creating an account is free on the App Store and Google Play. Once signed in you can use the template market, recipes and the merge feature."
+      },
+      {
+        "id": "faq-6",
+        "question": "Are my clips uploaded anywhere?",
+        "answer": "Merging runs on your device and finished videos are saved under Exported videos on your phone. See the Privacy Policy for details."
+      },
+      {
+        "id": "faq-7",
+        "question": "How do creators get brand campaigns?",
+        "answer": "Sign in with TikTok to be matched to campaigns in your category, watch for in-app events and challenges, or join the Zalo · Telegram · WhatsApp groups for early briefs."
+      },
+      {
+        "id": "faq-8",
+        "question": "We're a brand — how do we start?",
+        "answer": "Fill in the form in the For brands section or email partner@fivecutpro.com. The team will walk through your product, the video templates and creator matching."
       }
     ]
   },
@@ -210,36 +231,37 @@
   },
   "sponsorsSection": {
     "label": "FOR BRANDS",
-    "title": "Partner on KOC templates & campaigns",
-    "subtitle": "Put your brand brief into the template market — KOCs shoot the right shots and ship on-message videos.",
+    "title": "Turn products into content — turn content into sales",
+    "subtitle": "A product launch needs volume: many angles, many videos, many creators. Five Cut Pro puts your product where creators already work every day.",
     "stats": [
       {
-        "value": "KOC templates",
-        "label": "Recipes with shoot guides"
+        "value": "12",
+        "label": "Brand placement slots"
+      },
+      {
+        "value": "5 angles",
+        "label": "Product shooting guide videos"
+      },
+      {
+        "value": "3 layers",
+        "label": "Creator reach: TikTok · events · community"
       },
       {
         "value": "9:16",
-        "label": "TikTok / Reels ready"
-      },
-      {
-        "value": "3 steps",
-        "label": "Pick → Shoot → Export"
-      },
-      {
-        "value": "App",
-        "label": "iOS & Android"
+        "label": "TikTok / Reels native"
       }
     ],
-    "benefitsTitle": "Why partner with Five Cut Pro",
+    "benefitsTitle": "What a Five Cut Pro partnership gives you",
     "benefits": [
-      "Sponsor review recipes aligned to your brand message and angles.",
-      "KOCs watch in-app shoot guides before producing.",
-      "Keep shot structure consistent across creators on one template.",
-      "Built for TikTok Shop & Reels short-form campaigns."
+      "Your product is filmed properly and built into a template that carries your brand name.",
+      "Creators watch a shot guide featuring your product before every shoot.",
+      "Many creators share one template — consistent message, consistent shot structure.",
+      "Matched to the right creator pool by category instead of messaging people one by one.",
+      "Built for TikTok Shop, Reels and Shorts short-form campaigns."
     ],
     "form": {
-      "title": "Request a partnership consult",
-      "desc": "Leave your details — the Five Cut Pro team will reply during business hours.",
+      "title": "Request a partnership consultation",
+      "desc": "Leave your details — the Five Cut Pro team replies within business hours.",
       "brandNameLabel": "Brand / company name",
       "brandNamePlaceholder": "e.g. Vinamilk, Sunhouse, Coolmate...",
       "contactNameLabel": "Contact name",
@@ -248,20 +270,161 @@
       "emailPlaceholder": "contact@brand.com",
       "phoneLabel": "Phone / Zalo",
       "phonePlaceholder": "+84 ...",
-      "budgetLabel": "Estimated campaign budget",
+      "budgetLabel": "What are you interested in?",
       "budgetOptions": [
-        "Under 20M VND (pilot)",
-        "20 - 50M VND",
-        "50 - 200M VND",
-        "Over 200M VND"
+        "Brand visibility (banners, logo, product)",
+        "Creator matching for a campaign",
+        "Custom templates & product shot guides",
+        "Full partnership (everything above)",
+        "Not sure yet — need advice"
       ],
       "noteLabel": "Campaign needs or goals",
       "notePlaceholder": "Product to review, video volume, timeline...",
       "submitButton": "Send partnership request",
-      "successMessage": "Sent! We’ll follow up via Zalo/Email.",
-      "directContact": "Or contact us directly:",
-      "emailAria": "Email brand partnerships",
-      "emailText": "support@fivecutpro.com"
-    }
+      "successMessage": "Sent! The Five Cut Pro team will get back to you by Zalo or email.",
+      "directContact": "Or reach us directly:",
+      "emailAria": "Email the partnerships team at partner@fivecutpro.com",
+      "emailText": "partner@fivecutpro.com",
+      "zaloLabel": "Zalo / Phone",
+      "zaloText": "+84 388 387 471",
+      "zaloHref": "https://zalo.me/0388387471",
+      "contactPersonLabel": "Contact",
+      "contactPersonName": "Quoc Huy"
+    },
+    "insight": {
+      "badge": "WHY IT WORKS",
+      "quote": "Creators memorise the template — the shots — and your product along with them.",
+      "body": "This is not a banner people scroll past. Your product sits inside the shot-guide videos creators must replay to remember how to film. Repeated exposure, exactly while they are producing selling content.",
+      "providesLabel": "The brand provides",
+      "provides": [
+        "Product photos",
+        "Packaging",
+        "Logo",
+        "Brand colours",
+        "Product information"
+      ],
+      "anglesLabel": "Five Cut Pro builds the template and shot guide in sequence",
+      "angles": [
+        "Wide shot",
+        "Medium shot",
+        "Product close-up",
+        "Product detail",
+        "In-use shot"
+      ]
+    },
+    "placementsTitle": "12 brand placement slots",
+    "placementsSubtitle": "Your product and identity show up across the whole creator workflow.",
+    "placementGroups": [
+      {
+        "title": "In the app",
+        "items": [
+          "Sign-in screen banner",
+          "App-open pop-up",
+          "Discover page banner",
+          "Shown while a video is merging"
+        ]
+      },
+      {
+        "title": "On the website",
+        "items": [
+          "fivecutpro.com homepage pop-up",
+          "Live templates & campaigns strip"
+        ]
+      },
+      {
+        "title": "Inside the content",
+        "items": [
+          "Templates named after your brand and product",
+          "Shot-by-shot guide videos",
+          "Finished result videos"
+        ]
+      },
+      {
+        "title": "Creator community",
+        "items": [
+          "Connection through TikTok channels",
+          "In-app events & challenges",
+          "Zalo · Telegram · WhatsApp groups (global)"
+        ]
+      }
+    ],
+    "processTitle": "How the partnership runs",
+    "process": [
+      {
+        "num": "01",
+        "title": "Brand",
+        "desc": "Defines the product and campaign goal"
+      },
+      {
+        "num": "02",
+        "title": "Five Cut Pro",
+        "desc": "Builds the template and matches creators"
+      },
+      {
+        "num": "03",
+        "title": "Creator",
+        "desc": "Gets notified in the app or community group"
+      },
+      {
+        "num": "04",
+        "title": "Creator",
+        "desc": "Reviews the brief and shooting template"
+      },
+      {
+        "num": "05",
+        "title": "Creator",
+        "desc": "Joins the campaign and ships the video"
+      }
+    ],
+    "processNote": "No hunting for creators one by one, no repeat briefing over DMs.",
+    "offerBadge": "FOUNDING PARTNER OFFER",
+    "offerText": "First three months free for brands that come on board during the early phase."
+  },
+  "campaignsSection": {
+    "label": "FOR CREATORS",
+    "title": "Faster videos — plus brand campaigns that come to you",
+    "subtitle": "Five Cut Pro connects brand products with creators. When a brand opens a campaign, creators already using the app are the first ones invited.",
+    "channels": [
+      {
+        "id": "tiktok",
+        "title": "Connected through your TikTok channel",
+        "desc": "Sign in with TikTok so Five Cut Pro knows which product categories you create for and surfaces the right campaigns.",
+        "bullets": [
+          "Campaign suggestions that match your niche",
+          "Brands find creators who actually convert",
+          "No cold-pitching brand by brand"
+        ]
+      },
+      {
+        "id": "events",
+        "title": "In-app events & challenges",
+        "desc": "Brands sponsor challenges that run inside the app — you enter with the video you already made from a template.",
+        "bullets": [
+          "Challenges tied to ready-made templates",
+          "Join inside the app, no external form",
+          "Get seen by the brand"
+        ]
+      },
+      {
+        "id": "community",
+        "title": "Global creator community",
+        "desc": "Campaigns are announced straight to the Zalo · Telegram · WhatsApp groups — sign up fast, no middleman.",
+        "bullets": [
+          "Campaign briefs announced directly",
+          "Quick sign-up",
+          "Local and international creator network"
+        ]
+      }
+    ],
+    "flowTitle": "How a campaign reaches you",
+    "flow": [
+      "Brand defines the product and the campaign",
+      "Five Cut Pro matches suitable creators",
+      "You get a notice in the app or the group",
+      "Review the brief and the shooting template",
+      "Join the campaign and publish your video"
+    ],
+    "note": "You choose the campaigns you want — the template and shot guide are already in the app.",
+    "cta": "Get the app to receive campaigns"
   }
 }

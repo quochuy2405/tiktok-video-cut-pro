@@ -80,6 +80,8 @@ export const SITE = {
   name: APP_NAME,
   shortName: "Five",
   email: "support@fivecutpro.com",
+  partnerEmail: "partner@fivecutpro.com",
+  partnerPhone: "0388 387 471",
   copyrightHolder: "Five Cut Pro Asia",
   defaultLocale: routing.defaultLocale as AppLocale,
   locales: routing.locales as readonly AppLocale[],
@@ -117,9 +119,9 @@ export const OG_IMAGE = {
 export const OG_VI = {
   title: "Five Cut Pro — Chọn Mẫu · Quay Shot · Ghép Video Bán Hàng",
   description:
-    "App trên điện thoại cho KOC & nhà bán hàng: chợ mẫu KOC, công thức Trung–Cận–Xa, hướng dẫn quay từng shot, ghép và xuất sẵn đăng TikTok.",
+    "App trên điện thoại cho KOC & nhà bán hàng: chợ mẫu KOC, hướng dẫn quay từng shot, ghép và xuất sẵn đăng TikTok — và nhận chiến dịch từ nhãn hàng.",
   twitterDescription:
-    "Không cần biết edit. Chọn mẫu → quay đúng shot → app ghép → xuất & chia sẻ TikTok. Có trên iOS & Android.",
+    "Không cần biết edit. Chọn mẫu → quay đúng shot → app ghép → xuất & chia sẻ TikTok. Nhận chiến dịch từ nhãn hàng ngay trong app.",
   imageAlt:
     "Five Cut Pro — Chọn mẫu, quay shot, ghép video bán hàng cho KOC",
 } as const;

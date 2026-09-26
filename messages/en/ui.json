@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "titleDefault": "Five Cut Pro — Pick a Template · Shoot · Merge Sales Videos",
-    "description": "Mobile app for KOCs and sellers: KOC template market, shot-angle recipes, shoot guides, on-device merge, and TikTok-ready export.",
+    "description": "App for KOCs and sellers: pick a template, shoot every required shot, merge and export 9:16 for TikTok — and get matched with brand campaigns.",
     "keywords": [
       "Five Cut Pro",
       "KOC templates",
@@ -11,13 +11,16 @@
       "TikTok Shop",
       "9:16 short video",
       "TikTok export",
-      "mobile video editor for sellers"
+      "mobile video editor for sellers",
+      "KOC campaigns",
+      "brand partnership",
+      "creator matching"
     ],
     "ogTitle": "Five Cut Pro — Pick a Template · Shoot · Merge Sales Videos",
-    "ogDescription": "No editing skills needed. Pick a template → shoot the shots → merge → export & share to TikTok. Available on iOS & Android.",
+    "ogDescription": "App for KOCs and sellers: pick a template, shoot every required shot, merge and export 9:16 for TikTok — and get matched with brand campaigns.",
     "ogImageAlt": "Five Cut Pro — Template, shoot, merge sales videos for KOCs",
     "twitterTitle": "Five Cut Pro — Pick a Template · Shoot · Merge Sales Videos",
-    "twitterDescription": "No editing skills needed. Pick a template → shoot the shots → merge → export & share to TikTok. Available on iOS & Android.",
+    "twitterDescription": "App for KOCs and sellers: pick a template, shoot every required shot, merge and export 9:16 for TikTok — and get matched with brand campaigns.",
     "applicationName": "Five Cut Pro",
     "category": "technology",
     "creator": "Five Cut Pro Asia"
@@ -27,7 +30,7 @@
     "howItWorks": "How It Works",
     "batchEngine": "Production flow",
     "benefits": "Benefits",
-    "sponsors": "For Brands",
+    "sponsors": "For brands",
     "faq": "FAQ",
     "downloadApp": "Free Download",
     "installGuide": "Install Guide",
@@ -47,7 +50,8 @@
     "languageJa": "日本語",
     "logoAlt": "Five Cut Pro icon",
     "officialSocial": "Official Socials (@fivecutpro)",
-    "languageKo": "한국어"
+    "languageKo": "한국어",
+    "campaigns": "For creators"
   },
   "Footer": {
     "tagline": "Smart video cutting & automation software for KOCs, social commerce creators, and affiliate networks.",
@@ -69,7 +73,9 @@
     "copyrightBody": "Five Cut Pro",
     "deleteAccountLink": "Delete account",
     "groupsHeading": "Support group",
-    "groupsJoin": "Join"
+    "groupsJoin": "Join",
+    "campaignsLink": "For creators",
+    "sponsorsLink": "For brands"
   },
   "DeleteAccount": {
     "metaTitle": "Delete account — Five Cut Pro",

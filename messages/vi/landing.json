@@ -22,24 +22,24 @@
   },
   "metricsBar": [
     {
-      "value": "Nỗi đau",
-      "label": "Edit tay mỗi lần",
-      "desc": "Cắt lại từ đầu, dễ bỏ cuộc"
+      "value": "3 bước",
+      "label": "Từ mẫu tới video đăng",
+      "desc": "Chọn mẫu → quay shot → xuất"
     },
     {
-      "value": "Cách mới",
-      "label": "Làm theo mẫu KOC",
-      "desc": "Xem hướng dẫn → app ghép"
+      "value": "9:16",
+      "label": "Khổ dọc sẵn đăng",
+      "desc": "Chuẩn TikTok, Reels, Shorts"
     },
     {
-      "value": "Đủ góc",
-      "label": "Công thức góc quay",
-      "desc": "Không còn quay thiếu góc"
+      "value": "Trên máy",
+      "label": "Ghép ngay trên điện thoại",
+      "desc": "Không cần PC, không cần CapCut"
     },
     {
-      "value": "TikTok",
-      "label": "Xuất & đăng nhanh",
-      "desc": "Lưu máy hoặc chia sẻ ngay"
+      "value": "Miễn phí",
+      "label": "Tải và bắt đầu",
+      "desc": "iOS & Android"
     }
   ],
   "featuresSection": {
@@ -112,7 +112,8 @@
         "desc": "Bấm Ghép video ngay, mở Xuất video, tải về thư viện hoặc chia sẻ TikTok.",
         "badge": "Xuất & đăng"
       }
-    ]
+    ],
+    "stepLabel": "Bước"
   },
   "comparisonSection": {
     "badge": "NỖI ĐAU THỰC TẾ",
@@ -165,6 +166,26 @@
         "id": "faq-4",
         "question": "App chạy trên hệ nào?",
         "answer": "iOS và Android. Đăng nhập Google, TikTok, Apple hoặc email OTP."
+      },
+      {
+        "id": "faq-5",
+        "question": "Dùng Five Cut Pro có mất phí không?",
+        "answer": "Tải app và tạo tài khoản miễn phí trên App Store và Google Play. Sau khi đăng nhập bạn dùng được chợ mẫu, công thức và tính năng ghép video."
+      },
+      {
+        "id": "faq-6",
+        "question": "Clip của tôi có bị tải lên đâu không?",
+        "answer": "Phần ghép video chạy ngay trên thiết bị của bạn, video thành phẩm lưu trong mục Xuất video trên máy. Chi tiết xem Chính sách quyền riêng tư."
+      },
+      {
+        "id": "faq-7",
+        "question": "KOC nhận chiến dịch của nhãn hàng bằng cách nào?",
+        "answer": "Đăng nhập bằng TikTok để được đề xuất chiến dịch đúng ngành hàng, theo dõi sự kiện & challenge trong app, hoặc vào nhóm Zalo · Telegram · WhatsApp để nhận thông tin sớm."
+      },
+      {
+        "id": "faq-8",
+        "question": "Nhãn hàng muốn hợp tác thì bắt đầu từ đâu?",
+        "answer": "Điền form ở mục Dành cho nhãn hàng hoặc gửi email partner@fivecutpro.com. Đội Five Cut Pro sẽ trao đổi về sản phẩm, mẫu video và cách kết nối KOC."
       }
     ]
   },
@@ -209,33 +230,34 @@
     ]
   },
   "sponsorsSection": {
-    "label": "DÀNH CHO BRAND",
-    "title": "Hợp tác mẫu & chiến dịch KOC",
-    "subtitle": "Đưa công thức review theo brief thương hiệu vào chợ mẫu — KOC quay đúng shot, ra video đồng bộ thông điệp.",
+    "label": "DÀNH CHO NHÃN HÀNG",
+    "title": "Biến sản phẩm thành nội dung — biến nội dung thành cơ hội bán hàng",
+    "subtitle": "Ra mắt sản phẩm mới cần nhiều nội dung, nhiều góc quay, nhiều người sáng tạo. Five Cut Pro đưa sản phẩm của bạn vào đúng nơi KOC làm việc mỗi ngày.",
     "stats": [
       {
-        "value": "Mẫu KOC",
-        "label": "Công thức có hướng dẫn quay"
+        "value": "12",
+        "label": "Điểm hiển thị thương hiệu"
+      },
+      {
+        "value": "5 góc",
+        "label": "Video hướng dẫn quay sản phẩm"
+      },
+      {
+        "value": "3 lớp",
+        "label": "Kết nối KOC: TikTok · sự kiện · cộng đồng"
       },
       {
         "value": "9:16",
         "label": "Chuẩn TikTok / Reels"
-      },
-      {
-        "value": "3 bước",
-        "label": "Chọn mẫu → Quay → Xuất"
-      },
-      {
-        "value": "App",
-        "label": "iOS & Android"
       }
     ],
     "benefitsTitle": "Khi hợp tác cùng Five Cut Pro",
     "benefits": [
-      "Tài trợ công thức / mẫu review đúng góc quay và thông điệp thương hiệu.",
-      "KOC xem hướng dẫn quay trong app trước khi sản xuất.",
-      "Đồng bộ cấu trúc shot giữa nhiều creator dùng chung một mẫu.",
-      "Phù hợp chiến dịch short-form TikTok Shop & Reels."
+      "Sản phẩm được quay kỹ, quay rõ và dựng thành mẫu video mang tên thương hiệu.",
+      "KOC xem hướng dẫn quay có sản phẩm của bạn trước mỗi lần sản xuất.",
+      "Nhiều creator dùng chung một mẫu — thông điệp và cấu trúc shot đồng bộ.",
+      "Được đề xuất đúng nhóm KOC theo ngành hàng, không phải tìm và nhắn từng người.",
+      "Phù hợp chiến dịch short-form TikTok Shop, Reels và Shorts."
     ],
     "form": {
       "title": "Đăng ký nhận tư vấn hợp tác",
@@ -248,20 +270,161 @@
       "emailPlaceholder": "contact@brand.com",
       "phoneLabel": "Số điện thoại / Zalo",
       "phonePlaceholder": "0912 345 678",
-      "budgetLabel": "Ngân sách chiến dịch dự kiến",
+      "budgetLabel": "Hạng mục quan tâm",
       "budgetOptions": [
-        "Dưới 20 triệu VNĐ (Thử nghiệm)",
-        "20 - 50 triệu VNĐ",
-        "50 - 200 triệu VNĐ",
-        "Trên 200 triệu VNĐ"
+        "Nhận diện thương hiệu (banner, logo, sản phẩm)",
+        "Kết nối KOC cho chiến dịch",
+        "Xây mẫu video & hướng dẫn quay sản phẩm",
+        "Đối tác toàn diện (tất cả hạng mục)",
+        "Chưa rõ — cần tư vấn"
       ],
       "noteLabel": "Nhu cầu hoặc mục tiêu chiến dịch",
       "notePlaceholder": "Sản phẩm cần review, số lượng video, thời gian triển khai...",
       "submitButton": "Gửi yêu cầu hợp tác",
       "successMessage": "Đã gửi! Đội Five Cut Pro sẽ liên hệ lại qua Zalo/Email.",
       "directContact": "Hoặc liên hệ trực tiếp:",
-      "emailAria": "Gửi email hợp tác thương hiệu",
-      "emailText": "support@fivecutpro.com"
-    }
+      "emailAria": "Gửi email hợp tác thương hiệu tới partner@fivecutpro.com",
+      "emailText": "partner@fivecutpro.com",
+      "zaloLabel": "Zalo / Điện thoại",
+      "zaloText": "0388 387 471",
+      "zaloHref": "https://zalo.me/0388387471",
+      "contactPersonLabel": "Người phụ trách",
+      "contactPersonName": "Quốc Huy"
+    },
+    "insight": {
+      "badge": "ĐIỂM KHÁC BIỆT",
+      "quote": "KOC nhớ mẫu — KOC nhớ cách quay — KOC nhìn thấy sản phẩm.",
+      "body": "Đây không phải banner lướt qua. Sản phẩm của bạn được lồng thẳng vào video hướng dẫn quay mà KOC phải xem đi xem lại để nhớ cách làm. Tiếp xúc lặp lại, đúng lúc họ đang sản xuất nội dung bán hàng.",
+      "providesLabel": "Nhãn hàng cung cấp",
+      "provides": [
+        "Hình ảnh sản phẩm",
+        "Bao bì",
+        "Logo",
+        "Màu thương hiệu",
+        "Thông tin sản phẩm"
+      ],
+      "anglesLabel": "Five Cut Pro dựng thành mẫu video + hướng dẫn quay theo trình tự",
+      "angles": [
+        "Góc toàn cảnh",
+        "Góc trung",
+        "Góc cận sản phẩm",
+        "Chi tiết sản phẩm",
+        "Góc sử dụng thực tế"
+      ]
+    },
+    "placementsTitle": "12 điểm hiển thị thương hiệu",
+    "placementsSubtitle": "Sản phẩm và nhận diện của bạn xuất hiện xuyên suốt hành trình KOC làm video.",
+    "placementGroups": [
+      {
+        "title": "Trong ứng dụng",
+        "items": [
+          "Banner màn hình đăng nhập",
+          "Pop-up khi mở app",
+          "Banner trang Khám phá",
+          "Hiển thị khi đang ghép video"
+        ]
+      },
+      {
+        "title": "Trên website",
+        "items": [
+          "Pop-up trang chủ fivecutpro.com",
+          "Mục mẫu & chiến dịch đang chạy"
+        ]
+      },
+      {
+        "title": "Trong nội dung",
+        "items": [
+          "Mẫu video mang tên nhãn hàng & sản phẩm",
+          "Video hướng dẫn quay từng góc",
+          "Video thành phẩm sau khi ghép"
+        ]
+      },
+      {
+        "title": "Cộng đồng KOC",
+        "items": [
+          "Kết nối qua kênh TikTok",
+          "Sự kiện & challenge trong app",
+          "Nhóm Zalo · Telegram · WhatsApp (global)"
+        ]
+      }
+    ],
+    "processTitle": "Quy trình hợp tác",
+    "process": [
+      {
+        "num": "01",
+        "title": "Nhãn hàng",
+        "desc": "Xác định sản phẩm & nhu cầu chiến dịch"
+      },
+      {
+        "num": "02",
+        "title": "Five Cut Pro",
+        "desc": "Dựng mẫu video và đề xuất KOC phù hợp"
+      },
+      {
+        "num": "03",
+        "title": "KOC",
+        "desc": "Nhận thông báo trong app hoặc nhóm cộng đồng"
+      },
+      {
+        "num": "04",
+        "title": "KOC",
+        "desc": "Xem thông tin hợp tác và mẫu quay"
+      },
+      {
+        "num": "05",
+        "title": "KOC",
+        "desc": "Tham gia chiến dịch, ra video bán hàng"
+      }
+    ],
+    "processNote": "Nhãn hàng không mất thời gian tìm từng KOC, nhắn tin từng người hay gửi lại thông tin lặp đi lặp lại.",
+    "offerBadge": "ƯU ĐÃI ĐỐI TÁC SÁNG LẬP",
+    "offerText": "Miễn phí triển khai 3 tháng đầu cho nhãn hàng đồng hành cùng Five Cut Pro trong giai đoạn đầu."
+  },
+  "campaignsSection": {
+    "label": "CƠ HỘI CHO KOC",
+    "title": "Không chỉ làm video nhanh — còn nhận chiến dịch từ nhãn hàng",
+    "subtitle": "Five Cut Pro là cầu nối giữa sản phẩm của nhãn hàng và người sáng tạo. Khi nhãn hàng mở chiến dịch, KOC đang dùng app là nhóm được mời trước.",
+    "channels": [
+      {
+        "id": "tiktok",
+        "title": "Kết nối qua kênh TikTok",
+        "desc": "Đăng nhập bằng TikTok để Five Cut Pro hiểu bạn đang làm nội dung ngành hàng nào và đề xuất đúng chiến dịch phù hợp.",
+        "bullets": [
+          "Đề xuất chiến dịch theo ngành hàng bạn đang làm",
+          "Nhãn hàng tìm được KOC có chuyển đổi tốt",
+          "Không phải tự đi chào từng brand"
+        ]
+      },
+      {
+        "id": "events",
+        "title": "Sự kiện & challenge trong app",
+        "desc": "Nhãn hàng tài trợ thử thách tổ chức ngay trong app — bạn tham gia bằng chính video làm từ mẫu.",
+        "bullets": [
+          "Thử thách gắn với mẫu có sẵn",
+          "Tham gia ngay trong app, không cần form ngoài",
+          "Cơ hội xuất hiện trước nhãn hàng"
+        ]
+      },
+      {
+        "id": "community",
+        "title": "Cộng đồng KOC toàn cầu",
+        "desc": "Chiến dịch được công bố thẳng tới nhóm Zalo · Telegram · WhatsApp — đăng ký nhanh, không qua trung gian.",
+        "bullets": [
+          "Thông tin chiến dịch công bố trực tiếp",
+          "Đăng ký tham gia nhanh",
+          "Mạng lưới KOC trong nước và quốc tế"
+        ]
+      }
+    ],
+    "flowTitle": "Chiến dịch đến tay bạn thế nào",
+    "flow": [
+      "Nhãn hàng xác định sản phẩm & nhu cầu",
+      "Five Cut Pro đề xuất KOC phù hợp",
+      "Bạn nhận thông báo trong app hoặc nhóm",
+      "Xem thông tin hợp tác và mẫu quay",
+      "Tham gia chiến dịch, ra video bán hàng"
+    ],
+    "note": "Bạn chủ động chọn chiến dịch muốn nhận — mẫu và hướng dẫn quay đã có sẵn trong app.",
+    "cta": "Tải app để nhận chiến dịch"
   }
 }

@@ -93,6 +93,18 @@ export function SiteFooter({ groups = [] }: { groups?: SocialGroup[] }) {
             >
               {t("installLink")}
             </Link>
+            <Link
+              href="/#campaigns"
+              className="text-[#1F2E27] transition-colors hover:text-brand"
+            >
+              {t("campaignsLink")}
+            </Link>
+            <Link
+              href="/#sponsors"
+              className="text-[#1F2E27] transition-colors hover:text-brand"
+            >
+              {t("sponsorsLink")}
+            </Link>
           </div>
             <div className="flex flex-col gap-3">
               <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.65px] text-[#4A5C53]">

@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "titleDefault": "Five Cut Pro — Chọn Mẫu · Quay Shot · Ghép Video Bán Hàng",
-    "description": "App trên điện thoại cho KOC và nhà bán hàng: chợ mẫu KOC, công thức góc quay theo checklist, hướng dẫn từng shot, ghép và xuất sẵn đăng TikTok.",
+    "description": "App cho KOC và nhà bán hàng: chọn mẫu, quay đủ shot theo checklist, ghép và xuất video 9:16 đăng TikTok — và nhận chiến dịch từ nhãn hàng.",
     "keywords": [
       "Five Cut Pro",
       "chợ mẫu KOC",
@@ -12,13 +12,16 @@
       "TikTok Shop",
       "video ngắn 9:16",
       "xuất video TikTok",
-      "app cắt ghép video"
+      "app cắt ghép video",
+      "chiến dịch KOC",
+      "hợp tác nhãn hàng",
+      "booking KOC TikTok"
     ],
     "ogTitle": "Five Cut Pro — Chọn Mẫu · Quay Shot · Ghép Video Bán Hàng",
-    "ogDescription": "Không cần biết edit. Chọn mẫu → quay đúng shot → app ghép → xuất & chia sẻ TikTok. Có trên iOS & Android.",
+    "ogDescription": "App cho KOC và nhà bán hàng: chọn mẫu, quay đủ shot theo checklist, ghép và xuất video 9:16 đăng TikTok — và nhận chiến dịch từ nhãn hàng.",
     "ogImageAlt": "Five Cut Pro — Chọn mẫu, quay shot, ghép video bán hàng cho KOC",
     "twitterTitle": "Five Cut Pro — Chọn Mẫu · Quay Shot · Ghép Video Bán Hàng",
-    "twitterDescription": "Không cần biết edit. Chọn mẫu → quay đúng shot → app ghép → xuất & chia sẻ TikTok. Có trên iOS & Android.",
+    "twitterDescription": "App cho KOC và nhà bán hàng: chọn mẫu, quay đủ shot theo checklist, ghép và xuất video 9:16 đăng TikTok — và nhận chiến dịch từ nhãn hàng.",
     "applicationName": "Five Cut Pro",
     "category": "technology",
     "creator": "Five Cut Pro Asia"
@@ -28,7 +31,7 @@
     "howItWorks": "Cách dùng",
     "batchEngine": "Luồng sản xuất",
     "benefits": "Lợi ích",
-    "sponsors": "Dành cho Brand",
+    "sponsors": "Dành cho nhãn hàng",
     "faq": "Hỏi đáp",
     "downloadApp": "Tải miễn phí",
     "installGuide": "Hướng dẫn cài",
@@ -48,7 +51,8 @@
     "languageJa": "日本語",
     "logoAlt": "Biểu tượng Five Cut Pro",
     "officialSocial": "Mạng xã hội (@fivecutpro)",
-    "languageKo": "한국어"
+    "languageKo": "한국어",
+    "campaigns": "Nhận chiến dịch"
   },
   "Footer": {
     "tagline": "Công cụ cắt ghép & tự động hóa video bán hàng dành cho KOC, nhà sáng tạo nội dung và mạng lưới tiếp thị liên kết.",
@@ -70,7 +74,9 @@
     "copyrightBody": "Five Cut Pro",
     "deleteAccountLink": "Xóa tài khoản",
     "groupsHeading": "Nhóm hỗ trợ",
-    "groupsJoin": "Vào nhóm"
+    "groupsJoin": "Vào nhóm",
+    "campaignsLink": "Nhận chiến dịch",
+    "sponsorsLink": "Dành cho nhãn hàng"
   },
   "DeleteAccount": {
     "metaTitle": "Xóa tài khoản — Five Cut Pro",

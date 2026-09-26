@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "titleDefault": "Five Cut Pro — 选模板 · 拍分镜 · 合成带货视频",
-    "description": "面向 KOC 与商家的手机应用：KOC 模板市场、镜头配方与分镜清单、拍摄指引、本机合成并导出到 TikTok。",
+    "description": "KOC 与卖家的手机 App：选模板、按清单拍齐镜头、本机合成导出 9:16 发 TikTok，还能接到品牌活动。",
     "keywords": [
       "Five Cut Pro",
       "KOC模板",
@@ -9,13 +9,16 @@
       "带货视频合成",
       "分镜拍摄指引",
       "TikTok Shop",
-      "9:16短视频"
+      "9:16短视频",
+      "KOC 活动",
+      "品牌合作",
+      "达人对接"
     ],
     "ogTitle": "Five Cut Pro — 选模板 · 拍分镜 · 合成带货视频",
-    "ogDescription": "不会剪辑也能用。选模板 → 按分镜拍摄 → App 合成 → 导出并分享到 TikTok。支持 iOS 与 Android。",
+    "ogDescription": "KOC 与卖家的手机 App：选模板、按清单拍齐镜头、本机合成导出 9:16 发 TikTok，还能接到品牌活动。",
     "ogImageAlt": "Five Cut Pro — 选模板、拍分镜、合成带货视频",
     "twitterTitle": "Five Cut Pro — 选模板 · 拍分镜 · 合成带货视频",
-    "twitterDescription": "不会剪辑也能用。选模板 → 按分镜拍摄 → App 合成 → 导出并分享到 TikTok。支持 iOS 与 Android。",
+    "twitterDescription": "KOC 与卖家的手机 App：选模板、按清单拍齐镜头、本机合成导出 9:16 发 TikTok，还能接到品牌活动。",
     "applicationName": "Five Cut Pro",
     "category": "technology",
     "creator": "Five Cut Pro Asia"
@@ -45,7 +48,8 @@
     "languageJa": "日本語",
     "logoAlt": "Five Cut Pro 标识",
     "officialSocial": "官方社交媒体 (@fivecutpro)",
-    "languageKo": "한국어"
+    "languageKo": "한국어",
+    "campaigns": "接活动"
   },
   "Footer": {
     "tagline": "专为KOC、内容创作者及电商矩阵团队研发的智能带货视频剪辑与自动化工具。",
@@ -67,7 +71,9 @@
     "copyrightBody": "Five Cut Pro",
     "deleteAccountLink": "删除账号",
     "groupsHeading": "支持群",
-    "groupsJoin": "加入"
+    "groupsJoin": "加入",
+    "campaignsLink": "接活动",
+    "sponsorsLink": "品牌合作"
   },
   "DeleteAccount": {
     "metaTitle": "删除账号 — Five Cut Pro",

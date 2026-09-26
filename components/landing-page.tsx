@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import {
+  ArrowRight,
   Building2,
   Camera,
   Check,
@@ -11,12 +12,21 @@ import {
   ChevronDown,
   Download,
   Flame,
+  Gift,
+  Globe,
+  Handshake,
   HelpCircle,
   Layers,
   Mail,
+  Megaphone,
+  Music2,
+  Phone,
   Play,
+  Quote,
   Scissors,
   Send,
+  Sparkles,
+  Trophy,
   Upload,
   Video,
   XCircle,
@@ -59,7 +69,26 @@ type HowItWorksSectionCopy = {
   label: string;
   title: string;
   subtitle: string;
+  stepLabel: string;
   steps: HowStep[];
+};
+
+type CampaignChannel = {
+  id: string;
+  title: string;
+  desc: string;
+  bullets?: string[];
+};
+
+type CampaignsSectionCopy = {
+  label: string;
+  title: string;
+  subtitle: string;
+  channels: CampaignChannel[];
+  flowTitle: string;
+  flow: string[];
+  note: string;
+  cta: string;
 };
 
 type MetricItem = {
@@ -110,6 +139,27 @@ type SponsorStat = {
   label: string;
 };
 
+type SponsorInsightCopy = {
+  badge: string;
+  quote: string;
+  body: string;
+  providesLabel: string;
+  provides: string[];
+  anglesLabel: string;
+  angles: string[];
+};
+
+type SponsorPlacementGroup = {
+  title: string;
+  items: string[];
+};
+
+type SponsorProcessStep = {
+  num: string;
+  title: string;
+  desc: string;
+};
+
 type SponsorFormCopy = {
   title: string;
   desc: string;
@@ -130,6 +180,11 @@ type SponsorFormCopy = {
   directContact: string;
   emailAria: string;
   emailText: string;
+  zaloLabel: string;
+  zaloText: string;
+  zaloHref: string;
+  contactPersonLabel: string;
+  contactPersonName: string;
 };
 
 type SponsorsSectionCopy = {
@@ -137,8 +192,17 @@ type SponsorsSectionCopy = {
   title: string;
   subtitle: string;
   stats: SponsorStat[];
+  insight: SponsorInsightCopy;
+  placementsTitle: string;
+  placementsSubtitle: string;
+  placementGroups: SponsorPlacementGroup[];
   benefitsTitle: string;
   benefits: string[];
+  processTitle: string;
+  process: SponsorProcessStep[];
+  processNote: string;
+  offerBadge: string;
+  offerText: string;
   form: SponsorFormCopy;
 };
 
@@ -147,6 +211,12 @@ const FEATURE_ICONS: Record<string, React.ComponentType<{ className?: string }>>
   recipes: Layers,
   "shot-guide": Camera,
   "merge-export": Scissors,
+};
+
+const CAMPAIGN_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+  tiktok: Music2,
+  events: Trophy,
+  community: Globe,
 };
 
 const easeOut = [0.22, 1, 0.36, 1] as const;
@@ -182,6 +252,7 @@ export function LandingPage({
   );
   const howItWorks = t.raw("howItWorksSection") as HowItWorksSectionCopy;
   const comparison = t.raw("comparisonSection") as ComparisonSectionCopy;
+  const campaigns = t.raw("campaignsSection") as CampaignsSectionCopy;
   const sponsors = t.raw("sponsorsSection") as SponsorsSectionCopy;
   const faq = t.raw("faqSection") as FaqSectionCopy;
 
@@ -399,67 +470,6 @@ export function LandingPage({
         ) : null}
       </section>
 
-      {/* Download — mobile first */}
-      <section
-        id="download"
-        className="scroll-mt-[72px] border-t border-[#B9CFC3] section-band-mint px-4 py-16 sm:px-6 md:py-20 lg:px-8"
-      >
-        <div className="mx-auto min-w-0 max-w-[1200px]">
-          <FadeIn className="mx-auto max-w-2xl text-center">
-            <p className="text-sm font-medium text-[#4A5C53]">
-              {t("downloadSection.label")}
-            </p>
-            <h2 className="font-heading mt-3 text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem]">
-              {t("downloadSection.title")}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-[#4A5C53] md:text-lg">
-              {t("downloadSection.subtitle", { version: DISPLAY_APP_VERSION })}
-            </p>
-          </FadeIn>
-
-          <div className="mt-10">
-            <StoreQrCodes
-              title={t("downloadSection.qrTitle")}
-              subtitle={t("downloadSection.qrSubtitle")}
-              scanLabel={t("downloadSection.qrLabel")}
-              openLabel={t("downloadSection.ctaStore")}
-            />
-          </div>
-        </div>
-      </section>
-
-      {socialGroups.length > 0 ? (
-        <section
-          id="community"
-          className="scroll-mt-[72px] border-t border-[#B9CFC3] px-4 py-16 sm:px-6 md:py-20 lg:px-8"
-        >
-          <div className="mx-auto grid min-w-0 max-w-[1200px] gap-8 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-start md:gap-12">
-            <FadeIn>
-              <h2 className="font-heading text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem]">
-                {t("communitySection.title")}
-              </h2>
-              <p className="mt-5 max-w-md text-base leading-relaxed text-[#4A5C53] md:text-lg">
-                {t("communitySection.subtitle")}
-              </p>
-            </FadeIn>
-            <CommunityGroupList
-              groups={socialGroups}
-              title={t("communitySection.title")}
-              joinLabel={t("communitySection.join")}
-              location="community_section"
-            />
-          </div>
-        </section>
-      ) : null}
-
-      <MarketingBannerCarousel
-        slides={stripBanners}
-        title={t("bannerSection.title")}
-        subtitle={t("bannerSection.subtitle")}
-        steps={t.raw("bannerSection.steps") as string[]}
-      />
-      <CommonBannerPopup slides={popupBanners} />
-
       {/* Comparison: Old Manual Way vs Five Cut Pro */}
       {comparison && (
         <section
@@ -672,7 +682,7 @@ export function LandingPage({
                       </div>
                       <div className="pt-2">
                         <span className="font-mono text-xs font-bold uppercase tracking-wider text-brand">
-                          Bước {step.num}
+                          {howItWorks.stepLabel} {step.num}
                         </span>
                         <h3 className="font-heading mt-1 text-lg sm:text-xl font-semibold text-[#0F1A15]">
                           {step.title}
@@ -689,6 +699,179 @@ export function LandingPage({
           </div>
         </div>
       </section>
+
+      {/* 4. Brand campaigns for creators */}
+      {campaigns && (
+        <section
+          id="campaigns"
+          className="scroll-mt-[72px] border-t border-[#B9CFC3] section-band-mint px-4 py-20 sm:px-6 md:py-28 lg:px-8"
+        >
+          <div className="mx-auto min-w-0 max-w-[1200px]">
+            <FadeIn className="mx-auto max-w-3xl text-center">
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand">
+                <Sparkles className="size-3.5" />
+                <span>{campaigns.label}</span>
+              </div>
+              <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem] md:tracking-[-1px]">
+                {campaigns.title}
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-[#4A5C53] md:text-lg">
+                {campaigns.subtitle}
+              </p>
+            </FadeIn>
+
+            <div className="mt-14 grid gap-6 md:grid-cols-3">
+              {campaigns.channels?.map((channel, idx) => {
+                const ChannelIcon = CAMPAIGN_ICONS[channel.id] || Sparkles;
+                return (
+                  <FadeIn key={channel.id} delay={idx * 0.07} className="flex">
+                    <div className="glass-panel group relative flex w-full flex-col overflow-hidden rounded-[24px] border border-[#B9CFC3] p-7 transition-all duration-300 hover:border-brand/40 hover:glow-brand-sm sm:p-8">
+                      <div className="flex size-12 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30">
+                        <ChannelIcon className="size-6" />
+                      </div>
+                      <h3 className="font-heading mt-5 text-lg font-semibold text-[#0F1A15] sm:text-xl">
+                        {channel.title}
+                      </h3>
+                      <p className="mt-3 text-sm leading-relaxed text-[#4A5C53]">
+                        {channel.desc}
+                      </p>
+                      {channel.bullets && channel.bullets.length > 0 ? (
+                        <ul className="mt-5 space-y-2 border-t border-[#B9CFC3] pt-4">
+                          {channel.bullets.map((bullet) => (
+                            <li
+                              key={bullet}
+                              className="flex items-start gap-2 text-xs text-[#1F2E27] sm:text-sm"
+                            >
+                              <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-brand" />
+                              <span>{bullet}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : null}
+                    </div>
+                  </FadeIn>
+                );
+              })}
+            </div>
+
+            <FadeIn delay={0.1} className="mt-14 block">
+              <div className="rounded-[26px] surface-card p-7 sm:p-9">
+                <h3 className="font-heading text-lg font-semibold text-[#0F1A15] sm:text-xl">
+                  {campaigns.flowTitle}
+                </h3>
+                <ol className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+                  {campaigns.flow?.map((step, i) => (
+                    <li
+                      key={step}
+                      className="relative flex h-full flex-col gap-2.5 rounded-2xl border border-[#D8E5DD] bg-white/80 p-4"
+                    >
+                      <span className="flex size-7 items-center justify-center rounded-full bg-brand/15 font-mono text-[11px] font-bold text-brand-deep">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span className="text-xs leading-relaxed text-[#1F2E27] sm:text-sm">
+                        {step}
+                      </span>
+                      {i < campaigns.flow.length - 1 ? (
+                        <ArrowRight
+                          className="pointer-events-none absolute -right-2.5 top-1/2 hidden size-4 -translate-y-1/2 text-brand lg:block"
+                          aria-hidden
+                        />
+                      ) : null}
+                    </li>
+                  ))}
+                </ol>
+
+                <div className="mt-7 flex flex-col items-start gap-4 border-t border-[#D8E5DD] pt-6 sm:flex-row sm:items-center sm:justify-between">
+                  <p className="flex items-start gap-2 text-sm text-[#1F2E27]">
+                    <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-brand" />
+                    <span>{campaigns.note}</span>
+                  </p>
+                  <Link
+                    href="/#download"
+                    onClick={() => {
+                      trackCtaClick({
+                        cta_id: "campaigns_download",
+                        cta_location: "campaigns_section",
+                        cta_text: campaigns.cta,
+                        cta_category: "conversion_download",
+                        destination_url: "/#download",
+                      });
+                    }}
+                    className={cn(
+                      buttonVariants({ variant: "default", size: "lg" }),
+                      "shrink-0 rounded-full border-0 bg-brand px-7 py-3 text-sm font-semibold text-[#052E1C] glow-brand-sm transition-transform hover:-translate-y-0.5 hover:bg-brand",
+                    )}
+                  >
+                    <Download className="mr-2 size-4" />
+                    {campaigns.cta}
+                  </Link>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+      )}
+
+      <MarketingBannerCarousel
+        slides={stripBanners}
+        title={t("bannerSection.title")}
+        subtitle={t("bannerSection.subtitle")}
+        steps={t.raw("bannerSection.steps") as string[]}
+      />
+      <CommonBannerPopup slides={popupBanners} />
+
+      {/* Download — mobile first */}
+      <section
+        id="download"
+        className="scroll-mt-[72px] border-t border-[#B9CFC3] section-band-mint px-4 py-16 sm:px-6 md:py-20 lg:px-8"
+      >
+        <div className="mx-auto min-w-0 max-w-[1200px]">
+          <FadeIn className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-medium text-[#4A5C53]">
+              {t("downloadSection.label")}
+            </p>
+            <h2 className="font-heading mt-3 text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem]">
+              {t("downloadSection.title")}
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-[#4A5C53] md:text-lg">
+              {t("downloadSection.subtitle", { version: DISPLAY_APP_VERSION })}
+            </p>
+          </FadeIn>
+
+          <div className="mt-10">
+            <StoreQrCodes
+              title={t("downloadSection.qrTitle")}
+              subtitle={t("downloadSection.qrSubtitle")}
+              scanLabel={t("downloadSection.qrLabel")}
+              openLabel={t("downloadSection.ctaStore")}
+            />
+          </div>
+        </div>
+      </section>
+
+      {socialGroups.length > 0 ? (
+        <section
+          id="community"
+          className="scroll-mt-[72px] border-t border-[#B9CFC3] px-4 py-16 sm:px-6 md:py-20 lg:px-8"
+        >
+          <div className="mx-auto grid min-w-0 max-w-[1200px] gap-8 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-start md:gap-12">
+            <FadeIn>
+              <h2 className="font-heading text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem]">
+                {t("communitySection.title")}
+              </h2>
+              <p className="mt-5 max-w-md text-base leading-relaxed text-[#4A5C53] md:text-lg">
+                {t("communitySection.subtitle")}
+              </p>
+            </FadeIn>
+            <CommunityGroupList
+              groups={socialGroups}
+              title={t("communitySection.title")}
+              joinLabel={t("communitySection.join")}
+              location="community_section"
+            />
+          </div>
+        </section>
+      ) : null}
 
       {/* Brand Sponsors */}
       {sponsors && (
@@ -725,6 +908,132 @@ export function LandingPage({
               ))}
             </div>
 
+            {/* Why brand exposure here is different */}
+            <FadeIn className="mt-14">
+              <div className="relative overflow-hidden rounded-[26px] border border-brand/35 bg-gradient-to-b from-brand/[0.12] via-brand/[0.04] to-transparent p-7 sm:p-9">
+                <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:gap-12">
+                  <div>
+                    <span className="inline-flex items-center gap-1.5 rounded-full border border-brand/40 bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-deep">
+                      <Quote className="size-3.5" />
+                      {sponsors.insight.badge}
+                    </span>
+                    <p className="font-heading mt-5 text-xl font-semibold leading-snug text-[#0F1A15] sm:text-2xl">
+                      {sponsors.insight.quote}
+                    </p>
+                    <p className="mt-4 text-sm leading-relaxed text-[#1F2E27] sm:text-base">
+                      {sponsors.insight.body}
+                    </p>
+                  </div>
+                  <div className="space-y-6">
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wider text-[#4A5C53]">
+                        {sponsors.insight.providesLabel}
+                      </p>
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        {sponsors.insight.provides?.map((item) => (
+                          <span
+                            key={item}
+                            className="rounded-full border border-[#B9CFC3] bg-white px-3 py-1.5 text-xs font-medium text-[#1F2E27]"
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wider text-[#4A5C53]">
+                        {sponsors.insight.anglesLabel}
+                      </p>
+                      <ol className="mt-3 grid gap-2 sm:grid-cols-2">
+                        {sponsors.insight.angles?.map((angle, i) => (
+                          <li
+                            key={angle}
+                            className="flex items-center gap-2.5 rounded-xl bg-white/80 px-3 py-2 text-xs font-medium text-[#1F2E27] ring-1 ring-[#D8E5DD]"
+                          >
+                            <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/20 font-mono text-[10px] font-bold text-brand-deep">
+                              0{i + 1}
+                            </span>
+                            <span className="leading-snug">{angle}</span>
+                          </li>
+                        ))}
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
+
+            {/* 12 brand placement slots */}
+            <div className="mt-16">
+              <FadeIn className="mx-auto max-w-2xl text-center">
+                <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand">
+                  <Megaphone className="size-3.5" />
+                  <span>{sponsors.placementsTitle}</span>
+                </div>
+                <p className="mt-4 text-sm leading-relaxed text-[#4A5C53] sm:text-base">
+                  {sponsors.placementsSubtitle}
+                </p>
+              </FadeIn>
+
+              <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                {sponsors.placementGroups?.map((group, gi) => {
+                  const offset = sponsors.placementGroups
+                    .slice(0, gi)
+                    .reduce((acc, g) => acc + (g.items?.length || 0), 0);
+                  return (
+                    <FadeIn key={group.title} delay={gi * 0.05} className="flex">
+                      <div className="glass-panel flex w-full flex-col rounded-[22px] border border-[#B9CFC3] p-6">
+                        <h4 className="font-heading text-base font-semibold text-[#0F1A15]">
+                          {group.title}
+                        </h4>
+                        <ul className="mt-4 space-y-3">
+                          {group.items?.map((item, ii) => (
+                            <li key={item} className="flex items-start gap-2.5 text-sm text-[#1F2E27]">
+                              <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/15 font-mono text-[10px] font-bold text-brand-deep">
+                                {String(offset + ii + 1).padStart(2, "0")}
+                              </span>
+                              <span className="leading-snug">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </FadeIn>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Partnership process */}
+            <div className="mt-16">
+              <FadeIn className="mx-auto max-w-2xl text-center">
+                <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand">
+                  <Handshake className="size-3.5" />
+                  <span>{sponsors.processTitle}</span>
+                </div>
+              </FadeIn>
+
+              <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+                {sponsors.process?.map((step, idx) => (
+                  <FadeIn key={step.num} delay={idx * 0.05} className="flex">
+                    <div className="flex w-full flex-col rounded-[20px] surface-card p-5">
+                      <span className="font-mono text-xs font-bold text-brand">{step.num}</span>
+                      <h4 className="font-heading mt-2 text-sm font-semibold text-[#0F1A15]">
+                        {step.title}
+                      </h4>
+                      <p className="mt-1.5 text-xs leading-relaxed text-[#4A5C53]">{step.desc}</p>
+                    </div>
+                  </FadeIn>
+                ))}
+              </div>
+
+              <FadeIn>
+                <p className="mx-auto mt-5 flex max-w-2xl items-start justify-center gap-2 text-center text-sm text-[#1F2E27]">
+                  <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-brand" />
+                  <span>{sponsors.processNote}</span>
+                </p>
+              </FadeIn>
+            </div>
+
             <div className="mt-14 grid items-start gap-8 lg:grid-cols-12">
               <FadeIn className="space-y-6 lg:col-span-5">
                 <div className="glass-panel rounded-[24px] border border-[#B9CFC3] p-7 sm:p-8">
@@ -741,6 +1050,17 @@ export function LandingPage({
                       </li>
                     ))}
                   </ul>
+
+                  <div className="mt-7 rounded-2xl border border-brand/35 bg-brand/10 p-5">
+                    <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-brand-deep">
+                      <Gift className="size-3.5" />
+                      {sponsors.offerBadge}
+                    </span>
+                    <p className="mt-2 text-sm font-medium leading-relaxed text-[#0F1A15]">
+                      {sponsors.offerText}
+                    </p>
+                  </div>
+
                   <div className="mt-8 space-y-3 border-t border-[#B9CFC3] pt-6">
                     <p className="text-xs font-medium text-[#4A5C53]">
                       {sponsors.form.directContact}
@@ -768,6 +1088,33 @@ export function LandingPage({
                       <Mail className="size-4" />
                       <span>{sponsors.form.emailText}</span>
                     </a>
+                    <a
+                      href={sponsors.form.zaloHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => {
+                        trackDirectContact({
+                          method: "phone",
+                          target: sponsors.form.zaloText,
+                        });
+                        trackCtaClick({
+                          cta_id: "sponsor_zalo_direct",
+                          cta_location: "sponsor_section",
+                          cta_text: sponsors.form.zaloText,
+                          cta_category: "lead_sponsor",
+                          destination_url: sponsors.form.zaloHref,
+                        });
+                      }}
+                      className="flex items-center gap-2 text-sm font-semibold text-brand hover:underline"
+                    >
+                      <Phone className="size-4" />
+                      <span>
+                        {sponsors.form.zaloLabel}: {sponsors.form.zaloText}
+                      </span>
+                    </a>
+                    <p className="text-xs text-[#4A5C53]">
+                      {sponsors.form.contactPersonLabel}: {sponsors.form.contactPersonName}
+                    </p>
                   </div>
                 </div>
               </FadeIn>

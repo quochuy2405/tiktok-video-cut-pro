@@ -65,7 +65,9 @@
     "contactEmail": "support@fivecutpro.com",
     "contactEmailAria": "ส่งอีเมลไปยัง support@fivecutpro.com",
     "copyrightBody": "Five Cut Pro",
-    "deleteAccountLink": "ลบบัญชี"
+    "deleteAccountLink": "ลบบัญชี",
+    "groupsHeading": "กลุ่มช่วยเหลือ",
+    "groupsJoin": "เข้ากลุ่ม"
   },
   "DeleteAccount": {
     "metaTitle": "ลบบัญชี — Five Cut Pro",

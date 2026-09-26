@@ -179,6 +179,12 @@
     "qrTitle": "สแกนเพื่อติดตั้ง",
     "qrSubtitle": "เปิดกล้อง → App Store หรือ Google Play"
   },
+  "communitySection": {
+    "label": "กลุ่มช่วยเหลือ",
+    "title": "Zalo, Telegram และ WhatsApp",
+    "subtitle": "เข้ากลุ่มเพื่อถามวิธีถ่าย เทมเพลต และการช่วยเหลือ",
+    "join": "เข้ากลุ่ม"
+  },
   "downloadCards": {
     "ios": {
       "title": "iOS",

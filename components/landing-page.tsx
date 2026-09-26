@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
+import { CommunityGroupList } from "@/components/community-groups";
 import { FadeIn } from "@/components/fade-in";
 import { CommonBannerPopup } from "@/components/common-banner-popup";
 import { MarketingBannerCarousel } from "@/components/marketing-banner-carousel";
@@ -36,6 +37,7 @@ import {
 } from "@/lib/analytics";
 import { DISPLAY_APP_VERSION } from "@/lib/downloads";
 import type { MarketingBannerSlide } from "@/lib/marketing-api";
+import type { SocialGroup } from "@/lib/social-groups";
 import { gmailComposeUrl } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -153,9 +155,11 @@ const easeOut = [0.22, 1, 0.36, 1] as const;
 export function LandingPage({
   stripBanners = [],
   popupBanners = [],
+  socialGroups = [],
 }: {
   stripBanners?: MarketingBannerSlide[];
   popupBanners?: MarketingBannerSlide[];
+  socialGroups?: SocialGroup[];
 }) {
   const reduceMotion = useReducedMotion();
   const t = useTranslations("Landing");
@@ -423,6 +427,32 @@ export function LandingPage({
           </div>
         </div>
       </section>
+
+      {socialGroups.length > 0 ? (
+        <section
+          id="community"
+          className="scroll-mt-[72px] border-t border-[#B9CFC3] px-4 py-16 sm:px-6 md:py-20 lg:px-8"
+        >
+          <div className="mx-auto grid min-w-0 max-w-[1200px] gap-8 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-start md:gap-12">
+            <FadeIn>
+              <p className="text-sm font-medium text-[#4A5C53]">
+                {t("communitySection.label")}
+              </p>
+              <h2 className="font-heading mt-3 text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem]">
+                {t("communitySection.title")}
+              </h2>
+              <p className="mt-5 max-w-md text-base leading-relaxed text-[#4A5C53] md:text-lg">
+                {t("communitySection.subtitle")}
+              </p>
+            </FadeIn>
+            <CommunityGroupList
+              groups={socialGroups}
+              joinLabel={t("communitySection.join")}
+              location="community_section"
+            />
+          </div>
+        </section>
+      ) : null}
 
       <MarketingBannerCarousel
         slides={stripBanners}

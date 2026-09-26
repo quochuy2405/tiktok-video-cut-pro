@@ -179,6 +179,12 @@
     "qrTitle": "Quét để cài app",
     "qrSubtitle": "Mở camera điện thoại → App Store hoặc Google Play."
   },
+  "communitySection": {
+    "label": "Nhóm hỗ trợ",
+    "title": "Zalo, Telegram và WhatsApp",
+    "subtitle": "Chọn nhóm để hỏi cách quay, lấy mẫu và được hỗ trợ.",
+    "join": "Vào nhóm"
+  },
   "downloadCards": {
     "ios": {
       "title": "iOS",

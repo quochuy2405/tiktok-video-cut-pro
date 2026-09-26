@@ -179,6 +179,12 @@
     "qrTitle": "扫码安装",
     "qrSubtitle": "打开相机 → App Store 或 Google Play。"
   },
+  "communitySection": {
+    "label": "支持群",
+    "title": "Zalo、Telegram 与 WhatsApp",
+    "subtitle": "进群询问拍摄、模板和支持。",
+    "join": "加入"
+  },
   "downloadCards": {
     "ios": {
       "title": "iOS",

@@ -5,6 +5,7 @@ import { JsonLd, buildHomeJsonLd } from "@/components/json-ld";
 import { LandingPage } from "@/components/landing-page";
 import { APP_NAME } from "@/lib/brand";
 import { fetchWebMarketingPayload } from "@/lib/marketing-api";
+import { fetchSocialGroups } from "@/lib/social-groups";
 import {
   absoluteLocaleUrl,
   absoluteUrl,
@@ -82,12 +83,19 @@ export default async function HomePage({
     question: string;
     answer: string;
   }>) || [];
-  const { stripSlides, popupSlides } = await fetchWebMarketingPayload(locale);
+  const [{ stripSlides, popupSlides }, socialGroups] = await Promise.all([
+    fetchWebMarketingPayload(locale),
+    fetchSocialGroups(),
+  ]);
 
   return (
     <>
       <JsonLd data={buildHomeJsonLd(locale, t("description"), faqItems)} />
-      <LandingPage stripBanners={stripSlides} popupBanners={popupSlides} />
+      <LandingPage
+        stripBanners={stripSlides}
+        popupBanners={popupSlides}
+        socialGroups={socialGroups}
+      />
     </>
   );
 }

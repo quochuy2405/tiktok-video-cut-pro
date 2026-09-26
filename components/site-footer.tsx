@@ -8,9 +8,11 @@ import { Link } from "@/i18n/navigation";
 import { trackCtaClick } from "@/lib/analytics";
 import { APP_NAME } from "@/lib/brand";
 import { gmailComposeUrl } from "@/lib/site";
+import { CommunityGroupList } from "@/components/community-groups";
 import { SocialLinks } from "@/components/social-links";
+import type { SocialGroup } from "@/lib/social-groups";
 
-export function SiteFooter() {
+export function SiteFooter({ groups = [] }: { groups?: SocialGroup[] }) {
   const t = useTranslations("Footer");
   const tNav = useTranslations("Nav");
   const year = new Date().getFullYear();
@@ -41,6 +43,18 @@ export function SiteFooter() {
             </span>
             <SocialLinks showLabel />
           </div>
+          {groups.length > 0 ? (
+            <div className="max-w-sm space-y-3">
+              <span className="block font-mono text-[10px] font-semibold uppercase tracking-[0.65px] text-[#4A5C53]">
+                {t("groupsHeading")}
+              </span>
+              <CommunityGroupList
+                groups={groups}
+                joinLabel={t("groupsJoin")}
+                location="footer"
+              />
+            </div>
+          ) : null}
         </div>
         <div className="flex min-w-0 flex-col gap-10 sm:flex-row sm:gap-14 lg:gap-16">
           <nav

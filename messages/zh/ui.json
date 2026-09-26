@@ -65,7 +65,9 @@
     "contactEmail": "support@fivecutpro.com",
     "contactEmailAria": "发送邮件至 support@fivecutpro.com",
     "copyrightBody": "Five Cut Pro",
-    "deleteAccountLink": "删除账号"
+    "deleteAccountLink": "删除账号",
+    "groupsHeading": "支持群",
+    "groupsJoin": "加入"
   },
   "DeleteAccount": {
     "metaTitle": "删除账号 — Five Cut Pro",

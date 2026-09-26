@@ -179,6 +179,12 @@
     "qrTitle": "Scan to install",
     "qrSubtitle": "Open your camera → App Store or Google Play."
   },
+  "communitySection": {
+    "label": "Support groups",
+    "title": "Zalo, Telegram, and WhatsApp",
+    "subtitle": "Pick a group to ask about shooting, templates, and support.",
+    "join": "Join"
+  },
   "downloadCards": {
     "ios": {
       "title": "iOS",

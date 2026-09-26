@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { fetchSocialGroups } from "@/lib/social-groups";
 import { routing } from "@/i18n/routing";
 import { APP_NAME } from "@/lib/brand";
 import {
@@ -177,7 +178,10 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
-  const messages = await getMessages();
+  const [messages, socialGroups] = await Promise.all([
+    getMessages(),
+    fetchSocialGroups(),
+  ]);
 
   return (
     <html
@@ -195,7 +199,7 @@ export default async function LocaleLayout({
           <main className="flex min-w-0 flex-1 flex-col overflow-x-clip pt-[64px]">
             {children}
           </main>
-          <SiteFooter />
+          <SiteFooter groups={socialGroups} />
         </NextIntlClientProvider>
       </body>
     </html>

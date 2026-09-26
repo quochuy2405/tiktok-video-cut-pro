@@ -68,7 +68,9 @@
     "contactEmail": "support@fivecutpro.com",
     "contactEmailAria": "Gửi email tới support@fivecutpro.com",
     "copyrightBody": "Five Cut Pro",
-    "deleteAccountLink": "Xóa tài khoản"
+    "deleteAccountLink": "Xóa tài khoản",
+    "groupsHeading": "Nhóm hỗ trợ",
+    "groupsJoin": "Vào nhóm"
   },
   "DeleteAccount": {
     "metaTitle": "Xóa tài khoản — Five Cut Pro",

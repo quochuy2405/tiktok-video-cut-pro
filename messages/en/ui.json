@@ -67,7 +67,9 @@
     "contactEmail": "support@fivecutpro.com",
     "contactEmailAria": "Send email to support@fivecutpro.com",
     "copyrightBody": "Five Cut Pro",
-    "deleteAccountLink": "Delete account"
+    "deleteAccountLink": "Delete account",
+    "groupsHeading": "Support groups",
+    "groupsJoin": "Join"
   },
   "DeleteAccount": {
     "metaTitle": "Delete account — Five Cut Pro",

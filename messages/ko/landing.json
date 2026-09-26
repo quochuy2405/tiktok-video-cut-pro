@@ -179,6 +179,12 @@
     "qrTitle": "스캔하여 설치",
     "qrSubtitle": "카메라로 스캔 → App Store 또는 Google Play."
   },
+  "communitySection": {
+    "label": "지원 그룹",
+    "title": "Zalo, Telegram, WhatsApp",
+    "subtitle": "촬영, 템플릿, 지원 질문은 그룹에서 하세요.",
+    "join": "참여"
+  },
   "downloadCards": {
     "ios": {
       "title": "iOS",

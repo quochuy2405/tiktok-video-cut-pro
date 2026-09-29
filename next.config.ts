@@ -14,6 +14,11 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "res.cloudinary.com",
       },
+      {
+        // Marketing banners come back on the Cloudinary CNAME the BE returns.
+        protocol: "https",
+        hostname: "cdn.fivecutpro.com",
+      },
     ],
   },
   async redirects() {

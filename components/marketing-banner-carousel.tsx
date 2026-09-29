@@ -193,6 +193,10 @@ export function MarketingBannerCarousel({
                   // The strip sits far below the fold; eager-loading it made a
                   // banner the LCP element on mobile.
                   loading="lazy"
+                  // Banner files come straight from the CDN the BE returns, already
+                  // sized for delivery — skip the Next optimizer so the <img> src is the
+                  // BE URL itself.
+                  unoptimized
                 />
               );
 

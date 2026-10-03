@@ -88,15 +88,19 @@ export function BrandScreens({
         </p>
       </FadeIn>
 
-      <div className="mx-auto mt-8 grid max-w-[760px] grid-cols-3 gap-4 sm:gap-6">
+      <div className="mx-auto mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] sm:grid sm:max-w-[760px] sm:grid-cols-3 sm:gap-6 sm:overflow-visible sm:pb-0 [&::-webkit-scrollbar]:hidden">
         {screens.map((screen, idx) => (
-          <FadeIn key={screen} delay={idx * 0.06} className="flex flex-col">
+          <FadeIn
+            key={screen}
+            delay={idx * 0.06}
+            className="flex w-[min(78vw,280px)] shrink-0 snap-center flex-col sm:w-auto"
+          >
             <PhoneScreen
               screen={screen}
               alt={copy.items[screen].alt}
-              sizes="(min-width: 1024px) 230px, 30vw"
+              sizes="(min-width: 640px) 230px, 78vw"
             />
-            <p className="mt-3 text-center text-xs leading-snug text-[#4A5C53]">
+            <p className="mt-3 text-center text-sm leading-snug text-[#4A5C53]">
               {copy.items[screen].caption}
             </p>
           </FadeIn>

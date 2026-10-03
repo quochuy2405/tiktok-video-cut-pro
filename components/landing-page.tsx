@@ -181,7 +181,7 @@ export function LandingPage({
   return (
     <>
       {/* 1. Hero Section */}
-      <section className="hero-atmosphere relative isolate flex min-h-[min(94vh,960px)] flex-col justify-center overflow-x-clip px-4 pb-24 pt-16 sm:px-6 md:pb-32 md:pt-20 lg:px-8">
+      <section className="hero-atmosphere relative isolate flex flex-col justify-center overflow-x-clip px-4 pb-16 pt-12 sm:px-6 md:pb-20 md:pt-16 lg:px-8">
         <div className="hero-grid pointer-events-none absolute inset-0 opacity-90" aria-hidden />
         {/* Static blobs: animating a 480px blur repaints the whole hero every frame. */}
         <div
@@ -331,6 +331,35 @@ export function LandingPage({
             </div>
           </motion.div>
         ) : null}
+      </section>
+
+      {/* Download sits at the top so the store links are the next thing after the intro */}
+      <section
+        id="download"
+        className="scroll-mt-[72px] border-t border-[#B9CFC3] section-band-mint px-4 py-12 sm:px-6 md:py-16 lg:px-8"
+      >
+        <div className="mx-auto min-w-0 max-w-[1200px]">
+          <FadeIn className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-medium text-[#4A5C53]">
+              {t("downloadSection.label")}
+            </p>
+            <h2 className="font-heading mt-3 text-[1.75rem] font-semibold leading-tight tracking-[-0.85px] text-[#0F1A15] sm:text-[2rem] md:text-[2.65rem]">
+              {t("downloadSection.title")}
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-[#4A5C53] md:text-lg">
+              {t("downloadSection.subtitle", { version: DISPLAY_APP_VERSION })}
+            </p>
+          </FadeIn>
+
+          <div className="mt-8">
+            <StoreQrCodes
+              title={t("downloadSection.qrTitle")}
+              subtitle={t("downloadSection.qrSubtitle")}
+              scanLabel={t("downloadSection.qrLabel")}
+              openLabel={t("downloadSection.ctaStore")}
+            />
+          </div>
+        </div>
       </section>
 
       {/* Real app screens, highlight by highlight */}
@@ -688,35 +717,6 @@ export function LandingPage({
         steps={t.raw("bannerSection.steps") as string[]}
       />
       <CommonBannerPopup slides={popupBanners} />
-
-      {/* Download — mobile first */}
-      <section
-        id="download"
-        className="scroll-mt-[72px] border-t border-[#B9CFC3] section-band-mint px-4 py-16 sm:px-6 md:py-20 lg:px-8"
-      >
-        <div className="mx-auto min-w-0 max-w-[1200px]">
-          <FadeIn className="mx-auto max-w-2xl text-center">
-            <p className="text-sm font-medium text-[#4A5C53]">
-              {t("downloadSection.label")}
-            </p>
-            <h2 className="font-heading mt-3 text-[2rem] font-semibold tracking-[-0.85px] text-[#0F1A15] md:text-[2.65rem]">
-              {t("downloadSection.title")}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-[#4A5C53] md:text-lg">
-              {t("downloadSection.subtitle", { version: DISPLAY_APP_VERSION })}
-            </p>
-          </FadeIn>
-
-          <div className="mt-10">
-            <StoreQrCodes
-              title={t("downloadSection.qrTitle")}
-              subtitle={t("downloadSection.qrSubtitle")}
-              scanLabel={t("downloadSection.qrLabel")}
-              openLabel={t("downloadSection.ctaStore")}
-            />
-          </div>
-        </div>
-      </section>
 
       {socialGroups.length > 0 ? (
         <section

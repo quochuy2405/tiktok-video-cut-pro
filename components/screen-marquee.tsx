@@ -28,22 +28,43 @@ export function ScreenMarquee({ copy }: { copy: ScreenCopy }) {
   return (
     <section
       aria-label={copy.title}
-      className="relative overflow-hidden border-t border-[#B9CFC3] bg-[#0F1A15] py-10 md:py-14"
+      className="relative overflow-hidden border-t border-[#B9CFC3] bg-[#0F1A15] py-8 md:py-14"
     >
+      {/* Mobile: swipe a still, readable capture. Auto-scroll hides the UI. */}
+      <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-1 [-ms-overflow-style:none] [scrollbar-width:none] md:hidden [&::-webkit-scrollbar]:hidden">
+        {STRIP.map((screen) => (
+          <figure key={screen} className="w-[min(78vw,300px)] shrink-0 snap-center">
+            <div className="overflow-hidden rounded-[22px] border border-white/10 bg-white shadow-[0_18px_36px_-20px_rgba(0,0,0,0.8)]">
+              <Image
+                src={SCREEN_SOURCES[screen]}
+                alt={copy.items[screen].alt}
+                width={SCREEN_WIDTH}
+                height={SCREEN_HEIGHT}
+                sizes="78vw"
+                className="h-auto w-full"
+              />
+            </div>
+            <figcaption className="mt-3 px-1 text-center text-sm font-medium leading-snug text-white/90">
+              {copy.items[screen].caption}
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#0F1A15] to-transparent sm:w-28"
+        className="pointer-events-none absolute inset-y-0 left-0 z-10 hidden w-28 bg-gradient-to-r from-[#0F1A15] to-transparent md:block"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#0F1A15] to-transparent sm:w-28"
+        className="pointer-events-none absolute inset-y-0 right-0 z-10 hidden w-28 bg-gradient-to-l from-[#0F1A15] to-transparent md:block"
       />
 
-      <div className="flex w-max marquee-track gap-5 sm:gap-7">
+      <div className="hidden w-max marquee-track gap-7 md:flex">
         {items.map((screen, idx) => (
           <div
             key={`${screen}-${idx}`}
-            className="w-[124px] shrink-0 overflow-hidden rounded-[18px] border border-white/10 bg-white shadow-[0_18px_36px_-20px_rgba(0,0,0,0.8)] sm:w-[156px] sm:rounded-[22px]"
+            className="w-[200px] shrink-0 overflow-hidden rounded-[22px] border border-white/10 bg-white shadow-[0_18px_36px_-20px_rgba(0,0,0,0.8)]"
           >
             <Image
               src={SCREEN_SOURCES[screen]}
@@ -51,7 +72,7 @@ export function ScreenMarquee({ copy }: { copy: ScreenCopy }) {
               aria-hidden={idx >= STRIP.length}
               width={SCREEN_WIDTH}
               height={SCREEN_HEIGHT}
-              sizes="(min-width: 640px) 156px, 124px"
+              sizes="200px"
               className="h-auto w-full"
             />
           </div>

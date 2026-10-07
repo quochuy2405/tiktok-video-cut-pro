@@ -1,204 +1,207 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "SALES VIDEO FOR KOCS — ON YOUR PHONE",
-    "titleLead": "You need daily sales videos,",
-    "titleAccent": "stop spending nights editing",
-    "subtitle": "Missing angles · rebuild from scratch · inconsistent posting. Five Cut Pro lets KOCs follow a template: watch how to shoot, attach every required shot, merge on device, post to TikTok.",
+    "tagline": "VIDEO TEMPLATES FOR KOCS",
+    "titleLead": "Video templates",
+    "titleAccent": "built for KOCs",
+    "subLead": "Create sales videos with just a few sources",
+    "subAccent": "Publish hundreds of unique clips with zero duplication",
+    "pointShoot": "Don't know how to shoot? We guide you how to shoot!",
+    "pointEdit": "Don't know how to edit? Five Cut Pro edits for you",
+    "pointGuide": "Nothing to worry about, just follow us",
+    "pointContent": "Simple, easy-to-understand content",
+    "subtitle": "Create sales videos with just a few sources — Publish hundreds of unique clips with zero duplication.",
     "ctaPrimary": "Download free",
-    "ctaSecondary": "See the pain vs the fix",
-    "ctaBatch": "Pick template → Shoot → Export & post",
-    "ctaBrand": "For KOC & seller teams",
-    "ctaTrust": "iOS & Android · Google / TikTok / Apple / Email OTP",
-    "ctaSocialProof": "Built for KOCs, sellers, and TikTok Shop teams",
-    "audienceKoc": "KOCs & sales creators",
-    "audienceSeller": "Sellers & short-form teams",
+    "ctaSecondary": "How it works",
+    "ctaBatch": "Few sources → Hundreds of clips",
+    "ctaBrand": "For brands",
+    "ctaTrust": "iOS & Android · All on your phone",
+    "ctaSocialProof": "No shooting or editing skills needed · Just follow along",
+    "audienceKoc": "KOCs & Sales creators",
+    "audienceSeller": "TikTok Shop sellers",
     "logoAlt": "Five Cut Pro icon",
-    "pillRetention": "Missing a shot = rebuilding the cut",
-    "pillCta": "One recipe — many videos",
-    "pillSpeed": "Merge on device, share to TikTok",
-    "pillBatch": "KOC market — preview then use",
-    "pillAntiReup": "9:16 ready to post"
+    "pillRetention": "Just a few source shots",
+    "pillCta": "Hundreds of non-duplicate clips",
+    "pillSpeed": "Five Cut Pro edits for you",
+    "pillBatch": "Step-by-step shooting guides",
+    "pillAntiReup": "Simple, easy-to-follow content",
+    "hookShootingTitle": "Don't know how to shoot?",
+    "hookShootingDesc": "We guide you how to shoot!",
+    "hookShootingSub": "Every template comes with visual guide clips for every angle.",
+    "hookEditingTitle": "Don't know how to edit?",
+    "hookEditingDesc": "Five Cut Pro edits for you!",
+    "hookEditingSub": "Automatic pacing, smart merging on device, ready in 9:16 vertical.",
+    "hookSimpleTitle": "Nothing to worry about",
+    "hookSimpleDesc": "Just follow our steps!",
+    "hookSimpleSub": "A standardized workflow designed to eliminate guesswork.",
+    "hookContentTitle": "Simple content",
+    "hookContentDesc": "Easy to follow, high converting!",
+    "hookContentSub": "Battle-tested scripts built to maximize TikTok Shop conversions."
   },
   "metricsBar": [
     {
-      "value": "3 steps",
-      "label": "Template to posted video",
-      "desc": "Pick a template → shoot → export"
+      "value": "Few sources",
+      "label": "Just 3 - 5 raw shots",
+      "desc": "Shoot fast with zero hassle"
     },
     {
-      "value": "9:16",
-      "label": "Vertical, ready to post",
-      "desc": "Built for TikTok, Reels, Shorts"
+      "value": "100s of clips",
+      "label": "Zero duplication",
+      "desc": "Smart non-duplicate merging"
     },
     {
-      "value": "On-device",
-      "label": "Merged right on your phone",
-      "desc": "No desktop, no CapCut needed"
+      "value": "Auto edit",
+      "label": "Five Cut Pro edits for you",
+      "desc": "No CapCut knowledge needed"
     },
     {
       "value": "Free",
-      "label": "Download and start",
-      "desc": "iOS & Android"
+      "label": "Start right now",
+      "desc": "Available on iOS & Android"
     }
   ],
   "featuresSection": {
-    "label": "IN THE APP",
-    "title": "Enough to post daily — no fake feature list",
-    "subtitle": "Template market, shot recipes, shoot guides, on-device merge. We don’t claim magic 1→100 auto videos."
+    "label": "CORE VALUES",
+    "title": "Nothing to worry about — just follow us",
+    "subtitle": "Simple, easy-to-understand content. Create sales videos with just a few sources, publish hundreds of unique clips without duplicates."
   },
   "features": [
     {
       "id": "koc-market",
-      "title": "KOC market — preview before you use",
-      "description": "Stop guessing how to shoot. Open Explore, watch the guide + finished sample, then tap Use template.",
+      "title": "Create sales videos with just a few sources",
+      "description": "With just 3 to 5 basic shots, Five Cut Pro helps you publish hundreds of unique sales clips without running into duplicate content penalties.",
       "bullets": [
-        "Templates from KOC creators",
-        "Hot / New / Best-seller badges",
-        "Per-angle guide clips before attach"
-      ]
-    },
-    {
-      "id": "recipes",
-      "title": "Your recipes — reuse every day",
-      "description": "Save source order and durations once. Tomorrow attach new clips and export — no timeline rebuild.",
-      "bullets": [
-        "Angle chains by template (e.g. 1-2-3-1)",
-        "Per-segment duration in seconds",
-        "Default / favorite / make video"
+        "A few sources produce hundreds of videos",
+        "Unique variations avoiding reup flags",
+        "Save 90% of daily video creation time"
       ]
     },
     {
       "id": "shot-guide",
-      "title": "Shot guides — no missing angles",
-      "description": "Each segment has angle, notes, and a sample clip. Shoot the shot, attach it, done.",
+      "title": "Don't know how to shoot? We guide you!",
+      "description": "No prior experience or cinematic skills needed. Every template includes sample clips and angle checklists so you can shoot effortlessly.",
       "bullets": [
-        "Sample clip before you shoot",
-        "Attached vs required progress",
-        "Warns when a source is too short"
+        "Visual sample clips before shooting",
+        "Clear guide for wide, medium, close-up angles",
+        "Pick up your phone and start immediately"
       ]
     },
     {
       "id": "merge-export",
-      "title": "Merge on device → post TikTok",
-      "description": "Attach sources, tap Merge now. Processing stays on your phone — download or share to TikTok.",
+      "title": "Don't know how to edit? Five Cut Pro edits for you!",
+      "description": "Forget spending hours wrestling with CapCut timelines. Simply attach your clips, and Five Cut Pro automatically cuts and merges everything.",
       "bullets": [
-        "Prepare / merge / done progress",
-        "Exported list on device",
-        "Share each clip to TikTok"
+        "Auto-cuts based on sales conversion formula",
+        "Instant on-device processing on mobile",
+        "9:16 vertical exports ready for TikTok, Reels, Shorts"
+      ]
+    },
+    {
+      "id": "recipes",
+      "title": "Simple, easy-to-understand content",
+      "description": "No complex scripting required. All templates are optimized for real-world KOC sales conversion on TikTok Shop.",
+      "bullets": [
+        "High-converting battle-tested KOC scripts",
+        "Just follow the step-by-step recipe",
+        "Reuse formulas for various products"
       ]
     }
   ],
   "howItWorksSection": {
-    "label": "3 STEPS",
-    "title": "Pick template → Shoot → Export & post",
-    "subtitle": "The real iOS & Android flow — no CapCut timeline required.",
+    "label": "3 SIMPLE STEPS",
+    "title": "Nothing to worry about — just follow us",
+    "subtitle": "Simple and clear. 3 steps to hundreds of non-duplicate sales videos.",
     "steps": [
       {
         "num": "01",
-        "title": "Pick a working template",
-        "desc": "Open Explore or your saved recipes. Watch the guide and finished sample first.",
-        "badge": "Explore"
+        "title": "Pick a KOC video template",
+        "desc": "Browse curated sales templates for KOCs. Preview script notes and finished video samples.",
+        "badge": "Select"
       },
       {
         "num": "02",
-        "title": "Shoot every shot, then attach",
-        "desc": "Follow the template’s shot checklist. Attach each clip until every segment is filled.",
-        "badge": "Attach"
+        "title": "Shoot with step-by-step guides",
+        "desc": "Don't know how to shoot? We guide you! Watch sample clips and shoot following the checklist.",
+        "badge": "Shoot"
       },
       {
         "num": "03",
-        "title": "Merge — then post",
-        "desc": "Tap Merge now, open Exported videos, save to gallery or share to TikTok.",
-        "badge": "Export"
+        "title": "Five Cut Pro edits for you",
+        "desc": "The app automatically merges sources into hundreds of unique sales clips ready for TikTok.",
+        "badge": "Edit & Export"
       }
     ],
     "stepLabel": "Step"
   },
   "comparisonSection": {
-    "badge": "REAL PAIN",
-    "title": "Where are you losing time?",
-    "subtitle": "Five Cut Pro isn’t a freeform editor — it solves one job: ship sales videos daily without getting stuck in edit hell.",
+    "badge": "REALITY CHECK",
+    "title": "Old manual way vs Five Cut Pro",
+    "subtitle": "Stop wasting nights on manual editing. The optimal sales video workflow for KOCs.",
     "oldWay": {
-      "badge": "Old way",
-      "title": "Manual edit every post",
-      "subtitle": "Slow, uneven, exhausting",
+      "badge": "Old manual way",
+      "title": "Can't shoot, can't edit",
+      "subtitle": "Time consuming, exhausting, hard to scale",
       "points": [
-        "Rebuild every cut from scratch — nights disappear",
-        "Miss a required angle on the checklist → remake the whole clip",
-        "No shot checklist → sales pacing falls apart",
-        "Posting slips because editing blocks TikTok Shop deadlines"
+        "Don't know what angles to shoot, realize missing shots later",
+        "Spend hours manually trimming and stitching in CapCut",
+        "Overly complex scripts that fail to hold viewer attention",
+        "Only 1 video made a day, risk duplicate or low reach flags"
       ]
     },
     "newWay": {
       "badge": "With Five Cut Pro",
-      "title": "Follow the template — app merges",
-      "subtitle": "Shoot right, export fast",
+      "title": "Video templates for KOCs",
+      "subtitle": "Faster, easier, reliable daily sales",
       "points": [
-        "Templates with shoot guides built in",
-        "Clear shot checklist — stop guessing angles",
-        "Attach → merge on device → share to TikTok",
-        "Reuse one recipe across products the same day"
+        "Don't know how to shoot? We guide you angle by angle!",
+        "Don't know how to edit? Five Cut Pro edits for you automatically!",
+        "Nothing to worry about, just follow us — simple content",
+        "A few sources → Hundreds of non-duplicate sales videos"
       ]
     }
   },
   "faqSection": {
     "label": "FAQ",
-    "title": "Quick answers",
-    "subtitle": "Short — only what the app actually does.",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Quick answers about Five Cut Pro and KOC video templates.",
     "items": [
       {
         "id": "faq-1",
-        "question": "How is Five Cut Pro different from CapCut?",
-        "answer": "CapCut is freeform editing. Five Cut Pro is a KOC template workflow: watch how to shoot, attach shots by recipe, merge on device, then post. Built for daily sales output, not timeline tinkering."
+        "question": "I have never shot video before, can I use this?",
+        "answer": "Absolutely! Don't know how to shoot? We guide you how to shoot! Every KOC template includes sample clips showing each camera angle and action. Just watch the sample and record."
       },
       {
         "id": "faq-2",
-        "question": "I’m new to shooting — can I use it?",
-        "answer": "Yes. Every template includes guides and sample clips per angle. Shoot the shot, attach it — the app handles the merge."
+        "question": "I don't know how to edit, how does the app help?",
+        "answer": "Five Cut Pro edits for you 100%! You don't need any CapCut or editing skills. Simply attach your recorded shots to the template, and the app cuts, paces, and merges the final video right on your device."
       },
       {
         "id": "faq-3",
-        "question": "How do I post to TikTok after export?",
-        "answer": "Open Exported videos after merge: save to gallery or share to TikTok (sign in with TikTok in-app for faster share)."
+        "question": "How can a few source videos produce hundreds of non-duplicate clips?",
+        "answer": "Five Cut Pro uses an intelligent combinatorial engine. From 3-5 raw source angles, it crafts hundreds of unique structural variations, protecting your account from TikTok duplicate content flags."
       },
       {
         "id": "faq-4",
-        "question": "Which platforms?",
-        "answer": "iOS and Android. Sign in with Google, TikTok, Apple, or email OTP."
+        "question": "Is the template content easy to understand?",
+        "answer": "Very simple and easy! You don't need to do anything complex, just follow our guide. Every template is distilled from top-converting KOC short-form sales videos."
       },
       {
         "id": "faq-5",
-        "question": "Does Five Cut Pro cost anything?",
-        "answer": "Downloading the app and creating an account is free on the App Store and Google Play. Once signed in you can use the template market, recipes and the merge feature."
-      },
-      {
-        "id": "faq-6",
-        "question": "Are my clips uploaded anywhere?",
-        "answer": "Merging runs on your device and finished videos are saved under Exported videos on your phone. See the Privacy Policy for details."
-      },
-      {
-        "id": "faq-7",
-        "question": "How do creators get brand campaigns?",
-        "answer": "Sign in with TikTok to be matched to campaigns in your category, watch for in-app events and challenges, or join the Zalo · Telegram · WhatsApp groups for early briefs."
-      },
-      {
-        "id": "faq-8",
-        "question": "We're a brand — how do we start?",
-        "answer": "Fill in the form in the For brands section or email partner@fivecutpro.com. The team will walk through your product, the video templates and creator matching."
+        "question": "Is the app free and which platforms are supported?",
+        "answer": "Five Cut Pro is officially available on iOS (App Store) for iPhone and iPad. The Android version is currently in final testing and coming soon to Google Play."
       }
     ]
   },
   "downloadSection": {
-    "label": "Get the app",
-    "title": "Install Five Cut Pro on your phone",
-    "subtitle": "Version {version}. Scan the QR or open the store — start from the KOC market today.",
-    "mobileLabel": "iOS & Android",
-    "ctaStore": "Open store",
+    "label": "GET STARTED",
+    "title": "Download Five Cut Pro — KOC Video Templates",
+    "subtitle": "Create sales videos with just a few sources · Publish hundreds of unique clips with zero duplication.",
+    "mobileLabel": "iOS (Available now) · Android (Coming soon)",
+    "ctaStore": "Download on App Store",
     "comingSoon": "Coming soon",
-    "qrLabel": "Scan",
-    "qrTitle": "Scan to install",
-    "qrSubtitle": "Open your camera → App Store or Google Play."
+    "qrLabel": "APP QR CODE",
+    "qrTitle": "Download Five Cut Pro on Mobile",
+    "qrSubtitle": "Open your iPhone camera to scan and download directly from the App Store. Android coming soon."
   },
   "communitySection": {
     "label": "Support groups",
@@ -208,12 +211,24 @@
   },
   "downloadCards": {
     "ios": {
-      "title": "iOS",
-      "subtitle": "iPhone & iPad"
+      "title": "Five Cut Pro for iOS",
+      "subtitle": "iPhone & iPad · iOS 15.0+ · 100% Free",
+      "badge": "Officially Released",
+      "cta": "Download on App Store",
+      "scanHint": "Open iPhone / iPad Camera to scan and download",
+      "perk1": "100% Free",
+      "perk2": "No intrusive ads",
+      "perk3": "Instant 9:16 Video Merge"
     },
     "android": {
-      "title": "Android",
-      "subtitle": "Phones & tablets"
+      "title": "Android Version",
+      "subtitle": "Android phones & tablets",
+      "badge": "Coming Soon",
+      "status": "Final Beta testing in progress",
+      "desc": "The Android version is in final polish and testing before official release on Google Play Store.",
+      "cta": "Google Play · Coming Soon",
+      "communityHint": "Want early access or release notifications?",
+      "communityCta": "Join KOC Support Group"
     }
   },
   "installSection": {

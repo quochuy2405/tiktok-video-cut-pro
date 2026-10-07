@@ -20,7 +20,7 @@ export const DOWNLOAD_RELEASE_TAG = "v0.1.5";
 const ARTIFACT_VERSION = "0.1.5";
 
 /** Marketing version shown on the site (hero, copy); can differ from ARTIFACT_VERSION / DOWNLOAD_RELEASE_TAG. */
-export const DISPLAY_APP_VERSION = "1.1.3";
+export const DISPLAY_APP_VERSION = "1.0.1";
 
 /** Default store links — same as Five Cut Pro mobile (`AppConstants`). */
 export const DEFAULT_IOS_STORE_URL =
@@ -155,6 +155,7 @@ export const STORE_QR = {
     qrSrc: "/qr-ios.png",
     label: "iOS",
     storeLabel: "App Store",
+    isComingSoon: false,
   },
   android: {
     id: "android" as const,
@@ -162,5 +163,6 @@ export const STORE_QR = {
     qrSrc: "/qr-android.png",
     label: "Android",
     storeLabel: "Google Play",
+    isComingSoon: true,
   },
 } as const;

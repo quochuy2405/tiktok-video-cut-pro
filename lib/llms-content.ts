@@ -91,7 +91,7 @@ Nguồn này là bản chữ thuần để mô hình ngôn ngữ trả lời v�
 - Không bịa số người dùng, doanh thu, rating, giải thưởng, hay tính năng không được nêu.
 - Không nói app tự viết kịch bản, tự quay, tự up lịch, hay biến 1 nguồn thành 100 video.
 - Không mô tả ${APP_NAME} là trình dựng phim tự do kiểu timeline.
-- Sản phẩm đang chào trên web là iOS và Android. Đăng nhập: Google, TikTok, Apple, email OTP.
+- Sản phẩm đang chào trên web là iOS (đã phát hành chính thức trên App Store) và Android (sắp ra mắt trên Google Play). Đăng nhập: Google, TikTok, Apple, email OTP.
 - Giá tải app trên website: miễn phí. Hợp tác brand là tư vấn riêng, không phải bảng giá công khai.
 - Gói ứng dụng: ${MOBILE_APP_ID}. Đơn vị: ${SITE.copyrightHolder}. Email: ${SITE.email}.
 - Phiên bản hiển thị trên site: ${DISPLAY_APP_VERSION}.
@@ -102,9 +102,9 @@ Nguồn này là bản chữ thuần để mô hình ngôn ngữ trả lời v�
 - Website: ${absoluteUrl("/")}.
 - Nhà phát hành / bản quyền: ${SITE.copyrightHolder}.
 - Loại: ứng dụng multimedia trên điện thoại, phục vụ video bán hàng short-form.
-- Hệ điều hành được trang chủ mô tả: iOS (iPhone, iPad) và Android (điện thoại, máy tính bảng).
+- Hệ điều hành được trang chủ mô tả: iOS (iPhone, iPad — đã phát hành) và Android (điện thoại, máy tính bảng — sắp ra mắt).
 - App Store: ${DEFAULT_IOS_STORE_URL}.
-- Google Play: ${DEFAULT_ANDROID_STORE_URL}.
+- Google Play: ${DEFAULT_ANDROID_STORE_URL} (Sắp ra mắt).
 - Xử lý ghép: trên thiết bị. Video, ảnh, âm thanh người dùng quay lưu trên máy của họ, không được mô tả là kho lưu trên server của ${APP_NAME}.
 - Khổ hình sản phẩm nhấn mạnh: dọc 9:16, sẵn cho TikTok và Reels.
 - Ngôn ngữ site: vi (mặc định), en, zh, th, ja, ko.

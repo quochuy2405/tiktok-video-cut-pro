@@ -28,19 +28,16 @@ type NavItem = { href: string; labelKey: "features" | "howItWorks" | "campaigns"
 const GUIDES_ITEM: NavItem = { href: "/guides", labelKey: "guides" };
 
 const DESKTOP_NAV_BASE: NavItem[] = [
-  { href: "/#features", labelKey: "features" },
-  { href: "/#how-it-works", labelKey: "howItWorks" },
-  { href: "/#campaigns", labelKey: "campaigns" },
-  { href: "/brands", labelKey: "sponsors" },
+  { href: "/#koc", labelKey: "features" },
+  { href: "/#download", labelKey: "downloadApp" },
+  { href: "/#sponsors", labelKey: "sponsors" },
+  { href: "/#faq", labelKey: "faq" },
 ];
 
 const MOBILE_NAV_BASE: NavItem[] = [
-  { href: "/#features", labelKey: "features" },
-  { href: "/#how-it-works", labelKey: "howItWorks" },
-  { href: "/#campaigns", labelKey: "campaigns" },
-  { href: "/brands", labelKey: "sponsors" },
-  { href: "/vs-capcut", labelKey: "compare" },
+  { href: "/#koc", labelKey: "features" },
   { href: "/#download", labelKey: "downloadApp" },
+  { href: "/#sponsors", labelKey: "sponsors" },
   { href: "/#faq", labelKey: "faq" },
 ];
 

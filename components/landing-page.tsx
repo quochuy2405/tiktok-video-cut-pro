@@ -214,7 +214,7 @@ export function LandingPage({
               </h3>
             </SpotlightCard>
 
-            {/* 3. Không cần làm gì cả hãy làm theo chúng tôi */}
+            {/* 3. Không cần suy nghĩ gì cả hãy làm theo chúng tôi */}
             <SpotlightCard className="glass-panel group relative flex items-center gap-4 rounded-2xl border border-[#B9CFC3] p-6 text-left transition-all hover:border-brand/50 hover:glow-brand-sm">
               <div className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30">
                 <Zap className="size-7" />

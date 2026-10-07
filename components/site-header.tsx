@@ -66,7 +66,7 @@ function NavLinks({
         className,
       )}
     >
-      {items.map((item) => {
+      {items.map((item, idx) => {
         const isLegal =
           item.href === "/terms-of-service" ||
           item.href === "/privacy-policy";
@@ -74,7 +74,7 @@ function NavLinks({
         const active = isLegal && pathname === item.href;
 
         return (
-          <li key={item.href} className="shrink-0">
+          <li key={`${item.href}-${idx}`} className="shrink-0">
             <Link
               href={item.href}
               onClick={() => {
@@ -109,9 +109,7 @@ export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const t = useTranslations("Nav");
   const locale = useLocale();
-  const desktopNav = navItems(DESKTOP_NAV_BASE, locale, [
-    { href: "/#faq", labelKey: "faq" },
-  ]);
+  const desktopNav = navItems(DESKTOP_NAV_BASE, locale);
   const mobileNav = navItems(MOBILE_NAV_BASE, locale);
 
   return (

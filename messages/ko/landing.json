@@ -15,211 +15,220 @@
     "ctaSecondary": "단계 보기",
     "ctaBatch": "적은 소스 → 수백 개 클립",
     "ctaBrand": "브랜드 파트너십",
-    "ctaTrust": "iOS & Android · Google / TikTok / Apple / 이메일 OTP",
-    "ctaSocialProof": "KOC, 판매자, TikTok Shop 팀을 위해 설계",
-    "audienceKoc": "KOC & 판매 크리에이터",
-    "audienceSeller": "판매자 & 숏폼 팀",
+    "ctaTrust": "iOS (출시 완료) · Android (출시 예정) · 스마트폰으로 완결",
+    "ctaSocialProof": "촬영이나 편집 기술 필요 없음 · 따라만 하면 영상 완성",
+    "audienceKoc": "KOC & 커머스 크리에이터",
+    "audienceSeller": "TikTok Shop 판매자",
     "logoAlt": "Five Cut Pro 아이콘",
-    "pillRetention": "샷 하나 빠지면 컷 다시 만들기",
-    "pillCta": "레시피 하나 — 영상 여러 개",
-    "pillSpeed": "기기에서 합치고 TikTok 공유",
-    "pillBatch": "KOC 마켓 — 미리보고 사용",
-    "pillAntiReup": "9:16 업로드 준비 완료"
+    "pillRetention": "단 몇 개의 소스 촬영만으로",
+    "pillCta": "중복 없는 수백 개의 클립",
+    "pillSpeed": "Five Cut Pro가 자동 편집",
+    "pillBatch": "앵글별 단계적 촬영 가이드",
+    "pillAntiReup": "간단하고 이해하기 쉬운 콘텐츠",
+    "hookShootingTitle": "촬영이 어려우신가요?",
+    "hookShootingDesc": "저희가 촬영법을 안내해 드립니다!",
+    "hookShootingSub": "모든 템플릿에 각 앵글별 직관적인 샘플 영상이 포함되어 있습니다. 그대로 따라 찍으세요!",
+    "hookEditingTitle": "편집을 못하시나요?",
+    "hookEditingDesc": "Five Cut Pro가 편집해 드립니다!",
+    "hookEditingSub": "기기 내 스마트 자동 컷 편집, 즉시 게시 가능한 9:16 세로형 영상 완성.",
+    "hookSimpleTitle": "복잡하게 생각할 필요 없습니다",
+    "hookSimpleDesc": "저희가 안내하는 대로 따라오세요!",
+    "hookSimpleSub": "헤매지 않고 바로 제작할 수 있도록 최적화된 표준화 워크플로.",
+    "hookContentTitle": "단순 명료한 콘텐츠",
+    "hookContentDesc": "이해하기 쉽고, 따라 하기 쉽고, 판매로 직결!",
+    "hookContentSub": "TikTok Shop 구매 전환율을 극대화하는 실전 KOC 대본 템플릿."
   },
   "metricsBar": [
     {
-      "value": "3단계",
-      "label": "템플릿에서 게시까지",
-      "desc": "템플릿 선택 → 촬영 → 내보내기"
+      "value": "소량의 소스",
+      "label": "3~5개 샷이면 충분",
+      "desc": "빠르고 간편한 촬영"
     },
     {
-      "value": "9:16",
-      "label": "세로형, 바로 게시",
-      "desc": "TikTok · Reels · Shorts 규격"
+      "value": "수백 개 영상",
+      "label": "중복 걱정 없는 클립",
+      "desc": "스마트 조합 알고리즘"
     },
     {
-      "value": "기기 내",
-      "label": "휴대폰에서 바로 합치기",
-      "desc": "PC도 CapCut도 필요 없음"
+      "value": "자동 편집",
+      "label": "Five Cut Pro가 편집 대행",
+      "desc": "CapCut 지식 불필요"
     },
     {
       "value": "무료",
-      "label": "받아서 바로 시작",
-      "desc": "iOS & Android"
+      "label": "지금 바로 다운로드",
+      "desc": "iOS 지원 · Android 출시 예정"
     }
   ],
   "featuresSection": {
-    "label": "앱 기능",
-    "title": "매일 올리기에 충분 — 허위 기능 목록 없음",
-    "subtitle": "템플릿 마켓, 샷 레시피, 촬영 가이드, 기기 내 합치기. 1→100 마법 자동 영상은 주장하지 않습니다."
+    "label": "핵심 가치",
+    "title": "아무것도 고민할 필요 없습니다 — 저희를 따라오세요",
+    "subtitle": "간단하고 이해하기 쉬운 콘텐츠. 적은 소스만으로 판매 영상을 제작하고, 중복 없이 수백 개의 클립을 발행하세요."
   },
   "features": [
     {
       "id": "koc-market",
-      "title": "KOC 마켓 — 사용 전 미리보기",
-      "description": "어떻게 찍을지 감으로 추측하지 마세요. Explore에서 가이드+완성 샘플을 본 뒤 템플릿 사용을 탭하세요.",
+      "title": "단 몇 개의 소스만으로 판매 영상 제작",
+      "description": "기본 촬영 3~5개만으로 Five Cut Pro가 플랫폼 중복 제재 없이 수백 개의 고유한 판매 클립을 만들어냅니다.",
       "bullets": [
-        "KOC 크리에이터 템플릿",
-        "인기 / 신규 / 베스트셀러 배지",
-        "첨부 전 각도별 가이드 클립"
-      ]
-    },
-    {
-      "id": "recipes",
-      "title": "내 레시피 — 매일 재사용",
-      "description": "소스 순서와 길이를 한 번 저장. 다음날 새 클립만 첨부하고 내보내기 — 타임라인 재구성 불필요.",
-      "bullets": [
-        "템플릿별 각도 체인 (예: 1-2-3-1)",
-        "구간별 초 단위 길이",
-        "기본 / 즐겨찾기 / 영상 만들기"
+        "소량의 소스로 수백 개의 판매 영상 생성",
+        "스마트 변형 조합으로 중복 판정 방지",
+        "매일 영상 제작 시간 90% 절약"
       ]
     },
     {
       "id": "shot-guide",
-      "title": "샷 가이드 — 각도 누락 없음",
-      "description": "각 구간에 각도, 메모, 샘플 클립이 있습니다. 찍고 첨부하면 끝.",
+      "title": "촬영을 모르시나요? 저희가 가이드해 드립니다!",
+      "description": "촬영 경험이나 전문 카메라 워크는 전혀 필요 없습니다. 모든 템플릿에 샘플 영상과 체크리스트가 준비되어 있습니다.",
       "bullets": [
-        "촬영 전 샘플 클립",
-        "첨부 vs 필요 진행률",
-        "소스가 너무 짧으면 경고"
+        "촬영 전 직관적인 샘플 영상 확인",
+        "풀샷, 미디엄샷, 클로즈업 등 앵글별 상세 안내",
+        "휴대폰만 들면 누구나 즉시 촬영 가능"
       ]
     },
     {
       "id": "merge-export",
-      "title": "기기에서 합치기 → TikTok 게시",
-      "description": "소스 첨부 후 지금 합치기. 처리는 휴대폰에서 — 다운로드 또는 TikTok 공유.",
+      "title": "편집을 못하시나요? Five Cut Pro가 도와드립니다!",
+      "description": "CapCut 타임라인과 씨름하던 스트레스에서 벗어나세요. 소스만 템플릿에 넣으면 기기 내에서 초고속으로 자동 편집 및 내보내기를 완료합니다.",
       "bullets": [
-        "준비 / 합치기 / 완료 진행",
-        "기기 내 내보낸 목록",
-        "각 클립 TikTok 공유"
+        "판매 전환 공식 기반 자동 컷 편집",
+        "모바일 기기 내 즉각적인 로컬 렌더링",
+        "TikTok, Reels, Shorts 규격에 맞춘 9:16 세로형 영상 출력"
+      ]
+    },
+    {
+      "id": "recipes",
+      "title": "간단하고 이해하기 쉬운 콘텐츠",
+      "description": "복잡한 기획이 필요 없습니다. 모든 템플릿은 TikTok Shop 실전 판매 전환에 맞춰 최적화되어 있습니다.",
+      "bullets": [
+        "검증된 고전환 KOC 대본 레시피",
+        "안내된 단계별 절차만 그대로 수행",
+        "하나의 공식을 다양한 상품에 재사용 가능"
       ]
     }
   ],
   "howItWorksSection": {
-    "label": "3단계",
-    "title": "템플릿 선택 → 촬영 → 내보내기 & 게시",
-    "subtitle": "실제 iOS & Android 흐름 — CapCut 타임라인 불필요.",
+    "label": "간편한 3단계",
+    "title": "아무것도 고민할 필요 없습니다 — 저희를 따라오세요",
+    "subtitle": "단순하고 명확합니다. 단 3단계로 중복 없는 수백 개의 판매 영상을 완성하세요.",
     "steps": [
       {
         "num": "01",
-        "title": "검증된 템플릿 선택",
-        "desc": "Explore 또는 저장한 레시피를 엽니다. 먼저 가이드와 완성 샘플을 확인하세요.",
-        "badge": "Explore"
+        "title": "KOC 판매 영상 템플릿 선택",
+        "desc": "엄선된 KOC 맞춤형 판매 템플릿 탐색. 대본 노트와 완성 샘플 영상을 미리 확인.",
+        "badge": "템플릿 선택"
       },
       {
         "num": "02",
-        "title": "모든 샷 촬영 후 첨부",
-        "desc": "템플릿 샷 체크리스트를 따릅니다. 모든 구간이 채워질 때까지 클립을 첨부하세요.",
-        "badge": "첨부"
+        "title": "가이드에 따라 촬영",
+        "desc": "촬영을 모르시나요? 저희가 알려드립니다! 샘플을 보며 체크리스트대로 촬영.",
+        "badge": "샷 촬영"
       },
       {
         "num": "03",
-        "title": "합치고 게시",
-        "desc": "지금 합치기를 탭한 뒤 내보낸 영상에서 갤러리 저장 또는 TikTok 공유.",
-        "badge": "내보내기"
+        "title": "Five Cut Pro가 자동 편집",
+        "desc": "앱이 소량의 소스를 조합하여 TikTok에 바로 올릴 수 있는 수백 개의 고유 영상으로 완성.",
+        "badge": "편집 및 내보내기"
       }
     ],
     "stepLabel": "단계"
   },
   "comparisonSection": {
-    "badge": "실제 고민",
-    "title": "어디서 시간을 잃고 있나요?",
-    "subtitle": "Five Cut Pro는 자유 편집기가 아닙니다. 한 가지 일만 해결합니다: 편집 지옥 없이 매일 판매 영상을 내는 것.",
+    "badge": "실제 비교",
+    "title": "기존 수동 제작 방식 vs Five Cut Pro",
+    "subtitle": "매일 밤 수동 편집으로 시간을 낭비하지 마세요. KOC를 위한 가장 효율적인 판매 영상 워크플로.",
     "oldWay": {
-      "badge": "기존 방식",
-      "title": "게시마다 수동 편집",
-      "subtitle": "느리고, 들쭉날쭉하고, 지칩니다",
+      "badge": "기존 수동 방식",
+      "title": "촬영도 편집도 막막함",
+      "subtitle": "시간 소모, 피로 누적, 낮은 판매 성과",
       "points": [
-        "매번 처음부터 컷 재구성 — 밤이 사라짐",
-        "체크리스트 각도 하나 빠지면 전체 다시 제작",
-        "샷 체크리스트 없음 → 판매 리듬 붕괴",
-        "편집이 TikTok Shop 마감을 막아 업로드 지연"
+        "어떤 앵글을 찍을지 몰라 편집할 때 샷 부족 발견",
+        "CapCut에서 매일 밤 수작업으로 자르고 붙이기 반복",
+        "대본이 장황하고 어려워 시청자 이탈 발생",
+        "하루에 겨우 1개 제작, 중복 제재 및 노출 저하 위험"
       ]
     },
     "newWay": {
-      "badge": "Five Cut Pro와 함께",
-      "title": "템플릿 따라하기 — 앱이 합치기",
-      "subtitle": "정확히 찍고, 빠르게 내보내기",
+      "badge": "Five Cut Pro 사용 시",
+      "title": "KOC 전용 영상 템플릿",
+      "subtitle": "더 편하게, 더 빠르게, 꾸준한 매출 창출",
       "points": [
-        "촬영 가이드가 포함된 템플릿",
-        "명확한 샷 체크리스트 — 각도 추측 중단",
-        "첨부 → 기기에서 합치기 → TikTok 공유",
-        "같은 날 여러 상품에 레시피 재사용"
+        "촬영을 모르시나요? 앵글별 촬영법을 하나하나 가이드!",
+        "편집을 못하시나요? Five Cut Pro가 전 과정을 전자동 편집!",
+        "복잡하게 생각할 필요 없이 따라오세요 — 단순 명료한 콘텐츠",
+        "단 몇 개의 소스로 → 중복 없는 수백 개의 판매 클립 제작"
       ]
     }
   },
   "faqSection": {
-    "label": "FAQ",
-    "title": "빠른 답변",
-    "subtitle": "짧게 — 앱이 실제로 하는 일만.",
+    "label": "자주 묻는 질문",
+    "title": "자주 묻는 질문",
+    "subtitle": "Five Cut Pro 및 KOC 영상 템플릿에 대한 핵심 안내.",
     "items": [
       {
         "id": "faq-1",
-        "question": "Five Cut Pro는 CapCut과 어떻게 다른가요?",
-        "answer": "CapCut은 자유 편집입니다. Five Cut Pro는 KOC 템플릿 워크플로입니다: 촬영법 확인, 레시피대로 샷 첨부, 기기에서 합치기, 게시. 타임라인 만지작이 아니라 매일 판매 출력용."
+        "question": "영상을 한 번도 안 찍어봤는데 할 수 있나요?",
+        "answer": "물론입니다! 촬영을 모르시나요? 저희가 안내해 드립니다! 모든 KOC 템플릿에는 앵글과 동작별 샘플 영상이 들어있어, 화면을 보고 스마트폰으로 그대로 따라 찍으시면 됩니다."
       },
       {
         "id": "faq-2",
-        "question": "촬영이 처음인데 쓸 수 있나요?",
-        "answer": "네. 모든 템플릿에 각도별 가이드와 샘플 클립이 있습니다. 찍고 첨부하면 앱이 합칩니다."
+        "question": "편집을 전혀 못 하는데 어떻게 도와주나요?",
+        "answer": "Five Cut Pro가 100% 편집해 드립니다! CapCut이나 전문 편집기를 다룰 줄 몰라도 됩니다. 촬영한 클립을 템플릿에 넣기만 하면 휴대폰에서 알아서 박자에 맞춰 자르고 붙여 영상을 완성합니다."
       },
       {
         "id": "faq-3",
-        "question": "내보내기 후 TikTok에 어떻게 올리나요?",
-        "answer": "합친 뒤 내보낸 영상에서: 갤러리에 저장하거나 TikTok으로 공유(앱에서 TikTok 로그인 시 더 빠름)."
+        "question": "어떻게 적은 소스로 중복 없는 영상 수백 개를 만드나요?",
+        "answer": "Five Cut Pro는 스마트 조합 알고리즘을 사용합니다. 3~5개의 원본 앵글을 기반으로 다양한 구조적 변형을 만들어 TikTok의 중복 콘텐츠 필터링을 방지합니다."
       },
       {
         "id": "faq-4",
-        "question": "지원 플랫폼은?",
-        "answer": "iOS와 Android. Google, TikTok, Apple 또는 이메일 OTP로 로그인."
+        "question": "템플릿 콘텐츠가 이해하기 쉬운가요?",
+        "answer": "매우 간단하고 직관적입니다! 아무것도 고민할 필요 없이 저희를 따라오시면 됩니다. 모든 템플릿은 TikTok Shop에서 실제 구매 전환이 가장 높은 영상 공식으로 만들어졌습니다."
       },
       {
         "id": "faq-5",
-        "question": "Five Cut Pro는 유료인가요?",
-        "answer": "App Store와 Google Play에서 앱 다운로드와 계정 생성은 무료입니다. 로그인 후 템플릿 마켓, 레시피, 합치기 기능을 사용할 수 있습니다."
-      },
-      {
-        "id": "faq-6",
-        "question": "제 촬영본이 어딘가 업로드되나요?",
-        "answer": "합치기는 기기에서 처리되고 완성 영상은 휴대폰의 내보낸 영상에 저장됩니다. 자세한 내용은 개인정보처리방침을 참고하세요."
-      },
-      {
-        "id": "faq-7",
-        "question": "KOC는 브랜드 캠페인을 어떻게 받나요?",
-        "answer": "TikTok으로 로그인해 카테고리에 맞는 캠페인을 제안받고, 앱 내 이벤트·챌린지를 확인하거나 Zalo · Telegram · WhatsApp 그룹에서 먼저 정보를 받으세요."
-      },
-      {
-        "id": "faq-8",
-        "question": "브랜드인데 어떻게 시작하나요?",
-        "answer": "브랜드 섹션의 양식을 작성하시거나 partner@fivecutpro.com 으로 메일 주세요. 제품, 영상 템플릿, KOC 매칭을 함께 논의합니다."
+        "question": "앱은 무료인가요? 어떤 기기를 지원하나요?",
+        "answer": "Five Cut Pro는 현재 iOS(App Store)에 정식 출시되어 iPhone 및 iPad에서 이용 가능합니다. Android 버전은 최종 테스트 단계에 있으며 곧 Google Play에 출시됩니다."
       }
     ]
   },
   "downloadSection": {
-    "label": "앱 받기",
-    "title": "휴대폰에 Five Cut Pro 설치",
-    "subtitle": "버전 {version}. QR을 스캔하거나 스토어를 열어 오늘 KOC 마켓부터 시작하세요.",
-    "mobileLabel": "iOS & Android",
-    "ctaStore": "스토어 열기",
+    "label": "지금 시작하기",
+    "title": "Five Cut Pro 다운로드 — KOC 영상 템플릿",
+    "subtitle": "단 몇 개의 소스만으로 판매 영상 제작 · 중복 없는 수백 개의 클립 발행.",
+    "mobileLabel": "iOS (출시 완료) · Android (출시 예정)",
+    "ctaStore": "App Store에서 무료 다운로드",
     "comingSoon": "출시 예정",
-    "qrLabel": "스캔",
-    "qrTitle": "스캔하여 설치",
-    "qrSubtitle": "카메라로 스캔 → App Store 또는 Google Play."
+    "qrLabel": "앱 다운로드 QR",
+    "qrTitle": "스마트폰에서 Five Cut Pro 다운로드",
+    "qrSubtitle": "iPhone / iPad 카메라로 QR을 스캔하여 App Store에서 바로 다운로드하세요. Android 버전은 곧 출시됩니다."
   },
   "communitySection": {
     "label": "지원 그룹",
     "title": "지원 그룹",
-    "subtitle": "촬영, 템플릿, 지원 질문은 그룹에서 하세요.",
-    "join": "참여"
+    "subtitle": "그룹에 참여하여 촬영법 질문, 신규 템플릿 수령 및 지원을 받으세요.",
+    "join": "그룹 참여"
   },
   "downloadCards": {
     "ios": {
-      "title": "iOS",
-      "subtitle": "iPhone & iPad"
+      "title": "Five Cut Pro iOS 버전",
+      "subtitle": "iPhone & iPad · iOS 15.0+ · 100% 무료",
+      "badge": "정식 출시 · 즉시 다운로드",
+      "cta": "App Store에서 다운로드",
+      "scanHint": "iPhone / iPad 카메라로 스캔하여 다운로드",
+      "perk1": "100% 무료",
+      "perk2": "광고 없음",
+      "perk3": "초고속 9:16 영상 합성"
     },
     "android": {
-      "title": "Android",
-      "subtitle": "스마트폰 & 태블릿"
+      "title": "Android 버전",
+      "subtitle": "Android 스마트폰 & 태블릿",
+      "badge": "출시 예정 · Coming Soon",
+      "status": "최종 베타 테스트 진행 중",
+      "desc": "Android 버전은 Google Play Store 정식 출시를 앞두고 최종 점검 및 테스트를 진행 중입니다.",
+      "cta": "Google Play · 출시 예정",
+      "communityHint": "베타 버전 사전 체험이나 출시 알림을 받고 싶으신가요?",
+      "communityCta": "KOC 지원 그룹 참여"
     }
   },
   "installSection": {

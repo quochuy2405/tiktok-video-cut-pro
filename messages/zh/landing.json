@@ -15,211 +15,220 @@
     "ctaSecondary": "查看流程",
     "ctaBatch": "少量素材 → 数百条视频",
     "ctaBrand": "面向品牌",
-    "ctaTrust": "iOS & Android · Google / TikTok / Apple / 邮箱 OTP",
-    "ctaSocialProof": "为 KOC、商家与 TikTok Shop 团队打造",
+    "ctaTrust": "iOS（已上线）· Android（即将推出）· 全在手机上完成",
+    "ctaSocialProof": "无需拍摄与剪辑经验 · 跟着做就能出片",
     "audienceKoc": "KOC 与带货创作者",
-    "audienceSeller": "商家与短视频团队",
+    "audienceSeller": "TikTok Shop 商家",
     "logoAlt": "Five Cut Pro 图标",
-    "pillRetention": "少一个镜头 = 整段重剪",
-    "pillCta": "一份配方 — 多条视频",
-    "pillSpeed": "本机合成，直发 TikTok",
-    "pillBatch": "KOC 模板市场 — 先看再用",
-    "pillAntiReup": "竖屏 9:16 可直接发"
+    "pillRetention": "仅需少量拍摄素材",
+    "pillCta": "数百条不重复视频",
+    "pillSpeed": "Five Cut Pro 帮你剪辑",
+    "pillBatch": "分镜头详细拍摄指引",
+    "pillAntiReup": "脚本简单易懂",
+    "hookShootingTitle": "不会拍？",
+    "hookShootingDesc": "我们教你拍！",
+    "hookShootingSub": "每个模板都包含各个镜头角度的直观视频示范。跟着拍就行！",
+    "hookEditingTitle": "不会剪？",
+    "hookEditingDesc": "Five Cut Pro 帮你剪！",
+    "hookEditingSub": "手机本地智能卡点剪辑，一键导出 9:16 竖屏视频。",
+    "hookSimpleTitle": "无需多想",
+    "hookSimpleDesc": "跟着我们做就行！",
+    "hookSimpleSub": "标准化流程打造，告别复杂摸索。",
+    "hookContentTitle": "脚本简单",
+    "hookContentDesc": "好理解、好上手、好转化！",
+    "hookContentSub": "实战 KOC 带货脚本，最大化提升 TikTok Shop 转化率。"
   },
   "metricsBar": [
     {
-      "value": "3 步",
-      "label": "从模板到可发视频",
-      "desc": "选模板 → 拍镜头 → 导出"
+      "value": "少量素材",
+      "label": "只需 3 - 5 个镜头",
+      "desc": "极速开拍，省时省心"
     },
     {
-      "value": "9:16",
-      "label": "竖屏即发",
-      "desc": "适配 TikTok、Reels、Shorts"
+      "value": "数百条视频",
+      "label": "无惧平台重复比对",
+      "desc": "智能防重组合算法"
     },
     {
-      "value": "本机合成",
-      "label": "手机上直接合成",
-      "desc": "不用电脑，不用 CapCut"
+      "value": "自动剪辑",
+      "label": "Five Cut Pro 帮你搞定",
+      "desc": "无需掌握 CapCut 剪辑技巧"
     },
     {
       "value": "免费",
-      "label": "下载即可开始",
-      "desc": "iOS 与 Android"
+      "label": "立即下载使用",
+      "desc": "iOS 已支持 · Android 即将推出"
     }
   ],
   "featuresSection": {
-    "label": "App 里有什么",
-    "title": "够你日更 — 不堆虚假功能",
-    "subtitle": "模板市场、镜头配方、拍摄指引、本机合成。我们不承诺魔法式 1→100 自动出片。"
+    "label": "核心价值",
+    "title": "无需多想 — 跟着我们做就行",
+    "subtitle": "脚本简单易懂。仅需少量素材即可制作带货视频，发布数百条不重复的带货视频。"
   },
   "features": [
     {
       "id": "koc-market",
-      "title": "KOC 模板市场 — 先看再用",
-      "description": "别再猜怎么拍。打开探索，看指引和成片，合适就点使用模板。",
+      "title": "仅需少量素材即可制作带货视频",
+      "description": "只需 3 到 5 段基础拍摄镜头，Five Cut Pro 就能帮你生成数百条完全独特、不重复的带货视频。",
       "bullets": [
-        "来自 KOC 创作者的模板",
-        "热门 / 新品 / 畅销标记",
-        "挂载前可看各角度示范"
-      ]
-    },
-    {
-      "id": "recipes",
-      "title": "你的配方 — 每天复用",
-      "description": "源顺序与时长存一次。明天换素材再导出 — 不用重搭时间线。",
-      "bullets": [
-        "中/近/远镜头链",
-        "每段秒数时长",
-        "默认 / 收藏 / 做视频"
+        "少量素材生成数百条带货视频",
+        "智能变体组合，不怕平台判重",
+        "每天节省 90% 的视频制作时间"
       ]
     },
     {
       "id": "shot-guide",
-      "title": "分镜指引 — 不再缺角度",
-      "description": "每段有角度、说明和示范片。按 shot 拍、挂上即可。",
+      "title": "不会拍？我们教你拍！",
+      "description": "无需拍摄经验或专业镜头感。每个模板都有示范片和镜头清单，拿上手机就能拍。",
       "bullets": [
-        "拍摄前先看示范",
-        "已挂 / 需要数量进度",
-        "素材过短会提醒"
+        "开拍前可直接观看直观示范",
+        "远景、中景、特写各个角度详细指引",
+        "拿起手机立刻开拍"
       ]
     },
     {
       "id": "merge-export",
-      "title": "本机合成 → 发 TikTok",
-      "description": "挂满源视频后点立即合成。在设备处理，进入已导出 — 下载或分享 TikTok。",
+      "title": "不会剪？Five Cut Pro 帮你剪！",
+      "description": "告别在 CapCut 费时对齐时间线的烦恼。将素材放入模板，手机本地极速自动剪辑并导出。",
       "bullets": [
-        "准备 / 合成 / 完成进度",
-        "本机已导出列表",
-        "单条分享到 TikTok"
+        "基于爆款带货公式自动剪辑",
+        "手机本地秒级合成，高效快捷",
+        "9:16 竖屏规格直发 TikTok、Reels、Shorts"
+      ]
+    },
+    {
+      "id": "recipes",
+      "title": "脚本简单易懂",
+      "description": "无需复杂文案创作。所有模板均针对 TikTok Shop 带货转化深度优化。",
+      "bullets": [
+        "高转化实战 KOC 脚本模板",
+        "一步一步按照指引操作",
+        "一套公式可复用于多种产品"
       ]
     }
   ],
   "howItWorksSection": {
-    "label": "3 步",
-    "title": "选模板 → 拍分镜 → 导出发布",
-    "subtitle": "就是 iOS & Android 上的真实流程 — 不必会剪辑时间线。",
+    "label": "极简 3 步",
+    "title": "无需多想 — 跟着我们做就行",
+    "subtitle": "简单明了。只需 3 步即可生成数百条不重复的带货视频。",
     "steps": [
       {
         "num": "01",
-        "title": "选正在跑的模板",
-        "desc": "打开探索或已存配方。先看指引和成片再使用。",
-        "badge": "探索"
+        "title": "选择 KOC 视频模板",
+        "desc": "浏览精选带货模板，提前查看脚本说明与成片示范。",
+        "badge": "挑选模板"
       },
       {
         "num": "02",
-        "title": "拍齐镜头再挂载",
-        "desc": "按模板分镜清单拍。挂到每一段都齐为止。",
-        "badge": "挂载"
+        "title": "跟着详细指引拍摄",
+        "desc": "不会拍？我们教你拍！观看分镜示范片，按照清单轻松开拍。",
+        "badge": "拍摄镜头"
       },
       {
         "num": "03",
-        "title": "合成完直接发",
-        "desc": "点立即合成，打开已导出，存相册或分享 TikTok。",
-        "badge": "导出"
+        "title": "Five Cut Pro 帮你自动剪辑",
+        "desc": "App 自动将少量素材组合成数百条独一无二的带货视频，直接可发 TikTok。",
+        "badge": "合成导出"
       }
     ],
     "stepLabel": "步骤"
   },
   "comparisonSection": {
-    "badge": "真实痛点",
-    "title": "你的时间耗在哪？",
-    "subtitle": "Five Cut Pro 不是自由剪辑工具 — 它解决一件事：每天要出带货片，却不想卡在剪辑里。",
+    "badge": "真实对比",
+    "title": "传统手动制作 vs Five Cut Pro",
+    "subtitle": "别再把整晚时间浪费在手动剪辑上。专为 KOC 打造的带货视频高效方案。",
     "oldWay": {
-      "badge": "老办法",
-      "title": "每次发布都手剪",
-      "subtitle": "慢、断更、累",
+      "badge": "传统手动方式",
+      "title": "不会拍、不会剪",
+      "subtitle": "耗时费力、身心疲惫、难以起量",
       "points": [
-        "每条都从头剪 — 整晚没了",
-        "缺中/近/远角度 → 整段重做",
-        "没有分镜清单 → 带货节奏跑偏",
-        "卡在剪辑，TikTok Shop 截止常迟到"
+        "不知道该拍什么角度，剪辑时才发现缺镜头",
+        "花几个小时在 CapCut 里手动切片拼接",
+        "脚本冗长晦涩，无法留住观众",
+        "一天只能产出 1 条视频，还面临重复判重风险"
       ]
     },
     "newWay": {
-      "badge": "用 Five Cut Pro",
-      "title": "按模板做 — App 合成",
-      "subtitle": "拍对，出得快",
+      "badge": "使用 Five Cut Pro",
+      "title": "KOC 专属视频模板",
+      "subtitle": "更轻松、更快速、出单更稳",
       "points": [
-        "模板自带拍摄指引",
-        "分镜清单清楚 — 不再猜角度",
-        "挂载 → 本机合成 → 分享 TikTok",
-        "同一天多产品复用一份配方"
+        "不会拍？我们逐个角度指导你怎么拍！",
+        "不会剪？Five Cut Pro 帮你全自动剪辑！",
+        "无需多想，跟着我们做就行 — 脚本简单易懂",
+        "仅需少量素材 → 生成数百条不重复带货视频"
       ]
     }
   },
   "faqSection": {
-    "label": "FAQ",
-    "title": "快速问答",
-    "subtitle": "只写 App 真正在做的事。",
+    "label": "常见问答",
+    "title": "常见问题",
+    "subtitle": "关于 Five Cut Pro 与 KOC 视频模板的快速解答。",
     "items": [
       {
         "id": "faq-1",
-        "question": "和 CapCut 有什么不同？",
-        "answer": "CapCut 是自由剪辑。Five Cut Pro 是 KOC 模板流程：看怎么拍、按配方挂镜头、本机合成再发。为日更带货设计，不是每天搭时间线。"
+        "question": "我从来没拍过视频，也能用吗？",
+        "answer": "完全可以！不会拍？我们教你拍！每个 KOC 模板都配有各个拍摄角度与动作的示范视频，看着示范拿起手机跟着拍即可。"
       },
       {
         "id": "faq-2",
-        "question": "我不会拍也能用吗？",
-        "answer": "可以。每个模板都有指引和示范片。按 shot 拍、挂上 — 合成交给 App。"
+        "question": "我不会剪辑视频，Five Cut Pro 如何帮我？",
+        "answer": "Five Cut Pro 100% 帮你搞定剪辑！你不需要学习 CapCut 或任何剪辑软件。只要把拍好的镜头放入模板，App 会在手机本地自动卡点剪辑并导出成片。"
       },
       {
         "id": "faq-3",
-        "question": "导出后怎么发 TikTok？",
-        "answer": "合成后打开已导出：存相册或分享到 TikTok（在 App 内用 TikTok 登录可更快分享）。"
+        "question": "为什么少量素材能生成数百条不重复的视频？",
+        "answer": "Five Cut Pro 采用智能组合剪辑算法。从 3-5 个基础镜头出发，自动重构出数百种不同的内容变体，有效避免 TikTok 平台的重复搬运判定。"
       },
       {
         "id": "faq-4",
-        "question": "支持哪些系统？",
-        "answer": "iOS 与 Android。可用 Google、TikTok、Apple 或邮箱 OTP 登录。"
+        "question": "模板内容容易理解吗？",
+        "answer": "非常简单明了！无需多想，跟着我们做就行。所有模板均提炼自高转化的 KOC 带货爆款视频结构，精炼实用。"
       },
       {
         "id": "faq-5",
-        "question": "使用 Five Cut Pro 要收费吗？",
-        "answer": "在 App Store 与 Google Play 下载并注册是免费的。登录后即可使用模板市场、配方与合成功能。"
-      },
-      {
-        "id": "faq-6",
-        "question": "我的素材会被上传吗？",
-        "answer": "合成在你的设备上完成，成片保存在手机的「已导出」里。详情见隐私政策。"
-      },
-      {
-        "id": "faq-7",
-        "question": "KOC 怎么接到品牌活动？",
-        "answer": "用 TikTok 登录以匹配你品类的活动，关注 App 内活动与挑战，或加入 Zalo · Telegram · WhatsApp 群提前获取信息。"
-      },
-      {
-        "id": "faq-8",
-        "question": "品牌方想合作，从哪开始？",
-        "answer": "在「品牌合作」板块填写表单，或发邮件至 partner@fivecutpro.com，团队会沟通产品、模板与 KOC 匹配。"
+        "question": "App 免费吗？支持哪些设备？",
+        "answer": "Five Cut Pro 目前已在 iOS（App Store）正式上线，支持 iPhone 与 iPad。Android 版本正在进行最后的测试，即将在 Google Play 推出。"
       }
     ]
   },
   "downloadSection": {
-    "label": "立即下载",
-    "title": "把 Five Cut Pro 装到手机",
-    "subtitle": "版本 {version}。扫码或打开商店 — 今天就从 KOC 模板市场开始。",
-    "mobileLabel": "iOS & Android",
-    "ctaStore": "打开商店",
+    "label": "立即开始",
+    "title": "下载 Five Cut Pro — KOC 视频模板",
+    "subtitle": "仅需少量素材即可制作带货视频 · 发布数百条不重复的带货视频。",
+    "mobileLabel": "iOS（已上线）· Android（即将推出）",
+    "ctaStore": "在 App Store 免费下载",
     "comingSoon": "即将推出",
-    "qrLabel": "扫码",
-    "qrTitle": "扫码安装",
-    "qrSubtitle": "打开相机 → App Store 或 Google Play。"
+    "qrLabel": "APP 下载二维码",
+    "qrTitle": "在手机上下载 Five Cut Pro",
+    "qrSubtitle": "打开 iPhone / iPad 相机扫码直接从 App Store 下载。Android 版即将推出。"
   },
   "communitySection": {
-    "label": "支持群",
-    "title": "支持群",
-    "subtitle": "进群询问拍摄、模板和支持。",
-    "join": "加入"
+    "label": "支持社群",
+    "title": "支持社群",
+    "subtitle": "加入社群交流拍摄技巧、获取最新模板与专属支持。",
+    "join": "立即加入"
   },
   "downloadCards": {
     "ios": {
-      "title": "iOS",
-      "subtitle": "iPhone 与 iPad"
+      "title": "Five Cut Pro iOS 版",
+      "subtitle": "iPhone & iPad · iOS 15.0+ · 完全免费",
+      "badge": "正式上线 · 立即下载",
+      "cta": "在 App Store 下载",
+      "scanHint": "打开 iPhone / iPad 相机扫码立即下载",
+      "perk1": "100% 免费",
+      "perk2": "无干扰广告",
+      "perk3": "极速合成 9:16 视频"
     },
     "android": {
-      "title": "Android",
-      "subtitle": "手机与平板"
+      "title": "Android 版本",
+      "subtitle": "Android 手机与平板",
+      "badge": "即将推出 · Coming Soon",
+      "status": "最终 Beta 版测试中",
+      "desc": "Android 版本正在进行上线前的最终测试优化，即将正式登陆 Google Play Store。",
+      "cta": "Google Play · 即将推出",
+      "communityHint": "想要优先获取 Beta 内测版或上线通知？",
+      "communityCta": "加入 KOC 交流群"
     }
   },
   "installSection": {

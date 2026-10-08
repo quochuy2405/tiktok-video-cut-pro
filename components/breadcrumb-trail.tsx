@@ -12,16 +12,16 @@ export function BreadcrumbTrail({
 }) {
   return (
     <nav aria-label={current} className="mb-6">
-      <ol className="flex flex-wrap items-center gap-1.5 text-xs text-[#4A5C53]">
+      <ol className="flex flex-wrap items-center gap-1.5 text-xs text-slate-400">
         <li>
           <Link href="/" className="transition-colors hover:text-brand">
             {homeLabel}
           </Link>
         </li>
-        <li aria-hidden className="flex items-center">
+        <li aria-hidden className="flex items-center text-slate-600">
           <ChevronRight className="size-3.5" />
         </li>
-        <li className="font-medium text-[#1F2E27]" aria-current="page">
+        <li className="font-medium text-slate-200" aria-current="page">
           {current}
         </li>
       </ol>

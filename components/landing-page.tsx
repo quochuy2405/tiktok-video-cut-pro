@@ -115,12 +115,12 @@ export function LandingPage({
             </div>
           </motion.div>
 
-          {/* Tiêu đề chính lớn */}
-          <h1 className="font-heading max-w-[min(100%,38rem)] text-[clamp(2.4rem,7vw+0.2rem,4.8rem)] font-bold leading-[1.06] tracking-[-0.06em] text-[#0F1A15] text-balance sm:max-w-none md:tracking-[-1.5px]">
+          {/* Tiêu đề chính: Template video dành cho KOC */}
+          <h1 className="font-heading w-full max-w-[22ch] text-[clamp(1.85rem,6.2vw+0.35rem,4.4rem)] font-bold leading-[1.12] tracking-[-0.05em] text-[#0F1A15] text-balance sm:max-w-none md:tracking-[-1.35px]">
             <RevealWords text={t("hero.titleLead")} delay={0.08} />{" "}
             <RevealWords
               text={t("hero.titleAccent")}
-              className="text-gradient-shimmer"
+              wordClassName="text-gradient-shimmer"
               delay={0.24}
             />
           </h1>
@@ -187,52 +187,35 @@ export function LandingPage({
             </Link>
           </motion.div>
 
-          {/* 4 Khẳng định lớn (Chỉ nội dung lớn, bỏ hoàn toàn desc nhỏ) */}
+          {/* 4 khẳng định — chữ luôn wrap đủ trên mobile */}
           <motion.div
-            className="mt-12 grid w-full max-w-[940px] grid-cols-1 gap-4 sm:grid-cols-2"
+            className="mt-12 grid w-full min-w-0 max-w-[940px] grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4"
             initial={reduceMotion ? false : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.52, delay: 0.28 }}
           >
-            {/* 1. Bạn không biết quay?. Chúng tôi hướng dẫn bạn quay! */}
-            <SpotlightCard className="glass-panel group relative flex items-center gap-4 rounded-2xl border border-[#B9CFC3] p-6 text-left transition-all hover:border-brand/50 hover:glow-brand-sm">
-              <div className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30">
-                <Camera className="size-7" />
-              </div>
-              <h3 className="font-heading text-base sm:text-lg font-bold leading-snug text-[#0F1A15]">
-                {t("hero.pointShoot")}
-              </h3>
-            </SpotlightCard>
-
-            {/* 2. Bạn không biết edit. Five Cut Pro edit giúp bạn */}
-            <SpotlightCard className="glass-panel group relative flex items-center gap-4 rounded-2xl border border-[#B9CFC3] p-6 text-left transition-all hover:border-brand/50 hover:glow-brand-sm">
-              <div className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30">
-                <Scissors className="size-7" />
-              </div>
-              <h3 className="font-heading text-base sm:text-lg font-bold leading-snug text-[#0F1A15]">
-                {t("hero.pointEdit")}
-              </h3>
-            </SpotlightCard>
-
-            {/* 3. Không cần suy nghĩ gì cả hãy làm theo chúng tôi */}
-            <SpotlightCard className="glass-panel group relative flex items-center gap-4 rounded-2xl border border-[#B9CFC3] p-6 text-left transition-all hover:border-brand/50 hover:glow-brand-sm">
-              <div className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30">
-                <Zap className="size-7" />
-              </div>
-              <h3 className="font-heading text-base sm:text-lg font-bold leading-snug text-[#0F1A15]">
-                {t("hero.pointGuide")}
-              </h3>
-            </SpotlightCard>
-
-            {/* 4. Content đơn giản dễ hiểu */}
-            <SpotlightCard className="glass-panel group relative flex items-center gap-4 rounded-2xl border border-[#B9CFC3] p-6 text-left transition-all hover:border-brand/50 hover:glow-brand-sm">
-              <div className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30">
-                <Flame className="size-7" />
-              </div>
-              <h3 className="font-heading text-base sm:text-lg font-bold leading-snug text-[#0F1A15]">
-                {t("hero.pointContent")}
-              </h3>
-            </SpotlightCard>
+            {(
+              [
+                { key: "pointShoot" as const, Icon: Camera },
+                { key: "pointEdit" as const, Icon: Scissors },
+                { key: "pointGuide" as const, Icon: Zap },
+                { key: "pointContent" as const, Icon: Flame },
+              ] as const
+            ).map(({ key, Icon }) => (
+              <SpotlightCard
+                key={key}
+                className="glass-panel group relative min-w-0 rounded-2xl border border-[#B9CFC3] p-4 text-left transition-all hover:border-brand/50 hover:glow-brand-sm sm:p-6"
+              >
+                <div className="flex min-w-0 items-start gap-3 sm:items-center sm:gap-4">
+                  <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30 sm:size-14">
+                    <Icon className="size-6 sm:size-7" />
+                  </div>
+                  <h3 className="min-w-0 flex-1 font-heading text-[15px] font-bold leading-snug text-[#0F1A15] wrap-break-word sm:text-lg">
+                    {t(`hero.${key}`)}
+                  </h3>
+                </div>
+              </SpotlightCard>
+            ))}
           </motion.div>
         </div>
       </section>

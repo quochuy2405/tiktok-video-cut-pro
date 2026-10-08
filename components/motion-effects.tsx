@@ -64,7 +64,7 @@ export function SpotlightCard({
       className={cn("spotlight-surface", className)}
     >
       <span aria-hidden className="spotlight-glow" />
-      <div className="relative z-[1] flex h-full w-full flex-col">{children}</div>
+      <div className="relative z-[1] min-w-0 w-full">{children}</div>
     </div>
   );
 }

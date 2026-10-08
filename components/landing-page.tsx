@@ -259,7 +259,7 @@ export function LandingPage({
               <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
                 {sponsors.title}
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-[#9db7aa] md:text-lg">
+              <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-lg">
                 {sponsors.subtitle}
               </p>
             </FadeIn>

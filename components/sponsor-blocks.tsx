@@ -113,7 +113,7 @@ export function SponsorPlacements({
           <Megaphone className="size-3.5" />
           <span>{title}</span>
         </div>
-        <p className="mt-4 text-sm leading-relaxed text-[#9db7aa] sm:text-base">
+        <p className="mt-4 text-sm leading-relaxed text-slate-300 sm:text-base">
           {subtitle}
         </p>
       </FadeIn>

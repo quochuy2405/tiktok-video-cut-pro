@@ -61,7 +61,7 @@ export function DeleteAccountForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder={t("emailPlaceholder")}
-          className="w-full rounded-xl border border-white/10 bg-[#07110c] px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none focus:ring-1 focus:ring-emerald-400/50 shadow-inner"
+          className="w-full min-h-[46px] rounded-xl border border-white/10 bg-[#07110c] px-4 py-3 text-base sm:text-sm text-white placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none focus:ring-1 focus:ring-emerald-400/50 shadow-inner"
         />
       </label>
 
@@ -71,7 +71,7 @@ export function DeleteAccountForm() {
           value={displayName}
           onChange={(e) => setDisplayName(e.target.value)}
           placeholder={t("namePlaceholder")}
-          className="w-full rounded-xl border border-white/10 bg-[#07110c] px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none focus:ring-1 focus:ring-emerald-400/50 shadow-inner"
+          className="w-full min-h-[46px] rounded-xl border border-white/10 bg-[#07110c] px-4 py-3 text-base sm:text-sm text-white placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none focus:ring-1 focus:ring-emerald-400/50 shadow-inner"
         />
       </label>
 
@@ -82,7 +82,7 @@ export function DeleteAccountForm() {
           value={reason}
           onChange={(e) => setReason(e.target.value)}
           placeholder={t("reasonPlaceholder")}
-          className="w-full resize-none rounded-xl border border-white/10 bg-[#07110c] px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none focus:ring-1 focus:ring-emerald-400/50 shadow-inner"
+          className="w-full resize-none rounded-xl border border-white/10 bg-[#07110c] px-4 py-3 text-base sm:text-sm text-white placeholder:text-slate-500 focus:border-emerald-400 focus:outline-none focus:ring-1 focus:ring-emerald-400/50 shadow-inner"
         />
       </label>
 

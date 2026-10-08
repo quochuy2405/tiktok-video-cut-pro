@@ -94,7 +94,7 @@ export function StoreQrCodes({
         <h3 className="mt-2 font-heading text-2xl font-bold tracking-tight text-white sm:text-3xl">
           {title || t("downloadSection.qrTitle") || "Tải Five Cut Pro trên điện thoại"}
         </h3>
-        <p className="mt-2 text-sm leading-relaxed text-[#9db7aa] sm:text-base">
+        <p className="mt-2 text-sm leading-relaxed text-slate-300 sm:text-base">
           {subtitle ||
             t("downloadSection.qrSubtitle") ||
             "Mở Camera iPhone/iPad quét mã để tải ngay từ App Store. Bản Android sắp ra mắt."}
@@ -281,7 +281,7 @@ export function StoreQrCodes({
               </div>
 
               {/* Description */}
-              <p className="mx-auto mt-2 max-w-xs text-xs leading-relaxed text-[#9db7aa]">
+              <p className="mx-auto mt-2 max-w-xs text-xs leading-relaxed text-slate-400">
                 {androidCopy.desc}
               </p>
             </div>
@@ -289,14 +289,14 @@ export function StoreQrCodes({
 
           <div>
             {/* Disabled Action Button */}
-            <div className="inline-flex w-full cursor-not-allowed select-none items-center justify-center gap-2.5 rounded-2xl border border-emerald-500/20 bg-[#08120d] px-5 py-4 text-sm font-semibold text-[#6b8577]">
+            <div className="inline-flex w-full cursor-not-allowed select-none items-center justify-center gap-2.5 rounded-2xl border border-emerald-500/20 bg-[#08120d] px-5 py-4 text-sm font-semibold text-slate-500">
               <GooglePlayIcon className="size-4 opacity-50 grayscale" />
               <span>{androidCopy.cta}</span>
             </div>
 
             {/* Early Access / Community CTA Box */}
             <div className="mt-4 rounded-2xl border border-emerald-500/20 bg-[#07110c]/85 p-3.5 text-center shadow-sm">
-              <p className="text-xs font-medium text-[#9db7aa]">
+              <p className="text-xs font-medium text-slate-400">
                 {androidCopy.communityHint}
               </p>
               <a

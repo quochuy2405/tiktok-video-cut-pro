@@ -53,7 +53,7 @@ export function GuideIndexView({
             <h1 className="font-heading mt-5 text-[2.1rem] font-semibold leading-[1.12] tracking-[-1px] text-white md:text-[2.9rem]">
               {copy.title}
             </h1>
-            <p className="mt-5 text-base leading-relaxed text-[#9db7aa] md:text-lg">
+            <p className="mt-5 text-base leading-relaxed text-slate-300 md:text-lg">
               {copy.subtitle}
             </p>
           </FadeIn>
@@ -66,7 +66,7 @@ export function GuideIndexView({
             {articles.map((article, idx) => (
               <FadeIn key={article.slug} delay={idx * 0.05}>
                 <article className="group rounded-[24px] surface-card border border-emerald-500/20 bg-gradient-to-br from-[#0c1812]/90 via-[#0a140f]/90 to-[#070e0a]/95 p-7 shadow-[0_14px_34px_-14px_rgba(0,0,0,0.85)] transition-all duration-300 hover:-translate-y-1 hover:border-brand/50 hover:shadow-[0_20px_45px_-14px_rgba(0,0,0,0.9),0_0_25px_rgba(0,245,160,0.2)]">
-                  <div className="flex items-center gap-2 text-xs text-[#9db7aa]">
+                  <div className="flex items-center gap-2 text-xs text-slate-400">
                     <Clock className="size-3.5 text-brand" />
                     <span>
                       {article.readingMinutes} {copy.readingSuffix}
@@ -80,7 +80,7 @@ export function GuideIndexView({
                       {article.title}
                     </Link>
                   </h2>
-                  <p className="mt-3 text-sm leading-relaxed text-[#9db7aa]">
+                  <p className="mt-3 text-sm leading-relaxed text-slate-400">
                     {article.excerpt}
                   </p>
                   <Link
@@ -121,7 +121,7 @@ export function GuideArticleView({
         <BreadcrumbTrail homeLabel={homeLabel} current={copy.breadcrumb} />
 
         <header>
-          <div className="flex flex-wrap items-center gap-3 text-xs text-[#9db7aa]">
+          <div className="flex flex-wrap items-center gap-3 text-xs text-slate-400">
             <span className="inline-flex items-center gap-1.5">
               <Clock className="size-3.5 text-brand" />
               {article.readingMinutes} {copy.readingSuffix}
@@ -138,7 +138,7 @@ export function GuideArticleView({
 
         {/* Table of contents */}
         <nav aria-label={copy.tocTitle} className="mt-8 rounded-2xl surface-card border border-emerald-500/20 bg-gradient-to-br from-[#0c1812]/90 via-[#0a140f]/90 to-[#070e0a]/95 p-5 shadow-[0_14px_34px_-14px_rgba(0,0,0,0.85)]">
-          <p className="text-xs font-semibold uppercase tracking-wider text-[#9db7aa]">
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">
             {copy.tocTitle}
           </p>
           <ol className="mt-3 space-y-2 text-sm">
@@ -238,7 +238,7 @@ export function GuideArticleView({
                   <h3 className="font-heading text-base font-semibold text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-[#9db7aa]">
+                  <p className="mt-2 text-sm leading-relaxed text-slate-400">
                     {item.excerpt}
                   </p>
                 </Link>

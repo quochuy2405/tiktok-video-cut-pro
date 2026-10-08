@@ -9,7 +9,7 @@ export function LegalDocumentView({ doc }: { doc: LegalDocument }) {
       <h1 className="font-heading mt-3 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.5rem]">
         {doc.title}
       </h1>
-      <p className="mt-3 text-sm text-[#9db7aa]">
+      <p className="mt-3 text-sm text-slate-400">
         {doc.updatedLabel}: {doc.updatedDate}
       </p>
 

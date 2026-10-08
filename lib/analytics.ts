@@ -81,6 +81,7 @@ export type CtaLocation =
   | "sponsor_section"
   | "community_section"
   | "social_float"
+  | "mobile_sticky_bar"
   | "footer";
 
 export type CtaCategory =

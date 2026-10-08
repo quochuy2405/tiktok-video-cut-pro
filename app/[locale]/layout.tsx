@@ -10,6 +10,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { ScrollProgress } from "@/components/motion-effects";
 import { SiteHeader } from "@/components/site-header";
 import { SocialFloatButton } from "@/components/social-float-button";
+import { MobileStickyDownloadBar } from "@/components/mobile-sticky-bar";
 import { fetchAppSocialConfig } from "@/lib/social-groups";
 import { routing } from "@/i18n/routing";
 import { APP_NAME } from "@/lib/brand";
@@ -214,6 +215,7 @@ export default async function LocaleLayout({
             country={country}
             locale={locale}
           />
+          <MobileStickyDownloadBar />
         </NextIntlClientProvider>
       </body>
     </html>

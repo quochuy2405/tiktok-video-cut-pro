@@ -298,7 +298,7 @@ export function SiteHeader() {
                   onClick={() => {
                     trackCtaClick({
                       cta_id: "mobile_sheet_download_btn",
-                      cta_location: "mobile_sheet_bottom",
+                      cta_location: "mobile_drawer",
                       cta_text: t("ctaMobile"),
                       cta_category: "conversion_download",
                       destination_url: "/#download",

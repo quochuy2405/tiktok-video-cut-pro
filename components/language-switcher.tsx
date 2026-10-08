@@ -82,8 +82,8 @@ export function LanguageSwitcher({
                 className={cn(
                   "flex items-center justify-between gap-1.5 rounded-xl border px-3 py-2 text-[12px] font-medium transition-all",
                   isCurrent
-                    ? "border-brand/50 bg-brand/15 text-brand shadow-sm shadow-[#00C48C]/20 font-semibold"
-                    : "border-[#D8E5DD] bg-white text-[#334039] hover:border-brand/40 hover:bg-[#EEF5F1] hover:text-[#18231D]",
+                    ? "border-brand/50 bg-brand/20 text-brand shadow-[0_0_12px_rgba(0,245,160,0.25)] font-semibold"
+                    : "border-emerald-500/20 bg-[#0d1812] text-[#cde0d6] hover:border-emerald-400/40 hover:bg-[#12241b] hover:text-white",
                 )}
                 prefetch={false}
               >
@@ -117,8 +117,8 @@ export function LanguageSwitcher({
         className={cn(
           "inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1.5 text-[12px] font-semibold transition-all sm:px-3 sm:text-[13px]",
           isOpen
-            ? "border-brand/40 bg-brand/15 text-brand shadow-sm shadow-[#00C48C]/20"
-            : "border-[#D8E5DD] bg-white text-[#334039] shadow-card-mint hover:border-brand/35 hover:bg-[#EEF5F1] hover:text-[#18231D]",
+            ? "border-brand/50 bg-brand/20 text-brand shadow-[0_0_15px_rgba(0,245,160,0.25)]"
+            : "border-emerald-500/20 bg-[#0d1812] text-[#f4faf6] shadow-[0_4px_16px_rgba(0,0,0,0.6)] hover:border-emerald-400/40 hover:bg-[#12241b]",
         )}
         aria-expanded={isOpen}
         aria-haspopup="listbox"
@@ -128,12 +128,12 @@ export function LanguageSwitcher({
         <span className="font-mono text-[11px] font-bold tracking-wide sm:text-[12px]">
           {activeInfo.short}
         </span>
-        <span className="hidden xl:inline text-[#334039] text-[12px]">
+        <span className="hidden xl:inline text-[#cde0d6] text-[12px]">
           {activeInfo.nativeName}
         </span>
         <ChevronDown
           className={cn(
-            "size-3 shrink-0 text-[#6B7A72] transition-transform duration-200",
+            "size-3 shrink-0 text-[#8aa195] transition-transform duration-200",
             isOpen && "rotate-180 text-brand",
           )}
           aria-hidden
@@ -142,11 +142,11 @@ export function LanguageSwitcher({
 
       {isOpen && (
         <div
-          className="absolute right-0 top-full z-50 mt-1.5 min-w-[175px] overflow-hidden rounded-2xl border border-[#D8E5DD] bg-white p-1.5 shadow-[0_20px_50px_-24px_rgba(15,31,24,0.35)] ring-1 ring-brand/10 animate-in fade-in-0 zoom-in-95 duration-150"
+          className="absolute right-0 top-full z-50 mt-1.5 min-w-[175px] overflow-hidden rounded-2xl border border-emerald-500/20 bg-[#0a140f]/95 backdrop-blur-2xl p-1.5 shadow-[0_20px_50px_rgba(0,0,0,0.9),0_0_25px_rgba(0,245,160,0.15)] ring-1 ring-brand/20 animate-in fade-in-0 zoom-in-95 duration-150"
           role="listbox"
           aria-label={t("language")}
         >
-          <div className="px-2.5 py-1.5 text-[10px] font-mono font-semibold uppercase tracking-wider text-[#6B7A72] border-b border-[#D8E5DD] mb-1">
+          <div className="px-2.5 py-1.5 text-[10px] font-mono font-semibold uppercase tracking-wider text-[#8aa195] border-b border-emerald-500/15 mb-1">
             {t("language")}
           </div>
           <div className="flex flex-col gap-0.5">
@@ -165,8 +165,8 @@ export function LanguageSwitcher({
                   className={cn(
                     "group flex items-center justify-between gap-2.5 rounded-xl px-2.5 py-2 text-[13px] font-medium transition-colors",
                     isCurrent
-                      ? "bg-brand/15 text-brand font-semibold"
-                      : "text-[#334039] hover:bg-[#EEF5F1] hover:text-[#18231D]",
+                      ? "bg-brand/20 text-brand font-semibold shadow-[0_0_10px_rgba(0,245,160,0.2)]"
+                      : "text-[#cde0d6] hover:bg-emerald-500/10 hover:text-white",
                   )}
                   prefetch={false}
                   role="option"
@@ -179,7 +179,7 @@ export function LanguageSwitcher({
                     <span className="leading-snug">{info.nativeName}</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <span className="font-mono text-[10px] font-bold text-[#6B7A72]">
+                    <span className="font-mono text-[10px] font-bold text-[#8aa195]">
                       {info.short}
                     </span>
                     {isCurrent ? (

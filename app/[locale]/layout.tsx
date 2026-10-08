@@ -162,7 +162,7 @@ export async function generateMetadata({
       statusBarStyle: "black-translucent",
     },
     other: {
-      "theme-color": "#050507",
+      "theme-color": "#060907",
     },
   };
 }
@@ -194,7 +194,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       suppressHydrationWarning
-      className={`${inter.variable} ${notoSansKr.variable} ${ibmPlexMono.variable} h-full scroll-smooth antialiased`}
+      className={`${inter.variable} ${notoSansKr.variable} ${ibmPlexMono.variable} dark h-full scroll-smooth antialiased`}
     >
       <body
         className="flex min-h-full flex-col bg-background font-sans text-foreground"

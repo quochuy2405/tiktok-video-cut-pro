@@ -88,13 +88,13 @@ export function StoreQrCodes({
   return (
     <div className={cn("mx-auto w-full max-w-5xl", className)}>
       <div className="mx-auto max-w-2xl text-center">
-        <p className="text-xs font-bold uppercase tracking-[0.16em] text-brand-deep">
+        <p className="text-xs font-bold uppercase tracking-[0.16em] text-brand drop-shadow-[0_0_12px_rgba(0,245,160,0.35)]">
           {scanLabel || t("downloadSection.qrLabel") || "MÃ QR TẢI APP"}
         </p>
-        <h3 className="mt-2 font-heading text-2xl font-bold tracking-tight text-[#0F1A15] sm:text-3xl">
+        <h3 className="mt-2 font-heading text-2xl font-bold tracking-tight text-white sm:text-3xl">
           {title || t("downloadSection.qrTitle") || "Tải Five Cut Pro trên điện thoại"}
         </h3>
-        <p className="mt-2 text-sm leading-relaxed text-[#4A5C53] sm:text-base">
+        <p className="mt-2 text-sm leading-relaxed text-[#9db7aa] sm:text-base">
           {subtitle ||
             t("downloadSection.qrSubtitle") ||
             "Mở Camera iPhone/iPad quét mã để tải ngay từ App Store. Bản Android sắp ra mắt."}
@@ -105,7 +105,7 @@ export function StoreQrCodes({
         {/* ========================================================= */}
         {/* 1. iOS STAR / HERO CARD (Đặc sắc vô cùng)                 */}
         {/* ========================================================= */}
-        <div className="relative flex flex-col justify-between overflow-hidden rounded-[32px] border border-emerald-500/35 bg-gradient-to-br from-[#0A1611] via-[#0E1F18] to-[#050D09] p-6 text-white shadow-[0_20px_55px_-16px_rgba(0,196,140,0.35)] transition-all duration-300 hover:border-emerald-400/60 hover:shadow-[0_26px_65px_-16px_rgba(0,196,140,0.45)] sm:p-8 lg:col-span-7">
+        <div className="relative flex flex-col justify-between overflow-hidden rounded-[32px] border border-emerald-500/35 bg-gradient-to-br from-[#0A1611] via-[#0E1F18] to-[#050D09] p-6 text-white shadow-[0_20px_55px_-16px_rgba(0,245,160,0.35)] transition-all duration-300 hover:border-emerald-400/60 hover:shadow-[0_26px_65px_-16px_rgba(0,245,160,0.5)] sm:p-8 lg:col-span-7">
           {/* Ambient neon backdrop glow */}
           <div className="pointer-events-none absolute -top-24 left-1/2 size-80 -translate-x-1/2 rounded-full bg-brand/20 blur-3xl" />
           {/* Top specular reflection line */}
@@ -124,7 +124,7 @@ export function StoreQrCodes({
                 </span>
               </div>
 
-              <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/15 px-3 py-1.5 text-xs font-semibold text-emerald-300">
+              <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/15 px-3 py-1.5 text-xs font-semibold text-emerald-300 shadow-[0_0_15px_rgba(0,245,160,0.2)]">
                 <span className="relative flex size-2">
                   <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex size-2 rounded-full bg-emerald-400"></span>
@@ -233,51 +233,55 @@ export function StoreQrCodes({
         {/* ========================================================= */}
         {/* 2. ANDROID CARD — SẮP RA MẮT (Coming Soon Showcase)      */}
         {/* ========================================================= */}
-        <div className="relative flex flex-col justify-between overflow-hidden rounded-[32px] border border-[#B9CFC3] bg-gradient-to-b from-white via-[#F8FAF9] to-[#EDF5F1] p-6 shadow-card-mint transition-all duration-300 hover:border-brand/40 sm:p-8 lg:col-span-5">
+        <div className="relative flex flex-col justify-between overflow-hidden rounded-[32px] border border-emerald-500/25 bg-gradient-to-br from-[#0A1611] via-[#0E1F18] to-[#050D09] p-6 text-white shadow-[0_20px_55px_-16px_rgba(0,0,0,0.85),0_0_30px_rgba(0,245,160,0.1)] transition-all duration-300 hover:border-amber-400/50 hover:shadow-[0_26px_65px_-16px_rgba(0,0,0,0.9),0_0_35px_rgba(245,158,11,0.2)] sm:p-8 lg:col-span-5">
           {/* Subtle watermark background icon */}
-          <AndroidIcon className="pointer-events-none absolute -bottom-6 -right-6 size-48 text-[#0F1A15]/[0.03]" />
+          <AndroidIcon className="pointer-events-none absolute -bottom-6 -right-6 size-48 text-white/[0.03]" />
+          {/* Ambient amber glow */}
+          <div className="pointer-events-none absolute -top-24 left-1/2 size-80 -translate-x-1/2 rounded-full bg-amber-500/10 blur-3xl" />
+          {/* Top specular reflection line */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-amber-400/50 to-transparent" />
 
           <div>
             {/* Top row: Platform Badge + Sắp ra mắt Badge */}
             <div className="flex flex-wrap items-center justify-between gap-3">
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#D8E5DD] bg-white px-3.5 py-1.5 shadow-sm">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 backdrop-blur-md shadow-sm">
                 <GooglePlayIcon className="size-4" />
-                <span className="text-xs font-semibold text-[#0F1A15]">
+                <span className="text-xs font-semibold text-white">
                   Google Play
                 </span>
               </div>
 
-              <div className="inline-flex items-center gap-1.5 rounded-full border border-amber-400/40 bg-amber-500/10 px-3 py-1.5 text-xs font-bold text-amber-800">
-                <Clock className="size-3.5 animate-spin-slow text-amber-600" />
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-amber-400/40 bg-amber-500/15 px-3 py-1.5 text-xs font-bold text-amber-300 shadow-[0_0_15px_rgba(245,158,11,0.25)]">
+                <Clock className="size-3.5 animate-spin-slow text-amber-400" />
                 <span>{androidCopy.badge}</span>
               </div>
             </div>
 
             {/* Title & Subtitle */}
             <div className="mt-5 text-left">
-              <h4 className="font-heading text-2xl font-bold tracking-tight text-[#0F1A15] sm:text-3xl">
+              <h4 className="font-heading text-2xl font-bold tracking-tight text-white sm:text-3xl">
                 {androidCopy.title}
               </h4>
-              <p className="mt-1.5 text-xs text-[#4A5C53] sm:text-sm">
+              <p className="mt-1.5 text-xs text-emerald-100/70 sm:text-sm">
                 {androidCopy.subtitle}
               </p>
             </div>
 
             {/* High-tech Coming Soon / Beta progress box */}
-            <div className="relative my-6 flex flex-col items-center justify-center rounded-2xl border border-dashed border-[#B9CFC3] bg-[#F2F7F4] p-6 text-center">
+            <div className="relative my-6 flex flex-col items-center justify-center rounded-2xl border border-dashed border-emerald-500/25 bg-[#06100b]/85 p-6 text-center backdrop-blur-sm">
               {/* Pulsing Android icon */}
-              <div className="relative mx-auto flex size-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#123024] to-[#0A1A12] text-brand shadow-lg ring-4 ring-brand/20">
+              <div className="relative mx-auto flex size-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#123024] to-[#0A1A12] text-brand shadow-lg ring-4 ring-brand/25">
                 <AndroidIcon className="size-8" />
               </div>
 
               {/* Status pill */}
-              <div className="mt-4 flex items-center justify-center gap-1.5 text-xs font-bold text-brand-forest">
+              <div className="mt-4 flex items-center justify-center gap-1.5 text-xs font-bold text-brand">
                 <Sparkles className="size-3.5 text-brand" />
                 <span>{androidCopy.status}</span>
               </div>
 
               {/* Description */}
-              <p className="mx-auto mt-2 max-w-xs text-xs leading-relaxed text-[#5C7267]">
+              <p className="mx-auto mt-2 max-w-xs text-xs leading-relaxed text-[#9db7aa]">
                 {androidCopy.desc}
               </p>
             </div>
@@ -285,19 +289,19 @@ export function StoreQrCodes({
 
           <div>
             {/* Disabled Action Button */}
-            <div className="inline-flex w-full cursor-not-allowed select-none items-center justify-center gap-2.5 rounded-2xl border border-[#D8E5DD] bg-[#E2ECE6] px-5 py-4 text-sm font-semibold text-[#5A6D63]">
+            <div className="inline-flex w-full cursor-not-allowed select-none items-center justify-center gap-2.5 rounded-2xl border border-emerald-500/20 bg-[#08120d] px-5 py-4 text-sm font-semibold text-[#6b8577]">
               <GooglePlayIcon className="size-4 opacity-50 grayscale" />
               <span>{androidCopy.cta}</span>
             </div>
 
             {/* Early Access / Community CTA Box */}
-            <div className="mt-4 rounded-2xl border border-[#D8E5DD] bg-white p-3.5 text-center shadow-sm">
-              <p className="text-xs font-medium text-[#4A5C53]">
+            <div className="mt-4 rounded-2xl border border-emerald-500/20 bg-[#07110c]/85 p-3.5 text-center shadow-sm">
+              <p className="text-xs font-medium text-[#9db7aa]">
                 {androidCopy.communityHint}
               </p>
               <a
                 href="#community"
-                className="mt-2 inline-flex items-center justify-center gap-1.5 text-xs font-bold text-brand-deep transition-colors hover:text-brand"
+                className="mt-2 inline-flex items-center justify-center gap-1.5 text-xs font-bold text-brand transition-colors hover:text-[#38e8a9]"
               >
                 <Users className="size-3.5" />
                 <span>{androidCopy.communityCta}</span>

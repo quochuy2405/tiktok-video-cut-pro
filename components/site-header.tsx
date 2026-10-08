@@ -92,8 +92,8 @@ function NavLinks({
               className={cn(
                 "block whitespace-nowrap rounded-full px-2.5 py-1.5 text-[13px] font-medium transition-colors xl:px-3.5 xl:py-2 xl:text-[14px]",
                 active
-                  ? "text-brand"
-                  : "text-[#1F2E27] hover:text-[#0F1A15]",
+                  ? "text-brand font-semibold bg-brand/10"
+                  : "text-[#9db7aa] hover:text-[#00f5a0] hover:bg-brand/10",
               )}
             >
               {t(item.labelKey)}
@@ -113,22 +113,25 @@ export function SiteHeader() {
   const mobileNav = navItems(MOBILE_NAV_BASE, locale);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-[#D8E5DD]/80 bg-[#F4F8F6]/85 backdrop-blur-2xl supports-[backdrop-filter]:bg-[#F4F8F6]/70 shadow-[0_8px_30px_-20px_rgba(15,31,24,0.18)]">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-emerald-500/15 bg-[#060907]/80 backdrop-blur-2xl shadow-[0_12px_36px_-12px_rgba(0,0,0,0.85),0_0_20px_-8px_rgba(0,245,160,0.15)]">
       <div className="mx-auto flex min-h-[64px] min-w-0 max-w-[1360px] items-center justify-between gap-2.5 px-2.5 py-2 sm:px-4 md:px-5 lg:px-6">
         <Link
           href="/"
-          className="flex shrink-0 items-center gap-2 rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2           focus-visible:ring-offset-[#F4F8F6] sm:gap-2.5"
+          className="flex shrink-0 items-center gap-2 rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-[#060907] sm:gap-2.5"
         >
-          <Image
-            src="/logo.png"
-            alt={t("logoAlt")}
-            width={36}
-            height={36}
-            className="size-8 sm:size-9 shrink-0 rounded-xl shadow-lg shadow-[#00C48C]/25 ring-1 ring-black/5"
-            priority
-          />
+          <div className="relative">
+            <div className="absolute inset-0 rounded-xl bg-brand/30 blur-md" aria-hidden />
+            <Image
+              src="/logo.png"
+              alt={t("logoAlt")}
+              width={36}
+              height={36}
+              className="relative size-8 sm:size-9 shrink-0 rounded-xl shadow-lg ring-1 ring-white/10"
+              priority
+            />
+          </div>
           <span className="font-heading inline-flex flex-nowrap items-center gap-1.5 whitespace-nowrap text-[15px] font-bold tracking-tight sm:text-[17px]">
-            <span className="whitespace-nowrap text-[#0F1A15]">{APP_NAME_LEAD}</span>
+            <span className="whitespace-nowrap text-white">{APP_NAME_LEAD}</span>
             <span className="whitespace-nowrap text-gradient-brand">
               {APP_NAME_ACCENT}
             </span>
@@ -156,7 +159,7 @@ export function SiteHeader() {
               }}
               className={cn(
                 buttonVariants({ variant: "default", size: "default" }),
-                "glow-brand-sm shrink-0 rounded-full border-0 bg-brand px-4 py-2 text-xs font-semibold text-[#052E1C] transition-[transform,box-shadow] hover:-translate-y-px hover:bg-brand hover:glow-brand-lg xl:px-5 xl:text-sm",
+                "glow-brand-sm shrink-0 rounded-full border-0 bg-gradient-to-r from-brand via-[#00DF9E] to-brand-deep px-4 py-2 text-xs font-bold text-[#02180e] shadow-[0_0_22px_rgba(0,245,160,0.45)] transition-[transform,box-shadow] hover:-translate-y-px hover:shadow-[0_0_32px_rgba(0,245,160,0.7)] xl:px-5 xl:text-sm",
               )}
             >
               {t("ctaDesktop")}
@@ -179,7 +182,7 @@ export function SiteHeader() {
             }}
             className={cn(
               buttonVariants({ variant: "default", size: "sm" }),
-              "glow-brand-sm rounded-full border-0 bg-brand px-4 font-medium text-[#052E1C] transition-[transform,box-shadow] hover:glow-brand-lg active:translate-y-px",
+              "glow-brand-sm rounded-full border-0 bg-gradient-to-r from-brand via-[#00DF9E] to-brand-deep px-4 font-bold text-[#02180e] shadow-[0_0_18px_rgba(0,245,160,0.4)] transition-[transform,box-shadow] hover:shadow-[0_0_28px_rgba(0,245,160,0.65)] active:translate-y-px",
             )}
           >
             {t("ctaMobile")}
@@ -189,7 +192,7 @@ export function SiteHeader() {
             <SheetTrigger
               className={cn(
                 buttonVariants({ variant: "outline", size: "icon" }),
-                "rounded-xl border-[#D8E5DD] bg-white text-[#0F1A15] shadow-card-mint hover:bg-[#EEF5F1]",
+                "rounded-xl border-emerald-500/25 bg-[#0d1812] text-white hover:bg-[#12241b]",
               )}
               aria-label={t("menuOpen")}
             >
@@ -197,18 +200,18 @@ export function SiteHeader() {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="gap-0 border-[#D8E5DD] bg-[#F4F8F6] p-0 text-[#0F1A15]"
+              className="gap-0 border-emerald-500/20 bg-[#070e0a]/95 backdrop-blur-2xl p-0 text-white"
             >
-              <SheetHeader className="border-b border-[#D8E5DD] px-4 py-4">
-                <SheetTitle className="font-heading text-left text-[#0F1A15]">
+              <SheetHeader className="border-b border-emerald-500/15 px-4 py-4">
+                <SheetTitle className="font-heading text-left text-white">
                   {t("sheetTitle")}
                 </SheetTitle>
               </SheetHeader>
               <div className="flex flex-col gap-4 p-4">
                 <LanguageSwitcher variant="grid" onSelect={() => setMobileOpen(false)} />
                 <NavLinks items={mobileNav} onNavigate={() => setMobileOpen(false)} />
-                <div className="my-2 border-t border-[#D8E5DD] pt-3 space-y-2">
-                  <span className="block font-mono text-[10px] font-semibold uppercase tracking-[0.65px] text-[#4A5C53]">
+                <div className="my-2 border-t border-emerald-500/15 pt-3 space-y-2">
+                  <span className="block font-mono text-[10px] font-semibold uppercase tracking-[0.65px] text-[#8aa195]">
                     {t("officialSocial")}
                   </span>
                   <SocialLinks showLabel />
@@ -217,7 +220,7 @@ export function SiteHeader() {
                   render={
                     <Button
                       variant="outline"
-                      className="w-full rounded-full border-[#D8E5DD] bg-white hover:bg-[#EEF5F1]"
+                      className="w-full rounded-full border-emerald-500/25 bg-[#0d1812] text-white hover:bg-[#12241b]"
                     />
                   }
                 >

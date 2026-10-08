@@ -53,21 +53,21 @@ export const SOCIAL_ITEMS = [
     href: SOCIAL_LINKS.threads,
     handle: "@fivecutpro",
     Icon: ThreadsIcon,
-    hoverColor: "hover:text-[#18231D] hover:border-[#8DDBAE] hover:bg-[#F5F7F6]",
+    hoverColor: "hover:text-white hover:border-brand/40 hover:bg-brand/10",
   },
   {
     name: "Instagram",
     href: SOCIAL_LINKS.instagram,
     handle: "@fivecutpro",
     Icon: InstagramIcon,
-    hoverColor: "hover:text-pink-400 hover:border-pink-500/40 hover:bg-pink-500/[0.08]",
+    hoverColor: "hover:text-pink-400 hover:border-pink-500/40 hover:bg-pink-500/[0.12]",
   },
   {
     name: "YouTube",
     href: SOCIAL_LINKS.youtube,
     handle: "@fivecutpro",
     Icon: YoutubeIcon,
-    hoverColor: "hover:text-red-400 hover:border-red-500/40 hover:bg-red-500/[0.08]",
+    hoverColor: "hover:text-red-400 hover:border-red-500/40 hover:bg-red-500/[0.12]",
   },
 ] as const;
 
@@ -94,7 +94,7 @@ export function SocialLinks({
             title={`${name} (@fivecutpro)`}
             aria-label={`Theo dõi Five Cut Pro trên ${name}`}
             className={cn(
-              "flex size-8 items-center justify-center rounded-lg border border-[#D8E5DD] bg-white text-[#6B7A72] shadow-card-mint transition-all duration-200",
+              "flex size-8 items-center justify-center rounded-lg border border-emerald-500/20 bg-[#0d1812] text-[#8aa195] shadow-[0_4px_16px_rgba(0,0,0,0.6)] transition-all duration-200 hover:-translate-y-0.5",
               hoverColor,
             )}
           >
@@ -116,13 +116,13 @@ export function SocialLinks({
           title={`${name} ${handle}`}
           aria-label={`Theo dõi Five Cut Pro trên ${name}`}
           className={cn(
-            "group inline-flex items-center gap-2 rounded-xl border border-[#D8E5DD] bg-white px-3 py-2 text-xs font-medium text-[#334039] shadow-card-mint transition-all duration-200",
+            "group inline-flex items-center gap-2 rounded-xl border border-emerald-500/20 bg-[#0d1812] px-3 py-2 text-xs font-medium text-[#cde0d6] shadow-[0_4px_16px_rgba(0,0,0,0.6)] transition-all duration-200 hover:-translate-y-0.5",
             hoverColor,
           )}
         >
-          <Icon className="size-4 text-[#6B7A72] transition-colors group-hover:text-inherit" />
+          <Icon className="size-4 text-[#8aa195] transition-colors group-hover:text-inherit" />
           {showLabel ? (
-            <span className="font-medium text-[#334039] transition-colors group-hover:text-inherit">
+            <span className="font-medium text-[#cde0d6] transition-colors group-hover:text-inherit">
               {name}
             </span>
           ) : null}

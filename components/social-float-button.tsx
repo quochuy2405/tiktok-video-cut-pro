@@ -38,7 +38,7 @@ export function SocialFloatButton({
       aria-label={title}
       title={title}
       id="social-float"
-      className="fixed right-4 bottom-[max(1.25rem,env(safe-area-inset-bottom))] z-40 flex w-[5.5rem] flex-col items-center gap-1.5 rounded-[22px] border border-[#D8E5DD] bg-white px-2 py-2.5 text-center shadow-card-mint outline-none transition-colors hover:border-brand/45 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+      className="fixed right-4 bottom-[max(1.25rem,env(safe-area-inset-bottom))] z-40 flex w-[5.5rem] flex-col items-center gap-1.5 rounded-[22px] border border-emerald-500/25 bg-[#0a140f]/90 backdrop-blur-xl px-2 py-2.5 text-center shadow-[0_12px_36px_rgba(0,0,0,0.8),0_0_20px_rgba(0,245,160,0.15)] outline-none transition-all duration-300 hover:-translate-y-1 hover:border-emerald-400/60 hover:shadow-[0_12px_36px_rgba(0,0,0,0.9),0_0_28px_rgba(0,245,160,0.35)] focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
       onClick={() => {
         trackCtaClick({
           cta_id: `float_${group.platform}`,
@@ -53,7 +53,7 @@ export function SocialFloatButton({
       <span className="overflow-hidden rounded-[14px]">
         <PlatformIcon platform={group.platform} className="size-11" />
       </span>
-      <span className="line-clamp-2 w-full text-[11px] font-semibold leading-tight text-[#0F1A15]">
+      <span className="line-clamp-2 w-full text-[11px] font-semibold leading-tight text-white">
         {groupTitle}
       </span>
     </a>

@@ -259,7 +259,7 @@ export function CommonBannerPopup({ slides }: Props) {
           type="button"
           onClick={dismiss}
           aria-label="Đóng"
-          className="absolute -right-2 -top-2 z-40 flex size-9 items-center justify-center rounded-full bg-white text-[#0F1A15] shadow-lg ring-1 ring-black/10 transition hover:bg-[#E5F8ED]"
+          className="absolute -right-2 -top-2 z-40 flex size-9 items-center justify-center rounded-full bg-[#0d1712] text-slate-200 shadow-xl ring-1 ring-emerald-500/30 transition hover:bg-emerald-400 hover:text-slate-950 hover:shadow-[0_0_15px_rgba(0,245,160,0.5)]"
         >
           <X className="size-4" />
         </button>

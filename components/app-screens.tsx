@@ -45,15 +45,15 @@ export function PhoneScreen({
   return (
     <div
       className={cn(
-        "rounded-[30px] bg-gradient-to-b from-[#1F2E27] to-[#0F1A15] p-[6px] shadow-[0_24px_50px_-26px_rgba(15,31,24,0.6)] ring-1 ring-black/10 sm:rounded-[34px] sm:p-2",
+        "rounded-[30px] bg-gradient-to-b from-white/20 via-emerald-500/10 to-black/90 p-[2.5px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9),0_0_30px_rgba(0,245,160,0.12)] ring-1 ring-emerald-500/30 sm:rounded-[34px]",
         className,
       )}
     >
-      <div className="relative overflow-hidden rounded-[24px] bg-white sm:rounded-[27px]">
+      <div className="relative overflow-hidden rounded-[27px] bg-[#0d1611] sm:rounded-[31px]">
         {/* speaker slit, so a cropped capture still reads as a phone */}
         <div
           aria-hidden
-          className="absolute left-1/2 top-[6px] z-10 h-1 w-10 -translate-x-1/2 rounded-full bg-black/15 sm:top-2 sm:w-12"
+          className="absolute left-1/2 top-[6px] z-10 h-1 w-10 -translate-x-1/2 rounded-full bg-white/25 sm:top-2 sm:w-12 shadow-[0_1px_2px_rgba(0,0,0,0.5)]"
         />
         <Image
           src={SCREEN_SOURCES[screen]}
@@ -80,10 +80,10 @@ export function BrandScreens({
   return (
     <div>
       <FadeIn className="mx-auto max-w-2xl text-center">
-        <h3 className="font-heading text-xl font-semibold text-[#0F1A15] sm:text-2xl">
+        <h3 className="font-heading text-xl font-semibold text-white sm:text-2xl">
           {copy.brandTitle}
         </h3>
-        <p className="mt-3 text-sm leading-relaxed text-[#4A5C53] sm:text-base">
+        <p className="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base">
           {copy.brandSubtitle}
         </p>
       </FadeIn>
@@ -100,7 +100,7 @@ export function BrandScreens({
               alt={copy.items[screen].alt}
               sizes="(min-width: 640px) 230px, 78vw"
             />
-            <p className="mt-3 text-center text-sm leading-snug text-[#4A5C53]">
+            <p className="mt-3 text-center text-sm leading-snug text-slate-400">
               {copy.items[screen].caption}
             </p>
           </FadeIn>

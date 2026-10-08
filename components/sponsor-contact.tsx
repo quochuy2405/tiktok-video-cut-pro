@@ -19,8 +19,8 @@ export function SponsorContact({
   location?: CtaLocation;
 }) {
   return (
-    <div className="mt-8 space-y-3 border-t border-[#B9CFC3] pt-6">
-      <p className="text-xs font-medium text-[#4A5C53]">{copy.directContact}</p>
+    <div className="mt-8 space-y-3 border-t border-white/10 pt-6">
+      <p className="text-xs font-medium text-slate-400">{copy.directContact}</p>
       <a
         href={gmailComposeUrl(copy.emailText)}
         target="_blank"
@@ -36,7 +36,7 @@ export function SponsorContact({
           });
         }}
         aria-label={copy.emailAria}
-        className="flex items-center gap-2 text-sm font-semibold text-brand hover:underline"
+        className="flex items-center gap-2 text-sm font-semibold text-brand hover:text-emerald-300 transition-colors"
       >
         <Mail className="size-4" />
         <span>{copy.emailText}</span>
@@ -55,14 +55,14 @@ export function SponsorContact({
             destination_url: copy.zaloHref,
           });
         }}
-        className="flex items-center gap-2 text-sm font-semibold text-brand hover:underline"
+        className="flex items-center gap-2 text-sm font-semibold text-brand hover:text-emerald-300 transition-colors"
       >
         <Phone className="size-4" />
         <span>
           {copy.zaloLabel}: {copy.zaloText}
         </span>
       </a>
-      <p className="text-xs text-[#4A5C53]">
+      <p className="text-xs text-slate-400">
         {copy.contactPersonLabel}: {copy.contactPersonName}
       </p>
     </div>

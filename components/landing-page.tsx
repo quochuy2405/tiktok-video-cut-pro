@@ -142,7 +142,7 @@ export function LandingPage({
 
           {/* Action CTAs */}
           <motion.div
-            className="mt-8 flex w-full min-w-0 flex-wrap items-center justify-center gap-3.5 px-1 sm:px-0"
+            className="mt-8 flex w-full min-w-0 flex-col sm:flex-row items-center justify-center gap-3.5 px-1 sm:px-0"
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.48, ease: easeOut, delay: 0.22 }}
@@ -160,7 +160,7 @@ export function LandingPage({
               }}
               className={cn(
                 buttonVariants({ variant: "default", size: "lg" }),
-                "rounded-full border-0 bg-gradient-to-r from-brand via-[#00DF9E] to-brand-deep px-8 py-3.5 text-[15px] font-bold text-[#02180e] shadow-[0_0_28px_rgba(0,245,160,0.5)] transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-[0_0_42px_rgba(0,245,160,0.75)]",
+                "w-full sm:w-auto min-h-[48px] rounded-full border-0 bg-gradient-to-r from-brand via-[#00DF9E] to-brand-deep px-8 py-3.5 text-[15px] font-bold text-[#02180e] shadow-[0_0_28px_rgba(0,245,160,0.5)] transition-all hover:-translate-y-0.5 hover:shadow-[0_0_42px_rgba(0,245,160,0.75)] active:scale-98",
               )}
             >
               <Download className="mr-2 size-4" />
@@ -179,7 +179,7 @@ export function LandingPage({
               }}
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
-                "rounded-full border border-emerald-500/30 bg-[#0d1a14]/90 px-8 py-3.5 text-[15px] font-medium text-white shadow-[0_10px_25px_-10px_rgba(0,0,0,0.8)] hover:border-emerald-400/60 hover:bg-[#12251d] hover:text-white hover:shadow-[0_0_25px_rgba(0,245,160,0.25)]",
+                "w-full sm:w-auto min-h-[48px] rounded-full border border-emerald-500/30 bg-[#0d1a14]/90 px-8 py-3.5 text-[15px] font-medium text-white shadow-[0_10px_25px_-10px_rgba(0,0,0,0.8)] hover:border-emerald-400/60 hover:bg-[#12251d] hover:text-white hover:shadow-[0_0_25px_rgba(0,245,160,0.25)] active:scale-98",
               )}
             >
               <Building2 className="mr-2 size-4 text-brand" />
@@ -319,7 +319,7 @@ export function LandingPage({
               <h2 className="font-heading text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem]">
                 {t("communitySection.title")}
               </h2>
-              <p className="mt-5 max-w-md text-base leading-relaxed text-[#9db7aa] md:text-lg">
+              <p className="mt-5 max-w-md text-base leading-relaxed text-slate-300 md:text-lg">
                 {t("communitySection.subtitle")}
               </p>
             </FadeIn>
@@ -347,7 +347,7 @@ export function LandingPage({
             <h2 className="font-heading mt-4 text-[2rem] font-semibold tracking-[-0.85px] text-white md:text-[2.65rem] md:tracking-[-1px]">
               {faq.title}
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-[#9db7aa] md:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-lg">
               {faq.subtitle}
             </p>
           </FadeIn>
@@ -368,20 +368,20 @@ export function LandingPage({
                     <button
                       type="button"
                       onClick={() => setOpenFaq(isOpen ? null : item.id)}
-                      className="flex w-full items-center justify-between gap-4 p-5 sm:p-6 text-left"
+                      className="flex min-h-[56px] w-full items-center justify-between gap-4 p-5 sm:p-6 text-left active:scale-[0.99] transition-transform"
                     >
                       <span className="font-heading text-base sm:text-lg font-semibold text-white">
                         {item.question}
                       </span>
                       <ChevronDown
                         className={cn(
-                          "size-5 shrink-0 text-[#8aa195] transition-transform duration-300",
+                          "size-5 shrink-0 text-slate-400 transition-transform duration-300",
                           isOpen && "rotate-180 text-brand",
                         )}
                       />
                     </button>
                     {isOpen && (
-                      <div className="border-t border-emerald-500/15 px-5 pb-5 sm:px-6 sm:pb-6 pt-3 text-sm leading-relaxed text-[#b2cfc1]">
+                      <div className="border-t border-emerald-500/15 px-5 pb-5 sm:px-6 sm:pb-6 pt-3 text-sm leading-relaxed text-slate-300">
                         {item.answer}
                       </div>
                     )}

@@ -41,16 +41,16 @@ export function SiteFooter({ groups = [] }: { groups?: SocialGroup[] }) {
               {APP_NAME}
             </span>
           </Link>
-          <p className="text-sm leading-relaxed text-[#9db7aa]">{t("tagline")}</p>
+          <p className="text-sm leading-relaxed text-slate-400">{t("tagline")}</p>
           <div className="pt-2 space-y-2.5">
-            <span className="block font-mono text-[10px] font-semibold uppercase tracking-[0.65px] text-[#8aa195]">
+            <span className="block font-mono text-[10px] font-semibold uppercase tracking-wider text-slate-400">
               {t("socialHeading")}
             </span>
             <SocialLinks showLabel />
           </div>
           {groups.length > 0 ? (
             <div className="max-w-sm space-y-3">
-              <span className="block font-mono text-[10px] font-semibold uppercase tracking-[0.65px] text-[#8aa195]">
+              <span className="block font-mono text-[10px] font-semibold uppercase tracking-wider text-slate-400">
                 {t("groupsHeading")}
               </span>
               <CommunityGroupList
@@ -68,12 +68,12 @@ export function SiteFooter({ groups = [] }: { groups?: SocialGroup[] }) {
             aria-label={t("footerNav")}
           >
             <div className="flex flex-col gap-3">
-              <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.65px] text-[#8aa195]">
+              <span className="font-mono text-[10px] font-semibold uppercase tracking-wider text-slate-400">
                 {t("product")}
               </span>
               <Link
                 href="/#features"
-                className="text-[#b2cfc1] transition-colors hover:text-brand"
+                className="text-slate-300 transition-colors hover:text-brand"
               >
                 {t("featuresLink")}
               </Link>
@@ -88,62 +88,62 @@ export function SiteFooter({ groups = [] }: { groups?: SocialGroup[] }) {
                   destination_url: "/#download",
                 });
               }}
-              className="text-[#b2cfc1] transition-colors hover:text-brand"
+              className="text-slate-300 transition-colors hover:text-brand"
             >
               {t("downloadLink")}
             </Link>
             <Link
               href="/#how-it-works"
-              className="text-[#b2cfc1] transition-colors hover:text-brand"
+              className="text-slate-300 transition-colors hover:text-brand"
             >
               {t("installLink")}
             </Link>
             <Link
               href="/#campaigns"
-              className="text-[#b2cfc1] transition-colors hover:text-brand"
+              className="text-slate-300 transition-colors hover:text-brand"
             >
               {t("campaignsLink")}
             </Link>
             {hasGuides(locale) ? (
               <Link
                 href="/guides"
-                className="text-[#b2cfc1] transition-colors hover:text-brand"
+                className="text-slate-300 transition-colors hover:text-brand"
               >
                 {t("guidesLink")}
               </Link>
             ) : null}
             <Link
               href="/vs-capcut"
-              className="text-[#b2cfc1] transition-colors hover:text-brand"
+              className="text-slate-300 transition-colors hover:text-brand"
             >
               {t("compareLink")}
             </Link>
             <Link
               href="/brands"
-              className="text-[#b2cfc1] transition-colors hover:text-brand"
+              className="text-slate-300 transition-colors hover:text-brand"
             >
               {t("sponsorsLink")}
             </Link>
           </div>
             <div className="flex flex-col gap-3">
-              <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.65px] text-[#8aa195]">
+              <span className="font-mono text-[10px] font-semibold uppercase tracking-wider text-slate-400">
                 {t("legal")}
               </span>
               <Link
                 href="/terms-of-service"
-                className="text-[#b2cfc1] transition-colors hover:text-brand"
+                className="text-slate-300 transition-colors hover:text-brand"
               >
                 {t("termsLink")}
               </Link>
               <Link
                 href="/privacy-policy"
-                className="text-[#b2cfc1] transition-colors hover:text-brand"
+                className="text-slate-300 transition-colors hover:text-brand"
               >
                 {t("privacyLink")}
               </Link>
               <Link
                 href="/delete-account"
-                className="text-[#b2cfc1] transition-colors hover:text-brand"
+                className="text-slate-300 transition-colors hover:text-brand"
               >
                 {t("deleteAccountLink")}
               </Link>
@@ -161,17 +161,17 @@ export function SiteFooter({ groups = [] }: { groups?: SocialGroup[] }) {
               <Mail className="size-4 text-brand shrink-0" aria-hidden="true" />
               {t("contactHeading")}
             </h2>
-            <p className="mt-3 text-sm leading-relaxed text-[#9db7aa]">
+            <p className="mt-3 text-sm leading-relaxed text-slate-400">
               {t("contactCopyright")}
             </p>
-            <p className="mt-2 text-sm leading-relaxed text-[#9db7aa]">
+            <p className="mt-2 text-sm leading-relaxed text-slate-400">
               {t("contactBlurb")}
             </p>
             <a
               href={gmailComposeUrl(t("contactEmail"))}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-3 inline-flex max-w-full items-center gap-2 break-all text-sm font-semibold text-brand transition-colors hover:text-[#38e8a9]"
+              className="mt-3 inline-flex max-w-full items-center gap-2 break-all text-sm font-semibold text-brand transition-colors hover:text-emerald-300"
               aria-label={t("contactEmailAria")}
             >
               <Mail className="size-3.5 shrink-0 text-brand" aria-hidden="true" />

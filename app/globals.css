@@ -17,8 +17,9 @@
   --color-brand-tint: rgba(0, 245, 160, 0.12);
   --color-brand-mist: #38e8a9;
   --color-ink: #f4faf6;
-  --color-ink-soft: #cde0d6;
-  --color-muted-app: #8aa195;
+  --color-ink-soft: #c8ded3;
+  --color-muted-app: #94aa9e;
+  --color-muted-subtle: #6e8478;
   --color-surface: #080e0b;
   --color-surface-raised: #0f1b14;
   --color-surface-sunken: #040705;
@@ -76,7 +77,7 @@
   --secondary: #0f1c15;
   --secondary-foreground: #9ee6c2;
   --muted: #0e1813;
-  --muted-foreground: #8aa195;
+  --muted-foreground: #94aa9e;
   --accent: #112219;
   --accent-foreground: #00f5a0;
   --destructive: #ef4444;
@@ -111,7 +112,7 @@
   --secondary: #0f1c15;
   --secondary-foreground: #9ee6c2;
   --muted: rgba(255, 255, 255, 0.05);
-  --muted-foreground: #8aa195;
+  --muted-foreground: #94aa9e;
   --accent: #112219;
   --accent-foreground: #00f5a0;
   --destructive: #ef4444;

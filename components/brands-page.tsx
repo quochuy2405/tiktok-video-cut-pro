@@ -45,7 +45,7 @@ export function BrandsPage() {
             <h1 className="font-heading mt-5 text-[2.1rem] font-semibold leading-[1.12] tracking-[-1px] text-white md:text-[3rem]">
               {page.heroTitle}
             </h1>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#9db7aa] md:text-lg">
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
               {page.heroSubtitle}
             </p>
 
@@ -105,7 +105,7 @@ export function BrandsPage() {
                   <h3 className="font-heading mt-5 text-lg font-semibold text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-[#9db7aa]">
+                  <p className="mt-3 text-sm leading-relaxed text-slate-400">
                     {item.desc}
                   </p>
                 </div>
@@ -141,7 +141,7 @@ export function BrandsPage() {
             <h2 className="font-heading text-[1.85rem] font-semibold tracking-[-0.7px] text-white md:text-[2.4rem]">
               {page.ctaTitle}
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-[#9db7aa]">
+            <p className="mt-4 text-base leading-relaxed text-slate-300">
               {page.ctaSubtitle}
             </p>
           </FadeIn>

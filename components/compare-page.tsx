@@ -30,7 +30,7 @@ export function ComparePage() {
             <h1 className="font-heading mt-5 text-[2.1rem] font-semibold leading-[1.12] tracking-[-1px] text-white md:text-[2.9rem]">
               {page.heroTitle}
             </h1>
-            <p className="mt-5 text-base leading-relaxed text-[#9db7aa] md:text-lg">
+            <p className="mt-5 text-base leading-relaxed text-slate-300 md:text-lg">
               {page.heroSubtitle}
             </p>
           </FadeIn>
@@ -57,7 +57,7 @@ export function ComparePage() {
                     <th scope="col" className="px-5 py-4 font-semibold text-brand">
                       {page.columnOurs}
                     </th>
-                    <th scope="col" className="px-5 py-4 font-semibold text-[#9db7aa]">
+                    <th scope="col" className="px-5 py-4 font-semibold text-slate-400">
                       {page.columnOther}
                     </th>
                   </tr>
@@ -77,7 +77,7 @@ export function ComparePage() {
                           <span>{row.ours}</span>
                         </span>
                       </td>
-                      <td className="px-5 py-4 align-top text-[#9db7aa]">{row.other}</td>
+                      <td className="px-5 py-4 align-top text-slate-400">{row.other}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -120,8 +120,8 @@ export function ComparePage() {
                 </h3>
                 <ul className="mt-5 space-y-3">
                   {page.whenOther.points?.map((point) => (
-                    <li key={point} className="flex items-start gap-2.5 text-sm text-[#9db7aa]">
-                      <X className="mt-0.5 size-4 shrink-0 text-[#9db7aa]" />
+                    <li key={point} className="flex items-start gap-2.5 text-sm text-slate-400">
+                      <X className="mt-0.5 size-4 shrink-0 text-rose-400/80" />
                       <span className="leading-relaxed">{point}</span>
                     </li>
                   ))}
@@ -131,7 +131,7 @@ export function ComparePage() {
           </div>
 
           <FadeIn delay={0.12}>
-            <p className="mt-8 rounded-2xl border border-emerald-500/20 bg-[#0a1510]/80 px-6 py-5 text-sm leading-relaxed text-[#cde0d6]">
+            <p className="mt-8 rounded-2xl border border-emerald-500/20 bg-[#0a1510]/80 px-6 py-5 text-sm leading-relaxed text-slate-300">
               {page.honestNote}
             </p>
           </FadeIn>
@@ -155,7 +155,7 @@ export function ComparePage() {
                   <h3 className="font-heading text-base font-semibold text-white sm:text-lg">
                     {item.question}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-[#b2cfc1]">
+                  <p className="mt-3 text-sm leading-relaxed text-slate-300">
                     {item.answer}
                   </p>
                 </div>

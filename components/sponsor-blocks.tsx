@@ -20,7 +20,7 @@ export function SponsorStats({ stats }: { stats: SponsorStat[] }) {
             <span className="block font-heading font-mono text-xl font-bold text-gradient-brand drop-shadow-[0_0_16px_rgba(0,245,160,0.3)] sm:text-2xl">
               {stat.value}
             </span>
-            <span className="mt-1 block whitespace-nowrap text-[11px] leading-tight text-[#9db7aa] sm:text-xs">
+            <span className="mt-1 block whitespace-nowrap text-[11px] leading-tight text-slate-400 sm:text-xs">
               {stat.label}
             </span>
           </div>
@@ -47,13 +47,13 @@ export function SponsorInsight({ insight }: { insight: SponsorInsightCopy }) {
             <p className="font-heading mt-5 text-xl font-semibold leading-snug text-white sm:text-2xl">
               {insight.quote}
             </p>
-            <p className="mt-4 text-sm leading-relaxed text-[#b2cfc1] sm:text-base">
+            <p className="mt-4 text-sm leading-relaxed text-slate-300 sm:text-base">
               {insight.body}
             </p>
           </div>
           <div className="space-y-6">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#9db7aa]">
+              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">
                 {insight.providesLabel}
               </p>
               <div className="mt-3 flex flex-wrap gap-2">
@@ -68,14 +68,14 @@ export function SponsorInsight({ insight }: { insight: SponsorInsightCopy }) {
               </div>
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#9db7aa]">
+              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">
                 {insight.anglesLabel}
               </p>
               <ol className="mt-3 grid gap-2 sm:grid-cols-2">
                 {insight.angles?.map((angle, i) => (
                   <li
                     key={angle}
-                    className="flex items-center gap-2.5 rounded-xl bg-[#0d1a14]/85 px-3 py-2 text-xs font-medium text-[#b2cfc1] ring-1 ring-emerald-500/20"
+                    className="flex items-center gap-2.5 rounded-xl bg-[#0d1a14]/85 px-3 py-2 text-xs font-medium text-slate-300 ring-1 ring-emerald-500/20"
                   >
                     <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/20 font-mono text-[10px] font-bold text-brand shadow-[0_0_10px_rgba(0,245,160,0.3)]">
                       0{i + 1}
@@ -131,7 +131,7 @@ export function SponsorPlacements({
                 </h3>
                 <ul className="mt-4 space-y-3">
                   {group.items?.map((item, ii) => (
-                    <li key={item} className="flex items-start gap-2.5 text-sm text-[#b2cfc1]">
+                    <li key={item} className="flex items-start gap-2.5 text-sm text-slate-300">
                       <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/20 font-mono text-[10px] font-bold text-brand shadow-[0_0_10px_rgba(0,245,160,0.25)]">
                         {String(offset + ii + 1).padStart(2, "0")}
                       </span>
@@ -177,14 +177,14 @@ export function SponsorProcess({
               <h3 className="font-heading mt-2 text-sm font-semibold text-white">
                 {step.title}
               </h3>
-              <p className="mt-1.5 text-xs leading-relaxed text-[#9db7aa]">{step.desc}</p>
+              <p className="mt-1.5 text-xs leading-relaxed text-slate-400">{step.desc}</p>
             </div>
           </FadeIn>
         ))}
       </div>
 
       <FadeIn>
-        <p className="mx-auto mt-5 flex max-w-2xl items-start justify-center gap-2 text-center text-sm text-[#b2cfc1]">
+        <p className="mx-auto mt-5 flex max-w-2xl items-start justify-center gap-2 text-center text-sm text-slate-300">
           <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-brand" />
           <span>{note}</span>
         </p>
@@ -212,7 +212,7 @@ export function SponsorBenefits({
       <h3 className="font-heading mb-5 text-xl font-semibold text-white">{title}</h3>
       <ul className="space-y-4">
         {benefits?.map((benefit) => (
-          <li key={benefit} className="flex items-start gap-3 text-sm text-[#b2cfc1]">
+          <li key={benefit} className="flex items-start gap-3 text-sm text-slate-300">
             <div className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/20 text-brand shadow-[0_0_10px_rgba(0,245,160,0.3)]">
               <Check className="size-3.5" strokeWidth={3} />
             </div>

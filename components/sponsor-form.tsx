@@ -64,14 +64,14 @@ export function SponsorForm({
   };
 
   const inputClass =
-    "w-full rounded-xl border border-emerald-500/25 bg-[#08120d] px-4 py-2.5 text-sm text-white placeholder:text-[#6a8577] focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand shadow-inner transition-colors";
+    "w-full min-h-[46px] rounded-xl border border-white/10 bg-[#08120d] px-4 py-3 text-base sm:text-sm text-white placeholder:text-slate-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand shadow-inner transition-colors";
 
   return (
     <div id={id} className="scroll-mt-[72px] rounded-[24px] surface-card border border-emerald-500/20 bg-gradient-to-br from-[#0c1812]/90 via-[#0a140f]/90 to-[#070e0a]/95 p-6 sm:p-8 shadow-[0_20px_50px_-16px_rgba(0,0,0,0.9),0_0_25px_rgba(0,245,160,0.12)]">
       <h3 className="font-heading text-xl font-semibold text-white">
         {copy.title}
       </h3>
-      <p className="mt-2 text-sm text-[#9db7aa]">{copy.desc}</p>
+      <p className="mt-2 text-sm text-slate-400">{copy.desc}</p>
 
       {submitted ? (
         <div className="mt-8 rounded-2xl border border-brand/40 bg-brand/15 p-6 text-sm font-medium text-brand shadow-[0_0_20px_rgba(0,245,160,0.2)]">
@@ -81,7 +81,7 @@ export function SponsorForm({
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="block space-y-1.5 text-sm">
-              <span className="font-medium text-[#cde0d6]">
+              <span className="font-medium text-slate-300">
                 {copy.brandNameLabel} *
               </span>
               <input
@@ -95,7 +95,7 @@ export function SponsorForm({
               />
             </label>
             <label className="block space-y-1.5 text-sm">
-              <span className="font-medium text-[#cde0d6]">
+              <span className="font-medium text-slate-300">
                 {copy.contactNameLabel} *
               </span>
               <input
@@ -109,7 +109,7 @@ export function SponsorForm({
               />
             </label>
             <label className="block space-y-1.5 text-sm">
-              <span className="font-medium text-[#cde0d6]">
+              <span className="font-medium text-slate-300">
                 {copy.emailLabel} *
               </span>
               <input
@@ -124,7 +124,7 @@ export function SponsorForm({
               />
             </label>
             <label className="block space-y-1.5 text-sm">
-              <span className="font-medium text-[#cde0d6]">
+              <span className="font-medium text-slate-300">
                 {copy.phoneLabel} *
               </span>
               <input
@@ -139,7 +139,7 @@ export function SponsorForm({
             </label>
           </div>
           <label className="block space-y-1.5 text-sm">
-            <span className="font-medium text-[#cde0d6]">{copy.budgetLabel}</span>
+            <span className="font-medium text-slate-300">{copy.budgetLabel}</span>
             <select
               value={formData.budget}
               onChange={(e) =>
@@ -156,7 +156,7 @@ export function SponsorForm({
             </select>
           </label>
           <label className="block space-y-1.5 text-sm">
-            <span className="font-medium text-[#cde0d6]">{copy.noteLabel}</span>
+            <span className="font-medium text-slate-300">{copy.noteLabel}</span>
             <textarea
               rows={3}
               value={formData.note}
@@ -172,7 +172,7 @@ export function SponsorForm({
             disabled={loading}
             className={cn(
               buttonVariants({ variant: "default", size: "lg" }),
-              "w-full rounded-xl border-0 bg-gradient-to-r from-brand via-[#00DF9E] to-brand-deep py-3.5 text-sm font-bold text-[#02180e] shadow-[0_0_25px_rgba(0,245,160,0.45)] transition-all hover:shadow-[0_0_35px_rgba(0,245,160,0.65)] hover:-translate-y-0.5",
+              "w-full min-h-[48px] rounded-xl border-0 bg-gradient-to-r from-brand via-[#00DF9E] to-brand-deep py-3.5 text-sm font-bold text-[#02180e] shadow-[0_0_25px_rgba(0,245,160,0.45)] transition-all hover:shadow-[0_0_35px_rgba(0,245,160,0.65)] hover:-translate-y-0.5 active:scale-98",
               loading && "cursor-not-allowed opacity-75",
             )}
           >

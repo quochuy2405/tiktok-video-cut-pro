@@ -94,7 +94,7 @@ export function SocialLinks({
             title={`${name} (@fivecutpro)`}
             aria-label={`Theo dõi Five Cut Pro trên ${name}`}
             className={cn(
-              "flex size-8 items-center justify-center rounded-lg border border-emerald-500/20 bg-[#0d1812] text-[#8aa195] shadow-[0_4px_16px_rgba(0,0,0,0.6)] transition-all duration-200 hover:-translate-y-0.5",
+              "flex size-9 min-h-[36px] min-w-[36px] items-center justify-center rounded-xl border border-emerald-500/20 bg-[#0d1812] text-slate-400 shadow-[0_4px_16px_rgba(0,0,0,0.6)] transition-all duration-200 hover:-translate-y-0.5 active:scale-95",
               hoverColor,
             )}
           >
@@ -116,13 +116,13 @@ export function SocialLinks({
           title={`${name} ${handle}`}
           aria-label={`Theo dõi Five Cut Pro trên ${name}`}
           className={cn(
-            "group inline-flex items-center gap-2 rounded-xl border border-emerald-500/20 bg-[#0d1812] px-3 py-2 text-xs font-medium text-[#cde0d6] shadow-[0_4px_16px_rgba(0,0,0,0.6)] transition-all duration-200 hover:-translate-y-0.5",
+            "group inline-flex min-h-[44px] items-center gap-2.5 rounded-xl border border-emerald-500/20 bg-[#0d1812] px-3.5 py-2.5 text-xs font-medium text-slate-200 shadow-[0_4px_16px_rgba(0,0,0,0.6)] transition-all duration-200 hover:-translate-y-0.5 active:scale-98",
             hoverColor,
           )}
         >
-          <Icon className="size-4 text-[#8aa195] transition-colors group-hover:text-inherit" />
+          <Icon className="size-4 text-slate-400 transition-colors group-hover:text-inherit" />
           {showLabel ? (
-            <span className="font-medium text-[#cde0d6] transition-colors group-hover:text-inherit">
+            <span className="font-medium text-slate-200 transition-colors group-hover:text-inherit">
               {name}
             </span>
           ) : null}

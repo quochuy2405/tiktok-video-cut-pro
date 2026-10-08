@@ -66,6 +66,7 @@ export type CtaLocation =
   | "header_desktop"
   | "header_mobile"
   | "header_menu"
+  | "mobile_drawer"
   | "hero"
   | "comparison_section"
   | "campaigns_section"

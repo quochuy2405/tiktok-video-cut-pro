@@ -33,7 +33,7 @@ const AI_AGENTS = [
 
 export default function robots(): MetadataRoute.Robots {
   const host = getSiteUrl();
-  const allow = ["/", "/llms.txt", "/llms-full.txt",];
+  const allow = ["/", "/llms.txt", "/llms-full.txt"];
 
   return {
     rules: [

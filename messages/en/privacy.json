@@ -5,7 +5,7 @@
   "title": "Privacy Policy & EULA",
   "updatedLabel": "Last updated",
   "updatedDate": "September 25, 2026",
-  "lawyerNotice": "This document combines (A) our Privacy Policy and (B) our End User License Agreement (EULA). By downloading, installing, signing in to, or continuing to use Five Cut Pro (the mobile apps, fivecutpro.com, and related services), you confirm that you have read and agree to this document. It is not legal advice and is not a certification of compliance. Mandatory consumer protections that apply to you remain in force. The data controller is [LEGAL ENTITY NAME].",
+  "lawyerNotice": "This document combines (A) our Privacy Policy and (B) our End User License Agreement (EULA). By downloading, installing, signing in to, or continuing to use Five Cut Pro (the mobile apps, fivecutpro.com, and related services), you confirm that you have read and agree to this document. It is not legal advice and is not a certification of compliance. Mandatory consumer protections that apply to you remain in force. The data controller is Five Cut Pro Asia.",
   "sections": [
     {
       "title": "A. PRIVACY POLICY",
@@ -17,7 +17,7 @@
       "title": "1. Scope and controller",
       "paragraphs": [
         "This Policy applies to: (i) the Five Cut Pro apps on iOS and Android; (ii) the marketing site at fivecutpro.com; and (iii) account, notification, template-marketplace, and in-app brand-banner features we operate.",
-        "The data controller is [LEGAL ENTITY NAME]. Privacy requests: support@fivecutpro.com. Vendors that process account or technical data on our instructions are processors, not recipients of your editing media."
+        "The data controller is Five Cut Pro Asia. Privacy requests: support@fivecutpro.com. Vendors that process account or technical data on our instructions are processors, not recipients of your editing media."
       ]
     },
     {
@@ -104,7 +104,7 @@
       "paragraphs": [
         "Servers or vendors may be located outside your country of residence. We apply appropriate safeguards required by applicable law (contracts, technical and organizational measures).",
         "We use reasonable security measures; no system is perfectly secure. Protect your devices and do not share OTPs/passwords.",
-        "Account and operational records are kept while your account is active and, after a deletion request, through the deactivation window described on the Delete Account page (currently 7 days), then deactivated. We may keep limited records longer where needed for security, dispute handling, or legal and accounting duties. Exact secondary retention periods are [DATA RETENTION PERIODS]. Local media on your device is not in our retention schedule because we do not hold it."
+        "Account and operational records are kept while your account is active and, after a deletion request, through the deactivation window described on the Delete Account page (currently 7 days), then deactivated. We may keep limited records longer only for as long as needed for security, dispute handling, or legal and accounting duties. Local media on your device is not in our retention schedule because we do not hold it."
       ]
     },
     {
@@ -215,7 +215,7 @@
       "paragraphs": [
         "If you reside in Vietnam, this document is governed by Vietnamese law; disputes should first be negotiated in good faith, then may be brought before competent Vietnamese courts, subject to mandatory consumer protections. If you reside elsewhere, non-waivable local rights still apply.",
         "We may update Part B together with or separately from Part A; notice follows Section 13.",
-        "Privacy and legal contact: support@fivecutpro.com. Controller: [LEGAL ENTITY NAME].",
+        "Privacy and legal contact: support@fivecutpro.com. Controller: Five Cut Pro Asia.",
         "Five Cut Pro — Turn products into content. Turn content into selling opportunities."
       ]
     }

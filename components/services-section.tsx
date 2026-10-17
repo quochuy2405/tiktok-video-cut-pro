@@ -88,19 +88,20 @@ export function ServicesSection({ copy }: { copy: ServicesSectionCopy }) {
           ) : null}
         </FadeIn>
 
+        {/* White boxes on the dark band — the service strip from the brand banner. */}
         <div className="mt-12 grid gap-3.5 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
           {copy.items.map((item, idx) => {
             const Icon = SERVICE_ICONS[item.id] ?? Video;
             return (
               <FadeIn key={item.id} delay={idx * 0.04}>
-                <SpotlightCard className="glass-panel group relative h-full min-w-0 rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-[#0c1812]/90 via-[#0a140f]/90 to-[#070e0a]/95 p-5 text-left shadow-[0_14px_34px_-14px_rgba(0,0,0,0.85)] transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-400/60 hover:shadow-[0_20px_45px_-12px_rgba(0,0,0,0.95),0_0_30px_rgba(0,245,160,0.25)] sm:p-6">
-                  <div className="flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500/25 to-emerald-500/10 text-brand ring-1 ring-emerald-500/40 shadow-[0_0_20px_rgba(0,245,160,0.25)] transition-all duration-300 group-hover:scale-105 group-hover:ring-emerald-400 group-hover:shadow-[0_0_30px_rgba(0,245,160,0.45)]">
+                <SpotlightCard className="group relative h-full min-w-0 rounded-2xl border border-white/60 bg-white p-5 text-left shadow-[0_18px_40px_-20px_rgba(0,0,0,0.9)] transition-all duration-300 hover:-translate-y-1.5 hover:border-brand hover:shadow-[0_24px_50px_-18px_rgba(0,0,0,0.95),0_0_28px_rgba(0,245,160,0.28)] sm:p-6">
+                  <div className="flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-100 to-emerald-50 text-brand-ink ring-1 ring-emerald-200 transition-all duration-300 group-hover:scale-105 group-hover:ring-emerald-300">
                     <Icon className="size-6" />
                   </div>
-                  <h3 className="font-heading mt-4 text-base font-bold leading-snug text-white transition-colors group-hover:text-brand sm:text-lg">
+                  <h3 className="font-heading mt-4 text-base font-bold leading-snug text-slate-900 transition-colors group-hover:text-brand-ink sm:text-lg">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">
                     {item.desc}
                   </p>
                 </SpotlightCard>
@@ -110,16 +111,16 @@ export function ServicesSection({ copy }: { copy: ServicesSectionCopy }) {
 
           {/* 8th cell on desktop: the contact card closes the grid. */}
           <FadeIn delay={copy.items.length * 0.04}>
-            <div className="relative flex h-full min-w-0 flex-col justify-between overflow-hidden rounded-2xl border border-brand/40 bg-gradient-to-br from-[#0f2219] via-[#0b1a13] to-[#061009] p-5 shadow-[0_18px_40px_-14px_rgba(0,0,0,0.9),0_0_28px_rgba(0,245,160,0.18)] sm:p-6">
+            <div className="relative flex h-full min-w-0 flex-col justify-between overflow-hidden rounded-2xl border border-brand/60 bg-gradient-to-br from-emerald-50 via-white to-emerald-50 p-5 shadow-[0_18px_40px_-20px_rgba(0,0,0,0.9),0_0_26px_rgba(0,245,160,0.22)] sm:p-6">
               <div
-                className="pointer-events-none absolute -right-10 -top-10 size-40 rounded-full bg-brand/20 blur-3xl"
+                className="pointer-events-none absolute -right-12 -top-12 size-40 rounded-full bg-brand/25 blur-3xl"
                 aria-hidden
               />
               <div className="relative z-[1]">
-                <p className="font-heading text-lg font-bold leading-snug text-white">
+                <p className="font-heading text-lg font-bold leading-snug text-slate-900">
                   {copy.ctaTitle}
                 </p>
-                <p className="mt-2 text-sm leading-relaxed text-slate-300">
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">
                   {copy.ctaSubtitle}
                 </p>
               </div>
@@ -135,7 +136,7 @@ export function ServicesSection({ copy }: { copy: ServicesSectionCopy }) {
                     destination_url: `mailto:${copy.contactEmail}`,
                   });
                 }}
-                className="relative z-[1] mt-5 inline-flex items-center gap-2 rounded-full border border-brand/40 bg-brand/10 px-3.5 py-2 text-xs font-semibold text-brand transition-colors hover:border-brand/70 hover:bg-brand/20 sm:text-sm"
+                className="relative z-[1] mt-5 inline-flex items-center gap-2 rounded-full border border-brand/50 bg-white px-3.5 py-2 text-xs font-semibold text-brand-ink transition-colors hover:border-brand hover:bg-emerald-50 sm:text-sm"
               >
                 <Mail className="size-4 shrink-0" />
                 <span className="truncate">{copy.contactEmail}</span>

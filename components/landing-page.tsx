@@ -209,13 +209,13 @@ export function LandingPage({
             ).map(({ key, Icon }) => (
               <SpotlightCard
                 key={key}
-                className="glass-panel group relative min-w-0 rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-[#0c1812]/90 via-[#0a140f]/90 to-[#070e0a]/95 p-4.5 sm:p-6 text-left transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-400/60 hover:shadow-[0_20px_45px_-12px_rgba(0,0,0,0.95),0_0_30px_rgba(0,245,160,0.25)]"
+                className="group relative min-w-0 rounded-2xl border border-white/60 bg-white p-4.5 sm:p-6 text-left shadow-[0_18px_40px_-20px_rgba(0,0,0,0.9)] transition-all duration-300 hover:-translate-y-1.5 hover:border-brand hover:shadow-[0_24px_50px_-18px_rgba(0,0,0,0.95),0_0_30px_rgba(0,245,160,0.28)]"
               >
                 <div className="flex min-w-0 items-start gap-3 sm:items-center sm:gap-4">
-                  <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500/25 to-emerald-500/10 text-brand ring-1 ring-emerald-500/40 shadow-[0_0_20px_rgba(0,245,160,0.25)] group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(0,245,160,0.45)] group-hover:ring-emerald-400 transition-all duration-300 sm:size-14">
+                  <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-100 to-emerald-50 text-brand-ink ring-1 ring-emerald-200 transition-all duration-300 group-hover:scale-105 group-hover:ring-emerald-300 sm:size-14">
                     <Icon className="size-6 sm:size-7" />
                   </div>
-                  <h3 className="min-w-0 flex-1 font-heading text-[15px] font-bold leading-snug text-white wrap-break-word group-hover:text-brand transition-colors sm:text-lg">
+                  <h3 className="min-w-0 flex-1 font-heading text-[15px] font-bold leading-snug text-slate-900 wrap-break-word transition-colors group-hover:text-brand-ink sm:text-lg">
                     {t(`hero.${key}`)}
                   </h3>
                 </div>
@@ -314,11 +314,11 @@ export function LandingPage({
           <div className="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-3">
             {appPoints.map((point, idx) => (
               <FadeIn key={point} delay={idx * 0.05}>
-                <div className="flex h-full items-start gap-3 rounded-2xl border border-emerald-500/20 bg-[#0a130e]/85 p-4 text-left backdrop-blur-xl">
-                  <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/20 text-brand shadow-[0_0_10px_rgba(0,245,160,0.3)]">
+                <div className="flex h-full items-start gap-3 rounded-2xl border border-emerald-100 bg-white p-4 text-left shadow-[0_12px_30px_-16px_rgba(0,0,0,0.9)]">
+                  <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-brand-ink">
                     <Check className="size-3.5" />
                   </span>
-                  <p className="text-sm leading-relaxed text-slate-300">{point}</p>
+                  <p className="text-sm leading-relaxed text-slate-600">{point}</p>
                 </div>
               </FadeIn>
             ))}
@@ -360,6 +360,7 @@ export function LandingPage({
               </p>
             </FadeIn>
             <CommunityGroupList
+              tone="light"
               groups={socialGroups}
               title={t("communitySection.title")}
               joinLabel={t("communitySection.join")}
@@ -397,8 +398,8 @@ export function LandingPage({
                     className={cn(
                       "rounded-2xl border transition-all duration-300",
                       isOpen
-                        ? "border-brand/50 bg-gradient-to-b from-[#0e1d15] to-[#08120d] shadow-[0_12px_36px_-10px_rgba(0,0,0,0.9),0_0_28px_rgba(0,245,160,0.2)]"
-                        : "border-emerald-500/15 bg-[#0a130e]/85 backdrop-blur-xl hover:border-brand/40 hover:shadow-[0_0_25px_rgba(0,245,160,0.15)]",
+                        ? "border-emerald-300 bg-emerald-50/70 shadow-[0_10px_26px_-12px_rgba(0,160,112,0.45)]"
+                        : "border-emerald-200 bg-white backdrop-blur-xl hover:border-emerald-300 hover:shadow-[0_10px_26px_-12px_rgba(0,160,112,0.45)]",
                     )}
                   >
                     <button
@@ -406,18 +407,18 @@ export function LandingPage({
                       onClick={() => setOpenFaq(isOpen ? null : item.id)}
                       className="flex min-h-[56px] w-full items-center justify-between gap-4 p-5 sm:p-6 text-left active:scale-[0.99] transition-transform"
                     >
-                      <span className="font-heading text-base sm:text-lg font-semibold text-white">
+                      <span className="font-heading text-base sm:text-lg font-semibold text-slate-900">
                         {item.question}
                       </span>
                       <ChevronDown
                         className={cn(
-                          "size-5 shrink-0 text-slate-400 transition-transform duration-300",
-                          isOpen && "rotate-180 text-brand",
+                          "size-5 shrink-0 text-slate-500 transition-transform duration-300",
+                          isOpen && "rotate-180 text-brand-ink",
                         )}
                       />
                     </button>
                     {isOpen && (
-                      <div className="border-t border-emerald-500/15 px-5 pb-5 sm:px-6 sm:pb-6 pt-3 text-sm leading-relaxed text-slate-300">
+                      <div className="border-t border-emerald-200 px-5 pb-5 sm:px-6 sm:pb-6 pt-3 text-sm leading-relaxed text-slate-600">
                         {item.answer}
                       </div>
                     )}

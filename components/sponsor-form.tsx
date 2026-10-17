@@ -64,24 +64,24 @@ export function SponsorForm({
   };
 
   const inputClass =
-    "w-full min-h-[46px] rounded-xl border border-white/10 bg-[#08120d] px-4 py-3 text-base sm:text-sm text-white placeholder:text-slate-500 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand shadow-inner transition-colors";
+    "w-full min-h-[46px] rounded-xl border border-slate-200 bg-white px-4 py-3 text-base sm:text-sm text-slate-900 placeholder:text-slate-400 focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand transition-colors";
 
   return (
-    <div id={id} className="scroll-mt-[72px] rounded-[24px] surface-card border border-emerald-500/20 bg-gradient-to-br from-[#0c1812]/90 via-[#0a140f]/90 to-[#070e0a]/95 p-6 sm:p-8 shadow-[0_20px_50px_-16px_rgba(0,0,0,0.9),0_0_25px_rgba(0,245,160,0.12)]">
-      <h3 className="font-heading text-xl font-semibold text-white">
+    <div id={id} className="scroll-mt-[72px] rounded-[24px] bg-white border border-slate-200 bg-white p-6 sm:p-8 shadow-[0_20px_50px_-16px_rgba(0,0,0,0.9),0_0_25px_rgba(0,245,160,0.12)]">
+      <h3 className="font-heading text-xl font-semibold text-slate-900">
         {copy.title}
       </h3>
-      <p className="mt-2 text-sm text-slate-400">{copy.desc}</p>
+      <p className="mt-2 text-sm text-slate-600">{copy.desc}</p>
 
       {submitted ? (
-        <div className="mt-8 rounded-2xl border border-brand/40 bg-brand/15 p-6 text-sm font-medium text-brand shadow-[0_0_20px_rgba(0,245,160,0.2)]">
+        <div className="mt-8 rounded-2xl border border-emerald-200 bg-emerald-50 p-6 text-sm font-medium text-brand-ink">
           {copy.successMessage}
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="block space-y-1.5 text-sm">
-              <span className="font-medium text-slate-300">
+              <span className="font-medium text-slate-600">
                 {copy.brandNameLabel} *
               </span>
               <input
@@ -95,7 +95,7 @@ export function SponsorForm({
               />
             </label>
             <label className="block space-y-1.5 text-sm">
-              <span className="font-medium text-slate-300">
+              <span className="font-medium text-slate-600">
                 {copy.contactNameLabel} *
               </span>
               <input
@@ -109,7 +109,7 @@ export function SponsorForm({
               />
             </label>
             <label className="block space-y-1.5 text-sm">
-              <span className="font-medium text-slate-300">
+              <span className="font-medium text-slate-600">
                 {copy.emailLabel} *
               </span>
               <input
@@ -124,7 +124,7 @@ export function SponsorForm({
               />
             </label>
             <label className="block space-y-1.5 text-sm">
-              <span className="font-medium text-slate-300">
+              <span className="font-medium text-slate-600">
                 {copy.phoneLabel} *
               </span>
               <input
@@ -139,7 +139,7 @@ export function SponsorForm({
             </label>
           </div>
           <label className="block space-y-1.5 text-sm">
-            <span className="font-medium text-slate-300">{copy.budgetLabel}</span>
+            <span className="font-medium text-slate-600">{copy.budgetLabel}</span>
             <select
               value={formData.budget}
               onChange={(e) =>
@@ -149,14 +149,14 @@ export function SponsorForm({
             >
               <option value="">—</option>
               {copy.budgetOptions?.map((opt) => (
-                <option key={opt} value={opt} className="bg-[#0c1611] text-white">
+                <option key={opt} value={opt} className="bg-white text-slate-900">
                   {opt}
                 </option>
               ))}
             </select>
           </label>
           <label className="block space-y-1.5 text-sm">
-            <span className="font-medium text-slate-300">{copy.noteLabel}</span>
+            <span className="font-medium text-slate-600">{copy.noteLabel}</span>
             <textarea
               rows={3}
               value={formData.note}

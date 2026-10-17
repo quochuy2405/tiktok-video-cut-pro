@@ -16,6 +16,9 @@
   --color-brand-forest: #004d30;
   --color-brand-tint: rgba(0, 245, 160, 0.12);
   --color-brand-mist: #38e8a9;
+  /* Ink-weight greens that stay legible on the light sections */
+  --color-brand-ink: #0a8f63;
+  --color-brand-ink-deep: #06704d;
   --color-ink: #f4faf6;
   --color-ink-soft: #c8ded3;
   --color-muted-app: #94aa9e;
@@ -229,6 +232,14 @@
       transparent 60%
     ),
     linear-gradient(165deg, #050806 0%, #030504 50%, #060a07 100%);
+}
+
+/* Light-surface helpers for the white cards on the dark bands */
+@utility text-gradient-brand-ink {
+  background: linear-gradient(100deg, #06704d 0%, #0a8f63 45%, #00a870 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 @utility glass-panel {

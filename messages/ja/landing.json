@@ -1,21 +1,17 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "KOC向け動画テンプレート",
-    "titleLead": "KOCのための",
-    "titleAccent": "動画テンプレート",
-    "subLead": "わずかな素材だけで販売動画を作成",
-    "subAccent": "重複なしで何百本もの販売クリップを書き出し",
-    "pointShoot": "撮影がわからない？撮影方法をガイドします！",
-    "pointEdit": "編集がわからない？Five Cut Proがお手伝いします",
-    "pointGuide": "何も悩む必要はありません、指示に従うだけ",
-    "pointContent": "シンプルで分かりやすい構成",
-    "subtitle": "わずかな素材だけで販売動画を作成 — 重複なしで何百本もの販売クリップを書き出し。",
-    "ctaPrimary": "無料ダウンロード",
+    "tagline": "ブランドのためのワンストップ・ソリューション",
+    "titleLead": "Video & Digital Marketing",
+    "titleAccent": "ブランドのために",
+    "subLead": "アイデアから実行まで",
+    "subAccent": "あらゆるプラットフォームでブランドを輝かせます",
+    "subtitle": "ブランド向けの動画＆デジタルマーケティングをワンストップで。アイデアから実行まで。",
+    "ctaPrimary": "無料相談を申し込む",
     "ctaSecondary": "手順を見る",
     "ctaBatch": "少量素材 → 多数クリップ",
-    "ctaBrand": "ブランド向け",
-    "ctaTrust": "iOS（配信中）· Android（近日公開）· スマホですべて完結",
+    "ctaBrand": "7つのサービスを見る",
+    "ctaTrust": "コンテンツ制作 · SNS · ライブ配信 · ウェブサイト",
     "ctaSocialProof": "撮影や編集のスキル不要 · 指示に従うだけで動画完成",
     "audienceKoc": "KOC・販売クリエイター",
     "audienceSeller": "TikTok Shop セラー",
@@ -36,7 +32,11 @@
     "hookSimpleSub": "複雑な試行錯誤をなくす、標準化された最適ワークフロー。",
     "hookContentTitle": "シンプルな構成",
     "hookContentDesc": "わかりやすく、実践的で、売れる！",
-    "hookContentSub": "TikTok Shop の購買転換率を最大化する実戦向け KOC 台本テンプレート。"
+    "hookContentSub": "TikTok Shop の購買転換率を最大化する実戦向け KOC 台本テンプレート。",
+    "pointVideo": "ブランドの世界観に沿った商品動画の制作・編集",
+    "pointSales": "成果につながる販売動画とライブ配信ルーム",
+    "pointSocial": "ブランドのSNSチャンネルを構築し、育てる",
+    "pointWeb": "購入につなげるブランドサイトの設計"
   },
   "metricsBar": [
     {
@@ -189,12 +189,27 @@
         "id": "faq-5",
         "question": "アプリは無料ですか？対応デバイスは？",
         "answer": "Five Cut Pro は現在 iOS（App Store）にて iPhone および iPad 向けに正式配信中です。Android 版は最終テスト中で、まもなく Google Play にて公開予定です。"
+      },
+      {
+        "id": "faq-services",
+        "question": "Five Cut Proはブランド向けに動画とマーケティングを一括で請け負いますか？",
+        "answer": "はい。KOC向けテンプレートアプリに加えて、商品動画の制作・編集、販売用動画、SNSチャンネル運用、ライティング設営、ライブルーム、ブランドサイト制作までワンストップで対応します。ブランド向けセクションからご依頼いただくか、support@fivecutpro.com までご連絡ください。"
       }
+    ]
+  },
+  "appSection": {
+    "label": "実行ネットワーク",
+    "title": "コンテンツはクリエイターのネットワークで広がります",
+    "subtitle": "制作チームに加えて、Five Cut ProはKOC向けの動画テンプレートアプリを運営しています。御社の商品はアプリ内で動画テンプレートと撮影ガイドになり、KOCが毎日そこから販売コンテンツを生み出します。",
+    "points": [
+      "商品がKOCに繰り返し使われる動画テンプレートになります",
+      "各テンプレートにアングルごとの撮影ガイドが付きます",
+      "動画制作の導線全体に12のブランド露出ポイント"
     ]
   },
   "downloadSection": {
     "label": "今すぐ始める",
-    "title": "Five Cut Pro をダウンロード — KOC 動画テンプレート",
+    "title": "KOC向けFive Cut Proアプリを入手",
     "subtitle": "わずかな素材だけで販売動画を作成 · 重複なしで何百本もの販売クリップを書き出し。",
     "mobileLabel": "iOS（配信中）· Android（近日公開）",
     "ctaStore": "App Store で無料ダウンロード",
@@ -202,6 +217,61 @@
     "qrLabel": "アプリ QR コード",
     "qrTitle": "スマホで Five Cut Pro をダウンロード",
     "qrSubtitle": "iPhone / iPad のカメラで QR をスキャンして App Store から直接ダウンロード。Android 版は近日公開予定です。"
+  },
+  "servicesSection": {
+    "label": "ワンストップ・ソリューション",
+    "titleLead": "Video & Digital Marketing",
+    "titleAccent": "ブランドのために",
+    "subtitle": "アイデアから実行まで、あらゆるプラットフォームでブランドを輝かせます。",
+    "pillars": [
+      "VIDEO",
+      "SOCIAL",
+      "WEBSITE"
+    ],
+    "tagline": "Your Brand, Our Creativity",
+    "items": [
+      {
+        "id": "production",
+        "title": "商品動画の制作",
+        "desc": "プロの撮影・演出で、商品をもっとも魅力的に見せます。"
+      },
+      {
+        "id": "editing",
+        "title": "プロフェッショナルな動画編集",
+        "desc": "編集、カラーグレーディング、エフェクト、字幕をブランドのご要望に合わせて。"
+      },
+      {
+        "id": "sales-video",
+        "title": "販売用動画",
+        "desc": "再生数ではなく売上を動かす、コンバージョン重視の動画。"
+      },
+      {
+        "id": "social",
+        "title": "SNSチャンネルの育成",
+        "desc": "エンゲージメントを高め、TikTok・Facebookを伸ばすコンテンツ戦略。"
+      },
+      {
+        "id": "lighting",
+        "title": "プロ仕様のライティング設営",
+        "desc": "撮影とライブ配信に最適な照明機材とレイアウトを構築します。"
+      },
+      {
+        "id": "live-room",
+        "title": "ブランド向けライブルーム",
+        "desc": "ライブ販売をフルサポートする、プロ仕様のスタジオ空間。"
+      },
+      {
+        "id": "website",
+        "title": "ブランドサイトの制作",
+        "desc": "モダンなデザインと最適化されたUXで、訪問者を顧客に変えます。"
+      }
+    ],
+    "ctaTitle": "今すぐお問い合わせ",
+    "ctaSubtitle": "ご連絡いただければ、Five Cut Proが商品と予算に合うプランをご提案します。",
+    "ctaPrimary": "無料相談を申し込む",
+    "ctaSecondary": "12のブランド露出ポイントを見る",
+    "contactEmail": "support@fivecutpro.com",
+    "contactEmailAria": "support@fivecutpro.com にメールを送る"
   },
   "communitySection": {
     "label": "サポートグループ",
@@ -247,7 +317,7 @@
   "sponsorsSection": {
     "label": "ブランド向け",
     "title": "商品をコンテンツに、コンテンツを販売機会に",
-    "subtitle": "新商品の立ち上げには、多くのコンテンツ・多くのアングル・多くのクリエイターが必要です。Five Cut Proは、KOCが毎日作業する場所に商品を置きます。",
+    "subtitle": "アイデアから実行まで。Five Cut Proがコンテンツを制作し、商品を動画テンプレートに仕立て、KOCが毎日作業する場所にブランドを届けます。",
     "stats": [
       {
         "value": "12",

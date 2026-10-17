@@ -1,24 +1,24 @@
 {
   "Metadata": {
-    "titleDefault": "Five Cut Pro — Template Video Dành Cho KOC",
-    "description": "Tạo video bán hàng chỉ với vài nguồn, xuất bản hàng trăm clip bán hàng và không trùng lặp. Bạn không biết quay? Chúng tôi hướng dẫn bạn quay! Bạn không biết edit? Five Cut Pro edit giúp bạn!",
+    "titleDefault": "Five Cut Pro — Giải Pháp Video & Digital Marketing Cho Nhãn Hàng",
+    "description": "Giải pháp trọn gói cho nhãn hàng: sản xuất và edit video sản phẩm, video bán hàng, xây dựng kênh social, set up ánh sáng, phòng live và thiết kế website. Từ ý tưởng đến thực thi.",
     "keywords": [
-      "Template video dành cho KOC",
-      "Five Cut Pro",
-      "video bán hàng KOC",
-      "tạo video bán hàng",
-      "xuất bản video không trùng lặp",
-      "hướng dẫn quay video",
-      "tự động edit video",
-      "TikTok Shop",
-      "video ngắn 9:16",
-      "KOC TikTok"
+      "giải pháp video cho nhãn hàng",
+      "digital marketing cho nhãn hàng",
+      "sản xuất video sản phẩm",
+      "edit video chuyên nghiệp",
+      "video bán hàng",
+      "xây dựng kênh social",
+      "set up ánh sáng livestream",
+      "phòng live cho nhãn hàng",
+      "thiết kế website cho nhãn hàng",
+      "Five Cut Pro"
     ],
-    "ogTitle": "Five Cut Pro — Template Video Dành Cho KOC",
-    "ogDescription": "Tạo video bán hàng chỉ với vài nguồn, xuất bản hàng trăm clip bán hàng và không trùng lặp. Bạn không biết quay? Chúng tôi hướng dẫn bạn quay! Bạn không biết edit? Five Cut Pro edit giúp bạn!",
-    "ogImageAlt": "Five Cut Pro — Template video dành cho KOC",
-    "twitterTitle": "Five Cut Pro — Template Video Dành Cho KOC",
-    "twitterDescription": "Tạo video bán hàng chỉ với vài nguồn, xuất bản hàng trăm clip bán hàng và không trùng lặp. Bạn không biết quay? Chúng tôi hướng dẫn bạn quay! Bạn không biết edit? Five Cut Pro edit giúp bạn!",
+    "ogTitle": "Five Cut Pro — Giải Pháp Video & Digital Marketing Cho Nhãn Hàng",
+    "ogDescription": "Giải pháp trọn gói cho nhãn hàng: sản xuất và edit video sản phẩm, video bán hàng, xây dựng kênh social, set up ánh sáng, phòng live và thiết kế website. Từ ý tưởng đến thực thi.",
+    "ogImageAlt": "Five Cut Pro — Giải pháp Video & Digital Marketing cho nhãn hàng",
+    "twitterTitle": "Five Cut Pro — Giải Pháp Video & Digital Marketing Cho Nhãn Hàng",
+    "twitterDescription": "Giải pháp trọn gói cho nhãn hàng: sản xuất và edit video sản phẩm, video bán hàng, xây dựng kênh social, set up ánh sáng, phòng live và thiết kế website. Từ ý tưởng đến thực thi.",
     "applicationName": "Five Cut Pro",
     "category": "technology",
     "creator": "Five Cut Pro Asia"
@@ -34,8 +34,8 @@
     "installGuide": "Hướng dẫn cài",
     "terms": "Điều khoản",
     "privacy": "Quyền riêng tư",
-    "ctaDesktop": "Tải miễn phí",
-    "ctaMobile": "Tải miễn phí",
+    "ctaDesktop": "Nhận tư vấn",
+    "ctaMobile": "Tư vấn",
     "menuOpen": "Mở menu",
     "sheetTitle": "Menu",
     "sheetClose": "Đóng menu",
@@ -52,10 +52,14 @@
     "campaigns": "Nhận chiến dịch",
     "home": "Trang chủ",
     "compare": "So với CapCut",
-    "guides": "Hướng dẫn"
+    "guides": "Hướng dẫn",
+    "services": "Dịch vụ",
+    "app": "Mạng lưới KOC",
+    "stickyTagline": "Giải pháp video cho nhãn hàng",
+    "stickyAria": "Liên hệ nhanh Five Cut Pro"
   },
   "Footer": {
-    "tagline": "Công cụ cắt ghép & tự động hóa video bán hàng dành cho KOC, nhà sáng tạo nội dung và mạng lưới tiếp thị liên kết.",
+    "tagline": "Giải pháp trọn gói Video & Digital Marketing cho nhãn hàng — từ sản xuất nội dung, xây kênh social, phòng live đến thiết kế website.",
     "product": "Sản phẩm",
     "legal": "Pháp lý",
     "socialHeading": "Mạng xã hội",
@@ -78,7 +82,9 @@
     "campaignsLink": "Nhận chiến dịch",
     "sponsorsLink": "Dành cho nhãn hàng",
     "compareLink": "So với CapCut",
-    "guidesLink": "Hướng dẫn"
+    "guidesLink": "Hướng dẫn",
+    "servicesLink": "Dịch vụ cho nhãn hàng",
+    "appLink": "Mạng lưới KOC"
   },
   "DeleteAccount": {
     "metaTitle": "Xóa tài khoản — Five Cut Pro",

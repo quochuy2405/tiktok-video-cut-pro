@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Download, Sparkles, X } from "lucide-react";
+import { Building2, Sparkles, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 
+import { Link } from "@/i18n/navigation";
 import { trackCtaClick } from "@/lib/analytics";
-import { STORE_QR } from "@/lib/downloads";
 
 export function MobileStickyDownloadBar() {
   const t = useTranslations("Nav");
@@ -26,10 +26,10 @@ export function MobileStickyDownloadBar() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
 
-    // Hide if inside the #download section
-    const downloadSection = document.getElementById("download");
+    // Hide once the brand enquiry section is on screen
+    const leadSection = document.getElementById("sponsors");
     let observer: IntersectionObserver | null = null;
-    if (downloadSection && "IntersectionObserver" in window) {
+    if (leadSection && "IntersectionObserver" in window) {
       observer = new IntersectionObserver(
         (entries) => {
           for (const entry of entries) {
@@ -42,7 +42,7 @@ export function MobileStickyDownloadBar() {
         },
         { threshold: 0.15 }
       );
-      observer.observe(downloadSection);
+      observer.observe(leadSection);
     }
 
     return () => {
@@ -56,7 +56,7 @@ export function MobileStickyDownloadBar() {
   return (
     <div
       role="complementary"
-      aria-label="Tải nhanh Five Cut Pro"
+      aria-label={t("stickyAria")}
       className="fixed bottom-0 inset-x-0 z-40 sm:hidden border-t border-emerald-500/25 bg-[#060907]/92 backdrop-blur-2xl shadow-[0_-8px_30px_rgba(0,0,0,0.85),0_0_20px_rgba(0,245,160,0.1)] px-3.5 pt-2.5 pb-[max(0.75rem,env(safe-area-inset-bottom))] animate-in slide-in-from-bottom duration-300"
     >
       <div className="flex items-center justify-between gap-3 max-w-md mx-auto">
@@ -83,29 +83,29 @@ export function MobileStickyDownloadBar() {
               </span>
             </div>
             <p className="text-[11px] text-slate-300 truncate">
-              Mẫu KOC & Video Bán Hàng
+              {t("stickyTagline")}
             </p>
           </div>
         </div>
 
         {/* CTA + Dismiss */}
         <div className="flex items-center gap-1.5 shrink-0">
-          <a
-            href="/#download"
+          <Link
+            href="/#sponsors"
             onClick={() => {
               trackCtaClick({
-                cta_id: "mobile_sticky_download_btn",
+                cta_id: "mobile_sticky_consult_btn",
                 cta_location: "mobile_sticky_bar",
                 cta_text: t("ctaMobile"),
-                cta_category: "conversion_download",
-                destination_url: "/#download",
+                cta_category: "lead_sponsor",
+                destination_url: "/#sponsors",
               });
             }}
             className="inline-flex min-h-[42px] items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-brand via-[#00DF9E] to-brand-deep px-4 py-2 text-xs font-bold text-[#02180e] shadow-[0_0_18px_rgba(0,245,160,0.45)] transition-all active:scale-95"
           >
-            <Download className="size-3.5 shrink-0" />
+            <Building2 className="size-3.5 shrink-0" />
             <span>{t("ctaMobile")}</span>
-          </a>
+          </Link>
 
           <button
             type="button"

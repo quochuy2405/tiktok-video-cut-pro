@@ -72,10 +72,10 @@ export function SiteFooter({ groups = [] }: { groups?: SocialGroup[] }) {
                 {t("product")}
               </span>
               <Link
-                href="/#features"
+                href="/#services"
                 className="text-slate-300 transition-colors hover:text-brand"
               >
-                {t("featuresLink")}
+                {t("servicesLink")}
               </Link>
             <Link
               href="/#download"
@@ -93,16 +93,10 @@ export function SiteFooter({ groups = [] }: { groups?: SocialGroup[] }) {
               {t("downloadLink")}
             </Link>
             <Link
-              href="/#how-it-works"
+              href="/#app"
               className="text-slate-300 transition-colors hover:text-brand"
             >
-              {t("installLink")}
-            </Link>
-            <Link
-              href="/#campaigns"
-              className="text-slate-300 transition-colors hover:text-brand"
-            >
-              {t("campaignsLink")}
+              {t("appLink")}
             </Link>
             {hasGuides(locale) ? (
               <Link

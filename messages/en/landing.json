@@ -1,21 +1,17 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "VIDEO TEMPLATES FOR KOCS",
-    "titleLead": "Video templates",
-    "titleAccent": "built for KOCs",
-    "subLead": "Create sales videos with just a few sources",
-    "subAccent": "Publish hundreds of unique clips with zero duplication",
-    "pointShoot": "Don't know how to shoot? We guide you how to shoot!",
-    "pointEdit": "Don't know how to edit? Five Cut Pro edits for you",
-    "pointGuide": "No need to think, just follow us",
-    "pointContent": "Simple, easy-to-understand content",
-    "subtitle": "Create sales videos with just a few sources — Publish hundreds of unique clips with zero duplication.",
-    "ctaPrimary": "Download free",
+    "tagline": "FULL-SERVICE SOLUTION FOR BRANDS",
+    "titleLead": "Video & Digital Marketing",
+    "titleAccent": "For Brands",
+    "subLead": "From idea to execution",
+    "subAccent": "We help your brand shine on every platform",
+    "subtitle": "Full-service video and digital marketing for brands — from idea to execution.",
+    "ctaPrimary": "Request a consultation",
     "ctaSecondary": "How it works",
     "ctaBatch": "Few sources → Hundreds of clips",
-    "ctaBrand": "For brands",
-    "ctaTrust": "iOS & Android · All on your phone",
+    "ctaBrand": "See all 7 services",
+    "ctaTrust": "Content production · Social · Livestream · Website",
     "ctaSocialProof": "No shooting or editing skills needed · Just follow along",
     "audienceKoc": "KOCs & Sales creators",
     "audienceSeller": "TikTok Shop sellers",
@@ -36,7 +32,11 @@
     "hookSimpleSub": "A standardized workflow designed to eliminate guesswork.",
     "hookContentTitle": "Simple content",
     "hookContentDesc": "Easy to follow, high converting!",
-    "hookContentSub": "Battle-tested scripts built to maximize TikTok Shop conversions."
+    "hookContentSub": "Battle-tested scripts built to maximize TikTok Shop conversions.",
+    "pointVideo": "Product video production and editing, on brand",
+    "pointSales": "Sales videos and live rooms built for conversion",
+    "pointSocial": "Social channels built and grown for your brand",
+    "pointWeb": "Websites designed to turn visitors into buyers"
   },
   "metricsBar": [
     {
@@ -189,12 +189,27 @@
         "id": "faq-5",
         "question": "Is the app free and which platforms are supported?",
         "answer": "Five Cut Pro is officially available on iOS (App Store) for iPhone and iPad. The Android version is currently in final testing and coming soon to Google Play."
+      },
+      {
+        "id": "faq-services",
+        "question": "Does Five Cut Pro handle full video and marketing packages for brands?",
+        "answer": "Yes. Beyond the KOC template app, Five Cut Pro offers a full-service package: product video production and editing, sales videos, social channel growth, lighting setup, live rooms and brand website design. Send a request in the Brands section or email support@fivecutpro.com."
       }
+    ]
+  },
+  "appSection": {
+    "label": "EXECUTION NETWORK",
+    "title": "Your content gets multiplied by a creator network",
+    "subtitle": "Beyond our production team, Five Cut Pro runs a video template app for creators. Your product becomes a video template with shot-by-shot guides inside the app — where creators pick it up and produce more sales content every day.",
+    "points": [
+      "Your product becomes a template creators reuse again and again",
+      "Every template ships with a shot-by-shot filming guide",
+      "12 brand placements across the creator's whole workflow"
     ]
   },
   "downloadSection": {
     "label": "GET STARTED",
-    "title": "Download Five Cut Pro — KOC Video Templates",
+    "title": "Get the Five Cut Pro app for creators",
     "subtitle": "Create sales videos with just a few sources · Publish hundreds of unique clips with zero duplication.",
     "mobileLabel": "iOS (Available now) · Android (Coming soon)",
     "ctaStore": "Download on App Store",
@@ -202,6 +217,61 @@
     "qrLabel": "APP QR CODE",
     "qrTitle": "Download Five Cut Pro on Mobile",
     "qrSubtitle": "Open your iPhone camera to scan and download directly from the App Store. Android coming soon."
+  },
+  "servicesSection": {
+    "label": "FULL-SERVICE SOLUTION",
+    "titleLead": "Video & Digital Marketing",
+    "titleAccent": "For Brands",
+    "subtitle": "From idea to execution, we help your brand shine on every platform.",
+    "pillars": [
+      "VIDEO",
+      "SOCIAL",
+      "WEBSITE"
+    ],
+    "tagline": "Your Brand, Our Creativity",
+    "items": [
+      {
+        "id": "production",
+        "title": "Product video production",
+        "desc": "Professional shooting and direction that makes every product look its best."
+      },
+      {
+        "id": "editing",
+        "title": "Professional video editing",
+        "desc": "Editing, color grading, effects and subtitles tailored to your brand."
+      },
+      {
+        "id": "sales-video",
+        "title": "Sales videos",
+        "desc": "Built for conversion — content that moves products, not just views."
+      },
+      {
+        "id": "social",
+        "title": "Social media channel growth",
+        "desc": "Content strategy that lifts engagement and grows your TikTok and Facebook channels."
+      },
+      {
+        "id": "lighting",
+        "title": "Professional lighting setup",
+        "desc": "Lights, gear and lighting layouts tuned for filming and livestreams."
+      },
+      {
+        "id": "live-room",
+        "title": "Live rooms for brands",
+        "desc": "A professional studio space with full support for live selling."
+      },
+      {
+        "id": "website",
+        "title": "Brand website design",
+        "desc": "Modern interfaces, refined UX and layouts that turn visitors into buyers."
+      }
+    ],
+    "ctaTitle": "Get in touch",
+    "ctaSubtitle": "Send a request — the Five Cut Pro team will map a package to your product and budget.",
+    "ctaPrimary": "Request a consultation",
+    "ctaSecondary": "See the 12 brand placements",
+    "contactEmail": "support@fivecutpro.com",
+    "contactEmailAria": "Email support@fivecutpro.com"
   },
   "communitySection": {
     "label": "Support groups",
@@ -247,7 +317,7 @@
   "sponsorsSection": {
     "label": "FOR BRANDS",
     "title": "Turn products into content — turn content into sales",
-    "subtitle": "A product launch needs volume: many angles, many videos, many creators. Five Cut Pro puts your product where creators already work every day.",
+    "subtitle": "From idea to execution: Five Cut Pro produces the content, turns your product into video templates, and puts your brand where creators already work every day.",
     "stats": [
       {
         "value": "12",

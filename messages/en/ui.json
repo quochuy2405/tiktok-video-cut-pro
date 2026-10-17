@@ -1,24 +1,24 @@
 {
   "Metadata": {
-    "titleDefault": "Five Cut Pro — Video Templates for KOCs",
-    "description": "Create sales videos with just a few sources, publish hundreds of unique clips with zero duplication. Don't know how to shoot? We guide you! Don't know how to edit? Five Cut Pro edits for you!",
+    "titleDefault": "Five Cut Pro — Video & Digital Marketing for Brands",
+    "description": "A full-service solution for brands: product video production and editing, sales videos, social channel growth, lighting setup, live rooms and website design. From idea to execution.",
     "keywords": [
-      "Video templates for KOCs",
-      "Five Cut Pro",
-      "KOC sales videos",
-      "create sales videos",
-      "non-duplicate video publishing",
-      "video shooting guide",
-      "auto video editing",
-      "TikTok Shop",
-      "9:16 short video",
-      "TikTok KOC"
+      "video marketing for brands",
+      "digital marketing agency",
+      "product video production",
+      "professional video editing",
+      "sales video",
+      "social media channel growth",
+      "livestream lighting setup",
+      "live room for brands",
+      "brand website design",
+      "Five Cut Pro"
     ],
-    "ogTitle": "Five Cut Pro — Video Templates for KOCs",
-    "ogDescription": "Create sales videos with just a few sources, publish hundreds of unique clips with zero duplication. Don't know how to shoot? We guide you! Don't know how to edit? Five Cut Pro edits for you!",
-    "ogImageAlt": "Five Cut Pro — Video templates for KOCs",
-    "twitterTitle": "Five Cut Pro — Video Templates for KOCs",
-    "twitterDescription": "Create sales videos with just a few sources, publish hundreds of unique clips with zero duplication. Don't know how to shoot? We guide you! Don't know how to edit? Five Cut Pro edits for you!",
+    "ogTitle": "Five Cut Pro — Video & Digital Marketing for Brands",
+    "ogDescription": "A full-service solution for brands: product video production and editing, sales videos, social channel growth, lighting setup, live rooms and website design. From idea to execution.",
+    "ogImageAlt": "Five Cut Pro — Video and digital marketing solutions for brands",
+    "twitterTitle": "Five Cut Pro — Video & Digital Marketing for Brands",
+    "twitterDescription": "A full-service solution for brands: product video production and editing, sales videos, social channel growth, lighting setup, live rooms and website design. From idea to execution.",
     "applicationName": "Five Cut Pro",
     "category": "technology",
     "creator": "Five Cut Pro Asia"
@@ -34,8 +34,8 @@
     "installGuide": "Install Guide",
     "terms": "Terms",
     "privacy": "Privacy",
-    "ctaDesktop": "Free Download",
-    "ctaMobile": "Free Download",
+    "ctaDesktop": "Get a consultation",
+    "ctaMobile": "Consult",
     "menuOpen": "Open menu",
     "sheetTitle": "Menu",
     "sheetClose": "Close",
@@ -52,10 +52,14 @@
     "campaigns": "For creators",
     "home": "Home",
     "compare": "vs CapCut",
-    "guides": "Guides"
+    "guides": "Guides",
+    "services": "Services",
+    "app": "Creator network",
+    "stickyTagline": "Video solutions for brands",
+    "stickyAria": "Quick contact with Five Cut Pro"
   },
   "Footer": {
-    "tagline": "Smart video cutting & automation software for KOCs, social commerce creators, and affiliate networks.",
+    "tagline": "Full-service video and digital marketing for brands — from content production and social growth to live rooms and website design.",
     "product": "Product",
     "legal": "Legal",
     "socialHeading": "Social Media",
@@ -78,7 +82,9 @@
     "campaignsLink": "For creators",
     "sponsorsLink": "For brands",
     "compareLink": "vs CapCut",
-    "guidesLink": "Guides"
+    "guidesLink": "Guides",
+    "servicesLink": "Services for brands",
+    "appLink": "Creator network"
   },
   "DeleteAccount": {
     "metaTitle": "Delete account — Five Cut Pro",

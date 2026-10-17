@@ -80,6 +80,7 @@ export type CtaLocation =
   | "download_terminal"
   | "download_github"
   | "sponsor_section"
+  | "services_section"
   | "community_section"
   | "social_float"
   | "mobile_sticky_bar"

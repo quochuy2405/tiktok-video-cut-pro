@@ -83,12 +83,15 @@ export default async function HomePage({
     question: string;
     answer: string;
   }>) || [];
-  const howItWorks = tLanding.raw("howItWorksSection") as {
-    title: string;
-    steps: Array<{ title: string; desc: string }>;
+  const sponsorsSection = tLanding.raw("sponsorsSection") as {
+    processTitle: string;
+    process: Array<{ title: string; desc: string }>;
   };
-  const featureList = ((tLanding.raw("features") as Array<{ title: string }>) || [])
-    .map((feature) => feature.title);
+  const servicesSection = tLanding.raw("servicesSection") as {
+    titleLead: string;
+    titleAccent: string;
+    items: Array<{ title: string; desc: string }>;
+  };
   const [{ stripSlides, popupSlides }, socialGroups] = await Promise.all([
     fetchWebMarketingPayload(locale),
     fetchSocialGroups(),
@@ -98,12 +101,19 @@ export default async function HomePage({
     <>
       <JsonLd
         data={buildHomeJsonLd(locale, t("description"), faqItems, {
-          howToName: howItWorks?.title,
-          steps: (howItWorks?.steps || []).map((step) => ({
+          howToName: sponsorsSection?.processTitle,
+          steps: (sponsorsSection?.process || []).map((step) => ({
             name: step.title,
             text: step.desc,
           })),
-          features: featureList,
+          features: (servicesSection?.items || []).map((service) => service.title),
+          servicesName: servicesSection
+            ? `${servicesSection.titleLead} ${servicesSection.titleAccent}`
+            : undefined,
+          services: (servicesSection?.items || []).map((service) => ({
+            name: service.title,
+            description: service.desc,
+          })),
         })}
       />
       <LandingPage

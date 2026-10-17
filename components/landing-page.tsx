@@ -5,14 +5,15 @@ import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import {
   Building2,
-  Camera,
+  Check,
   ChevronDown,
-  Download,
-  Flame,
+  Globe,
   HelpCircle,
-  Scissors,
+  Layers,
+  Share2,
+  ShoppingCart,
   Sparkles,
-  Zap,
+  Video,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -26,6 +27,7 @@ import {
   SponsorProcess,
   SponsorStats,
 } from "@/components/sponsor-blocks";
+import { ServicesSection } from "@/components/services-section";
 import { SponsorContact } from "@/components/sponsor-contact";
 import { SponsorForm } from "@/components/sponsor-form";
 import { StoreQrCodes } from "@/components/store-qr-codes";
@@ -35,6 +37,7 @@ import { trackCtaClick } from "@/lib/analytics";
 import type { MarketingBannerSlide } from "@/lib/marketing-api";
 import type { SocialGroup } from "@/lib/social-groups";
 import { cn } from "@/lib/utils";
+import type { ServicesSectionCopy } from "@/components/services-section";
 import type { SponsorsSectionCopy } from "@/types/sponsor";
 
 type FaqItem = {
@@ -63,14 +66,16 @@ export function LandingPage({
   const t = useTranslations("Landing");
   const [openFaq, setOpenFaq] = useState<string | null>("faq-1");
 
+  const services = t.raw("servicesSection") as ServicesSectionCopy;
+  const appPoints = (t.raw("appSection.points") as string[]) || [];
   const sponsors = t.raw("sponsorsSection") as SponsorsSectionCopy;
   const faq = t.raw("faqSection") as FaqSectionCopy;
 
   return (
     <>
-      {/* 1. Phần chính: Template video dành cho KOC (Content lớn, chuẩn đa ngôn ngữ) */}
+      {/* 1. Hero: Giải pháp trọn gói Video & Digital Marketing cho nhãn hàng */}
       <section
-        id="koc"
+        id="solutions"
         className="hero-atmosphere relative isolate flex flex-col justify-center overflow-x-clip px-4 pb-14 pt-12 sm:px-6 md:pb-20 md:pt-16 lg:px-8"
       >
         <div className="hero-grid pointer-events-none absolute inset-0 opacity-90" aria-hidden />
@@ -115,7 +120,7 @@ export function LandingPage({
             </div>
           </motion.div>
 
-          {/* Tiêu đề chính: Template video dành cho KOC */}
+          {/* Tiêu đề chính: Video & Digital Marketing cho nhãn hàng */}
           <h1 className="font-heading w-full max-w-[22ch] text-[clamp(1.85rem,6.2vw+0.35rem,4.4rem)] font-bold leading-[1.12] tracking-[-0.05em] text-white text-balance drop-shadow-[0_2px_20px_rgba(0,0,0,0.9)] sm:max-w-none md:tracking-[-1.35px]">
             <RevealWords text={t("hero.titleLead")} delay={0.08} />{" "}
             <RevealWords
@@ -125,7 +130,7 @@ export function LandingPage({
             />
           </h1>
 
-          {/* Content lớn: Tạo video bán hàng chỉ với vài nguồn & xuất bản hàng trăm clip không trùng lặp */}
+          {/* Dòng dẫn: Từ ý tưởng đến thực thi */}
           <motion.div
             className="mt-6 flex flex-col items-center gap-2 px-2"
             initial={reduceMotion ? false : { opacity: 0, y: 14 }}
@@ -148,14 +153,14 @@ export function LandingPage({
             transition={{ duration: 0.48, ease: easeOut, delay: 0.22 }}
           >
             <Link
-              href="/#download"
+              href="/#sponsors"
               onClick={() => {
                 trackCtaClick({
-                  cta_id: "hero_download_primary",
+                  cta_id: "hero_brand_consult",
                   cta_location: "hero",
                   cta_text: t("hero.ctaPrimary"),
-                  cta_category: "conversion_download",
-                  destination_url: "/#download",
+                  cta_category: "lead_sponsor",
+                  destination_url: "/#sponsors",
                 });
               }}
               className={cn(
@@ -163,18 +168,18 @@ export function LandingPage({
                 "w-full sm:w-auto min-h-[48px] rounded-full border-0 bg-gradient-to-r from-brand via-[#00DF9E] to-brand-deep px-8 py-3.5 text-[15px] font-bold text-[#02180e] shadow-[0_0_28px_rgba(0,245,160,0.5)] transition-all hover:-translate-y-0.5 hover:shadow-[0_0_42px_rgba(0,245,160,0.75)] active:scale-98",
               )}
             >
-              <Download className="mr-2 size-4" />
+              <Building2 className="mr-2 size-4" />
               {t("hero.ctaPrimary")}
             </Link>
             <Link
-              href="/#sponsors"
+              href="/#services"
               onClick={() => {
                 trackCtaClick({
-                  cta_id: "hero_goto_sponsors",
+                  cta_id: "hero_goto_services",
                   cta_location: "hero",
                   cta_text: t("hero.ctaBrand"),
                   cta_category: "navigation_section",
-                  destination_url: "/#sponsors",
+                  destination_url: "/#services",
                 });
               }}
               className={cn(
@@ -182,12 +187,12 @@ export function LandingPage({
                 "w-full sm:w-auto min-h-[48px] rounded-full border border-emerald-500/30 bg-[#0d1a14]/90 px-8 py-3.5 text-[15px] font-medium text-white shadow-[0_10px_25px_-10px_rgba(0,0,0,0.8)] hover:border-emerald-400/60 hover:bg-[#12251d] hover:text-white hover:shadow-[0_0_25px_rgba(0,245,160,0.25)] active:scale-98",
               )}
             >
-              <Building2 className="mr-2 size-4 text-brand" />
+              <Layers className="mr-2 size-4 text-brand" />
               {t("hero.ctaBrand")}
             </Link>
           </motion.div>
 
-          {/* 4 khẳng định — Thẻ 3D Glassmorphic sâu với Neon Glow */}
+          {/* 4 nhóm dịch vụ chính — Thẻ 3D Glassmorphic sâu với Neon Glow */}
           <motion.div
             className="mt-12 grid w-full min-w-0 max-w-[940px] grid-cols-1 gap-3.5 sm:grid-cols-2 sm:gap-4.5"
             initial={reduceMotion ? false : { opacity: 0, y: 20 }}
@@ -196,10 +201,10 @@ export function LandingPage({
           >
             {(
               [
-                { key: "pointShoot" as const, Icon: Camera },
-                { key: "pointEdit" as const, Icon: Scissors },
-                { key: "pointGuide" as const, Icon: Zap },
-                { key: "pointContent" as const, Icon: Flame },
+                { key: "pointVideo" as const, Icon: Video },
+                { key: "pointSales" as const, Icon: ShoppingCart },
+                { key: "pointSocial" as const, Icon: Share2 },
+                { key: "pointWeb" as const, Icon: Globe },
               ] as const
             ).map(({ key, Icon }) => (
               <SpotlightCard
@@ -220,29 +225,8 @@ export function LandingPage({
         </div>
       </section>
 
-      {/* 2. Section T2: Download App (1.0.1, Google Play = Sắp ra mắt) */}
-      <section
-        id="download"
-        className="scroll-mt-[72px] border-t border-emerald-500/15 section-band-raised px-4 py-14 sm:px-6 md:py-20 lg:px-8"
-      >
-        <div className="mx-auto min-w-0 max-w-[1200px]">
-          <FadeIn className="mx-auto max-w-2xl text-center">
-            <h2 className="font-heading text-[1.85rem] font-bold leading-tight tracking-[-0.85px] text-white sm:text-[2.2rem] md:text-[2.6rem]">
-              {t("downloadSection.title")}
-            </h2>
-          </FadeIn>
-
-          <div className="mt-8">
-            <StoreQrCodes
-              title={t("downloadSection.qrTitle")}
-              subtitle={t("downloadSection.qrSubtitle")}
-              scanLabel={t("downloadSection.qrLabel")}
-              openLabel={t("downloadSection.ctaStore")}
-              comingSoonLabel={t("downloadSection.comingSoon")}
-            />
-          </div>
-        </div>
-      </section>
+      {/* 2. Giải pháp trọn gói Video & Digital Marketing cho nhãn hàng */}
+      <ServicesSection copy={services} />
 
       {/* 3. Phần Nhãn Hàng (Sponsors & Brand Collaboration) */}
       {sponsors && (
@@ -308,7 +292,59 @@ export function LandingPage({
         </section>
       )}
 
-      {/* 4. Nhóm hỗ trợ KOC */}
+      {/* 4. Mạng lưới KOC — lớp thực thi nhân rộng nội dung của nhãn hàng */}
+      <section
+        id="app"
+        className="scroll-mt-[72px] border-t border-emerald-500/15 section-band-raised px-4 py-16 sm:px-6 md:py-24 lg:px-8"
+      >
+        <div className="mx-auto min-w-0 max-w-[1200px]">
+          <FadeIn className="mx-auto max-w-3xl text-center">
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-brand/35 bg-brand/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-brand shadow-[0_0_15px_rgba(0,245,160,0.2)]">
+              <Layers className="size-3.5" />
+              <span>{t("appSection.label")}</span>
+            </div>
+            <h2 className="font-heading mt-4 text-[1.85rem] font-semibold leading-tight tracking-[-0.85px] text-white sm:text-[2.2rem] md:text-[2.6rem]">
+              {t("appSection.title")}
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-lg">
+              {t("appSection.subtitle")}
+            </p>
+          </FadeIn>
+
+          <div className="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-3">
+            {appPoints.map((point, idx) => (
+              <FadeIn key={point} delay={idx * 0.05}>
+                <div className="flex h-full items-start gap-3 rounded-2xl border border-emerald-500/20 bg-[#0a130e]/85 p-4 text-left backdrop-blur-xl">
+                  <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand/20 text-brand shadow-[0_0_10px_rgba(0,245,160,0.3)]">
+                    <Check className="size-3.5" />
+                  </span>
+                  <p className="text-sm leading-relaxed text-slate-300">{point}</p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+
+          <div id="download" className="mt-12 scroll-mt-[72px]">
+            <FadeIn className="mx-auto max-w-2xl text-center">
+              <h3 className="font-heading text-[1.5rem] font-bold leading-tight tracking-[-0.6px] text-white sm:text-[1.8rem]">
+                {t("downloadSection.title")}
+              </h3>
+            </FadeIn>
+
+            <div className="mt-8">
+              <StoreQrCodes
+                title={t("downloadSection.qrTitle")}
+                subtitle={t("downloadSection.qrSubtitle")}
+                scanLabel={t("downloadSection.qrLabel")}
+                openLabel={t("downloadSection.ctaStore")}
+                comingSoonLabel={t("downloadSection.comingSoon")}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Nhóm hỗ trợ KOC */}
       {socialGroups.length > 0 ? (
         <section
           id="community"
@@ -333,7 +369,7 @@ export function LandingPage({
         </section>
       ) : null}
 
-      {/* 5. FAQ Section */}
+      {/* 6. FAQ Section */}
       <section
         id="faq"
         className="scroll-mt-[72px] border-t border-emerald-500/15 section-band-wash px-4 py-20 sm:px-6 md:py-28 lg:px-8"

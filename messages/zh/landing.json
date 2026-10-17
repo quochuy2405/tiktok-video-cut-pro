@@ -1,21 +1,17 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "KOC 带货视频模板",
-    "titleLead": "专为 KOC 打造的",
-    "titleAccent": "视频模板",
-    "subLead": "仅需少量素材即可制作带货视频",
-    "subAccent": "发布数百条不重复的带货视频",
-    "pointShoot": "不会拍？我们教你拍！",
-    "pointEdit": "不会剪？Five Cut Pro 帮你剪",
-    "pointGuide": "无需多想，跟着我们做就行",
-    "pointContent": "脚本简单易懂",
-    "subtitle": "仅需少量素材即可制作带货视频 — 发布数百条不重复的带货视频。",
-    "ctaPrimary": "免费下载",
+    "tagline": "面向品牌的一站式解决方案",
+    "titleLead": "Video & Digital Marketing",
+    "titleAccent": "为品牌打造",
+    "subLead": "从创意到落地",
+    "subAccent": "让你的品牌在每个平台都发光",
+    "subtitle": "面向品牌的一站式视频与数字营销方案——从创意到落地。",
+    "ctaPrimary": "获取方案咨询",
     "ctaSecondary": "查看流程",
     "ctaBatch": "少量素材 → 数百条视频",
-    "ctaBrand": "面向品牌",
-    "ctaTrust": "iOS（已上线）· Android（即将推出）· 全在手机上完成",
+    "ctaBrand": "查看 7 项服务",
+    "ctaTrust": "内容制作 · 社交 · 直播 · 网站",
     "ctaSocialProof": "无需拍摄与剪辑经验 · 跟着做就能出片",
     "audienceKoc": "KOC 与带货创作者",
     "audienceSeller": "TikTok Shop 商家",
@@ -36,7 +32,11 @@
     "hookSimpleSub": "标准化流程打造，告别复杂摸索。",
     "hookContentTitle": "脚本简单",
     "hookContentDesc": "好理解、好上手、好转化！",
-    "hookContentSub": "实战 KOC 带货脚本，最大化提升 TikTok Shop 转化率。"
+    "hookContentSub": "实战 KOC 带货脚本，最大化提升 TikTok Shop 转化率。",
+    "pointVideo": "贴合品牌调性的产品视频制作与剪辑",
+    "pointSales": "以转化为目标的带货视频与直播间",
+    "pointSocial": "为品牌搭建并运营社交账号",
+    "pointWeb": "把访客变成买家的品牌网站设计"
   },
   "metricsBar": [
     {
@@ -189,12 +189,27 @@
         "id": "faq-5",
         "question": "App 免费吗？支持哪些设备？",
         "answer": "Five Cut Pro 目前已在 iOS（App Store）正式上线，支持 iPhone 与 iPad。Android 版本正在进行最后的测试，即将在 Google Play 推出。"
+      },
+      {
+        "id": "faq-services",
+        "question": "Five Cut Pro 能为品牌提供一站式视频与营销服务吗？",
+        "answer": "可以。除了面向 KOC 的模板 App，Five Cut Pro 还提供一站式服务：产品视频制作与剪辑、带货视频、社交账号运营、灯光搭建、直播间以及品牌网站设计。可在「品牌合作」板块提交需求，或发邮件至 support@fivecutpro.com。"
       }
+    ]
+  },
+  "appSection": {
+    "label": "执行网络",
+    "title": "你的内容由创作者网络持续放大",
+    "subtitle": "除了自有制作团队，Five Cut Pro 还运营面向 KOC 的视频模板 App。品牌产品会在 App 内变成视频模板与分镜拍摄指南，KOC 每天据此产出更多带货内容。",
+    "points": [
+      "产品会变成 KOC 反复使用的视频模板",
+      "每个模板都附带逐个机位的拍摄指南",
+      "覆盖创作全流程的 12 个品牌曝光位"
     ]
   },
   "downloadSection": {
     "label": "立即开始",
-    "title": "下载 Five Cut Pro — KOC 视频模板",
+    "title": "下载面向 KOC 的 Five Cut Pro App",
     "subtitle": "仅需少量素材即可制作带货视频 · 发布数百条不重复的带货视频。",
     "mobileLabel": "iOS（已上线）· Android（即将推出）",
     "ctaStore": "在 App Store 免费下载",
@@ -202,6 +217,61 @@
     "qrLabel": "APP 下载二维码",
     "qrTitle": "在手机上下载 Five Cut Pro",
     "qrSubtitle": "打开 iPhone / iPad 相机扫码直接从 App Store 下载。Android 版即将推出。"
+  },
+  "servicesSection": {
+    "label": "一站式解决方案",
+    "titleLead": "Video & Digital Marketing",
+    "titleAccent": "为品牌打造",
+    "subtitle": "从创意到落地，让你的品牌在每个平台都发光。",
+    "pillars": [
+      "VIDEO",
+      "SOCIAL",
+      "WEBSITE"
+    ],
+    "tagline": "Your Brand, Our Creativity",
+    "items": [
+      {
+        "id": "production",
+        "title": "产品视频制作",
+        "desc": "专业拍摄与导演，让每件产品都呈现最佳状态。"
+      },
+      {
+        "id": "editing",
+        "title": "专业视频剪辑",
+        "desc": "剪辑、调色、特效与字幕，按品牌需求定制。"
+      },
+      {
+        "id": "sales-video",
+        "title": "带货视频",
+        "desc": "以转化为目标，拉动成交而不只是播放量。"
+      },
+      {
+        "id": "social",
+        "title": "社交媒体账号运营",
+        "desc": "内容策略提升互动，助力 TikTok 与 Facebook 账号成长。"
+      },
+      {
+        "id": "lighting",
+        "title": "专业灯光搭建",
+        "desc": "灯具、设备与布光方案，适配拍摄与直播场景。"
+      },
+      {
+        "id": "live-room",
+        "title": "品牌直播间",
+        "desc": "专业直播空间，全程支持品牌直播带货。"
+      },
+      {
+        "id": "website",
+        "title": "品牌网站设计",
+        "desc": "现代界面与优化体验，把访客变成买家。"
+      }
+    ],
+    "ctaTitle": "立即联系",
+    "ctaSubtitle": "留下需求，Five Cut Pro 团队会为你的产品与预算匹配合适方案。",
+    "ctaPrimary": "获取方案咨询",
+    "ctaSecondary": "查看 12 个品牌曝光位",
+    "contactEmail": "support@fivecutpro.com",
+    "contactEmailAria": "发送邮件至 support@fivecutpro.com"
   },
   "communitySection": {
     "label": "支持社群",
@@ -247,7 +317,7 @@
   "sponsorsSection": {
     "label": "品牌合作",
     "title": "把产品变成内容，把内容变成成交机会",
-    "subtitle": "新品上市需要大量内容、多种机位、多位创作者。Five Cut Pro 把你的产品放进 KOC 每天工作的地方。",
+    "subtitle": "从创意到落地：Five Cut Pro 负责内容制作，把你的产品做成视频模板，并把品牌放进 KOC 每天工作的地方。",
     "stats": [
       {
         "value": "12",

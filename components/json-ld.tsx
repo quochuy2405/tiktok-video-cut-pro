@@ -36,6 +36,10 @@ export type HomeJsonLdExtras = {
   howToName?: string;
   /** Feature titles shown on the page. */
   features?: string[];
+  /** Brand-facing services offered alongside the app. */
+  services?: Array<{ name: string; description: string }>;
+  /** Headline for the service catalog — falls back to the section title. */
+  servicesName?: string;
 };
 
 export function buildHomeJsonLd(
@@ -81,6 +85,31 @@ export function buildHomeJsonLd(
         availableLanguage: ["vi-VN", "en-US"],
       },
     ],
+    ...(extras.services?.length
+      ? {
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: extras.servicesName || APP_NAME,
+            inLanguage: pageLanguage,
+            itemListElement: extras.services.map((service, idx) => ({
+              "@type": "Offer",
+              position: idx + 1,
+              itemOffered: {
+                "@type": "Service",
+                name: service.name,
+                description: service.description,
+                serviceType: service.name,
+                provider: {
+                  "@type": "Organization",
+                  name: SITE.copyrightHolder,
+                },
+                areaServed: "VN",
+                url: `${pageUrl}#services`,
+              },
+            })),
+          },
+        }
+      : {}),
   };
 
   const software: JsonLd = {
@@ -172,7 +201,7 @@ export function buildHomeJsonLd(
         position: idx + 1,
         name: step.name,
         text: step.text,
-        url: `${pageUrl}#how-it-works`,
+        url: `${pageUrl}#sponsors`,
       })),
     });
   }

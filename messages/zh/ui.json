@@ -1,24 +1,24 @@
 {
   "Metadata": {
-    "titleDefault": "Five Cut Pro — KOC 带货视频模板",
-    "description": "仅需少量素材即可制作带货视频，发布数百条不重复的带货视频。不会拍？我们教你拍！不会剪？Five Cut Pro 帮你剪！",
+    "titleDefault": "Five Cut Pro — 面向品牌的视频与数字营销",
+    "description": "面向品牌的一站式解决方案：产品视频制作与剪辑、带货视频、社交账号运营、灯光搭建、直播间与品牌网站设计。从创意到落地。",
     "keywords": [
-      "KOC带货视频模板",
-      "Five Cut Pro",
-      "KOC带货视频",
-      "制作带货视频",
-      "发布不重复视频",
-      "拍摄指引",
-      "自动剪辑",
-      "TikTok Shop",
-      "9:16短视频",
-      "TikTok KOC"
+      "品牌视频营销",
+      "数字营销",
+      "产品视频制作",
+      "专业视频剪辑",
+      "带货视频",
+      "社交账号运营",
+      "直播灯光搭建",
+      "品牌直播间",
+      "品牌网站设计",
+      "Five Cut Pro"
     ],
-    "ogTitle": "Five Cut Pro — KOC 带货视频模板",
-    "ogDescription": "仅需少量素材即可制作带货视频，发布数百条不重复的带货视频。不会拍？我们教你拍！不会剪？Five Cut Pro 帮你剪！",
-    "ogImageAlt": "Five Cut Pro — KOC 带货视频模板",
-    "twitterTitle": "Five Cut Pro — KOC 带货视频模板",
-    "twitterDescription": "仅需少量素材即可制作带货视频，发布数百条不重复的带货视频。不会拍？我们教你拍！不会剪？Five Cut Pro 帮你剪！",
+    "ogTitle": "Five Cut Pro — 面向品牌的视频与数字营销",
+    "ogDescription": "面向品牌的一站式解决方案：产品视频制作与剪辑、带货视频、社交账号运营、灯光搭建、直播间与品牌网站设计。从创意到落地。",
+    "ogImageAlt": "Five Cut Pro — 面向品牌的视频与数字营销解决方案",
+    "twitterTitle": "Five Cut Pro — 面向品牌的视频与数字营销",
+    "twitterDescription": "面向品牌的一站式解决方案：产品视频制作与剪辑、带货视频、社交账号运营、灯光搭建、直播间与品牌网站设计。从创意到落地。",
     "applicationName": "Five Cut Pro",
     "category": "technology",
     "creator": "Five Cut Pro Asia"
@@ -34,8 +34,8 @@
     "installGuide": "安装指南",
     "terms": "服务条款",
     "privacy": "隐私政策",
-    "ctaDesktop": "免费下载",
-    "ctaMobile": "免费下载",
+    "ctaDesktop": "获取咨询",
+    "ctaMobile": "咨询",
     "menuOpen": "打开菜单",
     "sheetTitle": "导航菜单",
     "sheetClose": "关闭",
@@ -52,10 +52,14 @@
     "campaigns": "接活动",
     "home": "首页",
     "compare": "对比 CapCut",
-    "guides": "教程"
+    "guides": "教程",
+    "services": "服务",
+    "app": "KOC 网络",
+    "stickyTagline": "面向品牌的视频方案",
+    "stickyAria": "快速联系 Five Cut Pro"
   },
   "Footer": {
-    "tagline": "专为KOC、内容创作者及电商矩阵团队研发的智能带货视频剪辑与自动化工具。",
+    "tagline": "面向品牌的一站式视频与数字营销：内容制作、社交账号运营、直播间到网站设计。",
     "product": "产品",
     "legal": "法律与条款",
     "socialHeading": "社交媒体",
@@ -78,7 +82,9 @@
     "campaignsLink": "接活动",
     "sponsorsLink": "品牌合作",
     "compareLink": "对比 CapCut",
-    "guidesLink": "教程"
+    "guidesLink": "教程",
+    "servicesLink": "品牌服务",
+    "appLink": "KOC 网络"
   },
   "DeleteAccount": {
     "metaTitle": "删除账号 — Five Cut Pro",

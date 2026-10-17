@@ -1,21 +1,17 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "TEMPLATE VIDEO DÀNH CHO KOC",
-    "titleLead": "Template video",
-    "titleAccent": "dành cho KOC",
-    "subLead": "Tạo video bán hàng chỉ với vài nguồn",
-    "subAccent": "Xuất bản hàng trăm clip bán hàng và không trùng lặp",
-    "pointShoot": "Bạn không biết quay?. Chúng tôi hướng dẫn bạn quay!",
-    "pointEdit": "Bạn không biết edit. Five Cut Pro edit giúp bạn",
-    "pointGuide": "Không cần suy nghĩ gì cả hãy làm theo chúng tôi",
-    "pointContent": "Content đơn giản dễ hiểu",
-    "subtitle": "Tạo video bán hàng chỉ với vài nguồn — Xuất bản hàng trăm clip bán hàng và không trùng lặp.",
-    "ctaPrimary": "Tải app miễn phí",
+    "tagline": "GIẢI PHÁP TRỌN GÓI CHO NHÃN HÀNG",
+    "titleLead": "Video & Digital Marketing",
+    "titleAccent": "Cho Nhãn Hàng",
+    "subLead": "Từ ý tưởng đến thực thi",
+    "subAccent": "Chúng tôi giúp thương hiệu của bạn tỏa sáng trên mọi nền tảng",
+    "subtitle": "Giải pháp trọn gói Video & Digital Marketing cho nhãn hàng — từ ý tưởng đến thực thi.",
+    "ctaPrimary": "Nhận tư vấn giải pháp",
     "ctaSecondary": "Xem cách hoạt động",
     "ctaBatch": "Vài nguồn → Hàng trăm clip",
-    "ctaBrand": "Dành cho nhãn hàng",
-    "ctaTrust": "iOS (Đã có sẵn) · Android (Sắp ra mắt) · Hoàn toàn trên điện thoại",
+    "ctaBrand": "Xem 7 dịch vụ",
+    "ctaTrust": "Sản xuất nội dung · Social · Livestream · Website",
     "ctaSocialProof": "Không cần biết quay hay edit · Làm theo là ra video",
     "audienceKoc": "KOC & Creator bán hàng",
     "audienceSeller": "Seller TikTok Shop",
@@ -36,7 +32,11 @@
     "hookSimpleSub": "Quy trình đã tối ưu sẵn từng bước, không phải suy nghĩ phức tạp.",
     "hookContentTitle": "Content đơn giản",
     "hookContentDesc": "Dễ hiểu, dễ làm, ra đơn!",
-    "hookContentSub": "Mẫu kịch bản KOC thực chiến, tăng chuyển đổi bán hàng TikTok Shop."
+    "hookContentSub": "Mẫu kịch bản KOC thực chiến, tăng chuyển đổi bán hàng TikTok Shop.",
+    "pointVideo": "Sản xuất & edit video sản phẩm chuẩn thương hiệu",
+    "pointSales": "Video bán hàng và phòng live tối ưu chuyển đổi",
+    "pointSocial": "Xây dựng và phát triển kênh social cho nhãn hàng",
+    "pointWeb": "Thiết kế website tăng tỷ lệ chốt đơn"
   },
   "metricsBar": [
     {
@@ -189,12 +189,27 @@
         "id": "faq-5",
         "question": "App có miễn phí không và hỗ trợ thiết bị nào?",
         "answer": "Five Cut Pro hiện đã chính thức phát hành trên iOS (App Store) cho iPhone và iPad. Bản Android đang trong giai đoạn hoàn thiện cuối cùng và sẽ sớm có mặt trên Google Play."
+      },
+      {
+        "id": "faq-services",
+        "question": "Five Cut Pro có nhận làm trọn gói video và marketing cho nhãn hàng không?",
+        "answer": "Có. Ngoài app template cho KOC, Five Cut Pro cung cấp giải pháp trọn gói cho nhãn hàng: sản xuất và edit video sản phẩm, video bán hàng, xây dựng kênh social, set up ánh sáng, phòng live và thiết kế website. Gửi yêu cầu ở mục Dành cho nhãn hàng hoặc email support@fivecutpro.com."
       }
+    ]
+  },
+  "appSection": {
+    "label": "MẠNG LƯỚI THỰC THI",
+    "title": "Nội dung của bạn được nhân rộng bởi mạng lưới KOC",
+    "subtitle": "Ngoài đội sản xuất, Five Cut Pro còn vận hành app template video cho KOC. Sản phẩm của nhãn hàng được dựng thành mẫu video kèm hướng dẫn quay ngay trong app — nơi KOC lấy mẫu và tự sản xuất thêm nội dung bán hàng mỗi ngày.",
+    "points": [
+      "Sản phẩm trở thành mẫu video KOC dùng lại nhiều lần",
+      "Mỗi mẫu đi kèm hướng dẫn quay từng góc máy",
+      "12 điểm hiển thị thương hiệu xuyên suốt hành trình làm video"
     ]
   },
   "downloadSection": {
     "label": "BẮT ĐẦU NGAY",
-    "title": "Tải Five Cut Pro — Template video cho KOC",
+    "title": "Tải app Five Cut Pro dành cho KOC",
     "subtitle": "Tạo video bán hàng chỉ với vài nguồn · Xuất bản hàng trăm clip bán hàng và không trùng lặp.",
     "mobileLabel": "iOS (Đã có sẵn) · Android (Sắp ra mắt)",
     "ctaStore": "Tải app miễn phí",
@@ -202,6 +217,61 @@
     "qrLabel": "MÃ QR TẢI APP",
     "qrTitle": "Tải Five Cut Pro trên điện thoại",
     "qrSubtitle": "Mở Camera iPhone/iPad quét mã để tải trực tiếp từ App Store. Bản Android sắp ra mắt."
+  },
+  "servicesSection": {
+    "label": "GIẢI PHÁP TRỌN GÓI",
+    "titleLead": "Video & Digital Marketing",
+    "titleAccent": "Cho Nhãn Hàng",
+    "subtitle": "Từ ý tưởng đến thực thi, chúng tôi giúp thương hiệu của bạn tỏa sáng trên mọi nền tảng.",
+    "pillars": [
+      "VIDEO",
+      "SOCIAL",
+      "WEBSITE"
+    ],
+    "tagline": "Your Brand, Our Creativity",
+    "items": [
+      {
+        "id": "production",
+        "title": "Sản xuất video sản phẩm",
+        "desc": "Quay dựng chuyên nghiệp, tạo hình ảnh ấn tượng cho từng sản phẩm."
+      },
+      {
+        "id": "editing",
+        "title": "Edit video chuyên nghiệp",
+        "desc": "Dựng, chỉnh màu, hiệu ứng và phụ đề theo yêu cầu của nhãn hàng."
+      },
+      {
+        "id": "sales-video",
+        "title": "Video bán hàng",
+        "desc": "Tối ưu chuyển đổi, thúc đẩy doanh số trên TikTok Shop và sàn thương mại."
+      },
+      {
+        "id": "social",
+        "title": "Xây dựng kênh Social Media",
+        "desc": "Chiến lược nội dung, tăng tương tác, phát triển kênh TikTok và Facebook."
+      },
+      {
+        "id": "lighting",
+        "title": "Set up ánh sáng chuyên nghiệp",
+        "desc": "Đèn, thiết bị và bố cục ánh sáng chuẩn cho quay chụp và livestream."
+      },
+      {
+        "id": "live-room",
+        "title": "Phòng Live cho nhãn hàng",
+        "desc": "Không gian chuyên nghiệp, hỗ trợ trọn gói cho livestream bán hàng."
+      },
+      {
+        "id": "website",
+        "title": "Thiết kế website cho nhãn hàng",
+        "desc": "Giao diện hiện đại, tối ưu trải nghiệm, tăng tỷ lệ chuyển đổi."
+      }
+    ],
+    "ctaTitle": "Liên hệ ngay",
+    "ctaSubtitle": "Gửi yêu cầu — đội Five Cut Pro sẽ tư vấn gói dịch vụ phù hợp với sản phẩm và ngân sách của bạn.",
+    "ctaPrimary": "Nhận tư vấn giải pháp",
+    "ctaSecondary": "Xem 12 điểm hiển thị thương hiệu",
+    "contactEmail": "support@fivecutpro.com",
+    "contactEmailAria": "Gửi email tới support@fivecutpro.com"
   },
   "communitySection": {
     "label": "Nhóm hỗ trợ",
@@ -247,7 +317,7 @@
   "sponsorsSection": {
     "label": "DÀNH CHO NHÃN HÀNG",
     "title": "Biến sản phẩm thành nội dung — biến nội dung thành cơ hội bán hàng",
-    "subtitle": "Ra mắt sản phẩm mới cần nhiều nội dung, nhiều góc quay, nhiều người sáng tạo. Five Cut Pro đưa sản phẩm của bạn vào đúng nơi KOC làm việc mỗi ngày.",
+    "subtitle": "Từ ý tưởng đến thực thi: Five Cut Pro sản xuất nội dung, dựng sản phẩm thành mẫu video và đưa thương hiệu của bạn vào đúng nơi KOC làm việc mỗi ngày.",
     "stats": [
       {
         "value": "12",

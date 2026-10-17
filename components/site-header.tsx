@@ -10,6 +10,7 @@ import {
   Download,
   Building2,
   HelpCircle,
+  Layers,
   BookOpen,
   ChevronRight,
 } from "lucide-react";
@@ -33,23 +34,25 @@ import { cn } from "@/lib/utils";
 
 type NavItem = {
   href: string;
-  labelKey: "features" | "howItWorks" | "campaigns" | "sponsors" | "guides" | "compare" | "downloadApp" | "faq";
+  labelKey: "features" | "howItWorks" | "campaigns" | "services" | "app" | "sponsors" | "guides" | "compare" | "downloadApp" | "faq";
   icon?: typeof Sparkles;
 };
 
 const GUIDES_ITEM: NavItem = { href: "/guides", labelKey: "guides", icon: BookOpen };
 
 const DESKTOP_NAV_BASE: NavItem[] = [
-  { href: "/#koc", labelKey: "features", icon: Sparkles },
-  { href: "/#download", labelKey: "downloadApp", icon: Download },
+  { href: "/#services", labelKey: "services", icon: Layers },
   { href: "/#sponsors", labelKey: "sponsors", icon: Building2 },
+  { href: "/#app", labelKey: "app", icon: Sparkles },
+  { href: "/#download", labelKey: "downloadApp", icon: Download },
   { href: "/#faq", labelKey: "faq", icon: HelpCircle },
 ];
 
 const MOBILE_NAV_BASE: NavItem[] = [
-  { href: "/#koc", labelKey: "features", icon: Sparkles },
-  { href: "/#download", labelKey: "downloadApp", icon: Download },
+  { href: "/#services", labelKey: "services", icon: Layers },
   { href: "/#sponsors", labelKey: "sponsors", icon: Building2 },
+  { href: "/#app", labelKey: "app", icon: Sparkles },
+  { href: "/#download", labelKey: "downloadApp", icon: Download },
   { href: "/#faq", labelKey: "faq", icon: HelpCircle },
 ];
 
@@ -217,14 +220,14 @@ export function SiteHeader() {
             <SocialLinks variant="header" className="hidden xl:flex" />
             <LanguageSwitcher />
             <Link
-              href="/#download"
+              href="/#sponsors"
               onClick={() => {
                 trackCtaClick({
-                  cta_id: "header_download_desktop",
+                  cta_id: "header_consult_desktop",
                   cta_location: "header_desktop",
                   cta_text: t("ctaDesktop"),
-                  cta_category: "conversion_download",
-                  destination_url: "/#download",
+                  cta_category: "lead_sponsor",
+                  destination_url: "/#sponsors",
                 });
               }}
               className={cn(
@@ -240,14 +243,14 @@ export function SiteHeader() {
         {/* Mobile Actions */}
         <div className="flex items-center gap-2 lg:hidden">
           <Link
-            href="/#download"
+            href="/#sponsors"
             onClick={() => {
               trackCtaClick({
-                cta_id: "header_download_mobile",
+                cta_id: "header_consult_mobile",
                 cta_location: "header_mobile",
                 cta_text: t("ctaMobile"),
-                cta_category: "conversion_download",
-                destination_url: "/#download",
+                cta_category: "lead_sponsor",
+                destination_url: "/#sponsors",
               });
             }}
             className={cn(

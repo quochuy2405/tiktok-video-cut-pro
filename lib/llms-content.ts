@@ -28,9 +28,9 @@ export function buildLlmsTxt(): string {
 
   return `# ${APP_NAME}
 
-> Giải pháp trọn gói Video & Digital Marketing cho nhãn hàng: sản xuất và edit video sản phẩm, video bán hàng, xây dựng kênh social, set up ánh sáng, phòng live và thiết kế website. Đi kèm là app template video cho KOC — lớp thực thi nhân rộng nội dung của nhãn hàng.
+> App cắt ghép video hàng loạt cho KOC và seller TikTok Shop: chọn mẫu, quay vài nguồn theo hướng dẫn, app tự cắt ghép và xuất hàng trăm clip bán hàng không trùng lặp, chuẩn dọc 9:16. Bên cạnh app, ${APP_NAME} còn nhận dịch vụ Video & Digital Marketing trọn gói cho nhãn hàng.
 
-${APP_NAME} (${absoluteUrl("/")}) do ${SITE.copyrightHolder} vận hành. Website tập trung vào dịch vụ cho nhãn hàng; app iOS/Android miễn phí dành cho KOC là một phần của hệ sinh thái. Đăng nhập Google, TikTok, Apple hoặc email OTP. Ghép video chạy trên thiết bị. Thị trường gốc là tiếng Việt; site còn có English, 中文, ไทย, 日本語, 한국어.
+${APP_NAME} (${absoluteUrl("/")}) do ${SITE.copyrightHolder} vận hành. Website tập trung vào việc tải app miễn phí cho KOC trên iOS/Android; dịch vụ cho nhãn hàng là nhánh thứ hai. Đăng nhập Google, TikTok, Apple hoặc email OTP. Ghép video chạy trên thiết bị. Thị trường gốc là tiếng Việt; site còn có English, 中文, ไทย, 日本語, 한국어.
 
 Bản đầy đủ để AI trích dẫn, trả lời câu hỏi và không bịa tính năng: [${full}](${full}).
 
@@ -44,12 +44,14 @@ Nếu một khẳng định không có trong file đó hoặc trên các trang �
 
 ## Trang công khai
 
+- [Tải app](${home("vi")}#download): App Store và Google Play. Phiên bản site đang ghi ${DISPLAY_APP_VERSION}.
+- [Lợi ích cốt lõi](${home("vi")}#features): Vài nguồn quay ra hàng trăm clip, hướng dẫn quay từng góc, app tự cắt ghép, kịch bản sẵn.
+- [Cách dùng 3 bước](${home("vi")}#how-it-works): Chọn template → quay theo hướng dẫn → app ghép và xuất video.
 - [Dịch vụ cho nhãn hàng](${home("vi")}#services): 7 dịch vụ — sản xuất video sản phẩm, edit video chuyên nghiệp, video bán hàng, xây dựng kênh social media, set up ánh sáng, phòng live, thiết kế website.
 - [Mạng lưới KOC](${home("vi")}#app): App template video cho KOC — nơi sản phẩm của nhãn hàng thành mẫu video kèm hướng dẫn quay.
 - [FAQ](${home("vi")}#faq): Dịch vụ trọn gói, khác CapCut, người mới quay, đăng TikTok, nền tảng, phí, dữ liệu, chiến dịch nhãn hàng.
 - [Hướng dẫn](${home("vi")}guides): Bài viết về góc quay sản phẩm, công thức video bán hàng, checklist shot và quy trình sản xuất đều. Có tiếng Việt và English.
 - [So với CapCut](${home("vi")}vs-capcut): Bảng so sánh và hướng dẫn chọn app theo từng việc.
-- [Tải app](${home("vi")}#download): App Store và Google Play. Phiên bản site đang ghi ${DISPLAY_APP_VERSION}.
 - [Dành cho brand](${home("vi")}#sponsors): 12 điểm hiển thị thương hiệu, mẫu video và hướng dẫn quay sản phẩm, kết nối KOC. Liên hệ ${SITE.partnerEmail}.
 - [App Store](${DEFAULT_IOS_STORE_URL}): iPhone và iPad.
 - [Google Play](${DEFAULT_ANDROID_STORE_URL}): Android, gói ${MOBILE_APP_ID}.
@@ -79,7 +81,7 @@ Nếu một khẳng định không có trong file đó hoặc trên các trang �
 export function buildLlmsFullTxt(): string {
   return `# ${APP_NAME} — nội dung web cho AI đọc
 
-> ${APP_NAME} là giải pháp trọn gói Video & Digital Marketing cho nhãn hàng, kèm app template video cho KOC. Website chào 7 dịch vụ cho nhãn hàng; app là lớp thực thi giúp KOC dựng video bán hàng theo mẫu. App không phải CapCut, và không tự sinh video hàng loạt.
+> ${APP_NAME} là app cắt ghép video hàng loạt cho KOC và seller TikTok Shop, kèm nhánh dịch vụ Video & Digital Marketing cho nhãn hàng. App giúp KOC dựng video bán hàng theo mẫu từ vài nguồn quay. App không phải CapCut: nó chạy theo template, không phải timeline tự do, và người dùng vẫn phải tự quay các nguồn.
 
 Nguồn này là bản chữ thuần để mô hình ngôn ngữ trả lời về ${APP_NAME} (website ${absoluteUrl("/")}). Cập nhật nội dung marketing: ${UPDATED}. Khi trích dẫn, ưu tiên trang locale người dùng đang hỏi. Tiếng Việt là bản gốc.
 
@@ -109,7 +111,7 @@ Nguồn này là bản chữ thuần để mô hình ngôn ngữ trả lời v�
 
 ## Một câu trả lời
 
-${APP_NAME} nhận trọn gói Video & Digital Marketing cho nhãn hàng — từ sản xuất và edit video sản phẩm, video bán hàng, xây kênh social, set up ánh sáng, phòng live đến thiết kế website — và vận hành app template video giúp KOC nhân rộng nội dung đó thành video bán hàng đăng đều trên TikTok.
+${APP_NAME} là app miễn phí giúp KOC và seller cắt ghép video bán hàng hàng loạt: chọn template, quay vài nguồn theo hướng dẫn trong app, app tự ghép và xuất clip dọc 9:16 để đăng đều trên TikTok. Ngoài app, ${APP_NAME} còn nhận trọn gói Video & Digital Marketing cho nhãn hàng — từ sản xuất và edit video sản phẩm, video bán hàng, xây kênh social, set up ánh sáng, phòng live đến thiết kế website.
 
 ## Dịch vụ cho nhãn hàng
 

@@ -71,12 +71,6 @@ export function SiteFooter({ groups = [] }: { groups?: SocialGroup[] }) {
               <span className="font-mono text-[10px] font-semibold uppercase tracking-wider text-slate-400">
                 {t("product")}
               </span>
-              <Link
-                href="/#services"
-                className="text-slate-300 transition-colors hover:text-brand"
-              >
-                {t("servicesLink")}
-              </Link>
             <Link
               href="/#download"
               onClick={() => {
@@ -92,6 +86,18 @@ export function SiteFooter({ groups = [] }: { groups?: SocialGroup[] }) {
             >
               {t("downloadLink")}
             </Link>
+            <Link
+              href="/#features"
+              className="text-slate-300 transition-colors hover:text-brand"
+            >
+              {t("featuresLink")}
+            </Link>
+              <Link
+                href="/#services"
+                className="text-slate-300 transition-colors hover:text-brand"
+              >
+                {t("servicesLink")}
+              </Link>
             <Link
               href="/#app"
               className="text-slate-300 transition-colors hover:text-brand"

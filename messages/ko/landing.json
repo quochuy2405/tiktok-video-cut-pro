@@ -1,17 +1,17 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "브랜드를 위한 토탈 솔루션",
-    "titleLead": "Video & Digital Marketing",
-    "titleAccent": "브랜드를 위한",
-    "subLead": "아이디어부터 실행까지",
-    "subAccent": "모든 플랫폼에서 브랜드가 빛나도록 돕습니다",
-    "subtitle": "브랜드를 위한 영상·디지털 마케팅 토탈 솔루션 — 아이디어부터 실행까지.",
-    "ctaPrimary": "상담 신청하기",
-    "ctaSecondary": "단계 보기",
+    "tagline": "영상 일괄 편집 앱",
+    "titleLead": "영상을 한 번에 수백 개로",
+    "titleAccent": "휴대폰 하나로",
+    "subLead": "소스 촬영 몇 개만으로",
+    "subAccent": "중복 없는 판매 영상 수백 개",
+    "subtitle": "Five Cut Pro — KOC와 TikTok Shop 판매자를 위한 영상 일괄 편집 앱. 무료로 받아 소스 몇 개로 중복 없는 클립 수백 개를 만드세요.",
+    "ctaPrimary": "앱 무료 다운로드",
+    "ctaSecondary": "사용 방법 보기",
     "ctaBatch": "적은 소스 → 수백 개 클립",
-    "ctaBrand": "7가지 서비스 보기",
-    "ctaTrust": "콘텐츠 제작 · 소셜 · 라이브 · 웹사이트",
+    "ctaBrand": "브랜드를 위한 안내",
+    "ctaTrust": "무료 · 방해 광고 없음 · 9:16 내보내기",
     "ctaSocialProof": "촬영이나 편집 기술 필요 없음 · 따라만 하면 영상 완성",
     "audienceKoc": "KOC & 커머스 크리에이터",
     "audienceSeller": "TikTok Shop 판매자",
@@ -33,10 +33,10 @@
     "hookContentTitle": "단순 명료한 콘텐츠",
     "hookContentDesc": "이해하기 쉽고, 따라 하기 쉽고, 판매로 직결!",
     "hookContentSub": "TikTok Shop 구매 전환율을 극대화하는 실전 KOC 대본 템플릿.",
-    "pointVideo": "브랜드 톤에 맞춘 제품 영상 제작과 편집",
-    "pointSales": "전환을 끌어내는 판매 영상과 라이브룸",
-    "pointSocial": "브랜드 소셜 채널 구축과 성장",
-    "pointWeb": "방문자를 구매자로 바꾸는 웹사이트 설계"
+    "pointShoot": "앵글별 촬영 가이드가 앱 안에",
+    "pointEdit": "편집을 몰라도 앱이 자동으로 컷·결합",
+    "pointBatch": "소스 몇 개 → 중복 없는 영상 수백 개",
+    "pointFree": "100% 무료, 기기 내 처리, 9:16 내보내기"
   },
   "metricsBar": [
     {
@@ -62,7 +62,7 @@
   ],
   "featuresSection": {
     "label": "핵심 가치",
-    "title": "아무것도 고민할 필요 없습니다 — 저희를 따라오세요",
+    "title": "일괄 편집 — 당신은 소스 몇 개만 찍으면 됩니다",
     "subtitle": "간단하고 이해하기 쉬운 콘텐츠. 적은 소스만으로 판매 영상을 제작하고, 중복 없이 수백 개의 클립을 발행하세요."
   },
   "features": [
@@ -109,7 +109,7 @@
   ],
   "howItWorksSection": {
     "label": "간편한 3단계",
-    "title": "아무것도 고민할 필요 없습니다 — 저희를 따라오세요",
+    "title": "촬영도 편집도 모르겠다면? 3단계만 따라오세요",
     "subtitle": "단순하고 명확합니다. 단 3단계로 중복 없는 수백 개의 판매 영상을 완성하세요.",
     "steps": [
       {
@@ -163,7 +163,7 @@
   "faqSection": {
     "label": "자주 묻는 질문",
     "title": "자주 묻는 질문",
-    "subtitle": "Five Cut Pro 및 KOC 영상 템플릿에 대한 핵심 안내.",
+    "subtitle": "다운로드 전에 영상 일괄 편집 앱 Five Cut Pro에 대해 빠르게 확인하세요.",
     "items": [
       {
         "id": "faq-1",
@@ -199,7 +199,7 @@
   },
   "appSection": {
     "label": "실행 네트워크",
-    "title": "콘텐츠는 크리에이터 네트워크를 통해 확장됩니다",
+    "title": "브랜드가 앱에 들어옵니다 — 작업할 템플릿이 늘어납니다",
     "subtitle": "제작팀 외에도 Five Cut Pro는 KOC를 위한 영상 템플릿 앱을 운영합니다. 브랜드 제품은 앱 안에서 영상 템플릿과 촬영 가이드가 되고, KOC가 매일 그것으로 판매 콘텐츠를 더 만들어 냅니다.",
     "points": [
       "제품이 KOC가 반복해서 쓰는 영상 템플릿이 됩니다",
@@ -209,8 +209,8 @@
   },
   "downloadSection": {
     "label": "지금 시작하기",
-    "title": "KOC용 Five Cut Pro 앱 받기",
-    "subtitle": "단 몇 개의 소스만으로 판매 영상 제작 · 중복 없는 수백 개의 클립 발행.",
+    "title": "Five Cut Pro 받기 — 휴대폰에서 영상 일괄 편집",
+    "subtitle": "소스는 몇 개면 충분 · 앱이 자동으로 컷·결합해 중복 없는 판매 클립 수백 개를 내보냅니다.",
     "mobileLabel": "iOS (출시 완료) · Android (출시 예정)",
     "ctaStore": "App Store에서 무료 다운로드",
     "comingSoon": "출시 예정",

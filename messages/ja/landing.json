@@ -1,17 +1,17 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "ブランドのためのワンストップ・ソリューション",
-    "titleLead": "Video & Digital Marketing",
-    "titleAccent": "ブランドのために",
-    "subLead": "アイデアから実行まで",
-    "subAccent": "あらゆるプラットフォームでブランドを輝かせます",
-    "subtitle": "ブランド向けの動画＆デジタルマーケティングをワンストップで。アイデアから実行まで。",
-    "ctaPrimary": "無料相談を申し込む",
-    "ctaSecondary": "手順を見る",
+    "tagline": "動画一括編集アプリ",
+    "titleLead": "動画を一括でカット＆結合",
+    "titleAccent": "スマホだけで完結",
+    "subLead": "わずかな撮影素材から",
+    "subAccent": "重複ゼロの販売クリップを何百本も",
+    "subtitle": "Five Cut Pro — KOC と TikTok Shop セラーのための動画一括編集アプリ。無料ダウンロードで、少ない素材から重複なしのクリップを何百本も。",
+    "ctaPrimary": "アプリを無料ダウンロード",
+    "ctaSecondary": "使い方を見る",
     "ctaBatch": "少量素材 → 多数クリップ",
-    "ctaBrand": "7つのサービスを見る",
-    "ctaTrust": "コンテンツ制作 · SNS · ライブ配信 · ウェブサイト",
+    "ctaBrand": "ブランドの方へ",
+    "ctaTrust": "無料 · 邪魔な広告なし · 9:16 で書き出し",
     "ctaSocialProof": "撮影や編集のスキル不要 · 指示に従うだけで動画完成",
     "audienceKoc": "KOC・販売クリエイター",
     "audienceSeller": "TikTok Shop セラー",
@@ -33,10 +33,10 @@
     "hookContentTitle": "シンプルな構成",
     "hookContentDesc": "わかりやすく、実践的で、売れる！",
     "hookContentSub": "TikTok Shop の購買転換率を最大化する実戦向け KOC 台本テンプレート。",
-    "pointVideo": "ブランドの世界観に沿った商品動画の制作・編集",
-    "pointSales": "成果につながる販売動画とライブ配信ルーム",
-    "pointSocial": "ブランドのSNSチャンネルを構築し、育てる",
-    "pointWeb": "購入につなげるブランドサイトの設計"
+    "pointShoot": "アングル別の撮影ガイドをアプリに搭載",
+    "pointEdit": "編集ができなくても、アプリが自動でカット＆結合",
+    "pointBatch": "わずかな素材 → 重複なしの動画が何百本も",
+    "pointFree": "100% 無料・端末内で処理・9:16 で書き出し"
   },
   "metricsBar": [
     {
@@ -62,7 +62,7 @@
   ],
   "featuresSection": {
     "label": "コアバリュー",
-    "title": "何も悩む必要はありません — 指示に従うだけ",
+    "title": "一括編集 — あなたは数本撮るだけ",
     "subtitle": "シンプルで分かりやすい構成。わずかな素材だけで販売動画を作成、重複なしで何百本ものクリップを書き出し。"
   },
   "features": [
@@ -109,7 +109,7 @@
   ],
   "howItWorksSection": {
     "label": "かんたん 3 ステップ",
-    "title": "何も悩む必要はありません — 指示に従うだけ",
+    "title": "撮影も編集もわからない？3 ステップで大丈夫",
     "subtitle": "シンプルで明快。たった 3 ステップで重複なしの販売動画が何百本も完成。",
     "steps": [
       {
@@ -163,7 +163,7 @@
   "faqSection": {
     "label": "よくある質問",
     "title": "よくある質問",
-    "subtitle": "Five Cut Pro と KOC 動画テンプレートに関するよくある疑問にお答えします。",
+    "subtitle": "ダウンロードの前に、動画一括編集アプリ Five Cut Pro のよくある疑問にお答えします。",
     "items": [
       {
         "id": "faq-1",
@@ -199,7 +199,7 @@
   },
   "appSection": {
     "label": "実行ネットワーク",
-    "title": "コンテンツはクリエイターのネットワークで広がります",
+    "title": "ブランドがアプリに参加 — 使えるテンプレートが増えます",
     "subtitle": "制作チームに加えて、Five Cut ProはKOC向けの動画テンプレートアプリを運営しています。御社の商品はアプリ内で動画テンプレートと撮影ガイドになり、KOCが毎日そこから販売コンテンツを生み出します。",
     "points": [
       "商品がKOCに繰り返し使われる動画テンプレートになります",
@@ -209,8 +209,8 @@
   },
   "downloadSection": {
     "label": "今すぐ始める",
-    "title": "KOC向けFive Cut Proアプリを入手",
-    "subtitle": "わずかな素材だけで販売動画を作成 · 重複なしで何百本もの販売クリップを書き出し。",
+    "title": "Five Cut Pro を入手 — スマホで動画を一括編集",
+    "subtitle": "素材はわずかでOK · アプリが自動でカット・結合し、重複なしの販売クリップを何百本も書き出します。",
     "mobileLabel": "iOS（配信中）· Android（近日公開）",
     "ctaStore": "App Store で無料ダウンロード",
     "comingSoon": "近日公開",

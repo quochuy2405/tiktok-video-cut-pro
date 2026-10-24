@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Building2, Sparkles, X } from "lucide-react";
+import { Download, Sparkles, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
@@ -26,10 +26,10 @@ export function MobileStickyDownloadBar() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
 
-    // Hide once the brand enquiry section is on screen
-    const leadSection = document.getElementById("sponsors");
+    // Hide once the download section is on screen — the bar would be redundant there
+    const downloadSection = document.getElementById("download");
     let observer: IntersectionObserver | null = null;
-    if (leadSection && "IntersectionObserver" in window) {
+    if (downloadSection && "IntersectionObserver" in window) {
       observer = new IntersectionObserver(
         (entries) => {
           for (const entry of entries) {
@@ -42,7 +42,7 @@ export function MobileStickyDownloadBar() {
         },
         { threshold: 0.15 }
       );
-      observer.observe(leadSection);
+      observer.observe(downloadSection);
     }
 
     return () => {
@@ -91,19 +91,19 @@ export function MobileStickyDownloadBar() {
         {/* CTA + Dismiss */}
         <div className="flex items-center gap-1.5 shrink-0">
           <Link
-            href="/#sponsors"
+            href="/#download"
             onClick={() => {
               trackCtaClick({
-                cta_id: "mobile_sticky_consult_btn",
+                cta_id: "mobile_sticky_download_btn",
                 cta_location: "mobile_sticky_bar",
                 cta_text: t("ctaMobile"),
-                cta_category: "lead_sponsor",
-                destination_url: "/#sponsors",
+                cta_category: "conversion_download",
+                destination_url: "/#download",
               });
             }}
             className="inline-flex min-h-[42px] items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-brand via-[#00DF9E] to-brand-deep px-4 py-2 text-xs font-bold text-[#02180e] shadow-[0_0_18px_rgba(0,245,160,0.45)] transition-all active:scale-95"
           >
-            <Building2 className="size-3.5 shrink-0" />
+            <Download className="size-3.5 shrink-0" />
             <span>{t("ctaMobile")}</span>
           </Link>
 

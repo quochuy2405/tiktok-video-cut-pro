@@ -41,19 +41,19 @@ type NavItem = {
 const GUIDES_ITEM: NavItem = { href: "/guides", labelKey: "guides", icon: BookOpen };
 
 const DESKTOP_NAV_BASE: NavItem[] = [
-  { href: "/#services", labelKey: "services", icon: Layers },
-  { href: "/#sponsors", labelKey: "sponsors", icon: Building2 },
-  { href: "/#app", labelKey: "app", icon: Sparkles },
   { href: "/#download", labelKey: "downloadApp", icon: Download },
+  { href: "/#features", labelKey: "features", icon: Sparkles },
+  { href: "/#how-it-works", labelKey: "howItWorks", icon: Layers },
   { href: "/#faq", labelKey: "faq", icon: HelpCircle },
+  { href: "/#services", labelKey: "sponsors", icon: Building2 },
 ];
 
 const MOBILE_NAV_BASE: NavItem[] = [
-  { href: "/#services", labelKey: "services", icon: Layers },
-  { href: "/#sponsors", labelKey: "sponsors", icon: Building2 },
-  { href: "/#app", labelKey: "app", icon: Sparkles },
   { href: "/#download", labelKey: "downloadApp", icon: Download },
+  { href: "/#features", labelKey: "features", icon: Sparkles },
+  { href: "/#how-it-works", labelKey: "howItWorks", icon: Layers },
   { href: "/#faq", labelKey: "faq", icon: HelpCircle },
+  { href: "/#services", labelKey: "sponsors", icon: Building2 },
 ];
 
 /** Guides only exist in the locales they were written in. */
@@ -220,14 +220,14 @@ export function SiteHeader() {
             <SocialLinks variant="header" className="hidden xl:flex" />
             <LanguageSwitcher />
             <Link
-              href="/#sponsors"
+              href="/#download"
               onClick={() => {
                 trackCtaClick({
-                  cta_id: "header_consult_desktop",
+                  cta_id: "header_download_desktop",
                   cta_location: "header_desktop",
                   cta_text: t("ctaDesktop"),
-                  cta_category: "lead_sponsor",
-                  destination_url: "/#sponsors",
+                  cta_category: "conversion_download",
+                  destination_url: "/#download",
                 });
               }}
               className={cn(
@@ -243,14 +243,14 @@ export function SiteHeader() {
         {/* Mobile Actions */}
         <div className="flex items-center gap-2 lg:hidden">
           <Link
-            href="/#sponsors"
+            href="/#download"
             onClick={() => {
               trackCtaClick({
-                cta_id: "header_consult_mobile",
+                cta_id: "header_download_mobile",
                 cta_location: "header_mobile",
                 cta_text: t("ctaMobile"),
-                cta_category: "lead_sponsor",
-                destination_url: "/#sponsors",
+                cta_category: "conversion_download",
+                destination_url: "/#download",
               });
             }}
             className={cn(

@@ -1,17 +1,17 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "GIẢI PHÁP TRỌN GÓI CHO NHÃN HÀNG",
-    "titleLead": "Video & Digital Marketing",
-    "titleAccent": "Cho Nhãn Hàng",
-    "subLead": "Từ ý tưởng đến thực thi",
-    "subAccent": "Chúng tôi giúp thương hiệu của bạn tỏa sáng trên mọi nền tảng",
-    "subtitle": "Giải pháp trọn gói Video & Digital Marketing cho nhãn hàng — từ ý tưởng đến thực thi.",
-    "ctaPrimary": "Nhận tư vấn giải pháp",
+    "tagline": "APP CẮT GHÉP VIDEO HÀNG LOẠT",
+    "titleLead": "Cắt ghép video hàng loạt",
+    "titleAccent": "Ngay Trên Điện Thoại",
+    "subLead": "Chỉ vài nguồn quay",
+    "subAccent": "Xuất hàng trăm clip bán hàng không trùng lặp",
+    "subtitle": "Five Cut Pro — app cắt ghép video hàng loạt cho KOC và seller TikTok Shop. Tải miễn phí, vài nguồn quay ra hàng trăm clip không trùng.",
+    "ctaPrimary": "Tải app miễn phí",
     "ctaSecondary": "Xem cách hoạt động",
     "ctaBatch": "Vài nguồn → Hàng trăm clip",
-    "ctaBrand": "Xem 7 dịch vụ",
-    "ctaTrust": "Sản xuất nội dung · Social · Livestream · Website",
+    "ctaBrand": "Dành cho nhãn hàng",
+    "ctaTrust": "Miễn phí · Không quảng cáo chen ngang · Xuất chuẩn 9:16",
     "ctaSocialProof": "Không cần biết quay hay edit · Làm theo là ra video",
     "audienceKoc": "KOC & Creator bán hàng",
     "audienceSeller": "Seller TikTok Shop",
@@ -33,10 +33,10 @@
     "hookContentTitle": "Content đơn giản",
     "hookContentDesc": "Dễ hiểu, dễ làm, ra đơn!",
     "hookContentSub": "Mẫu kịch bản KOC thực chiến, tăng chuyển đổi bán hàng TikTok Shop.",
-    "pointVideo": "Sản xuất & edit video sản phẩm chuẩn thương hiệu",
-    "pointSales": "Video bán hàng và phòng live tối ưu chuyển đổi",
-    "pointSocial": "Xây dựng và phát triển kênh social cho nhãn hàng",
-    "pointWeb": "Thiết kế website tăng tỷ lệ chốt đơn"
+    "pointShoot": "Hướng dẫn quay từng góc máy ngay trong app",
+    "pointEdit": "Không biết edit cũng được — app tự cắt ghép",
+    "pointBatch": "Vài nguồn quay → hàng trăm clip không trùng lặp",
+    "pointFree": "Miễn phí 100%, ghép ngay trên máy, chuẩn 9:16"
   },
   "metricsBar": [
     {
@@ -62,7 +62,7 @@
   ],
   "featuresSection": {
     "label": "LỢI ÍCH CỐT LÕI",
-    "title": "Không cần làm gì cả — hãy làm theo chúng tôi",
+    "title": "Cắt ghép hàng loạt — bạn chỉ cần quay vài nguồn",
     "subtitle": "Content đơn giản dễ hiểu. Tạo video bán hàng chỉ với vài nguồn, xuất bản hàng trăm clip bán hàng và không trùng lặp."
   },
   "features": [
@@ -109,7 +109,7 @@
   ],
   "howItWorksSection": {
     "label": "QUY TRÌNH 3 BƯỚC",
-    "title": "Không cần làm gì cả — hãy làm theo chúng tôi",
+    "title": "Không biết quay, không biết edit? Làm theo 3 bước",
     "subtitle": "Content đơn giản dễ hiểu. Chỉ 3 bước để có hàng trăm clip bán hàng không trùng lặp.",
     "steps": [
       {
@@ -163,7 +163,7 @@
   "faqSection": {
     "label": "HỎI ĐÁP",
     "title": "Câu hỏi thường gặp",
-    "subtitle": "Mọi giải đáp nhanh về Five Cut Pro và Template video dành cho KOC.",
+    "subtitle": "Giải đáp nhanh về app cắt ghép video hàng loạt Five Cut Pro trước khi bạn tải về.",
     "items": [
       {
         "id": "faq-1",
@@ -199,7 +199,7 @@
   },
   "appSection": {
     "label": "MẠNG LƯỚI THỰC THI",
-    "title": "Nội dung của bạn được nhân rộng bởi mạng lưới KOC",
+    "title": "Nhãn hàng vào app — bạn có thêm mẫu video để làm",
     "subtitle": "Ngoài đội sản xuất, Five Cut Pro còn vận hành app template video cho KOC. Sản phẩm của nhãn hàng được dựng thành mẫu video kèm hướng dẫn quay ngay trong app — nơi KOC lấy mẫu và tự sản xuất thêm nội dung bán hàng mỗi ngày.",
     "points": [
       "Sản phẩm trở thành mẫu video KOC dùng lại nhiều lần",
@@ -209,8 +209,8 @@
   },
   "downloadSection": {
     "label": "BẮT ĐẦU NGAY",
-    "title": "Tải app Five Cut Pro dành cho KOC",
-    "subtitle": "Tạo video bán hàng chỉ với vài nguồn · Xuất bản hàng trăm clip bán hàng và không trùng lặp.",
+    "title": "Tải app Five Cut Pro — cắt ghép video hàng loạt",
+    "subtitle": "Chỉ vài nguồn quay · App tự cắt ghép và xuất hàng trăm clip bán hàng không trùng lặp.",
     "mobileLabel": "iOS (Đã có sẵn) · Android (Sắp ra mắt)",
     "ctaStore": "Tải app miễn phí",
     "comingSoon": "Sắp ra mắt",

@@ -1,17 +1,17 @@
 {
   "hero": {
     "productName": "Five Cut Pro",
-    "tagline": "面向品牌的一站式解决方案",
-    "titleLead": "Video & Digital Marketing",
-    "titleAccent": "为品牌打造",
-    "subLead": "从创意到落地",
-    "subAccent": "让你的品牌在每个平台都发光",
-    "subtitle": "面向品牌的一站式视频与数字营销方案——从创意到落地。",
-    "ctaPrimary": "获取方案咨询",
-    "ctaSecondary": "查看流程",
+    "tagline": "批量剪辑视频 APP",
+    "titleLead": "批量剪辑带货视频",
+    "titleAccent": "一部手机搞定",
+    "subLead": "仅需少量拍摄素材",
+    "subAccent": "导出数百条不重复的带货视频",
+    "subtitle": "Five Cut Pro——面向 KOC 与 TikTok Shop 商家的批量剪辑 App。免费下载，少量素材即可生成数百条不重复视频。",
+    "ctaPrimary": "免费下载 App",
+    "ctaSecondary": "查看使用流程",
     "ctaBatch": "少量素材 → 数百条视频",
-    "ctaBrand": "查看 7 项服务",
-    "ctaTrust": "内容制作 · 社交 · 直播 · 网站",
+    "ctaBrand": "品牌合作",
+    "ctaTrust": "完全免费 · 无打扰广告 · 导出 9:16 竖屏",
     "ctaSocialProof": "无需拍摄与剪辑经验 · 跟着做就能出片",
     "audienceKoc": "KOC 与带货创作者",
     "audienceSeller": "TikTok Shop 商家",
@@ -33,10 +33,10 @@
     "hookContentTitle": "脚本简单",
     "hookContentDesc": "好理解、好上手、好转化！",
     "hookContentSub": "实战 KOC 带货脚本，最大化提升 TikTok Shop 转化率。",
-    "pointVideo": "贴合品牌调性的产品视频制作与剪辑",
-    "pointSales": "以转化为目标的带货视频与直播间",
-    "pointSocial": "为品牌搭建并运营社交账号",
-    "pointWeb": "把访客变成买家的品牌网站设计"
+    "pointShoot": "App 内置分镜头拍摄指引",
+    "pointEdit": "不会剪也没关系，App 自动剪辑合成",
+    "pointBatch": "少量素材 → 数百条不重复视频",
+    "pointFree": "100% 免费，本机合成，直出 9:16"
   },
   "metricsBar": [
     {
@@ -62,7 +62,7 @@
   ],
   "featuresSection": {
     "label": "核心价值",
-    "title": "无需多想 — 跟着我们做就行",
+    "title": "批量剪辑 — 你只需拍几条素材",
     "subtitle": "脚本简单易懂。仅需少量素材即可制作带货视频，发布数百条不重复的带货视频。"
   },
   "features": [
@@ -109,7 +109,7 @@
   ],
   "howItWorksSection": {
     "label": "极简 3 步",
-    "title": "无需多想 — 跟着我们做就行",
+    "title": "不会拍、不会剪？跟着 3 步做",
     "subtitle": "简单明了。只需 3 步即可生成数百条不重复的带货视频。",
     "steps": [
       {
@@ -163,7 +163,7 @@
   "faqSection": {
     "label": "常见问答",
     "title": "常见问题",
-    "subtitle": "关于 Five Cut Pro 与 KOC 视频模板的快速解答。",
+    "subtitle": "下载前，先快速了解 Five Cut Pro 批量剪辑 App。",
     "items": [
       {
         "id": "faq-1",
@@ -199,7 +199,7 @@
   },
   "appSection": {
     "label": "执行网络",
-    "title": "你的内容由创作者网络持续放大",
+    "title": "品牌入驻 App — 你能拿到更多可用模板",
     "subtitle": "除了自有制作团队，Five Cut Pro 还运营面向 KOC 的视频模板 App。品牌产品会在 App 内变成视频模板与分镜拍摄指南，KOC 每天据此产出更多带货内容。",
     "points": [
       "产品会变成 KOC 反复使用的视频模板",
@@ -209,8 +209,8 @@
   },
   "downloadSection": {
     "label": "立即开始",
-    "title": "下载面向 KOC 的 Five Cut Pro App",
-    "subtitle": "仅需少量素材即可制作带货视频 · 发布数百条不重复的带货视频。",
+    "title": "下载 Five Cut Pro — 手机批量剪辑",
+    "subtitle": "只拍少量素材 · App 自动剪辑合成，导出数百条不重复的带货视频。",
     "mobileLabel": "iOS（已上线）· Android（即将推出）",
     "ctaStore": "在 App Store 免费下载",
     "comingSoon": "即将推出",
